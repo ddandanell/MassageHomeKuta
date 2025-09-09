@@ -1,0 +1,23 @@
+{
+  "name": "Home Massage Kuta - Professional In-Villa Spa Service",
+  "short_name": "Home Massage Kuta",
+  "description": "Kuta's premier home massage service bringing professional spa treatments to your villa or hotel",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1a365d",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16 32x32",
+      "type": "image/x-icon"
+    }
+  ],
+  "categories": ["health", "wellness", "lifestyle"],
+  "orientation": "portrait-primary"
+}
