@@ -48,25 +48,22 @@ const services = [
     duration: "60-90 minutes",
     price: "Starting from IDR 700k",
     description: "Romantic massage experience for two, perfect for couples and friends wanting to relax together.",
-    benefits: ["Shared experience", "Quality time", "Romantic setting", "Double relaxation"]
-  }
+    benefits: ["Shared relaxation", "Romantic ambiance", "Quality time", "Stress relief"]
+  },
 ];
 
-const Services = () => {
+const ServicesPage = () => {
   return (
-    <div className="min-h-screen">
+    <div className="bg-gray-50 min-h-screen">
       <SiteMeta 
-        title="Professional Massage Services in Kuta"
-        description="Discover our comprehensive range of professional massage services in Kuta. From traditional Balinese to therapeutic deep tissue massage, delivered to your villa or hotel."
-        keywords="balinese massage kuta, deep tissue massage bali, aromatherapy massage, hot stone massage, thai massage, couples massage kuta"
+        title="Our Massage Services in Kuta"
+        description="Explore our professional massage services in Kuta, Bali. We offer Balinese, Deep Tissue, Aromatherapy, Hot Stone, and Thai massages."
+        keywords="massage services kuta, balinese massage, deep tissue massage, aromatherapy, hot stone massage, thai massage, couples massage bali"
         canonical="/services"
       />
-      
       <StructuredData type="service" />
-      
       <Header />
-      
-      <main>
+      <main className="py-12 md:py-20">
         {/* Hero Section */}
         <section className="relative py-32 md:py-40 bg-gradient-to-br from-teal-500 to-cyan-600 text-white overflow-hidden">
           <div className="absolute inset-0 bg-black/20 backdrop-blur-sm"></div>
@@ -94,8 +91,8 @@ const Services = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {services.map((service, index) => (
-                <Card key={index} className="bg-gradient-card border-0 shadow-soft hover:shadow-floating transition-all duration-300 flex flex-col">
+              {services.map((service) => (
+                <Card key={service.name} className="bg-gradient-card border-0 shadow-soft hover:shadow-floating transition-all duration-300 flex flex-col">
                   <CardHeader>
                     <CardTitle className="text-spa-earth text-xl">
                       {service.name}
@@ -123,12 +120,6 @@ const Services = () => {
                   </CardContent>
                 </Card>
               ))}
-            </div>
-
-            <div className="text-center mt-16">
-              <Button asChild size="lg" className="text-lg px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold shadow-xl">
-                <a href="/#booking">Book Your Massage Today</a>
-              </Button>
             </div>
           </div>
         </section>
@@ -162,11 +153,10 @@ const Services = () => {
           </div>
         </section>
       </main>
-      
       <Footer />
       <FloatingWhatsAppButton />
     </div>
   );
 };
 
-export default Services;
+export default ServicesPage;

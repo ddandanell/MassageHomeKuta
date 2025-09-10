@@ -12,9 +12,9 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img
-          src="/lovable-uploads/0718807a-c0dc-433f-962d-6ae7d5c1a4ae.png"
-          alt="Professional massage therapist providing relaxing treatment"
+                <img 
+          src={heroMassage} 
+          alt="Relaxing in-villa massage in Kuta, Bali"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/30"></div>
