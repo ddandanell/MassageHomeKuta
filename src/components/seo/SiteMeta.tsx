@@ -16,7 +16,7 @@ const SiteMeta = ({
   description = SITE_CONFIG.description,
   keywords = SITE_CONFIG.keywords,
   canonical,
-  ogImage = `${SITE_CONFIG.url}/og-image.jpg?v=2`,
+  ogImage = `${SITE_CONFIG.url}/og-image.jpg?v=3`,
   ogType = "website",
   noindex = false
 }: SiteMetaProps) => {
