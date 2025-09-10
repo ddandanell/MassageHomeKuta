@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { MessageCircle, Phone, Shield, Clock, Star, MapPin, CheckCircle } from "lucide-react";
 import EnhancedBookingDialog from "./EnhancedBookingDialog";
 import { SITE_CONFIG } from "@/config/site";
+import heroMassage from "@/assets/hero-massage.jpg";
 
 const Hero = () => {
   const whatsappMessage = "Hello Home Massage Kuta! I saw your website and I'm interested in booking a massage. Can you help me with availability and pricing?";
