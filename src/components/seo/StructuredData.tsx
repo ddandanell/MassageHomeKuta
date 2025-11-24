@@ -2,6 +2,10 @@ import { Helmet } from "react-helmet-async";
 import { SITE_CONFIG } from "@/config/site";
 import { testimonialReviews } from "@/data/reviews";
 
+/**
+ * Service Schema Data Interface
+ * Used to create page-specific Service schema with custom details
+ */
 interface ServiceSchemaData {
   name: string;
   description: string;
@@ -14,16 +18,37 @@ interface ServiceSchemaData {
   };
 }
 
+/**
+ * StructuredData Component Props
+ * @param type - Type of schema to generate
+ * @param data - Optional data for dynamic schema (breadcrumbs, FAQ, service details)
+ * @param includeReviews - Whether to include Review schema in LocalBusiness (homepage, reviews page)
+ */
 interface StructuredDataProps {
   type?: "organization" | "service" | "faq" | "breadcrumb" | "website";
   data?: any;
   includeReviews?: boolean;
 }
 
+/**
+ * StructuredData Component
+ * 
+ * Generates JSON-LD structured data for SEO and rich results in Google Search.
+ * All business information is centralized in SITE_CONFIG for consistency.
+ * 
+ * Usage Examples:
+ * - <StructuredData type="organization" /> - Basic LocalBusiness
+ * - <StructuredData type="organization" includeReviews={true} /> - With reviews
+ * - <StructuredData type="service" data={customServiceData} /> - Custom service
+ * - <StructuredData type="breadcrumb" data={breadcrumbArray} /> - Breadcrumbs
+ * 
+ * @see /SCHEMA_DOCUMENTATION.md for complete implementation guide
+ */
 const StructuredData = ({ type = "organization", data, includeReviews = false }: StructuredDataProps) => {
   const getStructuredData = () => {
     switch (type) {
       case "organization":
+        // Convert review data to Review schema format
         const reviews = includeReviews ? testimonialReviews.map(review => ({
           "@type": "Review",
           "author": {
@@ -42,6 +67,12 @@ const StructuredData = ({ type = "organization", data, includeReviews = false }:
           }
         })) : [];
 
+        /**
+         * LocalBusiness Schema
+         * Represents the business entity across all pages
+         * Uses @id for entity linking and knowledge graph building
+         * NAP (Name, Address, Phone) must be consistent across all pages
+         */
         return {
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
@@ -83,6 +114,7 @@ const StructuredData = ({ type = "organization", data, includeReviews = false }:
             SITE_CONFIG.socialMedia.facebook,
             SITE_CONFIG.socialMedia.whatsapp
           ],
+          // Only include reviews and aggregate rating if requested
           ...(includeReviews && reviews.length > 0 && {
             "review": reviews,
             "aggregateRating": {
@@ -96,12 +128,19 @@ const StructuredData = ({ type = "organization", data, includeReviews = false }:
 
       case "service":
         const serviceData = data as ServiceSchemaData;
+        // Convert area served to proper City schema format
         const areaServed = serviceData?.areaServed 
           ? (Array.isArray(serviceData.areaServed) 
               ? serviceData.areaServed.map(area => ({ "@type": "City", "name": area }))
               : { "@type": "City", "name": serviceData.areaServed })
           : SITE_CONFIG.serviceAreas.map(area => ({ "@type": "City", "name": area.name }));
 
+        /**
+         * Service Schema
+         * Describes specific services offered (massage types, area-specific services)
+         * Provider references LocalBusiness via @id for entity linking
+         * Should be customized per page with relevant service details
+         */
         return {
           "@context": "https://schema.org",
           "@type": "Service",
@@ -123,6 +162,11 @@ const StructuredData = ({ type = "organization", data, includeReviews = false }:
         };
 
       case "faq":
+        /**
+         * FAQPage Schema
+         * Marks up frequently asked questions for rich results
+         * Data should be array of Question objects with name and acceptedAnswer
+         */
         return {
           "@context": "https://schema.org",
           "@type": "FAQPage",
@@ -130,6 +174,11 @@ const StructuredData = ({ type = "organization", data, includeReviews = false }:
         };
 
       case "website":
+        /**
+         * WebSite Schema
+         * Represents the website as a whole with search functionality
+         * Should appear only on homepage
+         */
         return {
           "@context": "https://schema.org",
           "@type": "WebSite",
@@ -146,6 +195,11 @@ const StructuredData = ({ type = "organization", data, includeReviews = false }:
         };
 
       case "breadcrumb":
+        /**
+         * BreadcrumbList Schema
+         * Navigation breadcrumbs for enhanced search results
+         * Data should be array of ListItem objects with position, name, and item URL
+         */
         return {
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
@@ -161,6 +215,7 @@ const StructuredData = ({ type = "organization", data, includeReviews = false }:
 
   if (!structuredData) return null;
 
+  // Inject JSON-LD into page <head> via React Helmet
   return (
     <Helmet>
       <script type="application/ld+json">

@@ -62,6 +62,7 @@ const Services = () => {
         canonical="/services"
       />
       
+      <StructuredData type="organization" />
       <StructuredData type="service" />
       
       <Header />
