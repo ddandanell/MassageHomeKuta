@@ -7,9 +7,10 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { MessageCircle, Clock, Star, MapPin, Zap, Shield, Users } from "lucide-react";
+import { MessageCircle, Clock, Star, MapPin, Zap, Shield, Users, ArrowRight } from "lucide-react";
 import { ServiceAreaData } from "@/types/landingPageTypes";
 import { SITE_CONFIG } from "@/config/site";
+import { Link } from "react-router-dom";
 
 interface ServiceAreaLandingPageProps {
   data: ServiceAreaData;
@@ -294,6 +295,137 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
             </div>
           </div>
         </section>
+
+        {/* Available Massage Services */}
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-spa-earth mb-4">
+                Massage Services Available in {data.name}
+              </h2>
+              <p className="text-lg text-spa-stone max-w-2xl mx-auto">
+                Choose from our full range of professional treatments delivered to your {data.name} location.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto mb-8">
+              <Card className="bg-white border-spa-stone/20 hover:border-spa-gold transition-all duration-300">
+                <CardHeader>
+                  <CardTitle className="text-spa-earth text-lg">Balinese Massage</CardTitle>
+                  <CardDescription className="text-sm">Traditional healing technique</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-spa-stone text-sm mb-4">Gentle stretches, acupressure, and aromatherapy oils for deep relaxation.</p>
+                  <Button asChild variant="outline" size="sm" className="w-full">
+                    <Link to="/services/balinese-massage">Learn More <ArrowRight className="w-3 h-3 ml-2" /></Link>
+                  </Button>
+                </CardContent>
+              </Card>
+              
+              <Card className="bg-white border-spa-stone/20 hover:border-spa-gold transition-all duration-300">
+                <CardHeader>
+                  <CardTitle className="text-spa-earth text-lg">Deep Tissue Massage</CardTitle>
+                  <CardDescription className="text-sm">Therapeutic muscle therapy</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-spa-stone text-sm mb-4">Targets deep muscle layers to release chronic tension and pain.</p>
+                  <Button asChild variant="outline" size="sm" className="w-full">
+                    <Link to="/services/deep-tissue-massage">Learn More <ArrowRight className="w-3 h-3 ml-2" /></Link>
+                  </Button>
+                </CardContent>
+              </Card>
+              
+              <Card className="bg-white border-spa-stone/20 hover:border-spa-gold transition-all duration-300">
+                <CardHeader>
+                  <CardTitle className="text-spa-earth text-lg">Aromatherapy Massage</CardTitle>
+                  <CardDescription className="text-sm">Essential oil therapy</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-spa-stone text-sm mb-4">Premium essential oils for emotional balance and stress relief.</p>
+                  <Button asChild variant="outline" size="sm" className="w-full">
+                    <Link to="/services/aromatherapy-massage">Learn More <ArrowRight className="w-3 h-3 ml-2" /></Link>
+                  </Button>
+                </CardContent>
+              </Card>
+              
+              <Card className="bg-white border-spa-stone/20 hover:border-spa-gold transition-all duration-300">
+                <CardHeader>
+                  <CardTitle className="text-spa-earth text-lg">Hot Stone Massage</CardTitle>
+                  <CardDescription className="text-sm">Luxury heated stone treatment</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-spa-stone text-sm mb-4">Volcanic stones melt away tension for ultimate relaxation.</p>
+                  <Button asChild variant="outline" size="sm" className="w-full">
+                    <Link to="/services/hot-stone-massage">Learn More <ArrowRight className="w-3 h-3 ml-2" /></Link>
+                  </Button>
+                </CardContent>
+              </Card>
+              
+              <Card className="bg-white border-spa-stone/20 hover:border-spa-gold transition-all duration-300">
+                <CardHeader>
+                  <CardTitle className="text-spa-earth text-lg">Thai Massage</CardTitle>
+                  <CardDescription className="text-sm">Dynamic stretching therapy</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-spa-stone text-sm mb-4">Combines stretching and pressure points for flexibility and energy.</p>
+                  <Button asChild variant="outline" size="sm" className="w-full">
+                    <Link to="/services/thai-massage">Learn More <ArrowRight className="w-3 h-3 ml-2" /></Link>
+                  </Button>
+                </CardContent>
+              </Card>
+              
+              <Card className="bg-white border-spa-stone/20 hover:border-spa-gold transition-all duration-300">
+                <CardHeader>
+                  <CardTitle className="text-spa-earth text-lg">More Services</CardTitle>
+                  <CardDescription className="text-sm">View complete menu</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-spa-stone text-sm mb-4">Four Hands, Pregnancy, Reflexology, Lymphatic Drainage, and more.</p>
+                  <Button asChild variant="outline" size="sm" className="w-full">
+                    <Link to="/services">View All <ArrowRight className="w-3 h-3 ml-2" /></Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* Nearby Service Areas */}
+        {data.nearbyAreas && data.nearbyAreas.length > 0 && (
+          <section className="py-16 bg-spa-cream/30">
+            <div className="container mx-auto px-4">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold text-spa-earth mb-4">
+                  We Also Serve Nearby Areas
+                </h2>
+                <p className="text-lg text-spa-stone max-w-2xl mx-auto">
+                  Explore massage service coverage in areas near {data.name}.
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-8">
+                {data.nearbyAreas.map((area, index) => (
+                  <Link 
+                    key={index}
+                    to={`/areas/${area.toLowerCase().replace(/\s+/g, '-')}`}
+                    className="flex items-center justify-between p-4 bg-white rounded-lg hover:bg-spa-gold/10 transition-all duration-300"
+                  >
+                    <span className="text-spa-earth font-medium text-sm">{area}</span>
+                    <MapPin className="w-4 h-4 text-spa-gold" />
+                  </Link>
+                ))}
+              </div>
+              
+              <div className="text-center">
+                <Button asChild variant="outline" size="lg">
+                  <Link to="/areas">
+                    View All 27 Service Areas <ArrowRight className="w-4 h-4 ml-2" />
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* Final CTA */}
         <section className="py-16 bg-gradient-professional text-primary-foreground">
