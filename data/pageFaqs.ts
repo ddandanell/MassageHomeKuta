@@ -1,10 +1,7 @@
 // SEO-optimized FAQ content for landing pages
 // Each page has unique, localized Q&A content
 
-export interface FAQ {
-  question: string;
-  answer: string;
-}
+import { FAQ } from "@/types/faq";
 
 export const servicesFaqs: FAQ[] = [
   {

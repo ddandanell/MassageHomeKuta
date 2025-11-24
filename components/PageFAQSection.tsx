@@ -1,13 +1,9 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import StructuredData from "@/components/seo/StructuredData";
-
-export interface FAQItem {
-  question: string;
-  answer: string;
-}
+import { FAQ } from "@/types/faq";
 
 interface PageFAQSectionProps {
-  faqs: FAQItem[];
+  faqs: FAQ[];
   title?: string;
   description?: string;
   className?: string;
