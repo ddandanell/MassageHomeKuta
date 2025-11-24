@@ -5,11 +5,13 @@ import Footer from "@/components/Footer";
 import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Clock, Star, Users, MapPin } from "lucide-react";
+import { Clock, Star, Users, MapPin, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const services = [
   {
     name: "Balinese Traditional Massage",
+    slug: "balinese-massage",
     duration: "60-90 minutes",
     price: "Starting from IDR 350k",
     description: "Ancient healing technique combining gentle stretches, acupressure, and aromatherapy oils to restore balance and harmony.",
@@ -17,6 +19,7 @@ const services = [
   },
   {
     name: "Deep Tissue Massage",
+    slug: "deep-tissue-massage",
     duration: "60-90 minutes", 
     price: "Starting from IDR 400k",
     description: "Therapeutic massage targeting deep muscle layers to release chronic tension and alleviate muscle pain.",
@@ -24,6 +27,7 @@ const services = [
   },
   {
     name: "Aromatherapy Massage",
+    slug: "aromatherapy-massage",
     duration: "60-90 minutes",
     price: "Starting from IDR 380k", 
     description: "Relaxing massage using premium essential oils to promote emotional well-being and stress relief.",
@@ -31,6 +35,7 @@ const services = [
   },
   {
     name: "Hot Stone Massage",
+    slug: "hot-stone-massage",
     duration: "75-90 minutes",
     price: "Starting from IDR 450k",
     description: "Luxurious treatment using heated volcanic stones to melt away tension and promote deep relaxation.",
@@ -38,17 +43,51 @@ const services = [
   },
   {
     name: "Thai Massage",
+    slug: "thai-massage",
     duration: "60-90 minutes", 
     price: "Starting from IDR 370k",
     description: "Dynamic massage combining stretching, pressure points, and yoga-like movements for flexibility and energy.",
     benefits: ["Increased flexibility", "Energy boost", "Posture improvement", "Stress relief"]
   },
   {
-    name: "Couples Massage",
+    name: "Four Hands Massage",
+    slug: "four-hands-massage",
     duration: "60-90 minutes",
-    price: "Starting from IDR 700k",
-    description: "Romantic massage experience for two, perfect for couples and friends wanting to relax together.",
-    benefits: ["Shared experience", "Quality time", "Romantic setting", "Double relaxation"]
+    price: "Starting from IDR 800k",
+    description: "Luxurious experience with two therapists working in perfect synchronization for ultimate relaxation.",
+    benefits: ["Ultimate relaxation", "Dual therapist coordination", "Luxury experience", "Enhanced results"]
+  },
+  {
+    name: "Pregnancy Massage",
+    slug: "pregnancy-massage",
+    duration: "60-90 minutes",
+    price: "Starting from IDR 400k",
+    description: "Gentle, specialized massage designed for expectant mothers to relieve pregnancy-related discomfort.",
+    benefits: ["Safe for pregnancy", "Reduces swelling", "Relieves back pain", "Improves sleep"]
+  },
+  {
+    name: "Foot Reflexology",
+    slug: "foot-reflexology",
+    duration: "45-60 minutes",
+    price: "Starting from IDR 250k",
+    description: "Therapeutic foot massage targeting pressure points to promote healing throughout the body.",
+    benefits: ["Stress relief", "Improved circulation", "Pain relief", "Energy boost"]
+  },
+  {
+    name: "Lymphatic Drainage Massage",
+    slug: "lymphatic-drainage-massage",
+    duration: "60-90 minutes",
+    price: "Starting from IDR 450k",
+    description: "Gentle massage technique that helps reduce swelling and supports the body's natural detoxification.",
+    benefits: ["Reduces swelling", "Detoxification", "Boosts immunity", "Improves skin"]
+  },
+  {
+    name: "Jet Lag Recovery Massage",
+    slug: "jet-lag-recovery-massage",
+    duration: "60-90 minutes",
+    price: "Starting from IDR 400k",
+    description: "Specialized treatment to help you recover from travel fatigue and adjust to local time.",
+    benefits: ["Combats jet lag", "Restores energy", "Improves sleep", "Quick recovery"]
   }
 ];
 
@@ -106,11 +145,11 @@ const Services = () => {
                       <span className="font-semibold text-spa-gold">{service.price}</span>
                     </CardDescription>
                   </CardHeader>
-                  <CardContent className="flex-grow">
+                  <CardContent className="flex-grow flex flex-col">
                     <p className="text-spa-stone mb-4 leading-relaxed">
                       {service.description}
                     </p>
-                    <div className="space-y-2">
+                    <div className="space-y-2 mb-4 flex-grow">
                       <h4 className="font-semibold text-spa-earth">Benefits:</h4>
                       <ul className="text-sm text-spa-stone space-y-1">
                         {service.benefits.map((benefit, idx) => (
@@ -121,6 +160,11 @@ const Services = () => {
                         ))}
                       </ul>
                     </div>
+                    <Button asChild variant="outline" className="w-full mt-auto">
+                      <Link to={`/services/${service.slug}`}>
+                        Learn More <ArrowRight className="w-4 h-4 ml-2" />
+                      </Link>
+                    </Button>
                   </CardContent>
                 </Card>
               ))}

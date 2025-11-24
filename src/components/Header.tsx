@@ -14,10 +14,10 @@ const Header = () => {
   const navigationItems = [
     { href: "/", label: "Home", description: "Back to homepage" },
     { href: "/services", label: "Services", description: "View all massage types" },
+    { href: "/areas", label: "Service Areas", description: "Coverage locations" },
     { href: "/about", label: "About", description: "Our story & credentials" },
     { href: "/reviews", label: "Reviews", description: "What clients say" },
-    { href: "/faq", label: "FAQ", description: "Common questions" },
-    { href: "/areas/kuta", label: "Areas", description: "Service locations" }
+    { href: "/faq", label: "FAQ", description: "Common questions" }
   ];
 
   return (
