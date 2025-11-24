@@ -1,4 +1,4 @@
-import { ServiceAreaData } from "@/templates/ServiceAreaLandingPage";
+import { ServiceAreaData } from "@/types/landingPageTypes";
 
 export const legianData: ServiceAreaData = {
   name: "Legian",

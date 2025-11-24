@@ -8,35 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { MessageCircle, Clock, Star, MapPin, Users, CheckCircle } from "lucide-react";
-
-export interface MassageTypeData {
-  name: string;
-  slug: string;
-  heroTitle: string;
-  heroSubtitle: string;
-  metaTitle: string;
-  metaDescription: string;
-  keywords: string;
-  introText: string;
-  benefits: string[];
-  techniques: string[];
-  idealFor: string[];
-  pressureLevels: string[];
-  packages: {
-    duration: string;
-    price: string;
-    description: string;
-  }[];
-  faqs: {
-    question: string;
-    answer: string;
-  }[];
-  testimonial?: {
-    text: string;
-    author: string;
-    location: string;
-  };
-}
+import { MassageTypeData } from "@/types/landingPageTypes";
 
 interface MassageTypeLandingPageProps {
   data: MassageTypeData;

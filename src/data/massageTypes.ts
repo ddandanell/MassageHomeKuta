@@ -1,4 +1,4 @@
-import { MassageTypeData } from "@/templates/MassageTypeLandingPage";
+import { MassageTypeData } from "@/types/landingPageTypes";
 
 export const balineseData: MassageTypeData = {
   name: "Balinese Massage",

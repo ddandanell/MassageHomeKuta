@@ -8,30 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { MessageCircle, Clock, Star, MapPin, Zap, Shield, Users } from "lucide-react";
-
-export interface ServiceAreaData {
-  name: string;
-  slug: string;
-  heroTitle: string;
-  heroSubtitle: string;
-  metaTitle: string;
-  metaDescription: string;
-  keywords: string;
-  introText: string;
-  responseTime: string;
-  landmarks: string[];
-  popularMassageTypes: {
-    name: string;
-    slug: string;
-    description: string;
-  }[];
-  accommodationTypes: string[];
-  faqs: {
-    question: string;
-    answer: string;
-  }[];
-  nearbyAreas: string[];
-}
+import { ServiceAreaData } from "@/types/landingPageTypes";
 
 interface ServiceAreaLandingPageProps {
   data: ServiceAreaData;
