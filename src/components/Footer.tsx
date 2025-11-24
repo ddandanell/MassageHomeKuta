@@ -165,6 +165,13 @@ const Footer = () => {
               >
                 <a href="/faq">FAQ</a>
               </Button>
+              <Button 
+                asChild
+                variant="ghost" 
+                className="w-full justify-start text-left p-0 h-auto hover:bg-white/10 hover:text-professional-gold text-white"
+              >
+                <a href="/sitemap">Sitemap</a>
+              </Button>
             </div>
 
             {/* Emergency Contact */}
