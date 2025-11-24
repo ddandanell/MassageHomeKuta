@@ -3,6 +3,8 @@ import StructuredData from "@/components/seo/StructuredData";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
+import PageFAQSection from "@/components/PageFAQSection";
+import { kutaAreaFaqs } from "@/data/pageFaqs";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -223,6 +225,13 @@ const KutaArea = () => {
             </div>
           </div>
         </section>
+
+        {/* FAQ Section */}
+        <PageFAQSection 
+          faqs={kutaAreaFaqs}
+          title="Service Area Questions"
+          description="Find answers about our coverage areas, response times, and travel charges for home massage service throughout Kuta, Legian, and surrounding neighborhoods."
+        />
       </main>
       
       <Footer />

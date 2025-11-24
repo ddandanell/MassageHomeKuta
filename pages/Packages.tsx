@@ -3,6 +3,8 @@ import StructuredData from "@/components/seo/StructuredData";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
+import PageFAQSection from "@/components/PageFAQSection";
+import { packagesFaqs } from "@/data/pageFaqs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -236,6 +238,13 @@ const Packages = () => {
             </div>
           </div>
         </section>
+
+        {/* FAQ Section */}
+        <PageFAQSection 
+          faqs={packagesFaqs}
+          title="Package Questions & Answers"
+          description="Learn more about our special massage packages, how to customize them, and how they save you money on your Kuta spa experience."
+        />
       </main>
       
       <Footer />

@@ -3,6 +3,8 @@ import StructuredData from "@/components/seo/StructuredData";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
+import PageFAQSection from "@/components/PageFAQSection";
+import { servicesFaqs } from "@/data/pageFaqs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Clock, Star, Users, MapPin } from "lucide-react";
@@ -161,6 +163,13 @@ const Services = () => {
             </div>
           </div>
         </section>
+
+        {/* FAQ Section */}
+        <PageFAQSection 
+          faqs={servicesFaqs}
+          title="Common Questions About Our Massage Services"
+          description="Get answers to frequently asked questions about choosing the right massage type, session duration, and what to expect from our professional home massage service in Kuta."
+        />
       </main>
       
       <Footer />
