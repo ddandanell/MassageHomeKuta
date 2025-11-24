@@ -7,8 +7,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { MessageCircle, Clock, Star, MapPin, Users, CheckCircle } from "lucide-react";
+import { MessageCircle, Clock, Star, MapPin, Users, CheckCircle, ArrowRight } from "lucide-react";
 import { MassageTypeData } from "@/types/landingPageTypes";
+import { Link } from "react-router-dom";
 
 interface MassageTypeLandingPageProps {
   data: MassageTypeData;
@@ -342,6 +343,174 @@ const MassageTypeLandingPage = ({ data }: MassageTypeLandingPageProps) => {
             </div>
           </section>
         )}
+
+        {/* Related Services */}
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-spa-earth mb-4">
+                Explore Other Massage Services
+              </h2>
+              <p className="text-lg text-spa-stone max-w-2xl mx-auto">
+                Discover our full range of professional massage treatments available in Kuta.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-5xl mx-auto mb-8">
+              <Link 
+                to="/services/balinese-massage"
+                className="p-4 bg-white rounded-lg border border-spa-stone/20 hover:border-spa-gold hover:shadow-md transition-all duration-300 text-center"
+              >
+                <div className="text-spa-earth font-medium text-sm mb-1">Balinese Massage</div>
+                <div className="text-xs text-spa-stone">Traditional healing</div>
+              </Link>
+              <Link 
+                to="/services/deep-tissue-massage"
+                className="p-4 bg-white rounded-lg border border-spa-stone/20 hover:border-spa-gold hover:shadow-md transition-all duration-300 text-center"
+              >
+                <div className="text-spa-earth font-medium text-sm mb-1">Deep Tissue</div>
+                <div className="text-xs text-spa-stone">Muscle therapy</div>
+              </Link>
+              <Link 
+                to="/services/aromatherapy-massage"
+                className="p-4 bg-white rounded-lg border border-spa-stone/20 hover:border-spa-gold hover:shadow-md transition-all duration-300 text-center"
+              >
+                <div className="text-spa-earth font-medium text-sm mb-1">Aromatherapy</div>
+                <div className="text-xs text-spa-stone">Essential oils</div>
+              </Link>
+              <Link 
+                to="/services/hot-stone-massage"
+                className="p-4 bg-white rounded-lg border border-spa-stone/20 hover:border-spa-gold hover:shadow-md transition-all duration-300 text-center"
+              >
+                <div className="text-spa-earth font-medium text-sm mb-1">Hot Stone</div>
+                <div className="text-xs text-spa-stone">Luxury treatment</div>
+              </Link>
+              <Link 
+                to="/services/thai-massage"
+                className="p-4 bg-white rounded-lg border border-spa-stone/20 hover:border-spa-gold hover:shadow-md transition-all duration-300 text-center"
+              >
+                <div className="text-spa-earth font-medium text-sm mb-1">Thai Massage</div>
+                <div className="text-xs text-spa-stone">Stretching therapy</div>
+              </Link>
+              <Link 
+                to="/services/four-hands-massage"
+                className="p-4 bg-white rounded-lg border border-spa-stone/20 hover:border-spa-gold hover:shadow-md transition-all duration-300 text-center"
+              >
+                <div className="text-spa-earth font-medium text-sm mb-1">Four Hands</div>
+                <div className="text-xs text-spa-stone">Dual therapists</div>
+              </Link>
+              <Link 
+                to="/services/pregnancy-massage"
+                className="p-4 bg-white rounded-lg border border-spa-stone/20 hover:border-spa-gold hover:shadow-md transition-all duration-300 text-center"
+              >
+                <div className="text-spa-earth font-medium text-sm mb-1">Pregnancy</div>
+                <div className="text-xs text-spa-stone">Safe & gentle</div>
+              </Link>
+              <Link 
+                to="/services/foot-reflexology"
+                className="p-4 bg-white rounded-lg border border-spa-stone/20 hover:border-spa-gold hover:shadow-md transition-all duration-300 text-center"
+              >
+                <div className="text-spa-earth font-medium text-sm mb-1">Reflexology</div>
+                <div className="text-xs text-spa-stone">Pressure points</div>
+              </Link>
+              <Link 
+                to="/services/lymphatic-drainage-massage"
+                className="p-4 bg-white rounded-lg border border-spa-stone/20 hover:border-spa-gold hover:shadow-md transition-all duration-300 text-center"
+              >
+                <div className="text-spa-earth font-medium text-sm mb-1">Lymphatic Drainage</div>
+                <div className="text-xs text-spa-stone">Detoxification</div>
+              </Link>
+              <Link 
+                to="/services/jet-lag-recovery-massage"
+                className="p-4 bg-white rounded-lg border border-spa-stone/20 hover:border-spa-gold hover:shadow-md transition-all duration-300 text-center"
+              >
+                <div className="text-spa-earth font-medium text-sm mb-1">Jet Lag Recovery</div>
+                <div className="text-xs text-spa-stone">Travel fatigue</div>
+              </Link>
+            </div>
+            
+            <div className="text-center">
+              <Button asChild variant="outline" size="lg">
+                <Link to="/services">
+                  View All Services <ArrowRight className="w-4 h-4 ml-2" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* Service Areas */}
+        <section className="py-16 bg-spa-cream/30">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-spa-earth mb-4">
+                Available Throughout Bali
+              </h2>
+              <p className="text-lg text-spa-stone max-w-2xl mx-auto">
+                We deliver {data.name} to your villa or hotel across these popular areas.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 max-w-5xl mx-auto mb-8">
+              <Link to="/areas/kuta" className="flex items-center justify-between p-3 bg-white rounded-lg hover:bg-spa-gold/10 transition-all duration-300">
+                <span className="text-spa-earth text-sm font-medium">Kuta</span>
+                <MapPin className="w-4 h-4 text-spa-gold" />
+              </Link>
+              <Link to="/areas/legian" className="flex items-center justify-between p-3 bg-white rounded-lg hover:bg-spa-gold/10 transition-all duration-300">
+                <span className="text-spa-earth text-sm font-medium">Legian</span>
+                <MapPin className="w-4 h-4 text-spa-gold" />
+              </Link>
+              <Link to="/areas/seminyak" className="flex items-center justify-between p-3 bg-white rounded-lg hover:bg-spa-gold/10 transition-all duration-300">
+                <span className="text-spa-earth text-sm font-medium">Seminyak</span>
+                <MapPin className="w-4 h-4 text-spa-gold" />
+              </Link>
+              <Link to="/areas/canggu" className="flex items-center justify-between p-3 bg-white rounded-lg hover:bg-spa-gold/10 transition-all duration-300">
+                <span className="text-spa-earth text-sm font-medium">Canggu</span>
+                <MapPin className="w-4 h-4 text-spa-gold" />
+              </Link>
+              <Link to="/areas/sanur" className="flex items-center justify-between p-3 bg-white rounded-lg hover:bg-spa-gold/10 transition-all duration-300">
+                <span className="text-spa-earth text-sm font-medium">Sanur</span>
+                <MapPin className="w-4 h-4 text-spa-gold" />
+              </Link>
+              <Link to="/areas/ubud" className="flex items-center justify-between p-3 bg-white rounded-lg hover:bg-spa-gold/10 transition-all duration-300">
+                <span className="text-spa-earth text-sm font-medium">Ubud</span>
+                <MapPin className="w-4 h-4 text-spa-gold" />
+              </Link>
+              <Link to="/areas/nusa-dua" className="flex items-center justify-between p-3 bg-white rounded-lg hover:bg-spa-gold/10 transition-all duration-300">
+                <span className="text-spa-earth text-sm font-medium">Nusa Dua</span>
+                <MapPin className="w-4 h-4 text-spa-gold" />
+              </Link>
+              <Link to="/areas/jimbaran" className="flex items-center justify-between p-3 bg-white rounded-lg hover:bg-spa-gold/10 transition-all duration-300">
+                <span className="text-spa-earth text-sm font-medium">Jimbaran</span>
+                <MapPin className="w-4 h-4 text-spa-gold" />
+              </Link>
+              <Link to="/areas/uluwatu" className="flex items-center justify-between p-3 bg-white rounded-lg hover:bg-spa-gold/10 transition-all duration-300">
+                <span className="text-spa-earth text-sm font-medium">Uluwatu</span>
+                <MapPin className="w-4 h-4 text-spa-gold" />
+              </Link>
+              <Link to="/areas/tuban" className="flex items-center justify-between p-3 bg-white rounded-lg hover:bg-spa-gold/10 transition-all duration-300">
+                <span className="text-spa-earth text-sm font-medium">Tuban</span>
+                <MapPin className="w-4 h-4 text-spa-gold" />
+              </Link>
+              <Link to="/areas/denpasar" className="flex items-center justify-between p-3 bg-white rounded-lg hover:bg-spa-gold/10 transition-all duration-300">
+                <span className="text-spa-earth text-sm font-medium">Denpasar</span>
+                <MapPin className="w-4 h-4 text-spa-gold" />
+              </Link>
+              <Link to="/areas/kerobokan" className="flex items-center justify-between p-3 bg-white rounded-lg hover:bg-spa-gold/10 transition-all duration-300">
+                <span className="text-spa-earth text-sm font-medium">Kerobokan</span>
+                <MapPin className="w-4 h-4 text-spa-gold" />
+              </Link>
+            </div>
+            
+            <div className="text-center">
+              <Button asChild variant="outline" size="lg">
+                <Link to="/areas">
+                  View All 27 Service Areas <ArrowRight className="w-4 h-4 ml-2" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </section>
 
         {/* Final CTA */}
         <section className="py-16 bg-gradient-professional text-primary-foreground">
