@@ -3,7 +3,6 @@ import { Badge } from "@/components/ui/badge";
 import { MessageCircle, Phone, Shield, Clock, Star, MapPin, CheckCircle } from "lucide-react";
 import EnhancedBookingDialog from "./EnhancedBookingDialog";
 import { SITE_CONFIG } from "@/config/site";
-import heroMassage from "@/assets/hero-massage.jpg";
 
 const Hero = () => {
   const whatsappMessage = "Hello Home Massage Kuta! I saw your website and I'm interested in booking a massage. Can you help me with availability and pricing?";
@@ -13,9 +12,9 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
-                <img 
-          src={heroMassage} 
-          alt="Relaxing in-villa massage in Kuta, Bali"
+        <img
+          src="/lovable-uploads/0718807a-c0dc-433f-962d-6ae7d5c1a4ae.png"
+          alt="Professional massage therapist providing relaxing treatment"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/30"></div>

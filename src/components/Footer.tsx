@@ -204,18 +204,8 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Footer Partners */}
-        <div className="text-center border-t border-white/10 pt-8">
-          <h4 className="text-lg font-semibold mb-3">Trusted Massage Partners</h4>
-          <p className="text-professional-gold opacity-90">
-            Discover our sister sites:  
-            <a href="https://homemassagekuta.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors mx-2">Home Massage Kuta</a> &  
-            <a href="https://homemassageubud.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors mx-2">Home Massage Ubud</a>
-          </p>
-        </div>
-
-        {/* Copyright */}
-        <div className="text-center border-t border-white/10 pt-8 mt-8">
+        {/* Bottom Section */}
+        <div className="border-t border-white/20 pt-8 text-center">
           <div className="mb-6">
             <h5 className="text-lg font-semibold mb-3">Ready to Relax?</h5>
             <p className="opacity-90 mb-4">We can be at your villa in 30-60 minutes!</p>
