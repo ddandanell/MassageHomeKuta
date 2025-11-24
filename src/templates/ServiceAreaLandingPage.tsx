@@ -40,6 +40,18 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
     }
   ];
 
+  // Create area-specific service schema data
+  const serviceSchemaData = {
+    name: `Home Massage Service in ${data.name}`,
+    description: data.introText.substring(0, 200) + "...",
+    serviceType: "In-Villa Massage and Spa Services",
+    areaServed: data.name,
+    offers: {
+      priceRange: "$$",
+      priceCurrency: "IDR"
+    }
+  };
+
   return (
     <div className="min-h-screen">
       <SiteMeta 
@@ -49,8 +61,9 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
         canonical={`/areas/${data.slug}`}
       />
       
+      <StructuredData type="organization" />
       <StructuredData type="breadcrumb" data={breadcrumbData} />
-      <StructuredData type="service" />
+      <StructuredData type="service" data={serviceSchemaData} />
       
       <Header />
       
