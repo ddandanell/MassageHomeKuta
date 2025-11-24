@@ -26,7 +26,7 @@ interface ServiceSchemaData {
  */
 interface StructuredDataProps {
   type?: "organization" | "service" | "faq" | "breadcrumb" | "website";
-  data?: any;
+  data?: ServiceSchemaData | Array<{ [key: string]: unknown }> | unknown;
   includeReviews?: boolean;
 }
 
