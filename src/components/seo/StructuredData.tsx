@@ -178,20 +178,13 @@ const StructuredData = ({ type = "organization", data, includeReviews = false }:
          * WebSite Schema
          * Represents the website as a whole with search functionality
          * Should appear only on homepage
+         * Note: Search functionality is not currently implemented on the site
          */
         return {
           "@context": "https://schema.org",
           "@type": "WebSite",
           "name": SITE_CONFIG.name,
-          "url": SITE_CONFIG.url,
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": {
-              "@type": "EntryPoint",
-              "urlTemplate": `${SITE_CONFIG.url}/search?q={search_term_string}`
-            },
-            "query-input": "required name=search_term_string"
-          }
+          "url": SITE_CONFIG.url
         };
 
       case "breadcrumb":

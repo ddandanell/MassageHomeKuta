@@ -43,7 +43,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
   // Create area-specific service schema data
   const serviceSchemaData = {
     name: `Home Massage Service in ${data.name}`,
-    description: data.introText.substring(0, 200) + "...",
+    description: data.introText ? data.introText.substring(0, 200) + "..." : `Professional in-villa massage and spa services delivered to your location in ${data.name}, Bali.`,
     serviceType: "In-Villa Massage and Spa Services",
     areaServed: data.name,
     offers: {
