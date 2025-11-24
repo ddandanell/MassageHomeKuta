@@ -17,6 +17,27 @@ import SeminyakArea from "./pages/SeminyakArea";
 import TubanArea from "./pages/TubanArea";
 import KutaBeachfrontArea from "./pages/KutaBeachfrontArea";
 import KutaCentralArea from "./pages/KutaCentralArea";
+import CangguArea from "./pages/CangguArea";
+import UbudArea from "./pages/UbudArea";
+import SanurArea from "./pages/SanurArea";
+import DenpasarArea from "./pages/DenpasarArea";
+import JimbaranArea from "./pages/JimbaranArea";
+import NusaDuaArea from "./pages/NusaDuaArea";
+import UluwatuArea from "./pages/UluwatuArea";
+import PecatuArea from "./pages/PecatuArea";
+import BukitPeninsulaArea from "./pages/BukitPeninsulaArea";
+import UngasanArea from "./pages/UngasanArea";
+import PererenanArea from "./pages/PererenanArea";
+import BerawaArea from "./pages/BerawaArea";
+import EchoBeachArea from "./pages/EchoBeachArea";
+import BatuBolongArea from "./pages/BatuBolongArea";
+import PetitengetArea from "./pages/PetitengetArea";
+import KerobokanArea from "./pages/KerobokanArea";
+import TanjungBenoaArea from "./pages/TanjungBenoaArea";
+import BenoaArea from "./pages/BenoaArea";
+import PadangPadangArea from "./pages/PadangPadangArea";
+import BinginArea from "./pages/BinginArea";
+import DreamlandArea from "./pages/DreamlandArea";
 import BalineseMassage from "./pages/BalineseMassage";
 import DeepTissueMassage from "./pages/DeepTissueMassage";
 import AromatherapyMassage from "./pages/AromatherapyMassage";
@@ -53,6 +74,27 @@ const App = () => (
             <Route path="/areas/tuban" element={<TubanArea />} />
             <Route path="/areas/kuta-beachfront" element={<KutaBeachfrontArea />} />
             <Route path="/areas/kuta-central" element={<KutaCentralArea />} />
+            <Route path="/areas/canggu" element={<CangguArea />} />
+            <Route path="/areas/ubud" element={<UbudArea />} />
+            <Route path="/areas/sanur" element={<SanurArea />} />
+            <Route path="/areas/denpasar" element={<DenpasarArea />} />
+            <Route path="/areas/jimbaran" element={<JimbaranArea />} />
+            <Route path="/areas/nusa-dua" element={<NusaDuaArea />} />
+            <Route path="/areas/uluwatu" element={<UluwatuArea />} />
+            <Route path="/areas/pecatu" element={<PecatuArea />} />
+            <Route path="/areas/bukit-peninsula" element={<BukitPeninsulaArea />} />
+            <Route path="/areas/ungasan" element={<UngasanArea />} />
+            <Route path="/areas/pererenan" element={<PererenanArea />} />
+            <Route path="/areas/berawa" element={<BerawaArea />} />
+            <Route path="/areas/echo-beach" element={<EchoBeachArea />} />
+            <Route path="/areas/batu-bolong" element={<BatuBolongArea />} />
+            <Route path="/areas/petitenget" element={<PetitengetArea />} />
+            <Route path="/areas/kerobokan" element={<KerobokanArea />} />
+            <Route path="/areas/tanjung-benoa" element={<TanjungBenoaArea />} />
+            <Route path="/areas/benoa" element={<BenoaArea />} />
+            <Route path="/areas/padang-padang" element={<PadangPadangArea />} />
+            <Route path="/areas/bingin" element={<BinginArea />} />
+            <Route path="/areas/dreamland" element={<DreamlandArea />} />
             {/* Massage Type Landing Pages */}
             <Route path="/services/balinese-massage" element={<BalineseMassage />} />
             <Route path="/services/deep-tissue-massage" element={<DeepTissueMassage />} />

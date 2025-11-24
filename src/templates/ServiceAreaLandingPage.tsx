@@ -9,13 +9,14 @@ import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { MessageCircle, Clock, Star, MapPin, Zap, Shield, Users } from "lucide-react";
 import { ServiceAreaData } from "@/types/landingPageTypes";
+import { SITE_CONFIG } from "@/config/site";
 
 interface ServiceAreaLandingPageProps {
   data: ServiceAreaData;
 }
 
 const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
-  const whatsappNumber = "+62 811-2656-869";
+  const whatsappNumber = SITE_CONFIG.phone;
   const whatsappMessage = `Hi! I'm in ${data.name} and would like to book a massage service. Can you help me with availability?`;
   const whatsappUrl = `https://wa.me/${whatsappNumber.replace(/\D/g, '')}?text=${encodeURIComponent(whatsappMessage)}`;
 

@@ -22,8 +22,8 @@ export const SITE_CONFIG = {
   author: "Home Massage Kuta",
   
   // Contact Information (NAP - Name, Address, Phone)
-  phone: "+62 811-2656-869", // International format for schema
-  whatsapp: "+6281126568369", // WhatsApp format (no spaces, hyphens)
+  phone: "+62 811 3702 343", // International format for schema
+  whatsapp: "+6281137023443", // WhatsApp format (no spaces, hyphens)
   email: "info@homemassagekuta.com",
   logo: "https://homemassagekuta.com/logo.svg",
   
@@ -68,7 +68,7 @@ export const SITE_CONFIG = {
   socialMedia: {
     instagram: "https://instagram.com/homemassagekuta",
     facebook: "https://facebook.com/homemassagekuta",
-    whatsapp: "https://wa.me/6281126568369" // WhatsApp link format
+    whatsapp: "https://wa.me/6281137023443" // WhatsApp link format
   },
   
   // Aggregate Rating (Based on customer reviews)
