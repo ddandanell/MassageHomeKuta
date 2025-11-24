@@ -57,6 +57,17 @@ const KutaArea = () => {
     }
   ];
 
+  const serviceSchemaData = {
+    name: "Home Massage Service in Kuta Area",
+    description: "Professional in-villa massage service covering all areas of Kuta, Bali. Fast response times, certified therapists, and premium spa treatments delivered to your location.",
+    serviceType: "In-Villa Massage and Spa Services",
+    areaServed: "Kuta",
+    offers: {
+      priceRange: "$$",
+      priceCurrency: "IDR"
+    }
+  };
+
   return (
     <div className="min-h-screen">
       <SiteMeta 
@@ -66,8 +77,9 @@ const KutaArea = () => {
         canonical="/areas/kuta"
       />
       
+      <StructuredData type="organization" />
       <StructuredData type="breadcrumb" data={breadcrumbData} />
-      <StructuredData type="service" />
+      <StructuredData type="service" data={serviceSchemaData} />
       
       <Header />
       

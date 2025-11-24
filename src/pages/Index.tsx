@@ -27,7 +27,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <SiteMeta />
-      <StructuredData type="organization" />
+      <StructuredData type="organization" includeReviews={true} />
       <StructuredData type="website" />
       <Header />
       <Hero />

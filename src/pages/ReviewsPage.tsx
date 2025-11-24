@@ -21,6 +21,7 @@ const ReviewsPage = () => {
         title="Customer Reviews - Home Massage Kuta | 4.9★ Rated Service"
         description="Read authentic reviews from 500+ satisfied customers. See why Home Massage Kuta is the #1 rated in-villa massage service in Bali with 4.9 stars."
       />
+      <StructuredData type="organization" includeReviews={true} />
       <StructuredData type="service" />
       
       <Header />

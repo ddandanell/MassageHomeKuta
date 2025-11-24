@@ -40,6 +40,20 @@ const MassageTypeLandingPage = ({ data }: MassageTypeLandingPageProps) => {
     }
   ];
 
+  // Create service-specific schema data
+  const serviceSchemaData = {
+    name: `${data.name} in Kuta - In-Villa Mobile Massage Service`,
+    description: data.introText ? data.introText.substring(0, 200) + "..." : `Professional ${data.name} delivered to your villa or hotel in Kuta, Bali.`,
+    serviceType: data.name,
+    areaServed: ["Kuta", "Legian", "Tuban", "Seminyak"],
+    offers: {
+      priceRange: data.packages && data.packages.length > 1 
+        ? `${data.packages[0].price} - ${data.packages[data.packages.length - 1].price}`
+        : "$$",
+      priceCurrency: "IDR"
+    }
+  };
+
   return (
     <div className="min-h-screen">
       <SiteMeta 
@@ -49,8 +63,9 @@ const MassageTypeLandingPage = ({ data }: MassageTypeLandingPageProps) => {
         canonical={`/services/${data.slug}`}
       />
       
+      <StructuredData type="organization" />
       <StructuredData type="breadcrumb" data={breadcrumbData} />
-      <StructuredData type="service" />
+      <StructuredData type="service" data={serviceSchemaData} />
       
       <Header />
       
