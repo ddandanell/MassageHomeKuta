@@ -15,7 +15,7 @@
 export const SITE_CONFIG = {
   // Business Identity
   name: "Home Massage Kuta",
-  url: "https://homemassagekuta.com",
+  url: "https://www.homemassagekuta.com",
   title: "Home Massage Kuta - #1 Professional In-Villa Spa Service Bali",
   description: "Kuta's premier home massage service. Professional therapists bring spa-quality treatments to your villa or hotel. Same-day booking available. Licensed, certified, and trusted by 500+ clients.",
   keywords: "home massage kuta, villa massage bali, mobile spa kuta, balinese massage, deep tissue massage, aromatherapy massage, spa service kuta, in-villa massage, hotel massage bali",
@@ -25,7 +25,7 @@ export const SITE_CONFIG = {
   phone: "+62 811 3702 343", // International format for schema
   whatsapp: "+6281137023443", // WhatsApp format (no spaces, hyphens)
   email: "info@homemassagekuta.com",
-  logo: "https://homemassagekuta.com/logo.svg",
+  logo: "https://www.homemassagekuta.com/logo.svg",
   
   // Postal Address (Schema.org PostalAddress format)
   address: {

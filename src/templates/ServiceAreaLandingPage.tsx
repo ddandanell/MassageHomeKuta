@@ -26,19 +26,19 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://homemassagekuta.com/"
+      "item": "https://www.homemassagekuta.com/"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Service Areas",
-      "item": "https://homemassagekuta.com/areas"
+      "item": "https://www.homemassagekuta.com/areas"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": data.name,
-      "item": `https://homemassagekuta.com/areas/${data.slug}`
+      "item": `https://www.homemassagekuta.com/areas/${data.slug}`
     }
   ];
 
