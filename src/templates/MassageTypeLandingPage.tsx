@@ -25,19 +25,19 @@ const MassageTypeLandingPage = ({ data }: MassageTypeLandingPageProps) => {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://homemassagekuta.com/"
+      "item": "https://www.homemassagekuta.com/"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Services",
-      "item": "https://homemassagekuta.com/services"
+      "item": "https://www.homemassagekuta.com/services"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": data.name,
-      "item": `https://homemassagekuta.com/services/${data.slug}`
+      "item": `https://www.homemassagekuta.com/services/${data.slug}`
     }
   ];
 

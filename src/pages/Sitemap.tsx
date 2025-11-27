@@ -30,6 +30,33 @@ const Sitemap = () => {
     { name: "Jet Lag Recovery Massage", path: "/services/jet-lag-recovery-massage" }
   ];
 
+  const specialtyMassageServices = [
+    { name: "Swedish Massage", path: "/services/swedish-massage" },
+    { name: "Signature Massage", path: "/services/signature-massage" },
+    { name: "Healing Massage", path: "/services/healing-massage" },
+    { name: "Stress Relief Massage", path: "/services/stress-relief-massage" },
+    { name: "Back Pain Massage", path: "/services/back-pain-massage" },
+    { name: "Shoulder Tension Massage", path: "/services/shoulder-tension-massage" },
+    { name: "Head and Neck Massage", path: "/services/head-and-neck-massage" },
+    { name: "Muscle Recovery Therapy", path: "/services/muscle-recovery-therapy" },
+    { name: "Tension Release Massage", path: "/services/tension-release-massage" },
+    { name: "Body Relaxation Therapy", path: "/services/body-relaxation-therapy" },
+    { name: "Rejuvenation Massage", path: "/services/rejuvenation-massage" },
+    { name: "Harmony Massage", path: "/services/harmony-massage" },
+    { name: "Therapeutic Touch Massage", path: "/services/therapeutic-touch-massage" },
+    { name: "Energy Balancing Massage", path: "/services/energy-balancing-massage" },
+    { name: "Soothing Oil Massage", path: "/services/soothing-oil-massage" },
+    { name: "Holistic Body Massage", path: "/services/holistic-body-massage" },
+    { name: "Restorative Massage", path: "/services/restorative-massage" },
+    { name: "Comfort Massage", path: "/services/comfort-massage" },
+    { name: "Gentle Touch Massage", path: "/services/gentle-touch-massage" },
+    { name: "Revitalizing Massage", path: "/services/revitalizing-massage" },
+    { name: "Calming Body Treatment", path: "/services/calming-body-treatment" },
+    { name: "Rejuvenating Body Treatment", path: "/services/rejuvenating-body-treatment" },
+    { name: "Spa Body Treatment", path: "/services/spa-body-treatment" },
+    { name: "Premium Spa Treatment", path: "/services/premium-spa-treatment" }
+  ];
+
   const primaryAreas = [
     { name: "Kuta", path: "/areas/kuta" },
     { name: "Legian", path: "/areas/legian" },
@@ -134,6 +161,29 @@ const Sitemap = () => {
               </ul>
             </div>
 
+            {/* Specialty Massage Services */}
+            <div className="bg-white rounded-lg shadow-soft p-8 lg:col-span-2">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 bg-purple-500/20 rounded-lg flex items-center justify-center">
+                  <Star className="w-6 h-6 text-purple-600" />
+                </div>
+                <h2 className="text-2xl font-bold text-spa-earth">Specialty Massage Services</h2>
+              </div>
+              <p className="text-sm text-spa-stone mb-4">24 specialized treatments for specific needs</p>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+                {specialtyMassageServices.map((service, index) => (
+                  <Link 
+                    key={index}
+                    to={service.path}
+                    className="flex items-center justify-between p-2 rounded-lg hover:bg-purple-50 transition-all duration-300 text-sm"
+                  >
+                    <span className="text-spa-earth font-medium">{service.name}</span>
+                    <span className="text-purple-600 text-xs">→</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
             {/* Primary Service Areas */}
             <div className="bg-white rounded-lg shadow-soft p-8">
               <div className="flex items-center gap-3 mb-6">
@@ -191,11 +241,11 @@ const Sitemap = () => {
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
               <div className="text-center">
-                <div className="text-3xl font-bold text-spa-gold mb-2">45+</div>
+                <div className="text-3xl font-bold text-spa-gold mb-2">70+</div>
                 <div className="text-sm text-spa-stone">Total Pages</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-emerald-600 mb-2">10</div>
+                <div className="text-3xl font-bold text-emerald-600 mb-2">34</div>
                 <div className="text-sm text-spa-stone">Massage Services</div>
               </div>
               <div className="text-center">

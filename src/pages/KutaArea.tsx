@@ -41,19 +41,19 @@ const KutaArea = () => {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://homemassagekuta.com/"
+      "item": "https://www.homemassagekuta.com/"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Service Areas",
-      "item": "https://homemassagekuta.com/areas"
+      "item": "https://www.homemassagekuta.com/areas"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "Kuta Area",
-      "item": "https://homemassagekuta.com/areas/kuta"
+      "item": "https://www.homemassagekuta.com/areas/kuta"
     }
   ];
 
