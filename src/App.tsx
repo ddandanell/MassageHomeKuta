@@ -49,6 +49,33 @@ import FourHandsMassage from "./pages/FourHandsMassage";
 import PregnancyMassage from "./pages/PregnancyMassage";
 import FootReflexology from "./pages/FootReflexology";
 import JetLagRecoveryMassage from "./pages/JetLagRecoveryMassage";
+// New Specialty Massage Pages - Batch 1
+import HealingMassage from "./pages/HealingMassage";
+import TensionReleaseMassage from "./pages/TensionReleaseMassage";
+import MuscleRecoveryTherapy from "./pages/MuscleRecoveryTherapy";
+import BodyRelaxationTherapy from "./pages/BodyRelaxationTherapy";
+import StressReliefMassage from "./pages/StressReliefMassage";
+import SwedishMassage from "./pages/SwedishMassage";
+import SignatureMassage from "./pages/SignatureMassage";
+import RejuvenationMassage from "./pages/RejuvenationMassage";
+import HarmonyMassage from "./pages/HarmonyMassage";
+import TherapeuticTouchMassage from "./pages/TherapeuticTouchMassage";
+// New Specialty Massage Pages - Batch 2
+import RejuvenatingBodyTreatment from "./pages/RejuvenatingBodyTreatment";
+import EnergyBalancingMassage from "./pages/EnergyBalancingMassage";
+import SoothingOilMassage from "./pages/SoothingOilMassage";
+import HeadAndNeckMassage from "./pages/HeadAndNeckMassage";
+import BackPainMassage from "./pages/BackPainMassage";
+import ShoulderTensionMassage from "./pages/ShoulderTensionMassage";
+import CalmingBodyTreatment from "./pages/CalmingBodyTreatment";
+import HolisticBodyMassage from "./pages/HolisticBodyMassage";
+import SpaBodyTreatment from "./pages/SpaBodyTreatment";
+import RestorativeMassage from "./pages/RestorativeMassage";
+// New Specialty Massage Pages - Batch 3
+import ComfortMassage from "./pages/ComfortMassage";
+import GentleTouchMassage from "./pages/GentleTouchMassage";
+import PremiumSpaTreatment from "./pages/PremiumSpaTreatment";
+import RevitalizingMassage from "./pages/RevitalizingMassage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -108,6 +135,33 @@ const App = () => (
             <Route path="/services/pregnancy-massage" element={<PregnancyMassage />} />
             <Route path="/services/foot-reflexology" element={<FootReflexology />} />
             <Route path="/services/jet-lag-recovery-massage" element={<JetLagRecoveryMassage />} />
+            {/* New Specialty Massage Type Landing Pages - Batch 1 */}
+            <Route path="/services/healing-massage" element={<HealingMassage />} />
+            <Route path="/services/tension-release-massage" element={<TensionReleaseMassage />} />
+            <Route path="/services/muscle-recovery-therapy" element={<MuscleRecoveryTherapy />} />
+            <Route path="/services/body-relaxation-therapy" element={<BodyRelaxationTherapy />} />
+            <Route path="/services/stress-relief-massage" element={<StressReliefMassage />} />
+            <Route path="/services/swedish-massage" element={<SwedishMassage />} />
+            <Route path="/services/signature-massage" element={<SignatureMassage />} />
+            <Route path="/services/rejuvenation-massage" element={<RejuvenationMassage />} />
+            <Route path="/services/harmony-massage" element={<HarmonyMassage />} />
+            <Route path="/services/therapeutic-touch-massage" element={<TherapeuticTouchMassage />} />
+            {/* New Specialty Massage Type Landing Pages - Batch 2 */}
+            <Route path="/services/rejuvenating-body-treatment" element={<RejuvenatingBodyTreatment />} />
+            <Route path="/services/energy-balancing-massage" element={<EnergyBalancingMassage />} />
+            <Route path="/services/soothing-oil-massage" element={<SoothingOilMassage />} />
+            <Route path="/services/head-and-neck-massage" element={<HeadAndNeckMassage />} />
+            <Route path="/services/back-pain-massage" element={<BackPainMassage />} />
+            <Route path="/services/shoulder-tension-massage" element={<ShoulderTensionMassage />} />
+            <Route path="/services/calming-body-treatment" element={<CalmingBodyTreatment />} />
+            <Route path="/services/holistic-body-massage" element={<HolisticBodyMassage />} />
+            <Route path="/services/spa-body-treatment" element={<SpaBodyTreatment />} />
+            <Route path="/services/restorative-massage" element={<RestorativeMassage />} />
+            {/* New Specialty Massage Type Landing Pages - Batch 3 */}
+            <Route path="/services/comfort-massage" element={<ComfortMassage />} />
+            <Route path="/services/gentle-touch-massage" element={<GentleTouchMassage />} />
+            <Route path="/services/premium-spa-treatment" element={<PremiumSpaTreatment />} />
+            <Route path="/services/revitalizing-massage" element={<RevitalizingMassage />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
