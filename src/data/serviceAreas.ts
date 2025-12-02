@@ -3,38 +3,40 @@ import { ServiceAreaData } from "@/types/landingPageTypes";
 export const legianData: ServiceAreaData = {
   name: "Legian",
   slug: "legian",
-  heroTitle: "Massage Service in Legian – Professional Mobile Spa",
-  heroSubtitle: "Premium massage service delivered to your villa or hotel in Legian. Fast response times, certified therapists, open 7 AM–10 PM daily.",
-  metaTitle: "Massage Service in Legian Bali | Mobile Spa – 7 AM–10 PM",
-  metaDescription: "Book professional massage in Legian. Certified therapists come to your villa or hotel. Same-day booking available. WhatsApp to book.",
-  keywords: "massage legian, legian massage service, mobile massage legian, villa massage legian, hotel massage legian bali, spa service legian",
-  introText: "Looking for professional massage service in Legian? Our mobile spa brings certified therapists and professional equipment directly to your villa or hotel throughout Legian. Whether you're staying near Legian Beach, Double Six Beach, or anywhere in the Legian area, we provide fast, reliable massage service with typical response times of 15-25 minutes. Choose from Balinese massage, deep tissue, aromatherapy, and more – all delivered to your location.",
+  heroTitle: "Home Massage in Legian – Premium In-Villa Mobile Spa Service",
+  heroSubtitle: "Experience authentic Balinese healing delivered to your Legian villa, hotel, or beachfront accommodation. Certified professional therapists available daily 7 AM–10 PM with fast 15-25 minute response times.",
+  metaTitle: "Home Massage in Legian, Bali | In-Villa Mobile Spa • 7 AM–10 PM",
+  metaDescription: "Book professional home massage in Legian. Certified Balinese therapists come to your villa or hotel. Serving Legian Beach, Double Six, Poppies Lane. Same-day booking available.",
+  keywords: "home massage legian, legian massage service, mobile spa legian bali, villa massage legian beach, hotel massage legian, double six massage, poppies lane spa service, in-room massage legian",
+  introText: "Welcome to Legian's premier home massage service, where traditional Balinese healing wisdom meets modern professional convenience. Whether you're unwinding in a beachfront villa overlooking the famous Legian Beach sunsets, relaxing in a boutique hotel along vibrant Jalan Legian, or staying in a cozy guesthouse tucked away on Poppies Lane, our certified therapists bring five-star spa treatments directly to your doorstep. Legian occupies the perfect sweet spot between bustling Kuta and upscale Seminyak, offering the ideal balance of accessibility, beach culture, and relaxation that makes it one of Bali's most beloved destinations for travelers seeking genuine rest and rejuvenation.",
   responseTime: "15-25 minutes",
   landmarks: [
-    "Legian Beach area and beachfront",
+    "Legian Beach area and beachfront hotels",
     "Double Six Beach (Seminyak border)",
     "Legian Street (Jalan Legian)",
     "Poppies Lane 1 and 2",
-    "Padma area and hotels",
-    "Melasti Street area",
-    "Werkudara Street",
-    "Near Beachwalk Shopping Center"
+    "Padma Resort and surrounding area",
+    "Melasti Street and nearby properties",
+    "Werkudara Street hotels",
+    "Beachwalk Shopping Center vicinity",
+    "Sky Garden area",
+    "Jayakarta Beach area"
   ],
   popularMassageTypes: [
     {
       name: "Balinese Massage",
       slug: "balinese-massage",
-      description: "Traditional Balinese healing with gentle stretching and aromatherapy oils. Most popular choice in Legian."
+      description: "Traditional Balinese healing combining gentle stretching, acupressure, and aromatic oils. The most authentic choice for your Legian villa experience."
     },
     {
       name: "Deep Tissue Massage",
       slug: "deep-tissue-massage",
-      description: "Therapeutic massage perfect after surfing at Legian Beach or intense activities."
+      description: "Therapeutic deep muscle work perfect for surfers returning from Legian Beach breaks or travelers with travel-related tension."
     },
     {
       name: "Aromatherapy Massage",
       slug: "aromatherapy-massage",
-      description: "Relaxing massage with premium essential oils, ideal for unwinding after beach days."
+      description: "Premium essential oil therapy combining scent and touch for complete relaxation. Ideal for unwinding after exploring Legian's vibrant street scene."
     }
   ],
   accommodationTypes: [
@@ -42,45 +44,159 @@ export const legianData: ServiceAreaData = {
     "Boutique Villas",
     "Budget Guesthouses",
     "Luxury Resorts",
-    "Private Villas",
+    "Private Pool Villas",
     "Hostels",
-    "Airbnb Properties"
+    "Airbnb Properties",
+    "Surf Camps"
   ],
   faqs: [
     {
-      question: "Do you serve hotels on Legian Beach?",
-      answer: "Yes! We serve all beachfront hotels along Legian Beach including Padma Resort, Jayakarta, and all properties along the beach road. Response time is typically 15-20 minutes."
+      question: "Do you serve beachfront hotels along Legian Beach?",
+      answer: "Yes! We serve all beachfront properties along Legian Beach including Padma Resort Legian, The Jayakarta, All Seasons Legian, and every hotel along the beach road. Our therapists know these properties well and typically arrive within 15-20 minutes. Many Legian Beach hotel guests book sunset massage sessions timed perfectly with the famous Legian sunsets."
     },
     {
-      question: "Can I book massage for my villa on Double Six?",
-      answer: "Absolutely! Double Six area is within our primary service zone. We can reach properties near Double Six Beach in approximately 15-25 minutes."
+      question: "Can I book home massage for my Double Six Beach villa?",
+      answer: "Absolutely! Double Six Beach (the northern end of Legian near Seminyak border) is within our primary service zone. We reach Double Six properties in approximately 15-25 minutes. This area is popular for luxury villas, and we bring professional equipment suitable for poolside or in-villa massage sessions with ocean views."
     },
     {
-      question: "How close are you to Legian Street?",
-      answer: "Very close! Properties on or near Jalan Legian receive fast service, usually within 15-20 minutes depending on exact location."
+      question: "How fast can you reach properties on Legian Street (Jalan Legian)?",
+      answer: "Very fast! Jalan Legian is our core coverage area. Properties on or near Legian Street receive some of our quickest response times, usually 15-20 minutes depending on exact location. Whether you're staying above a café, in a mid-range hotel, or a guesthouse down a gang, we'll find you efficiently."
     },
     {
-      question: "What's the difference between Legian and Kuta massage service?",
-      answer: "Same quality service! Legian is actually faster for us as it's in our primary service zone. Response times are typically quicker to Legian than central Kuta."
-    },
-    {
-      question: "Do you serve the budget hostels in Legian?",
-      answer: "Yes! We serve all accommodation types from budget hostels to luxury resorts. Everyone deserves quality massage regardless of where they're staying."
+      question: "Do you serve budget hostels and guesthouses in Legian?",
+      answer: "Yes! We believe everyone deserves quality massage regardless of accommodation budget. We serve all types from budget hostels and backpacker guesthouses to luxury resorts. Our 60-minute sessions are perfect for budget-conscious travelers seeking professional massage without spa prices."
     },
     {
       question: "Can I book couples massage in my Legian villa?",
-      answer: "Absolutely! We arrange two therapists for simultaneous couples massage. Very popular in Legian villas. Just mention it when booking."
-    },
-    {
-      question: "Is Legian Beach area convenient for your service?",
-      answer: "Very convenient! Legian is in our core service area. We know every street and can find any property quickly with minimal response time."
+      answer: "Definitely! Couples massage is extremely popular in Legian villas. We arrange two synchronized therapists who work together for romantic simultaneous massage. Perfect for honeymoons, anniversaries, or simply treating yourselves. Just mention couples massage when booking via WhatsApp."
     },
     {
       question: "What if I'm staying at Poppies Lane?",
-      answer: "Poppies Lane (both 1 and 2) is perfectly within our service area. Response time is approximately 15-20 minutes to Poppies Lane locations."
+      answer: "Poppies Lane 1 and 2 are perfectly within our service area – these famous Legian lanes with their mix of budget and mid-range accommodations are very familiar to our therapists. Response time to Poppies Lane is typically 15-20 minutes. We navigate the narrow lanes easily and can find even the most hidden guesthouses."
+    },
+    {
+      question: "Is massage available after nightlife hours in Legian?",
+      answer: "Our service hours are 7 AM to 10 PM daily. While we don't operate after 10 PM, morning-after massage is very popular with Legian visitors! Book a late morning or afternoon session after your night out on Legian Street – it's the perfect recovery strategy."
+    },
+    {
+      question: "Do you serve the Sky Garden area and nightlife district?",
+      answer: "Yes! The Sky Garden area and surrounding nightlife district are fully within our coverage. Many visitors to this area book daytime massage for relaxation and recovery. Our therapists know the hotels and accommodations in this vibrant zone very well."
     }
   ],
-  nearbyAreas: ["Kuta", "Seminyak", "Tuban", "Kuta Central"]
+  nearbyAreas: ["Kuta", "Seminyak", "Tuban", "Kuta Central", "Kuta Beachfront"],
+  extendedContent: {
+    areaDescription: `Legian is the heart of Bali's original tourist beach strip, positioned perfectly between the energetic buzz of Kuta to the south and the sophisticated refinement of Seminyak to the north. This approximately 2-kilometer stretch of coastline has been welcoming international visitors since Bali's tourism boom began in the 1970s, evolving from a quiet fishing village extension into one of the island's most diverse and accessible beach destinations.
+
+What makes Legian special is its remarkable balance. Unlike Kuta, which can feel overwhelming with its crowds and hawkers, Legian offers a slightly calmer atmosphere while maintaining excellent access to everything travelers need. Unlike Seminyak, which has shifted toward upscale boutique experiences, Legian retains genuine affordability and diversity in accommodation options – from surfer hostels to five-star beachfront resorts, all within walking distance of each other.
+
+The beach itself stretches from the busy main section near Beachwalk Mall northward to the iconic Double Six Beach (so named for the nightclub that once dominated the area). Legian Beach offers consistent surf breaks suitable for beginners and intermediate surfers, golden sand that's well-maintained by local authorities, and that legendary Bali sunset view that draws crowds each evening to beach bars and beachfront restaurants.
+
+Behind the beach, Legian's street grid provides easy navigation. The main artery, Jalan Legian, runs parallel to the beach and hosts an eclectic mix of shops, restaurants, tour operators, and money changers. The famous Poppies Lanes – numbered 1 and 2 – cut perpendicular from Jalan Legian toward the beach, packed with budget accommodations, local warungs, and the kind of authentic backpacker atmosphere that has attracted budget travelers for decades.`,
+
+    localCulture: `While Legian has been shaped by tourism, authentic Balinese culture remains visible throughout the area for those who look beyond the beach bars and souvenir shops. Local temples dot the neighborhoods, their ornate gates and daily offerings (canang sari) reminding visitors that they're guests in a deeply spiritual culture.
+
+The Balinese who live and work in Legian maintain their religious traditions alongside tourism. You'll see ceremonies and processions during major Hindu holidays, when streets may close temporarily for elaborate temple festivals. Many massage therapists working in Legian come from surrounding villages where massage skills have been passed down through families for generations – the techniques used in traditional Balinese massage originate from ancient healing practices intertwined with Hindu and Buddhist spiritual traditions.
+
+Legian's local community includes a mix of Balinese families who've lived here for generations, business owners from across Indonesia who've established shops and restaurants, and the transient international community of long-term visitors, digital nomads, and seasonal workers. This diversity creates a welcoming, cosmopolitan atmosphere where most people speak at least basic English and are accustomed to serving international visitors.
+
+The concept of bringing professional massage to private accommodations aligns perfectly with Balinese hospitality culture. In Bali, guest comfort is paramount, and the tradition of skilled bodywork being delivered to wherever the guest resides has ancient roots. Our mobile massage service continues this tradition, bringing the healing arts directly to your villa or hotel room.`,
+
+    villaCulture: `Legian's accommodation scene ranges from simple guesthouses to extraordinary private villas, and our massage service adapts seamlessly to every setting. Villa culture in Legian tends toward a mix of styles – you'll find traditional Balinese-style villas with open-air living spaces, modern minimalist designs with infinity pools, and everything in between.
+
+Many Legian villas feature private pools, making poolside massage a popular choice. Our therapists bring professional portable massage tables that can be set up on pool decks, in garden pavilions, or inside air-conditioned bedrooms – wherever you prefer to receive your treatment. The villa environment allows for complete privacy and personalization that's simply not possible in spa settings.
+
+For villa guests, we recommend taking full advantage of your private space. Book a couples massage by the pool at sunset, arrange sequential treatments for a group traveling together, or create your own spa day without leaving your accommodation. Villa hosts often appreciate our service because it adds value to their guests' experience without requiring any additional work from them – we bring everything needed and leave the space cleaner than we found it.
+
+Hotel guests in Legian can also enjoy mobile massage in their rooms. Most Legian hotels are accustomed to outside massage services, and we coordinate with hotel staff to ensure smooth, professional service. Simply confirm with your front desk that outside massage providers are permitted, and we'll handle the rest.`,
+
+    touristBehavior: `Legian attracts a wonderfully diverse mix of visitors, from young backpackers on their first big trip to families with children and retired couples seeking beach relaxation. Understanding what brings people to Legian helps explain why mobile massage has become so popular here.
+
+Many Legian visitors are beach-focused travelers who spend significant time in the sun and surf. After a day of swimming, surfing, or simply walking the beach collecting shells, muscles are often tired and sun-exposed skin craves moisture and attention. A post-beach massage with cooling aromatherapy oils provides perfect recovery.
+
+The nightlife crowd – and Legian has significant nightlife along Jalan Legian and the Sky Garden area – often needs recovery time. Morning-after massage sessions are popular for obvious reasons. The therapeutic benefits of massage include promoting lymphatic drainage, reducing inflammation, and encouraging restful sleep – all helpful after late nights.
+
+Active travelers who explore beyond the beach often book massage after day trips to Ubud, volcano trekking, or temple tours. Long days in cars on Bali's bumpy roads, walking temple stairs, or hiking create muscle fatigue that responds beautifully to professional massage.
+
+Business travelers passing through Legian appreciate the convenience of in-room massage that works around unpredictable schedules. Rather than blocking out time to visit a spa, they can book massage for their hotel room whenever their schedule allows.
+
+Families traveling with children particularly value mobile massage because it eliminates the need to arrange childcare or leave kids in the hotel room alone. Parents can take turns receiving massage while the other watches children, or book during naptime or after kids are asleep.`,
+
+    neighborhoodDetails: `Understanding Legian's neighborhoods helps you choose the perfect location for your stay and helps us serve you faster. Here's a neighborhood-by-neighborhood guide:
+
+Southern Legian (Near Kuta Border): This area around the southern end of Jalan Legian transitions into Kuta territory. It's walking distance to Beachwalk Mall and Kuta Beach. Accommodation here tends toward budget and mid-range options with easy access to shops and restaurants. Response time from our base: 15-20 minutes.
+
+Central Legian (Poppies Lane Area): The heart of classic Legian backpacker territory. Poppies Lane 1 and 2 offer iconic budget accommodation, local warungs serving nasi goreng for a few dollars, and that authentic backpacker atmosphere that's been drawing travelers since the 1970s. Despite the narrow lanes, we navigate here daily. Response time: 15-18 minutes.
+
+Legian Beach Road: Properties along the beach road enjoy proximity to sand and surf at premium prices. Hotels like Padma Resort Legian and the Jayakarta dominate this strip. Beachfront rooms and villas here are perfect for sunset massage sessions. Response time: 15-20 minutes.
+
+Northern Legian (Near Double Six): As you head north toward Seminyak, Legian becomes increasingly upscale. The Double Six Beach area features more boutique hotels and private villas. Beach clubs and upmarket restaurants line the sand. This area is popular with young professionals and couples seeking a more refined atmosphere. Response time: 18-25 minutes.
+
+Back Streets (Gangs): Behind the main roads, narrow gang lead to hidden guesthouses, family-run homestays, and local housing. These quiet streets offer authentic neighborhood experiences at lower prices. Don't worry about being hard to find – our therapists know these back alleys well. Response time: varies by specific location.`,
+
+    localDishes: `Legian offers excellent dining options that pair perfectly with a wellness-focused day. After your massage, consider exploring these local favorites:
+
+Traditional Balinese: Warung Ibu Made on Poppies Lane 2 serves legendary local dishes. Try the babi guling (suckling pig) if available, or opt for nasi campur – mixed rice with various Balinese side dishes. The prices are local, the atmosphere is authentic, and the food is genuinely excellent.
+
+Indonesian Variety: Beyond Balinese cuisine, Legian offers Indonesian dishes from across the archipelago. Look for nasi goreng (fried rice), mie goreng (fried noodles), sate (grilled meat skewers), and gado-gado (vegetable salad with peanut sauce). These hearty dishes are perfect for recovering energy after massage.
+
+Healthy Options: Health-conscious visitors will find smoothie bowls, fresh juice bars, and vegetarian restaurants scattered throughout Legian. Many cafés cater to wellness travelers with organic options, cold-pressed juices, and açaí bowls – perfect light eating before or after massage.
+
+Beach Seafood: Legian Beach features several restaurants offering fresh seafood grilled to order. The jimbaran-style grilled fish with sambal matah is particularly popular. Combine sunset beach dining with a pre-dinner massage for the ultimate Legian evening experience.
+
+Late Night Eating: After long nights, Legian's 24-hour warungs serve restorative local food. Bubur ayam (chicken porridge) is a traditional Indonesian breakfast that also works as late-night recovery food. Our morning-after massage clients often follow treatment with a hearty local breakfast.`,
+
+    problemsWeSolve: `Mobile massage in Legian solves specific problems that travelers frequently encounter:
+
+Post-Flight Recovery: Many visitors arrive in Legian directly from Ngurah Rai Airport after long international flights. Jet lag, cramped muscles, dehydration, and travel fatigue respond beautifully to massage. Our jet lag recovery massage, in particular, combines techniques designed to reset your body clock and reduce travel-related swelling.
+
+Surf and Beach Fatigue: Legian Beach draws surfers of all skill levels to its consistent breaks. Paddling, duck diving, and attempting maneuvers creates specific muscle fatigue in shoulders, arms, and core. Even non-surfers who spend active days swimming, beach walking, or playing in the waves need recovery work.
+
+Sun and Heat Exposure: Bali's tropical climate, while beautiful, can be physically demanding. Extended sun exposure, heat-related fatigue, and mild dehydration make massage's circulatory benefits particularly valuable. Our aromatherapy massage with cooling essential oils provides relief from heat stress.
+
+Walking and Exploring Fatigue: Legian visitors often underestimate how much walking they'll do – along the beach, through shopping streets, exploring temples. Foot reflexology and full-body massage address tired feet and legs that come from extensive walking.
+
+Stress Release: Many visitors come to Legian specifically to decompress from stressful home lives. The transition from work mode to vacation mode sometimes requires more than just being in a beautiful place. Professional massage accelerates this transition by physically releasing tension that stress stores in the body.
+
+Nightlife Recovery: Let's be honest – Legian's nightlife scene draws many visitors, and the next day can be rough. Massage promotes toxin elimination, reduces headache through improved circulation, and provides restorative care that helps visitors make the most of their remaining vacation days.`,
+
+    pricingContext: `Understanding massage pricing in Legian helps you recognize the value our professional mobile service provides:
+
+Street Massage vs. Professional Service: You'll see massage offered on Legian Beach and along walking streets for very low prices (sometimes as little as IDR 50,000-100,000). While these providers offer basic relaxation, they lack professional training, quality oils, proper hygiene standards, and the controlled environment that optimizes massage benefits. Our professional service, while higher priced, delivers therapeutic results that budget massage simply cannot match.
+
+Spa Prices in Legian: Day spas in the Legian area typically charge IDR 400,000-800,000 for full-body massage, plus you must travel to their location, work around their schedule, and share space with other guests. Our mobile service delivers equivalent quality directly to your accommodation, often at comparable or lower total cost when you factor in transportation and time savings.
+
+Our Pricing Philosophy: We price our services to provide genuine value while ensuring therapists earn fair wages for skilled professional work. Our prices include all travel costs, professional equipment, and premium oils – no hidden fees or surprise charges. Tips are appreciated but never expected or pressured.
+
+Group and Recurring Discounts: Families or groups booking multiple simultaneous massage receive natural savings through efficient therapist scheduling. Long-term Legian visitors booking recurring weekly massage enjoy consistent service with preferred therapists. Contact us to discuss arrangements for longer stays.
+
+Value-Added Benefits: Beyond the massage itself, our service includes consultation with therapists about pressure preferences, technique customization, and aftercare recommendations. We're invested in your wellness outcome, not just transaction completion.`
+  },
+  localTestimonials: [
+    {
+      text: "We booked massage for our villa on Poppies Lane and it was absolutely perfect. The therapist found us easily despite the narrow lane, brought everything needed, and gave us both incredible Balinese massage by our small pool. Much better than trying to find a spa and drag ourselves there after beach days.",
+      author: "Rachel & Tom",
+      accommodation: "Villa on Poppies Lane 2, Legian",
+      rating: 5
+    },
+    {
+      text: "As a solo female traveler, I was initially hesitant about mobile massage but this service put my mind at ease. The WhatsApp communication was professional, the therapist arrived exactly on time at my hotel, and the deep tissue massage was exactly what I needed after surfing Legian Beach all week. Will definitely book again.",
+      author: "Emma S.",
+      accommodation: "Hotel on Legian Beach Road",
+      rating: 5
+    },
+    {
+      text: "We stayed at a Legian resort for our honeymoon and booked couples massage twice. Having therapists come to our room was so much more romantic and relaxing than going to the hotel spa. The sunset session on our balcony overlooking Double Six Beach was absolutely magical.",
+      author: "Alex & Jordan",
+      accommodation: "Resort near Double Six Beach",
+      rating: 5
+    },
+    {
+      text: "Great service for families! We have two kids under 8, and leaving them to go to a spa was never going to work. Instead, my wife and I took turns getting massage in our room while the other watched the kids at the pool. Practical, professional, and excellent massage quality.",
+      author: "Mark D.",
+      accommodation: "Family Villa, Central Legian",
+      rating: 5
+    }
+  ]
 };
 
 export const seminyakData: ServiceAreaData = {

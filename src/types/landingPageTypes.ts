@@ -25,6 +25,22 @@ export interface MassageTypeData {
     author: string;
     location: string;
   };
+  // Extended SEO content sections (optional for backwards compatibility)
+  extendedContent?: {
+    historyAndOrigin?: string;
+    detailedProcess?: string;
+    preparationTips?: string;
+    aftercareTips?: string;
+    comparisonWithOthers?: string;
+    expertInsights?: string;
+    localContext?: string;
+  };
+  additionalTestimonials?: {
+    text: string;
+    author: string;
+    location: string;
+    rating?: number;
+  }[];
 }
 
 export interface ServiceAreaData {
@@ -49,4 +65,22 @@ export interface ServiceAreaData {
     answer: string;
   }[];
   nearbyAreas: string[];
+  // Extended SEO content sections (optional for backwards compatibility)
+  extendedContent?: {
+    areaDescription?: string;
+    localCulture?: string;
+    villaCulture?: string;
+    touristBehavior?: string;
+    neighborhoodDetails?: string;
+    localDishes?: string;
+    problemsWeSolve?: string;
+    pricingContext?: string;
+    whyChooseUs?: string;
+  };
+  localTestimonials?: {
+    text: string;
+    author: string;
+    accommodation?: string;
+    rating?: number;
+  }[];
 }

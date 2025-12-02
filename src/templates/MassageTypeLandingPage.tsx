@@ -295,6 +295,150 @@ const MassageTypeLandingPage = ({ data }: MassageTypeLandingPageProps) => {
           </div>
         </section>
 
+        {/* Extended Content Sections - Only render if extendedContent is provided */}
+        {data.extendedContent && (
+          <>
+            {/* History and Origin */}
+            {data.extendedContent.historyAndOrigin && (
+              <section className="py-16 bg-spa-cream/30">
+                <div className="container mx-auto px-4 max-w-4xl">
+                  <h2 className="text-3xl font-bold text-spa-earth mb-6">
+                    The History & Origins of {data.name}
+                  </h2>
+                  <div className="prose prose-lg text-spa-stone max-w-none">
+                    <p className="leading-relaxed whitespace-pre-line">
+                      {data.extendedContent.historyAndOrigin}
+                    </p>
+                  </div>
+                </div>
+              </section>
+            )}
+
+            {/* Detailed Process */}
+            {data.extendedContent.detailedProcess && (
+              <section className="py-16 bg-background">
+                <div className="container mx-auto px-4 max-w-4xl">
+                  <h2 className="text-3xl font-bold text-spa-earth mb-6">
+                    What to Expect During Your {data.name} Session
+                  </h2>
+                  <div className="prose prose-lg text-spa-stone max-w-none">
+                    <p className="leading-relaxed whitespace-pre-line">
+                      {data.extendedContent.detailedProcess}
+                    </p>
+                  </div>
+                </div>
+              </section>
+            )}
+
+            {/* Preparation Tips */}
+            {data.extendedContent.preparationTips && (
+              <section className="py-16 bg-spa-cream/30">
+                <div className="container mx-auto px-4 max-w-4xl">
+                  <h2 className="text-3xl font-bold text-spa-earth mb-6">
+                    How to Prepare for Your {data.name}
+                  </h2>
+                  <div className="prose prose-lg text-spa-stone max-w-none">
+                    <p className="leading-relaxed whitespace-pre-line">
+                      {data.extendedContent.preparationTips}
+                    </p>
+                  </div>
+                </div>
+              </section>
+            )}
+
+            {/* Aftercare Tips */}
+            {data.extendedContent.aftercareTips && (
+              <section className="py-16 bg-background">
+                <div className="container mx-auto px-4 max-w-4xl">
+                  <h2 className="text-3xl font-bold text-spa-earth mb-6">
+                    Post-{data.name} Care & Tips
+                  </h2>
+                  <div className="prose prose-lg text-spa-stone max-w-none">
+                    <p className="leading-relaxed whitespace-pre-line">
+                      {data.extendedContent.aftercareTips}
+                    </p>
+                  </div>
+                </div>
+              </section>
+            )}
+
+            {/* Comparison with Others */}
+            {data.extendedContent.comparisonWithOthers && (
+              <section className="py-16 bg-spa-cream/30">
+                <div className="container mx-auto px-4 max-w-4xl">
+                  <h2 className="text-3xl font-bold text-spa-earth mb-6">
+                    {data.name} vs. Other Massage Types
+                  </h2>
+                  <div className="prose prose-lg text-spa-stone max-w-none">
+                    <p className="leading-relaxed whitespace-pre-line">
+                      {data.extendedContent.comparisonWithOthers}
+                    </p>
+                  </div>
+                </div>
+              </section>
+            )}
+
+            {/* Expert Insights */}
+            {data.extendedContent.expertInsights && (
+              <section className="py-16 bg-background">
+                <div className="container mx-auto px-4 max-w-4xl">
+                  <h2 className="text-3xl font-bold text-spa-earth mb-6">
+                    Expert Insights on {data.name}
+                  </h2>
+                  <div className="prose prose-lg text-spa-stone max-w-none">
+                    <p className="leading-relaxed whitespace-pre-line">
+                      {data.extendedContent.expertInsights}
+                    </p>
+                  </div>
+                </div>
+              </section>
+            )}
+
+            {/* Local Context */}
+            {data.extendedContent.localContext && (
+              <section className="py-16 bg-spa-cream/30">
+                <div className="container mx-auto px-4 max-w-4xl">
+                  <h2 className="text-3xl font-bold text-spa-earth mb-6">
+                    {data.name} in Bali: A Unique Experience
+                  </h2>
+                  <div className="prose prose-lg text-spa-stone max-w-none">
+                    <p className="leading-relaxed whitespace-pre-line">
+                      {data.extendedContent.localContext}
+                    </p>
+                  </div>
+                </div>
+              </section>
+            )}
+          </>
+        )}
+
+        {/* Additional Testimonials - Only render if provided */}
+        {data.additionalTestimonials && data.additionalTestimonials.length > 0 && (
+          <section className="py-16 bg-background">
+            <div className="container mx-auto px-4">
+              <h2 className="text-3xl font-bold text-spa-earth text-center mb-12">
+                More Reviews from Our {data.name} Clients
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                {data.additionalTestimonials.map((testimonial, index) => (
+                  <Card key={index} className="bg-gradient-card border-0 shadow-soft">
+                    <CardContent className="pt-6">
+                      <div className="flex mb-4">
+                        {[...Array(testimonial.rating || 5)].map((_, i) => (
+                          <Star key={i} className="w-4 h-4 text-spa-gold fill-current" />
+                        ))}
+                      </div>
+                      <p className="text-spa-stone italic mb-4">"{testimonial.text}"</p>
+                      <div className="text-spa-earth font-semibold">{testimonial.author}</div>
+                      <div className="text-spa-stone/70 text-sm">{testimonial.location}</div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* FAQ Section */}
         <section className="py-16 bg-spa-cream/30">
           <div className="container mx-auto px-4">
