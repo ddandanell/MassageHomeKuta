@@ -226,6 +226,170 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
           </div>
         </section>
 
+        {/* Extended Content Sections - Only render if extendedContent is provided */}
+        {data.extendedContent && (
+          <>
+            {/* Area Description */}
+            {data.extendedContent.areaDescription && (
+              <section className="py-16 bg-background">
+                <div className="container mx-auto px-4 max-w-4xl">
+                  <h2 className="text-3xl font-bold text-spa-earth mb-6">
+                    About {data.name}: A Complete Guide
+                  </h2>
+                  <div className="prose prose-lg text-spa-stone max-w-none">
+                    <p className="leading-relaxed whitespace-pre-line">
+                      {data.extendedContent.areaDescription}
+                    </p>
+                  </div>
+                </div>
+              </section>
+            )}
+
+            {/* Local Culture & Villa Culture */}
+            {(data.extendedContent.localCulture || data.extendedContent.villaCulture) && (
+              <section className="py-16 bg-spa-cream/30">
+                <div className="container mx-auto px-4 max-w-4xl">
+                  {data.extendedContent.localCulture && (
+                    <div className="mb-12">
+                      <h2 className="text-3xl font-bold text-spa-earth mb-6">
+                        Local Culture in {data.name}
+                      </h2>
+                      <div className="prose prose-lg text-spa-stone max-w-none">
+                        <p className="leading-relaxed whitespace-pre-line">
+                          {data.extendedContent.localCulture}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                  
+                  {data.extendedContent.villaCulture && (
+                    <div>
+                      <h2 className="text-3xl font-bold text-spa-earth mb-6">
+                        Villa Life in {data.name}
+                      </h2>
+                      <div className="prose prose-lg text-spa-stone max-w-none">
+                        <p className="leading-relaxed whitespace-pre-line">
+                          {data.extendedContent.villaCulture}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </section>
+            )}
+
+            {/* Tourist Behavior & Neighborhood Details */}
+            {(data.extendedContent.touristBehavior || data.extendedContent.neighborhoodDetails) && (
+              <section className="py-16 bg-background">
+                <div className="container mx-auto px-4 max-w-4xl">
+                  {data.extendedContent.touristBehavior && (
+                    <div className="mb-12">
+                      <h2 className="text-3xl font-bold text-spa-earth mb-6">
+                        What Visitors Love About {data.name}
+                      </h2>
+                      <div className="prose prose-lg text-spa-stone max-w-none">
+                        <p className="leading-relaxed whitespace-pre-line">
+                          {data.extendedContent.touristBehavior}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                  
+                  {data.extendedContent.neighborhoodDetails && (
+                    <div>
+                      <h2 className="text-3xl font-bold text-spa-earth mb-6">
+                        {data.name} Neighborhood Guide
+                      </h2>
+                      <div className="prose prose-lg text-spa-stone max-w-none">
+                        <p className="leading-relaxed whitespace-pre-line">
+                          {data.extendedContent.neighborhoodDetails}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </section>
+            )}
+
+            {/* Local Dishes */}
+            {data.extendedContent.localDishes && (
+              <section className="py-16 bg-spa-cream/30">
+                <div className="container mx-auto px-4 max-w-4xl">
+                  <h2 className="text-3xl font-bold text-spa-earth mb-6">
+                    Local Cuisine Near {data.name}
+                  </h2>
+                  <div className="prose prose-lg text-spa-stone max-w-none">
+                    <p className="leading-relaxed whitespace-pre-line">
+                      {data.extendedContent.localDishes}
+                    </p>
+                  </div>
+                </div>
+              </section>
+            )}
+
+            {/* Problems We Solve */}
+            {data.extendedContent.problemsWeSolve && (
+              <section className="py-16 bg-background">
+                <div className="container mx-auto px-4 max-w-4xl">
+                  <h2 className="text-3xl font-bold text-spa-earth mb-6">
+                    How Our Mobile Massage Helps {data.name} Visitors
+                  </h2>
+                  <div className="prose prose-lg text-spa-stone max-w-none">
+                    <p className="leading-relaxed whitespace-pre-line">
+                      {data.extendedContent.problemsWeSolve}
+                    </p>
+                  </div>
+                </div>
+              </section>
+            )}
+
+            {/* Pricing Context */}
+            {data.extendedContent.pricingContext && (
+              <section className="py-16 bg-spa-cream/30">
+                <div className="container mx-auto px-4 max-w-4xl">
+                  <h2 className="text-3xl font-bold text-spa-earth mb-6">
+                    Massage Pricing in {data.name}
+                  </h2>
+                  <div className="prose prose-lg text-spa-stone max-w-none">
+                    <p className="leading-relaxed whitespace-pre-line">
+                      {data.extendedContent.pricingContext}
+                    </p>
+                  </div>
+                </div>
+              </section>
+            )}
+          </>
+        )}
+
+        {/* Local Testimonials - Only render if provided */}
+        {data.localTestimonials && data.localTestimonials.length > 0 && (
+          <section className="py-16 bg-background">
+            <div className="container mx-auto px-4">
+              <h2 className="text-3xl font-bold text-spa-earth text-center mb-12">
+                What {data.name} Guests Say About Our Service
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                {data.localTestimonials.map((testimonial, index) => (
+                  <Card key={index} className="bg-gradient-card border-0 shadow-soft">
+                    <CardContent className="pt-6">
+                      <div className="flex mb-4">
+                        {[...Array(testimonial.rating || 5)].map((_, i) => (
+                          <Star key={i} className="w-4 h-4 text-spa-gold fill-current" />
+                        ))}
+                      </div>
+                      <p className="text-spa-stone italic mb-4">"{testimonial.text}"</p>
+                      <div className="text-spa-earth font-semibold">{testimonial.author}</div>
+                      {testimonial.accommodation && (
+                        <div className="text-spa-stone/70 text-sm">{testimonial.accommodation}</div>
+                      )}
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* FAQ Section */}
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">

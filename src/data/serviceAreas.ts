@@ -3,38 +3,40 @@ import { ServiceAreaData } from "@/types/landingPageTypes";
 export const legianData: ServiceAreaData = {
   name: "Legian",
   slug: "legian",
-  heroTitle: "Massage Service in Legian – Professional Mobile Spa",
-  heroSubtitle: "Premium massage service delivered to your villa or hotel in Legian. Fast response times, certified therapists, open 7 AM–10 PM daily.",
-  metaTitle: "Massage Service in Legian Bali | Mobile Spa – 7 AM–10 PM",
-  metaDescription: "Book professional massage in Legian. Certified therapists come to your villa or hotel. Same-day booking available. WhatsApp to book.",
-  keywords: "massage legian, legian massage service, mobile massage legian, villa massage legian, hotel massage legian bali, spa service legian",
-  introText: "Looking for professional massage service in Legian? Our mobile spa brings certified therapists and professional equipment directly to your villa or hotel throughout Legian. Whether you're staying near Legian Beach, Double Six Beach, or anywhere in the Legian area, we provide fast, reliable massage service with typical response times of 15-25 minutes. Choose from Balinese massage, deep tissue, aromatherapy, and more – all delivered to your location.",
+  heroTitle: "Home Massage in Legian – Premium In-Villa Mobile Spa Service",
+  heroSubtitle: "Experience authentic Balinese healing delivered to your Legian villa, hotel, or beachfront accommodation. Certified professional therapists available daily 7 AM–10 PM with fast 15-25 minute response times.",
+  metaTitle: "Home Massage in Legian, Bali | In-Villa Mobile Spa • 7 AM–10 PM",
+  metaDescription: "Book professional home massage in Legian. Certified Balinese therapists come to your villa or hotel. Serving Legian Beach, Double Six, Poppies Lane. Same-day booking available.",
+  keywords: "home massage legian, legian massage service, mobile spa legian bali, villa massage legian beach, hotel massage legian, double six massage, poppies lane spa service, in-room massage legian",
+  introText: "Welcome to Legian's premier home massage service, where traditional Balinese healing wisdom meets modern professional convenience. Whether you're unwinding in a beachfront villa overlooking the famous Legian Beach sunsets, relaxing in a boutique hotel along vibrant Jalan Legian, or staying in a cozy guesthouse tucked away on Poppies Lane, our certified therapists bring five-star spa treatments directly to your doorstep. Legian occupies the perfect sweet spot between bustling Kuta and upscale Seminyak, offering the ideal balance of accessibility, beach culture, and relaxation that makes it one of Bali's most beloved destinations for travelers seeking genuine rest and rejuvenation.",
   responseTime: "15-25 minutes",
   landmarks: [
-    "Legian Beach area and beachfront",
+    "Legian Beach area and beachfront hotels",
     "Double Six Beach (Seminyak border)",
     "Legian Street (Jalan Legian)",
     "Poppies Lane 1 and 2",
-    "Padma area and hotels",
-    "Melasti Street area",
-    "Werkudara Street",
-    "Near Beachwalk Shopping Center"
+    "Padma Resort and surrounding area",
+    "Melasti Street and nearby properties",
+    "Werkudara Street hotels",
+    "Beachwalk Shopping Center vicinity",
+    "Sky Garden area",
+    "Jayakarta Beach area"
   ],
   popularMassageTypes: [
     {
       name: "Balinese Massage",
       slug: "balinese-massage",
-      description: "Traditional Balinese healing with gentle stretching and aromatherapy oils. Most popular choice in Legian."
+      description: "Traditional Balinese healing combining gentle stretching, acupressure, and aromatic oils. The most authentic choice for your Legian villa experience."
     },
     {
       name: "Deep Tissue Massage",
       slug: "deep-tissue-massage",
-      description: "Therapeutic massage perfect after surfing at Legian Beach or intense activities."
+      description: "Therapeutic deep muscle work perfect for surfers returning from Legian Beach breaks or travelers with travel-related tension."
     },
     {
       name: "Aromatherapy Massage",
       slug: "aromatherapy-massage",
-      description: "Relaxing massage with premium essential oils, ideal for unwinding after beach days."
+      description: "Premium essential oil therapy combining scent and touch for complete relaxation. Ideal for unwinding after exploring Legian's vibrant street scene."
     }
   ],
   accommodationTypes: [
@@ -42,45 +44,159 @@ export const legianData: ServiceAreaData = {
     "Boutique Villas",
     "Budget Guesthouses",
     "Luxury Resorts",
-    "Private Villas",
+    "Private Pool Villas",
     "Hostels",
-    "Airbnb Properties"
+    "Airbnb Properties",
+    "Surf Camps"
   ],
   faqs: [
     {
-      question: "Do you serve hotels on Legian Beach?",
-      answer: "Yes! We serve all beachfront hotels along Legian Beach including Padma Resort, Jayakarta, and all properties along the beach road. Response time is typically 15-20 minutes."
+      question: "Do you serve beachfront hotels along Legian Beach?",
+      answer: "Yes! We serve all beachfront properties along Legian Beach including Padma Resort Legian, The Jayakarta, All Seasons Legian, and every hotel along the beach road. Our therapists know these properties well and typically arrive within 15-20 minutes. Many Legian Beach hotel guests book sunset massage sessions timed perfectly with the famous Legian sunsets."
     },
     {
-      question: "Can I book massage for my villa on Double Six?",
-      answer: "Absolutely! Double Six area is within our primary service zone. We can reach properties near Double Six Beach in approximately 15-25 minutes."
+      question: "Can I book home massage for my Double Six Beach villa?",
+      answer: "Absolutely! Double Six Beach (the northern end of Legian near Seminyak border) is within our primary service zone. We reach Double Six properties in approximately 15-25 minutes. This area is popular for luxury villas, and we bring professional equipment suitable for poolside or in-villa massage sessions with ocean views."
     },
     {
-      question: "How close are you to Legian Street?",
-      answer: "Very close! Properties on or near Jalan Legian receive fast service, usually within 15-20 minutes depending on exact location."
+      question: "How fast can you reach properties on Legian Street (Jalan Legian)?",
+      answer: "Very fast! Jalan Legian is our core coverage area. Properties on or near Legian Street receive some of our quickest response times, usually 15-20 minutes depending on exact location. Whether you're staying above a café, in a mid-range hotel, or a guesthouse down a gang, we'll find you efficiently."
     },
     {
-      question: "What's the difference between Legian and Kuta massage service?",
-      answer: "Same quality service! Legian is actually faster for us as it's in our primary service zone. Response times are typically quicker to Legian than central Kuta."
-    },
-    {
-      question: "Do you serve the budget hostels in Legian?",
-      answer: "Yes! We serve all accommodation types from budget hostels to luxury resorts. Everyone deserves quality massage regardless of where they're staying."
+      question: "Do you serve budget hostels and guesthouses in Legian?",
+      answer: "Yes! We believe everyone deserves quality massage regardless of accommodation budget. We serve all types from budget hostels and backpacker guesthouses to luxury resorts. Our 60-minute sessions are perfect for budget-conscious travelers seeking professional massage without spa prices."
     },
     {
       question: "Can I book couples massage in my Legian villa?",
-      answer: "Absolutely! We arrange two therapists for simultaneous couples massage. Very popular in Legian villas. Just mention it when booking."
-    },
-    {
-      question: "Is Legian Beach area convenient for your service?",
-      answer: "Very convenient! Legian is in our core service area. We know every street and can find any property quickly with minimal response time."
+      answer: "Definitely! Couples massage is extremely popular in Legian villas. We arrange two synchronized therapists who work together for romantic simultaneous massage. Perfect for honeymoons, anniversaries, or simply treating yourselves. Just mention couples massage when booking via WhatsApp."
     },
     {
       question: "What if I'm staying at Poppies Lane?",
-      answer: "Poppies Lane (both 1 and 2) is perfectly within our service area. Response time is approximately 15-20 minutes to Poppies Lane locations."
+      answer: "Poppies Lane 1 and 2 are perfectly within our service area – these famous Legian lanes with their mix of budget and mid-range accommodations are very familiar to our therapists. Response time to Poppies Lane is typically 15-20 minutes. We navigate the narrow lanes easily and can find even the most hidden guesthouses."
+    },
+    {
+      question: "Is massage available after nightlife hours in Legian?",
+      answer: "Our service hours are 7 AM to 10 PM daily. While we don't operate after 10 PM, morning-after massage is very popular with Legian visitors! Book a late morning or afternoon session after your night out on Legian Street – it's the perfect recovery strategy."
+    },
+    {
+      question: "Do you serve the Sky Garden area and nightlife district?",
+      answer: "Yes! The Sky Garden area and surrounding nightlife district are fully within our coverage. Many visitors to this area book daytime massage for relaxation and recovery. Our therapists know the hotels and accommodations in this vibrant zone very well."
     }
   ],
-  nearbyAreas: ["Kuta", "Seminyak", "Tuban", "Kuta Central"]
+  nearbyAreas: ["Kuta", "Seminyak", "Tuban", "Kuta Central", "Kuta Beachfront"],
+  extendedContent: {
+    areaDescription: `Legian is the heart of Bali's original tourist beach strip, positioned perfectly between the energetic buzz of Kuta to the south and the sophisticated refinement of Seminyak to the north. This approximately 2-kilometer stretch of coastline has been welcoming international visitors since Bali's tourism boom began in the 1970s, evolving from a quiet fishing village extension into one of the island's most diverse and accessible beach destinations.
+
+What makes Legian special is its remarkable balance. Unlike Kuta, which can feel overwhelming with its crowds and hawkers, Legian offers a slightly calmer atmosphere while maintaining excellent access to everything travelers need. Unlike Seminyak, which has shifted toward upscale boutique experiences, Legian retains genuine affordability and diversity in accommodation options – from surfer hostels to five-star beachfront resorts, all within walking distance of each other.
+
+The beach itself stretches from the busy main section near Beachwalk Mall northward to the iconic Double Six Beach (so named for the nightclub that once dominated the area). Legian Beach offers consistent surf breaks suitable for beginners and intermediate surfers, golden sand that's well-maintained by local authorities, and that legendary Bali sunset view that draws crowds each evening to beach bars and beachfront restaurants.
+
+Behind the beach, Legian's street grid provides easy navigation. The main artery, Jalan Legian, runs parallel to the beach and hosts an eclectic mix of shops, restaurants, tour operators, and money changers. The famous Poppies Lanes – numbered 1 and 2 – cut perpendicular from Jalan Legian toward the beach, packed with budget accommodations, local warungs, and the kind of authentic backpacker atmosphere that has attracted budget travelers for decades.`,
+
+    localCulture: `While Legian has been shaped by tourism, authentic Balinese culture remains visible throughout the area for those who look beyond the beach bars and souvenir shops. Local temples dot the neighborhoods, their ornate gates and daily offerings (canang sari) reminding visitors that they're guests in a deeply spiritual culture.
+
+The Balinese who live and work in Legian maintain their religious traditions alongside tourism. You'll see ceremonies and processions during major Hindu holidays, when streets may close temporarily for elaborate temple festivals. Many massage therapists working in Legian come from surrounding villages where massage skills have been passed down through families for generations – the techniques used in traditional Balinese massage originate from ancient healing practices intertwined with Hindu and Buddhist spiritual traditions.
+
+Legian's local community includes a mix of Balinese families who've lived here for generations, business owners from across Indonesia who've established shops and restaurants, and the transient international community of long-term visitors, digital nomads, and seasonal workers. This diversity creates a welcoming, cosmopolitan atmosphere where most people speak at least basic English and are accustomed to serving international visitors.
+
+The concept of bringing professional massage to private accommodations aligns perfectly with Balinese hospitality culture. In Bali, guest comfort is paramount, and the tradition of skilled bodywork being delivered to wherever the guest resides has ancient roots. Our mobile massage service continues this tradition, bringing the healing arts directly to your villa or hotel room.`,
+
+    villaCulture: `Legian's accommodation scene ranges from simple guesthouses to extraordinary private villas, and our massage service adapts seamlessly to every setting. Villa culture in Legian tends toward a mix of styles – you'll find traditional Balinese-style villas with open-air living spaces, modern minimalist designs with infinity pools, and everything in between.
+
+Many Legian villas feature private pools, making poolside massage a popular choice. Our therapists bring professional portable massage tables that can be set up on pool decks, in garden pavilions, or inside air-conditioned bedrooms – wherever you prefer to receive your treatment. The villa environment allows for complete privacy and personalization that's simply not possible in spa settings.
+
+For villa guests, we recommend taking full advantage of your private space. Book a couples massage by the pool at sunset, arrange sequential treatments for a group traveling together, or create your own spa day without leaving your accommodation. Villa hosts often appreciate our service because it adds value to their guests' experience without requiring any additional work from them – we bring everything needed and leave the space cleaner than we found it.
+
+Hotel guests in Legian can also enjoy mobile massage in their rooms. Most Legian hotels are accustomed to outside massage services, and we coordinate with hotel staff to ensure smooth, professional service. Simply confirm with your front desk that outside massage providers are permitted, and we'll handle the rest.`,
+
+    touristBehavior: `Legian attracts a wonderfully diverse mix of visitors, from young backpackers on their first big trip to families with children and retired couples seeking beach relaxation. Understanding what brings people to Legian helps explain why mobile massage has become so popular here.
+
+Many Legian visitors are beach-focused travelers who spend significant time in the sun and surf. After a day of swimming, surfing, or simply walking the beach collecting shells, muscles are often tired and sun-exposed skin craves moisture and attention. A post-beach massage with cooling aromatherapy oils provides perfect recovery.
+
+The nightlife crowd – and Legian has significant nightlife along Jalan Legian and the Sky Garden area – often needs recovery time. Morning-after massage sessions are popular for obvious reasons. The therapeutic benefits of massage include promoting lymphatic drainage, reducing inflammation, and encouraging restful sleep – all helpful after late nights.
+
+Active travelers who explore beyond the beach often book massage after day trips to Ubud, volcano trekking, or temple tours. Long days in cars on Bali's bumpy roads, walking temple stairs, or hiking create muscle fatigue that responds beautifully to professional massage.
+
+Business travelers passing through Legian appreciate the convenience of in-room massage that works around unpredictable schedules. Rather than blocking out time to visit a spa, they can book massage for their hotel room whenever their schedule allows.
+
+Families traveling with children particularly value mobile massage because it eliminates the need to arrange childcare or leave kids in the hotel room alone. Parents can take turns receiving massage while the other watches children, or book during naptime or after kids are asleep.`,
+
+    neighborhoodDetails: `Understanding Legian's neighborhoods helps you choose the perfect location for your stay and helps us serve you faster. Here's a neighborhood-by-neighborhood guide:
+
+Southern Legian (Near Kuta Border): This area around the southern end of Jalan Legian transitions into Kuta territory. It's walking distance to Beachwalk Mall and Kuta Beach. Accommodation here tends toward budget and mid-range options with easy access to shops and restaurants. Response time from our base: 15-20 minutes.
+
+Central Legian (Poppies Lane Area): The heart of classic Legian backpacker territory. Poppies Lane 1 and 2 offer iconic budget accommodation, local warungs serving nasi goreng for a few dollars, and that authentic backpacker atmosphere that's been drawing travelers since the 1970s. Despite the narrow lanes, we navigate here daily. Response time: 15-18 minutes.
+
+Legian Beach Road: Properties along the beach road enjoy proximity to sand and surf at premium prices. Hotels like Padma Resort Legian and the Jayakarta dominate this strip. Beachfront rooms and villas here are perfect for sunset massage sessions. Response time: 15-20 minutes.
+
+Northern Legian (Near Double Six): As you head north toward Seminyak, Legian becomes increasingly upscale. The Double Six Beach area features more boutique hotels and private villas. Beach clubs and upmarket restaurants line the sand. This area is popular with young professionals and couples seeking a more refined atmosphere. Response time: 18-25 minutes.
+
+Back Streets (Gangs): Behind the main roads, narrow gang lead to hidden guesthouses, family-run homestays, and local housing. These quiet streets offer authentic neighborhood experiences at lower prices. Don't worry about being hard to find – our therapists know these back alleys well. Response time: varies by specific location.`,
+
+    localDishes: `Legian offers excellent dining options that pair perfectly with a wellness-focused day. After your massage, consider exploring these local favorites:
+
+Traditional Balinese: Warung Ibu Made on Poppies Lane 2 serves legendary local dishes. Try the babi guling (suckling pig) if available, or opt for nasi campur – mixed rice with various Balinese side dishes. The prices are local, the atmosphere is authentic, and the food is genuinely excellent.
+
+Indonesian Variety: Beyond Balinese cuisine, Legian offers Indonesian dishes from across the archipelago. Look for nasi goreng (fried rice), mie goreng (fried noodles), sate (grilled meat skewers), and gado-gado (vegetable salad with peanut sauce). These hearty dishes are perfect for recovering energy after massage.
+
+Healthy Options: Health-conscious visitors will find smoothie bowls, fresh juice bars, and vegetarian restaurants scattered throughout Legian. Many cafés cater to wellness travelers with organic options, cold-pressed juices, and açaí bowls – perfect light eating before or after massage.
+
+Beach Seafood: Legian Beach features several restaurants offering fresh seafood grilled to order. The jimbaran-style grilled fish with sambal matah is particularly popular. Combine sunset beach dining with a pre-dinner massage for the ultimate Legian evening experience.
+
+Late Night Eating: After long nights, Legian's 24-hour warungs serve restorative local food. Bubur ayam (chicken porridge) is a traditional Indonesian breakfast that also works as late-night recovery food. Our morning-after massage clients often follow treatment with a hearty local breakfast.`,
+
+    problemsWeSolve: `Mobile massage in Legian solves specific problems that travelers frequently encounter:
+
+Post-Flight Recovery: Many visitors arrive in Legian directly from Ngurah Rai Airport after long international flights. Jet lag, cramped muscles, dehydration, and travel fatigue respond beautifully to massage. Our jet lag recovery massage, in particular, combines techniques designed to reset your body clock and reduce travel-related swelling.
+
+Surf and Beach Fatigue: Legian Beach draws surfers of all skill levels to its consistent breaks. Paddling, duck diving, and attempting maneuvers creates specific muscle fatigue in shoulders, arms, and core. Even non-surfers who spend active days swimming, beach walking, or playing in the waves need recovery work.
+
+Sun and Heat Exposure: Bali's tropical climate, while beautiful, can be physically demanding. Extended sun exposure, heat-related fatigue, and mild dehydration make massage's circulatory benefits particularly valuable. Our aromatherapy massage with cooling essential oils provides relief from heat stress.
+
+Walking and Exploring Fatigue: Legian visitors often underestimate how much walking they'll do – along the beach, through shopping streets, exploring temples. Foot reflexology and full-body massage address tired feet and legs that come from extensive walking.
+
+Stress Release: Many visitors come to Legian specifically to decompress from stressful home lives. The transition from work mode to vacation mode sometimes requires more than just being in a beautiful place. Professional massage accelerates this transition by physically releasing tension that stress stores in the body.
+
+Nightlife Recovery: Let's be honest – Legian's nightlife scene draws many visitors, and the next day can be rough. Massage promotes toxin elimination, reduces headache through improved circulation, and provides restorative care that helps visitors make the most of their remaining vacation days.`,
+
+    pricingContext: `Understanding massage pricing in Legian helps you recognize the value our professional mobile service provides:
+
+Street Massage vs. Professional Service: You'll see massage offered on Legian Beach and along walking streets for very low prices (sometimes as little as IDR 50,000-100,000). While these providers offer basic relaxation, they lack professional training, quality oils, proper hygiene standards, and the controlled environment that optimizes massage benefits. Our professional service, while higher priced, delivers therapeutic results that budget massage simply cannot match.
+
+Spa Prices in Legian: Day spas in the Legian area typically charge IDR 400,000-800,000 for full-body massage, plus you must travel to their location, work around their schedule, and share space with other guests. Our mobile service delivers equivalent quality directly to your accommodation, often at comparable or lower total cost when you factor in transportation and time savings.
+
+Our Pricing Philosophy: We price our services to provide genuine value while ensuring therapists earn fair wages for skilled professional work. Our prices include all travel costs, professional equipment, and premium oils – no hidden fees or surprise charges. Tips are appreciated but never expected or pressured.
+
+Group and Recurring Discounts: Families or groups booking multiple simultaneous massage receive natural savings through efficient therapist scheduling. Long-term Legian visitors booking recurring weekly massage enjoy consistent service with preferred therapists. Contact us to discuss arrangements for longer stays.
+
+Value-Added Benefits: Beyond the massage itself, our service includes consultation with therapists about pressure preferences, technique customization, and aftercare recommendations. We're invested in your wellness outcome, not just transaction completion.`
+  },
+  localTestimonials: [
+    {
+      text: "We booked massage for our villa on Poppies Lane and it was absolutely perfect. The therapist found us easily despite the narrow lane, brought everything needed, and gave us both incredible Balinese massage by our small pool. Much better than trying to find a spa and drag ourselves there after beach days.",
+      author: "Rachel & Tom",
+      accommodation: "Villa on Poppies Lane 2, Legian",
+      rating: 5
+    },
+    {
+      text: "As a solo female traveler, I was initially hesitant about mobile massage but this service put my mind at ease. The WhatsApp communication was professional, the therapist arrived exactly on time at my hotel, and the deep tissue massage was exactly what I needed after surfing Legian Beach all week. Will definitely book again.",
+      author: "Emma S.",
+      accommodation: "Hotel on Legian Beach Road",
+      rating: 5
+    },
+    {
+      text: "We stayed at a Legian resort for our honeymoon and booked couples massage twice. Having therapists come to our room was so much more romantic and relaxing than going to the hotel spa. The sunset session on our balcony overlooking Double Six Beach was absolutely magical.",
+      author: "Alex & Jordan",
+      accommodation: "Resort near Double Six Beach",
+      rating: 5
+    },
+    {
+      text: "Great service for families! We have two kids under 8, and leaving them to go to a spa was never going to work. Instead, my wife and I took turns getting massage in our room while the other watched the kids at the pool. Practical, professional, and excellent massage quality.",
+      author: "Mark D.",
+      accommodation: "Family Villa, Central Legian",
+      rating: 5
+    }
+  ]
 };
 
 export const seminyakData: ServiceAreaData = {
@@ -162,7 +278,120 @@ export const seminyakData: ServiceAreaData = {
       answer: "Yes! Our therapists have extensive experience and training. We provide the same high-quality service you'd expect from Seminyak's best spas, delivered to your location."
     }
   ],
-  nearbyAreas: ["Legian", "Kuta", "Petitenget"]
+  nearbyAreas: ["Legian", "Kuta", "Petitenget", "Kerobokan"],
+  extendedContent: {
+    areaDescription: `Seminyak represents the pinnacle of Bali's sophisticated beach lifestyle, where world-class dining meets designer boutiques, upscale beach clubs, and some of the island's most stunning private villas. Unlike its neighbors to the south, Seminyak has evolved into Bali's most fashionable destination, attracting discerning travelers who expect excellence in every aspect of their experience – including wellness services.
+
+The area stretches from the Double Six Beach area (where it borders Legian) northward through the famous Petitenget temple area and into the increasingly developed Oberoi Street corridor. Each neighborhood within Seminyak offers its own character: the beach clubs and sunset bars along the coastline, the boutique shopping and fine dining on Kayu Aya and Oberoi streets, and the quiet residential gangs where private villas hide behind ornate gates.
+
+What sets Seminyak apart is its cosmopolitan refinement. This is where Bali's international design community has established flagship boutiques, where celebrity chefs have opened Indonesian outposts, and where the villa experience has been elevated to an art form. Pool villas with open-plan living, dedicated butler service, and Instagram-worthy sunset views are standard expectations here.
+
+Our mobile massage service is particularly well-suited to Seminyak because the area's visitors typically value privacy, quality, and convenience over budget considerations. Rather than sharing space at a day spa – however lovely – Seminyak guests prefer the exclusivity of receiving professional treatments in their private villa, where they can dictate the timing, atmosphere, and level of privacy.`,
+
+    localCulture: `Despite its international sophistication, Seminyak remains authentically Balinese at its spiritual core. The Pura Petitenget temple, one of Bali's six most important sea temples, anchors the area's cultural identity. This ancient temple, dedicated to the sage Dang Hyang Nirartha, hosts elaborate ceremonies throughout the year, and its presence reminds visitors that they're guests in a living spiritual culture.
+
+The Balinese concept of wellness that informs our massage practice connects deeply to local culture. Traditional Balinese massage descends from ancient healing practices that view the body as an energy system requiring balance. The techniques our therapists use – acupressure on marma points, flowing strokes along energy pathways, aromatherapy with sacred plants – reflect centuries of accumulated healing wisdom.
+
+Many of our therapists come from Balinese families where massage skills have been passed down through generations. They bring not just technical expertise but an intuitive understanding of bodywork as a healing art. This cultural depth enriches every session, even when delivered in a contemporary designer villa.
+
+Seminyak's international community has created a unique fusion culture where Balinese traditions meet global sophistication. You'll find yoga studios next to French bistros, meditation centers near concept stores, and wellness retreats integrated into boutique hotels. Our service fits naturally into this wellness-oriented culture.`,
+
+    villaCulture: `Seminyak's villa culture represents the absolute peak of private accommodation in Bali. Properties here range from tasteful two-bedroom villas to extraordinary compounds with multiple pavilions, staff quarters, and amenities rivaling five-star resorts. Understanding this villa culture helps explain why mobile massage has become essential to the Seminyak experience.
+
+Typical Seminyak villas feature private swimming pools (often with infinity edges designed for sunset viewing), open-air living areas that blur the boundary between indoor and outdoor, and meticulously designed gardens that create private tropical paradises. Many include dedicated spa pavilions – covered platforms specifically designed for massage – though we can set up equally effectively by the pool, in air-conditioned bedrooms, or wherever guests prefer.
+
+Villa guests in Seminyak often employ villa managers and staff who can arrange services including massage. We work seamlessly with villa staff, coordinating arrival times and setup to ensure treatments integrate smoothly into guests' schedules. Villa managers appreciate our professionalism, punctuality, and the way our service enhances their guests' experience.
+
+The premium villa experience in Seminyak often includes personalized service that anticipates guests' needs. Our massage service extends this philosophy – we arrive with everything needed, adapt to each property's unique layout and atmosphere, and deliver treatments that match the quality expectations of even the most discerning guests.`,
+
+    touristBehavior: `Seminyak attracts a specific type of traveler: typically more affluent, often more experienced, and almost always seeking quality over quantity. Understanding these visitors helps explain what they want from massage services.
+
+Fashion and design-conscious travelers use Seminyak as a shopping destination, spending hours browsing the boutiques along Kayu Aya and Oberoi streets. After carrying shopping bags and navigating crowded sidewalks, feet and backs need attention. Our foot reflexology and full-body massage provide perfect recovery from shopping expeditions.
+
+Food enthusiasts come to Seminyak for its restaurant scene – arguably Southeast Asia's best outside Singapore. Multi-course tasting menus, long lunches, and extravagant brunches are Seminyak traditions. Pre-dinner massage helps guests relax and prepare for culinary adventures, while post-feast massage aids digestion and prevents food coma.
+
+Beach club culture dominates Seminyak's coastal scene. Days spent lounging at Potato Head, Ku De Ta, or La Lucciola involve sun exposure, cocktails, and the particular exhaustion that comes from trying hard to relax. Evening massage provides perfect transition from beach club to dinner reservations.
+
+Honeymooners and couples celebrating special occasions frequently choose Seminyak for its romantic atmosphere. Couples massage in a private villa – perhaps by candlelight, perhaps with champagne waiting afterwards – creates memorable experiences that define Seminyak trips.
+
+Digital nomads and long-term visitors often establish themselves in Seminyak, working from villa offices and co-working spaces. Regular weekly massage becomes essential wellness maintenance for this population, and we offer flexible scheduling that accommodates unpredictable work demands.`,
+
+    neighborhoodDetails: `Seminyak's neighborhoods each offer distinct character and different response times from our service:
+
+Southern Seminyak (Near Double Six): The transition zone between Legian and Seminyak proper. More accessible price points, younger vibe, excellent beach access. This is our fastest Seminyak response area: 20-25 minutes typically.
+
+Dhyana Pura Area: Central Seminyak's residential heart. Mix of villas, small hotels, and local businesses. Good value accommodation relative to beachfront. Response time: 22-28 minutes.
+
+Petitenget Temple Area: The spiritual and cultural center of Seminyak. Properties here benefit from proximity to the temple and the famous restaurants along Jalan Petitenget. Response time: 25-32 minutes.
+
+Oberoi Street (Kayu Aya): Seminyak's fashion and dining spine. Properties here enjoy walking access to boutiques and restaurants but often sacrifice beach proximity. Response time: 25-30 minutes.
+
+Beachfront Properties: Premium pricing for direct beach access. Properties along the coastal road from Double Six northward represent Seminyak's most sought-after locations. Response time: 22-30 minutes depending on exact position.
+
+Northern Seminyak (Toward Kerobokan): As you head north past Oberoi, Seminyak transitions into quieter residential areas. Larger villa plots, more privacy, fewer crowds. Response time: 30-35 minutes.`,
+
+    localDishes: `Seminyak's restaurant scene merits its own guidebook, but here are recommendations that pair perfectly with a wellness-focused visit:
+
+Fine Dining: Seminyak hosts acclaimed restaurants like Merah Putih (spectacular Indonesian fine dining in a stunning architectural space), Sardine (farm-to-table in rice paddies), and Mamasan (pan-Asian in colonial atmosphere). Book post-massage for ultimate relaxation before culinary adventure.
+
+Healthy Eating: The wellness movement has transformed Seminyak dining. Cafe Organic serves Instagram-famous smoothie bowls, Kynd Community offers plant-based everything, and Motion Fitness Cafe combines workout space with healthy menu. Perfect light eating before or after massage.
+
+Beachfront Dining: La Lucciola offers sunset views with upscale Italian, while simpler beach warungs serve fresh seafood at local prices. The beach club restaurants (Ku De Ta, Potato Head) provide day-to-night dining with varying price points.
+
+Local Warungs: Despite Seminyak's sophistication, excellent local warungs survive throughout the area. Warung Taman Bambu offers excellent Indonesian cooking in garden setting. Made's Warung (the original, not the chain) has been serving visitors since Seminyak was a quiet fishing village extension.
+
+Brunch Culture: Seminyak has perfected the leisurely brunch. Sisterfields, Revolver Espresso, and Corner House represent the coffee-and-eggs excellence that draws brunch devotees. Post-brunch massage helps process those generous portions.`,
+
+    problemsWeSolve: `Mobile massage in Seminyak addresses specific challenges faced by visitors to this premium destination:
+
+Jet Lag and Travel Recovery: Many Seminyak guests arrive after very long international flights – from Europe, Australia, the Americas. The exhaustion, disorientation, and physical stiffness of jet lag responds beautifully to professional massage. We can visit your villa within hours of arrival.
+
+Beach Club Recovery: Seminyak's famous beach clubs involve sun, alcohol, dancing, and often later nights than planned. The next day requires recovery, and massage promotes the detoxification and circulation that restore energy faster than rest alone.
+
+Shopping Fatigue: Serious shopping through Seminyak's boutiques creates real physical stress – walking, standing, carrying bags, making decisions. Our foot reflexology is particularly popular with shoppers, though full-body massage addresses the whole-system fatigue.
+
+Heat and Sun Stress: Even in upscale surroundings, Bali's tropical climate demands physical adaptation. Extended sun exposure, heat, and humidity create fatigue that massage helps resolve through improved circulation and lymphatic support.
+
+Work-Life Balance: Seminyak's digital nomad community struggles with the same work stress as anywhere, complicated by the guilt of "working in paradise." Regular massage helps create work-life boundaries and manage stress that remote work can exacerbate.
+
+Relationship Enhancement: Many couples choose Seminyak for romantic trips. Couples massage – whether for honeymoons, anniversaries, or simply relationship maintenance – creates shared relaxation experiences that strengthen connection.`,
+
+    pricingContext: `Seminyak pricing reflects its premium market position. Understanding local pricing context helps recognize the value our service provides:
+
+Seminyak Spa Pricing: High-end day spas in Seminyak typically charge IDR 600,000-1,200,000 for signature treatments. Hotel spas at major properties can charge even more. While these venues offer beautiful facilities, they also require travel time, scheduling around their availability, and sharing space with other guests.
+
+Villa Spa Services: Some premium villas offer in-house spa services at significant premiums. These services, while convenient, often come with limited menu options and therapists who may not have the same specialized training as independent professionals.
+
+Our Value Proposition: Our service delivers Seminyak-quality massage at prices competitive with day spas, with the added benefits of complete privacy, flexible scheduling, and treatment in your own space. For villa guests, we provide the in-house spa experience without the premium pricing.
+
+Premium Service Options: For guests seeking ultra-luxury experiences, we offer four-hands massage (two synchronized therapists), extended treatment packages, and special occasion setups. These premium options remain competitively priced compared to resort equivalents.`
+  },
+  localTestimonials: [
+    {
+      text: "We rented a gorgeous villa in Seminyak for our honeymoon and booked couples massage twice. Having professional therapists come to our private pool deck was so much more romantic than going to a spa. The sunset session was absolutely perfect – we're still talking about it months later.",
+      author: "Sophie & James",
+      accommodation: "Private Villa, Petitenget Area",
+      rating: 5
+    },
+    {
+      text: "As someone who's visited Seminyak many times and tried most of the day spas, I was skeptical about mobile massage. But after my first session, I'm converted. The convenience of not having to leave my villa, combined with genuinely excellent massage quality, makes this my new go-to service.",
+      author: "Michael R.",
+      accommodation: "Boutique Hotel near Oberoi Street",
+      rating: 5
+    },
+    {
+      text: "I work remotely and spend months at a time in Seminyak. Weekly massage has become essential for managing work stress and staying healthy. This service is reliable, professional, and the therapists know what they're doing. Highly recommend for other digital nomads.",
+      author: "David L.",
+      accommodation: "Long-term villa rental, Dhyana Pura",
+      rating: 5
+    },
+    {
+      text: "After a long day shopping and exploring, there's nothing better than having a professional massage come to you. No getting dressed up, no driving, no waiting in spa lobbies. Just pure relaxation in my beautiful rented villa. The aromatherapy massage was heaven.",
+      author: "Jennifer K.",
+      accommodation: "Pool Villa near Seminyak Square",
+      rating: 5
+    }
+  ]
 };
 
 export const tubanData: ServiceAreaData = {

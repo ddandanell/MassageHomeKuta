@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Phone, MessageCircle, Menu, X, Star, Clock, MapPin, Waves } from "lucide-react";
+import { Phone, MessageCircle, Menu, X, Star, Clock, MapPin, Waves, Globe } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import EnhancedBookingDialog from "./EnhancedBookingDialog";
 import { SITE_CONFIG } from "@/config/site";
+import { LanguageSwitcher } from "@/i18n";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -64,6 +65,11 @@ const Header = () => {
 
           {/* Action Buttons */}
           <div className="flex items-center gap-2">
+            {/* Language Switcher */}
+            <div className="hidden sm:flex items-center mr-2">
+              <LanguageSwitcher />
+            </div>
+            
             {/* Trust Badge */}
             <div className="hidden md:flex items-center mr-3">
               <Badge className="bg-green-500/10 text-green-700 border-green-500/20 text-xs px-2 py-1">
@@ -174,6 +180,17 @@ const Header = () => {
                     <span className="font-medium">Available Today</span>
                   </div>
                   <div>Licensed • Insured • 500+ Happy Clients</div>
+                </div>
+              </div>
+              
+              {/* Mobile Language Switcher */}
+              <div className="mt-4 flex items-center justify-center">
+                <div className="flex items-center gap-2 text-sm text-professional-gray">
+                  <Globe className="w-4 h-4" />
+                  <span>Language:</span>
+                </div>
+                <div className="ml-2">
+                  <LanguageSwitcher />
                 </div>
               </div>
             </div>
