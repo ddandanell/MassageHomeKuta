@@ -56,23 +56,30 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
 
   return (
     <div className="min-h-screen">
-      <SiteMeta 
+      <SiteMeta
         title={data.metaTitle}
         description={data.metaDescription}
         keywords={data.keywords}
         canonical={`/areas/${data.slug}`}
       />
-      
+
       <StructuredData type="organization" />
       <StructuredData type="breadcrumb" data={breadcrumbData} />
       <StructuredData type="service" data={serviceSchemaData} />
-      
+
       <Header />
-      
+
       <main>
         {/* Hero Section */}
-        <section className="relative py-32 md:py-40 bg-gradient-to-br from-green-500 to-lime-500 text-white overflow-hidden">
-          <div className="absolute inset-0 bg-black/20 backdrop-blur-sm"></div>
+        <section className="relative py-32 md:py-40 text-white overflow-hidden">
+          <div className="absolute inset-0">
+            <img
+              src="/images/hero/hero-3.jpg"
+              alt="Professional massage service in Bali"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-green-900/80 via-emerald-900/70 to-teal-900/80 backdrop-blur-[2px]"></div>
+          </div>
           <div className="relative container mx-auto px-4 text-center z-10">
             <Badge className="mb-6 bg-professional-gold text-professional-navy px-4 py-2 text-sm">
               Fast Response · {data.responseTime}
@@ -92,7 +99,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
               </Button>
               <div className="flex items-center gap-2 text-sm">
                 <Clock className="w-4 h-4" />
-                <span>Available 7 AM – 10 PM Daily</span>
+                <span>Available 07:00 – 22:00 Daily</span>
               </div>
             </div>
           </div>
@@ -202,7 +209,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
                   Average response time of {data.responseTime} to {data.name} locations. We know the area inside out.
                 </p>
               </div>
-              
+
               <div className="text-center">
                 <div className="w-16 h-16 bg-spa-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Shield className="w-8 h-8 text-spa-gold" />
@@ -212,7 +219,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
                   All therapists are certified, background-checked, and insured. 100% safe and professional service.
                 </p>
               </div>
-              
+
               <div className="text-center">
                 <div className="w-16 h-16 bg-spa-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="w-8 h-8 text-spa-gold" />
@@ -261,7 +268,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
                       </div>
                     </div>
                   )}
-                  
+
                   {data.extendedContent.villaCulture && (
                     <div>
                       <h2 className="text-3xl font-bold text-spa-earth mb-6">
@@ -294,7 +301,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
                       </div>
                     </div>
                   )}
-                  
+
                   {data.extendedContent.neighborhoodDetails && (
                     <div>
                       <h2 className="text-3xl font-bold text-spa-earth mb-6">
@@ -421,7 +428,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
             </h3>
             <div className="flex flex-wrap justify-center gap-4">
               {data.nearbyAreas.map((area, index) => (
-                <a 
+                <a
                   key={index}
                   href={`/areas/${area.toLowerCase().replace(/\s+/g, '-')}`}
                   className="text-spa-gold hover:text-spa-earth transition-colors font-medium"
@@ -471,7 +478,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
                 Choose from our full range of professional treatments delivered to your {data.name} location.
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto mb-8">
               <Card className="bg-white border-spa-stone/20 hover:border-spa-gold transition-all duration-300">
                 <CardHeader>
@@ -485,7 +492,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
                   </Button>
                 </CardContent>
               </Card>
-              
+
               <Card className="bg-white border-spa-stone/20 hover:border-spa-gold transition-all duration-300">
                 <CardHeader>
                   <CardTitle className="text-spa-earth text-lg">Deep Tissue Massage</CardTitle>
@@ -498,7 +505,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
                   </Button>
                 </CardContent>
               </Card>
-              
+
               <Card className="bg-white border-spa-stone/20 hover:border-spa-gold transition-all duration-300">
                 <CardHeader>
                   <CardTitle className="text-spa-earth text-lg">Aromatherapy Massage</CardTitle>
@@ -511,7 +518,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
                   </Button>
                 </CardContent>
               </Card>
-              
+
               <Card className="bg-white border-spa-stone/20 hover:border-spa-gold transition-all duration-300">
                 <CardHeader>
                   <CardTitle className="text-spa-earth text-lg">Hot Stone Massage</CardTitle>
@@ -524,7 +531,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
                   </Button>
                 </CardContent>
               </Card>
-              
+
               <Card className="bg-white border-spa-stone/20 hover:border-spa-gold transition-all duration-300">
                 <CardHeader>
                   <CardTitle className="text-spa-earth text-lg">Thai Massage</CardTitle>
@@ -537,7 +544,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
                   </Button>
                 </CardContent>
               </Card>
-              
+
               <Card className="bg-white border-spa-stone/20 hover:border-spa-gold transition-all duration-300">
                 <CardHeader>
                   <CardTitle className="text-spa-earth text-lg">More Services</CardTitle>
@@ -566,10 +573,10 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
                   Explore massage service coverage in areas near {data.name}.
                 </p>
               </div>
-              
+
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-8">
                 {data.nearbyAreas.map((area, index) => (
-                  <Link 
+                  <Link
                     key={index}
                     to={`/areas/${area.toLowerCase().replace(/\s+/g, '-')}`}
                     className="flex items-center justify-between p-4 bg-white rounded-lg hover:bg-spa-gold/10 transition-all duration-300"
@@ -579,7 +586,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
                   </Link>
                 ))}
               </div>
-              
+
               <div className="text-center">
                 <Button asChild variant="outline" size="lg">
                   <Link to="/areas">
@@ -600,7 +607,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
             <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
               Our certified therapists can be at your location in {data.responseTime}. Book now for same-day availability!
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8 py-6 bg-white text-professional-navy hover:bg-white/90">
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
@@ -617,7 +624,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
           </div>
         </section>
       </main>
-      
+
       <Footer />
       <FloatingWhatsAppButton />
     </div>

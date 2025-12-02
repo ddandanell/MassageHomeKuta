@@ -14,7 +14,7 @@ const faqs = [
   },
   {
     question: "Can I book the same day?",
-    answer: "Yes! We offer same-day booking based on availability. Our therapists are available from 7 AM to 10 PM daily. For the best availability, we recommend booking a few hours in advance via WhatsApp. During peak season, advance booking is recommended."
+    answer: "Yes! We offer same-day booking based on availability. Our therapists are available from 07:00 to 22:00 daily. For the best availability, we recommend booking a few hours in advance via WhatsApp. During peak season, advance booking is recommended."
   },
   {
     question: "What payment methods do you accept?",
@@ -83,20 +83,27 @@ const faqStructuredData = faqs.map((faq, index) => ({
 const FAQPage = () => {
   return (
     <div className="min-h-screen">
-      <SiteMeta 
+      <SiteMeta
         title="Frequently Asked Questions - Home Massage Kuta"
         description="Find answers to common questions about our professional home massage service in Kuta. Booking, pricing, therapists, and service details explained."
         keywords="massage faq kuta, home massage questions, villa massage booking, massage service questions kuta, spa service faq bali"
         canonical="/faq"
       />
-      
+
       <StructuredData type="faq" data={faqStructuredData} />
-      
+
       <Header />
-      
+
       <main>
-        <section className="relative py-32 md:py-40 bg-gradient-to-br from-purple-500 to-pink-500 text-white overflow-hidden">
-          <div className="absolute inset-0 bg-black/20 backdrop-blur-sm"></div>
+        <section className="relative py-32 md:py-40 text-white overflow-hidden">
+          <div className="absolute inset-0">
+            <img
+              src="/images/hero/hero-1.jpg"
+              alt="Relaxing massage environment"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-purple-900/80 via-pink-900/70 to-purple-900/80 backdrop-blur-[2px]"></div>
+          </div>
           <div className="relative container mx-auto px-4 text-center z-10">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
               Frequently Asked Questions
@@ -115,7 +122,7 @@ const FAQPage = () => {
                 Common Questions Answered
               </h2>
               <p className="text-xl text-spa-stone max-w-3xl mx-auto">
-                We've compiled answers to the most frequently asked questions about our service. 
+                We've compiled answers to the most frequently asked questions about our service.
                 This should help you book with confidence and know what to expect.
               </p>
             </div>
@@ -123,8 +130,8 @@ const FAQPage = () => {
             <div className="max-w-4xl mx-auto">
               <Accordion type="single" collapsible className="space-y-4">
                 {faqs.map((faq, index) => (
-                  <AccordionItem 
-                    key={index} 
+                  <AccordionItem
+                    key={index}
                     value={`item-${index}`}
                     className="bg-gradient-card border-0 shadow-soft rounded-xl px-6"
                   >
@@ -148,10 +155,10 @@ const FAQPage = () => {
               Still Have Questions?
             </h2>
             <p className="text-xl text-spa-stone mb-8 max-w-2xl mx-auto">
-              Our friendly team is here to help! Contact us directly for personalized assistance 
+              Our friendly team is here to help! Contact us directly for personalized assistance
               or any questions not covered above.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8 py-4">
                 <a href="https://wa.me/6281126568369?text=I have a question about your massage service" target="_blank" rel="noopener noreferrer">
@@ -204,7 +211,7 @@ const FAQPage = () => {
           </div>
         </section>
       </main>
-      
+
       <Footer />
       <FloatingWhatsAppButton />
     </div>

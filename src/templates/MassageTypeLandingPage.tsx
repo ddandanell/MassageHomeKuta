@@ -48,7 +48,7 @@ const MassageTypeLandingPage = ({ data }: MassageTypeLandingPageProps) => {
     serviceType: data.name,
     areaServed: ["Kuta", "Legian", "Tuban", "Seminyak"],
     offers: {
-      priceRange: data.packages && data.packages.length > 1 
+      priceRange: data.packages && data.packages.length > 1
         ? `${data.packages[0].price} - ${data.packages[data.packages.length - 1].price}`
         : "$$",
       priceCurrency: "IDR"
@@ -57,23 +57,30 @@ const MassageTypeLandingPage = ({ data }: MassageTypeLandingPageProps) => {
 
   return (
     <div className="min-h-screen">
-      <SiteMeta 
+      <SiteMeta
         title={data.metaTitle}
         description={data.metaDescription}
         keywords={data.keywords}
         canonical={`/services/${data.slug}`}
       />
-      
+
       <StructuredData type="organization" />
       <StructuredData type="breadcrumb" data={breadcrumbData} />
       <StructuredData type="service" data={serviceSchemaData} />
-      
+
       <Header />
-      
+
       <main>
         {/* Hero Section */}
-        <section className="relative py-32 md:py-40 bg-gradient-to-br from-emerald-500 to-teal-600 text-white overflow-hidden">
-          <div className="absolute inset-0 bg-black/20 backdrop-blur-sm"></div>
+        <section className="relative py-32 md:py-40 text-white overflow-hidden">
+          <div className="absolute inset-0">
+            <img
+              src="/images/hero/hero-2.jpg"
+              alt="Relaxing massage therapy session"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/80 via-teal-900/70 to-emerald-900/80 backdrop-blur-[2px]"></div>
+          </div>
           <div className="relative container mx-auto px-4 text-center z-10">
             <Badge className="mb-6 bg-professional-gold text-professional-navy px-4 py-2 text-sm">
               Professional Mobile Service
@@ -93,7 +100,7 @@ const MassageTypeLandingPage = ({ data }: MassageTypeLandingPageProps) => {
               </Button>
               <div className="flex items-center gap-2 text-sm">
                 <Clock className="w-4 h-4" />
-                <span>Available 7 AM – 10 PM Daily</span>
+                <span>Available 07:00 – 22:00 Daily</span>
               </div>
             </div>
           </div>
@@ -190,7 +197,7 @@ const MassageTypeLandingPage = ({ data }: MassageTypeLandingPageProps) => {
               Serving All of Kuta & Surrounding Areas
             </h3>
             <p className="text-lg max-w-3xl mx-auto opacity-95">
-              We provide {data.name} across Kuta, Legian, Tuban, and Seminyak's southern border. 
+              We provide {data.name} across Kuta, Legian, Tuban, and Seminyak's southern border.
               Fast response times and professional equipment delivered to your villa or hotel.
             </p>
           </div>
@@ -243,7 +250,7 @@ const MassageTypeLandingPage = ({ data }: MassageTypeLandingPageProps) => {
                   All our therapists hold international certifications and are extensively trained in {data.name.toLowerCase()} techniques.
                 </p>
               </div>
-              
+
               <div className="text-center">
                 <div className="w-16 h-16 bg-spa-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <MapPin className="w-8 h-8 text-spa-gold" />
@@ -253,14 +260,14 @@ const MassageTypeLandingPage = ({ data }: MassageTypeLandingPageProps) => {
                   We bring professional equipment directly to your villa or hotel. No travel hassle, just pure relaxation.
                 </p>
               </div>
-              
+
               <div className="text-center">
                 <div className="w-16 h-16 bg-spa-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Clock className="w-8 h-8 text-spa-gold" />
                 </div>
                 <h3 className="text-xl font-semibold text-spa-earth mb-4">Flexible Scheduling</h3>
                 <p className="text-spa-stone">
-                  Available daily from 7 AM to 10 PM with same-day booking options for your convenience.
+                  Available daily from 07:00 to 22:00 with same-day booking options for your convenience.
                 </p>
               </div>
             </div>
@@ -274,8 +281,8 @@ const MassageTypeLandingPage = ({ data }: MassageTypeLandingPageProps) => {
               Trusted by Travelers Worldwide
             </h3>
             <p className="text-spa-stone text-lg mb-8">
-              We serve guests staying at villas and hotels across Kuta, including properties near Waterbom Park, 
-              Beachwalk Mall, Discovery Mall, and along Kuta Beach. Our therapists are familiar with all major 
+              We serve guests staying at villas and hotels across Kuta, including properties near Waterbom Park,
+              Beachwalk Mall, Discovery Mall, and along Kuta Beach. Our therapists are familiar with all major
               accommodation areas and can find you quickly.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-sm text-spa-stone">
@@ -499,72 +506,72 @@ const MassageTypeLandingPage = ({ data }: MassageTypeLandingPageProps) => {
                 Discover our full range of professional massage treatments available in Kuta.
               </p>
             </div>
-            
+
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-5xl mx-auto mb-8">
-              <Link 
+              <Link
                 to="/services/balinese-massage"
                 className="p-4 bg-white rounded-lg border border-spa-stone/20 hover:border-spa-gold hover:shadow-md transition-all duration-300 text-center"
               >
                 <div className="text-spa-earth font-medium text-sm mb-1">Balinese Massage</div>
                 <div className="text-xs text-spa-stone">Traditional healing</div>
               </Link>
-              <Link 
+              <Link
                 to="/services/deep-tissue-massage"
                 className="p-4 bg-white rounded-lg border border-spa-stone/20 hover:border-spa-gold hover:shadow-md transition-all duration-300 text-center"
               >
                 <div className="text-spa-earth font-medium text-sm mb-1">Deep Tissue</div>
                 <div className="text-xs text-spa-stone">Muscle therapy</div>
               </Link>
-              <Link 
+              <Link
                 to="/services/aromatherapy-massage"
                 className="p-4 bg-white rounded-lg border border-spa-stone/20 hover:border-spa-gold hover:shadow-md transition-all duration-300 text-center"
               >
                 <div className="text-spa-earth font-medium text-sm mb-1">Aromatherapy</div>
                 <div className="text-xs text-spa-stone">Essential oils</div>
               </Link>
-              <Link 
+              <Link
                 to="/services/hot-stone-massage"
                 className="p-4 bg-white rounded-lg border border-spa-stone/20 hover:border-spa-gold hover:shadow-md transition-all duration-300 text-center"
               >
                 <div className="text-spa-earth font-medium text-sm mb-1">Hot Stone</div>
                 <div className="text-xs text-spa-stone">Luxury treatment</div>
               </Link>
-              <Link 
+              <Link
                 to="/services/thai-massage"
                 className="p-4 bg-white rounded-lg border border-spa-stone/20 hover:border-spa-gold hover:shadow-md transition-all duration-300 text-center"
               >
                 <div className="text-spa-earth font-medium text-sm mb-1">Thai Massage</div>
                 <div className="text-xs text-spa-stone">Stretching therapy</div>
               </Link>
-              <Link 
+              <Link
                 to="/services/four-hands-massage"
                 className="p-4 bg-white rounded-lg border border-spa-stone/20 hover:border-spa-gold hover:shadow-md transition-all duration-300 text-center"
               >
                 <div className="text-spa-earth font-medium text-sm mb-1">Four Hands</div>
                 <div className="text-xs text-spa-stone">Dual therapists</div>
               </Link>
-              <Link 
+              <Link
                 to="/services/pregnancy-massage"
                 className="p-4 bg-white rounded-lg border border-spa-stone/20 hover:border-spa-gold hover:shadow-md transition-all duration-300 text-center"
               >
                 <div className="text-spa-earth font-medium text-sm mb-1">Pregnancy</div>
                 <div className="text-xs text-spa-stone">Safe & gentle</div>
               </Link>
-              <Link 
+              <Link
                 to="/services/foot-reflexology"
                 className="p-4 bg-white rounded-lg border border-spa-stone/20 hover:border-spa-gold hover:shadow-md transition-all duration-300 text-center"
               >
                 <div className="text-spa-earth font-medium text-sm mb-1">Reflexology</div>
                 <div className="text-xs text-spa-stone">Pressure points</div>
               </Link>
-              <Link 
+              <Link
                 to="/services/lymphatic-drainage-massage"
                 className="p-4 bg-white rounded-lg border border-spa-stone/20 hover:border-spa-gold hover:shadow-md transition-all duration-300 text-center"
               >
                 <div className="text-spa-earth font-medium text-sm mb-1">Lymphatic Drainage</div>
                 <div className="text-xs text-spa-stone">Detoxification</div>
               </Link>
-              <Link 
+              <Link
                 to="/services/jet-lag-recovery-massage"
                 className="p-4 bg-white rounded-lg border border-spa-stone/20 hover:border-spa-gold hover:shadow-md transition-all duration-300 text-center"
               >
@@ -572,7 +579,7 @@ const MassageTypeLandingPage = ({ data }: MassageTypeLandingPageProps) => {
                 <div className="text-xs text-spa-stone">Travel fatigue</div>
               </Link>
             </div>
-            
+
             <div className="text-center">
               <Button asChild variant="outline" size="lg">
                 <Link to="/services">
@@ -594,7 +601,7 @@ const MassageTypeLandingPage = ({ data }: MassageTypeLandingPageProps) => {
                 We deliver {data.name} to your villa or hotel across these popular areas.
               </p>
             </div>
-            
+
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 max-w-5xl mx-auto mb-8">
               <Link to="/areas/kuta" className="flex items-center justify-between p-3 bg-white rounded-lg hover:bg-spa-gold/10 transition-all duration-300">
                 <span className="text-spa-earth text-sm font-medium">Kuta</span>
@@ -645,7 +652,7 @@ const MassageTypeLandingPage = ({ data }: MassageTypeLandingPageProps) => {
                 <MapPin className="w-4 h-4 text-spa-gold" />
               </Link>
             </div>
-            
+
             <div className="text-center">
               <Button asChild variant="outline" size="lg">
                 <Link to="/areas">
@@ -665,7 +672,7 @@ const MassageTypeLandingPage = ({ data }: MassageTypeLandingPageProps) => {
             <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
               Book now and our certified therapists will bring the spa experience directly to your location in Kuta.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8 py-6 bg-white text-professional-navy hover:bg-white/90">
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
@@ -682,7 +689,7 @@ const MassageTypeLandingPage = ({ data }: MassageTypeLandingPageProps) => {
           </div>
         </section>
       </main>
-      
+
       <Footer />
       <FloatingWhatsAppButton />
     </div>

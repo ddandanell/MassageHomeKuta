@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+        serif: ["Playfair Display", "serif"],
+      },
       backgroundImage: {
         "gradient-professional": "var(--gradient-professional)",
         "gradient-accent": "var(--gradient-accent)",

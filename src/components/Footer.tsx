@@ -7,241 +7,117 @@ const Footer = () => {
   const whatsappUrl = `https://wa.me/${whatsappNumber.replace(/\D/g, '')}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
-    <footer className="bg-gradient-professional text-white relative overflow-hidden">
+    <footer className="bg-professional-navy text-white relative overflow-hidden pt-20 pb-10">
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-accent"></div>
+      <div className="absolute inset-0 opacity-5 pointer-events-none">
+        <div className="absolute top-0 left-0 w-full h-full bg-[url('/images/pattern.png')] bg-repeat opacity-20"></div>
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-professional-green/20 to-transparent"></div>
       </div>
 
-      <div className="relative container mx-auto px-4 py-16">
-        {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          {/* Company Info */}
-          <div className="lg:col-span-2">
+      <div className="relative container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+          {/* Brand Column */}
+          <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-professional-gold rounded-xl flex items-center justify-center">
-                <span className="text-professional-navy font-bold text-lg">HM</span>
+              <div className="w-10 h-10 bg-professional-gold/20 rounded-full flex items-center justify-center border border-professional-gold/30">
+                <span className="text-professional-gold font-serif font-bold text-xl">H</span>
               </div>
               <div>
-                <h3 className="text-2xl font-bold">Home Massage Kuta</h3>
-                <p className="text-professional-gold text-sm">Professional In-Villa Spa Service</p>
+                <h3 className="text-xl font-serif font-bold tracking-wide">Home Massage</h3>
+                <p className="text-professional-gold text-xs tracking-widest uppercase">Kuta, Bali</p>
               </div>
             </div>
-            <p className="text-lg opacity-90 leading-relaxed mb-6 max-w-md">
-              Kuta's premier home massage service, bringing professional Balinese healing directly to your villa or hotel. 
-              Safe, certified, and trusted by 2,500+ clients from 45+ countries.
+            <p className="text-professional-gray leading-relaxed mb-8 font-light">
+              Bringing the sanctuary of a luxury spa directly to your private villa or hotel room.
+              Experience professional healing without leaving your comfort zone.
             </p>
-            
-            {/* Quick Stats */}
-            <div className="grid grid-cols-3 gap-4 mb-6">
-              <div className="text-center p-3 bg-white/10 rounded-lg backdrop-blur-sm">
-                <Star className="w-6 h-6 text-professional-gold mx-auto mb-1" />
-                <div className="text-xl font-bold">4.9</div>
-                <div className="text-xs opacity-80">Rating</div>
-              </div>
-              <div className="text-center p-3 bg-white/10 rounded-lg backdrop-blur-sm">
-                <Shield className="w-6 h-6 text-professional-gold mx-auto mb-1" />
-                <div className="text-xl font-bold">100%</div>
-                <div className="text-xs opacity-80">Safe</div>
-              </div>
-              <div className="text-center p-3 bg-white/10 rounded-lg backdrop-blur-sm">
-                <Award className="w-6 h-6 text-professional-gold mx-auto mb-1" />
-                <div className="text-xl font-bold">500+</div>
-                <div className="text-xs opacity-80">Monthly</div>
-              </div>
-            </div>
-
-            {/* Main CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Button 
-                asChild
-                variant="booking" 
-                size="lg" 
-                className="flex-1 text-base font-semibold"
-              >
-                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                  <MessageCircle className="w-5 h-5" />
-                  Book via WhatsApp
-                </a>
-              </Button>
-              <Button 
-                asChild
-                variant="outline" 
-                size="lg" 
-                className="flex-1 border-2 border-white text-black hover:bg-white hover:text-professional-navy"
-              >
-                <a href={`tel:${whatsappNumber}`}>
-                  <Phone className="w-5 h-5" />
-                  Call Now
-                </a>
-              </Button>
-            </div>
-          </div>
-
-          {/* Contact Info */}
-          <div>
-            <h4 className="text-xl font-bold mb-6">Contact & Hours</h4>
-            <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <MessageCircle className="w-5 h-5 mt-1 text-professional-gold" />
-                <div>
-                  <div className="font-semibold">WhatsApp</div>
-                  <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="text-professional-gold hover:text-white transition-colors">
-                    {whatsappNumber}
-                  </a>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <Phone className="w-5 h-5 mt-1 text-professional-gold" />
-                <div>
-                  <div className="font-semibold">Phone</div>
-                  <a href={`tel:${whatsappNumber}`} className="text-professional-gold hover:text-white transition-colors">
-                    {whatsappNumber}
-                  </a>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <Clock className="w-5 h-5 mt-1 text-professional-gold" />
-                <div>
-                  <div className="font-semibold">Daily Hours</div>
-                  <div className="opacity-90">7:00 AM – 10:00 PM</div>
-                  <div className="text-xs opacity-70">7 Days a Week</div>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 mt-1 text-professional-gold" />
-                <div>
-                  <div className="font-semibold">Service Areas</div>
-                  <div className="opacity-90 text-sm">Kuta • Legian • Tuban</div>
-                  <div className="opacity-90 text-sm">Seminyak • Jimbaran</div>
-                </div>
-              </div>
+            <div className="flex gap-4">
+              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 hover:bg-professional-green hover:text-white flex items-center justify-center transition-all duration-300 border border-white/10">
+                <MessageCircle className="w-5 h-5" />
+              </a>
+              <a href={`tel:${whatsappNumber}`} className="w-10 h-10 rounded-full bg-white/5 hover:bg-professional-gold hover:text-white flex items-center justify-center transition-all duration-300 border border-white/10">
+                <Phone className="w-5 h-5" />
+              </a>
+              <a href="mailto:hello@homemassagekuta.com" className="w-10 h-10 rounded-full bg-white/5 hover:bg-blue-500 hover:text-white flex items-center justify-center transition-all duration-300 border border-white/10">
+                <Mail className="w-5 h-5" />
+              </a>
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-xl font-bold mb-6">Quick Actions</h4>
-            <div className="space-y-3">
-              <Button 
-                asChild
-                variant="ghost" 
-                className="w-full justify-start text-left p-0 h-auto hover:bg-white/10 hover:text-professional-gold text-white"
-              >
-                <a href="/services">View All Services</a>
-              </Button>
-              <Button 
-                asChild
-                variant="ghost" 
-                className="w-full justify-start text-left p-0 h-auto hover:bg-white/10 hover:text-professional-gold text-white"
-              >
-                <a href="/areas">Service Areas</a>
-              </Button>
-              <Button 
-                asChild
-                variant="ghost" 
-                className="w-full justify-start text-left p-0 h-auto hover:bg-white/10 hover:text-professional-gold text-white"
-              >
-                <a href="/packages">Special Packages</a>
-              </Button>
-              <Button 
-                asChild
-                variant="ghost" 
-                className="w-full justify-start text-left p-0 h-auto hover:bg-white/10 hover:text-professional-gold text-white"
-              >
-                <a href="/#booking">Book Now</a>
-              </Button>
-              <Button 
-                asChild
-                variant="ghost" 
-                className="w-full justify-start text-left p-0 h-auto hover:bg-white/10 hover:text-professional-gold text-white"
-              >
-                <a href="/therapists">Our Therapists</a>
-              </Button>
-              <Button 
-                asChild
-                variant="ghost" 
-                className="w-full justify-start text-left p-0 h-auto hover:bg-white/10 hover:text-professional-gold text-white"
-              >
-                <a href="/faq">FAQ</a>
-              </Button>
-              <Button 
-                asChild
-                variant="ghost" 
-                className="w-full justify-start text-left p-0 h-auto hover:bg-white/10 hover:text-professional-gold text-white"
-              >
-                <a href="/sitemap">Sitemap</a>
-              </Button>
-            </div>
+            <h4 className="text-lg font-serif font-semibold mb-6 text-white">Discover</h4>
+            <ul className="space-y-3 text-professional-gray">
+              <li><a href="/services" className="hover:text-professional-gold transition-colors">Our Treatments</a></li>
+              <li><a href="/areas" className="hover:text-professional-gold transition-colors">Service Areas</a></li>
+              <li><a href="/therapists" className="hover:text-professional-gold transition-colors">Meet the Team</a></li>
+              <li><a href="/about" className="hover:text-professional-gold transition-colors">About Us</a></li>
+              <li><a href="/faq" className="hover:text-professional-gold transition-colors">FAQ</a></li>
+            </ul>
+          </div>
 
-            {/* Emergency Contact */}
-            <div className="mt-6 p-4 bg-white/10 rounded-lg backdrop-blur-sm">
-              <div className="text-sm font-semibold mb-2">Need Help Now?</div>
-              <Button 
-                asChild
-                variant="booking" 
-                size="sm" 
-                className="w-full"
-              >
+          {/* Contact Info */}
+          <div>
+            <h4 className="text-lg font-serif font-semibold mb-6 text-white">Concierge</h4>
+            <ul className="space-y-4 text-professional-gray">
+              <li className="flex items-start gap-3">
+                <Clock className="w-5 h-5 text-professional-gold mt-0.5" />
+                <div>
+                  <span className="block text-white text-sm font-medium">Daily Hours</span>
+                  <span className="text-sm">07:00 – 22:00</span>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <MessageCircle className="w-5 h-5 text-professional-gold mt-0.5" />
+                <div>
+                  <span className="block text-white text-sm font-medium">WhatsApp Booking</span>
+                  <a href={whatsappUrl} className="text-sm hover:text-white transition-colors">+62 811-2656-869</a>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <MapPin className="w-5 h-5 text-professional-gold mt-0.5" />
+                <div>
+                  <span className="block text-white text-sm font-medium">Service Area</span>
+                  <span className="text-sm">Kuta, Legian, Seminyak</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          {/* Trust Badge */}
+          <div>
+            <div className="bg-white/5 rounded-2xl p-6 border border-white/10 backdrop-blur-sm">
+              <h4 className="text-lg font-serif font-semibold mb-4 text-white">Peace of Mind</h4>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3 text-sm text-professional-gray">
+                  <Shield className="w-4 h-4 text-emerald-400" />
+                  <span>Fully Licensed & Insured</span>
+                </div>
+                <div className="flex items-center gap-3 text-sm text-professional-gray">
+                  <Award className="w-4 h-4 text-emerald-400" />
+                  <span>Certified Therapists</span>
+                </div>
+                <div className="flex items-center gap-3 text-sm text-professional-gray">
+                  <Star className="w-4 h-4 text-emerald-400" />
+                  <span>4.9/5 Average Rating</span>
+                </div>
+              </div>
+              <Button asChild className="w-full mt-6 bg-professional-gold hover:bg-amber-600 text-white border-0">
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                  <MessageCircle className="w-4 h-4" />
-                  Instant Response
+                  Book Now
                 </a>
               </Button>
             </div>
           </div>
         </div>
 
-        {/* Trust Signals */}
-        <div className="border-t border-white/20 pt-8 mb-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
-            <div>
-              <Clock className="w-8 h-8 text-professional-gold mx-auto mb-2" />
-              <div className="font-semibold">30-60 Min Response</div>
-              <div className="text-sm opacity-80">We reply fast</div>
-            </div>
-            <div>
-              <Shield className="w-8 h-8 text-professional-gold mx-auto mb-2" />
-              <div className="font-semibold">Licensed & Insured</div>
-              <div className="text-sm opacity-80">100% safe service</div>
-            </div>
-            <div>
-              <Award className="w-8 h-8 text-professional-gold mx-auto mb-2" />
-              <div className="font-semibold">Certified Therapists</div>
-              <div className="text-sm opacity-80">International standards</div>
-            </div>
-            <div>
-              <Star className="w-8 h-8 text-professional-gold mx-auto mb-2" />
-              <div className="font-semibold">Money Back Guarantee</div>
-              <div className="text-sm opacity-80">100% satisfaction</div>
-            </div>
-          </div>
-        </div>
-
-        {/* Bottom Section */}
-        <div className="border-t border-white/20 pt-8 text-center">
-          <div className="mb-6">
-            <h5 className="text-lg font-semibold mb-3">Ready to Relax?</h5>
-            <p className="opacity-90 mb-4">We can be at your villa in 30-60 minutes!</p>
-            <Button 
-              asChild
-              variant="booking" 
-              size="lg" 
-              className="text-lg px-8 py-4"
-            >
-              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                <MessageCircle className="w-5 h-5" />
-                Message Us on WhatsApp
-              </a>
-            </Button>
-          </div>
-          
-          <div className="text-sm opacity-75 space-y-2">
-            <p>© 2025 Home Massage Kuta. All rights reserved.</p>
-            <p>Professional massage service • Licensed therapists • Serving Kuta, Bali since 2020</p>
-            <p className="text-xs">
-              Main Office: Jl. Raya Kuta No. 123, Kuta, Bali 80361 (No walk-in service - Home service only)
-            </p>
+        {/* Bottom Bar */}
+        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-professional-gray">
+          <p>© 2025 Home Massage Kuta. All rights reserved.</p>
+          <div className="flex gap-6">
+            <a href="/privacy" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="/terms" className="hover:text-white transition-colors">Terms of Service</a>
+            <a href="/sitemap" className="hover:text-white transition-colors">Sitemap</a>
           </div>
         </div>
       </div>

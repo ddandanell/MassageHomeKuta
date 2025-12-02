@@ -70,22 +70,29 @@ const KutaArea = () => {
 
   return (
     <div className="min-h-screen">
-      <SiteMeta 
+      <SiteMeta
         title="Home Massage Service in Kuta Area, Bali"
         description="Professional in-villa massage service covering all areas of Kuta, Bali. Fast response times, certified therapists, and premium spa treatments delivered to your location."
         keywords="home massage kuta area, villa massage kuta beach, mobile spa legian, tuban massage service, kuta massage delivery, in-villa spa kuta bali"
         canonical="/areas/kuta"
       />
-      
+
       <StructuredData type="organization" />
       <StructuredData type="breadcrumb" data={breadcrumbData} />
       <StructuredData type="service" data={serviceSchemaData} />
-      
+
       <Header />
-      
+
       <main>
-        <section className="relative py-32 md:py-40 bg-gradient-to-br from-green-500 to-lime-500 text-white overflow-hidden">
-          <div className="absolute inset-0 bg-black/20 backdrop-blur-sm"></div>
+        <section className="relative py-32 md:py-40 text-white overflow-hidden">
+          <div className="absolute inset-0">
+            <img
+              src="/images/hero/hero-4.jpg"
+              alt="Massage service in Kuta area"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-green-900/80 via-emerald-900/70 to-teal-900/80 backdrop-blur-[2px]"></div>
+          </div>
           <div className="relative container mx-auto px-4 text-center z-10">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
               Serving All of Kuta
@@ -104,7 +111,7 @@ const KutaArea = () => {
                 Areas We Serve in Kuta
               </h2>
               <p className="text-xl text-spa-stone max-w-3xl mx-auto">
-                We provide fast, reliable massage service throughout the Kuta area with different 
+                We provide fast, reliable massage service throughout the Kuta area with different
                 response times based on your specific location.
               </p>
             </div>
@@ -119,7 +126,7 @@ const KutaArea = () => {
                       </Badge>
                     </div>
                   )}
-                  
+
                   <CardHeader>
                     <CardTitle className="text-spa-earth text-xl flex items-center gap-2">
                       <MapPin className="w-5 h-5 text-spa-gold" />
@@ -129,7 +136,7 @@ const KutaArea = () => {
                       {area.description}
                     </CardDescription>
                   </CardHeader>
-                  
+
                   <CardContent>
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
@@ -151,7 +158,7 @@ const KutaArea = () => {
                   Not Sure About Your Area?
                 </h3>
                 <p className="text-spa-stone mb-6">
-                  Send us your location and we'll confirm our service availability and estimated arrival time. 
+                  Send us your location and we'll confirm our service availability and estimated arrival time.
                   Most areas in and around Kuta are covered with fast response times.
                 </p>
                 <Button asChild size="lg" className="text-lg px-8 py-4">
@@ -180,29 +187,29 @@ const KutaArea = () => {
                 </div>
                 <h3 className="text-xl font-semibold text-spa-earth mb-4">Fast Response</h3>
                 <p className="text-spa-stone">
-                  Located in Kuta, we can reach most areas within 15-40 minutes. No long waits 
+                  Located in Kuta, we can reach most areas within 15-40 minutes. No long waits
                   for your relaxation to begin.
                 </p>
               </div>
-              
+
               <div className="text-center">
                 <div className="w-16 h-16 bg-spa-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="w-8 h-8 text-spa-gold" />
                 </div>
                 <h3 className="text-xl font-semibold text-spa-earth mb-4">Local Knowledge</h3>
                 <p className="text-spa-stone">
-                  We know Kuta inside and out. From villa addresses to hotel locations, 
+                  We know Kuta inside and out. From villa addresses to hotel locations,
                   we navigate the area efficiently.
                 </p>
               </div>
-              
+
               <div className="text-center">
                 <div className="w-16 h-16 bg-spa-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Star className="w-8 h-8 text-spa-gold" />
                 </div>
                 <h3 className="text-xl font-semibold text-spa-earth mb-4">Proven Track Record</h3>
                 <p className="text-spa-stone">
-                  Hundreds of satisfied clients throughout Kuta trust us for their wellness needs. 
+                  Hundreds of satisfied clients throughout Kuta trust us for their wellness needs.
                   Join our growing community.
                 </p>
               </div>
@@ -217,10 +224,10 @@ const KutaArea = () => {
               Ready to Book Your Kuta Massage?
             </h2>
             <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-              Whether you're staying in central Kuta, Legian, or Tuban, we'll bring the spa experience 
+              Whether you're staying in central Kuta, Legian, or Tuban, we'll bring the spa experience
               directly to you. Book now for same-day availability!
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild variant="professional" size="lg" className="text-lg px-8 py-4">
                 <a href="https://wa.me/6281126568369?text=Hi! I'm in Kuta and would like to book a massage service today">
@@ -236,7 +243,7 @@ const KutaArea = () => {
           </div>
         </section>
       </main>
-      
+
       <Footer />
       <FloatingWhatsAppButton />
     </div>
