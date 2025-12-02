@@ -5,20 +5,21 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import EnhancedBookingDialog from "./EnhancedBookingDialog";
 import { SITE_CONFIG } from "@/config/site";
-import { LanguageSwitcher } from "@/i18n";
+import { LanguageSwitcher, useLanguage } from "@/i18n";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t, getLocalePath } = useLanguage();
   const whatsappMessage = "Hello Home Massage Kuta! I'd like to book a massage service. Can you help me with availability?";
   const whatsappUrl = `https://wa.me/${SITE_CONFIG.whatsapp.replace(/\D/g, '')}?text=${encodeURIComponent(whatsappMessage)}`;
 
   const navigationItems = [
-    { href: "/", label: "Home", description: "Back to homepage" },
-    { href: "/services", label: "Services", description: "View all massage types" },
-    { href: "/areas", label: "Service Areas", description: "Coverage locations" },
-    { href: "/about", label: "About", description: "Our story & credentials" },
-    { href: "/reviews", label: "Reviews", description: "What clients say" },
-    { href: "/faq", label: "FAQ", description: "Common questions" }
+    { href: "/", labelKey: "nav.home", label: "Home", description: "Back to homepage" },
+    { href: "/services", labelKey: "nav.services", label: "Services", description: "View all massage types" },
+    { href: "/areas", labelKey: "nav.areas", label: "Service Areas", description: "Coverage locations" },
+    { href: "/about", labelKey: "nav.about", label: "About", description: "Our story & credentials" },
+    { href: "/reviews", labelKey: "nav.reviews", label: "Reviews", description: "What clients say" },
+    { href: "/faq", labelKey: "nav.faq", label: "FAQ", description: "Common questions" }
   ];
 
   return (
@@ -26,7 +27,7 @@ const Header = () => {
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-professional-gold/20 shadow-sm">
         <div className="container mx-auto px-4 h-16 md:h-20 flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity cursor-pointer">
+          <Link to={getLocalePath("/")} className="flex items-center gap-3 hover:opacity-80 transition-opacity cursor-pointer">
             <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center shadow-lg">
               <Waves className="text-white w-5 h-5 md:w-6 md:h-6" />
             </div>
@@ -50,16 +51,16 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
             {navigationItems.map((item, index) => (
-              <a 
+              <Link 
                 key={index}
-                href={item.href} 
+                to={getLocalePath(item.href)} 
                 className="text-sm font-medium text-professional-navy hover:text-professional-gold transition-colors relative group"
               >
-                {item.label}
+                {t(item.labelKey, item.label)}
                 <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 opacity-0 group-hover:opacity-100 transition-opacity bg-professional-navy text-white text-xs px-2 py-1 rounded whitespace-nowrap">
                   {item.description}
                 </div>
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -132,18 +133,18 @@ const Header = () => {
               {/* Navigation Links */}
               <nav className="flex flex-col gap-1 mb-6">
                 {navigationItems.map((item, index) => (
-                  <a
+                  <Link
                     key={index}
-                    href={item.href}
+                    to={getLocalePath(item.href)}
                     className="flex justify-between items-center py-3 px-4 rounded-lg hover:bg-professional-gold/5 transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     <div>
-                      <div className="text-sm font-medium text-professional-navy">{item.label}</div>
+                      <div className="text-sm font-medium text-professional-navy">{t(item.labelKey, item.label)}</div>
                       <div className="text-xs text-professional-gray">{item.description}</div>
                     </div>
                     <div className="text-professional-gold">→</div>
-                  </a>
+                  </Link>
                 ))}
               </nav>
 

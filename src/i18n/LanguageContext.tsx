@@ -1,4 +1,5 @@
-import React, { createContext, useContext, useState, useCallback, ReactNode } from 'react';
+import React, { createContext, useContext, useState, useCallback, useEffect, ReactNode } from 'react';
+import { useLocation } from 'react-router-dom';
 
 export type Language = 'en' | 'id';
 
@@ -15,6 +16,14 @@ interface LanguageProviderProps {
   children: ReactNode;
   initialLanguage?: Language;
 }
+
+// Utility function to detect language from URL path
+export const detectLanguageFromPath = (pathname: string): Language => {
+  if (pathname.startsWith('/id/') || pathname === '/id') {
+    return 'id';
+  }
+  return 'en';
+};
 
 // Common UI translations
 const translations: Record<Language, Record<string, string>> = {
@@ -140,7 +149,19 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({
   children, 
   initialLanguage = 'en' 
 }) => {
-  const [language, setLanguage] = useState<Language>(initialLanguage);
+  const location = useLocation();
+  const [language, setLanguage] = useState<Language>(() => {
+    // Detect language from initial URL path
+    return detectLanguageFromPath(location.pathname);
+  });
+
+  // Sync language state when URL changes (e.g., browser back/forward)
+  useEffect(() => {
+    const detectedLang = detectLanguageFromPath(location.pathname);
+    if (detectedLang !== language) {
+      setLanguage(detectedLang);
+    }
+  }, [location.pathname]);
 
   const t = useCallback((key: string, fallback?: string): string => {
     return translations[language][key] || fallback || key;
@@ -170,14 +191,6 @@ export const useLanguage = (): LanguageContextType => {
     throw new Error('useLanguage must be used within a LanguageProvider');
   }
   return context;
-};
-
-// Utility function to detect language from URL path
-export const detectLanguageFromPath = (pathname: string): Language => {
-  if (pathname.startsWith('/id/') || pathname === '/id') {
-    return 'id';
-  }
-  return 'en';
 };
 
 // Utility function to strip language prefix from path
