@@ -158,9 +158,9 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({
   // Sync language state when URL changes (e.g., browser back/forward)
   useEffect(() => {
     const detectedLang = detectLanguageFromPath(location.pathname);
-    if (detectedLang !== language) {
-      setLanguage(detectedLang);
-    }
+    setLanguage((currentLang) => 
+      detectedLang !== currentLang ? detectedLang : currentLang
+    );
   }, [location.pathname]);
 
   const t = useCallback((key: string, fallback?: string): string => {
