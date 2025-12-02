@@ -140,19 +140,20 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({
   children, 
   initialLanguage = 'en' 
 }) => {
-  const [language, setLanguageState] = useState<Language>(initialLanguage);
-
-  const setLanguage = useCallback((lang: Language) => {
-    setLanguageState(lang);
-  }, []);
+  const [language, setLanguage] = useState<Language>(initialLanguage);
 
   const t = useCallback((key: string, fallback?: string): string => {
     return translations[language][key] || fallback || key;
   }, [language]);
 
   const getLocalePath = useCallback((path: string): string => {
-    // Add language prefix to path
+    // Clean the path
     const cleanPath = path.startsWith('/') ? path : `/${path}`;
+    
+    // English (default) doesn't need prefix, Indonesian needs /id prefix
+    if (language === 'en') {
+      return cleanPath;
+    }
     return `/${language}${cleanPath}`;
   }, [language]);
 

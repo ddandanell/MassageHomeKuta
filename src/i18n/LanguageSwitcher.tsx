@@ -7,6 +7,21 @@ interface LanguageSwitcherProps {
   className?: string;
 }
 
+/**
+ * Helper function to construct the new path for the given language
+ */
+const buildLocalizedPath = (currentPath: string, newLang: Language): string => {
+  const basePath = stripLanguagePrefix(currentPath);
+  
+  // English (default) uses no prefix
+  if (newLang === 'en') {
+    return basePath === '/' ? '/' : basePath;
+  }
+  
+  // Other languages use prefix
+  return `/id${basePath}`;
+};
+
 export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ className }) => {
   const { language, setLanguage } = useLanguage();
   const navigate = useNavigate();
@@ -16,13 +31,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ className })
     if (newLang === language) return;
     
     setLanguage(newLang);
-    
-    // Update URL to reflect new language
-    const currentPath = stripLanguagePrefix(location.pathname);
-    const newPath = newLang === 'en' 
-      ? currentPath === '/' ? '/' : currentPath
-      : `/id${currentPath}`;
-    
+    const newPath = buildLocalizedPath(location.pathname, newLang);
     navigate(newPath);
   };
 
