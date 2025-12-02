@@ -82,6 +82,85 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+// Define all routes in one place - they will be rendered for both English (/) and Indonesian (/id/) paths
+const routeConfig = [
+  { path: "/", element: <Index /> },
+  { path: "/services", element: <ServicesPage /> },
+  { path: "/areas", element: <ServiceAreas /> },
+  { path: "/sitemap", element: <Sitemap /> },
+  { path: "/about", element: <AboutPage /> },
+  { path: "/reviews", element: <ReviewsPage /> },
+  { path: "/packages", element: <Packages /> },
+  { path: "/therapists", element: <TherapistsPage /> },
+  { path: "/faq", element: <FAQPage /> },
+  // Service Area Landing Pages
+  { path: "/areas/kuta", element: <KutaArea /> },
+  { path: "/areas/legian", element: <LegianArea /> },
+  { path: "/areas/seminyak", element: <SeminyakArea /> },
+  { path: "/areas/tuban", element: <TubanArea /> },
+  { path: "/areas/kuta-beachfront", element: <KutaBeachfrontArea /> },
+  { path: "/areas/kuta-central", element: <KutaCentralArea /> },
+  { path: "/areas/canggu", element: <CangguArea /> },
+  { path: "/areas/ubud", element: <UbudArea /> },
+  { path: "/areas/sanur", element: <SanurArea /> },
+  { path: "/areas/denpasar", element: <DenpasarArea /> },
+  { path: "/areas/jimbaran", element: <JimbaranArea /> },
+  { path: "/areas/nusa-dua", element: <NusaDuaArea /> },
+  { path: "/areas/uluwatu", element: <UluwatuArea /> },
+  { path: "/areas/pecatu", element: <PecatuArea /> },
+  { path: "/areas/bukit-peninsula", element: <BukitPeninsulaArea /> },
+  { path: "/areas/ungasan", element: <UngasanArea /> },
+  { path: "/areas/pererenan", element: <PererenanArea /> },
+  { path: "/areas/berawa", element: <BerawaArea /> },
+  { path: "/areas/echo-beach", element: <EchoBeachArea /> },
+  { path: "/areas/batu-bolong", element: <BatuBolongArea /> },
+  { path: "/areas/petitenget", element: <PetitengetArea /> },
+  { path: "/areas/kerobokan", element: <KerobokanArea /> },
+  { path: "/areas/tanjung-benoa", element: <TanjungBenoaArea /> },
+  { path: "/areas/benoa", element: <BenoaArea /> },
+  { path: "/areas/padang-padang", element: <PadangPadangArea /> },
+  { path: "/areas/bingin", element: <BinginArea /> },
+  { path: "/areas/dreamland", element: <DreamlandArea /> },
+  // Massage Type Landing Pages
+  { path: "/services/balinese-massage", element: <BalineseMassage /> },
+  { path: "/services/deep-tissue-massage", element: <DeepTissueMassage /> },
+  { path: "/services/aromatherapy-massage", element: <AromatherapyMassage /> },
+  { path: "/services/lymphatic-drainage-massage", element: <LymphaticDrainageMassage /> },
+  { path: "/services/thai-massage", element: <ThaiMassage /> },
+  { path: "/services/hot-stone-massage", element: <HotStoneMassage /> },
+  { path: "/services/four-hands-massage", element: <FourHandsMassage /> },
+  { path: "/services/pregnancy-massage", element: <PregnancyMassage /> },
+  { path: "/services/foot-reflexology", element: <FootReflexology /> },
+  { path: "/services/jet-lag-recovery-massage", element: <JetLagRecoveryMassage /> },
+  // New Specialty Massage Type Landing Pages - Batch 1
+  { path: "/services/healing-massage", element: <HealingMassage /> },
+  { path: "/services/tension-release-massage", element: <TensionReleaseMassage /> },
+  { path: "/services/muscle-recovery-therapy", element: <MuscleRecoveryTherapy /> },
+  { path: "/services/body-relaxation-therapy", element: <BodyRelaxationTherapy /> },
+  { path: "/services/stress-relief-massage", element: <StressReliefMassage /> },
+  { path: "/services/swedish-massage", element: <SwedishMassage /> },
+  { path: "/services/signature-massage", element: <SignatureMassage /> },
+  { path: "/services/rejuvenation-massage", element: <RejuvenationMassage /> },
+  { path: "/services/harmony-massage", element: <HarmonyMassage /> },
+  { path: "/services/therapeutic-touch-massage", element: <TherapeuticTouchMassage /> },
+  // New Specialty Massage Type Landing Pages - Batch 2
+  { path: "/services/rejuvenating-body-treatment", element: <RejuvenatingBodyTreatment /> },
+  { path: "/services/energy-balancing-massage", element: <EnergyBalancingMassage /> },
+  { path: "/services/soothing-oil-massage", element: <SoothingOilMassage /> },
+  { path: "/services/head-and-neck-massage", element: <HeadAndNeckMassage /> },
+  { path: "/services/back-pain-massage", element: <BackPainMassage /> },
+  { path: "/services/shoulder-tension-massage", element: <ShoulderTensionMassage /> },
+  { path: "/services/calming-body-treatment", element: <CalmingBodyTreatment /> },
+  { path: "/services/holistic-body-massage", element: <HolisticBodyMassage /> },
+  { path: "/services/spa-body-treatment", element: <SpaBodyTreatment /> },
+  { path: "/services/restorative-massage", element: <RestorativeMassage /> },
+  // New Specialty Massage Type Landing Pages - Batch 3
+  { path: "/services/comfort-massage", element: <ComfortMassage /> },
+  { path: "/services/gentle-touch-massage", element: <GentleTouchMassage /> },
+  { path: "/services/premium-spa-treatment", element: <PremiumSpaTreatment /> },
+  { path: "/services/revitalizing-massage", element: <RevitalizingMassage /> },
+];
+
 const App = () => (
   <HelmetProvider>
     <QueryClientProvider client={queryClient}>
@@ -91,81 +170,22 @@ const App = () => (
         <BrowserRouter>
           <LanguageProvider>
           <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/services" element={<ServicesPage />} />
-            <Route path="/areas" element={<ServiceAreas />} />
-            <Route path="/sitemap" element={<Sitemap />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/reviews" element={<ReviewsPage />} />
-            <Route path="/packages" element={<Packages />} />
-            <Route path="/therapists" element={<TherapistsPage />} />
-            <Route path="/faq" element={<FAQPage />} />
-            {/* Service Area Landing Pages */}
-            <Route path="/areas/kuta" element={<KutaArea />} />
-            <Route path="/areas/legian" element={<LegianArea />} />
-            <Route path="/areas/seminyak" element={<SeminyakArea />} />
-            <Route path="/areas/tuban" element={<TubanArea />} />
-            <Route path="/areas/kuta-beachfront" element={<KutaBeachfrontArea />} />
-            <Route path="/areas/kuta-central" element={<KutaCentralArea />} />
-            <Route path="/areas/canggu" element={<CangguArea />} />
-            <Route path="/areas/ubud" element={<UbudArea />} />
-            <Route path="/areas/sanur" element={<SanurArea />} />
-            <Route path="/areas/denpasar" element={<DenpasarArea />} />
-            <Route path="/areas/jimbaran" element={<JimbaranArea />} />
-            <Route path="/areas/nusa-dua" element={<NusaDuaArea />} />
-            <Route path="/areas/uluwatu" element={<UluwatuArea />} />
-            <Route path="/areas/pecatu" element={<PecatuArea />} />
-            <Route path="/areas/bukit-peninsula" element={<BukitPeninsulaArea />} />
-            <Route path="/areas/ungasan" element={<UngasanArea />} />
-            <Route path="/areas/pererenan" element={<PererenanArea />} />
-            <Route path="/areas/berawa" element={<BerawaArea />} />
-            <Route path="/areas/echo-beach" element={<EchoBeachArea />} />
-            <Route path="/areas/batu-bolong" element={<BatuBolongArea />} />
-            <Route path="/areas/petitenget" element={<PetitengetArea />} />
-            <Route path="/areas/kerobokan" element={<KerobokanArea />} />
-            <Route path="/areas/tanjung-benoa" element={<TanjungBenoaArea />} />
-            <Route path="/areas/benoa" element={<BenoaArea />} />
-            <Route path="/areas/padang-padang" element={<PadangPadangArea />} />
-            <Route path="/areas/bingin" element={<BinginArea />} />
-            <Route path="/areas/dreamland" element={<DreamlandArea />} />
-            {/* Massage Type Landing Pages */}
-            <Route path="/services/balinese-massage" element={<BalineseMassage />} />
-            <Route path="/services/deep-tissue-massage" element={<DeepTissueMassage />} />
-            <Route path="/services/aromatherapy-massage" element={<AromatherapyMassage />} />
-            <Route path="/services/lymphatic-drainage-massage" element={<LymphaticDrainageMassage />} />
-            <Route path="/services/thai-massage" element={<ThaiMassage />} />
-            <Route path="/services/hot-stone-massage" element={<HotStoneMassage />} />
-            <Route path="/services/four-hands-massage" element={<FourHandsMassage />} />
-            <Route path="/services/pregnancy-massage" element={<PregnancyMassage />} />
-            <Route path="/services/foot-reflexology" element={<FootReflexology />} />
-            <Route path="/services/jet-lag-recovery-massage" element={<JetLagRecoveryMassage />} />
-            {/* New Specialty Massage Type Landing Pages - Batch 1 */}
-            <Route path="/services/healing-massage" element={<HealingMassage />} />
-            <Route path="/services/tension-release-massage" element={<TensionReleaseMassage />} />
-            <Route path="/services/muscle-recovery-therapy" element={<MuscleRecoveryTherapy />} />
-            <Route path="/services/body-relaxation-therapy" element={<BodyRelaxationTherapy />} />
-            <Route path="/services/stress-relief-massage" element={<StressReliefMassage />} />
-            <Route path="/services/swedish-massage" element={<SwedishMassage />} />
-            <Route path="/services/signature-massage" element={<SignatureMassage />} />
-            <Route path="/services/rejuvenation-massage" element={<RejuvenationMassage />} />
-            <Route path="/services/harmony-massage" element={<HarmonyMassage />} />
-            <Route path="/services/therapeutic-touch-massage" element={<TherapeuticTouchMassage />} />
-            {/* New Specialty Massage Type Landing Pages - Batch 2 */}
-            <Route path="/services/rejuvenating-body-treatment" element={<RejuvenatingBodyTreatment />} />
-            <Route path="/services/energy-balancing-massage" element={<EnergyBalancingMassage />} />
-            <Route path="/services/soothing-oil-massage" element={<SoothingOilMassage />} />
-            <Route path="/services/head-and-neck-massage" element={<HeadAndNeckMassage />} />
-            <Route path="/services/back-pain-massage" element={<BackPainMassage />} />
-            <Route path="/services/shoulder-tension-massage" element={<ShoulderTensionMassage />} />
-            <Route path="/services/calming-body-treatment" element={<CalmingBodyTreatment />} />
-            <Route path="/services/holistic-body-massage" element={<HolisticBodyMassage />} />
-            <Route path="/services/spa-body-treatment" element={<SpaBodyTreatment />} />
-            <Route path="/services/restorative-massage" element={<RestorativeMassage />} />
-            {/* New Specialty Massage Type Landing Pages - Batch 3 */}
-            <Route path="/services/comfort-massage" element={<ComfortMassage />} />
-            <Route path="/services/gentle-touch-massage" element={<GentleTouchMassage />} />
-            <Route path="/services/premium-spa-treatment" element={<PremiumSpaTreatment />} />
-            <Route path="/services/revitalizing-massage" element={<RevitalizingMassage />} />
+            {/* English routes (default, no prefix) */}
+            {routeConfig.map((route, index) => (
+              <Route key={`en-${index}`} path={route.path} element={route.element} />
+            ))}
+            
+            {/* Indonesian routes (/id prefix) */}
+            {routeConfig.map((route, index) => (
+              <Route 
+                key={`id-${index}`} 
+                path={`/id${route.path === '/' ? '' : route.path}`} 
+                element={route.element} 
+              />
+            ))}
+            {/* Handle /id as Indonesian home page */}
+            <Route path="/id" element={<Index />} />
+            
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
