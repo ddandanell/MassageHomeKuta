@@ -278,7 +278,120 @@ export const seminyakData: ServiceAreaData = {
       answer: "Yes! Our therapists have extensive experience and training. We provide the same high-quality service you'd expect from Seminyak's best spas, delivered to your location."
     }
   ],
-  nearbyAreas: ["Legian", "Kuta", "Petitenget"]
+  nearbyAreas: ["Legian", "Kuta", "Petitenget", "Kerobokan"],
+  extendedContent: {
+    areaDescription: `Seminyak represents the pinnacle of Bali's sophisticated beach lifestyle, where world-class dining meets designer boutiques, upscale beach clubs, and some of the island's most stunning private villas. Unlike its neighbors to the south, Seminyak has evolved into Bali's most fashionable destination, attracting discerning travelers who expect excellence in every aspect of their experience – including wellness services.
+
+The area stretches from the Double Six Beach area (where it borders Legian) northward through the famous Petitenget temple area and into the increasingly developed Oberoi Street corridor. Each neighborhood within Seminyak offers its own character: the beach clubs and sunset bars along the coastline, the boutique shopping and fine dining on Kayu Aya and Oberoi streets, and the quiet residential gangs where private villas hide behind ornate gates.
+
+What sets Seminyak apart is its cosmopolitan refinement. This is where Bali's international design community has established flagship boutiques, where celebrity chefs have opened Indonesian outposts, and where the villa experience has been elevated to an art form. Pool villas with open-plan living, dedicated butler service, and Instagram-worthy sunset views are standard expectations here.
+
+Our mobile massage service is particularly well-suited to Seminyak because the area's visitors typically value privacy, quality, and convenience over budget considerations. Rather than sharing space at a day spa – however lovely – Seminyak guests prefer the exclusivity of receiving professional treatments in their private villa, where they can dictate the timing, atmosphere, and level of privacy.`,
+
+    localCulture: `Despite its international sophistication, Seminyak remains authentically Balinese at its spiritual core. The Pura Petitenget temple, one of Bali's six most important sea temples, anchors the area's cultural identity. This ancient temple, dedicated to the sage Dang Hyang Nirartha, hosts elaborate ceremonies throughout the year, and its presence reminds visitors that they're guests in a living spiritual culture.
+
+The Balinese concept of wellness that informs our massage practice connects deeply to local culture. Traditional Balinese massage descends from ancient healing practices that view the body as an energy system requiring balance. The techniques our therapists use – acupressure on marma points, flowing strokes along energy pathways, aromatherapy with sacred plants – reflect centuries of accumulated healing wisdom.
+
+Many of our therapists come from Balinese families where massage skills have been passed down through generations. They bring not just technical expertise but an intuitive understanding of bodywork as a healing art. This cultural depth enriches every session, even when delivered in a contemporary designer villa.
+
+Seminyak's international community has created a unique fusion culture where Balinese traditions meet global sophistication. You'll find yoga studios next to French bistros, meditation centers near concept stores, and wellness retreats integrated into boutique hotels. Our service fits naturally into this wellness-oriented culture.`,
+
+    villaCulture: `Seminyak's villa culture represents the absolute peak of private accommodation in Bali. Properties here range from tasteful two-bedroom villas to extraordinary compounds with multiple pavilions, staff quarters, and amenities rivaling five-star resorts. Understanding this villa culture helps explain why mobile massage has become essential to the Seminyak experience.
+
+Typical Seminyak villas feature private swimming pools (often with infinity edges designed for sunset viewing), open-air living areas that blur the boundary between indoor and outdoor, and meticulously designed gardens that create private tropical paradises. Many include dedicated spa pavilions – covered platforms specifically designed for massage – though we can set up equally effectively by the pool, in air-conditioned bedrooms, or wherever guests prefer.
+
+Villa guests in Seminyak often employ villa managers and staff who can arrange services including massage. We work seamlessly with villa staff, coordinating arrival times and setup to ensure treatments integrate smoothly into guests' schedules. Villa managers appreciate our professionalism, punctuality, and the way our service enhances their guests' experience.
+
+The premium villa experience in Seminyak often includes personalized service that anticipates guests' needs. Our massage service extends this philosophy – we arrive with everything needed, adapt to each property's unique layout and atmosphere, and deliver treatments that match the quality expectations of even the most discerning guests.`,
+
+    touristBehavior: `Seminyak attracts a specific type of traveler: typically more affluent, often more experienced, and almost always seeking quality over quantity. Understanding these visitors helps explain what they want from massage services.
+
+Fashion and design-conscious travelers use Seminyak as a shopping destination, spending hours browsing the boutiques along Kayu Aya and Oberoi streets. After carrying shopping bags and navigating crowded sidewalks, feet and backs need attention. Our foot reflexology and full-body massage provide perfect recovery from shopping expeditions.
+
+Food enthusiasts come to Seminyak for its restaurant scene – arguably Southeast Asia's best outside Singapore. Multi-course tasting menus, long lunches, and extravagant brunches are Seminyak traditions. Pre-dinner massage helps guests relax and prepare for culinary adventures, while post-feast massage aids digestion and prevents food coma.
+
+Beach club culture dominates Seminyak's coastal scene. Days spent lounging at Potato Head, Ku De Ta, or La Lucciola involve sun exposure, cocktails, and the particular exhaustion that comes from trying hard to relax. Evening massage provides perfect transition from beach club to dinner reservations.
+
+Honeymooners and couples celebrating special occasions frequently choose Seminyak for its romantic atmosphere. Couples massage in a private villa – perhaps by candlelight, perhaps with champagne waiting afterwards – creates memorable experiences that define Seminyak trips.
+
+Digital nomads and long-term visitors often establish themselves in Seminyak, working from villa offices and co-working spaces. Regular weekly massage becomes essential wellness maintenance for this population, and we offer flexible scheduling that accommodates unpredictable work demands.`,
+
+    neighborhoodDetails: `Seminyak's neighborhoods each offer distinct character and different response times from our service:
+
+Southern Seminyak (Near Double Six): The transition zone between Legian and Seminyak proper. More accessible price points, younger vibe, excellent beach access. This is our fastest Seminyak response area: 20-25 minutes typically.
+
+Dhyana Pura Area: Central Seminyak's residential heart. Mix of villas, small hotels, and local businesses. Good value accommodation relative to beachfront. Response time: 22-28 minutes.
+
+Petitenget Temple Area: The spiritual and cultural center of Seminyak. Properties here benefit from proximity to the temple and the famous restaurants along Jalan Petitenget. Response time: 25-32 minutes.
+
+Oberoi Street (Kayu Aya): Seminyak's fashion and dining spine. Properties here enjoy walking access to boutiques and restaurants but often sacrifice beach proximity. Response time: 25-30 minutes.
+
+Beachfront Properties: Premium pricing for direct beach access. Properties along the coastal road from Double Six northward represent Seminyak's most sought-after locations. Response time: 22-30 minutes depending on exact position.
+
+Northern Seminyak (Toward Kerobokan): As you head north past Oberoi, Seminyak transitions into quieter residential areas. Larger villa plots, more privacy, fewer crowds. Response time: 30-35 minutes.`,
+
+    localDishes: `Seminyak's restaurant scene merits its own guidebook, but here are recommendations that pair perfectly with a wellness-focused visit:
+
+Fine Dining: Seminyak hosts acclaimed restaurants like Merah Putih (spectacular Indonesian fine dining in a stunning architectural space), Sardine (farm-to-table in rice paddies), and Mamasan (pan-Asian in colonial atmosphere). Book post-massage for ultimate relaxation before culinary adventure.
+
+Healthy Eating: The wellness movement has transformed Seminyak dining. Cafe Organic serves Instagram-famous smoothie bowls, Kynd Community offers plant-based everything, and Motion Fitness Cafe combines workout space with healthy menu. Perfect light eating before or after massage.
+
+Beachfront Dining: La Lucciola offers sunset views with upscale Italian, while simpler beach warungs serve fresh seafood at local prices. The beach club restaurants (Ku De Ta, Potato Head) provide day-to-night dining with varying price points.
+
+Local Warungs: Despite Seminyak's sophistication, excellent local warungs survive throughout the area. Warung Taman Bambu offers excellent Indonesian cooking in garden setting. Made's Warung (the original, not the chain) has been serving visitors since Seminyak was a quiet fishing village extension.
+
+Brunch Culture: Seminyak has perfected the leisurely brunch. Sisterfields, Revolver Espresso, and Corner House represent the coffee-and-eggs excellence that draws brunch devotees. Post-brunch massage helps process those generous portions.`,
+
+    problemsWeSolve: `Mobile massage in Seminyak addresses specific challenges faced by visitors to this premium destination:
+
+Jet Lag and Travel Recovery: Many Seminyak guests arrive after very long international flights – from Europe, Australia, the Americas. The exhaustion, disorientation, and physical stiffness of jet lag responds beautifully to professional massage. We can visit your villa within hours of arrival.
+
+Beach Club Recovery: Seminyak's famous beach clubs involve sun, alcohol, dancing, and often later nights than planned. The next day requires recovery, and massage promotes the detoxification and circulation that restore energy faster than rest alone.
+
+Shopping Fatigue: Serious shopping through Seminyak's boutiques creates real physical stress – walking, standing, carrying bags, making decisions. Our foot reflexology is particularly popular with shoppers, though full-body massage addresses the whole-system fatigue.
+
+Heat and Sun Stress: Even in upscale surroundings, Bali's tropical climate demands physical adaptation. Extended sun exposure, heat, and humidity create fatigue that massage helps resolve through improved circulation and lymphatic support.
+
+Work-Life Balance: Seminyak's digital nomad community struggles with the same work stress as anywhere, complicated by the guilt of "working in paradise." Regular massage helps create work-life boundaries and manage stress that remote work can exacerbate.
+
+Relationship Enhancement: Many couples choose Seminyak for romantic trips. Couples massage – whether for honeymoons, anniversaries, or simply relationship maintenance – creates shared relaxation experiences that strengthen connection.`,
+
+    pricingContext: `Seminyak pricing reflects its premium market position. Understanding local pricing context helps recognize the value our service provides:
+
+Seminyak Spa Pricing: High-end day spas in Seminyak typically charge IDR 600,000-1,200,000 for signature treatments. Hotel spas at major properties can charge even more. While these venues offer beautiful facilities, they also require travel time, scheduling around their availability, and sharing space with other guests.
+
+Villa Spa Services: Some premium villas offer in-house spa services at significant premiums. These services, while convenient, often come with limited menu options and therapists who may not have the same specialized training as independent professionals.
+
+Our Value Proposition: Our service delivers Seminyak-quality massage at prices competitive with day spas, with the added benefits of complete privacy, flexible scheduling, and treatment in your own space. For villa guests, we provide the in-house spa experience without the premium pricing.
+
+Premium Service Options: For guests seeking ultra-luxury experiences, we offer four-hands massage (two synchronized therapists), extended treatment packages, and special occasion setups. These premium options remain competitively priced compared to resort equivalents.`
+  },
+  localTestimonials: [
+    {
+      text: "We rented a gorgeous villa in Seminyak for our honeymoon and booked couples massage twice. Having professional therapists come to our private pool deck was so much more romantic than going to a spa. The sunset session was absolutely perfect – we're still talking about it months later.",
+      author: "Sophie & James",
+      accommodation: "Private Villa, Petitenget Area",
+      rating: 5
+    },
+    {
+      text: "As someone who's visited Seminyak many times and tried most of the day spas, I was skeptical about mobile massage. But after my first session, I'm converted. The convenience of not having to leave my villa, combined with genuinely excellent massage quality, makes this my new go-to service.",
+      author: "Michael R.",
+      accommodation: "Boutique Hotel near Oberoi Street",
+      rating: 5
+    },
+    {
+      text: "I work remotely and spend months at a time in Seminyak. Weekly massage has become essential for managing work stress and staying healthy. This service is reliable, professional, and the therapists know what they're doing. Highly recommend for other digital nomads.",
+      author: "David L.",
+      accommodation: "Long-term villa rental, Dhyana Pura",
+      rating: 5
+    },
+    {
+      text: "After a long day shopping and exploring, there's nothing better than having a professional massage come to you. No getting dressed up, no driving, no waiting in spa lobbies. Just pure relaxation in my beautiful rented villa. The aromatherapy massage was heaven.",
+      author: "Jennifer K.",
+      accommodation: "Pool Villa near Seminyak Square",
+      rating: 5
+    }
+  ]
 };
 
 export const tubanData: ServiceAreaData = {

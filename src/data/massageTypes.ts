@@ -106,7 +106,144 @@ export const balineseData: MassageTypeData = {
     text: "Best massage I've had in Bali! The therapist was professional, on time, and the Balinese massage was exactly what I needed after long flights. They brought everything to our villa. Highly recommend!",
     author: "Sarah M.",
     location: "Melbourne, Australia"
-  }
+  },
+  extendedContent: {
+    historyAndOrigin: `Balinese massage represents centuries of accumulated healing wisdom, drawing from the rich traditions of three great Asian civilizations that have influenced Bali's culture: Indian Ayurvedic principles, Chinese acupressure techniques, and indigenous Balinese healing practices rooted in Hindu-Buddhist spirituality.
+
+The origins of Balinese massage trace back to the ancient kingdom periods when Bali was deeply connected to Javanese Hindu-Buddhist empires. Healers known as "balian" developed bodywork techniques as part of holistic healing practices that included herbal medicine, spiritual ceremonies, and energy work. These traditional healers viewed the body as an energy system that required regular maintenance and balance – concepts that directly inform modern Balinese massage.
+
+Indian Ayurvedic influence arrived with Hinduism, bringing the concept of marma points – vital energy centers throughout the body similar to Chinese acupuncture points but with distinct therapeutic applications. Traditional Balinese massage targets these marma points using finger pressure, stimulating energy flow and releasing blocked energy that traditional healers believed caused physical and emotional imbalance.
+
+Chinese traders brought acupressure techniques to Bali through centuries of commercial contact. The concept of energy pathways (similar to Chinese meridians) merged with indigenous Balinese understanding of the body, creating the long, flowing strokes along energy lines that characterize authentic Balinese massage.
+
+Indigenous Balinese contributions include the use of local aromatic plants and flowers for massage oils, specific techniques for addressing tropical climate effects on the body, and the spiritual dimension that transforms massage from mere physical manipulation into a healing ceremony. Traditional practitioners would begin sessions with prayers and offerings, honoring the spiritual beings believed to influence health.
+
+The Balinese concept of "sekala" (seen world) and "niskala" (unseen world) informs traditional massage philosophy. Skilled practitioners believe they work on both levels simultaneously – physically manipulating tissue while also influencing the energy body that exists beyond physical perception.`,
+
+    detailedProcess: `A professional Balinese massage session follows a purposeful progression that maximizes therapeutic benefit while honoring traditional protocols:
+
+Preparation and Consultation: Your therapist arrives with professional equipment including a portable massage table, fresh linens, premium aromatherapy oils, and everything needed for your session. Before beginning, they'll ask about any health concerns, injuries, areas needing special attention, and your pressure preferences. This consultation ensures your treatment is customized to your specific needs.
+
+Setting the Atmosphere: Traditional Balinese massage engages all senses. Your therapist may use aromatherapy diffusers with essential oils chosen for their therapeutic properties, play gentle music that supports relaxation, and ensure the treatment space is comfortable and private. The goal is creating a sanctuary feeling wherever you are.
+
+Initial Relaxation: Sessions typically begin with you lying face-down, with a brief period of stillness allowing your body to settle onto the table and your mind to transition into relaxation mode. The therapist may place warm, scented towels on your back or use gentle hand placements to signal the beginning of treatment.
+
+Long Flowing Strokes: The signature element of Balinese massage is the effleurage – long, gliding strokes that travel the length of muscle groups following traditional energy pathways. These strokes use warm, aromatic oil and create the flowing, continuous sensation that distinguishes Balinese massage from more percussive styles.
+
+Acupressure and Marma Point Work: Interspersed with flowing strokes, the therapist applies sustained pressure to specific points along energy lines. These marma points correlate to organs and body systems; stimulating them promotes systemic balance beyond the direct physical area being worked.
+
+Gentle Stretching: Authentic Balinese massage incorporates passive stretching that improves flexibility and releases deeper tension than massage alone. These stretches are gentler than Thai massage equivalents, maintaining the relaxation focus while improving range of motion.
+
+Back and Shoulder Focus: Particular attention goes to the back, shoulders, and neck – areas where modern travelers hold significant tension. The combination of flowing strokes, point pressure, and gentle manipulation releases accumulated stress from travel, desk work, and daily life.
+
+Leg and Foot Work: The legs receive thorough attention, with techniques that improve circulation, reduce swelling (common after flights), and address fatigue from walking. Foot massage incorporates reflexology principles, targeting points believed to influence the entire body.
+
+Transition to Face-Up: At approximately the halfway point, you'll turn to lie face-up for work on the fronts of legs, arms, hands, neck, face, and scalp. This position allows access to different muscle groups and energy pathways.
+
+Head, Face, and Scalp Massage: One of Balinese massage's most beloved elements is the extended attention to head, face, and scalp. These techniques release tension from facial muscles, jaw clenching, and scalp tightness while promoting profound relaxation.
+
+Completion: Sessions conclude with gentle techniques that signal completion and ground your energy. The therapist may leave you resting briefly before cleanup, allowing the full effects of treatment to integrate.`,
+
+    preparationTips: `To get the most from your Balinese massage session, consider these preparation guidelines:
+
+Timing and Eating: Avoid heavy meals for at least two hours before your massage. A full stomach diverts blood flow to digestion and can cause discomfort when lying face-down. Light eating before massage is fine, and many guests enjoy a meal after their session.
+
+Hydration: Drink plenty of water in the hours before your massage. Hydrated muscle tissue responds better to manipulation, and you'll feel better overall. Avoid alcohol before massage – it dehydrates tissues and interferes with your body's response to treatment.
+
+Shower First: While not essential, showering before massage is appreciated by therapists and may help you relax more easily. You'll feel refreshed and clean, and the warm water begins the muscle relaxation process.
+
+Communication: Think about what you want from your session. Are you seeking relaxation? Pain relief in specific areas? Recovery from activity? Communicating your goals helps your therapist customize the treatment. Don't hesitate to mention injuries, sensitivities, or health conditions – this information helps ensure safe, effective treatment.
+
+Creating Space: Prepare your treatment area by ensuring adequate space for the massage table, comfortable room temperature, and relative privacy. Our therapists bring everything needed, but you provide the peaceful environment.
+
+Mental Transition: Before your therapist arrives, take a few minutes to shift mentally from "doing" to "receiving." Put away your phone, complete any urgent tasks, and create the mental space for relaxation. The physical benefits of massage are enhanced when your mind also releases.
+
+Clothing: You can remain clothed in comfortable underwear during massage – professional draping ensures modesty throughout. If you prefer to wear more, loose shorts or a sports bra are fine. Removing jewelry helps access neck, hands, and ears comfortably.`,
+
+    aftercareTips: `The hours following your Balinese massage matter almost as much as the treatment itself. Proper aftercare extends and enhances the benefits you've received:
+
+Immediate Rest: If possible, avoid jumping immediately into activity after your massage. Rest for at least 30 minutes, allowing your body to integrate the treatment effects. Many guests book evening massages specifically so they can rest afterward.
+
+Hydration: Drink plenty of water over the 24 hours following massage. Massage releases metabolic waste from muscle tissue, and hydration helps your kidneys process these substances efficiently. This reduces any "massage hangover" effects and enhances detoxification benefits.
+
+Avoid Heavy Exercise: Give your muscles 24 hours before intense workouts. Your tissue has been worked and stretched; allowing recovery time maximizes benefit. Light activity like walking is fine – strenuous exercise can undo some of the relaxation achieved.
+
+Light Eating: If you're hungry after massage, choose light, easily digestible foods. Heavy meals immediately after massage can create digestive discomfort. Many guests report decreased appetite for several hours post-massage anyway.
+
+Shower Timing: You don't need to shower immediately – the aromatic oils continue providing benefits as they absorb into your skin. If you prefer showering, warm (not hot) water is best. Very hot water or saunas immediately after massage can cause lightheadedness.
+
+Notice Your Body: Pay attention to how you feel in the days following massage. Notice improved sleep, increased flexibility, areas that feel released, and any lingering sensations. This awareness helps you communicate better for future sessions and recognize how your body responds to treatment.
+
+Scheduling Future Sessions: Consider when you might benefit from another massage. For general wellness, monthly massage provides excellent maintenance. For specific issues or high stress periods, more frequent sessions may be beneficial. We can help you develop a schedule that meets your wellness goals.`,
+
+    comparisonWithOthers: `Understanding how Balinese massage differs from other popular massage styles helps you choose the right treatment for your needs:
+
+Balinese vs. Swedish Massage: Swedish massage, developed in 19th century Europe, uses similar long, flowing strokes but differs in underlying philosophy. Swedish massage is explicitly therapeutic, focused on circulatory and muscular benefits through anatomical understanding. Balinese massage incorporates these benefits but adds energy work, acupressure, and spiritual dimensions. If you want pure relaxation with traditional foundation, choose Balinese. If you prefer a Western therapeutic approach, Swedish may suit you better.
+
+Balinese vs. Thai Massage: Thai massage involves significant stretching – the recipient is moved through yoga-like positions by the practitioner. It's performed clothed on a floor mat without oils. Thai massage is more physically dynamic and energizing, while Balinese is more soothing and relaxing. Choose Thai for flexibility improvement and energizing effects; choose Balinese for ultimate relaxation with aromatic oils.
+
+Balinese vs. Deep Tissue: Deep tissue massage uses intense pressure to access deep muscle layers, specifically targeting chronic tension and adhesions. It can be uncomfortable during treatment though therapeutic afterward. Balinese massage works more superficially with gentler pressure while still providing significant muscle benefit through different mechanisms. Choose deep tissue for specific chronic pain issues; choose Balinese when you want thorough treatment without intense pressure.
+
+Balinese vs. Aromatherapy Massage: Aromatherapy massage combines massage with essential oils chosen for specific therapeutic effects – lavender for relaxation, peppermint for energy, etc. Traditional Balinese massage also uses aromatic oils but with different selection criteria based on Balinese tradition. Both deliver oil-based relaxation massage; the difference is in oil selection philosophy.
+
+Balinese vs. Hot Stone: Hot stone massage uses heated basalt stones as massage tools, delivering heat therapy that enhances muscle relaxation. The sensation is distinctive – the penetrating warmth of stones creates effects different from hands alone. Balinese massage can achieve deep relaxation through different means. Choose hot stone for the unique heated sensation; choose Balinese for comprehensive traditional treatment.
+
+When to Choose Balinese: Balinese massage is ideal when you want moderate pressure, aromatic oils, full-body treatment, and a holistic approach honoring traditional healing wisdom. It's perfect for first-time massage recipients, anyone seeking deep relaxation, and those interested in experiencing authentic Balinese culture through healing arts.`,
+
+    expertInsights: `Our experienced Balinese massage therapists offer these insights from years of professional practice:
+
+On Pressure: "Many guests ask for firm pressure because they think stronger means better. But Balinese massage works partly through energy stimulation that doesn't require painful pressure. When you trust the process and allow medium pressure to work, the results often surpass expectations. Save intense pressure for deep tissue when specific issues require it."
+
+On Breathing: "Your breath is our communication tool. When you breathe deeply, I can feel your muscles release. When you hold your breath, muscles tighten. Try to maintain slow, deep breathing throughout your session. If you forget, I'll gently remind you – it dramatically enhances what we can achieve together."
+
+On Regular Practice: "One massage feels wonderful but fades within days. Regular monthly massage creates cumulative benefits – improved flexibility, better stress management, and enhanced body awareness that compounds over time. Guests who commit to regular sessions see transformative results."
+
+On Customization: "No two bodies are alike, and no two sessions should be identical even for the same person. Some days you need back focus, other days legs are tired. Some visits call for energizing treatment, others for sedating work. Always communicate your current state – good therapists adapt every session to what you need today."
+
+On Integration: "Balinese massage works best when combined with other wellness practices. Yoga and massage complement each other beautifully. Good nutrition supports tissue health. Quality sleep allows massage benefits to integrate. Think of massage as one element in holistic wellness rather than isolated treatment."
+
+On Mental Release: "Physical tension and mental tension interconnect. Sometimes during massage, emotions surface – that's normal and healthy. If you feel emotional during treatment, don't fight it. Releasing emotional holding often accompanies physical release. Tears during massage indicate deep healing happening."`,
+
+    localContext: `Receiving Balinese massage in Bali creates an experience impossible to replicate elsewhere. You're not just getting a treatment style – you're experiencing living tradition in its birthplace:
+
+Cultural Authenticity: Our therapists learned Balinese massage within Balinese culture, often from family members who carried knowledge through generations. The techniques they use connect to centuries of practice rather than workshop certifications. This depth of tradition informs every session.
+
+Local Materials: The aromatherapy oils used in your session contain plants grown in Bali's volcanic soil, prepared according to local traditions. Frangipani, ylang-ylang, and turmeric oils carry the essence of the island itself. These authentic local products enhance treatment in ways synthetic alternatives cannot match.
+
+Spiritual Context: Bali's unique Hindu culture permeates daily life, including healing practices. Many of our therapists maintain spiritual practices that inform their work. While your session won't include explicit religious elements, the underlying worldview that sees healing as sacred work influences the care and intention brought to every treatment.
+
+Environmental Harmony: Receiving massage in Bali – particularly in a villa setting – often means tropical garden views, ocean sounds, and the gentle breeze of the tropics. These environmental elements enhance relaxation in ways that create memories far beyond the massage itself.
+
+Post-Massage Integration: After your massage, you can walk on the beach, swim in warm tropical waters, or rest in a beautiful villa garden. Bali's entire environment supports the relaxation and wellness that massage initiates. The transition from treatment to evening activities happens in a setting designed for pleasure and rejuvenation.
+
+Affordable Excellence: In many countries, professional massage is a significant expense. In Bali, excellent massage is accessible to more budgets, allowing for more frequent sessions and comprehensive treatment packages that would be prohibitively expensive elsewhere. Take advantage of this opportunity to experience massage at therapeutic frequency.`
+  },
+  additionalTestimonials: [
+    {
+      text: "I've had Balinese massage in Australia, Thailand, and now finally in Bali itself. There's no comparison – receiving this treatment in its birthplace, from therapists who learned it from family tradition, creates something special. The aromatherapy oils smelled like Bali itself. Utterly authentic.",
+      author: "Katherine W.",
+      location: "Brisbane, Australia",
+      rating: 5
+    },
+    {
+      text: "My wife and I booked couples Balinese massage in our villa for our anniversary. The therapists set up by our pool at sunset, and for 90 minutes we drifted in pure relaxation while the sky turned orange. Best anniversary gift we could have given each other.",
+      author: "Robert and Linda M.",
+      location: "Vancouver, Canada",
+      rating: 5
+    },
+    {
+      text: "First time getting any massage and I was nervous about what to expect. The therapist was so professional and patient, explaining everything and checking pressure constantly. The Balinese massage was gentle enough for my first experience but still incredibly effective. I'm hooked!",
+      author: "Amanda T.",
+      location: "Singapore",
+      rating: 5
+    },
+    {
+      text: "As a frequent traveler to Bali over 15 years, I've had many massages here. This mobile service finally solved my frustration with spa inconsistency. Same quality every time, in my own villa, on my schedule. The traditional Balinese massage is exactly what I want after long flights.",
+      author: "Thomas H.",
+      location: "Los Angeles, USA",
+      rating: 5
+    }
+  ]
 };
 
 export const deepTissueData: MassageTypeData = {
