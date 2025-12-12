@@ -95,7 +95,7 @@ const FAQPage = () => {
       <Header />
       
       <main>
-        <section className="relative py-32 md:py-40 bg-gradient-to-br from-purple-500 to-pink-500 text-white overflow-hidden">
+        <section className="relative py-32 md:py-40 bg-gradient-to-br from-teal-600 to-cyan-600 text-white overflow-hidden">
           <div className="absolute inset-0 bg-black/20 backdrop-blur-sm"></div>
           <div className="relative container mx-auto px-4 text-center z-10">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
@@ -108,7 +108,7 @@ const FAQPage = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-20 bg-background">
+        <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold text-spa-earth mb-6">

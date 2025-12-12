@@ -70,7 +70,7 @@ const Services = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="relative py-32 md:py-40 bg-gradient-to-br from-teal-500 to-cyan-600 text-white overflow-hidden">
+        <section className="relative py-32 md:py-40 bg-gradient-to-br from-emerald-600 to-teal-600 text-white overflow-hidden">
           <div className="absolute inset-0 bg-black/20 backdrop-blur-sm"></div>
           <div className="relative container mx-auto px-4 text-center z-10">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-lg">
@@ -83,7 +83,7 @@ const Services = () => {
         </section>
 
         {/* Services Grid */}
-        <section className="py-20 bg-background">
+        <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold text-spa-earth mb-6">
@@ -128,8 +128,8 @@ const Services = () => {
             </div>
 
             <div className="text-center mt-16">
-              <Button asChild size="lg" className="text-lg px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold shadow-xl">
-                <a href="/#booking">Book Your Massage Today</a>
+              <Button asChild size="lg" className="text-lg px-8 py-4 bg-gradient-to-r from-amber-400 to-yellow-500 hover:from-amber-500 hover:to-yellow-600 text-slate-900 font-semibold shadow-xl">
+                <a href="/#booking">Book Now</a>
               </Button>
             </div>
           </div>
