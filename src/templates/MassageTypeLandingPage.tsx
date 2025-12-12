@@ -10,36 +10,22 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { MessageCircle, Clock, Star, MapPin, Users, CheckCircle, ArrowRight } from "lucide-react";
 import { MassageTypeData } from "@/types/landingPageTypes";
 import { Link } from "react-router-dom";
+import { DESIGN_SYSTEM, generateWhatsAppUrl, generateBreadcrumbs } from "@/config/designSystem";
+import { SITE_CONFIG } from "@/config/site";
 
 interface MassageTypeLandingPageProps {
   data: MassageTypeData;
 }
 
 const MassageTypeLandingPage = ({ data }: MassageTypeLandingPageProps) => {
-  const whatsappNumber = "+62 811-2656-869";
   const whatsappMessage = `Hi! I'd like to book a ${data.name} service in Kuta. Can you help me with availability?`;
-  const whatsappUrl = `https://wa.me/${whatsappNumber.replace(/\D/g, '')}?text=${encodeURIComponent(whatsappMessage)}`;
+  const whatsappUrl = generateWhatsAppUrl(whatsappMessage, SITE_CONFIG.whatsapp);
 
-  const breadcrumbData = [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.homemassagekuta.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Services",
-      "item": "https://www.homemassagekuta.com/services"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": data.name,
-      "item": `https://www.homemassagekuta.com/services/${data.slug}`
-    }
-  ];
+  const breadcrumbData = generateBreadcrumbs([
+    { name: "Home", path: "/" },
+    { name: "Services", path: "/services" },
+    { name: data.name, path: `/services/${data.slug}` }
+  ]);
 
   // Create service-specific schema data
   const serviceSchemaData = {
@@ -72,61 +58,61 @@ const MassageTypeLandingPage = ({ data }: MassageTypeLandingPageProps) => {
 
       <main>
         {/* Hero Section */}
-        <section className="relative py-32 md:py-40 text-white overflow-hidden">
+        <section className={`relative ${DESIGN_SYSTEM.spacing.hero} text-white overflow-hidden`}>
           <div className="absolute inset-0">
             <img
               src="/images/hero/hero-2.jpg"
               alt="Relaxing massage therapy session"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/80 via-teal-900/70 to-emerald-900/80 backdrop-blur-[2px]"></div>
+            <div className={`absolute inset-0 bg-gradient-to-br ${DESIGN_SYSTEM.heroGradients.service} opacity-90 backdrop-blur-[2px]`}></div>
           </div>
-          <div className="relative container mx-auto px-4 text-center z-10">
-            <Badge className="mb-6 bg-professional-gold text-professional-navy px-4 py-2 text-sm">
+          <div className={`relative ${DESIGN_SYSTEM.spacing.container} text-center z-10`}>
+            <Badge className={DESIGN_SYSTEM.badgeStyles.highlight}>
               Professional Mobile Service
             </Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-lg">
+            <h1 className={`${DESIGN_SYSTEM.typography.heroTitle} mb-6 drop-shadow-lg mt-6`}>
               {data.heroTitle}
             </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-95 drop-shadow-md">
+            <p className={`${DESIGN_SYSTEM.typography.heroSubtitle} mb-8 max-w-4xl mx-auto opacity-95 drop-shadow-md`}>
               {data.heroSubtitle}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button asChild size="lg" className="text-lg px-8 py-6 bg-white text-professional-navy hover:bg-white/90 shadow-xl">
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                  <MessageCircle className="w-5 h-5 mr-2" />
-                  Book Now - WhatsApp
+                  <MessageCircle className={`${DESIGN_SYSTEM.iconSizes.medium} mr-2`} />
+                  {DESIGN_SYSTEM.ctaText.bookWhatsApp}
                 </a>
               </Button>
               <div className="flex items-center gap-2 text-sm">
-                <Clock className="w-4 h-4" />
-                <span>Available 07:00 – 22:00 Daily</span>
+                <Clock className={DESIGN_SYSTEM.iconSizes.small} />
+                <span>{DESIGN_SYSTEM.availabilityText}</span>
               </div>
             </div>
           </div>
         </section>
 
         {/* Premium Intro */}
-        <section className="py-16 bg-background">
-          <div className="container mx-auto px-4 max-w-4xl">
-            <p className="text-xl text-spa-stone leading-relaxed">
+        <section className={`${DESIGN_SYSTEM.spacing.section} ${DESIGN_SYSTEM.sectionBackgrounds.white}`}>
+          <div className={`${DESIGN_SYSTEM.spacing.container} max-w-4xl`}>
+            <p className={`${DESIGN_SYSTEM.typography.bodyLarge} text-spa-stone leading-relaxed`}>
               {data.introText}
             </p>
           </div>
         </section>
 
         {/* Benefits Section */}
-        <section className="py-16 bg-spa-cream/30">
-          <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-spa-earth text-center mb-12">
+        <section className={`${DESIGN_SYSTEM.spacing.section} ${DESIGN_SYSTEM.sectionBackgrounds.cream}`}>
+          <div className={DESIGN_SYSTEM.spacing.container}>
+            <h2 className={`${DESIGN_SYSTEM.typography.sectionTitle} text-spa-earth text-center mb-12`}>
               Key Benefits of {data.name}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {data.benefits.map((benefit, index) => (
-                <Card key={index} className="bg-gradient-card border-0 shadow-soft hover:shadow-floating transition-all duration-300">
+                <Card key={index} className={DESIGN_SYSTEM.cardStyles.standard}>
                   <CardContent className="pt-6">
                     <div className="flex items-start gap-3">
-                      <CheckCircle className="w-6 h-6 text-spa-gold flex-shrink-0 mt-1" />
+                      <CheckCircle className={`${DESIGN_SYSTEM.iconSizes.large} text-spa-gold flex-shrink-0 mt-1`} />
                       <p className="text-spa-earth font-medium">{benefit}</p>
                     </div>
                   </CardContent>
@@ -137,8 +123,8 @@ const MassageTypeLandingPage = ({ data }: MassageTypeLandingPageProps) => {
         </section>
 
         {/* Techniques & Ideal For */}
-        <section className="py-16 bg-background">
-          <div className="container mx-auto px-4">
+        <section className={`${DESIGN_SYSTEM.spacing.section} ${DESIGN_SYSTEM.sectionBackgrounds.white}`}>
+          <div className={DESIGN_SYSTEM.spacing.container}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
               {/* Techniques */}
               <div>
