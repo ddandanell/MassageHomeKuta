@@ -6,21 +6,16 @@ import Community from "@/components/Community";
 import BookingCTA from "@/components/BookingCTA";
 import Footer from "@/components/Footer";
 import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
-import { Helmet } from "react-helmet-async";
-import { Star, Quote } from "lucide-react";
+import { Star } from "lucide-react";
 
 const ReviewsPage = () => {
   return (
     <div className="min-h-screen">
-      <Helmet>
-        <title>Customer Reviews - Home Massage Kuta | 4.9★ Rated Service</title>
-        <meta name="description" content="Read authentic reviews from 500+ satisfied customers. See why Home Massage Kuta is the #1 rated in-villa massage service in Bali with 4.9 stars." />
-        <meta name="keywords" content="massage reviews Kuta, customer testimonials, 5 star massage Bali, best massage service reviews" />
-      </Helmet>
-      
       <SiteMeta 
         title="Customer Reviews - Home Massage Kuta | 4.9★ Rated Service"
         description="Read authentic reviews from 500+ satisfied customers. See why Home Massage Kuta is the #1 rated in-villa massage service in Bali with 4.9 stars."
+        keywords="massage reviews Kuta, customer testimonials, 5 star massage Bali, best massage service reviews"
+        canonical="/reviews"
       />
       <StructuredData type="service" />
       

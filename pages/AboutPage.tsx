@@ -9,20 +9,15 @@ import Community from "@/components/Community";
 import BookingCTA from "@/components/BookingCTA";
 import Footer from "@/components/Footer";
 import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
-import { Helmet } from "react-helmet-async";
 
 const AboutPage = () => {
   return (
     <div className="min-h-screen">
-      <Helmet>
-        <title>About Home Massage Kuta - Professional In-Villa Massage Services</title>
-        <meta name="description" content="Learn about Home Massage Kuta's professional team, safety standards, and commitment to providing luxury spa treatments in your villa or hotel in Bali." />
-        <meta name="keywords" content="about us, professional massage, Kuta massage therapists, licensed therapists Bali, spa services" />
-      </Helmet>
-      
       <SiteMeta 
         title="About Home Massage Kuta - Professional In-Villa Massage Services"
         description="Learn about Home Massage Kuta's professional team, safety standards, and commitment to providing luxury spa treatments in your villa or hotel in Bali."
+        keywords="about us, professional massage, Kuta massage therapists, licensed therapists Bali, spa services"
+        canonical="/about"
       />
       <StructuredData type="organization" />
       
