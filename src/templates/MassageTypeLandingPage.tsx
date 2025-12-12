@@ -176,13 +176,13 @@ const MassageTypeLandingPage = ({ data }: MassageTypeLandingPageProps) => {
         </section>
 
         {/* Service Area Mention */}
-        <section className="py-12 bg-gradient-to-r from-teal-500 to-emerald-500 text-white">
-          <div className="container mx-auto px-4 text-center">
-            <MapPin className="w-12 h-12 mx-auto mb-4" />
-            <h3 className="text-2xl font-bold mb-4">
+        <section className={`${DESIGN_SYSTEM.spacing.sectionSmall} bg-gradient-to-r ${DESIGN_SYSTEM.heroGradients.primary} text-white`}>
+          <div className={`${DESIGN_SYSTEM.spacing.container} text-center`}>
+            <MapPin className={`${DESIGN_SYSTEM.iconSizes.xlarge} mx-auto mb-4`} />
+            <h3 className={`${DESIGN_SYSTEM.typography.subsectionTitle} mb-4`}>
               Serving All of Kuta & Surrounding Areas
             </h3>
-            <p className="text-lg max-w-3xl mx-auto opacity-95">
+            <p className={`${DESIGN_SYSTEM.typography.body} max-w-3xl mx-auto opacity-95`}>
               We provide {data.name} across Kuta, Legian, Tuban, and Seminyak's southern border.
               Fast response times and professional equipment delivered to your villa or hotel.
             </p>
@@ -190,16 +190,16 @@ const MassageTypeLandingPage = ({ data }: MassageTypeLandingPageProps) => {
         </section>
 
         {/* Packages & Pricing */}
-        <section className="py-16 bg-background">
-          <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-spa-earth text-center mb-12">
+        <section className={`${DESIGN_SYSTEM.spacing.section} ${DESIGN_SYSTEM.sectionBackgrounds.white}`}>
+          <div className={DESIGN_SYSTEM.spacing.container}>
+            <h2 className={`${DESIGN_SYSTEM.typography.sectionTitle} text-spa-earth text-center mb-12`}>
               Packages & Pricing
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
               {data.packages.map((pkg, index) => (
-                <Card key={index} className="bg-gradient-card border-0 shadow-soft hover:shadow-floating transition-all duration-300">
+                <Card key={index} className={DESIGN_SYSTEM.cardStyles.standard}>
                   <CardHeader>
-                    <CardTitle className="text-spa-earth text-2xl text-center">
+                    <CardTitle className={`${DESIGN_SYSTEM.typography.cardTitle} text-spa-earth text-2xl text-center`}>
                       {pkg.duration}
                     </CardTitle>
                     <CardDescription className="text-center text-2xl font-bold text-spa-gold">
@@ -210,7 +210,7 @@ const MassageTypeLandingPage = ({ data }: MassageTypeLandingPageProps) => {
                     <p className="text-spa-stone text-center mb-4">{pkg.description}</p>
                     <Button asChild className="w-full" variant="default">
                       <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                        Book {pkg.duration}
+                        {DESIGN_SYSTEM.ctaText.bookNow} {pkg.duration}
                       </a>
                     </Button>
                   </CardContent>
@@ -221,9 +221,9 @@ const MassageTypeLandingPage = ({ data }: MassageTypeLandingPageProps) => {
         </section>
 
         {/* Why Choose Us */}
-        <section className="py-16 bg-spa-cream/30">
-          <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-spa-earth text-center mb-12">
+        <section className={`${DESIGN_SYSTEM.spacing.section} ${DESIGN_SYSTEM.sectionBackgrounds.cream}`}>
+          <div className={DESIGN_SYSTEM.spacing.container}>
+            <h2 className={`${DESIGN_SYSTEM.typography.sectionTitle} text-spa-earth text-center mb-12`}>
               Why Choose Our {data.name} Service?
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -650,25 +650,25 @@ const MassageTypeLandingPage = ({ data }: MassageTypeLandingPageProps) => {
         </section>
 
         {/* Final CTA */}
-        <section className="py-16 bg-gradient-professional text-primary-foreground">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+        <section className={`${DESIGN_SYSTEM.spacing.section} ${DESIGN_SYSTEM.sectionBackgrounds.gradient} text-primary-foreground`}>
+          <div className={`${DESIGN_SYSTEM.spacing.container} text-center`}>
+            <h2 className={`${DESIGN_SYSTEM.typography.sectionTitle} mb-6`}>
               Ready to Experience {data.name}?
             </h2>
-            <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+            <p className={`${DESIGN_SYSTEM.typography.bodyLarge} mb-8 opacity-90 max-w-2xl mx-auto`}>
               Book now and our certified therapists will bring the spa experience directly to your location in Kuta.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8 py-6 bg-white text-professional-navy hover:bg-white/90">
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                  <MessageCircle className="w-5 h-5 mr-2" />
-                  Book via WhatsApp
+                  <MessageCircle className={`${DESIGN_SYSTEM.iconSizes.medium} mr-2`} />
+                  {DESIGN_SYSTEM.ctaText.bookWhatsApp}
                 </a>
               </Button>
               <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6 border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-professional-navy">
                 <a href="/services">
-                  View All Services
+                  {DESIGN_SYSTEM.ctaText.viewServices}
                 </a>
               </Button>
             </div>

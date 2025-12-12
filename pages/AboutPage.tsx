@@ -8,6 +8,7 @@ import SafetyStandards from "@/components/SafetyStandards";
 import Community from "@/components/Community";
 import BookingCTA from "@/components/BookingCTA";
 import Footer from "@/components/Footer";
+import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
 import { Helmet } from "react-helmet-async";
 
 const AboutPage = () => {
@@ -29,7 +30,7 @@ const AboutPage = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="relative py-32 md:py-40 bg-gradient-to-br from-blue-500 to-indigo-600 text-white overflow-hidden">
+        <section className="relative py-32 md:py-40 bg-gradient-to-br from-teal-600 to-cyan-600 text-white overflow-hidden">
           <div className="absolute inset-0 bg-black/20 backdrop-blur-sm"></div>
           <div className="relative container mx-auto px-4 text-center z-10">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-lg">
@@ -51,6 +52,7 @@ const AboutPage = () => {
       </main>
       
       <Footer />
+      <FloatingWhatsAppButton />
     </div>
   );
 };

@@ -5,6 +5,7 @@ import Testimonials from "@/components/Testimonials";
 import Community from "@/components/Community";
 import BookingCTA from "@/components/BookingCTA";
 import Footer from "@/components/Footer";
+import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
 import { Helmet } from "react-helmet-async";
 import { Star, Quote } from "lucide-react";
 
@@ -27,7 +28,7 @@ const ReviewsPage = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="relative py-32 md:py-40 bg-gradient-to-br from-amber-500 to-orange-500 text-white overflow-hidden">
+        <section className="relative py-32 md:py-40 bg-gradient-to-br from-teal-600 to-cyan-600 text-white overflow-hidden">
           <div className="absolute inset-0 bg-black/20 backdrop-blur-sm"></div>
           <div className="relative container mx-auto px-4 text-center z-10">
             <div className="flex justify-center items-center gap-2 mb-6">
@@ -81,6 +82,7 @@ const ReviewsPage = () => {
       </main>
       
       <Footer />
+      <FloatingWhatsAppButton />
     </div>
   );
 };
