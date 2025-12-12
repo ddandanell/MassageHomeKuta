@@ -68,10 +68,10 @@ const MassageTypeLandingPage = ({ data }: MassageTypeLandingPageProps) => {
             <div className={`absolute inset-0 bg-gradient-to-br ${DESIGN_SYSTEM.heroGradients.service} opacity-90 backdrop-blur-[2px]`}></div>
           </div>
           <div className={`relative ${DESIGN_SYSTEM.spacing.container} text-center z-10`}>
-            <Badge className={DESIGN_SYSTEM.badgeStyles.highlight}>
-              Professional Mobile Service
+            <Badge className={`${DESIGN_SYSTEM.badgeStyles.highlight} mb-6`}>
+              {DESIGN_SYSTEM.badgeText.professionalService}
             </Badge>
-            <h1 className={`${DESIGN_SYSTEM.typography.heroTitle} mb-6 drop-shadow-lg mt-6`}>
+            <h1 className={`${DESIGN_SYSTEM.typography.heroTitle} mb-6 drop-shadow-lg`}>
               {data.heroTitle}
             </h1>
             <p className={`${DESIGN_SYSTEM.typography.heroSubtitle} mb-8 max-w-4xl mx-auto opacity-95 drop-shadow-md`}>

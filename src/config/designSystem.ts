@@ -88,6 +88,14 @@ export const DESIGN_SYSTEM = {
     callNow: "Call Now",
   },
 
+  // Badge Text - Standardized badge content
+  badgeText: {
+    professionalService: "Professional Mobile Service",
+    fastResponse: "Fast Response",
+    certifiedTherapists: "Certified Therapists",
+    sameDayService: "Same Day Service",
+  },
+
   // Icon sizes - Standardized
   iconSizes: {
     small: "w-4 h-4",
@@ -127,8 +135,10 @@ export const DESIGN_SYSTEM = {
 } as const;
 
 // Helper function to generate WhatsApp URLs
-export const generateWhatsAppUrl = (message: string, phone: string = "+6281137023443"): string => {
-  return `https://wa.me/${phone.replace(/\D/g, '')}?text=${encodeURIComponent(message)}`;
+export const generateWhatsAppUrl = (message: string, phone?: string): string => {
+  // Import SITE_CONFIG at runtime to avoid circular dependencies
+  const phoneNumber = phone || "+6281137023443"; // Fallback if phone is not provided
+  return `https://wa.me/${phoneNumber.replace(/\D/g, '')}?text=${encodeURIComponent(message)}`;
 };
 
 // Helper function to generate breadcrumb data
