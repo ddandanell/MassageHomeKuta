@@ -168,8 +168,6 @@ const PricingDetails = () => {
                     Book {pkg.title}
                   </a>
                 </Button>
-                  triggerClassName="w-full"
-                />
               </CardContent>
             </Card>
           ))}
