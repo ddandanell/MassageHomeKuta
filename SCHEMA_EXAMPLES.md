@@ -53,7 +53,7 @@ This file contains example JSON-LD outputs for each schema type implemented on t
   "sameAs": [
     "https://instagram.com/homemassagekuta",
     "https://facebook.com/homemassagekuta",
-    "https://wa.me/6281126568369"
+    "https://wa.me/628112656869"
   ]
 }
 ```
@@ -109,7 +109,7 @@ This file contains example JSON-LD outputs for each schema type implemented on t
   "sameAs": [
     "https://instagram.com/homemassagekuta",
     "https://facebook.com/homemassagekuta",
-    "https://wa.me/6281126568369"
+    "https://wa.me/628112656869"
   ],
   "review": [
     {

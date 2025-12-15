@@ -137,7 +137,7 @@ export const DESIGN_SYSTEM = {
 // Helper function to generate WhatsApp URLs
 export const generateWhatsAppUrl = (message: string, phone?: string): string => {
   // Import SITE_CONFIG at runtime to avoid circular dependencies
-  const phoneNumber = phone || "+6281137023443"; // Fallback if phone is not provided
+  const phoneNumber = phone || "+628112656869"; // Fallback if phone is not provided
   return `https://wa.me/${phoneNumber.replace(/\D/g, '')}?text=${encodeURIComponent(message)}`;
 };
 

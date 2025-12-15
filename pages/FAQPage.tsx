@@ -154,13 +154,13 @@ const FAQPage = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8 py-4">
-                <a href="https://wa.me/6281126568369?text=I have a question about your massage service" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/628112656869?text=I have a question about your massage service" target="_blank" rel="noopener noreferrer">
                   <MessageCircle className="w-5 h-5" />
                   WhatsApp Us
                 </a>
               </Button>
               <Button asChild variant="outline" size="lg" className="text-lg px-8 py-4">
-                <a href="tel:+6281126568369">
+                <a href="tel:+628112656869">
                   <Phone className="w-5 h-5" />
                   Call Direct
                 </a>

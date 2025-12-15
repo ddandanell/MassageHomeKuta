@@ -145,7 +145,7 @@ const KutaArea = () => {
                   Most areas in and around Kuta are covered with fast response times.
                 </p>
                 <Button asChild size="lg" className="text-lg px-8 py-4">
-                  <a href="https://wa.me/6281126568369?text=Hi! I'm in Kuta area and would like to check if you serve my location for massage service">
+                  <a href="https://wa.me/628112656869?text=Hi! I'm in Kuta area and would like to check if you serve my location for massage service">
                     Check My Location
                   </a>
                 </Button>
@@ -213,7 +213,7 @@ const KutaArea = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild variant="professional" size="lg" className="text-lg px-8 py-4">
-                <a href="https://wa.me/6281126568369?text=Hi! I'm in Kuta and would like to book a massage service today">
+                <a href="https://wa.me/628112656869?text=Hi! I'm in Kuta and would like to book a massage service today">
                   Book Now - Kuta Area
                 </a>
               </Button>

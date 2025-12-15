@@ -428,7 +428,7 @@ const ServiceAreas = () => {
                 We may still be able to accommodate your booking, especially for longer sessions or multiple treatments.
               </p>
               <Button asChild size="lg" className="text-lg px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold shadow-xl">
-                <a href="https://wa.me/6281126568699?text=Hello%20Home%20Massage%20Kuta!%20I'd%20like%20to%20check%20if%20you%20serve%20my%20area." target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/628112656869?text=Hello%20Home%20Massage%20Kuta!%20I'd%20like%20to%20check%20if%20you%20serve%20my%20area." target="_blank" rel="noopener noreferrer">
                   Check Your Location
                 </a>
               </Button>

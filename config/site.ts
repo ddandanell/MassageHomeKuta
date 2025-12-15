@@ -13,6 +13,6 @@ export const SITE_CONFIG = {
   socialMedia: {
     instagram: "https://instagram.com/homemassagekuta",
     facebook: "https://facebook.com/homemassagekuta",
-    whatsapp: "https://wa.me/6281126568369"
+    whatsapp: "https://wa.me/628112656869"
   }
 };
