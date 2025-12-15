@@ -9,7 +9,7 @@ import thaiMassage from "@/assets/thai-massage.jpg";
 import fourHands from "@/assets/four-hands.jpg";
 import hotStone from "@/assets/hot-stone.jpg";
 import { Clock, Users, Star, Heart, Zap, Shield, MessageCircle } from "lucide-react";
-import EnhancedBookingDialog from "./EnhancedBookingDialog";
+import { SITE_CONFIG } from "@/config/site";
 
 const services = [
   {
@@ -120,6 +120,8 @@ const services = [
 ];
 
 const Services = () => {
+  const whatsappMessage = "Hi! I'm interested in booking a massage service. Can you help me choose the right treatment?";
+  const whatsappUrl = `https://wa.me/${SITE_CONFIG.whatsapp.replace(/\D/g, '')}?text=${encodeURIComponent(whatsappMessage)}`;
   return (
     <section id="services" className="py-12 md:py-20 bg-professional-light/30">
       <div className="container mx-auto px-4">
@@ -239,13 +241,12 @@ const Services = () => {
 
                     {/* Booking Button */}
                     <div className="flex flex-col sm:flex-row gap-3">
-                      <EnhancedBookingDialog
-                        trigger={
-                          <Button className="flex-1 bg-gradient-to-r from-professional-navy to-professional-gold hover:from-professional-gold hover:to-professional-navy text-white font-semibold py-3 transition-all duration-300">
-                            <Zap className="h-4 w-4 mr-2" />
-                            Book {service.title}
-                          </Button>
-                        }
+                      <Button asChild className="flex-1 bg-gradient-to-r from-professional-navy to-professional-gold hover:from-professional-gold hover:to-professional-navy text-white font-semibold py-3 transition-all duration-300">
+                        <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                          <Zap className="h-4 w-4 mr-2" />
+                          Book {service.title}
+                        </a>
+                      </Button>
                         triggerClassName="flex-1"
                       />
                       <Button variant="outline" className="sm:w-auto border-professional-gold/30 text-professional-navy hover:bg-professional-gold/10">
@@ -268,15 +269,12 @@ const Services = () => {
               Our experienced therapists can recommend the perfect treatment based on your needs, preferences, and any health conditions. 
               Get personalized advice via WhatsApp before booking.
             </p>
-            <EnhancedBookingDialog
-              trigger={
-                <Button size="lg" className="bg-white text-professional-navy hover:bg-professional-light font-semibold px-8 py-4">
-                  <MessageCircle className="h-5 w-5 mr-2" />
-                  Get Personal Recommendation
-                </Button>
-              }
-              triggerClassName=""
-            />
+            <Button asChild size="lg" className="bg-white text-professional-navy hover:bg-professional-light font-semibold px-8 py-4">
+              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="h-5 w-5 mr-2" />
+                Get Personal Recommendation
+              </a>
+            </Button>
           </Card>
         </div>
       </div>

@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { MessageCircle, Phone, Shield, Clock, Star, MapPin, CheckCircle } from "lucide-react";
-import EnhancedBookingDialog from "./EnhancedBookingDialog";
 import { SITE_CONFIG } from "@/config/site";
 
 const Hero = () => {
@@ -52,18 +51,16 @@ const Hero = () => {
 
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-          <EnhancedBookingDialog
-            trigger={
-              <Button
-                size="lg"
-                className="text-lg px-10 py-8 bg-professional-gold hover:bg-amber-600 text-white font-serif tracking-wide shadow-floating border-0 min-w-[280px] rounded-xl transition-all duration-300 hover:scale-105"
-              >
-                <MessageCircle className="w-6 h-6 mr-3" />
-                Book Appointment
-              </Button>
-            }
-            triggerClassName=""
-          />
+          <Button
+            asChild
+            size="lg"
+            className="text-lg px-10 py-8 bg-professional-gold hover:bg-amber-600 text-white font-serif tracking-wide shadow-floating border-0 min-w-[280px] rounded-xl transition-all duration-300 hover:scale-105"
+          >
+            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+              <MessageCircle className="w-6 h-6 mr-3" />
+              Book Appointment
+            </a>
+          </Button>
 
           <Button
             asChild

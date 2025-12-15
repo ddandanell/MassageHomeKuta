@@ -3,7 +3,6 @@ import { Badge } from "@/components/ui/badge";
 import { Phone, MessageCircle, Menu, X, Star, Clock, MapPin, Waves, Globe } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import EnhancedBookingDialog from "./EnhancedBookingDialog";
 import { SITE_CONFIG } from "@/config/site";
 import { LanguageSwitcher } from "@/i18n";
 
@@ -72,14 +71,11 @@ const Header = () => {
             </a>
 
             {/* Book Now Button - Elegant */}
-            <EnhancedBookingDialog
-              trigger={
-                <Button size="sm" className="hidden md:flex text-sm px-6 py-5 bg-professional-navy hover:bg-professional-navy/90 text-white font-medium rounded-full shadow-soft transition-all hover:shadow-lg">
-                  Book Now
-                </Button>
-              }
-              triggerClassName=""
-            />
+            <Button asChild size="sm" className="hidden md:flex text-sm px-6 py-5 bg-professional-navy hover:bg-professional-navy/90 text-white font-medium rounded-full shadow-soft transition-all hover:shadow-lg">
+              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                Book Now
+              </a>
+            </Button>
 
             {/* Mobile Menu Button */}
             <Button
@@ -133,15 +129,12 @@ const Header = () => {
 
               {/* Mobile Action Buttons */}
               <div className="space-y-3">
-                <EnhancedBookingDialog
-                  trigger={
-                    <Button className="w-full bg-gradient-to-r from-amber-400 to-yellow-500 hover:from-amber-500 hover:to-yellow-600 text-slate-900 font-semibold py-3 border-0">
-                      <MessageCircle className="w-4 h-4 mr-2" />
-                      Book Massage Now - Instant Confirmation
-                    </Button>
-                  }
-                  triggerClassName="w-full"
-                />
+                <Button asChild className="w-full bg-gradient-to-r from-amber-400 to-yellow-500 hover:from-amber-500 hover:to-yellow-600 text-slate-900 font-semibold py-3 border-0">
+                  <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                    <MessageCircle className="w-4 h-4 mr-2" />
+                    Book Massage Now - Instant Confirmation
+                  </a>
+                </Button>
                 <Button asChild variant="outline" className="w-full border-green-500/30 text-green-700 hover:bg-green-50">
                   <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                     <MessageCircle className="w-4 h-4 mr-2" />
