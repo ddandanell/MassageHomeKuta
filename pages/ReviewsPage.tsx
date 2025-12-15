@@ -5,21 +5,17 @@ import Testimonials from "@/components/Testimonials";
 import Community from "@/components/Community";
 import BookingCTA from "@/components/BookingCTA";
 import Footer from "@/components/Footer";
-import { Helmet } from "react-helmet-async";
-import { Star, Quote } from "lucide-react";
+import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
+import { Star } from "lucide-react";
 
 const ReviewsPage = () => {
   return (
     <div className="min-h-screen">
-      <Helmet>
-        <title>Customer Reviews - Home Massage Kuta | 4.9★ Rated Service</title>
-        <meta name="description" content="Read authentic reviews from 500+ satisfied customers. See why Home Massage Kuta is the #1 rated in-villa massage service in Bali with 4.9 stars." />
-        <meta name="keywords" content="massage reviews Kuta, customer testimonials, 5 star massage Bali, best massage service reviews" />
-      </Helmet>
-      
       <SiteMeta 
         title="Customer Reviews - Home Massage Kuta | 4.9★ Rated Service"
         description="Read authentic reviews from 500+ satisfied customers. See why Home Massage Kuta is the #1 rated in-villa massage service in Bali with 4.9 stars."
+        keywords="massage reviews Kuta, customer testimonials, 5 star massage Bali, best massage service reviews"
+        canonical="/reviews"
       />
       <StructuredData type="service" />
       
@@ -27,7 +23,7 @@ const ReviewsPage = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="relative py-32 md:py-40 bg-gradient-to-br from-amber-500 to-orange-500 text-white overflow-hidden">
+        <section className="relative py-32 md:py-40 bg-gradient-to-br from-teal-600 to-cyan-600 text-white overflow-hidden">
           <div className="absolute inset-0 bg-black/20 backdrop-blur-sm"></div>
           <div className="relative container mx-auto px-4 text-center z-10">
             <div className="flex justify-center items-center gap-2 mb-6">
@@ -81,6 +77,7 @@ const ReviewsPage = () => {
       </main>
       
       <Footer />
+      <FloatingWhatsAppButton />
     </div>
   );
 };
