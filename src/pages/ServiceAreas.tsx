@@ -249,9 +249,9 @@ const ServiceAreas = () => {
   return (
     <div className="min-h-screen">
       <SiteMeta
-        title="Service Areas - Home Massage Kuta Coverage"
-        description="We serve massage clients throughout Bali including Kuta, Legian, Seminyak, Canggu, Sanur, Ubud, Nusa Dua, and more. Professional in-villa massage service delivered to your location."
-        keywords="massage service areas bali, kuta massage coverage, legian massage delivery, seminyak massage service, canggu massage, ubud massage, nusa dua massage"
+        title="Massage Service Areas - Professional Massage Coverage Across Bali"
+        description="Professional massage service delivered throughout Bali including Kuta, Legian, Seminyak, Canggu, Sanur, Ubud, Nusa Dua, and more. Certified massage therapists bring premium massage treatments directly to your villa or hotel. Book your massage appointment in any of our service areas."
+        keywords="massage service areas, massage coverage bali, massage service kuta, massage service legian, massage service seminyak, massage service canggu, massage service ubud, massage service nusa dua, massage delivery areas, massage appointment areas, professional massage coverage, home massage areas, villa massage areas"
         canonical="/areas"
       />
 
@@ -265,7 +265,7 @@ const ServiceAreas = () => {
           <div className="absolute inset-0">
             <img
               src="/images/hero/hero-3.jpg"
-              alt="Map of Bali service areas"
+              alt="Map of Bali showing massage service coverage areas for professional massage delivery"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-br from-blue-900/80 via-indigo-900/70 to-blue-900/80 backdrop-blur-[2px]"></div>

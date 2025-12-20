@@ -11,9 +11,9 @@ const SafetyStandards = () => {
             Our Safety & Professional Standards for Your Kuta Massage
           </h2>
           <p className="text-xl text-professional-gray max-w-4xl mx-auto leading-relaxed">
-            When booking a massage at home in Kuta, trust is everything. You're inviting a therapist into your private 
+            When booking a massage (pijat) at home in Kuta, trust is everything. You're inviting a therapist into your private 
             villa or hotel, and you need complete peace of mind. That's why our service is built on strict safety measures 
-            and professional standards that protect both clients and therapists at every step.
+            and professional standards that protect both clients and terapis at every step.
           </p>
         </div>
 
@@ -28,7 +28,7 @@ const SafetyStandards = () => {
                 <div>
                   <h4 className="text-xl font-bold text-professional-navy mb-2">Certified Professionals Only</h4>
                   <p className="text-professional-gray leading-relaxed">
-                    All of our therapists are certified professionals with years of experience in Balinese and therapeutic massage. 
+                    All of our terapis are certified professionals with years of experience in Balinese and therapeutic massage. 
                     We never hire untrained staff or outsource to unknown freelancers. Each therapist is personally vetted for skill, 
                     integrity, and professionalism.
                   </p>
@@ -55,8 +55,7 @@ const SafetyStandards = () => {
                 <div>
                   <h4 className="text-xl font-bold text-professional-navy mb-2">Ongoing Training & Standards</h4>
                   <p className="text-professional-gray leading-relaxed">
-                    Our team participates in regular training sessions, skill updates, and professional development programs. 
-                    We maintain strict quality standards and monitor performance to ensure consistent excellence.
+                    Our team participates in regular training sessions, skill updates, and professional development programs to ensure a holistik approach to wellness and customer care. We maintain strict quality standards and monitor performance to ensure consistent excellence.
                   </p>
                 </div>
               </div>
@@ -97,8 +96,8 @@ const SafetyStandards = () => {
             </CardHeader>
             <CardContent>
               <p className="text-professional-gray leading-relaxed">
-                We provide therapeutic massage only — no sensual or non-professional services of any kind. This protects 
-                the reputation of our therapists and guarantees that every client receives treatment in a safe, ethical environment.
+                We provide therapeutic massage (pijat) only—no sensual or non-professional services of any kind. This protects 
+                the reputation of our terapis and guarantees that every client receives treatment in a safe, ethical environment.
               </p>
             </CardContent>
           </Card>

@@ -58,9 +58,9 @@ const Services = () => {
   return (
     <div className="min-h-screen">
       <SiteMeta 
-        title="Professional Massage Services in Kuta"
-        description="Discover our comprehensive range of professional massage services in Kuta. From traditional Balinese to therapeutic deep tissue massage, delivered to your villa or hotel."
-        keywords="balinese massage kuta, deep tissue massage bali, aromatherapy massage, hot stone massage, thai massage, couples massage kuta"
+        title="Professional Massage Services in Kuta - Complete Massage Menu"
+        description="Discover our comprehensive range of professional massage services in Kuta. From traditional Balinese massage to therapeutic deep tissue massage, aromatherapy massage, hot stone massage, and Thai massage - all delivered to your villa or hotel by certified massage therapists."
+        keywords="massage services, massage kuta, professional massage, balinese massage, deep tissue massage, aromatherapy massage, hot stone massage, thai massage, couples massage, massage therapist, massage treatment, massage therapy, home massage service, villa massage, hotel massage"
         canonical="/services"
       />
       

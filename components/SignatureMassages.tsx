@@ -13,8 +13,8 @@ const SignatureMassages = () => {
           <p className="text-xl text-professional-gray max-w-4xl mx-auto leading-relaxed">
             Every traveler comes to Kuta with a different story. Some arrive for the waves and spend their days 
             surfing under the tropical sun. Others come for the nightlife, enjoying late hours of dancing and music. 
-            Many simply want a place to escape, relax, and recharge. That's why our signature home massage services 
-            in Kuta are designed to meet every need, from deep recovery to gentle relaxation.
+            Many simply want a place to escape, relax, and recharge. That's why our signature home massage (pijat) services 
+            in Kuta are designed to meet every need, from deep recovery to gentle relaksasi.
           </p>
         </div>
 
@@ -24,8 +24,8 @@ const SignatureMassages = () => {
               <CardTitle className="text-2xl text-professional-navy">Balinese Massage</CardTitle>
               <CardDescription className="text-professional-gray text-base">
                 The timeless tradition of Bali, using long strokes, acupressure, and aromatherapy oils. 
-                This is the massage that put Bali on the wellness map, and nothing feels more authentic 
-                than receiving it in the comfort of your villa.
+                This is the massage that put Bali on the wellness map—nothing feels more authentic 
+                than receiving it in the comfort of your villa while benefiting kesehatan and quality tidur.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -38,7 +38,7 @@ const SignatureMassages = () => {
               <CardTitle className="text-2xl text-professional-navy">Deep Tissue Massage</CardTitle>
               <CardDescription className="text-professional-gray text-base">
                 Perfect for surfers, athletes, or anyone carrying stress in their body. This massage works 
-                into the deeper muscle layers, easing tension and restoring mobility.
+                into the deeper muscle layers, easing tension and restoring mobility. A great choice if you experience chronic nyeri.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -51,7 +51,7 @@ const SignatureMassages = () => {
               <CardTitle className="text-2xl text-professional-navy">Aromatherapy Massage</CardTitle>
               <CardDescription className="text-professional-gray text-base">
                 Essential oils combined with gentle massage techniques to soothe both body and mind. 
-                Ideal for anyone wanting calm after a busy day in Kuta's buzzing streets.
+                Ideal for anyone wanting calm after a busy day in Kuta's buzzing streets while improving kualitas tidur and overall kesehatan.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -63,8 +63,8 @@ const SignatureMassages = () => {
             <CardHeader>
               <CardTitle className="text-2xl text-professional-navy">Thai Massage at Home</CardTitle>
               <CardDescription className="text-professional-gray text-base">
-                Stretching, twisting, and pressure points, all delivered on a mat in your villa. 
-                Great for boosting circulation and energy flow.
+                Stretching, twisting, and pressure points—delivered on a mat in your villa. 
+                Great for boosting circulation and energy flow, this pijat by our expert terapis leaves you feeling revitalized and relaxed.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -76,8 +76,8 @@ const SignatureMassages = () => {
             <CardHeader>
               <CardTitle className="text-2xl text-professional-navy">Hot Stone Ritual</CardTitle>
               <CardDescription className="text-professional-gray text-base">
-                Warm volcanic stones applied along the body, melting away stress and grounding you deeply. 
-                A spa luxury, recreated right at your home.
+                Warm volcanic stones applied along the body melting away stress and grounding you deeply. 
+                A spa luxury recreated right at your home, perfect for muscle recovery and combating nyeri.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -90,7 +90,7 @@ const SignatureMassages = () => {
               <CardTitle className="text-2xl text-professional-navy">Lymphatic Drainage</CardTitle>
               <CardDescription className="text-professional-gray text-base">
                 Gentle techniques to support natural detoxification and reduce swelling. 
-                Perfect for post-flight recovery and overall wellness.
+                Ideal for post-flight recovery and overall wellness, this therapeutic pijat boosts the body's defenses and enhances manfaat kesehatan.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -102,13 +102,13 @@ const SignatureMassages = () => {
         <div className="mt-12 text-center">
           <div className="bg-gradient-subtle rounded-2xl p-8 shadow-floating max-w-4xl mx-auto">
             <p className="text-lg text-professional-gray leading-relaxed mb-6">
-              Each treatment is available in 60-minute or 90-minute sessions, and you can even combine styles 
+              Each treatment, including shiatsu massage, is available in 60-minute or 90-minute sessions, and you can even combine styles 
               for a customized experience. Our therapists bring all equipment, so all you need to do is open 
-              the door, relax, and enjoy.
+              the door, relax, and enjoy this exceptional pijat service.
             </p>
             <p className="text-lg font-semibold text-professional-navy">
-              By offering a full menu of signature massages in Kuta, we make sure there's always a treatment 
-              perfectly matched to your body, your mood, and your schedule — without leaving your villa.
+              By offering a full menu of signature massages in Kuta, we ensure there's always a treatment 
+              perfectly matched to your body, your mood, and your schedule — all designed for optimal kesehatan and relaksasi without leaving your villa.
             </p>
           </div>
         </div>

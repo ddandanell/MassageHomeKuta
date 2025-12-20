@@ -7,12 +7,12 @@ import { SITE_CONFIG } from "@/config/site";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const whatsappMessage = "Hello Home Massage Kuta! I'd like to book a massage service. Can you help me with availability?";
+  const whatsappMessage = "Hello Home Massage Kuta! I'd like to book a massage appointment. Can you help me with massage availability and pricing?";
   const whatsappUrl = `https://wa.me/${SITE_CONFIG.whatsapp.replace(/\D/g, '')}?text=${encodeURIComponent(whatsappMessage)}`;
 
   const navigationItems = [
     { href: "/", label: "Home", description: "Back to homepage" },
-    { href: "/services", label: "Services", description: "View all massage types" },
+    { href: "/services", label: "Services", description: "View all massage services" },
     { href: "/about", label: "About", description: "Our story & credentials" },
     { href: "/reviews", label: "Reviews", description: "What clients say" },
     { href: "/faq", label: "FAQ", description: "Common questions" },
@@ -142,7 +142,7 @@ const Header = () => {
                 <Button asChild className="w-full bg-gradient-to-r from-amber-400 to-yellow-500 hover:from-amber-500 hover:to-yellow-600 text-slate-900 font-semibold py-3 border-0">
                   <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                     <MessageCircle className="w-4 h-4 mr-2" />
-                    Book Massage Now - Instant Confirmation
+                    Book Your Massage Now - Instant Confirmation
                   </a>
                 </Button>
                 <Button asChild variant="outline" className="w-full border-green-500/30 text-green-700 hover:bg-green-50">

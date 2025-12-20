@@ -14,9 +14,9 @@ const AboutPage = () => {
   return (
     <div className="min-h-screen">
       <SiteMeta 
-        title="About Home Massage Kuta - Professional In-Villa Massage Services"
-        description="Learn about Home Massage Kuta's professional team, safety standards, and commitment to providing luxury spa treatments in your villa or hotel in Bali."
-        keywords="about us, professional massage, Kuta massage therapists, licensed therapists Bali, spa services"
+        title="About Home Massage Kuta - Professional Massage Service Team"
+        description="Learn about Home Massage Kuta's professional massage therapists, safety standards, and commitment to providing luxury massage treatments in your villa or hotel in Bali. Certified massage therapists delivering premium massage services."
+        keywords="about us, professional massage, massage therapists kuta, licensed massage therapists bali, massage service team, certified massage therapists, professional massage service, home massage kuta"
         canonical="/about"
       />
       <StructuredData type="organization" />

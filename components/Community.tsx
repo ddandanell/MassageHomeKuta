@@ -18,19 +18,19 @@ const Community = () => {
               <p>
                 Kuta is one of the busiest and most diverse parts of Bali. Every day it welcomes surfers chasing 
                 the waves, tourists seeking sun and nightlife, families enjoying beach holidays, and expats building 
-                a lifestyle in paradise. What unites them all is the need for balance — and that's where our home 
-                massage service in Kuta has become the trusted choice.
+                a lifestyle in paradise. What unites them all is the need for balance—and that's where our home 
+                massage service (pijat) in Kuta has become the trusted choice for enhancing kesehatan and relaksasi.
               </p>
               <p>
                 For short-term visitors, convenience is everything. After long flights, nights out, or hours walking 
                 the beachside markets, nobody wants to fight through traffic just to reach a spa. That's why our 
-                service is so popular among tourists. We bring the treatment to them — in their villa, hotel, or 
-                guesthouse — making it easy to enjoy a professional massage without leaving the comfort of their accommodation.
+                service is so popular among tourists. We bring the treatment to them—in their villa, hotel, or 
+                guesthouse—making it easy to enjoy a professional massage without leaving the comfort of their accommodation.
               </p>
               <p>
                 For expats, trust and consistency matter most. Many live and work in Kuta year-round, often juggling 
-                busy schedules, long hours on laptops, or running local businesses. Our therapists provide regular 
-                sessions, building relationships based on reliability and professionalism. Knowing that the same high 
+                busy schedules, long hours on laptops, or running local businesses. Our terapis provide regular 
+                body massage sessions, building relationships based on reliability and professionalism. Knowing that the same high 
                 standards are delivered every time is what makes expats return again and again.
               </p>
             </div>
@@ -66,7 +66,7 @@ const Community = () => {
             <h4 className="text-2xl font-bold mb-4">Our Promise</h4>
             <p className="text-lg leading-relaxed opacity-90 max-w-3xl mx-auto">
               Whether you're here for one week or one year, our promise is the same: professional, safe, and authentic 
-              Balinese massage delivered directly to your home in Kuta. That's why tourists return, and expats rely on us.
+              Balinese massage (pijat) delivered directly to your home in Kuta. That's why tourists return, and expats rely on us.
             </p>
           </div>
         </div>

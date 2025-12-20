@@ -22,7 +22,7 @@ const PricingDetails = () => {
         "Relaxing background music",
         "Post-massage consultation"
       ],
-      bestFor: "First-time clients, lunch break relaxation, quick stress relief"
+      bestFor: "First-time clients, lunch break relaxation (pijat) for immediate relaksasi and relief from everyday nyeri."
     },
     {
       title: "Complete Wellness",
@@ -39,7 +39,7 @@ const PricingDetails = () => {
         "Scalp and face massage add-on",
         "Flexibility for custom requests"
       ],
-      bestFor: "Full relaxation, couples treatment, chronic tension relief"
+      bestFor: "Full relaxation, couples treatment with synchronized pijat, and chronic tension relief ensuring lasting manfaat kesehatan."
     },
     {
       title: "Ultimate Indulgence",
@@ -56,7 +56,7 @@ const PricingDetails = () => {
         "Post-treatment refreshments",
         "Customized oil blends"
       ],
-      bestFor: "Special occasions, ultimate relaxation, luxury experience"
+      bestFor: "Special occasions, ultimate relaxation, and luxury experience with expertly administered pijat by certified terapis."
     }
   ];
 
@@ -80,8 +80,7 @@ const PricingDetails = () => {
             Choose Your Perfect Massage Package
           </h2>
           <p className="text-lg md:text-xl text-professional-gray max-w-4xl mx-auto leading-relaxed">
-            No hidden fees, no surprises. All prices include transportation, setup, and professional service. 
-            Same transparent pricing whether you're in a 5-star resort or a cozy villa.
+            No hidden fees, no surprises. All prices include transportation, setup, and professional service. Same transparent pricing whether you're in a 5-star resort or a cozy villa. Our flexible packages are designed to fit your schedule and preferences, ensuring a seamless and stress-free experience from start to finish. Enjoy the convenience of premium home massage with clear, upfront pricing and exceptional service every time.
           </p>
         </div>
 
@@ -185,7 +184,7 @@ const PricingDetails = () => {
                 Enhance Your Experience
               </CardTitle>
               <CardDescription>
-                Additional services to make your massage even more special
+                Additional services to make your massage (pijat) even more special.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -256,8 +255,7 @@ const PricingDetails = () => {
           <Card className="bg-gradient-to-r from-professional-navy to-professional-gold text-white p-6 md:p-8 max-w-2xl mx-auto">
             <h3 className="text-xl md:text-2xl font-bold mb-4">Still Have Questions?</h3>
             <p className="mb-6 opacity-90">
-              Get personalized pricing and recommendations based on your specific needs. 
-              Our team is standing by to help you choose the perfect massage experience.
+              Get personalized pricing and recommendations based on your specific needs. Our team is standing by to help you choose the perfect massage experience for optimal kesehatan and relaxation.
             </p>
             <Button asChild variant="outline" className="bg-white text-professional-navy hover:bg-professional-light font-semibold px-8 py-3">
               <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">

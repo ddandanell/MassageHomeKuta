@@ -26,7 +26,12 @@ import Footer from "@/components/Footer";
 const Index = () => {
   return (
     <div className="min-h-screen">
-      <SiteMeta />
+      <SiteMeta 
+        title="Massage Kuta - #1 Professional Home Massage Service in Bali"
+        description="Premium massage service in Kuta, Bali. Professional massage therapists deliver spa-quality massage treatments to your villa or hotel. Book same-day massage appointments. Licensed massage therapists trusted by 500+ clients."
+        keywords="massage, massage kuta, massage bali, home massage, villa massage, hotel massage, professional massage, therapeutic massage, relaxation massage, spa massage, mobile massage, massage therapist, massage service, massage booking, massage appointment"
+        canonical="/"
+      />
       <StructuredData type="organization" />
       <StructuredData type="website" />
       <Header />

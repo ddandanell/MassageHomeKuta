@@ -84,9 +84,9 @@ const FAQPage = () => {
   return (
     <div className="min-h-screen">
       <SiteMeta 
-        title="Frequently Asked Questions - Home Massage Kuta"
-        description="Find answers to common questions about our professional home massage service in Kuta. Booking, pricing, therapists, and service details explained."
-        keywords="massage faq kuta, home massage questions, villa massage booking, massage service questions kuta, spa service faq bali"
+        title="Massage FAQ - Frequently Asked Questions About Our Massage Service"
+        description="Find answers to common questions about our professional massage service in Kuta. Massage booking, pricing, massage therapists, and massage treatment details explained. Everything you need to know about booking your massage appointment."
+        keywords="massage faq, massage questions, massage booking questions, massage service faq, massage therapist questions, massage treatment questions, home massage faq, villa massage questions, massage appointment questions, massage pricing questions"
         canonical="/faq"
       />
       
@@ -99,7 +99,7 @@ const FAQPage = () => {
           <div className="absolute inset-0 bg-black/20 backdrop-blur-sm"></div>
           <div className="relative container mx-auto px-4 text-center z-10">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              Frequently Asked Questions
+              Massage Service - Frequently Asked Questions
             </h1>
             <p className="text-lg md:text-xl max-w-3xl mx-auto">
               Your questions, answered. Find everything you need to know about our professional home and villa massage services.

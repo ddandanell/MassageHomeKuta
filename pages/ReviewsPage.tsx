@@ -12,9 +12,9 @@ const ReviewsPage = () => {
   return (
     <div className="min-h-screen">
       <SiteMeta 
-        title="Customer Reviews - Home Massage Kuta | 4.9★ Rated Service"
-        description="Read authentic reviews from 500+ satisfied customers. See why Home Massage Kuta is the #1 rated in-villa massage service in Bali with 4.9 stars."
-        keywords="massage reviews Kuta, customer testimonials, 5 star massage Bali, best massage service reviews"
+        title="Massage Reviews - Customer Testimonials | 4.9★ Rated Massage Service"
+        description="Read authentic massage reviews from 500+ satisfied customers. See why Home Massage Kuta is the #1 rated massage service in Bali with 4.9 stars. Real customer testimonials about our professional massage treatments and massage therapists."
+        keywords="massage reviews, massage testimonials, massage service reviews, massage therapist reviews, 5 star massage reviews, best massage service, massage customer reviews, massage experience reviews, professional massage reviews, massage treatment reviews"
         canonical="/reviews"
       />
       <StructuredData type="service" />
@@ -34,7 +34,7 @@ const ReviewsPage = () => {
               <Star className="h-8 w-8 fill-current" />
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-lg">
-              What Our Customers Say
+              Massage Service Reviews - What Our Customers Say
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-90 drop-shadow-md">
               Over <strong>500+ happy customers</strong> from 25+ countries have experienced our 

@@ -62,7 +62,7 @@ const MassageTypeLandingPage = ({ data }: MassageTypeLandingPageProps) => {
           <div className="absolute inset-0">
             <img
               src="/images/hero/hero-2.jpg"
-              alt="Relaxing massage therapy session"
+              alt={`Professional ${data.name} massage treatment session in Kuta, Bali`}
               className="w-full h-full object-cover"
             />
             <div className={`absolute inset-0 bg-gradient-to-br ${DESIGN_SYSTEM.heroGradients.service} opacity-90 backdrop-blur-[2px]`}></div>

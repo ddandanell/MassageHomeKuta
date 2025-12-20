@@ -25,20 +25,20 @@ const VillaHotelService = () => {
             <div className="space-y-6 text-lg text-professional-gray leading-relaxed">
               <p>
                 Kuta is one of Bali's most popular destinations, filled with private villas, boutique hotels, and luxury resorts. 
-                But whether you're staying in a beachfront property, a hidden guesthouse, or a serviced apartment, one thing is 
-                always true: nothing beats the comfort of a professional massage delivered directly to your villa or hotel in Kuta.
+                But whether you're staying in a beachfront property, a hidden guesthouse, or a serviced apartment, nothing beats 
+                the comfort of a professional massage (pijat) delivered directly to your villa or hotel in Kuta.
               </p>
               <p>
                 Our service is built to fit your lifestyle. Instead of booking spa appointments, traveling through traffic, and 
-                waiting in crowded lobbies, you can enjoy treatments on your terms. Our therapists arrive fully prepared with 
+                waiting in crowded lobbies, you can enjoy treatments on your terms. Our terapis arrive fully prepared with 
                 fresh linens, professional massage oils, and all the equipment needed to turn your space into a private spa. 
-                Within minutes, your living room, bedroom, or even poolside terrace becomes a sanctuary of relaxation.
+                Within minutes, your living room, bedroom, or even poolside terrace becomes a sanctuary of relaksasi and healing.
               </p>
               <p>
                 We serve every type of traveler in Kuta. Couples on honeymoon can book side-by-side sessions in their villa for 
                 the ultimate romantic experience. Families with children appreciate the convenience of staying home while still 
                 enjoying five-star quality treatments. Digital nomads working in hotels or co-living spaces love that they can 
-                schedule a massage between meetings or after a long day on the laptop.
+                schedule a massage between meetings or after a long day on the laptop, boosting both their kesehatan and kualitas tidur.
               </p>
             </div>
           </div>
@@ -98,7 +98,7 @@ const VillaHotelService = () => {
               <h4 className="text-3xl font-bold mb-6">Freedom & Convenience</h4>
               <p className="text-xl leading-relaxed opacity-90 mb-6">
                 With our villa and hotel massage service in Kuta, you don't just save time, you gain freedom. 
-                No taxis, no stress, no wasted hours. Just pure Balinese healing, delivered wherever you are.
+                No taxis, no stress, no wasted hours. Just pure Balinese healing with pijat designed to enhance your relaksasi and kesehatan.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
                 <div className="text-center">
@@ -106,7 +106,7 @@ const VillaHotelService = () => {
                   <div className="opacity-80">Minutes to arrive</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold mb-2">7AM-10PM</div>
+                  <div className="text-2xl font-bold mb-2">07:00-22:00</div>
                   <div className="opacity-80">Daily availability</div>
                 </div>
                 <div className="text-center">

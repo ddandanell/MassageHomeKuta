@@ -12,21 +12,21 @@ const About = () => {
   ];
 
   const features = [
-    { 
-      icon: Shield, 
-      title: "100% Professional & Safe", 
-      description: "All therapists are licensed, insured, and background-checked. We maintain the highest safety and ethical standards." 
-    },
-    { 
-      icon: Clock, 
-      title: "Same-Day Availability", 
-      description: "Book today, relax today. Our flexible scheduling means you can get a massage when you need it most." 
-    },
-    { 
-      icon: Heart, 
-      title: "Authentic Balinese Techniques", 
-      description: "Our therapists trained in traditional Balinese healing arts, combined with modern spa techniques for the perfect treatment." 
-    },
+      { 
+        icon: Shield, 
+        title: "100% Professional & Safe", 
+        description: "All terapis are licensed, insured, and background-checked. We maintain the highest safety and ethical standards in every pijat session we deliver." 
+      },
+      { 
+        icon: Clock, 
+        title: "Same-Day Availability", 
+        description: "Book today, relax today. Our flexible scheduling means you can get a massage (pijat) when you need it most to boost your kesehatan." 
+      },
+      { 
+        icon: Heart, 
+        title: "Authentic Balinese Techniques", 
+        description: "Our terapis are trained in traditional Balinese healing arts, combined with modern spa techniques to provide a perfect treatment that relieves nyeri and fosters deep relaksasi." 
+      },
     { 
       icon: MapPin, 
       title: "Extensive Service Area", 
@@ -53,16 +53,16 @@ const About = () => {
               <p>
                 In the bustling heart of Kuta, where the energy never stops, we believe that true paradise 
                 is found in moments of complete tranquility. That's why we created <strong>Home Massage Kuta</strong> – 
-                to bring the sacred healing traditions of Balinese massage directly to your private space.
+                to bring the sacred healing traditions of Balinese massage (pijat) directly to your private space.
               </p>
               <p>
                 Since 2022, we've served over <strong>500 clients from 25+ countries</strong>, transforming 
                 their villas, hotels, and private spaces into serene sanctuaries. Our mission is simple: 
-                provide world-class spa treatments with the convenience and privacy you deserve.
+                provide world-class spa treatments with the convenience and privacy you deserve, improving your kesehatan and ensuring deep relaksasi.
               </p>
               <p>
-                Every session begins with a consultation to understand your needs. Whether you're recovering 
-                from surfing, need relief from travel fatigue, or simply want to indulge in Bali's renowned 
+                Every session begins with a consultation to understand your needs, including whether a shiatsu massage is the right treatment for you. Whether you're recovering 
+                from surfing, need relief from travel fatigue and nyeri, or simply want to indulge in Bali's renowned 
                 wellness culture, we craft each treatment to your specific needs.
               </p>
             </div>
@@ -85,7 +85,7 @@ const About = () => {
             <div className="relative">
               <img
                 src={villaPoolside}
-                alt="Serene poolside villa in Kuta - perfect setting for in-villa massage therapy"
+                alt="Serene poolside villa in Kuta - perfect setting for professional massage service and in-villa massage therapy"
                 className="w-full rounded-2xl shadow-floating"
               />
               <div className="absolute inset-0 bg-gradient-accent opacity-10 rounded-2xl"></div>
@@ -140,7 +140,7 @@ const About = () => {
             <p className="text-lg md:text-xl leading-relaxed opacity-95">
               Every Home Massage Kuta experience is backed by our commitment to excellence. 
               If you're not completely satisfied with your treatment, we'll make it right. 
-              Your relaxation and wellbeing are our top priorities.
+              Your relaxation, kesehatan, and wellbeing are our top priorities.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 text-sm md:text-base">
               <div className="flex items-center justify-center gap-2">

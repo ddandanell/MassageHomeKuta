@@ -30,7 +30,7 @@ const StructuredData = ({ type = "organization", data }: StructuredDataProps) =>
             "longitude": "115.1672"
           },
           "areaServed": SITE_CONFIG.serviceAreas,
-          "serviceType": ["Massage Therapy", "Spa Services", "Wellness Services"],
+          "serviceType": ["Massage", "Massage Therapy", "Therapeutic Massage", "Relaxation Massage", "Spa Massage", "Home Massage", "Professional Massage", "Balinese Massage", "Deep Tissue Massage", "Aromatherapy Massage", "Thai Massage", "Hot Stone Massage", "Four Hands Massage", "Lymphatic Drainage Massage", "Pregnancy Massage", "Foot Reflexology Massage"],
           "priceRange": "$$",
           "paymentAccepted": ["Cash", "Credit Card"],
           "openingHours": "Mo-Su 07:00-22:00",
@@ -45,14 +45,14 @@ const StructuredData = ({ type = "organization", data }: StructuredDataProps) =>
         return {
           "@context": "https://schema.org",
           "@type": "Service",
-          "name": "Professional In-Villa Massage Service",
-          "description": "Premium massage therapy delivered to your villa or hotel in Kuta, Bali",
+          "name": "Professional Massage Service - Home Massage in Kuta, Bali",
+          "description": "Premium massage service delivered to your villa or hotel in Kuta, Bali. Professional massage therapists provide therapeutic massage, relaxation massage, and spa-quality massage treatments including Balinese massage, deep tissue massage, aromatherapy massage, Thai massage, hot stone massage, and four hands massage.",
           "provider": {
             "@type": "LocalBusiness",
             "name": SITE_CONFIG.name
           },
           "areaServed": SITE_CONFIG.serviceAreas,
-          "serviceType": "Massage Therapy",
+          "serviceType": ["Massage", "Massage Therapy", "Therapeutic Massage", "Relaxation Massage", "Professional Massage", "Home Massage", "Spa Massage"],
           "offers": {
             "@type": "Offer",
             "priceRange": "$$",

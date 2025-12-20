@@ -93,9 +93,9 @@ const Sitemap = () => {
   return (
     <div className="min-h-screen">
       <SiteMeta 
-        title="Sitemap - Home Massage Kuta"
-        description="Complete sitemap of all pages on Home Massage Kuta. Browse our massage services, service areas, and information pages."
-        keywords="sitemap, home massage kuta pages, massage services list, service areas bali"
+        title="Sitemap - Complete Massage Service Pages Directory"
+        description="Complete sitemap of all massage service pages on Home Massage Kuta. Browse our professional massage services, massage service areas, massage therapists, massage packages, and massage information pages. Find the perfect massage treatment for you."
+        keywords="sitemap, massage pages, massage services directory, massage service areas, massage therapists pages, massage packages pages, massage treatment pages, massage appointment pages, massage service sitemap"
         canonical="/sitemap"
       />
       

@@ -1,9 +1,9 @@
 export const SITE_CONFIG = {
   name: "Home Massage Kuta",
   url: "https://www.homemassagekuta.com",
-  title: "Home Massage Kuta - #1 Professional In-Villa Spa Service Bali",
-  description: "Kuta's premier home massage service. Professional therapists bring spa-quality treatments to your villa or hotel. Same-day booking available. Licensed, certified, and trusted by 500+ clients.",
-  keywords: "home massage kuta, villa massage bali, mobile spa kuta, balinese massage, deep tissue massage, aromatherapy massage, spa service kuta, in-villa massage, hotel massage bali",
+  title: "Massage Kuta - #1 Professional Home Massage Service in Bali",
+  description: "Premium massage service in Kuta, Bali. Professional massage therapists deliver spa-quality massage treatments to your villa or hotel. Book same-day massage appointments. Licensed massage therapists trusted by 500+ clients.",
+  keywords: "massage, massage kuta, massage bali, home massage, villa massage, hotel massage, balinese massage, deep tissue massage, aromatherapy massage, thai massage, hot stone massage, four hands massage, lymphatic drainage massage, pregnancy massage, foot reflexology massage, professional massage, therapeutic massage, relaxation massage, spa massage, mobile massage, in-villa massage, massage therapist, massage service, massage booking, massage appointment, massage treatment, massage therapy, massage session, massage experience, massage session kuta, massage therapy bali",
   author: "Home Massage Kuta",
   phone: "+62 811-2656-869",
   whatsapp: "+62 811-2656-869",

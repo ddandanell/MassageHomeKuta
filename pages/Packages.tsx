@@ -85,9 +85,9 @@ const Packages = () => {
   return (
     <div className="min-h-screen">
       <SiteMeta 
-        title="Special Massage Packages in Kuta"
-        description="Save with our exclusive massage packages in Kuta. Romantic couples retreats, wellness weekends, and birthday specials. Professional in-villa spa service with great value."
-        keywords="massage packages kuta, couples massage bali, spa packages kuta, wellness packages, romantic massage bali, birthday massage package"
+        title="Special Massage Packages in Kuta - Save on Massage Services"
+        description="Save with our exclusive massage packages in Kuta. Romantic couples massage packages, wellness massage weekends, and birthday massage specials. Professional massage service delivered to your villa with great value on multiple massage sessions."
+        keywords="massage packages, massage package deals, couples massage package, wellness massage package, romantic massage package, birthday massage package, massage service packages, multiple massage sessions, massage package discounts, spa massage packages"
         canonical="/packages"
       />
       

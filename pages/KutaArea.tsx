@@ -62,9 +62,9 @@ const KutaArea = () => {
   return (
     <div className="min-h-screen">
       <SiteMeta 
-        title="Home Massage Service in Kuta Area, Bali"
-        description="Professional in-villa massage service covering all areas of Kuta, Bali. Fast response times, certified therapists, and premium spa treatments delivered to your location."
-        keywords="home massage kuta area, villa massage kuta beach, mobile spa legian, tuban massage service, kuta massage delivery, in-villa spa kuta bali"
+        title="Massage Service in Kuta Area - Professional Home Massage Delivery"
+        description="Professional massage service covering all areas of Kuta, Bali. Fast response times, certified massage therapists, and premium massage treatments delivered to your villa or hotel. Book your massage appointment in Kuta, Legian, or Seminyak."
+        keywords="massage kuta, massage service kuta, home massage kuta, villa massage kuta, massage delivery kuta, massage therapist kuta, massage appointment kuta, massage service legian, massage service seminyak, massage service tuban, mobile massage kuta, in-villa massage kuta"
         canonical="/areas/kuta"
       />
       
@@ -78,7 +78,7 @@ const KutaArea = () => {
           <div className="absolute inset-0 bg-black/20 backdrop-blur-sm"></div>
           <div className="relative container mx-auto px-4 text-center z-10">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              Serving All of Kuta
+              Professional Massage Service Serving All of Kuta
             </h1>
             <p className="text-lg md:text-xl max-w-3xl mx-auto">
               Our professional massage services are available in every corner of Kuta, Legian, and Seminyak. We come to your villa or hotel.

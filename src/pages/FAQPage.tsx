@@ -10,11 +10,11 @@ import { MessageCircle, Phone, Clock, MapPin } from "lucide-react";
 const faqs = [
   {
     question: "Do I need to prepare anything for the massage?",
-    answer: "No preparation needed! Our therapists arrive with everything required: professional massage table, fresh linens, premium oils, and sanitized equipment. Just ensure you have a suitable space with enough room for the massage table setup (approximately 2m x 3m area)."
+    answer: "No preparation needed! Our terapis arrive with everything required: professional massage table, fresh linens, premium oils, and sanitized equipment. Just ensure you have a suitable space with enough room for the massage table setup (approximately 2m x 3m area)."
   },
   {
     question: "Can I book the same day?",
-    answer: "Yes! We offer same-day booking based on availability. Our therapists are available from 07:00 to 22:00 daily. For the best availability, we recommend booking a few hours in advance via WhatsApp. During peak season, advance booking is recommended."
+    answer: "Yes! We offer same-day booking based on availability. Our terapis are available from 07:00 to 22:00 daily. For the best availability, we recommend booking a few hours in advance via WhatsApp. During peak season, advance booking is recommended."
   },
   {
     question: "What payment methods do you accept?",
@@ -22,11 +22,11 @@ const faqs = [
   },
   {
     question: "Is the massage strictly professional?",
-    answer: "Absolutely. We provide only therapeutic massage services performed by certified professionals. All our therapists maintain the highest ethical standards and professional boundaries at all times. Any inappropriate requests will result in immediate termination of service."
+    answer: "Absolutely. We provide only therapeutic massage (pijat) services performed by certified professionals. All our terapis maintain the highest ethical standards and professional boundaries at all times. Any inappropriate requests will result in immediate termination of service."
   },
   {
     question: "Are your therapists certified and licensed?",
-    answer: "Yes, all our therapists hold internationally recognized certifications including VTCT Level 3 Diploma, CIBTAC certification, and specialized training from Bali International Spa Academy (BISA). They are experienced professionals committed to your wellness and safety."
+    answer: "Yes, all our terapis hold internationally recognized certifications including VTCT Level 3 Diploma, CIBTAC certification, and specialized training from Bali International Spa Academy (BISA). They are experienced professionals committed to your wellness, kesehatan, and safety."
   },
   {
     question: "What areas do you serve in Kuta?",
@@ -67,6 +67,26 @@ const faqs = [
   {
     question: "What safety measures do you have in place?",
     answer: "We maintain strict safety and hygiene protocols including: fresh linens for each client, sanitized equipment, background-checked therapists, professional boundaries training, and health screening of all staff. We also carry liability insurance for additional peace of mind."
+  },
+  {
+    question: "How can massage help reduce stress?",
+    answer: "Massage therapy (pijat) is a powerful tool for managing stress, both physically and mentally. During a massage, gentle pressure and rhythmic movements help release muscle tension and improve blood circulation, which can ease physical discomfort caused by stress. Additionally, massage has been shown to lower the body's levels of cortisol, the primary stress hormone, while increasing the production of endorphins and serotonin—chemicals that promote relaxation and a positive mood. Regular massage sessions can help you better cope with daily pressures, improve sleep quality, and support overall kesehatan (health), making it an effective addition to any stress management routine."
+  },
+  {
+    question: "What are the most common massage techniques?",
+    answer: "There are several popular massage techniques, each designed to address specific needs and preferences. Swedish massage is known for its long, flowing strokes that promote relaxation and improve circulation, making it ideal for those new to massage. Deep tissue massage targets deeper layers of muscle and connective tissue to relieve chronic pain and muscle tension, often used by athletes or those with persistent discomfort. Hot stone massage uses heated stones to soothe muscles and enhance relaxation, while aromatherapy massage (pijat aromaterapi) incorporates essential oils to stimulate the senses and provide additional therapeutic benefits. Other techniques, such as Thai massage or reflexology, offer unique approaches to healing and relaxation, ensuring there is a suitable option for everyone."
+  },
+  {
+    question: "Where can I find a professional massage therapist?",
+    answer: "Finding a qualified massage therapist is essential for a safe and effective experience. Start by researching reputable spas, wellness centers, and clinics in your area that offer professional massage services. Look for therapists who are licensed or certified, as this ensures they have received proper training and adhere to industry standards. Reading online reviews and seeking recommendations from friends or healthcare providers can also help you find trustworthy practitioners. Many therapists specialize in different techniques, so consider your specific needs—such as relaxation, pain relief, or prenatal care—when making your choice. Booking a consultation or asking questions about their experience and approach can further ensure you receive the best possible care."
+  },
+  {
+    question: "Is massage safe during pregnancy?",
+    answer: "Massage can be highly beneficial during pregnancy, helping to relieve common discomforts such as back pain, swelling, and fatigue. However, it is crucial that the massage is performed by a therapist trained in prenatal techniques, as they understand the unique needs and precautions required for expectant mothers. Prenatal massage typically avoids certain pressure points and positions to ensure the safety of both mother and baby. Before scheduling a massage, it's always best to consult with your healthcare provider to confirm that massage is appropriate for your stage of pregnancy and to discuss any specific concerns or medical conditions. With proper care, massage can be a safe and soothing way to support your well-being throughout pregnancy."
+  },
+  {
+    question: "Should I drink water after a massage?",
+    answer: "Drinking water after a massage (pijat) is highly recommended to support your body's natural detoxification processes. Massage stimulates circulation and helps release metabolic waste products from your muscles into the bloodstream. Staying hydrated assists your kidneys in flushing out these toxins more efficiently, reducing the risk of soreness or fatigue after your session. Additionally, proper hydration helps maintain muscle elasticity and overall health, enhancing the benefits of your massage. Make it a habit to drink plenty of water both before and after your massage to maximize recovery, promote healing, and keep your body functioning at its best."
   }
 ];
 
@@ -106,10 +126,10 @@ const FAQPage = () => {
           </div>
           <div className="relative container mx-auto px-4 text-center z-10">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              Frequently Asked Questions
+              Frequently Asked Questions About Our Massage Services
             </h1>
             <p className="text-lg md:text-xl max-w-3xl mx-auto">
-              Your questions, answered. Find everything you need to know about our professional home and villa massage services.
+              Discover in-depth answers to common questions about massage therapy (pijat) and how it can enhance your health and well-being.
             </p>
           </div>
         </section>
@@ -119,11 +139,11 @@ const FAQPage = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold text-spa-earth mb-6">
-                Common Questions Answered
+                Everything You Need to Know About Massage
               </h2>
               <p className="text-xl text-spa-stone max-w-3xl mx-auto">
-                We've compiled answers to the most frequently asked questions about our service.
-                This should help you book with confidence and know what to expect.
+                We've compiled answers to the most frequently asked questions about massage therapy (pijat) and our service.
+                This should help you book with confidence and understand how massage can benefit your kesehatan and overall well-being.
               </p>
             </div>
 
