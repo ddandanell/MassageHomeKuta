@@ -108,7 +108,7 @@ import { SITE_CONFIG } from "@/config/site";
 ### Hero Pattern
 ```tsx
 <section className={`relative ${DESIGN_SYSTEM.spacing.hero} text-white overflow-hidden`}>
-  <div className={`absolute inset-0 bg-gradient-to-br ${DESIGN_SYSTEM.heroGradients.[pageType]}`}></div>
+  <div className={`absolute inset-0 bg-gradient-to-br ${DESIGN_SYSTEM.heroGradients[pageType]}`}></div>
   {/* Content */}
 </section>
 ```
