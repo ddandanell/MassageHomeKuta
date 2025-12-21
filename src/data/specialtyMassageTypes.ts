@@ -5,7 +5,7 @@ export const healingMassageData: MassageTypeData = {
   name: "Healing Massage",
   slug: "healing-massage",
   heroTitle: "Healing Massage in Kuta – Restore Your Body & Mind",
-  heroSubtitle: "Professional healing massage therapy delivered to your villa or hotel. Certified therapists specializing in restorative bodywork, available 7 AM – 10 PM daily.",
+  heroSubtitle: "Professional healing massage therapy delivered to your villa or hotel. Certified therapists specializing in restorative bodywork, available 07:00 – 22:00 daily.",
   metaTitle: "Healing Massage in Kuta Bali | Professional Mobile Therapy – END",
   metaDescription: "Book a Healing Massage in Kuta. Certified mobile therapists restore your body and mind at your villa or hotel. Same-day booking available. WhatsApp to book. – END",
   keywords: "healing massage kuta, restorative massage bali, therapeutic healing massage, mobile healing therapy kuta, wellness massage bali, body healing massage",

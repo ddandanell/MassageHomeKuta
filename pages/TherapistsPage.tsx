@@ -55,9 +55,9 @@ const TherapistsPage = () => {
   return (
     <div className="min-h-screen">
       <SiteMeta 
-        title="Professional Certified Massage Therapists in Kuta"
-        description="Meet our team of certified massage therapists in Kuta. Experienced professionals with international certifications providing expert in-villa massage treatments."
-        keywords="certified massage therapists kuta, professional massage therapist bali, licensed massage therapist, experienced massage therapist kuta"
+        title="Certified Massage Therapists in Kuta - Meet Our Massage Team"
+        description="Meet our team of certified massage therapists in Kuta. Experienced professional massage therapists with international certifications providing expert massage treatments delivered to your villa. Licensed massage therapists specializing in various massage techniques."
+        keywords="massage therapists, certified massage therapists, professional massage therapist, licensed massage therapist, massage therapist kuta, massage therapist bali, experienced massage therapist, massage therapy professionals, massage specialist, expert massage therapist"
         canonical="/therapists"
       />
       
@@ -70,7 +70,7 @@ const TherapistsPage = () => {
         <section className="py-20 bg-gradient-primary text-primary-foreground">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Meet Our Certified Therapists
+              Meet Our Certified Massage Therapists
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-90">
               Our team of internationally certified massage therapists brings years of experience 

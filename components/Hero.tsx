@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { MessageCircle, Phone, Shield, Clock, Star, MapPin, CheckCircle } from "lucide-react";
-import EnhancedBookingDialog from "./EnhancedBookingDialog";
 import { SITE_CONFIG } from "@/config/site";
 
 const Hero = () => {
@@ -14,7 +13,7 @@ const Hero = () => {
       <div className="absolute inset-0">
         <img
           src="/lovable-uploads/0718807a-c0dc-433f-962d-6ae7d5c1a4ae.png"
-          alt="Professional massage therapist providing relaxing treatment"
+          alt="Professional massage therapist providing relaxing massage treatment in Kuta, Bali"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/30"></div>
@@ -24,14 +23,13 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 py-20 text-center text-white max-w-4xl">
         {/* Main Headline */}
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-          Premium Home Massage
+          Premium Massage Service
           <span className="block text-amber-400">in Kuta, Bali</span>
         </h1>
         
         {/* Description */}
         <p className="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto leading-relaxed">
-          Professional spa treatments delivered to your villa or hotel. 
-          Licensed therapists bring everything needed for the perfect massage experience.
+          Experience the ultimate holistik relaxation with professional spa treatments (terapi) and pijat delivered directly to your villa or hotel. Licensed terapis, premium oils, and a sanctuary of calm await you—helping you feel rileks and rejuvenated.
         </p>
 
         {/* Key Benefits */}
@@ -56,18 +54,16 @@ const Hero = () => {
 
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <EnhancedBookingDialog
-            trigger={
-              <Button 
-                size="lg" 
-                className="text-lg px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold shadow-xl border-0 min-w-[280px]"
-              >
-                <MessageCircle className="w-5 h-5 mr-3" />
-                Book Massage Now
-              </Button>
-            }
-            triggerClassName=""
-          />
+          <Button 
+            asChild
+            size="lg" 
+            className="text-lg px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold shadow-xl border-0 min-w-[280px]"
+          >
+            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+              <MessageCircle className="w-5 h-5 mr-3" />
+              Book Your Massage Now
+            </a>
+          </Button>
           
           <Button 
             asChild 
@@ -85,7 +81,7 @@ const Hero = () => {
         {/* Trust Indicator */}
         <div className="mt-8 text-center">
           <p className="text-lg opacity-90">
-            🌟 Trusted by <strong>500+ clients</strong> • Available 24/7
+            Trusted by 500+ clients • Available Daily 07:00 - 22:00
           </p>
         </div>
       </div>

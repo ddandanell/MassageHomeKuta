@@ -3,7 +3,6 @@ import { Badge } from "@/components/ui/badge";
 import { Phone, MessageCircle, Menu, X, Star, Clock, MapPin, Waves, Globe } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import EnhancedBookingDialog from "./EnhancedBookingDialog";
 import { SITE_CONFIG } from "@/config/site";
 import { LanguageSwitcher, useLanguage } from "@/i18n";
 
@@ -30,24 +29,20 @@ const Header = () => {
           <Link to={getLocalePath("/")} className="flex items-center gap-3 hover:opacity-80 transition-opacity cursor-pointer">
             <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center shadow-lg">
               <Waves className="text-white w-5 h-5 md:w-6 md:h-6" />
+          <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity cursor-pointer group">
+            <div className="w-10 h-10 md:w-12 md:h-12 bg-professional-green/10 rounded-full flex items-center justify-center border border-professional-green/20 group-hover:bg-professional-green/20 transition-colors">
+              <Waves className="text-professional-green w-5 h-5 md:w-6 md:h-6" />
             </div>
             <div className="flex flex-col">
-              <div className="text-lg md:text-xl font-bold text-professional-navy leading-tight">
-                Home Massage Kuta
+              <div className="text-xl md:text-2xl font-serif font-bold text-professional-navy leading-none tracking-tight">
+                Home Massage
               </div>
-              <div className="hidden md:flex items-center gap-3 text-xs text-professional-gray">
-                <div className="flex items-center gap-1">
-                  <Star className="h-3 w-3 text-professional-gold fill-current" />
-                  <span>4.9 Rating</span>
-                </div>
-                <div className="flex items-center gap-1">
-                  <Clock className="h-3 w-3 text-professional-gold" />
-                  <span>30-60min Arrival</span>
-                </div>
+              <div className="text-xs text-professional-gold font-medium tracking-widest uppercase mt-1">
+                Kuta, Bali
               </div>
             </div>
           </Link>
-          
+
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
             {navigationItems.map((item, index) => (
@@ -61,51 +56,49 @@ const Header = () => {
                   {item.description}
                 </div>
               </Link>
+              <a
+                key={index}
+                href={item.href}
+                className="text-sm font-medium text-professional-navy/80 hover:text-professional-green transition-colors font-sans tracking-wide"
+              >
+                {item.label}
+              </a>
             ))}
           </nav>
 
           {/* Action Buttons */}
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-3">
             {/* Language Switcher */}
-            <div className="hidden sm:flex items-center mr-2">
+            <div className="hidden sm:flex items-center">
               <LanguageSwitcher />
             </div>
-            
-            {/* Trust Badge */}
-            <div className="hidden md:flex items-center mr-3">
-              <Badge className="bg-green-500/10 text-green-700 border-green-500/20 text-xs px-2 py-1">
-                <div className="w-2 h-2 bg-green-500 rounded-full mr-1 animate-pulse"></div>
-                Available Now
-              </Badge>
-            </div>
 
-            {/* WhatsApp Button */}
-            <Button asChild variant="outline" size="sm" className="hidden sm:flex text-xs px-3 py-2 border-green-500/30 text-green-700 hover:bg-green-50">
+            {/* WhatsApp Icon Only for Desktop to save space/reduce noise */}
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden sm:flex items-center justify-center w-10 h-10 rounded-full bg-green-50 text-green-600 hover:bg-green-100 transition-colors"
+              title="Chat on WhatsApp"
+            >
+              <MessageCircle className="w-5 h-5" />
+            </a>
+
+            {/* Book Now Button - Elegant */}
+            <Button asChild size="sm" className="hidden md:flex text-sm px-6 py-5 bg-professional-navy hover:bg-professional-navy/90 text-white font-medium rounded-full shadow-soft transition-all hover:shadow-lg">
               <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                <MessageCircle className="w-3 h-3 mr-1" />
-                WhatsApp
+                Book Now
               </a>
             </Button>
 
-            {/* Book Now Button */}
-            <EnhancedBookingDialog
-              trigger={
-                <Button size="sm" className="text-xs px-3 py-2 bg-gradient-to-r from-amber-400 to-yellow-500 hover:from-amber-500 hover:to-yellow-600 text-slate-900 font-semibold border-0">
-                  <Phone className="w-3 h-3 mr-1" />
-                  Book Now
-                </Button>
-              }
-              triggerClassName=""
-            />
-            
             {/* Mobile Menu Button */}
             <Button
               variant="ghost"
               size="sm"
-              className="lg:hidden ml-2 p-2"
+              className="lg:hidden ml-1 p-2 text-professional-navy"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
-              {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </Button>
           </div>
         </div>
@@ -150,15 +143,12 @@ const Header = () => {
 
               {/* Mobile Action Buttons */}
               <div className="space-y-3">
-                <EnhancedBookingDialog
-                  trigger={
-                    <Button className="w-full bg-gradient-to-r from-amber-400 to-yellow-500 hover:from-amber-500 hover:to-yellow-600 text-slate-900 font-semibold py-3 border-0">
-                      <MessageCircle className="w-4 h-4 mr-2" />
-                      Book Massage Now - Instant Confirmation
-                    </Button>
-                  }
-                  triggerClassName="w-full"
-                />
+                <Button asChild className="w-full bg-gradient-to-r from-amber-400 to-yellow-500 hover:from-amber-500 hover:to-yellow-600 text-slate-900 font-semibold py-3 border-0">
+                  <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                    <MessageCircle className="w-4 h-4 mr-2" />
+                    Book Massage Now - Instant Confirmation
+                  </a>
+                </Button>
                 <Button asChild variant="outline" className="w-full border-green-500/30 text-green-700 hover:bg-green-50">
                   <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                     <MessageCircle className="w-4 h-4 mr-2" />
@@ -183,7 +173,7 @@ const Header = () => {
                   <div>Licensed • Insured • 500+ Happy Clients</div>
                 </div>
               </div>
-              
+
               {/* Mobile Language Switcher */}
               <div className="mt-4 flex items-center justify-center">
                 <div className="flex items-center gap-2 text-sm text-professional-gray">

@@ -5,7 +5,7 @@ import { Heart, Users, Waves, Plane } from "lucide-react";
 const packages = [
   {
     title: "Couples Massage",
-    description: "Share the experience of relaxation with someone you love. Two therapists arrive together and perform side-by-side treatments in the privacy of your villa. Perfect for honeymoons, anniversaries, or simply creating a memory together while staying in Kuta.",
+    description: "Share the experience of relaxation with someone you love. Two terapis arrive together and perform side-by-side treatments in the privacy of your villa. Perfect for honeymoons, anniversaries, or simply creating a memorable pijat session together while enhancing relaksasi.",
     icon: Heart,
     features: [
       "Two therapists working simultaneously",
@@ -19,7 +19,7 @@ const packages = [
   },
   {
     title: "Surf Recovery Package",
-    description: "This package combines deep tissue techniques with stretching to restore mobility, release knots, and help you recover faster for the next wave.",
+    description: "This package combines deep tissue techniques with stretching to restore mobility, release knots, and help you recover faster for the next wave. Enjoy the healing benefits of well-executed pijat that targets nyeri and boosts your overall kesehatan.",
     icon: Waves,
     features: [
       "Deep tissue massage focusing on shoulders and back",
@@ -33,7 +33,7 @@ const packages = [
   },
   {
     title: "Family Wellness Package",
-    description: "Designed for families staying in villas, this package allows multiple back-to-back sessions so everyone can enjoy the benefits of professional massage without leaving home. Flexible scheduling makes it easy to fit around family plans.",
+    description: "Designed for families staying in villas, this package allows multiple back-to-back sessions so everyone can enjoy the benefits of professional massage (pijat) without leaving home. Flexible scheduling makes it easy to fit around family plans while ensuring the highest manfaat kesehatan for all ages.",
     icon: Users,
     features: [
       "Up to 4 family members",
@@ -47,7 +47,7 @@ const packages = [
   },
   {
     title: "Detox & Reset Package",
-    description: "For travelers arriving after long-haul flights, this package blends lymphatic drainage with aromatherapy massage to reduce swelling, support circulation, and restore balance. It's the ideal way to fight jet lag and start your holiday refreshed.",
+    description: "For travelers arriving after long-haul flights, this package blends lymphatic drainage with aromatherapy massage to reduce swelling, support circulation, and restore balance. It's the ideal way to fight jet lag, reduce nyeri, and start your holiday refreshed with improved kualitas tidur.",
     icon: Plane,
     features: [
       "Lymphatic drainage massage",
@@ -70,7 +70,7 @@ const SpecialPackages = () => {
             Special Packages in Kuta
           </h2>
           <p className="text-xl text-professional-gray max-w-4xl mx-auto leading-relaxed">
-            Sometimes a single massage isn't enough. That's why we've designed a series of special massage packages 
+            Sometimes a single massage (pijat) isn't enough. That's why we've designed a series of special massage packages 
             in Kuta that take your experience to the next level. Whether you're traveling with a partner, staying with family, 
             or simply want to indulge in extended sessions, these packages are created to give you more value, more care, 
             and more balance — right at your villa or hotel.
@@ -121,13 +121,12 @@ const SpecialPackages = () => {
           <div className="bg-gradient-accent rounded-2xl p-8 shadow-floating max-w-4xl mx-auto text-primary-foreground">
             <h3 className="text-2xl font-bold mb-4">Complete Coverage Across Kuta</h3>
             <p className="text-lg leading-relaxed opacity-90">
-              All packages are available for booking from 7 AM to 10 PM daily across Kuta, Legian, Tuban, 
-              and Seminyak's borders. Our therapists bring everything — tables, oils, linens, and premium 
-              equipment — so you don't need to move an inch.
+              All packages are available for booking from 07:00 to 22:00 daily across Kuta, Legian, Tuban, 
+              and Seminyak's borders. Our terapis bring everything — tables, oils, linens, and premium 
+              equipment — so you don't need to move an inch to enjoy a transformative pijat experience.
             </p>
             <p className="text-lg font-semibold mt-4">
-              With our special massage packages in Kuta, wellness becomes more than a treatment. 
-              It becomes an experience, designed to fit your lifestyle and create lasting results.
+              With our special massage packages in Kuta, wellness becomes more than a treatment; it becomes a holistik experience designed to fit your lifestyle and create lasting manfaat kesehatan.
             </p>
           </div>
         </div>

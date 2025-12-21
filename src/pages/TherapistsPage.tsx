@@ -20,7 +20,7 @@ const therapists = [
     clients: 150
   },
   {
-    name: "Wayan Putra", 
+    name: "Wayan Putra",
     specialties: ["Deep Tissue", "Sports Massage", "Thai Massage"],
     experience: "10+ years",
     certifications: ["VTCT Level 3", "Sports Massage Certified", "Thai Massage Traditional"],
@@ -32,7 +32,7 @@ const therapists = [
   {
     name: "Made Dewi",
     specialties: ["Hot Stone", "Prenatal", "Lymphatic Drainage"],
-    experience: "7+ years", 
+    experience: "7+ years",
     certifications: ["VTCT Level 3", "Prenatal Specialist", "Lymphatic Drainage Certified"],
     languages: ["Bahasa Indonesia", "English", "Basic German"],
     description: "Expert in specialized treatments including prenatal massage and lymphatic drainage with gentle healing approach.",
@@ -54,26 +54,34 @@ const therapists = [
 const TherapistsPage = () => {
   return (
     <div className="min-h-screen">
-      <SiteMeta 
+      <SiteMeta
         title="Professional Certified Massage Therapists in Kuta"
         description="Meet our team of certified massage therapists in Kuta. Experienced professionals with international certifications providing expert in-villa massage treatments."
         keywords="certified massage therapists kuta, professional massage therapist bali, licensed massage therapist, experienced massage therapist kuta"
         canonical="/therapists"
       />
-      
+
       <StructuredData type="organization" />
-      
+
       <Header />
-      
+
       <main>
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-primary text-primary-foreground">
+        <section className="relative py-20 text-primary-foreground overflow-hidden">
+          <div className="absolute inset-0">
+            <img
+              src="/images/hero/hero-4.jpg"
+              alt="Our professional therapists"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/80 to-primary/90 backdrop-blur-[2px]"></div>
+          </div>
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Meet Our Certified Therapists
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-90">
-              Our team of internationally certified massage therapists brings years of experience 
+              Our team of internationally certified massage therapists brings years of experience
               and expertise to provide you with the highest quality treatments in Kuta.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-lg">
@@ -105,7 +113,7 @@ const TherapistsPage = () => {
                 Our Expert Team
               </h2>
               <p className="text-xl text-spa-stone max-w-3xl mx-auto">
-                Each therapist is carefully selected, thoroughly trained, and committed to providing 
+                Each therapist is carefully selected, thoroughly trained, and committed to providing
                 you with a safe, professional, and transformative massage experience.
               </p>
             </div>
@@ -125,7 +133,7 @@ const TherapistsPage = () => {
                       {therapist.description}
                     </CardDescription>
                   </CardHeader>
-                  
+
                   <CardContent className="space-y-6">
                     <div>
                       <h4 className="font-semibold text-spa-earth mb-2">Specialties:</h4>
@@ -199,29 +207,29 @@ const TherapistsPage = () => {
                 </div>
                 <h3 className="text-xl font-semibold text-spa-earth mb-4">International Certifications</h3>
                 <p className="text-spa-stone">
-                  All therapists hold VTCT Level 3 Diploma and CIBTAC certifications, recognized worldwide 
+                  All therapists hold VTCT Level 3 Diploma and CIBTAC certifications, recognized worldwide
                   for massage therapy excellence.
                 </p>
               </div>
-              
+
               <div className="text-center">
                 <div className="w-16 h-16 bg-spa-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="w-8 h-8 text-spa-gold" />
                 </div>
                 <h3 className="text-xl font-semibold text-spa-earth mb-4">Bali Spa Academy Training</h3>
                 <p className="text-spa-stone">
-                  Specialized training from Bali International Spa Academy (BISA) ensures authentic 
+                  Specialized training from Bali International Spa Academy (BISA) ensures authentic
                   traditional techniques combined with modern standards.
                 </p>
               </div>
-              
+
               <div className="text-center">
                 <div className="w-16 h-16 bg-spa-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Star className="w-8 h-8 text-spa-gold" />
                 </div>
                 <h3 className="text-xl font-semibold text-spa-earth mb-4">Ongoing Development</h3>
                 <p className="text-spa-stone">
-                  Regular training updates, safety certifications, and professional development 
+                  Regular training updates, safety certifications, and professional development
                   to maintain our high service standards.
                 </p>
               </div>
@@ -264,7 +272,7 @@ const TherapistsPage = () => {
           </div>
         </section>
       </main>
-      
+
       <Footer />
       <FloatingWhatsAppButton />
     </div>

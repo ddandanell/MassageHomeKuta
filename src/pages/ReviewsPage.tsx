@@ -16,20 +16,27 @@ const ReviewsPage = () => {
         <meta name="description" content="Read authentic reviews from 500+ satisfied customers. See why Home Massage Kuta is the #1 rated in-villa massage service in Bali with 4.9 stars." />
         <meta name="keywords" content="massage reviews Kuta, customer testimonials, 5 star massage Bali, best massage service reviews" />
       </Helmet>
-      
-      <SiteMeta 
+
+      <SiteMeta
         title="Customer Reviews - Home Massage Kuta | 4.9★ Rated Service"
         description="Read authentic reviews from 500+ satisfied customers. See why Home Massage Kuta is the #1 rated in-villa massage service in Bali with 4.9 stars."
       />
       <StructuredData type="organization" includeReviews={true} />
       <StructuredData type="service" />
-      
+
       <Header />
-      
+
       <main>
         {/* Hero Section */}
-        <section className="relative py-32 md:py-40 bg-gradient-to-br from-amber-500 to-orange-500 text-white overflow-hidden">
-          <div className="absolute inset-0 bg-black/20 backdrop-blur-sm"></div>
+        <section className="relative py-32 md:py-40 text-white overflow-hidden">
+          <div className="absolute inset-0">
+            <img
+              src="/images/hero/hero-2.jpg"
+              alt="Happy clients enjoying massage"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-amber-900/80 via-orange-900/70 to-amber-900/80 backdrop-blur-[2px]"></div>
+          </div>
           <div className="relative container mx-auto px-4 text-center z-10">
             <div className="flex justify-center items-center gap-2 mb-6">
               <Star className="h-8 w-8 fill-current" />
@@ -42,7 +49,7 @@ const ReviewsPage = () => {
               What Our Customers Say
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-90 drop-shadow-md">
-              Over <strong>500+ happy customers</strong> from 25+ countries have experienced our 
+              Over <strong>500+ happy customers</strong> from 25+ countries have experienced our
               premium in-villa massage service. Here's what they have to say.
             </p>
           </div>
@@ -50,7 +57,7 @@ const ReviewsPage = () => {
 
         <Testimonials />
         <Community />
-        
+
         {/* Additional Review Stats */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4 text-center">
@@ -80,7 +87,7 @@ const ReviewsPage = () => {
 
         <BookingCTA />
       </main>
-      
+
       <Footer />
     </div>
   );

@@ -4,18 +4,18 @@ import professionalSetup from "@/assets/professional-setup.jpg";
 const features = [
   {
     icon: Shield,
-    title: "Licensed Professional Therapists",
-    description: "Every therapist is certified, experienced, and dedicated to the highest standards of professional care."
+    title: "Licensed Professional Terapis",
+    description: "Every therapist is certified, experienced, and dedicated to the highest standards of professional care. Our terapis ensure that each pijat session is tailored to improve kesehatan and overall well-being."
   },
   {
     icon: Leaf,
     title: "All-Natural Premium Oils & Products", 
-    description: "We use only the finest all-natural oils and products, ensuring a pure and skin-friendly experience."
+    description: "We use only the finest all-natural oils and products, ensuring a pure and skin-friendly experience that supports both relaksasi and manfaat kesehatan."
   },
   {
     icon: Package,
     title: "Complete Equipment & Setup Included",
-    description: "Your therapist arrives with a professional massage table, fresh linens, and everything needed for a spa experience."
+    description: "Your therapist arrives with a professional massage table, fresh linens, and everything needed for a spa experience. Every pijat session is designed to deliver both immediate relaksasi and long-term kesehatan benefits."
   },
   {
     icon: Clock,
@@ -36,9 +36,7 @@ const WhyChooseUs = () => {
             The Smartest Way to Relax in Kuta
           </h3>
           <p className="text-xl text-spa-stone max-w-4xl mx-auto leading-relaxed">
-            Kuta is alive with energy, but that same excitement can mean traffic and noise. We bring the sanctuary to you, 
-            transforming your villa or hotel into a private spa. No travel, no stress—just pure, professional Balinese healing 
-            where you feel most comfortable.
+            Kuta is alive with energy, but that same excitement can mean traffic and noise. We bring the sanctuary to you, transforming your villa or hotel into a private spa. No travel, no stress—just pure, professional Balinese healing with pijat that addresses your health concerns, from nyeri relief to enhanced relaksasi.
           </p>
         </div>
 

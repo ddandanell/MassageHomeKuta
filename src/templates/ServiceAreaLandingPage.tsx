@@ -10,6 +10,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { MessageCircle, Clock, Star, MapPin, Zap, Shield, Users, ArrowRight } from "lucide-react";
 import { ServiceAreaData } from "@/types/landingPageTypes";
 import { SITE_CONFIG } from "@/config/site";
+import { DESIGN_SYSTEM, generateWhatsAppUrl, generateBreadcrumbs } from "@/config/designSystem";
 import { Link } from "react-router-dom";
 
 interface ServiceAreaLandingPageProps {
@@ -17,30 +18,14 @@ interface ServiceAreaLandingPageProps {
 }
 
 const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
-  const whatsappNumber = SITE_CONFIG.phone;
   const whatsappMessage = `Hi! I'm in ${data.name} and would like to book a massage service. Can you help me with availability?`;
-  const whatsappUrl = `https://wa.me/${whatsappNumber.replace(/\D/g, '')}?text=${encodeURIComponent(whatsappMessage)}`;
+  const whatsappUrl = generateWhatsAppUrl(whatsappMessage, SITE_CONFIG.whatsapp);
 
-  const breadcrumbData = [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.homemassagekuta.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Service Areas",
-      "item": "https://www.homemassagekuta.com/areas"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": data.name,
-      "item": `https://www.homemassagekuta.com/areas/${data.slug}`
-    }
-  ];
+  const breadcrumbData = generateBreadcrumbs([
+    { name: "Home", path: "/" },
+    { name: "Service Areas", path: "/areas" },
+    { name: data.name, path: `/areas/${data.slug}` }
+  ]);
 
   // Create area-specific service schema data
   const serviceSchemaData = {
@@ -56,70 +41,77 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
 
   return (
     <div className="min-h-screen">
-      <SiteMeta 
+      <SiteMeta
         title={data.metaTitle}
         description={data.metaDescription}
         keywords={data.keywords}
         canonical={`/areas/${data.slug}`}
       />
-      
+
       <StructuredData type="organization" />
       <StructuredData type="breadcrumb" data={breadcrumbData} />
       <StructuredData type="service" data={serviceSchemaData} />
-      
+
       <Header />
-      
+
       <main>
         {/* Hero Section */}
-        <section className="relative py-32 md:py-40 bg-gradient-to-br from-green-500 to-lime-500 text-white overflow-hidden">
-          <div className="absolute inset-0 bg-black/20 backdrop-blur-sm"></div>
-          <div className="relative container mx-auto px-4 text-center z-10">
-            <Badge className="mb-6 bg-professional-gold text-professional-navy px-4 py-2 text-sm">
+        <section className={`relative ${DESIGN_SYSTEM.spacing.hero} text-white overflow-hidden`}>
+          <div className="absolute inset-0">
+            <img
+              src="/images/hero/hero-3.jpg"
+              alt="Professional massage service in Bali"
+              className="w-full h-full object-cover"
+            />
+            <div className={`absolute inset-0 bg-gradient-to-br ${DESIGN_SYSTEM.heroGradients.area} opacity-90 backdrop-blur-[2px]`}></div>
+          </div>
+          <div className={`relative ${DESIGN_SYSTEM.spacing.container} text-center z-10`}>
+            <Badge className={`${DESIGN_SYSTEM.badgeStyles.highlight} mb-6`}>
               Fast Response · {data.responseTime}
             </Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-lg">
+            <h1 className={`${DESIGN_SYSTEM.typography.heroTitle} mb-6 drop-shadow-lg`}>
               {data.heroTitle}
             </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-95 drop-shadow-md">
+            <p className={`${DESIGN_SYSTEM.typography.heroSubtitle} mb-8 max-w-4xl mx-auto opacity-95 drop-shadow-md`}>
               {data.heroSubtitle}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button asChild size="lg" className="text-lg px-8 py-6 bg-white text-professional-navy hover:bg-white/90 shadow-xl">
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                  <MessageCircle className="w-5 h-5 mr-2" />
-                  Book Now - WhatsApp
+                  <MessageCircle className={`${DESIGN_SYSTEM.iconSizes.medium} mr-2`} />
+                  {DESIGN_SYSTEM.ctaText.bookWhatsApp}
                 </a>
               </Button>
               <div className="flex items-center gap-2 text-sm">
-                <Clock className="w-4 h-4" />
-                <span>Available 7 AM – 10 PM Daily</span>
+                <Clock className={DESIGN_SYSTEM.iconSizes.small} />
+                <span>{DESIGN_SYSTEM.availabilityText}</span>
               </div>
             </div>
           </div>
         </section>
 
         {/* Premium Intro */}
-        <section className="py-16 bg-background">
-          <div className="container mx-auto px-4 max-w-4xl">
-            <p className="text-xl text-spa-stone leading-relaxed">
+        <section className={`${DESIGN_SYSTEM.spacing.section} ${DESIGN_SYSTEM.sectionBackgrounds.white}`}>
+          <div className={`${DESIGN_SYSTEM.spacing.container} max-w-4xl`}>
+            <p className={`${DESIGN_SYSTEM.typography.bodyLarge} text-spa-stone leading-relaxed`}>
               {data.introText}
             </p>
           </div>
         </section>
 
         {/* Key Landmarks */}
-        <section className="py-16 bg-spa-cream/30">
-          <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-spa-earth text-center mb-12">
+        <section className={`${DESIGN_SYSTEM.spacing.section} ${DESIGN_SYSTEM.sectionBackgrounds.cream}`}>
+          <div className={DESIGN_SYSTEM.spacing.container}>
+            <h2 className={`${DESIGN_SYSTEM.typography.sectionTitle} text-spa-earth text-center mb-12`}>
               Areas We Serve in {data.name}
             </h2>
             <div className="max-w-4xl mx-auto">
-              <Card className="bg-gradient-card border-0 shadow-soft">
+              <Card className={DESIGN_SYSTEM.cardStyles.standard}>
                 <CardContent className="pt-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {data.landmarks.map((landmark, index) => (
                       <div key={index} className="flex items-start gap-3">
-                        <MapPin className="w-5 h-5 text-spa-gold flex-shrink-0 mt-1" />
+                        <MapPin className={`${DESIGN_SYSTEM.iconSizes.medium} text-spa-gold flex-shrink-0 mt-1`} />
                         <span className="text-spa-earth">{landmark}</span>
                       </div>
                     ))}
@@ -131,14 +123,14 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
         </section>
 
         {/* Popular Massage Types for this Area */}
-        <section className="py-16 bg-background">
-          <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-spa-earth text-center mb-12">
+        <section className={`${DESIGN_SYSTEM.spacing.section} ${DESIGN_SYSTEM.sectionBackgrounds.white}`}>
+          <div className={DESIGN_SYSTEM.spacing.container}>
+            <h2 className={`${DESIGN_SYSTEM.typography.sectionTitle} text-spa-earth text-center mb-12`}>
               Popular Massage Services in {data.name}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {data.popularMassageTypes.map((massage, index) => (
-                <Card key={index} className="bg-gradient-card border-0 shadow-soft hover:shadow-floating transition-all duration-300">
+                <Card key={index} className={DESIGN_SYSTEM.cardStyles.standard}>
                   <CardHeader>
                     <CardTitle className="text-spa-earth">
                       {massage.name}
@@ -202,7 +194,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
                   Average response time of {data.responseTime} to {data.name} locations. We know the area inside out.
                 </p>
               </div>
-              
+
               <div className="text-center">
                 <div className="w-16 h-16 bg-spa-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Shield className="w-8 h-8 text-spa-gold" />
@@ -212,7 +204,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
                   All therapists are certified, background-checked, and insured. 100% safe and professional service.
                 </p>
               </div>
-              
+
               <div className="text-center">
                 <div className="w-16 h-16 bg-spa-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="w-8 h-8 text-spa-gold" />
@@ -261,7 +253,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
                       </div>
                     </div>
                   )}
-                  
+
                   {data.extendedContent.villaCulture && (
                     <div>
                       <h2 className="text-3xl font-bold text-spa-earth mb-6">
@@ -294,7 +286,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
                       </div>
                     </div>
                   )}
-                  
+
                   {data.extendedContent.neighborhoodDetails && (
                     <div>
                       <h2 className="text-3xl font-bold text-spa-earth mb-6">
@@ -421,7 +413,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
             </h3>
             <div className="flex flex-wrap justify-center gap-4">
               {data.nearbyAreas.map((area, index) => (
-                <a 
+                <a
                   key={index}
                   href={`/areas/${area.toLowerCase().replace(/\s+/g, '-')}`}
                   className="text-spa-gold hover:text-spa-earth transition-colors font-medium"
@@ -471,7 +463,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
                 Choose from our full range of professional treatments delivered to your {data.name} location.
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto mb-8">
               <Card className="bg-white border-spa-stone/20 hover:border-spa-gold transition-all duration-300">
                 <CardHeader>
@@ -485,7 +477,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
                   </Button>
                 </CardContent>
               </Card>
-              
+
               <Card className="bg-white border-spa-stone/20 hover:border-spa-gold transition-all duration-300">
                 <CardHeader>
                   <CardTitle className="text-spa-earth text-lg">Deep Tissue Massage</CardTitle>
@@ -498,7 +490,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
                   </Button>
                 </CardContent>
               </Card>
-              
+
               <Card className="bg-white border-spa-stone/20 hover:border-spa-gold transition-all duration-300">
                 <CardHeader>
                   <CardTitle className="text-spa-earth text-lg">Aromatherapy Massage</CardTitle>
@@ -511,7 +503,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
                   </Button>
                 </CardContent>
               </Card>
-              
+
               <Card className="bg-white border-spa-stone/20 hover:border-spa-gold transition-all duration-300">
                 <CardHeader>
                   <CardTitle className="text-spa-earth text-lg">Hot Stone Massage</CardTitle>
@@ -524,7 +516,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
                   </Button>
                 </CardContent>
               </Card>
-              
+
               <Card className="bg-white border-spa-stone/20 hover:border-spa-gold transition-all duration-300">
                 <CardHeader>
                   <CardTitle className="text-spa-earth text-lg">Thai Massage</CardTitle>
@@ -537,7 +529,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
                   </Button>
                 </CardContent>
               </Card>
-              
+
               <Card className="bg-white border-spa-stone/20 hover:border-spa-gold transition-all duration-300">
                 <CardHeader>
                   <CardTitle className="text-spa-earth text-lg">More Services</CardTitle>
@@ -566,10 +558,10 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
                   Explore massage service coverage in areas near {data.name}.
                 </p>
               </div>
-              
+
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-8">
                 {data.nearbyAreas.map((area, index) => (
-                  <Link 
+                  <Link
                     key={index}
                     to={`/areas/${area.toLowerCase().replace(/\s+/g, '-')}`}
                     className="flex items-center justify-between p-4 bg-white rounded-lg hover:bg-spa-gold/10 transition-all duration-300"
@@ -579,7 +571,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
                   </Link>
                 ))}
               </div>
-              
+
               <div className="text-center">
                 <Button asChild variant="outline" size="lg">
                   <Link to="/areas">
@@ -600,7 +592,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
             <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
               Our certified therapists can be at your location in {data.responseTime}. Book now for same-day availability!
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8 py-6 bg-white text-professional-navy hover:bg-white/90">
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
@@ -617,7 +609,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
           </div>
         </section>
       </main>
-      
+
       <Footer />
       <FloatingWhatsAppButton />
     </div>

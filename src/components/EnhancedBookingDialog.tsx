@@ -37,7 +37,7 @@ const durations = [
 ];
 
 const serviceAreas = [
-  "Kuta", "Seminyak", "Legian", "Canggu", "Jimbaran", "Nusa Dua", 
+  "Kuta", "Seminyak", "Legian", "Canggu", "Jimbaran", "Nusa Dua",
   "Sanur", "Denpasar", "Ubud", "Uluwatu", "Pecatu", "Other"
 ];
 
@@ -53,7 +53,7 @@ const EnhancedBookingDialog = ({ trigger, triggerClassName }: EnhancedBookingDia
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const formData = new FormData(e.target as HTMLFormElement);
-    
+
     const name = formData.get('name') as string;
     const phone = formData.get('phone') as string;
     const email = formData.get('email') as string;
@@ -61,7 +61,7 @@ const EnhancedBookingDialog = ({ trigger, triggerClassName }: EnhancedBookingDia
     const date = formData.get('date') as string;
     const time = formData.get('time') as string;
     const notes = formData.get('notes') as string;
-    
+
     if (!name || !phone || !address || !selectedMassage || !selectedArea) {
       alert('Please fill in all required fields');
       return;
@@ -74,13 +74,13 @@ const EnhancedBookingDialog = ({ trigger, triggerClassName }: EnhancedBookingDia
 
     const selectedMassageInfo = massageTypes.find(m => m.id === selectedMassage);
     const selectedDurationInfo = durations.find(d => d.value === duration);
-    
+
     let message = `🌺 *HOME MASSAGE KUTA - BOOKING REQUEST* 🌺\n\n`;
     message += `👤 *Client Information:*\n`;
     message += `• Name: ${name}\n`;
     message += `• Phone: ${phone}\n`;
     message += `• Email: ${email}\n\n`;
-    
+
     message += `🏠 *Service Details:*\n`;
     message += `• Location: ${address}\n`;
     message += `• Area: ${selectedArea}\n`;
@@ -88,7 +88,7 @@ const EnhancedBookingDialog = ({ trigger, triggerClassName }: EnhancedBookingDia
     message += `• Duration: ${selectedDurationInfo?.label}\n`;
     message += `• People: ${peopleCount} ${parseInt(peopleCount) > 1 ? 'people' : 'person'}\n`;
     message += `• Price Range: IDR ${selectedMassageInfo?.price}\n\n`;
-    
+
     if (bookingType === "schedule" && date && time) {
       message += `📅 *Preferred Schedule:*\n`;
       message += `• Date: ${date}\n`;
@@ -96,11 +96,11 @@ const EnhancedBookingDialog = ({ trigger, triggerClassName }: EnhancedBookingDia
     } else {
       message += `⚡ *Timing:* ASAP (Next Available Slot)\n\n`;
     }
-    
+
     if (notes) {
       message += `💬 *Special Notes:* ${notes}\n\n`;
     }
-    
+
     message += `🔔 *Next Steps:*\n`;
     message += `We'll confirm availability within 15 minutes and provide:\n`;
     message += `• Exact pricing\n`;
@@ -108,7 +108,7 @@ const EnhancedBookingDialog = ({ trigger, triggerClassName }: EnhancedBookingDia
     message += `• Arrival time\n`;
     message += `• Payment options\n\n`;
     message += `Thank you for choosing Home Massage Kuta! 🙏`;
-    
+
     const whatsappUrl = `https://wa.me/${SITE_CONFIG.whatsapp.replace(/\D/g, '')}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
     setIsOpen(false);
@@ -143,29 +143,29 @@ const EnhancedBookingDialog = ({ trigger, triggerClassName }: EnhancedBookingDia
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="name">Full Name *</Label>
-                  <Input 
-                    id="name" 
-                    name="name" 
+                  <Input
+                    id="name"
+                    name="name"
                     placeholder="Enter your full name"
                     className="border-professional-gold/30 focus:border-professional-gold"
-                    required 
+                    required
                   />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="phone">WhatsApp Number *</Label>
-                  <Input 
-                    id="phone" 
-                    name="phone" 
+                  <Input
+                    id="phone"
+                    name="phone"
                     placeholder="+62 or international number"
                     className="border-professional-gold/30 focus:border-professional-gold"
-                    required 
+                    required
                   />
                 </div>
                 <div className="space-y-2 md:col-span-2">
                   <Label htmlFor="email">Email Address</Label>
-                  <Input 
-                    id="email" 
-                    name="email" 
+                  <Input
+                    id="email"
+                    name="email"
                     type="email"
                     placeholder="your@email.com (optional)"
                     className="border-professional-gold/30 focus:border-professional-gold"
@@ -198,8 +198,8 @@ const EnhancedBookingDialog = ({ trigger, triggerClassName }: EnhancedBookingDia
                 </div>
                 <div className="space-y-2 md:col-span-2">
                   <Label htmlFor="address">Complete Address *</Label>
-                  <Textarea 
-                    id="address" 
+                  <Textarea
+                    id="address"
                     name="address"
                     placeholder="Villa/hotel name, street address, landmarks, and any access instructions..."
                     className="border-professional-gold/30 focus:border-professional-gold min-h-[80px]"
@@ -311,9 +311,9 @@ const EnhancedBookingDialog = ({ trigger, triggerClassName }: EnhancedBookingDia
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="date">Preferred Date</Label>
-                      <Input 
-                        type="date" 
-                        id="date" 
+                      <Input
+                        type="date"
+                        id="date"
                         name="date"
                         className="border-professional-gold/30 focus:border-professional-gold"
                         min={new Date().toISOString().split('T')[0]}
@@ -326,18 +326,22 @@ const EnhancedBookingDialog = ({ trigger, triggerClassName }: EnhancedBookingDia
                           <SelectValue placeholder="Select time" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="09:00">9:00 AM</SelectItem>
-                          <SelectItem value="10:00">10:00 AM</SelectItem>
-                          <SelectItem value="11:00">11:00 AM</SelectItem>
-                          <SelectItem value="12:00">12:00 PM</SelectItem>
-                          <SelectItem value="13:00">1:00 PM</SelectItem>
-                          <SelectItem value="14:00">2:00 PM</SelectItem>
-                          <SelectItem value="15:00">3:00 PM</SelectItem>
-                          <SelectItem value="16:00">4:00 PM</SelectItem>
-                          <SelectItem value="17:00">5:00 PM</SelectItem>
-                          <SelectItem value="18:00">6:00 PM</SelectItem>
-                          <SelectItem value="19:00">7:00 PM</SelectItem>
-                          <SelectItem value="20:00">8:00 PM</SelectItem>
+                          <SelectItem value="07:00">07:00</SelectItem>
+                          <SelectItem value="08:00">08:00</SelectItem>
+                          <SelectItem value="09:00">09:00</SelectItem>
+                          <SelectItem value="10:00">10:00</SelectItem>
+                          <SelectItem value="11:00">11:00</SelectItem>
+                          <SelectItem value="12:00">12:00</SelectItem>
+                          <SelectItem value="13:00">13:00</SelectItem>
+                          <SelectItem value="14:00">14:00</SelectItem>
+                          <SelectItem value="15:00">15:00</SelectItem>
+                          <SelectItem value="16:00">16:00</SelectItem>
+                          <SelectItem value="17:00">17:00</SelectItem>
+                          <SelectItem value="18:00">18:00</SelectItem>
+                          <SelectItem value="19:00">19:00</SelectItem>
+                          <SelectItem value="20:00">20:00</SelectItem>
+                          <SelectItem value="21:00">21:00</SelectItem>
+                          <SelectItem value="22:00">22:00</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
@@ -350,8 +354,8 @@ const EnhancedBookingDialog = ({ trigger, triggerClassName }: EnhancedBookingDia
           {/* Additional Notes */}
           <div className="space-y-2">
             <Label htmlFor="notes">Special Requests or Notes</Label>
-            <Textarea 
-              id="notes" 
+            <Textarea
+              id="notes"
               name="notes"
               placeholder="Any health conditions, preferences, allergies, or special requests we should know about..."
               className="border-professional-gold/30 focus:border-professional-gold min-h-[80px]"
@@ -360,8 +364,8 @@ const EnhancedBookingDialog = ({ trigger, triggerClassName }: EnhancedBookingDia
 
           {/* Terms Agreement */}
           <div className="flex items-start space-x-2">
-            <Checkbox 
-              id="terms" 
+            <Checkbox
+              id="terms"
               checked={agreedToTerms}
               onCheckedChange={(checked) => setAgreedToTerms(checked as boolean)}
               className="mt-1"
@@ -390,8 +394,8 @@ const EnhancedBookingDialog = ({ trigger, triggerClassName }: EnhancedBookingDia
             </CardContent>
           </Card>
 
-          <Button 
-            type="submit" 
+          <Button
+            type="submit"
             className="w-full bg-gradient-to-r from-professional-navy to-professional-gold hover:from-professional-gold hover:to-professional-navy text-white font-semibold py-3 text-lg transition-all duration-300"
             disabled={!agreedToTerms}
           >

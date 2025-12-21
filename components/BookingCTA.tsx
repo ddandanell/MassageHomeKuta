@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Phone, Sparkles, Clock, Star } from "lucide-react";
-import EnhancedBookingDialog from "./EnhancedBookingDialog";
 import { SITE_CONFIG } from "@/config/site";
 
 const BookingCTA = () => {
@@ -46,19 +45,13 @@ const BookingCTA = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <EnhancedBookingDialog
-              trigger={
-                <Button 
-                  size="lg" 
-                  className="text-base md:text-lg px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-amber-400 to-yellow-500 hover:from-amber-500 hover:to-yellow-600 text-slate-900 font-bold shadow-2xl transform hover:scale-105 transition-all duration-300 border-0"
-                >
-                  <MessageCircle className="w-4 h-4 md:w-5 md:h-5 mr-2" />
-                  Book Instantly - FREE Consultation
-                  <Sparkles className="w-4 h-4 ml-2 animate-pulse" />
-                </Button>
-              }
-              triggerClassName=""
-            />
+            <Button asChild size="lg" className="text-base md:text-lg px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-amber-400 to-yellow-500 hover:from-amber-500 hover:to-yellow-600 text-slate-900 font-bold shadow-2xl transform hover:scale-105 transition-all duration-300 border-0">
+              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="w-4 h-4 md:w-5 md:h-5 mr-2" />
+                Book Instantly - FREE Consultation
+                <Sparkles className="w-4 h-4 ml-2 animate-pulse" />
+              </a>
+            </Button>
             <Button asChild variant="outline" size="lg" className="text-base md:text-lg px-6 md:px-8 py-3 md:py-4 border-2 border-white text-white hover:bg-white hover:text-professional-navy font-semibold transition-all duration-300">
               <a href={`tel:${SITE_CONFIG.whatsapp}`}>
                 <Phone className="w-4 h-4 md:w-5 md:h-5 mr-2" />

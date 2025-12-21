@@ -4,25 +4,25 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 const serviceAreas = [
   {
     area: "Legian",
-    description: "Just north of Kuta, Legian blends nightlife with a slightly calmer atmosphere. We regularly serve guests in Legian who want a professional massage without having to step outside into busy streets.",
+    description: "Just north of Kuta, Legian blends nightlife with a slightly calmer atmosphere. We regularly serve guests in Legian who want a professional pijat without having to step outside into busy streets.",
     icon: Waves,
     highlights: ["Nightlife district", "Beach access", "Tourist-friendly"]
   },
   {
     area: "Tuban",
-    description: "Located just south of Kuta and close to the airport, Tuban is popular with families and short-term visitors. Our therapists often serve guests here who book sessions immediately after arrival to recover from long-haul flights.",
+    description: "Located just south of Kuta and close to the airport, Tuban is popular with families and short-term visitors. Our terapis often serve guests here who book sessions immediately after arrival to recover from long-haul flights.",
     icon: Plane,
     highlights: ["Close to airport", "Family-friendly", "Post-flight recovery"]
   },
   {
     area: "Seminyak Border",
-    description: "On the northern edge of Kuta lies Seminyak, known for upscale restaurants and luxury villas. Many of our repeat clients here prefer privacy in their villas rather than visiting crowded spas.",
+    description: "On the northern edge of Kuta lies Seminyak, known for upscale restaurants and luxury villas. Many of our repeat clients here prefer privacy in their villas, enjoying luxurious shiatsu massages and expertly delivered pijat sessions rather than visiting crowded spas.",
     icon: Mountain,
     highlights: ["Luxury villas", "Upscale dining", "Privacy focused"]
   },
   {
     area: "Jimbaran & Uluwatu (South Kuta)",
-    description: "Couples and honeymooners in these areas often choose our service for private, romantic villa massages with ocean views.",
+    description: "Couples and honeymooners in these areas often choose our service for private, romantic villa massages with ocean views, ensuring a memorable pijat experience that soothes nyeri and promotes deep relaksasi.",
     icon: Car,
     highlights: ["Ocean views", "Romantic settings", "Honeymooner favorite"]
   }
@@ -41,8 +41,8 @@ const ServiceAreas = () => {
           </h2>
           <p className="text-xl text-professional-gray max-w-4xl mx-auto leading-relaxed">
             Kuta may be the center of Bali's tourism, but it is surrounded by several key neighborhoods that each attract 
-            different types of travelers. Our home massage service is designed to cover not only central Kuta but also all 
-            the surrounding areas, ensuring that no matter where you stay, relaxation is always just one call away.
+            different types of travelers. Our home massage (pijat) service is designed to cover not only central Kuta but also all 
+            the surrounding areas, ensuring that no matter where you stay, relaxation and kesehatan are always just one call away.
           </p>
         </div>
 
@@ -108,7 +108,7 @@ const ServiceAreas = () => {
             <p className="text-lg text-professional-gray leading-relaxed">
               Your location shouldn't limit your wellness. With our villa massage services around Kuta, the spa always 
               comes to you. From beachfront villas in Legian to luxury resorts in Jimbaran, we bring the same 
-              professional standards and five-star experience directly to your door.
+              professional standards and five-star pijat experience directly to your door.
             </p>
           </div>
         </div>

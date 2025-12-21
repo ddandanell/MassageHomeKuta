@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { MessageCircle, Phone, Shield, Clock, Star, MapPin, CheckCircle } from "lucide-react";
-import EnhancedBookingDialog from "./EnhancedBookingDialog";
 import { SITE_CONFIG } from "@/config/site";
 
 const Hero = () => {
@@ -13,79 +12,73 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="/lovable-uploads/0718807a-c0dc-433f-962d-6ae7d5c1a4ae.png"
+          src="/images/hero/hero-1.jpg"
           alt="Professional massage therapist providing relaxing treatment"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60"></div>
       </div>
-      
+
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 py-20 text-center text-white max-w-4xl">
+      <div className="relative z-10 container mx-auto px-4 py-20 text-center text-white max-w-5xl">
         {/* Main Headline */}
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-8 leading-tight drop-shadow-lg">
           Premium Home Massage
-          <span className="block text-amber-400">in Kuta, Bali</span>
+          <span className="block text-professional-gold mt-2 italic">in Kuta, Bali</span>
         </h1>
-        
+
         {/* Description */}
-        <p className="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto leading-relaxed">
-          Professional spa treatments delivered to your villa or hotel. 
-          Licensed therapists bring everything needed for the perfect massage experience.
+        <p className="text-xl md:text-2xl mb-12 opacity-95 max-w-3xl mx-auto leading-relaxed font-light tracking-wide">
+          Experience the ultimate relaxation with professional spa treatments delivered directly to your villa or hotel.
+          Licensed therapists, premium oils, and a sanctuary of calm.
         </p>
 
         {/* Key Benefits */}
-        <div className="flex flex-wrap justify-center gap-4 md:gap-6 mb-10 text-sm md:text-base">
-          <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
-            <CheckCircle className="h-4 w-4 text-green-400" />
-            <span>Same Day Available</span>
+        <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-12 text-sm md:text-base tracking-wide">
+          <div className="flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-6 py-3 hover:bg-white/20 transition-colors">
+            <CheckCircle className="h-5 w-5 text-emerald-400" />
+            <span className="font-medium">Same Day Booking</span>
           </div>
-          <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
-            <Clock className="h-4 w-4 text-amber-400" />
-            <span>30-60 Min Arrival</span>
+          <div className="flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-6 py-3 hover:bg-white/20 transition-colors">
+            <Clock className="h-5 w-5 text-professional-gold" />
+            <span className="font-medium">Arrives in 30-60 Mins</span>
           </div>
-          <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
-            <Shield className="h-4 w-4 text-blue-400" />
-            <span>Licensed & Insured</span>
-          </div>
-          <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
-            <Star className="h-4 w-4 text-yellow-400 fill-current" />
-            <span>4.9★ Rating</span>
+          <div className="flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-6 py-3 hover:bg-white/20 transition-colors">
+            <Shield className="h-5 w-5 text-blue-300" />
+            <span className="font-medium">Certified Therapists</span>
           </div>
         </div>
 
         {/* Action Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <EnhancedBookingDialog
-            trigger={
-              <Button 
-                size="lg" 
-                className="text-lg px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold shadow-xl border-0 min-w-[280px]"
-              >
-                <MessageCircle className="w-5 h-5 mr-3" />
-                Book Massage Now
-              </Button>
-            }
-            triggerClassName=""
-          />
-          
-          <Button 
-            asChild 
-            variant="outline" 
-            size="lg" 
-            className="text-lg px-8 py-4 border-2 border-white text-white hover:bg-white hover:text-gray-900 font-semibold min-w-[280px] bg-transparent"
+        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+          <Button
+            asChild
+            size="lg"
+            className="text-lg px-10 py-8 bg-professional-gold hover:bg-amber-600 text-white font-serif tracking-wide shadow-floating border-0 min-w-[280px] rounded-xl transition-all duration-300 hover:scale-105"
+          >
+            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+              <MessageCircle className="w-6 h-6 mr-3" />
+              Book Appointment
+            </a>
+          </Button>
+
+          <Button
+            asChild
+            variant="outline"
+            size="lg"
+            className="text-lg px-10 py-8 border border-white/40 text-white hover:bg-white/10 hover:text-white font-serif tracking-wide min-w-[280px] bg-transparent rounded-xl backdrop-blur-sm transition-all duration-300"
           >
             <a href={`tel:${SITE_CONFIG.whatsapp}`}>
-              <Phone className="w-5 h-5 mr-3" />
-              Call {SITE_CONFIG.whatsapp}
+              <Phone className="w-6 h-6 mr-3" />
+              Call Us Directly
             </a>
           </Button>
         </div>
 
         {/* Trust Indicator */}
-        <div className="mt-8 text-center">
-          <p className="text-lg opacity-90">
-            🌟 Trusted by <strong>500+ clients</strong> • Available 24/7
+        <div className="mt-12 text-center">
+          <p className="text-lg opacity-80 font-light tracking-wider">
+            Trusted by <strong>500+ clients</strong> • Available Daily 07:00 - 22:00
           </p>
         </div>
       </div>

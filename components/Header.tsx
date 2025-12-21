@@ -3,17 +3,16 @@ import { Badge } from "@/components/ui/badge";
 import { Phone, MessageCircle, Menu, X, Star, Clock, MapPin, Waves } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import EnhancedBookingDialog from "./EnhancedBookingDialog";
 import { SITE_CONFIG } from "@/config/site";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const whatsappMessage = "Hello Home Massage Kuta! I'd like to book a massage service. Can you help me with availability?";
+  const whatsappMessage = "Hello Home Massage Kuta! I'd like to book a massage appointment. Can you help me with massage availability and pricing?";
   const whatsappUrl = `https://wa.me/${SITE_CONFIG.whatsapp.replace(/\D/g, '')}?text=${encodeURIComponent(whatsappMessage)}`;
 
   const navigationItems = [
     { href: "/", label: "Home", description: "Back to homepage" },
-    { href: "/services", label: "Services", description: "View all massage types" },
+    { href: "/services", label: "Services", description: "View all massage services" },
     { href: "/about", label: "About", description: "Our story & credentials" },
     { href: "/reviews", label: "Reviews", description: "What clients say" },
     { href: "/faq", label: "FAQ", description: "Common questions" },
@@ -81,15 +80,12 @@ const Header = () => {
             </Button>
 
             {/* Book Now Button */}
-            <EnhancedBookingDialog
-              trigger={
-                <Button size="sm" className="text-xs px-3 py-2 bg-gradient-to-r from-amber-400 to-yellow-500 hover:from-amber-500 hover:to-yellow-600 text-slate-900 font-semibold border-0">
-                  <Phone className="w-3 h-3 mr-1" />
-                  Book Now
-                </Button>
-              }
-              triggerClassName=""
-            />
+            <Button asChild size="sm" className="text-xs px-3 py-2 bg-gradient-to-r from-amber-400 to-yellow-500 hover:from-amber-500 hover:to-yellow-600 text-slate-900 font-semibold border-0">
+              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                <Phone className="w-3 h-3 mr-1" />
+                Book Now
+              </a>
+            </Button>
             
             {/* Mobile Menu Button */}
             <Button
@@ -143,15 +139,12 @@ const Header = () => {
 
               {/* Mobile Action Buttons */}
               <div className="space-y-3">
-                <EnhancedBookingDialog
-                  trigger={
-                    <Button className="w-full bg-gradient-to-r from-amber-400 to-yellow-500 hover:from-amber-500 hover:to-yellow-600 text-slate-900 font-semibold py-3 border-0">
-                      <MessageCircle className="w-4 h-4 mr-2" />
-                      Book Massage Now - Instant Confirmation
-                    </Button>
-                  }
-                  triggerClassName="w-full"
-                />
+                <Button asChild className="w-full bg-gradient-to-r from-amber-400 to-yellow-500 hover:from-amber-500 hover:to-yellow-600 text-slate-900 font-semibold py-3 border-0">
+                  <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                    <MessageCircle className="w-4 h-4 mr-2" />
+                    Book Your Massage Now - Instant Confirmation
+                  </a>
+                </Button>
                 <Button asChild variant="outline" className="w-full border-green-500/30 text-green-700 hover:bg-green-50">
                   <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                     <MessageCircle className="w-4 h-4 mr-2" />

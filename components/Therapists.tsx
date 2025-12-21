@@ -10,31 +10,31 @@ const therapists = [
   {
     name: "Putri Anggraini", 
     title: "Movement & Flow Specialist",
-    description: "As a former dancer, Putri understands the body as a story in motion. She combines the art of dance with the science of massage, creating treatments that are fluid, rhythmic, and deeply restorative. Her Thai massages are a beautiful choreography of stretches that leave you feeling graceful and free.",
+    description: "As a former dancer, Putri understands the body as a story in motion. She combines the art of dance with the science of massage, creating treatments that are fluid, rhythmic, and deeply restorative. Her Thai massages are a beautiful choreography of stretches that leave you feeling graceful and free after every pijat session.",
     specialties: ["Thai Massage", "Body Stretching"]
   },
   {
     name: "Dewi Kartika",
     title: "Herbalist Specialist", 
-    description: "Growing up in a family of herbalists, Dewi has an innate understanding of nature's healing power. She masterfully blends custom aromatherapy oils tailored to your needs, turning your villa into a fragrant haven of tranquility. Her massages are a multisensory journey that calms the mind and nourishes the skin.",
+    description: "Growing up in a family of herbalists, Dewi has an innate understanding of nature's healing power. She masterfully blends custom aromatherapy oils tailored to your needs, turning your villa into a fragrant haven of tranquility. Her massages are a multisensory journey that calms the mind, nourishes the skin, and enhances overall kesehatan.",
     specialties: ["Aroma Therapy", "Custom Oil Blends"]
   },
   {
     name: "Made Sulastri",
     title: "Luxury Resort Therapist",
-    description: "Having honed her skills at 5-star resorts in Nusa Dua, Made brings a level of five-star luxury and technical precision to every home massage. She specializes in deep tissue work that is both powerful and precise, melting away chronic tension with the practiced hands of a world-class spa professional.",
+    description: "Having honed her skills at 5-star resorts in Nusa Dua, Made brings a level of five-star luxury and technical precision to every home massage. She specializes in deep tissue work that is both powerful and precise, alleviating tekanan and melting away chronic tension with the practiced hands of a world-class spa professional—ensuring that each pijat session leaves you feeling renewed.",
     specialties: ["Deep Tissue", "Luxury Spa Techniques"]
   },
   {
     name: "Ketut Ratna",
     title: "Healer Lineage",
-    description: "Hailing from a respected healer lineage in Karangasem, Ketut offers treatments that are steeped in authenticity and mindfulness. Her expertise in lymphatic drainage is complemented by a gentle, intuitive approach that promotes detoxification and deep peace, making her sessions a true reset for the body.",
+    description: "Hailing from a respected healer lineage in Karangasem, Ketut offers treatments that are steeped in authenticity and mindfulness. Her expertise in lymphatic drainage is complemented by a gentle, intuitive approach that promotes detoxification and deep peace, making her sessions a true reset for the body and a reliable way to reduce nyeri.",
     specialties: ["Lymphatic Drainage", "Mindful Therapy"]
   },
   {
     name: "Nyoman Saraswati",
     title: "Yoga Instructor Therapist",
-    description: "As a yoga instructor turned therapist, Nyoman bridges the gap between movement and stillness. Her Thai massages incorporate guided breathing and yogic principles to enhance flexibility and calm the nervous system. A session with her feels like a private yoga class and a massage all in one.",
+    description: "As a yoga instructor turned therapist, Nyoman bridges the gap between movement and stillness. Her Thai massages incorporate guided breathing and yogic principles to enhance flexibility and calm the nervous system. A session with her feels like a private yoga class and a massage, leaving you with improved relaksasi and manfaat kesehatan.",
     specialties: ["Thai Massage", "Guided Breathing"]
   }
 ];
@@ -49,7 +49,7 @@ const Therapists = () => {
           </h2>
           <p className="text-xl text-spa-stone max-w-4xl mx-auto leading-relaxed">
             Our team is the heart of our service. Each therapist is a certified professional with a unique story 
-            and a shared passion for healing. We invite you to meet the artists who will bring the sanctuary to you.
+            and a shared passion for healing. We invite you to meet the artists who will bring the sanctuary and quality pijat right to your doorstep.
           </p>
         </div>
 

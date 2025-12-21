@@ -199,7 +199,7 @@ const Packages = () => {
                   group size, and preferences. Contact us to discuss your requirements.
                 </p>
                 <Button asChild variant="outline" size="lg">
-                  <a href="https://wa.me/6281126568369?text=I'd like to inquire about custom massage packages">
+                  <a href="https://wa.me/628112656869?text=I'd like to inquire about custom massage packages">
                     Create Custom Package
                   </a>
                 </Button>

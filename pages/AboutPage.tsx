@@ -8,20 +8,16 @@ import SafetyStandards from "@/components/SafetyStandards";
 import Community from "@/components/Community";
 import BookingCTA from "@/components/BookingCTA";
 import Footer from "@/components/Footer";
-import { Helmet } from "react-helmet-async";
+import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
 
 const AboutPage = () => {
   return (
     <div className="min-h-screen">
-      <Helmet>
-        <title>About Home Massage Kuta - Professional In-Villa Massage Services</title>
-        <meta name="description" content="Learn about Home Massage Kuta's professional team, safety standards, and commitment to providing luxury spa treatments in your villa or hotel in Bali." />
-        <meta name="keywords" content="about us, professional massage, Kuta massage therapists, licensed therapists Bali, spa services" />
-      </Helmet>
-      
       <SiteMeta 
-        title="About Home Massage Kuta - Professional In-Villa Massage Services"
-        description="Learn about Home Massage Kuta's professional team, safety standards, and commitment to providing luxury spa treatments in your villa or hotel in Bali."
+        title="About Home Massage Kuta - Professional Massage Service Team"
+        description="Learn about Home Massage Kuta's professional massage therapists, safety standards, and commitment to providing luxury massage treatments in your villa or hotel in Bali. Certified massage therapists delivering premium massage services."
+        keywords="about us, professional massage, massage therapists kuta, licensed massage therapists bali, massage service team, certified massage therapists, professional massage service, home massage kuta"
+        canonical="/about"
       />
       <StructuredData type="organization" />
       
@@ -29,7 +25,7 @@ const AboutPage = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="relative py-32 md:py-40 bg-gradient-to-br from-blue-500 to-indigo-600 text-white overflow-hidden">
+        <section className="relative py-32 md:py-40 bg-gradient-to-br from-teal-600 to-cyan-600 text-white overflow-hidden">
           <div className="absolute inset-0 bg-black/20 backdrop-blur-sm"></div>
           <div className="relative container mx-auto px-4 text-center z-10">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-lg">
@@ -51,6 +47,7 @@ const AboutPage = () => {
       </main>
       
       <Footer />
+      <FloatingWhatsAppButton />
     </div>
   );
 };

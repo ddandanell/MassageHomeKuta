@@ -84,9 +84,9 @@ const FAQPage = () => {
   return (
     <div className="min-h-screen">
       <SiteMeta 
-        title="Frequently Asked Questions - Home Massage Kuta"
-        description="Find answers to common questions about our professional home massage service in Kuta. Booking, pricing, therapists, and service details explained."
-        keywords="massage faq kuta, home massage questions, villa massage booking, massage service questions kuta, spa service faq bali"
+        title="Massage FAQ - Frequently Asked Questions About Our Massage Service"
+        description="Find answers to common questions about our professional massage service in Kuta. Massage booking, pricing, massage therapists, and massage treatment details explained. Everything you need to know about booking your massage appointment."
+        keywords="massage faq, massage questions, massage booking questions, massage service faq, massage therapist questions, massage treatment questions, home massage faq, villa massage questions, massage appointment questions, massage pricing questions"
         canonical="/faq"
       />
       
@@ -95,11 +95,11 @@ const FAQPage = () => {
       <Header />
       
       <main>
-        <section className="relative py-32 md:py-40 bg-gradient-to-br from-purple-500 to-pink-500 text-white overflow-hidden">
+        <section className="relative py-32 md:py-40 bg-gradient-to-br from-teal-600 to-cyan-600 text-white overflow-hidden">
           <div className="absolute inset-0 bg-black/20 backdrop-blur-sm"></div>
           <div className="relative container mx-auto px-4 text-center z-10">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              Frequently Asked Questions
+              Massage Service - Frequently Asked Questions
             </h1>
             <p className="text-lg md:text-xl max-w-3xl mx-auto">
               Your questions, answered. Find everything you need to know about our professional home and villa massage services.
@@ -108,7 +108,7 @@ const FAQPage = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-20 bg-background">
+        <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold text-spa-earth mb-6">
@@ -154,13 +154,13 @@ const FAQPage = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8 py-4">
-                <a href="https://wa.me/6281126568369?text=I have a question about your massage service" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/628112656869?text=I have a question about your massage service" target="_blank" rel="noopener noreferrer">
                   <MessageCircle className="w-5 h-5" />
                   WhatsApp Us
                 </a>
               </Button>
               <Button asChild variant="outline" size="lg" className="text-lg px-8 py-4">
-                <a href="tel:+6281126568369">
+                <a href="tel:+628112656869">
                   <Phone className="w-5 h-5" />
                   Call Direct
                 </a>

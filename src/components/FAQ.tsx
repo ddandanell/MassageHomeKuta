@@ -7,7 +7,7 @@ const faqs = [
   },
   {
     question: "Can I book the same day?",
-    answer: "Yes! We offer same-day booking based on availability. Our therapists are available from 7 AM to 10 PM daily. For the best availability, we recommend booking a few hours in advance via WhatsApp."
+    answer: "Yes! We offer same-day booking based on availability. Our therapists are available from 07:00 to 22:00 daily. For the best availability, we recommend booking a few hours in advance via WhatsApp."
   },
   {
     question: "What payment methods are available?",
@@ -39,8 +39,8 @@ const FAQ = () => {
         <div className="max-w-4xl mx-auto">
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, index) => (
-              <AccordionItem 
-                key={index} 
+              <AccordionItem
+                key={index}
                 value={`item-${index}`}
                 className="bg-gradient-card border-0 shadow-soft rounded-xl px-6"
               >

@@ -70,9 +70,9 @@ const SpecialPackages = () => {
             Special Packages in Kuta
           </h2>
           <p className="text-xl text-professional-gray max-w-4xl mx-auto leading-relaxed">
-            Sometimes a single massage isn't enough. That's why we've designed a series of special massage packages 
-            in Kuta that take your experience to the next level. Whether you're traveling with a partner, staying with family, 
-            or simply want to indulge in extended sessions, these packages are created to give you more value, more care, 
+            Sometimes a single massage isn't enough. That's why we've designed a series of special massage packages
+            in Kuta that take your experience to the next level. Whether you're traveling with a partner, staying with family,
+            or simply want to indulge in extended sessions, these packages are created to give you more value, more care,
             and more balance — right at your villa or hotel.
           </p>
         </div>
@@ -121,12 +121,12 @@ const SpecialPackages = () => {
           <div className="bg-gradient-accent rounded-2xl p-8 shadow-floating max-w-4xl mx-auto text-primary-foreground">
             <h3 className="text-2xl font-bold mb-4">Complete Coverage Across Kuta</h3>
             <p className="text-lg leading-relaxed opacity-90">
-              All packages are available for booking from 7 AM to 10 PM daily across Kuta, Legian, Tuban, 
-              and Seminyak's borders. Our therapists bring everything — tables, oils, linens, and premium 
+              All packages are available for booking from 07:00 to 22:00 daily across Kuta, Legian, Tuban,
+              and Seminyak's borders. Our therapists bring everything — tables, oils, linens, and premium
               equipment — so you don't need to move an inch.
             </p>
             <p className="text-lg font-semibold mt-4">
-              With our special massage packages in Kuta, wellness becomes more than a treatment. 
+              With our special massage packages in Kuta, wellness becomes more than a treatment.
               It becomes an experience, designed to fit your lifestyle and create lasting results.
             </p>
           </div>

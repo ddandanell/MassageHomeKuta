@@ -2,9 +2,11 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Check, Star, Clock, Users, Zap, Gift, Calculator } from "lucide-react";
-import EnhancedBookingDialog from "./EnhancedBookingDialog";
+import { SITE_CONFIG } from "@/config/site";
 
 const PricingDetails = () => {
+  const whatsappMessage = "Hi! I'd like to know more about your massage packages and pricing. Can you help me choose the right one?";
+  const whatsappUrl = `https://wa.me/${SITE_CONFIG.whatsapp.replace(/\D/g, '')}?text=${encodeURIComponent(whatsappMessage)}`;
   const packages = [
     {
       title: "Quick Relief",
@@ -153,21 +155,19 @@ const PricingDetails = () => {
                 </div>
 
                 {/* CTA Button */}
-                <EnhancedBookingDialog
-                  trigger={
-                    <Button 
-                      className={`w-full ${
-                        pkg.popular 
-                          ? 'bg-gradient-to-r from-professional-navy to-professional-gold hover:from-professional-gold hover:to-professional-navy' 
-                          : 'bg-professional-navy hover:bg-professional-gold'
-                      } text-white font-semibold py-3 transition-all duration-300`}
-                    >
-                      <Gift className="h-4 w-4 mr-2" />
-                      Book {pkg.title}
-                    </Button>
-                  }
-                  triggerClassName="w-full"
-                />
+                <Button 
+                  asChild
+                  className={`w-full ${
+                    pkg.popular 
+                      ? 'bg-gradient-to-r from-professional-navy to-professional-gold hover:from-professional-gold hover:to-professional-navy' 
+                      : 'bg-professional-navy hover:bg-professional-gold'
+                  } text-white font-semibold py-3 transition-all duration-300`}
+                >
+                  <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                    <Gift className="h-4 w-4 mr-2" />
+                    Book {pkg.title}
+                  </a>
+                </Button>
               </CardContent>
             </Card>
           ))}
@@ -257,14 +257,11 @@ const PricingDetails = () => {
               Get personalized pricing and recommendations based on your specific needs. 
               Our team is standing by to help you choose the perfect massage experience.
             </p>
-            <EnhancedBookingDialog
-              trigger={
-                <Button variant="outline" className="bg-white text-professional-navy hover:bg-professional-light font-semibold px-8 py-3">
-                  Get Custom Quote & Book
-                </Button>
-              }
-              triggerClassName=""
-            />
+            <Button asChild variant="outline" className="bg-white text-professional-navy hover:bg-professional-light font-semibold px-8 py-3">
+              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                Get Custom Quote & Book
+              </a>
+            </Button>
           </Card>
         </div>
       </div>

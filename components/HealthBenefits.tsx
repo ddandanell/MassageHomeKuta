@@ -4,25 +4,25 @@ const benefits = [
   {
     icon: Shield,
     title: "Relieves Muscle Tension",
-    description: "Whether you've spent the day surfing, walking along Kuta Beach, or sitting at your laptop in a villa, massage helps release built-up tension in muscles and joints.",
+    description: "Whether you've spent the day surfing, walking along Kuta Beach, or sitting at your laptop in a villa, massage (pijat) helps release built-up tension and tekanan in muscles and joints.",
     color: "text-professional-teal"
   },
   {
     icon: Moon,
     title: "Reduces Stress & Improves Sleep",
-    description: "A home massage calms the nervous system, lowers stress hormones, and promotes relaxation. Many of our clients say they sleep deeper and wake up refreshed.",
+    description: "A home body massage calms the nervous system, lowers stress hormones, and promotes relaxation. Many of our clients say they experience enhanced kualitas tidur and wake up refreshed—experiencing true manfaat kesehatan.",
     color: "text-professional-navy"
   },
   {
     icon: Heart,
     title: "Boosts Circulation & Immunity",
-    description: "Techniques like lymphatic drainage support the body's detox process, reduce swelling, and strengthen immunity. Especially valuable for travelers.",
+    description: "Techniques like lymphatic drainage support the body's detox process, reduce swelling, and strengthen immunity. Especially valuable for travelers, this pijat contributes to overall kesehatan.",
     color: "text-professional-green"
   },
   {
     icon: Brain,
     title: "Improves Mental Clarity",
-    description: "Massage doesn't just work on the body — it clears the mind. Expats, digital nomads, and business travelers all benefit from improved concentration.",
+    description: "Massage (pijat) doesn't just work on the body—it clears the mind. Expats, digital nomads, and business travelers all benefit from improved concentration and a more relaxed state of mind.",
     color: "text-professional-teal"
   },
   {
@@ -34,7 +34,7 @@ const benefits = [
   {
     icon: Zap,
     title: "Increases Energy & Vitality",
-    description: "Regular massage therapy improves energy levels, enhances mood, and helps maintain optimal physical and mental performance during your stay.",
+    description: "Regular massage therapy (pijat) improves energy levels, enhances mood, and helps maintain optimal physical and mental performance during your stay.",
     color: "text-professional-green"
   }
 ];
@@ -49,7 +49,7 @@ const HealthBenefits = () => {
           </h2>
           <p className="text-xl text-professional-gray max-w-4xl mx-auto leading-relaxed">
             A trip to Kuta is often filled with excitement, but all that activity can leave you sore and tired. 
-            A massage at home is more than a luxury—it's self-care with powerful health benefits.
+            A massage (pijat) at home is more than a luxury—it's self-care with powerful health benefits. Enjoy improved kesehatan, reduced nyeri, and enhanced relaksasi.
           </p>
         </div>
 
@@ -81,7 +81,7 @@ const HealthBenefits = () => {
                     <li>• Reduced inflammation and swelling</li>
                     <li>• Enhanced flexibility and range of motion</li>
                     <li>• Faster muscle recovery and healing</li>
-                    <li>• Pain relief from chronic conditions</li>
+                    <li>• Pain relief from chronic conditions (nyeri reduction)</li>
                   </ul>
                 </div>
                 <div>
@@ -91,13 +91,13 @@ const HealthBenefits = () => {
                     <li>• Increased serotonin and dopamine</li>
                     <li>• Enhanced mood and emotional balance</li>
                     <li>• Improved focus and productivity</li>
-                    <li>• Better sleep quality and patterns</li>
+                    <li>• Better sleep quality and patterns (kualitas tidur improvement)</li>
                   </ul>
                 </div>
               </div>
               <p className="text-lg font-semibold mt-8 text-center">
-                In Kuta, where life moves fast, taking time for a massage at home is the smartest way 
-                to recharge your body and mind. Wellness isn't found in a crowded spa — it's created 
+                In Kuta, where life moves fast, taking time for a massage (pijat) at home is the smartest way 
+                to recharge your body and mind. Wellness isn't found in a crowded spa—it's created 
                 in your own private space.
               </p>
             </div>

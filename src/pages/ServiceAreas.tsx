@@ -59,7 +59,7 @@ const serviceAreas = [
     priority: "medium",
     popular: false
   },
-  
+
   // Canggu Area
   {
     name: "Canggu",
@@ -101,7 +101,7 @@ const serviceAreas = [
     priority: "medium",
     popular: false
   },
-  
+
   // Seminyak Extended
   {
     name: "Kerobokan",
@@ -119,7 +119,7 @@ const serviceAreas = [
     priority: "medium",
     popular: false
   },
-  
+
   // Other Popular Areas
   {
     name: "Sanur",
@@ -153,7 +153,7 @@ const serviceAreas = [
     priority: "medium",
     popular: true
   },
-  
+
   // Bukit Peninsula
   {
     name: "Uluwatu",
@@ -211,7 +211,7 @@ const serviceAreas = [
     priority: "low",
     popular: false
   },
-  
+
   // Benoa Area
   {
     name: "Benoa",
@@ -229,7 +229,7 @@ const serviceAreas = [
     priority: "low",
     popular: false
   },
-  
+
   // Other
   {
     name: "Denpasar",
@@ -248,21 +248,28 @@ const ServiceAreas = () => {
 
   return (
     <div className="min-h-screen">
-      <SiteMeta 
-        title="Service Areas - Home Massage Kuta Coverage"
-        description="We serve massage clients throughout Bali including Kuta, Legian, Seminyak, Canggu, Sanur, Ubud, Nusa Dua, and more. Professional in-villa massage service delivered to your location."
-        keywords="massage service areas bali, kuta massage coverage, legian massage delivery, seminyak massage service, canggu massage, ubud massage, nusa dua massage"
+      <SiteMeta
+        title="Massage Service Areas - Professional Massage Coverage Across Bali"
+        description="Professional massage service delivered throughout Bali including Kuta, Legian, Seminyak, Canggu, Sanur, Ubud, Nusa Dua, and more. Certified massage therapists bring premium massage treatments directly to your villa or hotel. Book your massage appointment in any of our service areas."
+        keywords="massage service areas, massage coverage bali, massage service kuta, massage service legian, massage service seminyak, massage service canggu, massage service ubud, massage service nusa dua, massage delivery areas, massage appointment areas, professional massage coverage, home massage areas, villa massage areas"
         canonical="/areas"
       />
-      
+
       <StructuredData type="organization" />
-      
+
       <Header />
-      
+
       <main>
         {/* Hero Section */}
-        <section className="relative py-32 md:py-40 bg-gradient-to-br from-blue-500 to-indigo-600 text-white overflow-hidden">
-          <div className="absolute inset-0 bg-black/20 backdrop-blur-sm"></div>
+        <section className="relative py-32 md:py-40 text-white overflow-hidden">
+          <div className="absolute inset-0">
+            <img
+              src="/images/hero/hero-3.jpg"
+              alt="Map of Bali showing massage service coverage areas for professional massage delivery"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-900/80 via-indigo-900/70 to-blue-900/80 backdrop-blur-[2px]"></div>
+          </div>
           <div className="relative container mx-auto px-4 text-center z-10">
             <Badge className="mb-6 bg-professional-gold text-professional-navy px-4 py-2 text-sm">
               Island-Wide Coverage
@@ -395,7 +402,7 @@ const ServiceAreas = () => {
 
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
                 {otherAreas.map((area, index) => (
-                  <Link 
+                  <Link
                     key={index}
                     to={`/areas/${area.slug}`}
                     className="flex items-center justify-between p-4 bg-white rounded-lg border border-spa-stone/20 hover:border-spa-gold hover:shadow-md transition-all duration-300"
@@ -417,11 +424,11 @@ const ServiceAreas = () => {
                 Don't See Your Area?
               </h3>
               <p className="text-lg text-spa-stone mb-8 leading-relaxed">
-                We're constantly expanding our service coverage. If your location isn't listed, please contact us via WhatsApp. 
+                We're constantly expanding our service coverage. If your location isn't listed, please contact us via WhatsApp.
                 We may still be able to accommodate your booking, especially for longer sessions or multiple treatments.
               </p>
               <Button asChild size="lg" className="text-lg px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold shadow-xl">
-                <a href="https://wa.me/6281126568699?text=Hello%20Home%20Massage%20Kuta!%20I'd%20like%20to%20check%20if%20you%20serve%20my%20area." target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/628112656869?text=Hello%20Home%20Massage%20Kuta!%20I'd%20like%20to%20check%20if%20you%20serve%20my%20area." target="_blank" rel="noopener noreferrer">
                   Check Your Location
                 </a>
               </Button>
@@ -469,7 +476,7 @@ const ServiceAreas = () => {
           </div>
         </section>
       </main>
-      
+
       <Footer />
       <FloatingWhatsAppButton />
     </div>

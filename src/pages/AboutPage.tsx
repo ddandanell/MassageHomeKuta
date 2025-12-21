@@ -18,25 +18,32 @@ const AboutPage = () => {
         <meta name="description" content="Learn about Home Massage Kuta's professional team, safety standards, and commitment to providing luxury spa treatments in your villa or hotel in Bali." />
         <meta name="keywords" content="about us, professional massage, Kuta massage therapists, licensed therapists Bali, spa services" />
       </Helmet>
-      
-      <SiteMeta 
+
+      <SiteMeta
         title="About Home Massage Kuta - Professional In-Villa Massage Services"
         description="Learn about Home Massage Kuta's professional team, safety standards, and commitment to providing luxury spa treatments in your villa or hotel in Bali."
       />
       <StructuredData type="organization" />
-      
+
       <Header />
-      
+
       <main>
         {/* Hero Section */}
-        <section className="relative py-32 md:py-40 bg-gradient-to-br from-blue-500 to-indigo-600 text-white overflow-hidden">
-          <div className="absolute inset-0 bg-black/20 backdrop-blur-sm"></div>
+        <section className="relative py-32 md:py-40 text-white overflow-hidden">
+          <div className="absolute inset-0">
+            <img
+              src="/images/hero/hero-4.jpg"
+              alt="Our professional team"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-900/80 via-indigo-900/70 to-blue-900/80 backdrop-blur-[2px]"></div>
+          </div>
           <div className="relative container mx-auto px-4 text-center z-10">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-lg">
               About Home Massage Kuta
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-90 drop-shadow-md">
-              Bringing premium spa experiences directly to your villa or hotel room throughout Kuta, 
+              Bringing premium spa experiences directly to your villa or hotel room throughout Kuta,
               Legian, and Tuban with professional, licensed therapists.
             </p>
           </div>
@@ -49,7 +56,7 @@ const AboutPage = () => {
         <Community />
         <BookingCTA />
       </main>
-      
+
       <Footer />
     </div>
   );
