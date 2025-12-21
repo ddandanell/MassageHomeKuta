@@ -57,6 +57,15 @@ const Sitemap = () => {
     { name: "Premium Spa Treatment", path: "/services/premium-spa-treatment" }
   ];
 
+  const specialLandingPages = [
+    { name: "Couples Massage Kuta", path: "/couples-massage-kuta", description: "Romantic synchronized treatments for couples" },
+    { name: "Spa Near Me Kuta", path: "/spa-near-me-kuta", description: "Professional mobile spa service in Kuta" },
+    { name: "Massage Therapist Kuta Bali", path: "/massage-therapist-kuta-bali", description: "Certified professional massage therapists" },
+    { name: "Massage Near Me Kuta", path: "/massage-near-me-kuta", description: "Find massage services near you in Kuta" },
+    { name: "Lymphatic Drainage Massage Ubud", path: "/services/lymphatic-drainage-massage-ubud", description: "Specialized lymphatic drainage in Ubud" },
+    { name: "Balinese Massage Kuta", path: "/services/balinese-massage-kuta", description: "Traditional Balinese massage in Kuta" }
+  ];
+
   const primaryAreas = [
     { name: "Kuta", path: "/areas/kuta" },
     { name: "Legian", path: "/areas/legian" },
@@ -230,6 +239,29 @@ const Sitemap = () => {
                 ))}
               </div>
             </div>
+
+            {/* Special Landing Pages */}
+            <div className="bg-white rounded-lg shadow-soft p-8 lg:col-span-2">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 bg-amber-500/20 rounded-lg flex items-center justify-center">
+                  <Star className="w-6 h-6 text-amber-600" />
+                </div>
+                <h2 className="text-2xl font-bold text-spa-earth">Special Landing Pages</h2>
+              </div>
+              <p className="text-sm text-spa-stone mb-4">SEO-optimized landing pages for specific search queries</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                {specialLandingPages.map((page, index) => (
+                  <Link 
+                    key={index}
+                    to={page.path}
+                    className="flex flex-col p-3 rounded-lg hover:bg-amber-50 transition-all duration-300"
+                  >
+                    <span className="text-spa-earth font-semibold mb-1">{page.name}</span>
+                    <span className="text-sm text-spa-stone">{page.description}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
 
           {/* Quick Stats */}
@@ -241,7 +273,7 @@ const Sitemap = () => {
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
               <div className="text-center">
-                <div className="text-3xl font-bold text-spa-gold mb-2">70+</div>
+                <div className="text-3xl font-bold text-spa-gold mb-2">76+</div>
                 <div className="text-sm text-spa-stone">Total Pages</div>
               </div>
               <div className="text-center">
@@ -253,8 +285,8 @@ const Sitemap = () => {
                 <div className="text-sm text-spa-stone">Service Areas</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-indigo-600 mb-2">100%</div>
-                <div className="text-sm text-spa-stone">Coverage</div>
+                <div className="text-3xl font-bold text-amber-600 mb-2">6</div>
+                <div className="text-sm text-spa-stone">Special Landing Pages</div>
               </div>
             </div>
           </div>
