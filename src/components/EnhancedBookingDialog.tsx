@@ -52,6 +52,9 @@ const EnhancedBookingDialog = ({ trigger, triggerClassName }: EnhancedBookingDia
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    if (typeof window === 'undefined') return;
+    
     const formData = new FormData(e.target as HTMLFormElement);
 
     const name = formData.get('name') as string;

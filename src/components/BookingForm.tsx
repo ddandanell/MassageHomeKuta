@@ -14,6 +14,8 @@ const BookingForm = () => {
   const whatsappNumber = "+62 811-2656-869";
 
   const handleSubmit = () => {
+    if (typeof document === 'undefined' || typeof window === 'undefined') return;
+    
     const form = document.getElementById('booking-form') as HTMLFormElement;
     const formData = new FormData(form);
 
