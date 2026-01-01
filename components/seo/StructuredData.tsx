@@ -3,6 +3,7 @@ import { SITE_CONFIG } from "@/config/site";
 
 interface StructuredDataProps {
   type?: "organization" | "service" | "faq" | "breadcrumb" | "website";
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   data?: any;
 }
 

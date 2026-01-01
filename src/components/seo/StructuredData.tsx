@@ -47,7 +47,7 @@ interface StructuredDataProps {
 const StructuredData = ({ type = "organization", data, includeReviews = false }: StructuredDataProps) => {
   const getStructuredData = () => {
     switch (type) {
-      case "organization":
+      case "organization": {
         // Convert review data to Review schema format
         const reviews = includeReviews ? testimonialReviews.map(review => ({
           "@type": "Review",
@@ -125,8 +125,9 @@ const StructuredData = ({ type = "organization", data, includeReviews = false }:
             }
           })
         };
+      }
 
-      case "service":
+      case "service": {
         const serviceData = data as ServiceSchemaData;
         // Convert area served to proper City schema format
         const areaServed = serviceData?.areaServed 
@@ -160,6 +161,7 @@ const StructuredData = ({ type = "organization", data, includeReviews = false }:
             "url": SITE_CONFIG.url
           }
         };
+      }
 
       case "faq":
         /**
