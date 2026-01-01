@@ -112,10 +112,10 @@ const RecommendedServices = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-              {recommendedServices.map((service, index) => {
+              {recommendedServices.map((service) => {
                 const IconComponent = service.icon;
                 return (
-                  <Card key={index} className="group border-0 shadow-soft hover:shadow-elevated transition-all duration-500 flex flex-col overflow-hidden rounded-2xl bg-white">
+                  <Card key={service.url} className="group border-0 shadow-soft hover:shadow-elevated transition-all duration-500 flex flex-col overflow-hidden rounded-2xl bg-white">
                     <div className="h-48 bg-gradient-to-br from-professional-navy/10 via-professional-green/10 to-professional-navy/10 flex items-center justify-center relative overflow-hidden">
                       <div className="absolute inset-0 bg-gradient-to-br from-professional-navy/5 via-professional-green/5 to-professional-gold/5"></div>
                       <IconComponent className="w-20 h-20 text-professional-navy/80 relative z-10 transform group-hover:scale-110 transition-transform duration-500" />
