@@ -246,8 +246,6 @@ const Services = () => {
                           Book {service.title}
                         </a>
                       </Button>
-                        triggerClassName="flex-1"
-                      />
                       <Button variant="outline" className="sm:w-auto border-professional-gold/30 text-professional-navy hover:bg-professional-gold/10">
                         <Clock className="h-4 w-4 mr-2" />
                         Quick Info

@@ -51,9 +51,7 @@ import FourHandsMassage from "./pages/FourHandsMassage";
 import PregnancyMassage from "./pages/PregnancyMassage";
 import FootReflexology from "./pages/FootReflexology";
 import JetLagRecoveryMassage from "./pages/JetLagRecoveryMassage";
-import LymphaticDrainageMassageUbud from "./pages/LymphaticDrainageMassageUbud";
-import MassageNearMeKuta from "./pages/MassageNearMeKuta";
-import BalineseMassageKuta from "./pages/BalineseMassageKuta";
+
 import CouplesMassageKuta from "./pages/CouplesMassageKuta";
 import SpaNearMeKuta from "./pages/SpaNearMeKuta";
 import MassageTherapistKutaBali from "./pages/MassageTherapistKutaBali";
@@ -234,7 +232,6 @@ const App = () => (
             <Route path="/services/deep-tissue-massage" element={<DeepTissueMassage />} />
             <Route path="/services/aromatherapy-massage" element={<AromatherapyMassage />} />
             <Route path="/services/lymphatic-drainage-massage" element={<LymphaticDrainageMassage />} />
-            <Route path="/services/lymphatic-drainage-massage-ubud" element={<LymphaticDrainageMassageUbud />} />
             <Route path="/services/thai-massage" element={<ThaiMassage />} />
             <Route path="/services/hot-stone-massage" element={<HotStoneMassage />} />
             <Route path="/services/four-hands-massage" element={<FourHandsMassage />} />
@@ -269,8 +266,6 @@ const App = () => (
             <Route path="/services/premium-spa-treatment" element={<PremiumSpaTreatment />} />
             <Route path="/services/revitalizing-massage" element={<RevitalizingMassage />} />
             {/* Special Landing Pages */}
-            <Route path="/massage-near-me-kuta" element={<MassageNearMeKuta />} />
-            <Route path="/services/balinese-massage-kuta" element={<BalineseMassageKuta />} />
             <Route path="/couples-massage-kuta" element={<CouplesMassageKuta />} />
             <Route path="/spa-near-me-kuta" element={<SpaNearMeKuta />} />
             <Route path="/massage-therapist-kuta-bali" element={<MassageTherapistKutaBali />} />

@@ -26,10 +26,7 @@ const Header = () => {
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-professional-gold/20 shadow-sm">
         <div className="container mx-auto px-4 h-16 md:h-20 flex items-center justify-between">
           {/* Logo */}
-          <Link to={getLocalePath("/")} className="flex items-center gap-3 hover:opacity-80 transition-opacity cursor-pointer">
-            <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center shadow-lg">
-              <Waves className="text-white w-5 h-5 md:w-6 md:h-6" />
-          <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity cursor-pointer group">
+          <Link to={getLocalePath("/")} className="flex items-center gap-3 hover:opacity-80 transition-opacity cursor-pointer group">
             <div className="w-10 h-10 md:w-12 md:h-12 bg-professional-green/10 rounded-full flex items-center justify-center border border-professional-green/20 group-hover:bg-professional-green/20 transition-colors">
               <Waves className="text-professional-green w-5 h-5 md:w-6 md:h-6" />
             </div>
@@ -56,13 +53,6 @@ const Header = () => {
                   {item.description}
                 </div>
               </Link>
-              <a
-                key={index}
-                href={item.href}
-                className="text-sm font-medium text-professional-navy/80 hover:text-professional-green transition-colors font-sans tracking-wide"
-              >
-                {item.label}
-              </a>
             ))}
           </nav>
 
