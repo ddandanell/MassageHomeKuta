@@ -15,7 +15,7 @@ const Footer = () => {
       </div>
 
       <div className="relative container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
@@ -54,6 +54,25 @@ const Footer = () => {
               <li><a href="/about" className="hover:text-professional-gold transition-colors">About Us</a></li>
               <li><a href="/faq" className="hover:text-professional-gold transition-colors">FAQ</a></li>
             </ul>
+          </div>
+
+          {/* Other Locations */}
+          <div>
+            <h4 className="text-lg font-serif font-semibold mb-6 text-white">Other Locations</h4>
+            <ul className="space-y-3 text-professional-gray">
+              <li>
+                <a href="https://homemassageubud.com/" rel="dofollow" className="hover:text-professional-gold transition-colors flex items-start gap-2">
+                  <MapPin className="w-4 h-4 mt-1 text-professional-gold flex-shrink-0" />
+                  <div>
+                    <span className="block text-white font-medium">Massage in Ubud</span>
+                    <span className="text-sm">In-villa massage service</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <p className="text-professional-gray text-xs mt-6 leading-relaxed">
+              Experience the same premium service across multiple Bali locations
+            </p>
           </div>
 
           {/* Contact Info */}

@@ -2,6 +2,7 @@ import SiteMeta from "@/components/seo/SiteMeta";
 import StructuredData from "@/components/seo/StructuredData";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import CrossLocationPromo from "@/components/CrossLocationPromo";
 import Services from "@/components/Services";
 import SignatureMassages from "@/components/SignatureMassages";
 import PricingDetails from "@/components/PricingDetails";
@@ -31,6 +32,7 @@ const Index = () => {
       <StructuredData type="website" />
       <Header />
       <Hero />
+      <CrossLocationPromo />
       <Services />
       <PricingDetails />
       <SignatureMassages />
