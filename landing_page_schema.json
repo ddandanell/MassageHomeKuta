@@ -1,0 +1,694 @@
+{
+  "schemaVersion": "1.0",
+  "generatedDate": "2026-01-01",
+  "pages": [
+    {
+      "pageName": "Couples Villa Massage",
+      "pageUrl": "/couples-villa-massage-bali/",
+      "schemas": {
+        "service": {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Couples Massage",
+          "name": "Couples Villa Massage Bali",
+          "description": "Romantic couples villa massage service in Bali. Two professional therapists perform synchronized treatments in the privacy of your own villa.",
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "Home Massage Kuta",
+            "url": "https://www.homemassagekuta.com",
+            "telephone": "+62-XXX-XXXX-XXXX",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Kuta",
+              "addressRegion": "Bali",
+              "addressCountry": "ID"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "-8.7203",
+              "longitude": "115.1698"
+            },
+            "priceRange": "650,000 - 1,250,000 IDR"
+          },
+          "areaServed": ["Seminyak", "Canggu", "Ubud", "Uluwatu", "Sanur", "Nusa Dua"],
+          "offers": [
+            {
+              "@type": "Offer",
+              "name": "60-minute couples session",
+              "price": "650000",
+              "priceCurrency": "IDR"
+            },
+            {
+              "@type": "Offer",
+              "name": "90-minute couples session",
+              "price": "950000",
+              "priceCurrency": "IDR"
+            },
+            {
+              "@type": "Offer",
+              "name": "120-minute couples session",
+              "price": "1250000",
+              "priceCurrency": "IDR"
+            }
+          ],
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "150"
+          }
+        },
+        "faq": {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Do you provide everything needed for the massage?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we provide everything - massage beds, premium oils, towels, music, and ambiance setup. You don't need to prepare anything."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can we choose different massage styles for each person?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely! Each person can select their preferred massage style - Balinese, Swedish, deep tissue, or aromatherapy."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How much space do we need in our villa?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We need approximately 4x4 meters of space for two massage beds side by side. Most villa bedrooms or living areas work perfectly."
+              }
+            }
+          ]
+        },
+        "breadcrumb": {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.homemassagekuta.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Services",
+              "item": "https://www.homemassagekuta.com/services"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Couples Villa Massage",
+              "item": "https://www.homemassagekuta.com/couples-villa-massage-bali/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pageName": "Honeymoon Spa",
+      "pageUrl": "/honeymoon-spa-bali/",
+      "schemas": {
+        "service": {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Spa Package",
+          "name": "Honeymoon Spa Bali",
+          "description": "Luxury honeymoon spa packages in Bali. Exclusive couples treatments, romantic ambiance, and unforgettable wellness experiences for newlyweds.",
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "Home Massage Kuta",
+            "priceRange": "1,250,000 - 2,450,000 IDR"
+          },
+          "offers": [
+            {
+              "@type": "Offer",
+              "name": "Honeymoon Bliss Package",
+              "price": "1250000",
+              "priceCurrency": "IDR",
+              "description": "90-minute romantic couples massage with flowers and champagne"
+            },
+            {
+              "@type": "Offer",
+              "name": "Romantic Escape Package",
+              "price": "1650000",
+              "priceCurrency": "IDR",
+              "description": "120-minute luxury spa experience for two"
+            },
+            {
+              "@type": "Offer",
+              "name": "Ultimate Luxury Package",
+              "price": "2450000",
+              "priceCurrency": "IDR",
+              "description": "180-minute complete wellness journey with premium add-ons"
+            }
+          ],
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "75"
+          }
+        },
+        "faq": {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How far in advance should we book our honeymoon spa?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We recommend booking 3-7 days in advance for honeymoon packages to ensure availability and allow time for special preparations. Same-day bookings may be available."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What makes this different from a regular couples massage?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our honeymoon spa includes special romantic setup (flower petals, candles), premium refreshments, keepsake certificate, and optional photography service. It's designed specifically for celebrating newlyweds."
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pageName": "Post-Yoga Recovery",
+      "pageUrl": "/post-yoga-recovery-massage/",
+      "schemas": {
+        "service": {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Sports Massage",
+          "name": "Post-Yoga Recovery Massage",
+          "description": "Specialized post-yoga recovery massage in Bali. Deep stretching, flexibility work, and muscle release to enhance your yoga practice.",
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "Home Massage Kuta",
+            "priceRange": "450,000 - 650,000 IDR"
+          },
+          "offers": [
+            {
+              "@type": "Offer",
+              "name": "60-minute post-yoga session",
+              "price": "450000",
+              "priceCurrency": "IDR"
+            },
+            {
+              "@type": "Offer",
+              "name": "90-minute deep recovery",
+              "price": "650000",
+              "priceCurrency": "IDR"
+            }
+          ],
+          "areaServed": ["Ubud", "Canggu", "Seminyak"]
+        },
+        "faq": {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How soon after yoga should I book this massage?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ideally within 2-4 hours after your yoga session. This allows your body to cool down while muscles are still warm and receptive to deeper stretching."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do your therapists understand yoga?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, our therapists are trained in yoga anatomy and work regularly with yoga practitioners. They understand the physical demands of different yoga styles."
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pageName": "Uluwatu Surf Massage",
+      "pageUrl": "/uluwatu-surf-massage/",
+      "schemas": {
+        "service": {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Sports Massage",
+          "name": "Uluwatu Surf Massage",
+          "description": "Specialized surf recovery massage in Uluwatu. Target paddling strain, shoulder tension, and lower back relief for surfers.",
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "Home Massage Kuta",
+            "priceRange": "450,000 - 650,000 IDR"
+          },
+          "offers": [
+            {
+              "@type": "Offer",
+              "name": "60-minute surf recovery",
+              "price": "450000",
+              "priceCurrency": "IDR"
+            },
+            {
+              "@type": "Offer",
+              "name": "90-minute deep session",
+              "price": "650000",
+              "priceCurrency": "IDR"
+            }
+          ],
+          "areaServed": ["Uluwatu", "Padang Padang", "Bingin", "Dreamland"]
+        },
+        "faq": {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How soon after surfing should I get massage?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Best within 4-6 hours after your surf session, or in the evening after dawn patrol. This prevents next-day soreness and accelerates recovery."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you understand surf-specific injuries?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, our therapists specialize in surfer's shoulder, lower back strain, and paddling muscle fatigue. We work with many surf camps in Uluwatu."
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pageName": "Group Spa Day",
+      "pageUrl": "/group-spa-day-bali/",
+      "schemas": {
+        "service": {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Group Spa Service",
+          "name": "Group Spa Day Bali",
+          "description": "Group spa day packages at your Bali villa. Simultaneous treatments for groups of 3-20+ people with professional coordination.",
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "Home Massage Kuta",
+            "priceRange": "325,000 - 350,000 IDR per person"
+          },
+          "offers": [
+            {
+              "@type": "Offer",
+              "name": "Small groups (3-5 people)",
+              "price": "350000",
+              "priceCurrency": "IDR",
+              "description": "Per person pricing for groups of 3-5"
+            },
+            {
+              "@type": "Offer",
+              "name": "Medium groups (6-10 people)",
+              "price": "325000",
+              "priceCurrency": "IDR",
+              "description": "Per person pricing for groups of 6-10"
+            }
+          ],
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "95"
+          }
+        },
+        "faq": {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How many therapists can you provide at once?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We can provide simultaneous therapists for groups up to 20+ people. We have a large team available and coordinate logistics for group events."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can each person choose a different massage type?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes! Each person can select their preferred massage style, duration, and oil preference. We accommodate individual needs within the group."
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pageName": "Detox Wellness Massage",
+      "pageUrl": "/detox-wellness-massage-bali/",
+      "schemas": {
+        "service": {
+          "@context": "https://schema.org",
+          "@type": "MedicalTherapy",
+          "name": "Detox Wellness Massage Bali",
+          "description": "Lymphatic drainage and detox massage in Bali. Support body purification, reduce bloating, boost immunity with specialized techniques.",
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "Home Massage Kuta",
+            "priceRange": "500,000 - 3,000,000 IDR"
+          },
+          "offers": [
+            {
+              "@type": "Offer",
+              "name": "Single 60-minute detox session",
+              "price": "500000",
+              "priceCurrency": "IDR"
+            },
+            {
+              "@type": "Offer",
+              "name": "3-day detox program",
+              "price": "1900000",
+              "priceCurrency": "IDR",
+              "description": "3 sessions over 3 days"
+            },
+            {
+              "@type": "Offer",
+              "name": "7-day wellness program",
+              "price": "3000000",
+              "priceCurrency": "IDR",
+              "description": "5 sessions over 7 days with dietary consultation"
+            }
+          ]
+        },
+        "faq": {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How does detox massage work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Detox massage uses gentle lymphatic drainage techniques to stimulate your body's natural detoxification system, helping eliminate toxins and reduce water retention."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Should I be on a cleanse program?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Not required, but detox massage works best when combined with clean eating and hydration. We provide dietary recommendations to enhance results."
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pageName": "Luxury Villa Wellness",
+      "pageUrl": "/luxury-villa-wellness-bali/",
+      "schemas": {
+        "service": {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Luxury Spa Service",
+          "name": "Luxury Villa Wellness Bali",
+          "description": "Premium VIP wellness service at your luxury villa. Master therapists, exclusive treatments, five-star concierge spa care in Bali.",
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "Home Massage Kuta",
+            "priceRange": "1,250,000 - 2,450,000 IDR"
+          },
+          "offers": [
+            {
+              "@type": "Offer",
+              "name": "Premium 90-minute session",
+              "price": "1250000",
+              "priceCurrency": "IDR"
+            },
+            {
+              "@type": "Offer",
+              "name": "Luxury 120-minute session",
+              "price": "1650000",
+              "priceCurrency": "IDR"
+            },
+            {
+              "@type": "Offer",
+              "name": "VIP 180-minute journey",
+              "price": "2450000",
+              "priceCurrency": "IDR"
+            }
+          ],
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "42"
+          }
+        },
+        "faq": {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What makes this a luxury service?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Master-level therapists with 10+ years experience, premium organic products, extended treatment times, personalized wellness consultation, and five-star concierge coordination."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I request a specific therapist?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, our luxury service includes therapist selection. We'll provide profiles of our master therapists for you to choose from."
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pageName": "Mobile Spa Day Package",
+      "pageUrl": "/mobile-spa-day-package-bali/",
+      "schemas": {
+        "service": {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Spa Package",
+          "name": "Mobile Spa Day Package Bali",
+          "description": "Complete mobile spa day packages at your villa. Multiple treatments including massage, scrub, facial. Full wellness experience without leaving your accommodation.",
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "Home Massage Kuta",
+            "priceRange": "1,250,000 - 3,200,000 IDR"
+          },
+          "offers": [
+            {
+              "@type": "Offer",
+              "name": "Half-Day Package",
+              "price": "1250000",
+              "priceCurrency": "IDR",
+              "description": "3 hours: 90-min massage + body scrub"
+            },
+            {
+              "@type": "Offer",
+              "name": "Full Spa Day",
+              "price": "2200000",
+              "priceCurrency": "IDR",
+              "description": "5 hours: massage + scrub + facial + foot treatment"
+            },
+            {
+              "@type": "Offer",
+              "name": "Ultimate Wellness Day",
+              "price": "3200000",
+              "priceCurrency": "IDR",
+              "description": "7 hours: all treatments + premium add-ons"
+            }
+          ],
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "88"
+          }
+        },
+        "faq": {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How long does a spa day package take?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our packages range from 3 hours (half-day) to 7 hours (ultimate wellness day). This includes treatment time, setup, and relaxation periods between services."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I customize the treatments?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely! Each package is customizable. You can swap treatments, adjust durations, and add extra services to create your perfect spa day."
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pageName": "Post-Hike Recovery",
+      "pageUrl": "/post-hike-recovery-massage-bali/",
+      "schemas": {
+        "service": {
+          "@context": "https://schema.org",
+          "@type": "MedicalTherapy",
+          "name": "Post-Hike Recovery Massage Bali",
+          "description": "Specialized recovery massage after hiking Mount Batur or Mount Agung. Target leg muscles, reduce soreness, accelerate recovery from mountain trekking.",
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "Home Massage Kuta",
+            "priceRange": "450,000 - 650,000 IDR"
+          },
+          "offers": [
+            {
+              "@type": "Offer",
+              "name": "60-minute leg-focused recovery",
+              "price": "450000",
+              "priceCurrency": "IDR"
+            },
+            {
+              "@type": "Offer",
+              "name": "90-minute full body recovery",
+              "price": "650000",
+              "priceCurrency": "IDR"
+            }
+          ],
+          "areaServed": ["Ubud", "Amed", "Sidemen", "All Bali"]
+        },
+        "faq": {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How soon after hiking should I book?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ideally within 4-6 hours after your hike, or the same evening. This helps prevent next-day muscle soreness (DOMS) and accelerates recovery."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Will this prevent next-day soreness?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "While we can't eliminate all soreness, post-hike massage significantly reduces DOMS by improving circulation and releasing lactic acid buildup in muscles."
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "pageName": "Pregnancy Massage",
+      "pageUrl": "/pregnancy-massage-bali/",
+      "schemas": {
+        "service": {
+          "@context": "https://schema.org",
+          "@type": "MedicalTherapy",
+          "name": "Pregnancy Massage Bali",
+          "description": "Safe prenatal massage in Bali by certified therapists. Relief for pregnancy back pain, swelling, and discomfort. All trimesters welcome with doctor approval.",
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "Home Massage Kuta",
+            "priceRange": "500,000 - 700,000 IDR"
+          },
+          "offers": [
+            {
+              "@type": "Offer",
+              "name": "60-minute prenatal session",
+              "price": "500000",
+              "priceCurrency": "IDR"
+            },
+            {
+              "@type": "Offer",
+              "name": "90-minute extended care",
+              "price": "700000",
+              "priceCurrency": "IDR"
+            }
+          ],
+          "areaServed": ["Seminyak", "Canggu", "Ubud", "Sanur", "All Bali"],
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "67"
+          }
+        },
+        "faq": {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is pregnancy massage safe in all trimesters?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We primarily serve 2nd and 3rd trimester. First trimester is considered with doctor approval. All our therapists are certified in prenatal massage with specialized safety training."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need doctor approval?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we require confirmation that you've discussed massage with your doctor or midwife, especially if you have any high-risk conditions."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are your therapists certified in prenatal massage?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, all therapists performing pregnancy massage have specialized prenatal certification and training in safe positioning, pressure points to avoid, and trimester-specific techniques."
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "implementationNotes": {
+    "usage": "Each page should implement all three schema types (Service, FAQ, and Breadcrumb) in separate script tags in the HTML head section.",
+    "testing": "Validate all schemas using Google's Rich Results Test tool before deployment.",
+    "updates": "Keep pricing and review counts current. Update quarterly or when significant changes occur.",
+    "phoneNumber": "Replace +62-XXX-XXXX-XXXX with actual business phone number before deployment.",
+    "coordinates": "Update latitude/longitude if business location changes.",
+    "reviewCounts": "Update review counts based on actual customer feedback collected."
+  },
+  "schemaTypes": {
+    "Service": "Used for all service pages to display service information in search results",
+    "MedicalTherapy": "Used for therapeutic/medical massage services (detox, post-hike, pregnancy)",
+    "FAQPage": "Enables FAQ rich results in Google search, increases visibility",
+    "BreadcrumbList": "Shows navigation path in search results, improves UX",
+    "AggregateRating": "Displays star ratings in search results when reviews exist",
+    "Offer": "Shows pricing information in search results, improves click-through"
+  },
+  "richResultsExpected": {
+    "faqRichResults": "FAQ sections will show expanded in search results",
+    "pricingInformation": "Prices may show in search snippets",
+    "starRatings": "Review stars will appear in search results",
+    "breadcrumbs": "Navigation path shows below page title in search",
+    "sitelinks": "May generate sitelinks for popular pages over time"
+  }
+}

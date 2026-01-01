@@ -1,0 +1,81 @@
+Page Name,Page URL,Internal Links To,Internal Links From,Link Priority,Anchor Text Examples,Notes
+Couples Villa Massage,/couples-villa-massage-bali/,"/ubud/couples-wellness-ritual, /services/couples-massage, /services/luxury-massage, /seminyak, /uluwatu, /honeymoon-spa-bali","/honeymoon-spa-bali, /services/luxury-massage, /group-spa-day-bali, /mobile-spa-day-package-bali",High,"romantic massage bali, couples spa treatment, villa massage for two","Focus on romantic keywords, link from honeymoon and luxury pages"
+Honeymoon Spa,/honeymoon-spa-bali/,"/services/luxury-massage, /ubud-luxury-villas, /seminyak, /uluwatu, /couples-villa-massage-bali, /services/couples-massage","/couples-villa-massage-bali, /luxury-villa-wellness-bali, /services, /uluwatu, /seminyak",High,"honeymoon spa packages, newlywed massage, romantic spa bali","Premium positioning, link from luxury and romantic pages"
+Post-Yoga Recovery,/post-yoga-recovery-massage/,"/ubud/yoga-stretch-massage, /services/therapeutic-massage, /services/sports-massage, /ubud, /canggu, /post-hike-recovery-massage-bali","/ubud, /canggu, /services/therapeutic-massage, /uluwatu-surf-massage",Medium,"yoga recovery massage, post-yoga treatment, flexibility massage","Target yoga community, link from Ubud and Canggu"
+Uluwatu Surf Massage,/uluwatu-surf-massage/,"/uluwatu, /services/sports-massage, /ubud/post-hike-recovery-massage, /services/deep-tissue-massage, /canggu, /services/therapeutic-massage","/uluwatu, /canggu, /services/sports-massage, /post-yoga-recovery-massage",Medium,"surf recovery massage, surfer treatment uluwatu, paddling recovery","Surf-focused, link from coastal area pages"
+Group Spa Day,/group-spa-day-bali/,"/services, /pricing, /seminyak, /canggu, /ubud, /couples-villa-massage-bali, /mobile-spa-day-package-bali","/services, /seminyak, /canggu, /ubud, /mobile-spa-day-package-bali",High,"group massage bali, villa spa party, family spa day","Multiple area links, link from service and package pages"
+Detox Wellness Massage,/detox-wellness-massage-bali/,"/ubud/detox-wellness-massage, /services/wellness-massage, /services/lymphatic-drainage, /ubud, /canggu, /services/therapeutic-massage","/ubud, /canggu, /services/wellness-massage, /post-yoga-recovery-massage",Medium,"detox massage bali, lymphatic drainage, wellness cleanse massage","Wellness focus, link from health-conscious pages"
+Luxury Villa Wellness,/luxury-villa-wellness-bali/,"/services/luxury-massage, /ubud-luxury-villas, /seminyak, /uluwatu, /nusa-dua, /honeymoon-spa-bali, /couples-villa-massage-bali","/services/luxury-massage, /honeymoon-spa-bali, /nusa-dua, /uluwatu, /seminyak",High,"luxury spa bali, vip villa massage, premium wellness","Premium positioning, link from high-end areas"
+Mobile Spa Day Package,/mobile-spa-day-package-bali/,"/services, /treatments, /pricing, /group-spa-day-bali, /couples-villa-massage-bali, /luxury-villa-wellness-bali, /seminyak, /ubud","/services, /pricing, /group-spa-day-bali, /couples-villa-massage-bali, /seminyak",High,"spa day package, full spa treatment, complete wellness day","Package focus, link from services and pricing"
+Post-Hike Recovery,/post-hike-recovery-massage-bali/,"/ubud/post-hike-recovery-massage, /services/sports-massage, /services/deep-tissue-massage, /ubud, /post-yoga-recovery-massage, /uluwatu-surf-massage","/ubud, /services/sports-massage, /uluwatu-surf-massage, /post-yoga-recovery-massage",Medium,"mount batur massage, hiking recovery bali, trek recovery treatment","Adventure focus, link from Ubud and sports pages"
+Pregnancy Massage,/pregnancy-massage-bali/,"/ubud/pregnancy-massage, /services/prenatal-massage, /services/pregnancy-massage, /services/wellness-massage, /seminyak, /sanur, /canggu","/services, /seminyak, /sanur, /canggu, /services/wellness-massage",Medium,"prenatal massage bali, pregnancy spa, maternity massage safe","Safety emphasis, link from family-friendly areas"
+
+Link Strategy Summary
+Category,Strategy,Pages Affected,Implementation Priority
+Service-to-Service,Link related wellness services together,"All 10 pages",High
+Service-to-Area,Link services to relevant geographical pages,"All 10 pages",High
+Area-to-Service,Link from area pages to available services,"All 10 pages",Medium
+Luxury Cluster,Create internal network of luxury services,"Couples Villa, Honeymoon, Luxury Villa Wellness",High
+Sports/Activity Cluster,Link sports recovery services together,"Post-Yoga, Surf, Post-Hike",Medium
+Package Cluster,Link package offerings together,"Group Spa, Mobile Spa Day, Luxury Villa",High
+Main Services Hub,Link all to main /services page,"All 10 pages",High
+Pricing Hub,Link package pages to /pricing,"Group Spa, Mobile Spa Day, Honeymoon",High
+
+Linking Best Practices
+Best Practice,Description,Example
+Use Descriptive Anchors,Anchor text should describe destination page,"couples villa massage" not "click here"
+Natural Placement,Links should fit naturally in content flow,Within relevant sentence or paragraph
+5-8 Links Per Page,Balance between SEO and user experience,Each page has 5-8 contextual internal links
+Bidirectional Linking,Related pages link to each other,Honeymoon <-> Couples Villa <-> Luxury Villa
+Authority Flow,Link from high-authority pages to new pages,Main /services page links to all 10 new pages
+User Journey,Links support logical user navigation,Service -> Area -> Booking flow
+Avoid Over-Linking,Don't link same page multiple times,One link per target page per source page
+Footer Links,Consistent navigation in footer,All major pages linked in footer
+
+Area Page Link Integration
+Area Page,New Services to Add,Priority,Notes
+/seminyak,"Couples Villa, Honeymoon, Luxury Villa, Group Spa, Pregnancy",High,Upscale area - luxury services fit
+/canggu,"Post-Yoga, Surf (mention), Group Spa, Detox Wellness, Pregnancy",High,Yoga/surf community - active services fit
+/ubud,"Post-Yoga, Post-Hike, Detox Wellness, Couples Villa, Luxury Villa",High,Wellness hub - all wellness services fit
+/uluwatu,"Surf Massage, Honeymoon, Luxury Villa, Couples Villa",High,Surf destination + luxury resorts
+/sanur,"Pregnancy, Group Spa, Couples Villa",Medium,Family-friendly area
+/nusa-dua,"Luxury Villa, Honeymoon, Couples Villa",Medium,High-end resort area
+/legian,"Group Spa, Couples Villa",Low,Tourist area
+/kerobokan,"Luxury Villa, Couples Villa",Low,Luxury villa area
+
+Main Services Page Integration
+Section,New Pages to Add,Display Method,Notes
+Couples Services,"Couples Villa, Honeymoon",Cards with images,Highlight romantic aspect
+Wellness Services,"Detox Wellness, Post-Yoga, Pregnancy",Cards with images,Health/wellness focus
+Activity Recovery,"Post-Hike, Surf Massage, Post-Yoga",Cards with images,Active lifestyle focus
+Premium Services,"Luxury Villa Wellness",Featured card,Premium positioning
+Packages,"Group Spa Day, Mobile Spa Day Package",Cards with pricing,Package focus
+
+Link Velocity Strategy
+Timeframe,Action,Pages,Goal
+Week 1,Add links from main /services page,All 10 pages,Establish authority flow
+Week 2,Add bidirectional links between related pages,"Luxury cluster, Sports cluster",Build internal networks
+Week 3,Update area pages with new service links,All area pages,Geographical distribution
+Week 4,Add links from existing service pages,Existing massage services,Cross-promotion
+Week 5-8,Monitor and optimize underperforming links,Based on analytics,Improve click-through
+
+Link Performance Tracking
+Metric,Target,Measurement Method,Action If Below Target
+Click-Through Rate,3-5% of page visitors,Google Analytics events,Improve anchor text or placement
+Internal Link Equity,DA/PA increase,SEO tools (Ahrefs/Moz),Add more high-authority links
+User Navigation,"50%+ use internal links",Analytics user flow,Improve link prominence
+Time on Site Increase,+30 seconds from links,Analytics comparison,Better link targeting
+Conversion Rate,"5%+ from internal traffic",Goal completions,Optimize landing pages
+
+Cross-Selling Opportunities
+From Page,Upsell To,Anchor Text,Placement
+Couples Villa,Honeymoon Spa,upgrade to honeymoon spa package,Pricing section
+Post-Yoga,Detox Wellness,enhance with detox wellness,Related services
+Group Spa Day,Mobile Spa Day Package,explore full spa day packages,Packages section
+Uluwatu Surf,Post-Hike,other sports recovery options,Related services
+Pregnancy,Couples Villa,spa experience with partner,Related services
+Detox Wellness,Luxury Villa Wellness,upgrade to luxury wellness,Premium options
+Post-Hike,Post-Yoga,yoga recovery after trekking,Related services
+Mobile Spa Day,Luxury Villa Wellness,premium spa day experience,Upgrade options
+Honeymoon,Luxury Villa Wellness,ultimate VIP experience,Premium section
+Surf Massage,Group Spa Day,bring your surf crew,Group section
