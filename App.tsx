@@ -14,6 +14,7 @@ import Packages from "./pages/Packages";
 import TherapistsPage from "./pages/TherapistsPage";
 import FAQPage from "./pages/FAQPage";
 import NotFound from "./pages/NotFound";
+import RecommendedServices from "./pages/RecommendedServices";
 
 // Service/Massage Type Pages
 import BalineseMassage from "./pages/BalineseMassage";
@@ -76,6 +77,7 @@ const App = () => (
             <Route path="/packages" element={<Packages />} />
             <Route path="/therapists" element={<TherapistsPage />} />
             <Route path="/faq" element={<FAQPage />} />
+            <Route path="/recommended-services" element={<RecommendedServices />} />
             
             {/* Service/Massage Type Pages */}
             <Route path="/services/balinese-massage" element={<BalineseMassage />} />
