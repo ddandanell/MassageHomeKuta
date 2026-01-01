@@ -83,6 +83,7 @@ import GentleTouchMassage from "./pages/GentleTouchMassage";
 import PremiumSpaTreatment from "./pages/PremiumSpaTreatment";
 import RevitalizingMassage from "./pages/RevitalizingMassage";
 import NotFound from "./pages/NotFound";
+import RecommendedServices from "./pages/RecommendedServices";
 
 const queryClient = new QueryClient();
 
@@ -97,6 +98,7 @@ const routeConfig = [
   { path: "/packages", element: <Packages /> },
   { path: "/therapists", element: <TherapistsPage /> },
   { path: "/faq", element: <FAQPage /> },
+  { path: "/recommended-services", element: <RecommendedServices /> },
   // Service Area Landing Pages
   { path: "/areas/kuta", element: <KutaArea /> },
   { path: "/areas/legian", element: <LegianArea /> },
