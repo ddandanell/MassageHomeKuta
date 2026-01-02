@@ -11,46 +11,53 @@ import { Clock, Star, Users, MapPin } from "lucide-react";
 
 const services = [
   {
-    name: "Balinese Traditional Massage",
-    duration: "60-90 minutes",
-    price: "Starting from IDR 350k",
+    name: "Traditional Balinese Massage Ubud",
+    duration: "60-120 minutes",
+    price: "Starting from IDR 280K",
     description: "Ancient healing technique combining gentle stretches, acupressure, and aromatherapy oils to restore balance and harmony.",
     benefits: ["Stress relief", "Improved circulation", "Deep relaxation", "Cultural experience"]
   },
   {
-    name: "Deep Tissue Massage",
-    duration: "60-90 minutes", 
-    price: "Starting from IDR 400k",
+    name: "Deep Tissue Massage Ubud",
+    duration: "60-120 minutes", 
+    price: "Starting from IDR 320K",
     description: "Therapeutic massage targeting deep muscle layers to release chronic tension and alleviate muscle pain.",
     benefits: ["Muscle pain relief", "Improved mobility", "Tension release", "Athletic recovery"]
   },
   {
-    name: "Aromatherapy Massage",
-    duration: "60-90 minutes",
-    price: "Starting from IDR 380k", 
+    name: "Aromatherapy Massage Ubud",
+    duration: "60-120 minutes",
+    price: "Starting from IDR 304K", 
     description: "Relaxing massage using premium essential oils to promote emotional well-being and stress relief.",
     benefits: ["Emotional balance", "Stress reduction", "Better sleep", "Mood enhancement"]
   },
   {
-    name: "Hot Stone Massage",
-    duration: "75-90 minutes",
-    price: "Starting from IDR 450k",
+    name: "Hot Stone Massage Ubud",
+    duration: "60-120 minutes",
+    price: "Starting from IDR 360K",
     description: "Luxurious treatment using heated volcanic stones to melt away tension and promote deep relaxation.",
     benefits: ["Deep muscle relaxation", "Improved circulation", "Luxury experience", "Pain relief"]
   },
   {
-    name: "Thai Massage",
-    duration: "60-90 minutes", 
-    price: "Starting from IDR 370k",
+    name: "Thai Massage Ubud",
+    duration: "60-120 minutes", 
+    price: "Starting from IDR 360K",
     description: "Dynamic massage combining stretching, pressure points, and yoga-like movements for flexibility and energy.",
     benefits: ["Increased flexibility", "Energy boost", "Posture improvement", "Stress relief"]
   },
   {
-    name: "Couples Massage",
-    duration: "60-90 minutes",
-    price: "Starting from IDR 700k",
-    description: "Romantic massage experience for two, perfect for couples and friends wanting to relax together.",
-    benefits: ["Shared experience", "Quality time", "Romantic setting", "Double relaxation"]
+    name: "Four Hands Massage Ubud",
+    duration: "60-120 minutes",
+    price: "Starting from IDR 520K",
+    description: "Ultimate luxury experience with two therapists working together, perfect for special occasions.",
+    benefits: ["Ultimate relaxation", "Complete coverage", "Unique experience", "Deep restoration"]
+  },
+  {
+    name: "Lymphatic Drainage Massage Ubud",
+    duration: "60-120 minutes",
+    price: "Starting from IDR 384K",
+    description: "Gentle rhythmic massage to stimulate lymphatic drainage, reduce swelling, and boost immunity.",
+    benefits: ["Reduced swelling", "Detoxification", "Boosted immunity", "Post-flight recovery"]
   }
 ];
 

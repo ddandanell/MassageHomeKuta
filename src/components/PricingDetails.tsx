@@ -12,9 +12,9 @@ const PricingDetails = () => {
       title: "Quick Relief",
       subtitle: "Perfect for busy schedules",
       duration: "60 Minutes",
-      price: "IDR 350K - 450K",
+      price: "IDR 280K - 384K",
       popular: false,
-      massageTypes: ["Balinese Massage", "Aromatherapy", "Deep Tissue"],
+      massageTypes: ["Traditional Balinese Massage Ubud", "Aromatherapy Massage Ubud", "Deep Tissue Massage Ubud"],
       features: [
         "Professional massage table setup",
         "Premium organic oils",
@@ -28,7 +28,7 @@ const PricingDetails = () => {
       title: "Complete Wellness",
       subtitle: "Our most popular choice",
       duration: "90 Minutes",
-      price: "IDR 500K - 650K",
+      price: "IDR 400K - 550K",
       popular: true,
       massageTypes: ["All massage types available", "Combination treatments"],
       features: [
@@ -45,7 +45,7 @@ const PricingDetails = () => {
       title: "Ultimate Indulgence",
       subtitle: "The full spa experience",
       duration: "120+ Minutes",
-      price: "IDR 650K - 1,100K",
+      price: "IDR 520K - 960K",
       popular: false,
       massageTypes: ["Premium treatments", "Four-hands massage", "Specialized therapy"],
       features: [
