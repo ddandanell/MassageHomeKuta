@@ -443,7 +443,7 @@ const ServiceAreas = () => {
               <h3 className="text-3xl font-bold text-spa-earth mb-8 text-center">
                 How Our Mobile Service Works
               </h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
                 <div className="text-center">
                   <div className="w-16 h-16 bg-spa-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-2xl font-bold text-spa-gold">1</span>
@@ -471,6 +471,12 @@ const ServiceAreas = () => {
                     Enjoy your professional massage in the comfort and privacy of your villa or hotel room.
                   </p>
                 </div>
+              </div>
+              
+              <div className="max-w-3xl mx-auto text-left bg-white p-8 rounded-lg shadow-soft">
+                <p className="text-lg text-spa-stone leading-relaxed">
+                  Our professional massage service covers Bali's most popular destinations with fast response times and certified therapists. From the beaches of Kuta and Seminyak to the rice terraces of Ubud and the clifftops of Uluwatu, we bring <Link to="/services" className="text-spa-gold hover:underline">premium massage treatments</Link> directly to your accommodation. Each service area benefits from our commitment to quality, featuring the same <Link to="/therapists" className="text-spa-gold hover:underline">internationally certified therapists</Link>, professional equipment, and exceptional customer service. Explore our <Link to="/packages" className="text-spa-gold hover:underline">special pricing packages</Link> for the best value, and book your massage service today to experience relaxation delivered to your doorstep anywhere in Bali.
+                </p>
               </div>
             </div>
           </div>

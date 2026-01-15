@@ -156,7 +156,7 @@ const Services = () => {
                   <div className="h-64 overflow-hidden relative">
                     <img
                       src={service.image}
-                      alt={service.name}
+                      alt={`${service.name} treatment in Kuta - professional massage therapy delivered to your villa`}
                       className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
@@ -216,7 +216,7 @@ const Services = () => {
             <h2 className="text-3xl font-bold text-spa-earth mb-8">
               Why Choose Our In-Villa Massage Service?
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
               <div>
                 <h3 className="text-xl font-semibold text-spa-earth mb-4">Professional Equipment</h3>
                 <p className="text-spa-stone">
@@ -226,7 +226,7 @@ const Services = () => {
               <div>
                 <h3 className="text-xl font-semibold text-spa-earth mb-4">Certified Therapists</h3>
                 <p className="text-spa-stone">
-                  All our therapists hold international certifications and are experienced in various massage techniques.
+                  All our <Link to="/therapists" className="text-spa-gold hover:underline">certified massage therapists</Link> hold international certifications and are experienced in various massage techniques.
                 </p>
               </div>
               <div>
@@ -235,6 +235,12 @@ const Services = () => {
                   Available daily from 07:00 to 22:00 with same-day booking options for your convenience.
                 </p>
               </div>
+            </div>
+            
+            <div className="max-w-3xl mx-auto text-left bg-white p-8 rounded-lg shadow-soft">
+              <p className="text-lg text-spa-stone leading-relaxed mb-4">
+                Ready to experience professional massage treatments in Kuta? Our comprehensive range of massage services brings spa-quality relaxation directly to your location. Whether you're staying in <Link to="/areas/kuta" className="text-spa-gold hover:underline">Kuta</Link>, <Link to="/areas/seminyak" className="text-spa-gold hover:underline">Seminyak</Link>, <Link to="/areas/canggu" className="text-spa-gold hover:underline">Canggu</Link>, or <Link to="/areas/ubud" className="text-spa-gold hover:underline">Ubud</Link>, our experienced therapists arrive prepared with everything needed for a premium massage experience. Check out our <Link to="/packages" className="text-spa-gold hover:underline">special massage pricing packages</Link> for the best value, or <Link to="/reviews" className="text-spa-gold hover:underline">read customer reviews</Link> to see why travelers trust our service. Book your massage treatment today and discover the ultimate relaxation in Bali.
+              </p>
             </div>
           </div>
         </section>

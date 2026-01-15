@@ -213,7 +213,7 @@ const Packages = () => {
             <h2 className="text-3xl font-bold text-primary-foreground mb-8">
               Why Choose Our Packages?
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto text-primary-foreground">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto text-primary-foreground mb-12">
               <div>
                 <h3 className="text-xl font-semibold mb-4">Better Value</h3>
                 <p className="opacity-90">
@@ -232,6 +232,12 @@ const Packages = () => {
                   Same certified therapists and professional equipment, with enhanced service levels for special occasions.
                 </p>
               </div>
+            </div>
+            
+            <div className="max-w-3xl mx-auto text-left bg-white/10 backdrop-blur-sm p-8 rounded-lg">
+              <p className="text-lg text-primary-foreground leading-relaxed opacity-95">
+                Explore our massage pricing in Kuta with special package deals designed to maximize value and relaxation. Whether you're celebrating a special occasion or planning a wellness retreat, our packages combine multiple <Link to="/services" className="text-professional-gold hover:underline font-semibold">premium massage treatments</Link> at exceptional rates. Available throughout <Link to="/areas" className="text-professional-gold hover:underline font-semibold">all our service areas in Bali</Link>, these packages are delivered by our team of <Link to="/therapists" className="text-professional-gold hover:underline font-semibold">certified therapists</Link>. Book your massage package today and experience the best value in professional spa services.
+              </p>
             </div>
           </div>
         </section>
