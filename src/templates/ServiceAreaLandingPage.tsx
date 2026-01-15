@@ -60,7 +60,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
           <div className="absolute inset-0">
             <img
               src="/images/hero/hero-3.jpg"
-              alt={`Professional massage service in ${data.name} Bali with certified therapists delivering treatments to villas and hotels`}
+              alt={`Professional massage in ${data.name} Bali - villa and hotel service`}
               className="w-full h-full object-cover"
             />
             <div className={`absolute inset-0 bg-gradient-to-br ${DESIGN_SYSTEM.heroGradients.area} opacity-90 backdrop-blur-[2px]`}></div>

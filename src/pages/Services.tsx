@@ -239,7 +239,10 @@ const Services = () => {
             
             <div className="max-w-3xl mx-auto text-left bg-white p-8 rounded-lg shadow-soft">
               <p className="text-lg text-spa-stone leading-relaxed mb-4">
-                Ready to experience professional massage treatments in Kuta? Our comprehensive range of massage services brings spa-quality relaxation directly to your location. Whether you're staying in <Link to="/areas/kuta" className="text-spa-gold hover:underline">Kuta</Link>, <Link to="/areas/seminyak" className="text-spa-gold hover:underline">Seminyak</Link>, <Link to="/areas/canggu" className="text-spa-gold hover:underline">Canggu</Link>, or <Link to="/areas/ubud" className="text-spa-gold hover:underline">Ubud</Link>, our experienced therapists arrive prepared with everything needed for a premium massage experience. Check out our <Link to="/packages" className="text-spa-gold hover:underline">special massage pricing packages</Link> for the best value, or <Link to="/reviews" className="text-spa-gold hover:underline">read customer reviews</Link> to see why travelers trust our service. Book your massage treatment today and discover the ultimate relaxation in Bali.
+                Ready to experience professional massage treatments in Kuta? Our comprehensive range of services brings spa-quality relaxation directly to your location. Whether you're staying in Kuta, <Link to="/areas/seminyak" className="text-spa-gold hover:underline">Seminyak</Link>, <Link to="/areas/canggu" className="text-spa-gold hover:underline">Canggu</Link>, or <Link to="/areas/ubud" className="text-spa-gold hover:underline">Ubud</Link>, our experienced therapists arrive prepared with everything needed for a premium experience.
+              </p>
+              <p className="text-lg text-spa-stone leading-relaxed">
+                Check out our <Link to="/packages" className="text-spa-gold hover:underline">special packages</Link> for the best value, or browse <Link to="/reviews" className="text-spa-gold hover:underline">customer testimonials</Link> to see why travelers trust our service. Book your treatment today and discover ultimate relaxation in Bali.
               </p>
             </div>
           </div>

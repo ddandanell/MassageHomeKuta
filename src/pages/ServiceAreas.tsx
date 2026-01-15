@@ -474,8 +474,11 @@ const ServiceAreas = () => {
               </div>
               
               <div className="max-w-3xl mx-auto text-left bg-white p-8 rounded-lg shadow-soft">
+                <p className="text-lg text-spa-stone leading-relaxed mb-4">
+                  Our service covers Bali's most popular destinations with fast response times and certified therapists. From the beaches of Kuta and Seminyak to the rice terraces of Ubud and the clifftops of Uluwatu, we bring premium treatments directly to your accommodation.
+                </p>
                 <p className="text-lg text-spa-stone leading-relaxed">
-                  Our professional massage service covers Bali's most popular destinations with fast response times and certified therapists. From the beaches of Kuta and Seminyak to the rice terraces of Ubud and the clifftops of Uluwatu, we bring <Link to="/services" className="text-spa-gold hover:underline">premium massage treatments</Link> directly to your accommodation. Each service area benefits from our commitment to quality, featuring the same <Link to="/therapists" className="text-spa-gold hover:underline">internationally certified therapists</Link>, professional equipment, and exceptional customer service. Explore our <Link to="/packages" className="text-spa-gold hover:underline">special pricing packages</Link> for the best value, and book your massage service today to experience relaxation delivered to your doorstep anywhere in Bali.
+                  Each location benefits from our commitment to quality, featuring the same professional equipment and exceptional customer service. Explore our <Link to="/services" className="text-spa-gold hover:underline">complete treatment menu</Link> or check out <Link to="/packages" className="text-spa-gold hover:underline">special packages</Link> for the best value. Book today and experience relaxation delivered to your doorstep.
                 </p>
               </div>
             </div>

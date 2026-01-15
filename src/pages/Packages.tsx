@@ -7,6 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Heart, Users, Clock, Gift, Star } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const packages = [
   {
@@ -235,8 +236,11 @@ const Packages = () => {
             </div>
             
             <div className="max-w-3xl mx-auto text-left bg-white/10 backdrop-blur-sm p-8 rounded-lg">
+              <p className="text-lg text-primary-foreground leading-relaxed opacity-95 mb-4">
+                Explore our special package deals designed to maximize value and relaxation. Whether you're celebrating a special occasion or planning a wellness retreat, these packages combine multiple premium treatments at exceptional rates.
+              </p>
               <p className="text-lg text-primary-foreground leading-relaxed opacity-95">
-                Explore our massage pricing in Kuta with special package deals designed to maximize value and relaxation. Whether you're celebrating a special occasion or planning a wellness retreat, our packages combine multiple <Link to="/services" className="text-professional-gold hover:underline font-semibold">premium massage treatments</Link> at exceptional rates. Available throughout <Link to="/areas" className="text-professional-gold hover:underline font-semibold">all our service areas in Bali</Link>, these packages are delivered by our team of <Link to="/therapists" className="text-professional-gold hover:underline font-semibold">certified therapists</Link>. Book your massage package today and experience the best value in professional spa services.
+                Available throughout all our <Link to="/areas" className="text-professional-gold hover:underline font-semibold">service areas in Bali</Link>, these packages are delivered by our team of certified therapists. Browse our <Link to="/services" className="text-professional-gold hover:underline font-semibold">full treatment menu</Link> to customize your experience, or book today to discover the best value in professional spa services.
               </p>
             </div>
           </div>

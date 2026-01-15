@@ -81,7 +81,7 @@ const TherapistsPage = () => {
               Certified Massage Therapists Kuta
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-90">
-              Our professional massage therapists in Kuta hold international certifications (VTCT, CIBTAC) with years of experience delivering expert treatments to your villa or hotel. Each certified therapist specializes in multiple massage techniques.
+              Our team of internationally certified therapists brings years of experience and expertise to provide you with the highest quality treatments in Kuta. Each practitioner holds VTCT and CIBTAC certifications and specializes in multiple massage techniques.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-lg">
               <div className="flex items-center gap-2">
