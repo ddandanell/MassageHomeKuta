@@ -249,9 +249,9 @@ const ServiceAreas = () => {
   return (
     <div className="min-h-screen">
       <SiteMeta
-        title="Massage Service Areas - Professional Massage Coverage Across Bali"
-        description="Professional massage service delivered throughout Bali including Kuta, Legian, Seminyak, Canggu, Sanur, Ubud, Nusa Dua, and more. Certified massage therapists bring premium massage treatments directly to your villa or hotel. Book your massage appointment in any of our service areas."
-        keywords="massage service areas, massage coverage bali, massage service kuta, massage service legian, massage service seminyak, massage service canggu, massage service ubud, massage service nusa dua, massage delivery areas, massage appointment areas, professional massage coverage, home massage areas, villa massage areas"
+        title="Service Areas Bali - Massage Coverage"
+        description="Professional massage service covering Kuta, Legian, Seminyak, Canggu, Sanur, Ubud, Nusa Dua, and more areas in Bali. Certified therapists deliver premium massage treatments to your villa or hotel location."
+        keywords="massage service areas Bali, massage Kuta coverage, massage Seminyak, massage Canggu, massage Ubud, massage Nusa Dua, mobile massage Bali"
         canonical="/areas"
       />
 
@@ -265,7 +265,7 @@ const ServiceAreas = () => {
           <div className="absolute inset-0">
             <img
               src="/images/hero/hero-3.jpg"
-              alt="Map of Bali showing massage service coverage areas for professional massage delivery"
+              alt="Map showing professional massage service coverage areas throughout Bali including Kuta, Seminyak, Canggu, and Ubud"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-br from-blue-900/80 via-indigo-900/70 to-blue-900/80 backdrop-blur-[2px]"></div>
@@ -275,10 +275,10 @@ const ServiceAreas = () => {
               Island-Wide Coverage
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-lg">
-              Service Areas Across Bali
+              Service Areas Bali - Massage Coverage
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-95 drop-shadow-md">
-              Professional massage service delivered to your villa or hotel. We serve {serviceAreas.length} areas throughout Bali.
+              Professional massage service delivered throughout Bali covering {serviceAreas.length} areas including Kuta, Seminyak, Canggu, Ubud, and more. Book certified therapists for premium massage treatments at your villa or hotel.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <div className="flex items-center gap-2 text-sm bg-white/20 backdrop-blur-md px-4 py-2 rounded-full">

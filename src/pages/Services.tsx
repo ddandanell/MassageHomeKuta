@@ -105,9 +105,9 @@ const Services = () => {
   return (
     <div className="min-h-screen bg-background">
       <SiteMeta
-        title="Professional Massage Services in Kuta"
-        description="Discover our comprehensive range of professional massage services in Kuta. From traditional Balinese to therapeutic deep tissue massage, delivered to your villa or hotel."
-        keywords="balinese massage kuta, deep tissue massage bali, aromatherapy massage, hot stone massage, thai massage, couples massage kuta"
+        title="Massage Treatments Kuta - Premium Service"
+        description="Explore professional massage treatments in Kuta including Balinese, deep tissue, aromatherapy, hot stone, and Thai massage. Certified therapists deliver spa-quality treatments to your location."
+        keywords="massage treatments Kuta, Balinese massage, deep tissue massage Kuta, aromatherapy massage Bali, hot stone massage, Thai massage Kuta, professional massage service"
         canonical="/services"
       />
 
@@ -122,17 +122,17 @@ const Services = () => {
           <div className="absolute inset-0">
             <img
               src="/images/hero/hero-1.jpg"
-              alt="Our massage services"
+              alt="Professional massage therapists providing various massage treatments including Balinese and deep tissue massage in Kuta"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-br from-professional-navy/90 via-professional-green/80 to-professional-navy/90 backdrop-blur-[2px]"></div>
           </div>
           <div className="relative container mx-auto px-4 text-center z-10">
             <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 drop-shadow-lg tracking-tight">
-              Our Signature Treatments
+              Massage Treatments Kuta
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-95 drop-shadow-md font-light tracking-wide">
-              Experience the finest therapeutic and relaxation massages delivered directly to your villa or hotel.
+              Professional massage treatments delivered to your villa or hotel in Kuta. Choose from traditional Balinese, therapeutic deep tissue, aromatherapy, and more specialized treatments tailored to your needs.
             </p>
           </div>
         </section>

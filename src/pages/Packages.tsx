@@ -83,9 +83,9 @@ const Packages = () => {
   return (
     <div className="min-h-screen">
       <SiteMeta 
-        title="Special Massage Packages in Kuta"
-        description="Save with our exclusive massage packages in Kuta. Romantic couples retreats, wellness weekends, and birthday specials. Professional in-villa spa service with great value."
-        keywords="massage packages kuta, couples massage bali, spa packages kuta, wellness packages, romantic massage bali, birthday massage package"
+        title="Massage Pricing Kuta - Special Packages"
+        description="Discover affordable massage pricing in Kuta with special packages and deals. Couples massage, wellness packages, and birthday specials delivered to your villa. Book premium treatments at great value."
+        keywords="massage pricing Kuta, massage packages Kuta, couples massage pricing, spa package deals Bali, affordable massage Kuta, wellness packages Bali"
         canonical="/packages"
       />
       
@@ -98,11 +98,10 @@ const Packages = () => {
         <section className="py-20 bg-gradient-professional text-primary-foreground">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Special Massage Packages
+              Massage Pricing Kuta - Special Packages
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-90">
-              Save more with our carefully curated spa packages. Perfect for couples, special occasions, 
-              or extended wellness experiences in the comfort of your villa.
+              Explore our massage pricing in Kuta with exclusive package deals. Save on couples massage, wellness retreats, and special occasion treatments delivered to your villa or hotel. Professional therapists, premium service, exceptional value.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-lg">
               <Badge variant="outline" className="text-primary-foreground border-primary-foreground px-4 py-2">

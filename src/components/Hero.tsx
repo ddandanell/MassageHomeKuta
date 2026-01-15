@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="absolute inset-0">
         <img
           src="/images/hero/hero-1.jpg"
-          alt="Professional massage therapist providing relaxing treatment"
+          alt="Professional massage therapist providing Balinese massage treatment in luxury villa setting in Kuta, Bali"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60"></div>
@@ -23,14 +23,14 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 py-20 text-center text-white max-w-5xl">
         {/* Main Headline */}
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-8 leading-tight drop-shadow-lg">
-          Premium Home Massage
-          <span className="block text-professional-gold mt-2 italic">in Kuta, Bali</span>
+          Professional Massage Kuta
+          <span className="block text-professional-gold mt-2 italic">Premium Home Service in Bali</span>
         </h1>
 
         {/* Description */}
         <p className="text-xl md:text-2xl mb-12 opacity-95 max-w-3xl mx-auto leading-relaxed font-light tracking-wide">
-          Experience the ultimate relaxation with professional spa treatments delivered directly to your villa or hotel.
-          Licensed therapists, premium oils, and a sanctuary of calm.
+          Experience professional massage in Kuta with certified therapists delivering premium spa treatments directly to your villa or hotel.
+          Same-day booking available for Balinese, deep tissue, and aromatherapy massage. Licensed therapists, premium oils, and complete relaxation.
         </p>
 
         {/* Key Benefits */}

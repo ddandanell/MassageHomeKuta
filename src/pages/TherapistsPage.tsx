@@ -55,9 +55,9 @@ const TherapistsPage = () => {
   return (
     <div className="min-h-screen">
       <SiteMeta
-        title="Professional Certified Massage Therapists in Kuta"
-        description="Meet our team of certified massage therapists in Kuta. Experienced professionals with international certifications providing expert in-villa massage treatments."
-        keywords="certified massage therapists kuta, professional massage therapist bali, licensed massage therapist, experienced massage therapist kuta"
+        title="Certified Massage Therapists Kuta Bali"
+        description="Meet our certified professional massage therapists in Kuta. Experienced, licensed practitioners with international certifications delivering expert massage treatments to your villa or hotel."
+        keywords="certified massage therapists Kuta, professional massage therapist Bali, licensed massage practitioners, experienced therapists Kuta, VTCT certified"
         canonical="/therapists"
       />
 
@@ -71,18 +71,17 @@ const TherapistsPage = () => {
           <div className="absolute inset-0">
             <img
               src="/images/hero/hero-4.jpg"
-              alt="Our professional therapists"
+              alt="Certified professional massage therapists team in Kuta Bali with international VTCT and CIBTAC certifications"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/80 to-primary/90 backdrop-blur-[2px]"></div>
           </div>
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Meet Our Certified Therapists
+              Certified Massage Therapists Kuta
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-90">
-              Our team of internationally certified massage therapists brings years of experience
-              and expertise to provide you with the highest quality treatments in Kuta.
+              Our professional massage therapists in Kuta hold international certifications (VTCT, CIBTAC) with years of experience delivering expert treatments to your villa or hotel. Each certified therapist specializes in multiple massage techniques.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-lg">
               <div className="flex items-center gap-2">
