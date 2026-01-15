@@ -12,14 +12,15 @@ const ReviewsPage = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Customer Reviews - Home Massage Kuta | 4.9★ Rated Service</title>
-        <meta name="description" content="Read authentic reviews from 500+ satisfied customers. See why Home Massage Kuta is the #1 rated in-villa massage service in Bali with 4.9 stars." />
-        <meta name="keywords" content="massage reviews Kuta, customer testimonials, 5 star massage Bali, best massage service reviews" />
+        <title>Massage Reviews Kuta - 4.9★ Customer Testimonials</title>
+        <meta name="description" content="Read authentic massage reviews from 500+ satisfied customers in Kuta. Discover why we're the #1 rated professional massage service in Bali with 4.9 stars and verified testimonials." />
+        <meta name="keywords" content="massage reviews Kuta, customer testimonials Bali, 5 star massage reviews, best massage service Kuta, verified reviews" />
       </Helmet>
 
       <SiteMeta
-        title="Customer Reviews - Home Massage Kuta | 4.9★ Rated Service"
-        description="Read authentic reviews from 500+ satisfied customers. See why Home Massage Kuta is the #1 rated in-villa massage service in Bali with 4.9 stars."
+        title="Massage Reviews Kuta - Customer Testimonials"
+        description="Read authentic massage reviews from 500+ satisfied customers in Kuta. Discover why we're the #1 rated professional massage service in Bali with 4.9 stars and verified testimonials."
+        canonical="/reviews"
       />
       <StructuredData type="organization" includeReviews={true} />
       <StructuredData type="service" />
@@ -32,7 +33,7 @@ const ReviewsPage = () => {
           <div className="absolute inset-0">
             <img
               src="/images/hero/hero-2.jpg"
-              alt="Happy clients enjoying massage"
+              alt="Happy customers enjoying professional massage treatments in Kuta, verified 5 star reviews"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-br from-amber-900/80 via-orange-900/70 to-amber-900/80 backdrop-blur-[2px]"></div>
@@ -46,11 +47,10 @@ const ReviewsPage = () => {
               <Star className="h-8 w-8 fill-current" />
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-lg">
-              What Our Customers Say
+              Massage Reviews Kuta - Customer Testimonials
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-90 drop-shadow-md">
-              Over <strong>500+ happy customers</strong> from 25+ countries have experienced our
-              premium in-villa massage service. Here's what they have to say.
+              Read authentic massage reviews from <strong>500+ satisfied customers</strong> in Kuta. Discover why travelers from 25+ countries trust our professional massage service with 4.9 star ratings and verified testimonials.
             </p>
           </div>
         </section>

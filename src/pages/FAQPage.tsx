@@ -104,9 +104,9 @@ const FAQPage = () => {
   return (
     <div className="min-h-screen">
       <SiteMeta
-        title="Frequently Asked Questions - Home Massage Kuta"
-        description="Find answers to common questions about our professional home massage service in Kuta. Booking, pricing, therapists, and service details explained."
-        keywords="massage faq kuta, home massage questions, villa massage booking, massage service questions kuta, spa service faq bali"
+        title="Massage FAQ Kuta - Common Questions Answered"
+        description="Find answers to frequently asked questions about professional massage in Kuta. Learn about booking, pricing, therapist certifications, safety standards, and massage treatments available."
+        keywords="massage FAQ Kuta, home massage questions, villa massage booking, massage service questions, spa FAQ Bali, massage therapy questions"
         canonical="/faq"
       />
 
@@ -119,17 +119,17 @@ const FAQPage = () => {
           <div className="absolute inset-0">
             <img
               src="/images/hero/hero-1.jpg"
-              alt="Relaxing massage environment"
+              alt="Professional massage therapy environment in Kuta with certified therapists answering common questions"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-br from-purple-900/80 via-pink-900/70 to-purple-900/80 backdrop-blur-[2px]"></div>
           </div>
           <div className="relative container mx-auto px-4 text-center z-10">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              Frequently Asked Questions About Our Massage Services
+              Massage FAQ Kuta - Common Questions
             </h1>
             <p className="text-lg md:text-xl max-w-3xl mx-auto">
-              Discover in-depth answers to common questions about massage therapy (pijat) and how it can enhance your health and well-being.
+              Get answers to frequently asked questions about professional massage in Kuta. Learn about our certified therapists, booking process, pricing, safety standards, and available treatments delivered to your villa or hotel.
             </p>
           </div>
         </section>

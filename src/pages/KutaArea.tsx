@@ -71,9 +71,9 @@ const KutaArea = () => {
   return (
     <div className="min-h-screen">
       <SiteMeta
-        title="Home Massage Service in Kuta Area, Bali"
-        description="Professional in-villa massage service covering all areas of Kuta, Bali. Fast response times, certified therapists, and premium spa treatments delivered to your location."
-        keywords="home massage kuta area, villa massage kuta beach, mobile spa legian, tuban massage service, kuta massage delivery, in-villa spa kuta bali"
+        title="Massage Kuta Area - Professional Service"
+        description="Professional massage in Kuta area covering Kuta Beach, Legian, Tuban, and Seminyak border. Certified therapists deliver premium treatments to your villa or hotel with fast response times."
+        keywords="massage Kuta area, massage Kuta Beach, massage Legian, massage Tuban, villa massage Kuta, mobile spa Kuta, in-villa massage service"
         canonical="/areas/kuta"
       />
 
@@ -88,17 +88,17 @@ const KutaArea = () => {
           <div className="absolute inset-0">
             <img
               src="/images/hero/hero-4.jpg"
-              alt="Massage service in Kuta area"
+              alt="Professional massage service in Kuta area including Kuta Beach, Legian, and Tuban locations"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-br from-green-900/80 via-emerald-900/70 to-teal-900/80 backdrop-blur-[2px]"></div>
           </div>
           <div className="relative container mx-auto px-4 text-center z-10">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              Serving All of Kuta
+              Massage Kuta Area - Professional Service
             </h1>
             <p className="text-lg md:text-xl max-w-3xl mx-auto">
-              Our professional massage services are available in every corner of Kuta, Legian, and Seminyak. We come to your villa or hotel.
+              Professional massage in Kuta area with coverage throughout Kuta Beach, Legian, Tuban, and Seminyak border. Our certified therapists deliver premium spa treatments directly to your villa or hotel with fast response times.
             </p>
           </div>
         </section>

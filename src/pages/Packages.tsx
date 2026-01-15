@@ -7,6 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Heart, Users, Clock, Gift, Star } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const packages = [
   {
@@ -83,9 +84,9 @@ const Packages = () => {
   return (
     <div className="min-h-screen">
       <SiteMeta 
-        title="Special Massage Packages in Kuta"
-        description="Save with our exclusive massage packages in Kuta. Romantic couples retreats, wellness weekends, and birthday specials. Professional in-villa spa service with great value."
-        keywords="massage packages kuta, couples massage bali, spa packages kuta, wellness packages, romantic massage bali, birthday massage package"
+        title="Massage Pricing Kuta - Special Packages"
+        description="Discover affordable massage pricing in Kuta with special packages and deals. Couples massage, wellness packages, and birthday specials delivered to your villa. Book premium treatments at great value."
+        keywords="massage pricing Kuta, massage packages Kuta, couples massage pricing, spa package deals Bali, affordable massage Kuta, wellness packages Bali"
         canonical="/packages"
       />
       
@@ -98,11 +99,10 @@ const Packages = () => {
         <section className="py-20 bg-gradient-professional text-primary-foreground">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Special Massage Packages
+              Massage Pricing Kuta - Special Packages
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-90">
-              Save more with our carefully curated spa packages. Perfect for couples, special occasions, 
-              or extended wellness experiences in the comfort of your villa.
+              Explore our massage pricing in Kuta with exclusive package deals. Save on couples massage, wellness retreats, and special occasion treatments delivered to your villa or hotel. Professional therapists, premium service, exceptional value.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-lg">
               <Badge variant="outline" className="text-primary-foreground border-primary-foreground px-4 py-2">
@@ -214,7 +214,7 @@ const Packages = () => {
             <h2 className="text-3xl font-bold text-primary-foreground mb-8">
               Why Choose Our Packages?
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto text-primary-foreground">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto text-primary-foreground mb-12">
               <div>
                 <h3 className="text-xl font-semibold mb-4">Better Value</h3>
                 <p className="opacity-90">
@@ -233,6 +233,15 @@ const Packages = () => {
                   Same certified therapists and professional equipment, with enhanced service levels for special occasions.
                 </p>
               </div>
+            </div>
+            
+            <div className="max-w-3xl mx-auto text-left bg-white/10 backdrop-blur-sm p-8 rounded-lg">
+              <p className="text-lg text-primary-foreground leading-relaxed opacity-95 mb-4">
+                Explore our special package deals designed to maximize value and relaxation. Whether you're celebrating a special occasion or planning a wellness retreat, these packages combine multiple premium treatments at exceptional rates.
+              </p>
+              <p className="text-lg text-primary-foreground leading-relaxed opacity-95">
+                Available throughout all our <Link to="/areas" className="text-professional-gold hover:underline font-semibold">service areas in Bali</Link>, these packages are delivered by our team of certified therapists. Browse our <Link to="/services" className="text-professional-gold hover:underline font-semibold">full treatment menu</Link> to customize your experience, or book today to discover the best value in professional spa services.
+              </p>
             </div>
           </div>
         </section>
