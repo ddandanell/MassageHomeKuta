@@ -208,9 +208,10 @@ class ContentValidator:
     
     def generate_checklist(self, page_url: str) -> str:
         """Generate pre-publish checklist"""
+        separator = '='*60
         checklist = f"""
 PRE-PUBLISH CHECKLIST FOR: {page_url}
-{'='*60}
+{separator}
 
 Content Requirements:
 [ ] Page content is complete and proofread

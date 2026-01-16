@@ -6,6 +6,7 @@ Scheduled task for continuous orphan page monitoring
 
 import sys
 import os
+import traceback
 from pathlib import Path
 from datetime import datetime
 
@@ -54,7 +55,6 @@ def run_weekly_monitoring():
         
     except Exception as e:
         print(f"\n❌ Error during monitoring: {e}")
-        import traceback
         traceback.print_exc()
         return 1
 
