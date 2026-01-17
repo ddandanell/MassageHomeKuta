@@ -28,6 +28,9 @@ import FootReflexology from "./pages/FootReflexology";
 import JetLagRecoveryMassage from "./pages/JetLagRecoveryMassage";
 import LymphaticDrainageMassage from "./pages/LymphaticDrainageMassage";
 
+// SEO Landing Pages
+import MessageKutaBali from "./pages/MessageKutaBali";
+
 // Service Area/City Pages
 import KutaArea from "./pages/KutaArea";
 import LegianArea from "./pages/LegianArea";
@@ -78,6 +81,9 @@ const App = () => (
             <Route path="/therapists" element={<TherapistsPage />} />
             <Route path="/faq" element={<FAQPage />} />
             <Route path="/recommended-services" element={<RecommendedServices />} />
+            
+            {/* SEO Landing Pages */}
+            <Route path="/message-kuta-bali" element={<MessageKutaBali />} />
             
             {/* Service/Massage Type Pages */}
             <Route path="/services/balinese-massage" element={<BalineseMassage />} />
