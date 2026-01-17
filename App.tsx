@@ -58,7 +58,7 @@ import EchoBeachArea from "./pages/EchoBeachArea";
 import DenpasarArea from "./pages/DenpasarArea";
 
 // Special Landing Pages
-import MessageKutaBali from "./src/pages/MessageKutaBali";
+import MessageKutaBali from "./pages/MessageKutaBali";
 
 const queryClient = new QueryClient();
 
