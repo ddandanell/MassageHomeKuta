@@ -31,6 +31,12 @@ import LymphaticDrainageMassage from "./pages/LymphaticDrainageMassage";
 // SEO Landing Pages
 import MessageKutaBali from "./pages/MessageKutaBali";
 
+// Blog Pages
+import BlogHub from "./pages/BlogHub";
+import BlogPost1Pricing from "./pages/BlogPost1Pricing";
+import BlogPost2Booking from "./pages/BlogPost2Booking";
+import BlogPost11Areas from "./pages/BlogPost11Areas";
+
 // Service Area/City Pages
 import KutaArea from "./pages/KutaArea";
 import LegianArea from "./pages/LegianArea";
@@ -84,6 +90,12 @@ const App = () => (
             
             {/* SEO Landing Pages */}
             <Route path="/message-kuta-bali" element={<MessageKutaBali />} />
+            
+            {/* Blog Pages */}
+            <Route path="/blog" element={<BlogHub />} />
+            <Route path="/blog/massage-kuta-bali-price-guide" element={<BlogPost1Pricing />} />
+            <Route path="/blog/how-to-book-massage-kuta-whatsapp" element={<BlogPost2Booking />} />
+            <Route path="/blog/best-areas-kuta-home-massage-coverage" element={<BlogPost11Areas />} />
             
             {/* Service/Massage Type Pages */}
             <Route path="/services/balinese-massage" element={<BalineseMassage />} />
