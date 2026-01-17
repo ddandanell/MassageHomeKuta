@@ -148,7 +148,7 @@ const MessageKutaBali = () => {
               <a href={`tel:${SITE_CONFIG.whatsapp}`}>
                 <Button size="lg" variant="outline" className="text-lg px-8 py-6 bg-white/10 hover:bg-white/20 text-white border-white">
                   <Phone className="mr-2 h-5 w-5" />
-                  Call {SITE_CONFIG.phone}
+                  Call {SITE_CONFIG.whatsapp}
                 </Button>
               </a>
             </div>
@@ -1379,7 +1379,7 @@ const MessageKutaBali = () => {
                 <a href={`tel:${SITE_CONFIG.whatsapp}`}>
                   <Button size="lg" variant="outline" className="text-lg px-10 py-6 border-2 border-white text-white hover:bg-white/10">
                     <Phone className="mr-2 h-6 w-6" />
-                    Call {SITE_CONFIG.phone}
+                    Call {SITE_CONFIG.whatsapp}
                   </Button>
                 </a>
               </div>
