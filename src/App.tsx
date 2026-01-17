@@ -55,6 +55,7 @@ import JetLagRecoveryMassage from "./pages/JetLagRecoveryMassage";
 import CouplesMassageKuta from "./pages/CouplesMassageKuta";
 import SpaNearMeKuta from "./pages/SpaNearMeKuta";
 import MassageTherapistKutaBali from "./pages/MassageTherapistKutaBali";
+import MessageKutaBali from "./pages/MessageKutaBali";
 // New Specialty Massage Pages - Batch 1
 import HealingMassage from "./pages/HealingMassage";
 import TensionReleaseMassage from "./pages/TensionReleaseMassage";
@@ -271,6 +272,7 @@ const App = () => (
             <Route path="/couples-massage-kuta" element={<CouplesMassageKuta />} />
             <Route path="/spa-near-me-kuta" element={<SpaNearMeKuta />} />
             <Route path="/massage-therapist-kuta-bali" element={<MassageTherapistKutaBali />} />
+            <Route path="/message-kuta-bali" element={<MessageKutaBali />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
