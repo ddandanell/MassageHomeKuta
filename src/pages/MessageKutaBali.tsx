@@ -3,6 +3,7 @@ import StructuredData from "@/components/seo/StructuredData";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
+import BlogPlugModule from "@/components/BlogPlugModule";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -880,6 +881,9 @@ const MessageKutaBali = () => {
             </div>
           </div>
         </section>
+
+        {/* BLOG PLUG MODULE - Knowledge Hub Showcase */}
+        <BlogPlugModule />
 
         {/* Mid-Page CTA */}
         <section className="py-12 bg-spa-leaf text-white">

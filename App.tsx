@@ -58,6 +58,12 @@ import CouplesMassageKuta from "./pages/CouplesMassageKuta";
 import SpaNearMeKuta from "./pages/SpaNearMeKuta";
 import MassageTherapistKutaBali from "./pages/MassageTherapistKutaBali";
 
+// Blog Pages
+import BlogHub from "./pages/BlogHub";
+import BlogPost1Pricing from "./pages/BlogPost1Pricing";
+import BlogPost2Booking from "./pages/BlogPost2Booking";
+import BlogPost11Areas from "./pages/BlogPost11Areas";
+
 // Service Area/City Pages
 import KutaArea from "./pages/KutaArea";
 import LegianArea from "./pages/LegianArea";
@@ -117,6 +123,12 @@ const App = () => (
             <Route path="/couples-massage-kuta" element={<CouplesMassageKuta />} />
             <Route path="/spa-near-me-kuta" element={<SpaNearMeKuta />} />
             <Route path="/massage-therapist-kuta-bali" element={<MassageTherapistKutaBali />} />
+            
+            {/* Blog Pages */}
+            <Route path="/blog" element={<BlogHub />} />
+            <Route path="/blog/massage-kuta-bali-price-guide" element={<BlogPost1Pricing />} />
+            <Route path="/blog/how-to-book-massage-kuta-whatsapp" element={<BlogPost2Booking />} />
+            <Route path="/blog/best-areas-kuta-home-massage-coverage" element={<BlogPost11Areas />} />
             
             {/* Service/Massage Type Pages */}
             <Route path="/services/balinese-massage" element={<BalineseMassage />} />
