@@ -55,6 +55,17 @@ import JetLagRecoveryMassage from "./pages/JetLagRecoveryMassage";
 import CouplesMassageKuta from "./pages/CouplesMassageKuta";
 import SpaNearMeKuta from "./pages/SpaNearMeKuta";
 import MassageTherapistKutaBali from "./pages/MassageTherapistKutaBali";
+// New Tourist-Focused Landing Pages
+import CouplesVillaMassageBali from "./pages/CouplesVillaMassageBali";
+import HoneymoonSpaBali from "./pages/HoneymoonSpaBali";
+import PostYogaRecoveryMassage from "./pages/PostYogaRecoveryMassage";
+import UluwatuSurfMassage from "./pages/UluwatuSurfMassage";
+import GroupSpaDayBali from "./pages/GroupSpaDayBali";
+import DetoxWellnessMassageBali from "./pages/DetoxWellnessMassageBali";
+import LuxuryVillaWellnessBali from "./pages/LuxuryVillaWellnessBali";
+import MobileSpaDayPackageBali from "./pages/MobileSpaDayPackageBali";
+import PostHikeRecoveryMassageBali from "./pages/PostHikeRecoveryMassageBali";
+import PregnancyMassageBali from "./pages/PregnancyMassageBali";
 // New Specialty Massage Pages - Batch 1
 import HealingMassage from "./pages/HealingMassage";
 import TensionReleaseMassage from "./pages/TensionReleaseMassage";
@@ -165,6 +176,17 @@ const routeConfig = [
   { path: "/services/gentle-touch-massage", element: <GentleTouchMassage /> },
   { path: "/services/premium-spa-treatment", element: <PremiumSpaTreatment /> },
   { path: "/services/revitalizing-massage", element: <RevitalizingMassage /> },
+  // New Tourist-Focused Landing Pages
+  { path: "/couples-villa-massage-bali/", element: <CouplesVillaMassageBali /> },
+  { path: "/honeymoon-spa-bali/", element: <HoneymoonSpaBali /> },
+  { path: "/post-yoga-recovery-massage/", element: <PostYogaRecoveryMassage /> },
+  { path: "/uluwatu-surf-massage/", element: <UluwatuSurfMassage /> },
+  { path: "/group-spa-day-bali/", element: <GroupSpaDayBali /> },
+  { path: "/detox-wellness-massage-bali/", element: <DetoxWellnessMassageBali /> },
+  { path: "/luxury-villa-wellness-bali/", element: <LuxuryVillaWellnessBali /> },
+  { path: "/mobile-spa-day-package-bali/", element: <MobileSpaDayPackageBali /> },
+  { path: "/post-hike-recovery-massage-bali/", element: <PostHikeRecoveryMassageBali /> },
+  { path: "/pregnancy-massage-bali/", element: <PregnancyMassageBali /> },
 ];
 
 const App = () => (

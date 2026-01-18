@@ -61,9 +61,20 @@ const Sitemap = () => {
     { name: "Couples Massage Kuta", path: "/couples-massage-kuta", description: "Romantic synchronized treatments for couples" },
     { name: "Spa Near Me Kuta", path: "/spa-near-me-kuta", description: "Professional mobile spa service in Kuta" },
     { name: "Massage Therapist Kuta Bali", path: "/massage-therapist-kuta-bali", description: "Certified professional massage therapists" },
-    { name: "Massage Near Me Kuta", path: "/massage-near-me-kuta", description: "Find massage services near you in Kuta" },
-    { name: "Lymphatic Drainage Massage Ubud", path: "/services/lymphatic-drainage-massage-ubud", description: "Specialized lymphatic drainage in Ubud" },
-    { name: "Balinese Massage Kuta", path: "/services/balinese-massage-kuta", description: "Traditional Balinese massage in Kuta" }
+    { name: "Message Kuta Bali", path: "/message-kuta-bali", description: "Professional massage services in Kuta" }
+  ];
+
+  const specialtyExperiences = [
+    { name: "Couples Villa Massage Bali", path: "/couples-villa-massage-bali", description: "Romantic in-villa spa for couples", category: "Romantic & Couples" },
+    { name: "Honeymoon Spa Bali", path: "/honeymoon-spa-bali", description: "Luxury wellness packages for newlyweds", category: "Romantic & Couples" },
+    { name: "Luxury Villa Wellness Bali", path: "/luxury-villa-wellness-bali", description: "Premium VIP spa experiences", category: "Romantic & Couples" },
+    { name: "Post-Yoga Recovery Massage", path: "/post-yoga-recovery-massage", description: "Specialized yoga recovery treatments", category: "Active Recovery" },
+    { name: "Uluwatu Surf Massage", path: "/uluwatu-surf-massage", description: "Surf recovery massage for wave riders", category: "Active Recovery" },
+    { name: "Post-Hike Recovery Massage Bali", path: "/post-hike-recovery-massage-bali", description: "Mountain trekking recovery", category: "Active Recovery" },
+    { name: "Detox Wellness Massage Bali", path: "/detox-wellness-massage-bali", description: "Lymphatic drainage treatments", category: "Wellness & Detox" },
+    { name: "Pregnancy Massage Bali", path: "/pregnancy-massage-bali", description: "Safe prenatal massage", category: "Wellness & Detox" },
+    { name: "Group Spa Day Bali", path: "/group-spa-day-bali", description: "Villa spa parties and group packages", category: "Group & Event" },
+    { name: "Mobile Spa Day Package Bali", path: "/mobile-spa-day-package-bali", description: "Complete spa day packages", category: "Group & Event" }
   ];
 
   const primaryAreas = [
@@ -262,6 +273,38 @@ const Sitemap = () => {
                 ))}
               </div>
             </div>
+
+            {/* Specialty Experiences & Packages */}
+            <div className="bg-white rounded-lg shadow-soft p-8 lg:col-span-2">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 bg-rose-500/20 rounded-lg flex items-center justify-center">
+                  <Waves className="w-6 h-6 text-rose-600" />
+                </div>
+                <h2 className="text-2xl font-bold text-spa-earth">Specialty Experiences & Packages</h2>
+              </div>
+              <p className="text-sm text-spa-stone mb-6">Curated wellness experiences for specific occasions and lifestyle needs</p>
+              
+              {/* Group by category */}
+              {['Romantic & Couples', 'Active Recovery', 'Wellness & Detox', 'Group & Event'].map((category) => (
+                <div key={category} className="mb-6 last:mb-0">
+                  <h3 className="font-semibold text-spa-earth mb-3 text-sm uppercase tracking-wide">{category}</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                    {specialtyExperiences
+                      .filter((exp) => exp.category === category)
+                      .map((exp, index) => (
+                        <Link 
+                          key={index}
+                          to={exp.path}
+                          className="flex flex-col p-3 rounded-lg hover:bg-rose-50 transition-all duration-300 border border-spa-cream"
+                        >
+                          <span className="text-spa-earth font-semibold mb-1 text-sm">{exp.name}</span>
+                          <span className="text-xs text-spa-stone">{exp.description}</span>
+                        </Link>
+                      ))}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* Quick Stats */}
@@ -271,9 +314,9 @@ const Sitemap = () => {
               <p className="text-spa-stone">Comprehensive coverage across Bali</p>
             </div>
             
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-6 max-w-5xl mx-auto">
               <div className="text-center">
-                <div className="text-3xl font-bold text-spa-gold mb-2">76+</div>
+                <div className="text-3xl font-bold text-spa-gold mb-2">86+</div>
                 <div className="text-sm text-spa-stone">Total Pages</div>
               </div>
               <div className="text-center">
@@ -285,8 +328,12 @@ const Sitemap = () => {
                 <div className="text-sm text-spa-stone">Service Areas</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-amber-600 mb-2">6</div>
-                <div className="text-sm text-spa-stone">Special Landing Pages</div>
+                <div className="text-3xl font-bold text-amber-600 mb-2">4</div>
+                <div className="text-sm text-spa-stone">SEO Landing Pages</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-rose-600 mb-2">10</div>
+                <div className="text-sm text-spa-stone">Specialty Experiences</div>
               </div>
             </div>
           </div>
