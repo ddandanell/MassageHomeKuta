@@ -87,6 +87,9 @@ import BerawaArea from "./pages/BerawaArea";
 import EchoBeachArea from "./pages/EchoBeachArea";
 import DenpasarArea from "./pages/DenpasarArea";
 
+// Special Landing Pages
+import MessageKutaBali from "./pages/MessageKutaBali";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -179,6 +182,9 @@ const App = () => (
             <Route path="/areas/berawa" element={<BerawaArea />} />
             <Route path="/areas/echo-beach" element={<EchoBeachArea />} />
             <Route path="/areas/denpasar" element={<DenpasarArea />} />
+            
+            {/* Special Landing Pages */}
+            <Route path="/message-kuta-bali" element={<MessageKutaBali />} />
             
             {/* 404 - Must be last */}
             <Route path="*" element={<NotFound />} />

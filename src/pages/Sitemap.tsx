@@ -61,6 +61,10 @@ const Sitemap = () => {
     { name: "Couples Massage Kuta", path: "/couples-massage-kuta", description: "Romantic synchronized treatments for couples" },
     { name: "Spa Near Me Kuta", path: "/spa-near-me-kuta", description: "Professional mobile spa service in Kuta" },
     { name: "Massage Therapist Kuta Bali", path: "/massage-therapist-kuta-bali", description: "Certified professional massage therapists" },
+    { name: "Massage Near Me Kuta", path: "/massage-near-me-kuta", description: "Find massage services near you in Kuta" },
+    { name: "Message Kuta Bali", path: "/message-kuta-bali", description: "Professional in-villa massage service in Kuta, Bali" },
+    { name: "Lymphatic Drainage Massage Ubud", path: "/services/lymphatic-drainage-massage-ubud", description: "Specialized lymphatic drainage in Ubud" },
+    { name: "Balinese Massage Kuta", path: "/services/balinese-massage-kuta", description: "Traditional Balinese massage in Kuta" }
     { name: "Message Kuta Bali", path: "/message-kuta-bali", description: "Professional massage services in Kuta" }
   ];
 
