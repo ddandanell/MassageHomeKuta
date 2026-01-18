@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { MessageCircle, Clock, Heart, Sparkles, Shield, Star, CheckCircle2, MapPin, ArrowRight, Camera, Gift } from "lucide-react";
+import { MessageCircle, Clock, Heart, Sparkles, Shield, Star, CheckCircle2, MapPin, Camera, Gift } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SITE_CONFIG } from "@/config/site";
 
