@@ -27,9 +27,36 @@ import PregnancyMassage from "./pages/PregnancyMassage";
 import FootReflexology from "./pages/FootReflexology";
 import JetLagRecoveryMassage from "./pages/JetLagRecoveryMassage";
 import LymphaticDrainageMassage from "./pages/LymphaticDrainageMassage";
+import SwedishMassage from "./pages/SwedishMassage";
+import SignatureMassage from "./pages/SignatureMassage";
+import HealingMassage from "./pages/HealingMassage";
+import StressReliefMassage from "./pages/StressReliefMassage";
+import BackPainMassage from "./pages/BackPainMassage";
+import ShoulderTensionMassage from "./pages/ShoulderTensionMassage";
+import HeadAndNeckMassage from "./pages/HeadAndNeckMassage";
+import MuscleRecoveryTherapy from "./pages/MuscleRecoveryTherapy";
+import TensionReleaseMassage from "./pages/TensionReleaseMassage";
+import BodyRelaxationTherapy from "./pages/BodyRelaxationTherapy";
+import RejuvenationMassage from "./pages/RejuvenationMassage";
+import HarmonyMassage from "./pages/HarmonyMassage";
+import TherapeuticTouchMassage from "./pages/TherapeuticTouchMassage";
+import EnergyBalancingMassage from "./pages/EnergyBalancingMassage";
+import SoothingOilMassage from "./pages/SoothingOilMassage";
+import HolisticBodyMassage from "./pages/HolisticBodyMassage";
+import RestorativeMassage from "./pages/RestorativeMassage";
+import ComfortMassage from "./pages/ComfortMassage";
+import GentleTouchMassage from "./pages/GentleTouchMassage";
+import PremiumSpaTreatment from "./pages/PremiumSpaTreatment";
+import RevitalizingMassage from "./pages/RevitalizingMassage";
+import RejuvenatingBodyTreatment from "./pages/RejuvenatingBodyTreatment";
+import CalmingBodyTreatment from "./pages/CalmingBodyTreatment";
+import SpaBodyTreatment from "./pages/SpaBodyTreatment";
 
 // SEO Landing Pages
 import MessageKutaBali from "./pages/MessageKutaBali";
+import CouplesMassageKuta from "./pages/CouplesMassageKuta";
+import SpaNearMeKuta from "./pages/SpaNearMeKuta";
+import MassageTherapistKutaBali from "./pages/MassageTherapistKutaBali";
 
 // Blog Pages
 import BlogHub from "./pages/BlogHub";
@@ -66,6 +93,9 @@ import BerawaArea from "./pages/BerawaArea";
 import EchoBeachArea from "./pages/EchoBeachArea";
 import DenpasarArea from "./pages/DenpasarArea";
 
+// Special Landing Pages
+import MessageKutaBali from "./pages/MessageKutaBali";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -90,6 +120,9 @@ const App = () => (
             
             {/* SEO Landing Pages */}
             <Route path="/message-kuta-bali" element={<MessageKutaBali />} />
+            <Route path="/couples-massage-kuta" element={<CouplesMassageKuta />} />
+            <Route path="/spa-near-me-kuta" element={<SpaNearMeKuta />} />
+            <Route path="/massage-therapist-kuta-bali" element={<MassageTherapistKutaBali />} />
             
             {/* Blog Pages */}
             <Route path="/blog" element={<BlogHub />} />
@@ -108,6 +141,30 @@ const App = () => (
             <Route path="/services/foot-reflexology" element={<FootReflexology />} />
             <Route path="/services/jet-lag-recovery-massage" element={<JetLagRecoveryMassage />} />
             <Route path="/services/lymphatic-drainage-massage" element={<LymphaticDrainageMassage />} />
+            <Route path="/services/swedish-massage" element={<SwedishMassage />} />
+            <Route path="/services/signature-massage" element={<SignatureMassage />} />
+            <Route path="/services/healing-massage" element={<HealingMassage />} />
+            <Route path="/services/stress-relief-massage" element={<StressReliefMassage />} />
+            <Route path="/services/back-pain-massage" element={<BackPainMassage />} />
+            <Route path="/services/shoulder-tension-massage" element={<ShoulderTensionMassage />} />
+            <Route path="/services/head-and-neck-massage" element={<HeadAndNeckMassage />} />
+            <Route path="/services/muscle-recovery-therapy" element={<MuscleRecoveryTherapy />} />
+            <Route path="/services/tension-release-massage" element={<TensionReleaseMassage />} />
+            <Route path="/services/body-relaxation-therapy" element={<BodyRelaxationTherapy />} />
+            <Route path="/services/rejuvenation-massage" element={<RejuvenationMassage />} />
+            <Route path="/services/harmony-massage" element={<HarmonyMassage />} />
+            <Route path="/services/therapeutic-touch-massage" element={<TherapeuticTouchMassage />} />
+            <Route path="/services/energy-balancing-massage" element={<EnergyBalancingMassage />} />
+            <Route path="/services/soothing-oil-massage" element={<SoothingOilMassage />} />
+            <Route path="/services/holistic-body-massage" element={<HolisticBodyMassage />} />
+            <Route path="/services/restorative-massage" element={<RestorativeMassage />} />
+            <Route path="/services/comfort-massage" element={<ComfortMassage />} />
+            <Route path="/services/gentle-touch-massage" element={<GentleTouchMassage />} />
+            <Route path="/services/premium-spa-treatment" element={<PremiumSpaTreatment />} />
+            <Route path="/services/revitalizing-massage" element={<RevitalizingMassage />} />
+            <Route path="/services/rejuvenating-body-treatment" element={<RejuvenatingBodyTreatment />} />
+            <Route path="/services/calming-body-treatment" element={<CalmingBodyTreatment />} />
+            <Route path="/services/spa-body-treatment" element={<SpaBodyTreatment />} />
             
             {/* Service Area/City Pages */}
             <Route path="/areas/kuta" element={<KutaArea />} />
@@ -137,6 +194,9 @@ const App = () => (
             <Route path="/areas/berawa" element={<BerawaArea />} />
             <Route path="/areas/echo-beach" element={<EchoBeachArea />} />
             <Route path="/areas/denpasar" element={<DenpasarArea />} />
+            
+            {/* Special Landing Pages */}
+            <Route path="/message-kuta-bali" element={<MessageKutaBali />} />
             
             {/* 404 - Must be last */}
             <Route path="*" element={<NotFound />} />
