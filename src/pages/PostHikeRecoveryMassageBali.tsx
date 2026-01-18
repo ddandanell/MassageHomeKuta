@@ -196,7 +196,7 @@ const PostHikeRecoveryMassageBali = () => {
               Post-Hike Recovery Massage
             </h1>
             <p className="text-lg md:text-xl mb-8 max-w-4xl mx-auto opacity-95 drop-shadow-md">
-              Relief After MountainSnow Treks – Specialized Hiking Recovery
+              Relief After Mountain Treks – Specialized Hiking Recovery
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button asChild size="lg" className="text-lg px-8 py-6 bg-white text-professional-navy hover:bg-white/90 shadow-xl">
@@ -257,7 +257,7 @@ const PostHikeRecoveryMassageBali = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-4xl md:text-5xl font-bold text-spa-earth mb-6">
-                Benefits After MountainSnow Trekking
+                Benefits After Mountain Trekking
               </h2>
               <p className="text-xl text-spa-stone max-w-3xl mx-auto">
                 Accelerate recovery and get back to enjoying Bali
