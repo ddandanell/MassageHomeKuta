@@ -210,6 +210,95 @@ const Services = () => {
           </div>
         </section>
 
+        {/* Specialty Services & Packages */}
+        <section className="py-24 bg-gradient-to-br from-professional-light via-white to-professional-cream">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-serif font-bold text-professional-navy mb-6">
+                Specialty Experiences & Packages
+              </h2>
+              <p className="text-xl text-professional-gray max-w-3xl mx-auto font-light">
+                Discover our curated wellness experiences designed for specific occasions and lifestyle needs
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              <Card className="group border-0 shadow-soft hover:shadow-elevated transition-all duration-500 bg-white rounded-xl overflow-hidden">
+                <CardHeader className="bg-gradient-to-br from-rose-50 to-pink-50 pb-4">
+                  <CardTitle className="text-professional-navy font-serif text-xl">
+                    Romantic & Couples
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="pt-6 space-y-3">
+                  <Link to="/couples-villa-massage-bali" className="block text-professional-navy hover:text-professional-green transition-colors">
+                    → Couples Villa Massage
+                  </Link>
+                  <Link to="/honeymoon-spa-bali" className="block text-professional-navy hover:text-professional-green transition-colors">
+                    → Honeymoon Spa Packages
+                  </Link>
+                  <Link to="/luxury-villa-wellness-bali" className="block text-professional-navy hover:text-professional-green transition-colors">
+                    → Luxury Villa Wellness
+                  </Link>
+                </CardContent>
+              </Card>
+
+              <Card className="group border-0 shadow-soft hover:shadow-elevated transition-all duration-500 bg-white rounded-xl overflow-hidden">
+                <CardHeader className="bg-gradient-to-br from-blue-50 to-cyan-50 pb-4">
+                  <CardTitle className="text-professional-navy font-serif text-xl">
+                    Active Recovery
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="pt-6 space-y-3">
+                  <Link to="/post-yoga-recovery-massage" className="block text-professional-navy hover:text-professional-green transition-colors">
+                    → Post-Yoga Recovery
+                  </Link>
+                  <Link to="/uluwatu-surf-massage" className="block text-professional-navy hover:text-professional-green transition-colors">
+                    → Surf Recovery Massage
+                  </Link>
+                  <Link to="/post-hike-recovery-massage-bali" className="block text-professional-navy hover:text-professional-green transition-colors">
+                    → Post-Hike Recovery
+                  </Link>
+                </CardContent>
+              </Card>
+
+              <Card className="group border-0 shadow-soft hover:shadow-elevated transition-all duration-500 bg-white rounded-xl overflow-hidden">
+                <CardHeader className="bg-gradient-to-br from-emerald-50 to-green-50 pb-4">
+                  <CardTitle className="text-professional-navy font-serif text-xl">
+                    Wellness & Detox
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="pt-6 space-y-3">
+                  <Link to="/detox-wellness-massage-bali" className="block text-professional-navy hover:text-professional-green transition-colors">
+                    → Detox Wellness Massage
+                  </Link>
+                  <Link to="/pregnancy-massage-bali" className="block text-professional-navy hover:text-professional-green transition-colors">
+                    → Pregnancy Massage
+                  </Link>
+                  <Link to="/services/lymphatic-drainage-massage" className="block text-professional-navy hover:text-professional-green transition-colors">
+                    → Lymphatic Drainage
+                  </Link>
+                </CardContent>
+              </Card>
+
+              <Card className="group border-0 shadow-soft hover:shadow-elevated transition-all duration-500 bg-white rounded-xl overflow-hidden">
+                <CardHeader className="bg-gradient-to-br from-amber-50 to-orange-50 pb-4">
+                  <CardTitle className="text-professional-navy font-serif text-xl">
+                    Group & Event
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="pt-6 space-y-3">
+                  <Link to="/group-spa-day-bali" className="block text-professional-navy hover:text-professional-green transition-colors">
+                    → Group Spa Day Packages
+                  </Link>
+                  <Link to="/mobile-spa-day-package-bali" className="block text-professional-navy hover:text-professional-green transition-colors">
+                    → Mobile Spa Day Package
+                  </Link>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
         {/* Additional Info */}
         <section className="py-16 bg-spa-cream/30">
           <div className="container mx-auto px-4 text-center">
