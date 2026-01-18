@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { MessageCircle, Clock, Heart, Shield, Star, CheckCircle2, MapPin, Smile } from "lucide-react";
+import { MessageCircle, Clock, Heart, Shield, Star, CheckCircle2, MapPin, Baby } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SITE_CONFIG } from "@/config/site";
 
@@ -96,7 +96,7 @@ const PregnancyMassageBali = () => {
   const features = [
     { icon: Heart, title: "Certified Prenatal Therapists", description: "Specialized training in safe pregnancy massage techniques and anatomy" },
     { icon: Shield, title: "Trimester-Specific Techniques", description: "Modified methods appropriate for each stage of pregnancy" },
-    { icon: Smile, title: "Specialized Pregnancy Cushions", description: "Comfortable side-lying positioning with support pillows" },
+    { icon: Baby, title: "Specialized Pregnancy Cushions", description: "Comfortable side-lying positioning with support pillows" },
     { icon: CheckCircle2, title: "Safe Pressure Points", description: "Avoid pressure points and deep tissue on unsafe areas" },
     { icon: Heart, title: "Gentle Relaxation Focus", description: "Calming techniques for stress relief and relaxation" },
     { icon: Shield, title: "Swelling & Pain Relief", description: "Focus on areas of discomfort unique to pregnancy" }

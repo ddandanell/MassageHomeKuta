@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { MessageCircle, Clock, Mountain, Shield, Star, CheckCircle2, MapPin, Zap } from "lucide-react";
+import { MessageCircle, Clock, MountainSnow, Shield, Star, CheckCircle2, MapPin, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SITE_CONFIG } from "@/config/site";
 
@@ -94,11 +94,11 @@ const PostHikeRecoveryMassageBali = () => {
   ];
 
   const features = [
-    { icon: Mountain, title: "Deep Tissue Leg Work", description: "Specialized focus on calves, thighs, and glutes stressed by mountain climbing" },
+    { icon: MountainSnow, title: "Deep Tissue Leg Work", description: "Specialized focus on calves, thighs, and glutes stressed by mountain climbing" },
     { icon: Shield, title: "Lower Back & Hip Relief", description: "Target areas that bear weight during long descents" },
     { icon: Zap, title: "Lactic Acid Release", description: "Techniques to help flush metabolic waste from muscle tissue" },
     { icon: CheckCircle2, title: "Stretching for Tight Muscles", description: "Assisted stretching to restore flexibility after hiking" },
-    { icon: Mountain, title: "Full Body Relaxation", description: "Complete relaxation after physical exertion" },
+    { icon: MountainSnow, title: "Full Body Relaxation", description: "Complete relaxation after physical exertion" },
     { icon: Shield, title: "Recovery Recommendations", description: "Anti-inflammatory guidance and stretching routines" }
   ];
 
@@ -189,14 +189,14 @@ const PostHikeRecoveryMassageBali = () => {
           </div>
           <div className="relative container mx-auto px-4 text-center z-10">
             <Badge className="mb-6 bg-spa-gold text-spa-earth px-4 py-2 text-sm">
-              <Mountain className="w-4 h-4 inline mr-2" />
+              <MountainSnow className="w-4 h-4 inline mr-2" />
               Recovery · Relief · Adventure
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-lg">
               Post-Hike Recovery Massage
             </h1>
             <p className="text-lg md:text-xl mb-8 max-w-4xl mx-auto opacity-95 drop-shadow-md">
-              Relief After Mountain Treks – Specialized Hiking Recovery
+              Relief After MountainSnow Treks – Specialized Hiking Recovery
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button asChild size="lg" className="text-lg px-8 py-6 bg-white text-professional-navy hover:bg-white/90 shadow-xl">
@@ -257,7 +257,7 @@ const PostHikeRecoveryMassageBali = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-4xl md:text-5xl font-bold text-spa-earth mb-6">
-                Benefits After Mountain Trekking
+                Benefits After MountainSnow Trekking
               </h2>
               <p className="text-xl text-spa-stone max-w-3xl mx-auto">
                 Accelerate recovery and get back to enjoying Bali

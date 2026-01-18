@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { MessageCircle, Clock, Droplets, Leaf, Shield, Star, CheckCircle2, MapPin } from "lucide-react";
+import { MessageCircle, Clock, Droplet, Leaf, Shield, Star, CheckCircle2, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SITE_CONFIG } from "@/config/site";
 
@@ -101,7 +101,7 @@ const DetoxWellnessMassageBali = () => {
   ];
 
   const features = [
-    { icon: Droplets, title: "Lymphatic Drainage", description: "Gentle techniques to support natural lymph flow and immune function" },
+    { icon: Droplet, title: "Lymphatic Drainage", description: "Gentle techniques to support natural lymph flow and immune function" },
     { icon: Leaf, title: "Detoxifying Strokes", description: "Specialized massage strokes designed to encourage toxin release" },
     { icon: Shield, title: "Lymph Node Focus", description: "Targeted work on key lymphatic system areas for optimal flow" },
     { icon: Leaf, title: "Natural Oil Blends", description: "Detox-supporting oils including eucalyptus, lemongrass, and juniper" },

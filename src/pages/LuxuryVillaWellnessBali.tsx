@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { MessageCircle, Clock, Crown, Sparkles, Shield, Star, CheckCircle2, MapPin } from "lucide-react";
+import { MessageCircle, Clock, Award, Sparkles, Shield, Star, CheckCircle2, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SITE_CONFIG } from "@/config/site";
 
@@ -100,7 +100,7 @@ const LuxuryVillaWellnessBali = () => {
   ];
 
   const features = [
-    { icon: Crown, title: "Master-Level Therapists", description: "Certified therapists with 10+ years experience in luxury spa settings" },
+    { icon: Award, title: "Master-Level Therapists", description: "Certified therapists with 10+ years experience in luxury spa settings" },
     { icon: Sparkles, title: "Premium Product Selection", description: "Luxury organic oils and exotic treatment products from around the world" },
     { icon: Sparkles, title: "Luxury Spa Ambiance", description: "Professional-grade music systems, premium aromatherapy, and spa environment" },
     { icon: CheckCircle2, title: "Premium Refreshments", description: "Exclusive beverages, premium herbal teas, and gourmet refreshments" },
@@ -198,7 +198,7 @@ const LuxuryVillaWellnessBali = () => {
           </div>
           <div className="relative container mx-auto px-4 text-center z-10">
             <Badge className="mb-6 bg-spa-gold text-spa-earth px-4 py-2 text-sm">
-              <Crown className="w-4 h-4 inline mr-2" />
+              <Award className="w-4 h-4 inline mr-2" />
               Premium · VIP · Exclusive
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-lg">

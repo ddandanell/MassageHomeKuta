@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { MessageCircle, Clock, Zap, Shield, Star, CheckCircle2, MapPin, Wave } from "lucide-react";
+import { MessageCircle, Clock, Zap, Shield, Star, CheckCircle2, MapPin, Waves } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SITE_CONFIG } from "@/config/site";
 
@@ -97,7 +97,7 @@ const UluwatuSurfMassage = () => {
     { icon: Zap, title: "Sport-Specific Techniques", description: "Massage techniques designed specifically for paddling and wave riding muscles" },
     { icon: Shield, title: "Shoulder & Back Focus", description: "Deep work on shoulders, lats, and back - the core of paddling power" },
     { icon: CheckCircle2, title: "Paddling Strain Relief", description: "Targeted relief for paddle fatigue and repetitive strain injuries" },
-    { icon: Wave, title: "Flexibility for Performance", description: "Stretching and mobility work to maintain your surfing performance" },
+    { icon: Waves, title: "Flexibility for Performance", description: "Stretching and mobility work to maintain your surfing performance" },
     { icon: Clock, title: "Same-Day Appointments", description: "Book directly after your surf session for optimal recovery" },
     { icon: Shield, title: "Anti-Inflammatory Care", description: "Techniques and recommendations to reduce inflammation and soreness" }
   ];
@@ -191,14 +191,14 @@ const UluwatuSurfMassage = () => {
           </div>
           <div className="relative container mx-auto px-4 text-center z-10">
             <Badge className="mb-6 bg-spa-gold text-spa-earth px-4 py-2 text-sm">
-              <Wave className="w-4 h-4 inline mr-2" />
+              <Waves className="w-4 h-4 inline mr-2" />
               Surf Recovery · Performance · Local
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-lg">
               Uluwatu Surf Massage
             </h1>
             <p className="text-lg md:text-xl mb-8 max-w-4xl mx-auto opacity-95 drop-shadow-md">
-              Recovery for Wave Riders – Specialized Paddling Muscle Relief
+              Recovery for Waves Riders – Specialized Paddling Muscle Relief
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button asChild size="lg" className="text-lg px-8 py-6 bg-white text-professional-navy hover:bg-white/90 shadow-xl">
@@ -289,7 +289,7 @@ const UluwatuSurfMassage = () => {
           <div className="container mx-auto px-4 max-w-4xl">
             <div className="text-center mb-12">
               <h2 className="text-4xl md:text-5xl font-bold text-spa-earth mb-6">
-                Perfect for Uluwatu Wave Riders
+                Perfect for Uluwatu Waves Riders
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -307,7 +307,7 @@ const UluwatuSurfMassage = () => {
               </Card>
               <Card className="bg-white border-0 shadow-soft">
                 <CardContent className="pt-6">
-                  <h3 className="font-semibold text-spa-earth mb-2">📍 Daily Wave Riders</h3>
+                  <h3 className="font-semibold text-spa-earth mb-2">📍 Daily Waves Riders</h3>
                   <p className="text-spa-stone text-sm">Surfers with multiple sessions a day needing advanced recovery</p>
                 </CardContent>
               </Card>
