@@ -13,10 +13,11 @@ const Header = () => {
   const navigationItems = [
     { href: "/", label: "Home", description: "Back to homepage" },
     { href: "/services", label: "Services", description: "View all massage services" },
-    { href: "/about", label: "About", description: "Our story & credentials" },
+    { href: "/packages", label: "Packages", description: "Special deals & packages" },
+    { href: "/areas", label: "Areas", description: "Service locations" },
     { href: "/reviews", label: "Reviews", description: "What clients say" },
-    { href: "/faq", label: "FAQ", description: "Common questions" },
-    { href: "/areas/kuta", label: "Areas", description: "Service locations" }
+    { href: "/about", label: "About", description: "Our story & credentials" },
+    { href: "/faq", label: "FAQ", description: "Common questions" }
   ];
 
   return (
@@ -48,16 +49,16 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
             {navigationItems.map((item, index) => (
-              <a 
+              <Link 
                 key={index}
-                href={item.href} 
+                to={item.href} 
                 className="text-sm font-medium text-professional-navy hover:text-professional-gold transition-colors relative group"
               >
                 {item.label}
                 <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 opacity-0 group-hover:opacity-100 transition-opacity bg-professional-navy text-white text-xs px-2 py-1 rounded whitespace-nowrap">
                   {item.description}
                 </div>
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -122,9 +123,9 @@ const Header = () => {
               {/* Navigation Links */}
               <nav className="flex flex-col gap-1 mb-6">
                 {navigationItems.map((item, index) => (
-                  <a
+                  <Link
                     key={index}
-                    href={item.href}
+                    to={item.href}
                     className="flex justify-between items-center py-3 px-4 rounded-lg hover:bg-professional-gold/5 transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
@@ -133,7 +134,7 @@ const Header = () => {
                       <div className="text-xs text-professional-gray">{item.description}</div>
                     </div>
                     <div className="text-professional-gold">→</div>
-                  </a>
+                  </Link>
                 ))}
               </nav>
 

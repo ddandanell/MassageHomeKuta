@@ -6,8 +6,9 @@ import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Heart, Users, Clock, Gift, Star } from "lucide-react";
+import { Heart, Users, Clock, Gift, Star, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
+import { SITE_CONFIG } from "@/config/site";
 
 const packages = [
   {
@@ -81,6 +82,9 @@ const packages = [
 ];
 
 const Packages = () => {
+  const whatsappMessage = "Hi! I'm interested in booking a massage package. Can you help me with availability?";
+  const whatsappUrl = `https://wa.me/${SITE_CONFIG.whatsapp.replace(/\D/g, '')}?text=${encodeURIComponent(whatsappMessage)}`;
+
   return (
     <div className="min-h-screen">
       <SiteMeta 
@@ -179,8 +183,11 @@ const Packages = () => {
                             </li>
                           ))}
                         </ul>
-                        <Button asChild className="w-full mt-6">
-                          <a href="/#booking">Book This Package</a>
+                        <Button asChild className="w-full mt-6 bg-gradient-to-r from-amber-400 to-yellow-500 hover:from-amber-500 hover:to-yellow-600 text-slate-900 font-semibold">
+                          <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                            <MessageCircle className="w-4 h-4 mr-2" />
+                            Book This Package
+                          </a>
                         </Button>
                       </div>
                     </CardContent>
@@ -199,7 +206,8 @@ const Packages = () => {
                   group size, and preferences. Contact us to discuss your requirements.
                 </p>
                 <Button asChild variant="outline" size="lg">
-                  <a href="https://wa.me/628112656869?text=I'd like to inquire about custom massage packages">
+                  <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                    <MessageCircle className="w-4 h-4 mr-2" />
                     Create Custom Package
                   </a>
                 </Button>

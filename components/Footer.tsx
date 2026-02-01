@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Phone, MapPin, Clock, Star, Shield, Award, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const whatsappNumber = "+62 811-2656-869";
@@ -128,49 +129,49 @@ const Footer = () => {
                 variant="ghost" 
                 className="w-full justify-start text-left p-0 h-auto hover:bg-white/10 hover:text-professional-gold text-white"
               >
-                <a href="/services">View All Services</a>
+                <Link to="/services">View All Services</Link>
               </Button>
               <Button 
                 asChild
                 variant="ghost" 
                 className="w-full justify-start text-left p-0 h-auto hover:bg-white/10 hover:text-professional-gold text-white"
               >
-                <a href="/areas">Service Areas</a>
+                <Link to="/areas">Service Areas</Link>
               </Button>
               <Button 
                 asChild
                 variant="ghost" 
                 className="w-full justify-start text-left p-0 h-auto hover:bg-white/10 hover:text-professional-gold text-white"
               >
-                <a href="/packages">Special Packages</a>
+                <Link to="/packages">Special Packages</Link>
               </Button>
               <Button 
                 asChild
                 variant="ghost" 
                 className="w-full justify-start text-left p-0 h-auto hover:bg-white/10 hover:text-professional-gold text-white"
               >
-                <a href="/#booking">Book Now</a>
+                <Link to="/therapists">Our Therapists</Link>
               </Button>
               <Button 
                 asChild
                 variant="ghost" 
                 className="w-full justify-start text-left p-0 h-auto hover:bg-white/10 hover:text-professional-gold text-white"
               >
-                <a href="/therapists">Our Therapists</a>
+                <Link to="/faq">FAQ</Link>
               </Button>
               <Button 
                 asChild
                 variant="ghost" 
                 className="w-full justify-start text-left p-0 h-auto hover:bg-white/10 hover:text-professional-gold text-white"
               >
-                <a href="/faq">FAQ</a>
+                <Link to="/reviews">Reviews</Link>
               </Button>
               <Button 
                 asChild
                 variant="ghost" 
                 className="w-full justify-start text-left p-0 h-auto hover:bg-white/10 hover:text-professional-gold text-white"
               >
-                <a href="/sitemap">Sitemap</a>
+                <Link to="/sitemap">Sitemap</Link>
               </Button>
             </div>
 
