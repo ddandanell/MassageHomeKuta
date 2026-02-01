@@ -65,7 +65,6 @@ const Sitemap = () => {
     { name: "Message Kuta Bali", path: "/message-kuta-bali", description: "Professional in-villa massage service in Kuta, Bali" },
     { name: "Lymphatic Drainage Massage Ubud", path: "/services/lymphatic-drainage-massage-ubud", description: "Specialized lymphatic drainage in Ubud" },
     { name: "Balinese Massage Kuta", path: "/services/balinese-massage-kuta", description: "Traditional Balinese massage in Kuta" }
-    { name: "Message Kuta Bali", path: "/message-kuta-bali", description: "Professional massage services in Kuta" }
   ];
 
   const specialtyExperiences = [

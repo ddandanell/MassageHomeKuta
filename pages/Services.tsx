@@ -7,61 +7,73 @@ import PageFAQSection from "@/components/PageFAQSection";
 import { servicesFaqs } from "@/data/pageFaqs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Clock, Star, Users, MapPin } from "lucide-react";
+import { Clock, Star, Users, MapPin, MessageCircle, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+import { SITE_CONFIG } from "@/config/site";
 
 const services = [
   {
-    name: "Traditional Balinese Massage Ubud",
+    name: "Traditional Balinese Massage",
+    slug: "balinese-massage",
     duration: "60-120 minutes",
-    price: "Starting from IDR 280K",
+    price: "Starting from IDR 350K",
     description: "Ancient healing technique combining gentle stretches, acupressure, and aromatherapy oils to restore balance and harmony.",
     benefits: ["Stress relief", "Improved circulation", "Deep relaxation", "Cultural experience"]
   },
   {
-    name: "Deep Tissue Massage Ubud",
+    name: "Deep Tissue Massage",
+    slug: "deep-tissue-massage",
     duration: "60-120 minutes", 
-    price: "Starting from IDR 320K",
+    price: "Starting from IDR 400K",
     description: "Therapeutic massage targeting deep muscle layers to release chronic tension and alleviate muscle pain.",
     benefits: ["Muscle pain relief", "Improved mobility", "Tension release", "Athletic recovery"]
   },
   {
-    name: "Aromatherapy Massage Ubud",
+    name: "Aromatherapy Massage",
+    slug: "aromatherapy-massage",
     duration: "60-120 minutes",
-    price: "Starting from IDR 304K", 
+    price: "Starting from IDR 350K", 
     description: "Relaxing massage using premium essential oils to promote emotional well-being and stress relief.",
     benefits: ["Emotional balance", "Stress reduction", "Better sleep", "Mood enhancement"]
   },
   {
-    name: "Hot Stone Massage Ubud",
+    name: "Hot Stone Massage",
+    slug: "hot-stone-massage",
     duration: "60-120 minutes",
-    price: "Starting from IDR 360K",
+    price: "Starting from IDR 500K",
     description: "Luxurious treatment using heated volcanic stones to melt away tension and promote deep relaxation.",
     benefits: ["Deep muscle relaxation", "Improved circulation", "Luxury experience", "Pain relief"]
   },
   {
-    name: "Thai Massage Ubud",
+    name: "Thai Massage",
+    slug: "thai-massage",
     duration: "60-120 minutes", 
-    price: "Starting from IDR 360K",
+    price: "Starting from IDR 450K",
     description: "Dynamic massage combining stretching, pressure points, and yoga-like movements for flexibility and energy.",
     benefits: ["Increased flexibility", "Energy boost", "Posture improvement", "Stress relief"]
   },
   {
-    name: "Four Hands Massage Ubud",
+    name: "Four Hands Massage",
+    slug: "four-hands-massage",
     duration: "60-120 minutes",
-    price: "Starting from IDR 520K",
+    price: "Starting from IDR 600K",
     description: "Ultimate luxury experience with two therapists working together, perfect for special occasions.",
     benefits: ["Ultimate relaxation", "Complete coverage", "Unique experience", "Deep restoration"]
   },
   {
-    name: "Lymphatic Drainage Massage Ubud",
+    name: "Lymphatic Drainage Massage",
+    slug: "lymphatic-drainage-massage",
     duration: "60-120 minutes",
-    price: "Starting from IDR 384K",
+    price: "Starting from IDR 450K",
     description: "Gentle rhythmic massage to stimulate lymphatic drainage, reduce swelling, and boost immunity.",
     benefits: ["Reduced swelling", "Detoxification", "Boosted immunity", "Post-flight recovery"]
   }
 ];
 
 const Services = () => {
+  const whatsappMessage = "Hi! I'm interested in booking a massage service. Can you help me choose the right treatment?";
+  const whatsappUrl = `https://wa.me/${SITE_CONFIG.whatsapp.replace(/\D/g, '')}?text=${encodeURIComponent(whatsappMessage)}`;
+
   return (
     <div className="min-h-screen">
       <SiteMeta 
@@ -106,19 +118,21 @@ const Services = () => {
               {services.map((service, index) => (
                 <Card key={index} className="bg-gradient-card border-0 shadow-soft hover:shadow-floating transition-all duration-300 flex flex-col">
                   <CardHeader>
-                    <CardTitle className="text-spa-earth text-xl">
-                      {service.name}
-                    </CardTitle>
+                    <Link to={`/services/${service.slug}`} className="hover:text-spa-gold transition-colors">
+                      <CardTitle className="text-spa-earth text-xl hover:text-spa-gold">
+                        {service.name}
+                      </CardTitle>
+                    </Link>
                     <CardDescription className="flex justify-between items-center text-spa-stone">
                       <span>{service.duration}</span>
                       <span className="font-semibold text-spa-gold">{service.price}</span>
                     </CardDescription>
                   </CardHeader>
-                  <CardContent className="flex-grow">
+                  <CardContent className="flex-grow flex flex-col">
                     <p className="text-spa-stone mb-4 leading-relaxed">
                       {service.description}
                     </p>
-                    <div className="space-y-2">
+                    <div className="space-y-2 mb-6">
                       <h4 className="font-semibold text-spa-earth">Benefits:</h4>
                       <ul className="text-sm text-spa-stone space-y-1">
                         {service.benefits.map((benefit, idx) => (
@@ -129,6 +143,20 @@ const Services = () => {
                         ))}
                       </ul>
                     </div>
+                    <div className="mt-auto space-y-2">
+                      <Button asChild className="w-full bg-gradient-to-r from-amber-400 to-yellow-500 hover:from-amber-500 hover:to-yellow-600 text-slate-900 font-semibold">
+                        <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                          <MessageCircle className="w-4 h-4 mr-2" />
+                          Book Now
+                        </a>
+                      </Button>
+                      <Button asChild variant="outline" className="w-full">
+                        <Link to={`/services/${service.slug}`}>
+                          <ArrowRight className="w-4 h-4 mr-2" />
+                          Learn More
+                        </Link>
+                      </Button>
+                    </div>
                   </CardContent>
                 </Card>
               ))}
@@ -136,7 +164,10 @@ const Services = () => {
 
             <div className="text-center mt-16">
               <Button asChild size="lg" className="text-lg px-8 py-4 bg-gradient-to-r from-amber-400 to-yellow-500 hover:from-amber-500 hover:to-yellow-600 text-slate-900 font-semibold shadow-xl">
-                <a href="/#booking">Book Now</a>
+                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="w-5 h-5 mr-2" />
+                  Book Your Massage Now
+                </a>
               </Button>
             </div>
           </div>
