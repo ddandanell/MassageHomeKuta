@@ -11,13 +11,13 @@ const Header = () => {
   const whatsappUrl = `https://wa.me/${SITE_CONFIG.whatsapp.replace(/\D/g, '')}?text=${encodeURIComponent(whatsappMessage)}`;
 
   const navigationItems = [
-    { href: "/", label: "Home", description: "Back to homepage" },
-    { href: "/services", label: "Services", description: "View all massage services" },
-    { href: "/packages", label: "Packages", description: "Special deals & packages" },
-    { href: "/areas", label: "Areas", description: "Service locations" },
-    { href: "/reviews", label: "Reviews", description: "What clients say" },
-    { href: "/about", label: "About", description: "Our story & credentials" },
-    { href: "/faq", label: "FAQ", description: "Common questions" }
+    { to: "/", label: "Home", description: "Back to homepage" },
+    { to: "/services", label: "Services", description: "View all massage services" },
+    { to: "/packages", label: "Packages", description: "Special deals & packages" },
+    { to: "/areas", label: "Areas", description: "Service locations" },
+    { to: "/reviews", label: "Reviews", description: "What clients say" },
+    { to: "/about", label: "About", description: "Our story & credentials" },
+    { to: "/faq", label: "FAQ", description: "Common questions" }
   ];
 
   return (
@@ -51,7 +51,7 @@ const Header = () => {
             {navigationItems.map((item, index) => (
               <Link 
                 key={index}
-                to={item.href} 
+                to={item.to} 
                 className="text-sm font-medium text-professional-navy hover:text-professional-gold transition-colors relative group"
               >
                 {item.label}
@@ -125,7 +125,7 @@ const Header = () => {
                 {navigationItems.map((item, index) => (
                   <Link
                     key={index}
-                    to={item.href}
+                    to={item.to}
                     className="flex justify-between items-center py-3 px-4 rounded-lg hover:bg-professional-gold/5 transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
