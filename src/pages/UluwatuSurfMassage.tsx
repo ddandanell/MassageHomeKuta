@@ -372,7 +372,7 @@ const UluwatuSurfMassage = () => {
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
               {serviceAreas.map((area, index) => (
-                <Link key={index} to={`/${area.slug}`} className="block">
+                <Link key={index} to={`/areas/${area.slug}`} className="block">
                   <Card className="bg-white border-0 shadow-soft hover:shadow-floating transition-all duration-300 text-center">
                     <CardContent className="pt-6">
                       <MapPin className="w-6 h-6 text-spa-gold mx-auto mb-2" />

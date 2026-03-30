@@ -307,12 +307,12 @@ const HoneymoonSpaBali = () => {
               {[
                 { name: "Seminyak Villas", slug: "seminyak" },
                 { name: "Uluwatu Cliffside", slug: "uluwatu" },
-                { name: "Ubud Jungle Retreats", slug: "ubud" },
+                { name: "Ungasan Private Villas", slug: "ungasan" },
                 { name: "Nusa Dua Beachfront", slug: "nusa-dua" },
                 { name: "Canggu Exclusive", slug: "canggu" },
                 { name: "Sanur Romantic", slug: "sanur" }
               ].map((area, index) => (
-                <Link key={index} to={`/${area.slug}`} className="block">
+                <Link key={index} to={`/areas/${area.slug}`} className="block">
                   <Card className="bg-white border-0 shadow-soft hover:shadow-floating transition-all duration-300 text-center">
                     <CardContent className="pt-6">
                       <MapPin className="w-6 h-6 text-spa-gold mx-auto mb-2" />

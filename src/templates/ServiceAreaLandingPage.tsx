@@ -12,6 +12,7 @@ import { ServiceAreaData } from "@/types/landingPageTypes";
 import { SITE_CONFIG } from "@/config/site";
 import { DESIGN_SYSTEM, generateWhatsAppUrl, generateBreadcrumbs } from "@/config/designSystem";
 import { Link } from "react-router-dom";
+import { serviceAreas as allServiceAreas } from "@/data/serviceAreas";
 
 interface ServiceAreaLandingPageProps {
   data: ServiceAreaData;
@@ -20,6 +21,11 @@ interface ServiceAreaLandingPageProps {
 const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
   const whatsappMessage = `Hi! I'm in ${data.name} and would like to book a massage service. Can you help me with availability?`;
   const whatsappUrl = generateWhatsAppUrl(whatsappMessage, SITE_CONFIG.whatsapp);
+  const nearbyAreaLinks = data.nearbyAreas
+    .map((areaName) =>
+      Object.values(allServiceAreas).find((area) => area.name === areaName)
+    )
+    .filter((area): area is ServiceAreaData => Boolean(area) && area.slug !== "ubud");
 
   const breadcrumbData = generateBreadcrumbs([
     { name: "Home", path: "/" },
@@ -199,9 +205,9 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
                 <div className="w-16 h-16 bg-spa-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Shield className="w-8 h-8 text-spa-gold" />
                 </div>
-                <h3 className="text-xl font-semibold text-spa-earth mb-4">Licensed & Insured</h3>
+                <h3 className="text-xl font-semibold text-spa-earth mb-4">Villa & Hotel Ready</h3>
                 <p className="text-spa-stone">
-                  All therapists are certified, background-checked, and insured. 100% safe and professional service.
+                  We bring the massage table, linens, oils, and setup so your booking works smoothly at villas, hotels, and private stays.
                 </p>
               </div>
 
@@ -209,14 +215,38 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
                 <div className="w-16 h-16 bg-spa-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="w-8 h-8 text-spa-gold" />
                 </div>
-                <h3 className="text-xl font-semibold text-spa-earth mb-4">Local Experts</h3>
+                <h3 className="text-xl font-semibold text-spa-earth mb-4">Area-Ready Routing</h3>
                 <p className="text-spa-stone">
-                  We've served hundreds of clients in {data.name}. We navigate the area efficiently and know all major locations.
+                  WhatsApp location confirmation helps our team plan around {data.name}'s villas, hotels, beach roads, and smaller access lanes.
                 </p>
               </div>
             </div>
           </div>
         </section>
+
+        {nearbyAreaLinks.length > 0 && (
+          <section className="py-12 bg-background">
+            <div className="container mx-auto px-4">
+              <h3 className="text-3xl font-bold text-spa-earth text-center mb-8">
+                Nearby Areas Guests Also Book
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
+                {nearbyAreaLinks.map((area) => (
+                  <Link key={area.slug} to={`/areas/${area.slug}`} className="block">
+                    <Card className={DESIGN_SYSTEM.cardStyles.standard}>
+                      <CardContent className="pt-6">
+                        <p className="text-spa-earth font-semibold mb-2">{area.name}</p>
+                        <p className="text-sm text-spa-stone">
+                          Explore service details, response times, and popular treatments in {area.name}.
+                        </p>
+                      </CardContent>
+                    </Card>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* Extended Content Sections - Only render if extendedContent is provided */}
         {data.extendedContent && (

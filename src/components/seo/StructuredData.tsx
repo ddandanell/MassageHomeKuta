@@ -97,7 +97,7 @@ const StructuredData = ({ type = "organization", data, includeReviews = false }:
             "longitude": SITE_CONFIG.geo.longitude
           },
           "areaServed": SITE_CONFIG.serviceAreas.map(area => ({
-            "@type": "City",
+            "@type": area.type || "Place",
             "name": area.name
           })),
           "openingHoursSpecification": {
@@ -132,9 +132,9 @@ const StructuredData = ({ type = "organization", data, includeReviews = false }:
         // Convert area served to proper City schema format
         const areaServed = serviceData?.areaServed 
           ? (Array.isArray(serviceData.areaServed) 
-              ? serviceData.areaServed.map(area => ({ "@type": "City", "name": area }))
-              : { "@type": "City", "name": serviceData.areaServed })
-          : SITE_CONFIG.serviceAreas.map(area => ({ "@type": "City", "name": area.name }));
+              ? serviceData.areaServed.map(area => ({ "@type": "Place", "name": area }))
+              : { "@type": "Place", "name": serviceData.areaServed })
+          : SITE_CONFIG.serviceAreas.map(area => ({ "@type": area.type || "Place", "name": area.name }));
 
         /**
          * Service Schema

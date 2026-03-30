@@ -8,7 +8,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { MessageCircle, Clock, MountainSnow, Shield, Star, CheckCircle2, MapPin, Zap } from "lucide-react";
-import { Link } from "react-router-dom";
 import { SITE_CONFIG } from "@/config/site";
 
 const PostHikeRecoveryMassageBali = () => {
@@ -166,6 +165,7 @@ const PostHikeRecoveryMassageBali = () => {
         description="Recover from Mount Batur or Mount Agung hikes with specialized post-hike massage. Leg muscle relief, fatigue recovery. Mobile service in Ubud area. Book recovery now!"
         keywords="post-hike recovery massage bali, mount batur massage, hiking recovery massage bali, mountain trek massage, post-trekking treatment bali, leg muscle massage bali"
         canonical="/post-hike-recovery-massage-bali/"
+        noindex
       />
       
       <script type="application/ld+json">
@@ -370,14 +370,14 @@ const PostHikeRecoveryMassageBali = () => {
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
               {serviceAreas.map((area, index) => (
-                <Link key={index} to={`/${area.slug}`} className="block">
+                <div key={index}>
                   <Card className="bg-white border-0 shadow-soft hover:shadow-floating transition-all duration-300 text-center">
                     <CardContent className="pt-6">
                       <MapPin className="w-6 h-6 text-spa-gold mx-auto mb-2" />
                       <p className="text-spa-earth font-semibold">{area.name}</p>
                     </CardContent>
                   </Card>
-                </Link>
+                </div>
               ))}
             </div>
           </div>

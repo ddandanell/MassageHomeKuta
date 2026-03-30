@@ -34,7 +34,7 @@ const PregnancyMassageBali = () => {
       },
       "priceRange": "500,000 - 700,000 IDR"
     },
-    "areaServed": ["Seminyak", "Canggu", "Ubud", "Sanur", "Nusa Dua"],
+    "areaServed": ["Seminyak", "Canggu", "Legian", "Sanur", "Nusa Dua"],
     "offers": [
       {
         "@type": "Offer",
@@ -119,7 +119,7 @@ const PregnancyMassageBali = () => {
   const serviceAreas = [
     { name: "Seminyak", slug: "seminyak" },
     { name: "Canggu", slug: "canggu" },
-    { name: "Ubud", slug: "ubud" },
+    { name: "Legian", slug: "legian" },
     { name: "Sanur", slug: "sanur" },
     { name: "Nusa Dua", slug: "nusa-dua" }
   ];
@@ -376,7 +376,7 @@ const PregnancyMassageBali = () => {
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
               {serviceAreas.map((area, index) => (
-                <Link key={index} to={`/${area.slug}`} className="block">
+                <Link key={index} to={`/areas/${area.slug}`} className="block">
                   <Card className="bg-white border-0 shadow-soft hover:shadow-floating transition-all duration-300 text-center">
                     <CardContent className="pt-6">
                       <MapPin className="w-6 h-6 text-spa-gold mx-auto mb-2" />
@@ -461,11 +461,11 @@ const PregnancyMassageBali = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-              <Link to="/ubud">
+              <Link to="/areas/legian">
                 <Card className="bg-white border-0 shadow-soft hover:shadow-floating transition-all duration-300">
                   <CardHeader>
-                    <CardTitle className="text-spa-earth">Ubud Wellness</CardTitle>
-                    <CardDescription>Explore Ubud wellness services</CardDescription>
+                    <CardTitle className="text-spa-earth">Legian Stays</CardTitle>
+                    <CardDescription>Explore Legian villa and hotel service</CardDescription>
                   </CardHeader>
                 </Card>
               </Link>
@@ -477,7 +477,7 @@ const PregnancyMassageBali = () => {
                   </CardHeader>
                 </Card>
               </Link>
-              <Link to="/seminyak">
+              <Link to="/areas/seminyak">
                 <Card className="bg-white border-0 shadow-soft hover:shadow-floating transition-all duration-300">
                   <CardHeader>
                     <CardTitle className="text-spa-earth">Seminyak Services</CardTitle>

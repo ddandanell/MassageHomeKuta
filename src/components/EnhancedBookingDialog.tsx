@@ -38,7 +38,7 @@ const durations = [
 
 const serviceAreas = [
   "Kuta", "Seminyak", "Legian", "Canggu", "Jimbaran", "Nusa Dua",
-  "Sanur", "Denpasar", "Ubud", "Uluwatu", "Pecatu", "Other"
+  "Sanur", "Denpasar", "Uluwatu", "Pecatu", "Ungasan", "Pererenan", "Other"
 ];
 
 const EnhancedBookingDialog = ({ trigger, triggerClassName }: EnhancedBookingDialogProps) => {

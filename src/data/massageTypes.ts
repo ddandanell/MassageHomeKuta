@@ -467,12 +467,12 @@ export const aromatherapyData: MassageTypeData = {
 export const lymphaticData: MassageTypeData = {
   name: "Lymphatic Drainage Massage",
   slug: "lymphatic-drainage-massage",
-  heroTitle: "Lymphatic Drainage Massage in Kuta – Detox & Wellness",
-  heroSubtitle: "Specialized lymphatic drainage massage to reduce swelling, boost immunity, and promote natural detoxification.",
-  metaTitle: "Lymphatic Drainage Massage in Kuta | Detox & Wellness",
-  metaDescription: "Book Lymphatic Drainage Massage in Kuta. Reduce swelling, boost immunity, promote detox. Mobile service to your villa. WhatsApp to book.",
-  keywords: "lymphatic drainage massage kuta, detox massage bali, reduce swelling massage, post-surgery massage, wellness massage kuta",
-  introText: "Experience the therapeutic benefits of lymphatic drainage massage in Kuta. This specialized gentle massage technique stimulates your lymphatic system to remove toxins, reduce swelling, and boost immune function. Perfect for post-flight recovery, detoxification, post-surgery recovery, or anyone seeking to improve their overall wellness. Our certified therapists use gentle, rhythmic movements to encourage lymph flow throughout your body.",
+  heroTitle: "Lymphatic Drainage Massage in Kuta – Post-Flight Relief & Wellness",
+  heroSubtitle: "Gentle lymphatic drainage massage for swelling, water retention, and travel recovery, delivered to your villa or hotel.",
+  metaTitle: "Lymphatic Drainage Massage in Kuta | Post-Flight Swelling Relief",
+  metaDescription: "Book lymphatic drainage massage in Kuta for post-flight swelling, bloating, and wellness support. Gentle mobile treatment for villas and hotels across key Bali stay areas.",
+  keywords: "lymphatic drainage massage kuta, post flight massage bali, reduce swelling massage, bloating massage bali, wellness massage kuta, villa massage swelling relief",
+  introText: "Experience the therapeutic benefits of lymphatic drainage massage in Kuta. This specialized gentle massage technique supports your lymphatic system to reduce swelling, ease post-flight bloating, and encourage natural fluid movement without heavy pressure. It is a strong fit for travelers settling into Bali after long-haul flights, guests noticing water retention from heat and humidity, people recovering from busy itineraries, and anyone looking for a lighter wellness-focused treatment in their villa or hotel. Our therapists use slow, rhythmic movements to encourage lymph flow while keeping the session calm, comfortable, and restorative.",
   benefits: [
     "Reduced swelling and water retention",
     "Enhanced immune system function",
@@ -527,6 +527,10 @@ export const lymphaticData: MassageTypeData = {
     {
       question: "How is lymphatic drainage different from regular massage?",
       answer: "Lymphatic drainage uses very light pressure and specific rhythmic movements to stimulate the lymphatic system. It's much gentler than traditional massage and focuses on fluid movement rather than muscle work."
+    },
+    {
+      question: "Is lymphatic drainage good after a long flight to Bali?",
+      answer: "Yes. This is one of our most requested post-flight treatments because it can help ease heavy legs, puffiness, bloating, and general travel fatigue after long-haul flights."
     },
     {
       question: "Will I see results after one session?",
@@ -645,11 +649,11 @@ export const hotStoneData: MassageTypeData = {
   name: "Hot Stone Massage",
   slug: "hot-stone-massage",
   heroTitle: "Hot Stone Massage in Kuta – Luxury Heated Stone Therapy",
-  heroSubtitle: "Indulgent hot stone massage using heated volcanic stones to melt tension and provide deep relaxation.",
-  metaTitle: "Hot Stone Massage in Kuta | Luxury Heated Stone Therapy",
-  metaDescription: "Book Hot Stone Massage in Kuta. Heated volcanic stones for deep relaxation and pain relief. Mobile luxury service. WhatsApp to book.",
-  keywords: "hot stone massage kuta, heated stone massage bali, luxury massage kuta, volcanic stone massage, spa treatment kuta",
-  introText: "Indulge in the ultimate luxury with hot stone massage in Kuta. Smooth, heated volcanic stones are placed on key points of your body and used by therapists to deliver deeply relaxing massage. The heat penetrates muscles, melting tension and promoting profound relaxation. This premium treatment combines the therapeutic benefits of heat therapy with traditional massage techniques for an unforgettable spa experience delivered to your villa or hotel.",
+  heroSubtitle: "Indulgent hot stone massage using heated volcanic stones to melt tension and deliver a slower, deeper villa or hotel spa experience.",
+  metaTitle: "Hot Stone Massage in Kuta | Luxury Villa & Hotel Spa Treatment",
+  metaDescription: "Book hot stone massage in Kuta for deep relaxation, muscle relief, and a premium in-villa spa session. Heated volcanic stones delivered to your villa or hotel by WhatsApp booking.",
+  keywords: "hot stone massage kuta, heated stone massage bali, luxury villa massage bali, volcanic stone massage, hotel spa treatment kuta",
+  introText: "Indulge in the ultimate luxury with hot stone massage in Kuta. Smooth, heated volcanic stones are placed on key points of your body and used by therapists to deliver deeply relaxing massage in the privacy of your villa or hotel. The heat penetrates tired muscles, helping the body unwind more quickly than hands alone. This treatment is especially popular for slower evening bookings, clifftop or poolside villa sessions, and travelers who want a premium spa feeling without leaving their accommodation.",
   benefits: [
     "Deep muscle relaxation through heat penetration",
     "Relief from chronic pain and muscle tension",
@@ -735,10 +739,10 @@ export const fourHandsData: MassageTypeData = {
   slug: "four-hands-massage",
   heroTitle: "Four Hands Massage in Kuta – Two Therapists, Double Bliss",
   heroSubtitle: "Synchronized massage by two therapists working in harmony. The ultimate luxury massage experience.",
-  metaTitle: "Four Hands Massage in Kuta | Two Therapists Synchronized",
-  metaDescription: "Book Four Hands Massage in Kuta. Two synchronized therapists for double relaxation. Ultimate luxury mobile service. WhatsApp to book.",
-  keywords: "four hands massage kuta, dual therapist massage bali, luxury spa treatment, synchronized massage, couples massage kuta",
-  introText: "Experience the pinnacle of massage luxury with four hands massage in Kuta. Two skilled therapists work in perfect synchronization, creating a choreographed massage experience that's deeply relaxing and utterly unique. The brain can't track both sets of hands, creating a meditative state of pure relaxation. Perfect for special occasions, ultimate self-care, or anyone seeking the most indulgent massage experience available.",
+  metaTitle: "Four Hands Massage in Kuta | Luxury Two-Therapist Villa Massage",
+  metaDescription: "Book four hands massage in Kuta for a premium two-therapist treatment in your villa or hotel. Ideal for birthdays, honeymoons, and special occasion bookings by WhatsApp.",
+  keywords: "four hands massage kuta, dual therapist massage bali, luxury villa massage bali, synchronized massage, special occasion massage kuta",
+  introText: "Experience the pinnacle of massage luxury with four hands massage in Kuta. Two skilled therapists work in perfect synchronization, creating a choreographed treatment that is deeply relaxing and hard to replicate in a standard spa visit. Because your brain cannot track both sets of hands at once, the experience often feels more immersive and meditative than a regular massage. It is a strong choice for special occasions, premium villa stays, birthdays, honeymoons, and anyone wanting a standout in-room treatment.",
   benefits: [
     "Profound state of relaxation",
     "Meditative mental state",

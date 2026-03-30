@@ -20,6 +20,7 @@ interface MassageTypeLandingPageProps {
 const MassageTypeLandingPage = ({ data }: MassageTypeLandingPageProps) => {
   const whatsappMessage = `Hi! I'd like to book a ${data.name} service in Kuta. Can you help me with availability?`;
   const whatsappUrl = generateWhatsAppUrl(whatsappMessage, SITE_CONFIG.whatsapp);
+  const coverageAreas = SITE_CONFIG.serviceAreas.map((area) => area.name);
 
   const breadcrumbData = generateBreadcrumbs([
     { name: "Home", path: "/" },
@@ -32,7 +33,7 @@ const MassageTypeLandingPage = ({ data }: MassageTypeLandingPageProps) => {
     name: `${data.name} in Kuta - In-Villa Mobile Massage Service`,
     description: data.introText ? data.introText.substring(0, 200) + "..." : `Professional ${data.name} delivered to your villa or hotel in Kuta, Bali.`,
     serviceType: data.name,
-    areaServed: ["Kuta", "Legian", "Tuban", "Seminyak"],
+    areaServed: coverageAreas,
     offers: {
       priceRange: data.packages && data.packages.length > 1
         ? `${data.packages[0].price} - ${data.packages[data.packages.length - 1].price}`
@@ -180,12 +181,32 @@ const MassageTypeLandingPage = ({ data }: MassageTypeLandingPageProps) => {
           <div className={`${DESIGN_SYSTEM.spacing.container} text-center`}>
             <MapPin className={`${DESIGN_SYSTEM.iconSizes.xlarge} mx-auto mb-4`} />
             <h3 className={`${DESIGN_SYSTEM.typography.subsectionTitle} mb-4`}>
-              Serving All of Kuta & Surrounding Areas
+              Serving Kuta, Legian, Seminyak, Uluwatu, and Nearby Bali Stays
             </h3>
             <p className={`${DESIGN_SYSTEM.typography.body} max-w-3xl mx-auto opacity-95`}>
-              We provide {data.name} across Kuta, Legian, Tuban, and Seminyak's southern border.
-              Fast response times and professional equipment delivered to your villa or hotel.
+              We provide {data.name} across {coverageAreas.slice(0, 6).join(", ")}, plus nearby serviced areas.
+              Book by WhatsApp and our team brings the massage table, linens, oils, and setup to your villa or hotel.
             </p>
+          </div>
+        </section>
+
+        <section className="py-12 bg-spa-cream/30">
+          <div className="container mx-auto px-4">
+            <h3 className="text-3xl font-bold text-spa-earth text-center mb-8">
+              Popular Areas for This Treatment
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
+              {SITE_CONFIG.priorityAreaLinks.map((area) => (
+                <Link key={area.path} to={area.path} className="block">
+                  <Card className={DESIGN_SYSTEM.cardStyles.standard}>
+                    <CardContent className="pt-6">
+                      <p className="text-spa-earth font-semibold mb-2">{area.name}</p>
+                      <p className="text-sm text-spa-stone">{area.description}</p>
+                    </CardContent>
+                  </Card>
+                </Link>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -264,25 +285,24 @@ const MassageTypeLandingPage = ({ data }: MassageTypeLandingPageProps) => {
         <section className="py-12 bg-background">
           <div className="container mx-auto px-4 text-center max-w-4xl">
             <h3 className="text-2xl font-bold text-spa-earth mb-6">
-              Trusted by Travelers Worldwide
+              Clear Booking, On-Site Setup, and Private Service
             </h3>
             <p className="text-spa-stone text-lg mb-8">
-              We serve guests staying at villas and hotels across Kuta, including properties near Waterbom Park,
-              Beachwalk Mall, Discovery Mall, and along Kuta Beach. Our therapists are familiar with all major
-              accommodation areas and can find you quickly.
+              Guests book this treatment for villas, hotels, and private stays across Kuta and nearby Bali areas.
+              We confirm the location by WhatsApp, bring the full setup, and keep the experience private and simple.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-sm text-spa-stone">
               <div className="flex items-center gap-2">
                 <Star className="w-4 h-4 text-spa-gold" />
-                <span>500+ Monthly Sessions</span>
+                <span>WhatsApp-first booking confirmation</span>
               </div>
               <div className="flex items-center gap-2">
                 <Users className="w-4 h-4 text-spa-gold" />
-                <span>2,500+ Happy Clients</span>
+                <span>Villa and hotel-ready equipment</span>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-spa-gold" />
-                <span>45+ Countries Served</span>
+                <span>Coverage across core Bali stay areas</span>
               </div>
             </div>
           </div>

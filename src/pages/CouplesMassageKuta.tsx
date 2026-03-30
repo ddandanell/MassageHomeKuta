@@ -86,7 +86,7 @@ const CouplesMassageKuta = () => {
   const extendedServiceAreas = [
     { name: "Canggu", slug: "canggu", response: "30-45 minutes" },
     { name: "Sanur", slug: "sanur", response: "40-60 minutes" },
-    { name: "Ubud", slug: "ubud", response: "60-90 minutes" },
+    { name: "Pererenan", slug: "pererenan", response: "35-50 minutes" },
     { name: "Nusa Dua", slug: "nusa-dua", response: "45-60 minutes" },
     { name: "Jimbaran", slug: "jimbaran", response: "35-50 minutes" },
     { name: "Uluwatu", slug: "uluwatu", response: "50-70 minutes" },
@@ -129,7 +129,7 @@ const CouplesMassageKuta = () => {
     },
     {
       question: "Do you provide couples massage to all hotels in Kuta?",
-      answer: "Yes. We provide couples massage service to virtually all hotels, resorts, villas, and private accommodations throughout Kuta, Legian, Seminyak, and 27 additional Bali areas. Some larger resorts require advance notification or entry procedures – provide your hotel name when booking for smooth coordination."
+      answer: "Yes. We provide couples massage service to hotels, resorts, villas, and private accommodations throughout Kuta, Legian, Seminyak, and nearby Bali stay areas. Some larger resorts require advance notification or entry procedures, so sharing your hotel or villa name helps us coordinate smoothly."
     },
     {
       question: "Can we talk during couples massage?",
@@ -149,7 +149,7 @@ const CouplesMassageKuta = () => {
     },
     {
       question: "What areas of Bali do you serve for couples massage?",
-      answer: "We provide couples massage throughout Kuta, Legian, Seminyak, Canggu, Sanur, Ubud, Nusa Dua, Jimbaran, Uluwatu, and 18 additional areas across Bali. View complete service area coverage with response times."
+      answer: "We provide couples massage throughout Kuta, Legian, Seminyak, Canggu, Pererenan, Sanur, Nusa Dua, Jimbaran, and Uluwatu. View our service area coverage and response-time guidance for the latest availability."
     },
     {
       question: "How often should couples get massage together?",
@@ -348,7 +348,7 @@ const CouplesMassageKuta = () => {
                 Service Areas for Couples Massage Throughout Kuta & Bali
               </h2>
               <p className="text-xl text-spa-stone max-w-3xl mx-auto">
-                We provide romantic couples massage services throughout Kuta and 27 additional areas across Bali with varying response times based on location.
+                We provide romantic couples massage services throughout Kuta and selected Bali villa areas with response times that vary by location.
               </p>
             </div>
 
@@ -471,5 +471,4 @@ const CouplesMassageKuta = () => {
 };
 
 export default CouplesMassageKuta;
-
 

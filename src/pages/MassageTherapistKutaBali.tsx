@@ -158,7 +158,7 @@ const MassageTherapistKutaBali = () => {
   ];
 
   const specialRequestAreas = [
-    { name: "Ubud", slug: "ubud", response: "60-90 minutes" },
+    { name: "Ungasan", slug: "ungasan", response: "55-70 minutes" },
     { name: "Denpasar", slug: "denpasar", response: "60-90 minutes" },
     { name: "Pererenan", slug: "pererenan", response: "60-90 minutes" },
     { name: "Echo Beach", slug: "echo-beach", response: "60-90 minutes" }
@@ -171,7 +171,7 @@ const MassageTherapistKutaBali = () => {
     },
     {
       question: "How quickly can a massage therapist arrive in Kuta?",
-      answer: "For bookings in Kuta, Legian, and Seminyak, our massage therapists typically arrive within 20-35 minutes of booking confirmation. Same-day appointments are available from 9 AM to 11 PM daily. For areas like Canggu or Ubud, expect 40-90 minute response times depending on therapist availability and traffic."
+      answer: "For bookings in Kuta, Legian, and Seminyak, our massage therapists typically arrive within 20-35 minutes of booking confirmation. Same-day appointments are available from 9 AM to 11 PM daily. For areas like Canggu, Pererenan, or Uluwatu, expect longer response times depending on therapist availability and traffic."
     },
     {
       question: "What should I prepare before the massage therapist arrives?",
@@ -603,4 +603,3 @@ const MassageTherapistKutaBali = () => {
 };
 
 export default MassageTherapistKutaBali;
-

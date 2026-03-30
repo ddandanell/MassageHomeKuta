@@ -105,9 +105,9 @@ const Services = () => {
   return (
     <div className="min-h-screen bg-background">
       <SiteMeta
-        title="Massage Services in Kuta, Bali - In-Villa & Hotel Treatments"
-        description="Explore massage services in Kuta including Balinese, deep tissue, aromatherapy, hot stone, pregnancy, and recovery treatments. Certified therapists deliver spa-quality care to your villa or hotel."
-        keywords="massage services kuta, in-villa massage bali, hotel massage kuta, balinese massage kuta, deep tissue massage bali, pregnancy massage kuta, four hands massage bali"
+        title="Massage Services in Kuta, Bali | Villa, Hotel & Same-Day Booking"
+        description="Compare home massage services in Kuta, Legian, Seminyak, Uluwatu, and nearby Bali areas. Book Balinese, deep tissue, hot stone, lymphatic, pregnancy, and four hands treatments by WhatsApp."
+        keywords="massage services kuta, home massage services bali, villa massage kuta, hotel massage bali, lymphatic drainage massage kuta, hot stone massage bali, four hands massage kuta"
         canonical="/services"
       />
 
@@ -132,8 +132,21 @@ const Services = () => {
               In-Villa Massage Treatments in Kuta
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-95 drop-shadow-md font-light tracking-wide">
-              Professional massage treatments delivered to your villa or hotel in Kuta. Choose from traditional Balinese, therapeutic deep tissue, aromatherapy, and specialized treatments designed for travelers, couples, and recovery-focused guests.
+              Professional massage treatments delivered to your villa or hotel in Kuta. Choose from traditional Balinese, therapeutic deep tissue, aromatherapy, and specialized treatments designed for travelers, couples, recovery-focused guests, and same-day bookings across Bali stay areas.
             </p>
+          </div>
+        </section>
+
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-professional-navy mb-6">
+                Choose the Right Treatment for Your Stay
+              </h2>
+              <p className="text-lg text-professional-gray leading-relaxed">
+                Guests usually book by need: deep recovery after flights or surfing, a calmer in-villa treatment for sleep and stress, or a premium experience for couples and special occasions. WhatsApp booking keeps it simple, and our team confirms the best fit for your location and schedule.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -206,6 +219,104 @@ const Services = () => {
               <Button asChild size="lg" className="text-lg px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold shadow-xl">
                 <a href="/#booking">Book Your Massage Today</a>
               </Button>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20 bg-professional-light/40">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl md:text-5xl font-serif font-bold text-professional-navy mb-6">
+                Popular for Travel Recovery and Special Plans
+              </h2>
+              <p className="text-xl text-professional-gray max-w-3xl mx-auto font-light">
+                These pages are getting traction in search, so we’re making them easier to reach from the main services hub.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+              <Card className="bg-white border-0 shadow-soft">
+                <CardHeader>
+                  <CardTitle className="text-professional-navy">Post-Flight Swelling & Detox</CardTitle>
+                  <CardDescription>Lighter, gentler treatment for bloating, water retention, and long-haul travel fatigue.</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Button asChild variant="outline" className="w-full">
+                    <Link to="/services/lymphatic-drainage-massage">View Lymphatic Drainage</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white border-0 shadow-soft">
+                <CardHeader>
+                  <CardTitle className="text-professional-navy">Luxury Villa Unwinding</CardTitle>
+                  <CardDescription>Heated stone therapy for slower evenings, sunset bookings, and deeper relaxation.</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Button asChild variant="outline" className="w-full">
+                    <Link to="/services/hot-stone-massage">View Hot Stone Massage</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white border-0 shadow-soft">
+                <CardHeader>
+                  <CardTitle className="text-professional-navy">Special Occasion Booking</CardTitle>
+                  <CardDescription>Two-therapist treatment for honeymoons, birthdays, and premium in-villa experiences.</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Button asChild variant="outline" className="w-full">
+                    <Link to="/services/four-hands-massage">View Four Hands Massage</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl md:text-5xl font-serif font-bold text-professional-navy mb-6">
+                Popular Booking Areas
+              </h2>
+              <p className="text-xl text-professional-gray max-w-3xl mx-auto font-light">
+                These area pages are already surfacing in search and deserve stronger support from the core services hub.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+              {[
+                {
+                  name: "Legian",
+                  path: "/areas/legian",
+                  description: "Fast-response hotel and villa service near Kuta Beach."
+                },
+                {
+                  name: "Pererenan",
+                  path: "/areas/pererenan",
+                  description: "Quiet north Canggu stays and post-surf recovery bookings."
+                },
+                {
+                  name: "Uluwatu",
+                  path: "/areas/uluwatu",
+                  description: "Clifftop villas, surf stays, and sunset appointment demand."
+                },
+                {
+                  name: "Ungasan",
+                  path: "/areas/ungasan",
+                  description: "Private Bukit villas and slower-paced in-villa wellness sessions."
+                }
+              ].map((area) => (
+                <Link key={area.path} to={area.path} className="block">
+                  <Card className="bg-white border border-professional-navy/10 shadow-soft hover:shadow-elevated transition-all duration-300 h-full">
+                    <CardHeader>
+                      <CardTitle className="text-professional-navy">{area.name}</CardTitle>
+                      <CardDescription>{area.description}</CardDescription>
+                    </CardHeader>
+                  </Card>
+                </Link>
+              ))}
             </div>
           </div>
         </section>

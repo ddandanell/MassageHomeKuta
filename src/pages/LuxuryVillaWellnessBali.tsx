@@ -34,7 +34,7 @@ const LuxuryVillaWellnessBali = () => {
       },
       "priceRange": "1,250,000 - 2,450,000 IDR"
     },
-    "areaServed": ["Seminyak", "Uluwatu", "Ubud", "Nusa Dua", "Canggu"],
+    "areaServed": ["Seminyak", "Uluwatu", "Ungasan", "Nusa Dua", "Canggu"],
     "offers": [
       {
         "@type": "Offer",
@@ -126,7 +126,7 @@ const LuxuryVillaWellnessBali = () => {
   const serviceAreas = [
     { name: "Seminyak", slug: "seminyak" },
     { name: "Uluwatu", slug: "uluwatu" },
-    { name: "Ubud", slug: "ubud" },
+    { name: "Ungasan", slug: "ungasan" },
     { name: "Nusa Dua", slug: "nusa-dua" },
     { name: "Canggu", slug: "canggu" }
   ];
@@ -379,7 +379,7 @@ const LuxuryVillaWellnessBali = () => {
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
               {serviceAreas.map((area, index) => (
-                <Link key={index} to={`/${area.slug}`} className="block">
+                <Link key={index} to={`/areas/${area.slug}`} className="block">
                   <Card className="bg-white border-0 shadow-soft hover:shadow-floating transition-all duration-300 text-center">
                     <CardContent className="pt-6">
                       <MapPin className="w-6 h-6 text-spa-gold mx-auto mb-2" />

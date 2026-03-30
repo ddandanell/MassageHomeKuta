@@ -55,13 +55,43 @@ export const SITE_CONFIG = {
   // Service Areas (All locations we serve)
   // Used in LocalBusiness areaServed and Service schema
   serviceAreas: [
-    { name: "Kuta", type: "City" },
-    { name: "Seminyak", type: "City" },
-    { name: "Legian", type: "City" },
-    { name: "Canggu", type: "City" },
-    { name: "Jimbaran", type: "City" },
-    { name: "Nusa Dua", type: "City" },
-    { name: "Tuban", type: "City" }
+    { name: "Kuta", type: "Place" },
+    { name: "Legian", type: "Place" },
+    { name: "Seminyak", type: "Place" },
+    { name: "Tuban", type: "Place" },
+    { name: "Canggu", type: "Place" },
+    { name: "Pererenan", type: "Place" },
+    { name: "Kerobokan", type: "Place" },
+    { name: "Petitenget", type: "Place" },
+    { name: "Jimbaran", type: "Place" },
+    { name: "Nusa Dua", type: "Place" },
+    { name: "Sanur", type: "Place" },
+    { name: "Uluwatu", type: "Place" },
+    { name: "Pecatu", type: "Place" },
+    { name: "Ungasan", type: "Place" }
+  ],
+
+  priorityAreaLinks: [
+    {
+      name: "Legian",
+      path: "/areas/legian",
+      description: "Fast-response hotel and villa bookings close to Kuta Beach."
+    },
+    {
+      name: "Pererenan",
+      path: "/areas/pererenan",
+      description: "Quiet north Canggu villas with growing search demand."
+    },
+    {
+      name: "Uluwatu",
+      path: "/areas/uluwatu",
+      description: "Clifftop stays, surf recovery, and sunset-friendly villa sessions."
+    },
+    {
+      name: "Ungasan",
+      path: "/areas/ungasan",
+      description: "Private Bukit villas and secluded mobile spa bookings."
+    }
   ],
   
   // Social Media Profiles (Schema.org sameAs property)

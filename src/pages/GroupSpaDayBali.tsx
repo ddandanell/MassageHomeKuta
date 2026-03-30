@@ -34,7 +34,7 @@ const GroupSpaDayBali = () => {
       },
       "priceRange": "325,000 - 350,000 IDR per person"
     },
-    "areaServed": ["Seminyak", "Canggu", "Ubud", "Uluwatu", "Sanur", "Nusa Dua"],
+    "areaServed": ["Seminyak", "Canggu", "Pererenan", "Uluwatu", "Sanur", "Nusa Dua"],
     "offers": [
       {
         "@type": "Offer",
@@ -129,7 +129,7 @@ const GroupSpaDayBali = () => {
   const serviceAreas = [
     { name: "Seminyak", slug: "seminyak" },
     { name: "Canggu", slug: "canggu" },
-    { name: "Ubud", slug: "ubud" },
+    { name: "Pererenan", slug: "pererenan" },
     { name: "Uluwatu", slug: "uluwatu" },
     { name: "Sanur", slug: "sanur" },
     { name: "Nusa Dua", slug: "nusa-dua" }
@@ -387,7 +387,7 @@ const GroupSpaDayBali = () => {
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
               {serviceAreas.map((area, index) => (
-                <Link key={index} to={`/${area.slug}`} className="block">
+                <Link key={index} to={`/areas/${area.slug}`} className="block">
                   <Card className="bg-white border-0 shadow-soft hover:shadow-floating transition-all duration-300 text-center">
                     <CardContent className="pt-6">
                       <MapPin className="w-6 h-6 text-spa-gold mx-auto mb-2" />

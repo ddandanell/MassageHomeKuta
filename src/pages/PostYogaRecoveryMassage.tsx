@@ -106,7 +106,7 @@ const PostYogaRecoveryMassage = () => {
               </Button>
               <div className="flex items-center gap-2 text-sm">
                 <Clock className="w-4 h-4" />
-                <span>Available in Ubud & Canggu</span>
+                <span>Available in Pererenan, Canggu & Sanur</span>
               </div>
             </div>
           </div>
@@ -246,12 +246,12 @@ const PostYogaRecoveryMassage = () => {
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
               {[
-                { name: "Ubud", slug: "ubud" },
+                { name: "Pererenan", slug: "pererenan" },
                 { name: "Canggu", slug: "canggu" },
                 { name: "Seminyak", slug: "seminyak" },
                 { name: "Sanur", slug: "sanur" }
               ].map((area, index) => (
-                <Link key={index} to={`/${area.slug}`} className="block">
+                <Link key={index} to={`/areas/${area.slug}`} className="block">
                   <Card className="bg-white border-0 shadow-soft hover:shadow-floating transition-all duration-300 text-center">
                     <CardContent className="pt-6">
                       <MapPin className="w-6 h-6 text-spa-gold mx-auto mb-2" />

@@ -119,7 +119,7 @@ const SpaNearMeKuta = () => {
   const extendedServiceAreas = [
     { name: "Canggu", slug: "canggu", response: "30-45 minutes" },
     { name: "Sanur", slug: "sanur", response: "40-60 minutes" },
-    { name: "Ubud", slug: "ubud", response: "60-90 minutes" },
+    { name: "Pererenan", slug: "pererenan", response: "35-50 minutes" },
     { name: "Nusa Dua", slug: "nusa-dua", response: "45-60 minutes" },
     { name: "Jimbaran", slug: "jimbaran", response: "35-50 minutes" },
     { name: "Uluwatu", slug: "uluwatu", response: "50-70 minutes" },
@@ -142,11 +142,11 @@ const SpaNearMeKuta = () => {
     },
     {
       question: "Do you provide spa service to all hotels in Kuta?",
-      answer: "Absolutely. We deliver professional spa treatments to virtually all hotels, resorts, villas, guesthouses, and private accommodations throughout Kuta, Legian, Seminyak, and 27 additional Bali areas. Some larger resorts require advance notification for entry procedures – simply provide your hotel name when booking."
+      answer: "Absolutely. We deliver professional spa treatments to hotels, resorts, villas, guesthouses, and private accommodations throughout Kuta, Legian, Seminyak, and nearby Bali stay areas. Some larger resorts require advance notification for entry procedures, so sharing your hotel name when booking helps us coordinate smoothly."
     },
     {
       question: "What areas do you cover for mobile spa service?",
-      answer: "We provide spa near me service throughout Kuta, Legian, Seminyak, Canggu, Sanur, Ubud, Nusa Dua, Jimbaran, Uluwatu, and 18 additional areas across Bali. View complete service area coverage with response times."
+      answer: "We provide spa near me service throughout Kuta, Legian, Seminyak, Canggu, Pererenan, Sanur, Nusa Dua, Jimbaran, and Uluwatu. View our complete service area coverage and response times for the latest booking guidance."
     },
     {
       question: "Are your spa therapists certified and professional?",
@@ -224,7 +224,7 @@ const SpaNearMeKuta = () => {
               Spa Near Me – Professional Mobile Spa Service in Kuta
             </h1>
             <p className="text-lg md:text-xl mb-8 max-w-4xl mx-auto opacity-95 drop-shadow-md">
-              Stop searching and start relaxing. Home Massage Kuta brings professional spa treatments directly to your villa, hotel room, or private accommodation throughout Kuta and 27 additional areas across Bali.
+              Stop searching and start relaxing. Home Massage Kuta brings professional spa treatments directly to your villa, hotel room, or private accommodation throughout Kuta and nearby Bali stay areas.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button asChild size="lg" className="text-lg px-8 py-6 bg-white text-professional-navy hover:bg-white/90 shadow-xl">
@@ -382,7 +382,7 @@ const SpaNearMeKuta = () => {
                 Spa Near Me Service Areas Throughout Kuta & Bali
               </h2>
               <p className="text-xl text-spa-stone max-w-3xl mx-auto">
-                We provide professional mobile spa services throughout Kuta and 27 additional areas across Bali with varying response times based on your location.
+                We provide professional mobile spa services throughout Kuta and selected Bali areas with response times that vary by your location.
               </p>
             </div>
 
@@ -492,7 +492,7 @@ const SpaNearMeKuta = () => {
             </div>
 
             <p className="text-lg opacity-90 max-w-3xl mx-auto">
-              Whether you need post-flight recovery, vacation relaxation, stress relief, therapeutic treatment, or regular wellness maintenance, our spa near me service in Kuta delivers exceptional treatments without the inconvenience of traditional spa centers. Same-day appointments available throughout Kuta, Legian, Seminyak, and 27 additional Bali areas.
+              Whether you need post-flight recovery, vacation relaxation, stress relief, therapeutic treatment, or regular wellness maintenance, our spa near me service in Kuta delivers exceptional treatments without the inconvenience of traditional spa centers. Same-day appointments are available throughout Kuta, Legian, Seminyak, and nearby Bali stay areas.
             </p>
           </div>
         </section>
@@ -505,5 +505,4 @@ const SpaNearMeKuta = () => {
 };
 
 export default SpaNearMeKuta;
-
 
