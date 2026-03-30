@@ -88,9 +88,9 @@ const Packages = () => {
   return (
     <div className="min-h-screen">
       <SiteMeta 
-        title="Massage Pricing Kuta - Special Packages"
-        description="Discover affordable massage pricing in Kuta with special packages and deals. Couples massage, wellness packages, and birthday specials delivered to your villa. Book premium treatments at great value."
-        keywords="massage pricing Kuta, massage packages Kuta, couples massage pricing, spa package deals Bali, affordable massage Kuta, wellness packages Bali"
+        title="Massage Packages in Kuta - Couples, Wellness & Villa Deals"
+        description="Compare massage packages in Kuta for couples, villa stays, birthdays, and longer wellness sessions. Professional therapists deliver the full setup to your villa or hotel. Book by WhatsApp."
+        keywords="massage packages kuta, couples massage kuta, villa spa package bali, birthday massage bali, wellness massage package kuta, hotel massage deals bali"
         canonical="/packages"
       />
       
@@ -103,10 +103,10 @@ const Packages = () => {
         <section className="py-20 bg-gradient-professional text-primary-foreground">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Massage Pricing Kuta - Special Packages
+              Massage Packages in Kuta for Villas & Hotels
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-90">
-              Explore our massage pricing in Kuta with exclusive package deals. Save on couples massage, wellness retreats, and special occasion treatments delivered to your villa or hotel. Professional therapists, premium service, exceptional value.
+              Explore our massage pricing in Kuta with exclusive package deals. Save on couples massage, wellness retreats, and special occasion treatments delivered to your villa or hotel. Professional therapists, premium setup, and WhatsApp-friendly booking.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-lg">
               <Badge variant="outline" className="text-primary-foreground border-primary-foreground px-4 py-2">
@@ -245,7 +245,7 @@ const Packages = () => {
             
             <div className="max-w-3xl mx-auto text-left bg-white/10 backdrop-blur-sm p-8 rounded-lg">
               <p className="text-lg text-primary-foreground leading-relaxed opacity-95 mb-4">
-                Explore our special package deals designed to maximize value and relaxation. Whether you're celebrating a special occasion or planning a wellness retreat, these packages combine multiple premium treatments at exceptional rates.
+                Explore our special package deals designed to maximize value and relaxation. Whether you're celebrating a special occasion, planning a couples stay, or organizing a villa wellness session, these packages combine multiple premium treatments at exceptional rates.
               </p>
               <p className="text-lg text-primary-foreground leading-relaxed opacity-95">
                 Available throughout all our <Link to="/areas" className="text-professional-gold hover:underline font-semibold">service areas in Bali</Link>, these packages are delivered by our team of certified therapists. Browse our <Link to="/services" className="text-professional-gold hover:underline font-semibold">full treatment menu</Link> to customize your experience, or book today to discover the best value in professional spa services.

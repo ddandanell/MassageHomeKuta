@@ -105,9 +105,9 @@ const Services = () => {
   return (
     <div className="min-h-screen bg-background">
       <SiteMeta
-        title="Massage Treatments Kuta - Premium Service"
-        description="Explore professional massage treatments in Kuta including Balinese, deep tissue, aromatherapy, hot stone, and Thai massage. Certified therapists deliver spa-quality treatments to your location."
-        keywords="massage treatments Kuta, Balinese massage, deep tissue massage Kuta, aromatherapy massage Bali, hot stone massage, Thai massage Kuta, professional massage service"
+        title="Massage Services in Kuta, Bali - In-Villa & Hotel Treatments"
+        description="Explore massage services in Kuta including Balinese, deep tissue, aromatherapy, hot stone, pregnancy, and recovery treatments. Certified therapists deliver spa-quality care to your villa or hotel."
+        keywords="massage services kuta, in-villa massage bali, hotel massage kuta, balinese massage kuta, deep tissue massage bali, pregnancy massage kuta, four hands massage bali"
         canonical="/services"
       />
 
@@ -129,10 +129,10 @@ const Services = () => {
           </div>
           <div className="relative container mx-auto px-4 text-center z-10">
             <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 drop-shadow-lg tracking-tight">
-              Massage Treatments Kuta
+              In-Villa Massage Treatments in Kuta
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-95 drop-shadow-md font-light tracking-wide">
-              Professional massage treatments delivered to your villa or hotel in Kuta. Choose from traditional Balinese, therapeutic deep tissue, aromatherapy, and more specialized treatments tailored to your needs.
+              Professional massage treatments delivered to your villa or hotel in Kuta. Choose from traditional Balinese, therapeutic deep tissue, aromatherapy, and specialized treatments designed for travelers, couples, and recovery-focused guests.
             </p>
           </div>
         </section>
@@ -328,7 +328,7 @@ const Services = () => {
             
             <div className="max-w-3xl mx-auto text-left bg-white p-8 rounded-lg shadow-soft">
               <p className="text-lg text-spa-stone leading-relaxed mb-4">
-                Ready to experience professional massage treatments in Kuta? Our comprehensive range of services brings spa-quality relaxation directly to your location. Whether you're staying in Kuta, <Link to="/areas/seminyak" className="text-spa-gold hover:underline">Seminyak</Link>, <Link to="/areas/canggu" className="text-spa-gold hover:underline">Canggu</Link>, or <Link to="/areas/ubud" className="text-spa-gold hover:underline">Ubud</Link>, our experienced therapists arrive prepared with everything needed for a premium experience.
+                Ready to experience professional massage treatments in Kuta? Our comprehensive range of services brings spa-quality relaxation directly to your location. Whether you're staying in Kuta, <Link to="/areas/seminyak" className="text-spa-gold hover:underline">Seminyak</Link>, <Link to="/areas/uluwatu" className="text-spa-gold hover:underline">Uluwatu</Link>, or <Link to="/areas/pererenan" className="text-spa-gold hover:underline">Pererenan</Link>, our experienced therapists arrive prepared with everything needed for a premium experience.
               </p>
               <p className="text-lg text-spa-stone leading-relaxed">
                 Check out our <Link to="/packages" className="text-spa-gold hover:underline">special packages</Link> for the best value, or browse <Link to="/reviews" className="text-spa-gold hover:underline">customer testimonials</Link> to see why travelers trust our service. Book your treatment today and discover ultimate relaxation in Bali.

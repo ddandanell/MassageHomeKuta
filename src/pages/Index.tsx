@@ -28,9 +28,9 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <SiteMeta 
-        title="Professional Massage Kuta Bali - Home Service"
-        description="Experience premium massage in Kuta with certified therapists. Same-day booking for Balinese, deep tissue, aromatherapy treatments delivered to your villa or hotel. Book your massage now."
-        keywords="massage Kuta, professional massage Bali, home massage Kuta, villa massage service, Balinese massage Kuta, deep tissue massage, aromatherapy massage Bali, mobile spa Kuta"
+        title="Home Massage in Kuta, Bali - Villa & Hotel Service"
+        description="Book home massage in Kuta, Legian, Seminyak, and nearby Bali areas. Certified therapists deliver Balinese, deep tissue, couples, and hotel massage directly to your villa or hotel. WhatsApp for same-day availability."
+        keywords="home massage kuta, in-villa massage kuta, hotel massage bali, couples massage kuta, balinese massage kuta, deep tissue massage kuta, mobile spa bali"
         canonical="/"
       />
       <StructuredData type="organization" includeReviews={true} />

@@ -609,8 +609,8 @@ const MassageTypeLandingPage = ({ data }: MassageTypeLandingPageProps) => {
                 <span className="text-spa-earth text-sm font-medium">Sanur</span>
                 <MapPin className="w-4 h-4 text-spa-gold" />
               </Link>
-              <Link to="/areas/ubud" className="flex items-center justify-between p-3 bg-white rounded-lg hover:bg-spa-gold/10 transition-all duration-300">
-                <span className="text-spa-earth text-sm font-medium">Ubud</span>
+              <Link to="/areas/pererenan" className="flex items-center justify-between p-3 bg-white rounded-lg hover:bg-spa-gold/10 transition-all duration-300">
+                <span className="text-spa-earth text-sm font-medium">Pererenan</span>
                 <MapPin className="w-4 h-4 text-spa-gold" />
               </Link>
               <Link to="/areas/nusa-dua" className="flex items-center justify-between p-3 bg-white rounded-lg hover:bg-spa-gold/10 transition-all duration-300">

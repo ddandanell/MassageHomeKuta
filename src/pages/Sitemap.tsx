@@ -61,10 +61,7 @@ const Sitemap = () => {
     { name: "Couples Massage Kuta", path: "/couples-massage-kuta", description: "Romantic synchronized treatments for couples" },
     { name: "Spa Near Me Kuta", path: "/spa-near-me-kuta", description: "Professional mobile spa service in Kuta" },
     { name: "Massage Therapist Kuta Bali", path: "/massage-therapist-kuta-bali", description: "Certified professional massage therapists" },
-    { name: "Massage Near Me Kuta", path: "/massage-near-me-kuta", description: "Find massage services near you in Kuta" },
-    { name: "Message Kuta Bali", path: "/message-kuta-bali", description: "Professional in-villa massage service in Kuta, Bali" },
-    { name: "Lymphatic Drainage Massage Ubud", path: "/services/lymphatic-drainage-massage-ubud", description: "Specialized lymphatic drainage in Ubud" },
-    { name: "Balinese Massage Kuta", path: "/services/balinese-massage-kuta", description: "Traditional Balinese massage in Kuta" }
+    { name: "Message Kuta Bali", path: "/message-kuta-bali", description: "Professional in-villa massage service in Kuta, Bali" }
   ];
 
   const specialtyExperiences = [
@@ -92,7 +89,6 @@ const Sitemap = () => {
   const secondaryAreas = [
     { name: "Canggu", path: "/areas/canggu" },
     { name: "Sanur", path: "/areas/sanur" },
-    { name: "Ubud", path: "/areas/ubud" },
     { name: "Nusa Dua", path: "/areas/nusa-dua" },
     { name: "Jimbaran", path: "/areas/jimbaran" },
     { name: "Uluwatu", path: "/areas/uluwatu" },
@@ -112,6 +108,8 @@ const Sitemap = () => {
     { name: "Echo Beach", path: "/areas/echo-beach" },
     { name: "Denpasar", path: "/areas/denpasar" }
   ];
+  const totalServiceAreas = primaryAreas.length + secondaryAreas.length;
+  const seoLandingPageCount = specialLandingPages.length;
 
   return (
     <div className="min-h-screen">
@@ -239,7 +237,7 @@ const Sitemap = () => {
                 </div>
                 <h2 className="text-2xl font-bold text-spa-earth">Extended Coverage Areas</h2>
               </div>
-              <p className="text-sm text-spa-stone mb-4">27 locations throughout Bali</p>
+              <p className="text-sm text-spa-stone mb-4">{totalServiceAreas} locations throughout Bali</p>
               <div className="grid grid-cols-2 gap-2">
                 {secondaryAreas.map((area, index) => (
                   <Link 
@@ -327,11 +325,11 @@ const Sitemap = () => {
                 <div className="text-sm text-spa-stone">Massage Services</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-2">27</div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">{totalServiceAreas}</div>
                 <div className="text-sm text-spa-stone">Service Areas</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-amber-600 mb-2">4</div>
+                <div className="text-3xl font-bold text-amber-600 mb-2">{seoLandingPageCount}</div>
                 <div className="text-sm text-spa-stone">SEO Landing Pages</div>
               </div>
               <div className="text-center">

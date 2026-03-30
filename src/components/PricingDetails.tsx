@@ -14,7 +14,7 @@ const PricingDetails = () => {
       duration: "60 Minutes",
       price: "IDR 280K - 384K",
       popular: false,
-      massageTypes: ["Traditional Balinese Massage Ubud", "Aromatherapy Massage Ubud", "Deep Tissue Massage Ubud"],
+      massageTypes: ["Traditional Balinese Massage", "Aromatherapy Massage", "Deep Tissue Massage"],
       features: [
         "Professional massage table setup",
         "Premium organic oils",

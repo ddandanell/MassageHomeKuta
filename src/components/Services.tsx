@@ -13,7 +13,7 @@ import { SITE_CONFIG } from "@/config/site";
 
 const services = [
   {
-    title: "Traditional Balinese Massage Ubud",
+    title: "Traditional Balinese Massage",
     description: "Traditional full-body massage combining palm pressure, acupressure, and stretching with aromatic oils. Perfect for stress relief, muscle tension release, and overall relaxation.",
     detailedDescription: "Our signature Balinese massage uses traditional techniques passed down through generations. The therapist applies gentle stretching, acupressure, and reflexology to improve blood flow and ease tension. Premium natural oils including frangipani, coconut, and essential oils nourish your skin while creating deep relaxation.",
     image: baliMassage,
@@ -28,7 +28,7 @@ const services = [
     ]
   },
   {
-    title: "Deep Tissue Massage Ubud",
+    title: "Deep Tissue Massage",
     description: "Intensive treatment targeting chronic muscle tension and deep knots using firm pressure and specialized techniques. Ideal for sports recovery, chronic pain, and work-related tension.",
     detailedDescription: "Our certified therapists use advanced deep tissue techniques to target chronic muscle tension, adhesions, and trigger points. This therapeutic massage focuses on the deeper layers of muscle tissue using firm pressure and slow strokes. Ideal for athletes, office workers, and those with chronic pain conditions.",
     image: deepTissue,
@@ -43,7 +43,7 @@ const services = [
     ]
   },
   {
-    title: "Aromatherapy Massage Ubud",
+    title: "Aromatherapy Massage",
     description: "Relaxing full-body massage using premium essential oils like lavender, lemongrass, or eucalyptus. Light to medium pressure promotes deep relaxation and better sleep.",
     detailedDescription: "Experience the healing power of essential oils combined with therapeutic massage. Choose from our collection of premium oils: lavender for relaxation, eucalyptus for respiratory relief, lemongrass for energy, or our custom blend. The gentle massage techniques enhance oil absorption while promoting mental and physical well-being.",
     image: aromatherapy,
@@ -58,7 +58,7 @@ const services = [
     ]
   },
   {
-    title: "Lymphatic Drainage Massage Ubud",
+    title: "Lymphatic Drainage Massage",
     description: "Gentle rhythmic massage that stimulates lymphatic drainage to reduce swelling and boost immunity. Perfect for post-flight recovery and detox support.",
     detailedDescription: "Specialized therapeutic technique using gentle, rhythmic movements to stimulate the lymphatic system. This detoxifying massage helps reduce water retention, boost immune function, and eliminate toxins. Particularly beneficial after long flights, during illness recovery, or as part of a wellness detox program.",
     image: lymphatic,
@@ -73,7 +73,7 @@ const services = [
     ]
   },
   {
-    title: "Thai Massage Ubud",
+    title: "Thai Massage",
     description: "Energizing treatment combining yoga-like stretches with pressure along energy lines. Performed fully clothed, it improves flexibility and relieves stiffness. Great after hiking, surfing, or long sitting.",
     detailedDescription: "Ancient healing art combining acupressure, Indian Ayurvedic principles, and assisted yoga postures. The therapist uses hands, knees, legs, and feet to move you into a series of yoga-like stretches while applying deep muscle compression, joint mobilization, and acupressure. Performed on a mat in comfortable clothing.",
     image: thaiMassage,
@@ -88,7 +88,7 @@ const services = [
     ]
   },
   {
-    title: "Four Hands Massage Ubud",
+    title: "Four Hands Massage",
     description: "Luxury treatment with two synchronized therapists working together for complete body coverage. Creates deep relaxation and is perfect for special occasions or ultimate indulgence.",
     detailedDescription: "The ultimate luxury experience with two skilled therapists working in perfect harmony. This synchronized massage provides complete body coverage and deeper relaxation than traditional single-therapist treatments. The choreographed movements create a unique sensory experience that's both deeply relaxing and therapeutically beneficial.",
     image: fourHands,
@@ -103,7 +103,7 @@ const services = [
     ]
   },
   {
-    title: "Hot Stone Massage Ubud",
+    title: "Hot Stone Massage",
     description: "Therapeutic massage using smooth heated volcanic stones placed on key points of the body. The warmth penetrates deep into muscles, releasing tension and promoting profound relaxation. Perfect for muscle stiffness and stress relief.",
     detailedDescription: "Combines traditional massage techniques with the healing power of heated volcanic basalt stones. The stones are placed on specific points along your spine, in your palms, and between your toes to improve energy flow. The heat helps muscles relax, allowing the therapist to work deeper while maintaining gentle pressure.",
     image: hotStone,

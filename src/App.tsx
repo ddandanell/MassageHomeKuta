@@ -21,7 +21,6 @@ import TubanArea from "./pages/TubanArea";
 import KutaBeachfrontArea from "./pages/KutaBeachfrontArea";
 import KutaCentralArea from "./pages/KutaCentralArea";
 import CangguArea from "./pages/CangguArea";
-import UbudArea from "./pages/UbudArea";
 import SanurArea from "./pages/SanurArea";
 import DenpasarArea from "./pages/DenpasarArea";
 import JimbaranArea from "./pages/JimbaranArea";
@@ -119,7 +118,6 @@ const routeConfig = [
   { path: "/areas/kuta-beachfront", element: <KutaBeachfrontArea /> },
   { path: "/areas/kuta-central", element: <KutaCentralArea /> },
   { path: "/areas/canggu", element: <CangguArea /> },
-  { path: "/areas/ubud", element: <UbudArea /> },
   { path: "/areas/sanur", element: <SanurArea /> },
   { path: "/areas/denpasar", element: <DenpasarArea /> },
   { path: "/areas/jimbaran", element: <JimbaranArea /> },
@@ -232,7 +230,6 @@ const App = () => (
             <Route path="/areas/kuta-beachfront" element={<KutaBeachfrontArea />} />
             <Route path="/areas/kuta-central" element={<KutaCentralArea />} />
             <Route path="/areas/canggu" element={<CangguArea />} />
-            <Route path="/areas/ubud" element={<UbudArea />} />
             <Route path="/areas/sanur" element={<SanurArea />} />
             <Route path="/areas/denpasar" element={<DenpasarArea />} />
             <Route path="/areas/jimbaran" element={<JimbaranArea />} />

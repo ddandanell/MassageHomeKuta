@@ -332,7 +332,7 @@ const BlogPost2Booking = () => {
               <p>Most services accept bookings up to 1 week in advance. Booking more than a week ahead is possible but may require reconfirmation closer to the date.</p>
 
               <h3>Q: What if the therapist can't find my villa?</h3>
-              <p>This is why location pins are helpful. If there's confusion, you can drop a Google Maps pin in WhatsApp (tap the "+" icon > Location > Share Live Location). The therapist can navigate directly to your exact location.</p>
+              <p>This is why location pins are helpful. If there's confusion, you can drop a Google Maps pin in WhatsApp (tap the "+" icon &gt; Location &gt; Share Live Location). The therapist can navigate directly to your exact location.</p>
 
               <h2>Pro Tips for Smooth Bookings</h2>
               <ul>

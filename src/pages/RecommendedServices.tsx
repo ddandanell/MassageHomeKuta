@@ -10,12 +10,12 @@ import { Helmet } from "react-helmet-async";
 
 const recommendedServices = [
   {
-    name: "Home Massage Ubud",
-    url: "https://homemassageubud.com/",
+    name: "Couples Villa Massage Bali",
+    url: "/couples-villa-massage-bali",
     icon: Home,
-    description: "Experience the same premium in-villa massage services in the cultural heart of Bali. Perfect for guests staying in Ubud's serene villas and resorts who want to combine wellness with the tranquil atmosphere of rice terraces and art galleries.",
-    cta: "In-Villa Massage in Ubud",
-    benefits: ["Traditional Balinese techniques", "Certified therapists", "7am-10pm availability"]
+    description: "Plan a private couples massage without leaving your villa or hotel. Ideal for honeymoon stays, anniversaries, and guests who want a side-by-side spa experience with WhatsApp-friendly booking.",
+    cta: "Couples Villa Massage Packages",
+    benefits: ["Couples-friendly setup", "Villa & hotel service", "WhatsApp booking"]
   },
   {
     name: "Private Tutoring Bali",

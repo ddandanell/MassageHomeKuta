@@ -1,14 +1,21 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Phone, MapPin, Clock, Star, Shield, Award, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
+
+const popularAreas = [
+  { name: "Legian", path: "/areas/legian", note: "Fast beachfront hotel coverage" },
+  { name: "Pererenan", path: "/areas/pererenan", note: "Quiet villa stays north of Canggu" },
+  { name: "Uluwatu", path: "/areas/uluwatu", note: "Clifftop villas and surf stays" },
+  { name: "Ungasan", path: "/areas/ungasan", note: "Luxury villa bookings in the Bukit" },
+];
 
 const Footer = () => {
   const whatsappNumber = "+62 811-2656-869";
   const whatsappMessage = "Hello Home Massage Kuta! I'm interested in booking a massage service. Could you please help me with availability and pricing?";
-  const whatsappUrl = `https://wa.me/${whatsappNumber.replace(/\D/g, '')}?text=${encodeURIComponent(whatsappMessage)}`;
+  const whatsappUrl = `https://wa.me/${whatsappNumber.replace(/\D/g, "")}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
     <footer className="bg-professional-navy text-white relative overflow-hidden pt-20 pb-10">
-      {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5 pointer-events-none">
         <div className="absolute top-0 left-0 w-full h-full bg-[url('/images/pattern.png')] bg-repeat opacity-20"></div>
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-professional-green/20 to-transparent"></div>
@@ -16,7 +23,6 @@ const Footer = () => {
 
       <div className="relative container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
-          {/* Brand Column */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 bg-professional-gold/20 rounded-full flex items-center justify-center border border-professional-gold/30">
@@ -44,7 +50,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h4 className="text-lg font-serif font-semibold mb-6 text-white">Discover</h4>
             <ul className="space-y-3 text-professional-gray">
@@ -57,26 +62,26 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Other Locations */}
           <div>
-            <h4 className="text-lg font-serif font-semibold mb-6 text-white">Other Locations</h4>
+            <h4 className="text-lg font-serif font-semibold mb-6 text-white">Popular Areas</h4>
             <ul className="space-y-3 text-professional-gray">
-              <li>
-                <a href="https://homemassageubud.com/" rel="dofollow" className="hover:text-professional-gold transition-colors flex items-start gap-2">
-                  <MapPin className="w-4 h-4 mt-1 text-professional-gold flex-shrink-0" />
-                  <div>
-                    <span className="block text-white font-medium">Massage in Ubud</span>
-                    <span className="text-sm">In-villa massage service</span>
-                  </div>
-                </a>
-              </li>
+              {popularAreas.map((area) => (
+                <li key={area.path}>
+                  <Link to={area.path} className="hover:text-professional-gold transition-colors flex items-start gap-2">
+                    <MapPin className="w-4 h-4 mt-1 text-professional-gold flex-shrink-0" />
+                    <div>
+                      <span className="block text-white font-medium">{area.name}</span>
+                      <span className="text-sm">{area.note}</span>
+                    </div>
+                  </Link>
+                </li>
+              ))}
             </ul>
             <p className="text-professional-gray text-xs mt-6 leading-relaxed">
-              Experience the same premium service across multiple Bali locations
+              Explore the area pages where guests most often book outside central Kuta.
             </p>
           </div>
 
-          {/* Contact Info */}
           <div>
             <h4 className="text-lg font-serif font-semibold mb-6 text-white">Concierge</h4>
             <ul className="space-y-4 text-professional-gray">
@@ -104,7 +109,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Trust Badge */}
           <div>
             <div className="bg-white/5 rounded-2xl p-6 border border-white/10 backdrop-blur-sm">
               <h4 className="text-lg font-serif font-semibold mb-4 text-white">Peace of Mind</h4>
@@ -131,9 +135,8 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-professional-gray">
-          <p>© 2025 Home Massage Kuta. All rights reserved.</p>
+          <p>© 2026 Home Massage Kuta. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="/privacy" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="/terms" className="hover:text-white transition-colors">Terms of Service</a>

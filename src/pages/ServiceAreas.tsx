@@ -130,14 +130,6 @@ const serviceAreas = [
     popular: true
   },
   {
-    name: "Ubud",
-    slug: "ubud",
-    responseTime: "60-90 minutes",
-    description: "Cultural heart of Bali with rice terraces, art galleries, and yoga retreats.",
-    priority: "medium",
-    popular: true
-  },
-  {
     name: "Nusa Dua",
     slug: "nusa-dua",
     responseTime: "45-60 minutes",
@@ -249,9 +241,9 @@ const ServiceAreas = () => {
   return (
     <div className="min-h-screen">
       <SiteMeta
-        title="Service Areas Bali - Massage Coverage"
-        description="Professional massage service covering Kuta, Legian, Seminyak, Canggu, Sanur, Ubud, Nusa Dua, and more areas in Bali. Certified therapists deliver premium massage treatments to your villa or hotel location."
-        keywords="massage service areas Bali, massage Kuta coverage, massage Seminyak, massage Canggu, massage Ubud, massage Nusa Dua, mobile massage Bali"
+        title="Massage Service Areas in Bali - Kuta, Legian, Uluwatu & More"
+        description="See where our mobile massage service covers Bali, including Kuta, Legian, Seminyak, Pererenan, Uluwatu, Nusa Dua, and nearby villa or hotel areas. Check response times before you book."
+        keywords="massage service areas bali, home massage kuta, villa massage legian, hotel massage seminyak, mobile spa uluwatu, massage nusa dua, pererenan massage service"
         canonical="/areas"
       />
 
@@ -265,7 +257,7 @@ const ServiceAreas = () => {
           <div className="absolute inset-0">
             <img
               src="/images/hero/hero-3.jpg"
-              alt="Map showing professional massage service coverage areas throughout Bali including Kuta, Seminyak, Canggu, and Ubud"
+              alt="Map showing massage service coverage across Bali including Kuta, Legian, Seminyak, Pererenan, and Uluwatu"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-br from-blue-900/80 via-indigo-900/70 to-blue-900/80 backdrop-blur-[2px]"></div>
@@ -275,10 +267,10 @@ const ServiceAreas = () => {
               Island-Wide Coverage
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-lg">
-              Service Areas Bali - Massage Coverage
+              Massage Service Areas Across Bali
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-95 drop-shadow-md">
-              Professional massage service delivered throughout Bali covering {serviceAreas.length} areas including Kuta, Seminyak, Canggu, Ubud, and more. Book certified therapists for premium massage treatments at your villa or hotel.
+              Professional massage service delivered throughout Bali covering {serviceAreas.length} areas including Kuta, Legian, Pererenan, Uluwatu, and more. Book certified therapists for premium massage treatments at your villa or hotel.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <div className="flex items-center gap-2 text-sm bg-white/20 backdrop-blur-md px-4 py-2 rounded-full">
@@ -475,7 +467,7 @@ const ServiceAreas = () => {
               
               <div className="max-w-3xl mx-auto text-left bg-white p-8 rounded-lg shadow-soft">
                 <p className="text-lg text-spa-stone leading-relaxed mb-4">
-                  Our service covers Bali's most popular destinations with fast response times and certified therapists. From the beaches of Kuta and Seminyak to the rice terraces of Ubud and the clifftops of Uluwatu, we bring premium treatments directly to your accommodation.
+                  Our service covers Bali's most popular destinations with fast response times and certified therapists. From the beaches of Kuta and Seminyak to the villas of Pererenan and the clifftops of Uluwatu, we bring premium treatments directly to your accommodation.
                 </p>
                 <p className="text-lg text-spa-stone leading-relaxed">
                   Each location benefits from our commitment to quality, featuring the same professional equipment and exceptional customer service. Explore our <Link to="/services" className="text-spa-gold hover:underline">complete treatment menu</Link> or check out <Link to="/packages" className="text-spa-gold hover:underline">special packages</Link> for the best value. Book today and experience relaxation delivered to your doorstep.

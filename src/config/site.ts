@@ -16,9 +16,9 @@ export const SITE_CONFIG = {
   // Business Identity
   name: "Home Massage Kuta",
   url: "https://www.homemassagekuta.com",
-  title: "Home Massage Kuta - #1 Professional In-Villa Spa Service Bali",
-  description: "Kuta's premier home massage service. Professional therapists bring spa-quality treatments to your villa or hotel. Same-day booking available. Licensed, certified, and trusted by 500+ clients.",
-  keywords: "home massage kuta, villa massage bali, mobile spa kuta, balinese massage, deep tissue massage, aromatherapy massage, spa service kuta, in-villa massage, hotel massage bali",
+  title: "Home Massage Kuta | In-Villa & Hotel Massage in Bali",
+  description: "Book home massage in Kuta with certified therapists for villas and hotels. Balinese, deep tissue, couples, pregnancy, and recovery treatments are available across Kuta, Legian, Seminyak, Uluwatu, and nearby Bali areas.",
+  keywords: "home massage kuta, in-villa massage kuta, hotel massage bali, villa massage kuta, couples massage kuta, balinese massage kuta, deep tissue massage bali, mobile spa kuta",
   author: "Home Massage Kuta",
   
   // Contact Information (NAP - Name, Address, Phone)
