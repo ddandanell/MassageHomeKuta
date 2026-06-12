@@ -37,7 +37,7 @@ const BlogPost1Pricing = () => {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "headline": "How Much Does a Massage Cost in Kuta, Bali? Complete 2026 Price Guide",
-    "description": "Complete massage pricing in Kuta, Bali. Verified rates from IDR 250K-1.55M for Balinese, deep tissue, couples massage. No hidden fees. Book today.",
+    "description": "Complete massage pricing in Kuta, Bali. Verified rates from IDR 250K-1.1M for Balinese, deep tissue, couples massage. No hidden fees. Book today.",
     "image": `${SITE_CONFIG.url}/images/hero/hero-4.jpg`,
     "datePublished": "2026-01-15T08:00:00+08:00",
     "dateModified": "2026-01-15T08:00:00+08:00",
@@ -59,7 +59,7 @@ const BlogPost1Pricing = () => {
     <div className="min-h-screen">
       <SiteMeta
         title="Massage Kuta Price Guide 2026 | Verified Rates & Booking Tips"
-        description="Complete massage pricing in Kuta, Bali. Verified rates from IDR 250K-1.55M for Balinese, deep tissue, couples massage. No hidden fees. Book today."
+        description="Complete massage pricing in Kuta, Bali. Verified rates from IDR 250K-1.1M for Balinese, deep tissue, couples massage. No hidden fees. Book today."
         keywords="massage kuta price, massage cost bali, massage pricing kuta, balinese massage cost, deep tissue price bali, massage rates kuta"
         canonical="/blog/massage-kuta-bali-price-guide"
       />
@@ -106,15 +106,15 @@ const BlogPost1Pricing = () => {
                 <h3 className="text-xl font-bold text-spa-earth mb-4">Price Ranges</h3>
                 <div className="space-y-4">
                   <div>
-                    <p className="font-semibold text-spa-earth mb-1">Entry-Level Services: IDR 250,000 - 350,000</p>
+                    <p className="font-semibold text-spa-earth mb-1">Entry-Level Services: IDR 250,000 - 320,000</p>
                     <p className="text-spa-stone text-sm">Foot reflexology and basic 60-minute Traditional Balinese massage fall into this range. Perfect for budget-conscious travelers or those trying home massage for the first time.</p>
                   </div>
                   <div>
-                    <p className="font-semibold text-spa-earth mb-1">Mid-Range Services: IDR 400,000 - 580,000</p>
+                    <p className="font-semibold text-spa-earth mb-1">Mid-Range Services: IDR 380,000 - 630,000</p>
                     <p className="text-spa-stone text-sm">Deep tissue massage, aromatherapy, hot stone therapy, and 90-minute sessions. The sweet spot for most travelers seeking therapeutic benefits with professional quality.</p>
                   </div>
                   <div>
-                    <p className="font-semibold text-spa-earth mb-1">Premium Services: IDR 650,000 - 1,550,000</p>
+                    <p className="font-semibold text-spa-earth mb-1">Premium Services: IDR 590,000 - 1,100,000</p>
                     <p className="text-spa-stone text-sm">Extended 120-minute sessions, four-hands massage (two therapists), couples treatments, and specialized therapies like lymphatic drainage.</p>
                   </div>
                 </div>
@@ -138,15 +138,15 @@ const BlogPost1Pricing = () => {
                 <div className="space-y-2">
                   <div className="flex justify-between items-center py-2 border-b">
                     <span className="font-semibold">60 minutes:</span>
-                    <span className="text-lg font-bold text-professional-green">IDR 350,000</span>
+                    <span className="text-lg font-bold text-professional-green">IDR 320,000</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b bg-green-50">
                     <span className="font-semibold">90 minutes:</span>
-                    <span className="text-lg font-bold text-professional-green">IDR 500,000 <span className="text-sm text-spa-stone">(Most Popular)</span></span>
+                    <span className="text-lg font-bold text-professional-green">IDR 450,000 <span className="text-sm text-spa-stone">(Most Popular)</span></span>
                   </div>
                   <div className="flex justify-between items-center py-2">
                     <span className="font-semibold">120 minutes:</span>
-                    <span className="text-lg font-bold text-professional-green">IDR 650,000</span>
+                    <span className="text-lg font-bold text-professional-green">IDR 590,000</span>
                   </div>
                 </div>
               </div>
@@ -163,11 +163,11 @@ const BlogPost1Pricing = () => {
                 <div className="space-y-2">
                   <div className="flex justify-between items-center py-2 border-b">
                     <span className="font-semibold">60 minutes:</span>
-                    <span className="text-lg font-bold text-professional-gold">IDR 400,000</span>
+                    <span className="text-lg font-bold text-professional-gold">IDR 380,000</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b bg-amber-50">
                     <span className="font-semibold">90 minutes:</span>
-                    <span className="text-lg font-bold text-professional-gold">IDR 550,000 <span className="text-sm text-spa-stone">(Recommended)</span></span>
+                    <span className="text-lg font-bold text-professional-gold">IDR 540,000 <span className="text-sm text-spa-stone">(Recommended)</span></span>
                   </div>
                   <div className="flex justify-between items-center py-2">
                     <span className="font-semibold">120 minutes:</span>
@@ -188,15 +188,15 @@ const BlogPost1Pricing = () => {
                 <div className="space-y-2">
                   <div className="flex justify-between items-center py-2 border-b">
                     <span className="font-semibold">60 minutes:</span>
-                    <span className="text-lg font-bold text-purple-600">IDR 380,000</span>
+                    <span className="text-lg font-bold text-purple-600">IDR 350,000</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b">
                     <span className="font-semibold">90 minutes:</span>
-                    <span className="text-lg font-bold text-purple-600">IDR 530,000</span>
+                    <span className="text-lg font-bold text-purple-600">IDR 490,000</span>
                   </div>
                   <div className="flex justify-between items-center py-2">
                     <span className="font-semibold">120 minutes:</span>
-                    <span className="text-lg font-bold text-purple-600">IDR 680,000</span>
+                    <span className="text-lg font-bold text-purple-600">IDR 640,000</span>
                   </div>
                 </div>
               </div>
@@ -211,15 +211,15 @@ const BlogPost1Pricing = () => {
                 <div className="space-y-2">
                   <div className="flex justify-between items-center py-2 border-b">
                     <span className="font-semibold">60 minutes:</span>
-                    <span className="text-lg font-bold text-orange-600">IDR 450,000</span>
+                    <span className="text-lg font-bold text-orange-600">IDR 420,000</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b">
                     <span className="font-semibold">90 minutes:</span>
-                    <span className="text-lg font-bold text-orange-600">IDR 580,000</span>
+                    <span className="text-lg font-bold text-orange-600">IDR 590,000</span>
                   </div>
                   <div className="flex justify-between items-center py-2">
                     <span className="font-semibold">120 minutes:</span>
-                    <span className="text-lg font-bold text-orange-600">IDR 730,000</span>
+                    <span className="text-lg font-bold text-orange-600">IDR 760,000</span>
                   </div>
                 </div>
               </div>
@@ -234,15 +234,15 @@ const BlogPost1Pricing = () => {
                 <div className="space-y-2">
                   <div className="flex justify-between items-center py-2 border-b">
                     <span className="font-semibold">60 minutes:</span>
-                    <span className="text-lg font-bold text-teal-600">IDR 370,000</span>
+                    <span className="text-lg font-bold text-teal-600">IDR 390,000</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b">
                     <span className="font-semibold">90 minutes:</span>
-                    <span className="text-lg font-bold text-teal-600">IDR 520,000</span>
+                    <span className="text-lg font-bold text-teal-600">IDR 550,000</span>
                   </div>
                   <div className="flex justify-between items-center py-2">
                     <span className="font-semibold">120 minutes:</span>
-                    <span className="text-lg font-bold text-teal-600">IDR 670,000</span>
+                    <span className="text-lg font-bold text-teal-600">IDR 720,000</span>
                   </div>
                 </div>
               </div>
@@ -259,15 +259,15 @@ const BlogPost1Pricing = () => {
                 <div className="space-y-2">
                   <div className="flex justify-between items-center py-2 border-b">
                     <span className="font-semibold">60 minutes:</span>
-                    <span className="text-lg font-bold text-blue-600">IDR 850,000</span>
+                    <span className="text-lg font-bold text-blue-600">IDR 620,000</span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b bg-blue-50">
                     <span className="font-semibold">90 minutes:</span>
-                    <span className="text-lg font-bold text-blue-600">IDR 1,200,000 <span className="text-sm text-spa-stone">(Popular for Couples)</span></span>
+                    <span className="text-lg font-bold text-blue-600">IDR 860,000 <span className="text-sm text-spa-stone">(Popular for Couples)</span></span>
                   </div>
                   <div className="flex justify-between items-center py-2">
                     <span className="font-semibold">120 minutes:</span>
-                    <span className="text-lg font-bold text-blue-600">IDR 1,550,000</span>
+                    <span className="text-lg font-bold text-blue-600">IDR 1,100,000</span>
                   </div>
                 </div>
               </div>
@@ -278,8 +278,8 @@ const BlogPost1Pricing = () => {
               <p>Two people receive massage simultaneously in the same room. Most couples choose matching massage types, but different services can be accommodated (e.g., one person gets Balinese while the other gets Deep Tissue).</p>
               <p><strong>Couples Massage Pricing:</strong> Simply multiply the single-person price by two. For example:</p>
               <ul>
-                <li>Two 90-minute Balinese massages: IDR 1,000,000 (IDR 500K × 2)</li>
-                <li>Two 90-minute Deep Tissue massages: IDR 1,100,000 (IDR 550K × 2)</li>
+                <li>Two 90-minute Balinese massages: IDR 900,000 (IDR 450K × 2)</li>
+                <li>Two 90-minute Deep Tissue massages: IDR 1,080,000 (IDR 540K × 2)</li>
               </ul>
 
               <h2>Specialized Therapy Pricing</h2>
@@ -293,7 +293,7 @@ const BlogPost1Pricing = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-spa-earth mb-2">Lymphatic Drainage Massage (Reduces swelling, boosts immunity)</h3>
-                    <p className="text-spa-stone mb-1">60/90/120 minutes: IDR 420,000 / 580,000 / 730,000</p>
+                    <p className="text-spa-stone mb-1">60/90/120 minutes: IDR 450,000 / 630,000 / 820,000</p>
                     <p className="text-sm text-spa-stone">Gentle technique promoting lymph flow. Great for post-flight swelling or detoxification.</p>
                   </div>
                   <div>
@@ -324,7 +324,7 @@ const BlogPost1Pricing = () => {
 
               <h2>How Kuta Prices Compare to Other Bali Areas</h2>
               <ul>
-                <li><strong>Kuta, Legian, Tuban:</strong> IDR 250,000 - 1,550,000 (this guide) – Competitive rates with fast response times due to central location.</li>
+                <li><strong>Kuta, Legian, Tuban:</strong> IDR 250,000 - 1,100,000 (this guide) – Competitive rates with fast response times due to central location.</li>
                 <li><strong>Seminyak, Canggu:</strong> Often 10-20% higher – Upscale resort areas command premium pricing. Expect IDR 400K+ for basic services.</li>
                 <li><strong>Ubud:</strong> Similar to Kuta, sometimes slightly lower – Strong local competition keeps rates competitive, though travel times may be longer.</li>
                 <li><strong>Nusa Dua, Uluwatu:</strong> 20-30% higher – High-end resort areas with wealthy tourists lead to premium pricing.</li>
@@ -334,7 +334,7 @@ const BlogPost1Pricing = () => {
               <ul>
                 <li><strong>Budget beach spas:</strong> IDR 150-250K (basic quality, high volume, less privacy)</li>
                 <li><strong>Mid-range spas:</strong> IDR 350-500K (decent quality, spa environment, add transportation time)</li>
-                <li><strong>Home massage:</strong> IDR 250-650K (professional quality, complete privacy, no commute)</li>
+                <li><strong>Home massage:</strong> IDR 250-590K (professional quality, complete privacy, no commute)</li>
               </ul>
 
               <h2>Hidden Fees to Watch For (And How to Avoid Them)</h2>
@@ -376,7 +376,7 @@ const BlogPost1Pricing = () => {
               <p>Compare prices from 2-3 reputable providers. If a quote is significantly lower than market rates (e.g., IDR 150K for 90-minute full-body massage), question the quality, therapist credentials, or hidden fees. If it's significantly higher (e.g., IDR 1,000K for basic Balinese), you're likely overpaying.</p>
 
               <h2>Conclusion: Transparent Pricing for Informed Decisions</h2>
-              <p>Professional home massage in Kuta ranges from IDR 250,000 (foot reflexology, 60 min) to IDR 1,550,000 (four-hands massage, 120 min), with the most popular choice being 90-minute Traditional Balinese massage at IDR 500,000.</p>
+              <p>Professional home massage in Kuta ranges from IDR 250,000 (foot reflexology, 60 min) to IDR 1,100,000 (four-hands massage, 120 min), with the most popular choice being 90-minute Traditional Balinese massage at IDR 450,000.</p>
               <p>All professional services should include therapist travel, equipment, premium oils, and fresh linens in the quoted price. Be cautious of providers adding travel fees, equipment charges, or oil upgrades after the initial quote.</p>
               <p>When you book with reputable providers, you get transparent pricing, certified therapists, and professional service delivered directly to your villa or hotel throughout Kuta, Legian, Tuban, and beyond.</p>
 

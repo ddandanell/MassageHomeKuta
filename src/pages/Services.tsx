@@ -13,7 +13,7 @@ const services = [
     name: "Balinese Traditional Massage",
     slug: "balinese-massage",
     duration: "60-90 minutes",
-    price: "Starting from IDR 350k",
+    price: "Starting from IDR 320k",
     description: "Ancient healing technique combining gentle stretches, acupressure, and aromatherapy oils to restore balance and harmony.",
     benefits: ["Stress relief", "Improved circulation", "Deep relaxation", "Cultural experience"],
     image: "/images/hero/hero-1.jpg"
@@ -22,7 +22,7 @@ const services = [
     name: "Deep Tissue Massage",
     slug: "deep-tissue-massage",
     duration: "60-90 minutes",
-    price: "Starting from IDR 400k",
+    price: "Starting from IDR 380k",
     description: "Therapeutic massage targeting deep muscle layers to release chronic tension and alleviate muscle pain.",
     benefits: ["Muscle pain relief", "Improved mobility", "Tension release", "Athletic recovery"],
     image: "/images/hero/hero-2.jpg"
@@ -31,7 +31,7 @@ const services = [
     name: "Aromatherapy Massage",
     slug: "aromatherapy-massage",
     duration: "60-90 minutes",
-    price: "Starting from IDR 380k",
+    price: "Starting from IDR 350k",
     description: "Relaxing massage using premium essential oils to promote emotional well-being and stress relief.",
     benefits: ["Emotional balance", "Stress reduction", "Better sleep", "Mood enhancement"],
     image: "/images/hero/hero-3.jpg"
@@ -39,8 +39,8 @@ const services = [
   {
     name: "Hot Stone Massage",
     slug: "hot-stone-massage",
-    duration: "75-90 minutes",
-    price: "Starting from IDR 450k",
+    duration: "60-90 minutes",
+    price: "Starting from IDR 420k",
     description: "Luxurious treatment using heated volcanic stones to melt away tension and promote deep relaxation.",
     benefits: ["Deep muscle relaxation", "Improved circulation", "Luxury experience", "Pain relief"],
     image: "/images/hero/hero-4.jpg"
@@ -49,7 +49,7 @@ const services = [
     name: "Thai Massage",
     slug: "thai-massage",
     duration: "60-90 minutes",
-    price: "Starting from IDR 370k",
+    price: "Starting from IDR 390k",
     description: "Dynamic massage combining stretching, pressure points, and yoga-like movements for flexibility and energy.",
     benefits: ["Increased flexibility", "Energy boost", "Posture improvement", "Stress relief"],
     image: "/images/hero/hero-1.jpg"
@@ -58,7 +58,7 @@ const services = [
     name: "Four Hands Massage",
     slug: "four-hands-massage",
     duration: "60-90 minutes",
-    price: "Starting from IDR 800k",
+    price: "Starting from IDR 620k",
     description: "Luxurious experience with two therapists working in perfect synchronization for ultimate relaxation.",
     benefits: ["Ultimate relaxation", "Dual therapist coordination", "Luxury experience", "Enhanced results"],
     image: "/images/hero/hero-2.jpg"

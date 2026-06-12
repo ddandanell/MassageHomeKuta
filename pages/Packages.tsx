@@ -3,20 +3,20 @@ import StructuredData from "@/components/seo/StructuredData";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
-import PageFAQSection from "@/components/PageFAQSection";
-import { packagesFaqs } from "@/data/pageFaqs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Heart, Users, Clock, Gift, Star } from "lucide-react";
+import { Heart, Users, Clock, Gift, Star, MessageCircle } from "lucide-react";
+import { Link } from "react-router-dom";
+import { SITE_CONFIG } from "@/config/site";
 
 const packages = [
   {
     name: "Romantic Couples Retreat",
     duration: "2 hours",
-    price: "IDR 1,200k",
-    originalPrice: "IDR 1,400k",
-    savings: "Save IDR 200k",
+    price: "IDR 900k",
+    originalPrice: "IDR 1,000k",
+    savings: "Save IDR 100k",
     description: "Perfect romantic experience for couples featuring side-by-side massages with premium aromatherapy oils and romantic ambiance.",
     includes: [
       "2x 60-minute Balinese massages",
@@ -48,8 +48,8 @@ const packages = [
   {
     name: "Executive Stress Relief",
     duration: "90 minutes",
-    price: "IDR 650k",
-    originalPrice: "IDR 750k",
+    price: "IDR 640k",
+    originalPrice: "IDR 740k",
     savings: "Save IDR 100k",
     description: "Intensive stress relief package designed for busy professionals, combining deep tissue and relaxation techniques.",
     includes: [
@@ -82,12 +82,15 @@ const packages = [
 ];
 
 const Packages = () => {
+  const whatsappMessage = "Hi! I'm interested in booking a massage package. Can you help me with availability?";
+  const whatsappUrl = `https://wa.me/${SITE_CONFIG.whatsapp.replace(/\D/g, '')}?text=${encodeURIComponent(whatsappMessage)}`;
+
   return (
     <div className="min-h-screen">
       <SiteMeta 
-        title="Special Massage Packages in Kuta - Save on Massage Services"
-        description="Save with our exclusive massage packages in Kuta. Romantic couples massage packages, wellness massage weekends, and birthday massage specials. Professional massage service delivered to your villa with great value on multiple massage sessions."
-        keywords="massage packages, massage package deals, couples massage package, wellness massage package, romantic massage package, birthday massage package, massage service packages, multiple massage sessions, massage package discounts, spa massage packages"
+        title="Massage Packages in Kuta - Couples, Wellness & Villa Deals"
+        description="Compare massage packages in Kuta for couples, villa stays, birthdays, and longer wellness sessions. Professional therapists deliver the full setup to your villa or hotel. Book by WhatsApp."
+        keywords="massage packages kuta, couples massage kuta, villa spa package bali, birthday massage bali, wellness massage package kuta, hotel massage deals bali"
         canonical="/packages"
       />
       
@@ -100,11 +103,10 @@ const Packages = () => {
         <section className="py-20 bg-gradient-professional text-primary-foreground">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Special Massage Packages
+              Massage Packages in Kuta for Villas & Hotels
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-90">
-              Save more with our carefully curated spa packages. Perfect for couples, special occasions, 
-              or extended wellness experiences in the comfort of your villa.
+              Explore our massage pricing in Kuta with exclusive package deals. Save on couples massage, wellness retreats, and special occasion treatments delivered to your villa or hotel. Professional therapists, premium setup, and WhatsApp-friendly booking.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-lg">
               <Badge variant="outline" className="text-primary-foreground border-primary-foreground px-4 py-2">
@@ -181,8 +183,11 @@ const Packages = () => {
                             </li>
                           ))}
                         </ul>
-                        <Button asChild className="w-full mt-6">
-                          <a href="/#booking">Book This Package</a>
+                        <Button asChild className="w-full mt-6 bg-gradient-to-r from-amber-400 to-yellow-500 hover:from-amber-500 hover:to-yellow-600 text-slate-900 font-semibold">
+                          <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                            <MessageCircle className="w-4 h-4 mr-2" />
+                            Book This Package
+                          </a>
                         </Button>
                       </div>
                     </CardContent>
@@ -201,7 +206,8 @@ const Packages = () => {
                   group size, and preferences. Contact us to discuss your requirements.
                 </p>
                 <Button asChild variant="outline" size="lg">
-                  <a href="https://wa.me/628112656869?text=I'd like to inquire about custom massage packages">
+                  <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                    <MessageCircle className="w-4 h-4 mr-2" />
                     Create Custom Package
                   </a>
                 </Button>
@@ -216,7 +222,7 @@ const Packages = () => {
             <h2 className="text-3xl font-bold text-primary-foreground mb-8">
               Why Choose Our Packages?
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto text-primary-foreground">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto text-primary-foreground mb-12">
               <div>
                 <h3 className="text-xl font-semibold mb-4">Better Value</h3>
                 <p className="opacity-90">
@@ -236,15 +242,17 @@ const Packages = () => {
                 </p>
               </div>
             </div>
+            
+            <div className="max-w-3xl mx-auto text-left bg-white/10 backdrop-blur-sm p-8 rounded-lg">
+              <p className="text-lg text-primary-foreground leading-relaxed opacity-95 mb-4">
+                Explore our special package deals designed to maximize value and relaxation. Whether you're celebrating a special occasion, planning a couples stay, or organizing a villa wellness session, these packages combine multiple premium treatments at exceptional rates.
+              </p>
+              <p className="text-lg text-primary-foreground leading-relaxed opacity-95">
+                Available throughout all our <Link to="/areas" className="text-professional-gold hover:underline font-semibold">service areas in Bali</Link>, these packages are delivered by our team of certified therapists. Browse our <Link to="/services" className="text-professional-gold hover:underline font-semibold">full treatment menu</Link> to customize your experience, or book today to discover the best value in professional spa services.
+              </p>
+            </div>
           </div>
         </section>
-
-        {/* FAQ Section */}
-        <PageFAQSection 
-          faqs={packagesFaqs}
-          title="Package Questions & Answers"
-          description="Learn more about our special massage packages, how to customize them, and how they save you money on your Kuta spa experience."
-        />
       </main>
       
       <Footer />

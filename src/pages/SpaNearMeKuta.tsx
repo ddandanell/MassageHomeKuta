@@ -32,7 +32,7 @@ const SpaNearMeKuta = () => {
 
   const serviceSchemaData = {
     name: "Spa Near Me - Professional Mobile Spa in Kuta",
-    description: "Looking for spa near me in Kuta? We deliver professional spa treatments to your villa or hotel. Certified therapists, same-day booking. From $17.",
+    description: "Looking for spa near me in Kuta? We deliver professional spa treatments to your villa or hotel. Certified therapists, same-day booking. From $20.",
     serviceType: "Mobile Spa and Wellness Services",
     areaServed: "Kuta, Bali",
     offers: {
@@ -47,42 +47,42 @@ const SpaNearMeKuta = () => {
       slug: "balinese-massage",
       benefits: "Full-body stress relief, improved circulation, muscle tension release, better sleep quality, jet lag recovery.",
       duration: "60, 90, or 120 minutes",
-      price: "From $17 USD"
+      price: "From $20 USD"
     },
     {
       name: "Deep Tissue Therapeutic Massage",
       slug: "deep-tissue-massage",
       benefits: "Chronic pain relief, improved mobility, sports recovery, postural correction, trigger point release.",
       duration: "60, 90, or 120 minutes",
-      price: "From $19 USD"
+      price: "From $24 USD"
     },
     {
       name: "Aromatherapy Spa Treatment",
       slug: "aromatherapy-massage",
       benefits: "Deep relaxation, anxiety reduction, improved sleep, emotional balance, respiratory benefits.",
       duration: "60, 90, or 120 minutes",
-      price: "From $18 USD"
+      price: "From $22 USD"
     },
     {
       name: "Hot Stone Spa Therapy",
       slug: "hot-stone-massage",
       benefits: "Deep muscle relaxation, improved circulation, pain relief, stress reduction, detoxification.",
       duration: "60, 90, or 120 minutes",
-      price: "From $22 USD"
+      price: "From $26 USD"
     },
     {
       name: "Lymphatic Drainage Spa Treatment",
       slug: "lymphatic-drainage-massage",
       benefits: "Reduces swelling, combats jet lag, supports detox, boosts immunity, improves skin appearance.",
       duration: "60, 90, or 120 minutes",
-      price: "From $23 USD"
+      price: "From $28 USD"
     },
     {
       name: "Thai Massage Therapy",
       slug: "thai-massage",
       benefits: "Enhanced flexibility, increased energy, improved posture, tension release, better range of motion.",
       duration: "60, 90, or 120 minutes",
-      price: "From $22 USD"
+      price: "From $24 USD"
     },
     {
       name: "Foot Reflexology Spa Treatment",
@@ -96,7 +96,7 @@ const SpaNearMeKuta = () => {
       slug: "four-hands-massage",
       benefits: "Shared relaxation, relationship bonding, convenient scheduling, romantic atmosphere.",
       duration: "60, 90, or 120 minutes",
-      price: "From $17 USD per person"
+      price: "From $20 USD per person"
     },
     {
       name: "Pregnancy Spa Treatment",
@@ -134,7 +134,7 @@ const SpaNearMeKuta = () => {
     },
     {
       question: "How much does spa service cost in Kuta?",
-      answer: "Professional spa near me service in Kuta ranges from $17-43 USD depending on treatment type and duration. Traditional Balinese massage starts at $17 for 60 minutes, aromatherapy costs $18, deep tissue costs $19, and specialized treatments like lymphatic drainage cost $23-43. Mobile spa typically costs 30-50% less than hotel spas."
+      answer: "Professional spa near me service in Kuta ranges from $20-51 USD depending on treatment type and duration. Traditional Balinese massage starts at $20 for 60 minutes, aromatherapy costs $22, deep tissue costs $24, and specialized treatments like lymphatic drainage cost $28-51. Mobile spa typically costs 30-50% less than hotel spas."
     },
     {
       question: "Can I book same-day spa appointments in Kuta?",
@@ -194,7 +194,7 @@ const SpaNearMeKuta = () => {
     <div className="min-h-screen">
       <SiteMeta 
         title="Spa Near Me – Professional Mobile Spa in Kuta | Home Massage Kuta"
-        description="Looking for spa near me in Kuta? We deliver professional spa treatments to your villa or hotel. Certified therapists, same-day booking. From $17."
+        description="Looking for spa near me in Kuta? We deliver professional spa treatments to your villa or hotel. Certified therapists, same-day booking. From $20."
         keywords="spa near me kuta, mobile spa kuta, spa service kuta, home spa kuta, professional spa kuta, mobile massage kuta, spa treatment kuta, balinese spa kuta"
         canonical="/spa-near-me-kuta"
       />

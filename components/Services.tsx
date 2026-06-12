@@ -8,48 +8,44 @@ import lymphatic from "@/assets/lymphatic.jpg";
 import thaiMassage from "@/assets/thai-massage.jpg";
 import fourHands from "@/assets/four-hands.jpg";
 import hotStone from "@/assets/hot-stone.jpg";
-import { Clock, Users, Star, Heart, Zap, Shield, MessageCircle, ArrowRight } from "lucide-react";
+import { Clock, Users, Star, Heart, Zap, Shield, MessageCircle } from "lucide-react";
 import { SITE_CONFIG } from "@/config/site";
-import { Link } from "react-router-dom";
 
 const services = [
   {
     title: "Traditional Balinese Massage",
-    slug: "balinese-massage",
-    description: "Traditional full-body massage combining palm pressure, acupressure, and stretching with aromatic oils. Perfect for stress relief, muscle tension release, and overall relaksasi, especially beneficial for managing tekanan and nyeri otot.",
-    detailedDescription: "Our signature Balinese massage uses traditional techniques passed down through generations. The therapist applies gentle stretching, acupressure, and reflexology (pijat refleksi) to improve blood flow and ease tension. Premium natural oils including frangipani, coconut, and essential oils nourish your skin while creating deep relaxation, improving kualitas tidur and manfaat kesehatan overall. Each session is tailored to your individual needs, ensuring a personalized experience that targets your specific areas of discomfort. The combination of skilled touch and soothing scents helps calm the mind, restore energy, and promote a profound sense of well-being. Whether you are seeking relief from daily stress or looking to enhance your overall kesehatan, Traditional Balinese Massage offers a holistic approach to rejuvenation and balance.",
+    description: "Traditional full-body massage combining palm pressure, acupressure, and stretching with aromatic oils. Perfect for stress relief, muscle tension release, and overall relaxation.",
+    detailedDescription: "Our signature Balinese massage uses traditional techniques passed down through generations. The therapist applies gentle stretching, acupressure, and reflexology to improve blood flow and ease tension. Premium natural oils including frangipani, coconut, and essential oils nourish your skin while creating deep relaxation.",
     image: baliMassage,
     benefits: ["Stress Relief", "Muscle Relaxation", "Better Sleep", "Improved Circulation"],
     bestFor: ["First-time clients", "Stress relief", "General wellness", "Couples"],
     popular: true,
     pressure: "Light to Medium",
     prices: [
-      { duration: "60 Min", price: "IDR 350K", savings: "" },
-      { duration: "90 Min", price: "IDR 500K", savings: "Save 50K" },
-      { duration: "120 Min", price: "IDR 650K", savings: "Most Popular" }
+      { duration: "60 Min", price: "IDR 320K", savings: "" },
+      { duration: "90 Min", price: "IDR 450K", savings: "Recommended" },
+      { duration: "120 Min", price: "IDR 590K", savings: "Most Popular" }
     ]
   },
   {
     title: "Deep Tissue Massage",
-    slug: "deep-tissue-massage",
-    description: "Intensive treatment targeting chronic muscle tension and deep knots using firm pressure and specialized techniques. Ideal for sports recovery, chronic pain, and work-related tension. This pijat technique is especially effective for releasing deep nyeri and for therapeutic recovery.",
-    detailedDescription: "Our certified terapis use advanced deep tissue techniques to target chronic muscle tension, adhesions, and trigger points. This therapeutic massage (pijat) focuses on the deeper layers of muscle tissue using firm pressure and slow strokes. Ideal for athletes, office workers, and those with chronic pain conditions. Each session is carefully tailored to address your unique needs, ensuring that problem areas receive focused attention. Deep tissue massage not only helps alleviate persistent discomfort but also improves flexibility, range of motion, and overall muscle function. Regular treatments can accelerate recovery from injuries, reduce inflammation, and support long-term kesehatan otot. Whether you are seeking relief from intense physical activity or daily stress, deep tissue massage provides a powerful solution for lasting comfort and well-being.",
+    description: "Intensive treatment targeting chronic muscle tension and deep knots using firm pressure and specialized techniques. Ideal for sports recovery, chronic pain, and work-related tension.",
+    detailedDescription: "Our certified therapists use advanced deep tissue techniques to target chronic muscle tension, adhesions, and trigger points. This therapeutic massage focuses on the deeper layers of muscle tissue using firm pressure and slow strokes. Ideal for athletes, office workers, and those with chronic pain conditions.",
     image: deepTissue,
     benefits: ["Pain Relief", "Muscle Recovery", "Increased Flexibility", "Posture Improvement"],
     bestFor: ["Athletes", "Chronic pain", "Office workers", "Injury recovery"],
     popular: true,
     pressure: "Firm to Deep",
     prices: [
-      { duration: "60 Min", price: "IDR 400K", savings: "" },
-      { duration: "90 Min", price: "IDR 550K", savings: "Recommended" },
+      { duration: "60 Min", price: "IDR 380K", savings: "" },
+      { duration: "90 Min", price: "IDR 540K", savings: "Recommended" },
       { duration: "120 Min", price: "IDR 700K", savings: "Best Value" }
     ]
   },
   {
     title: "Aromatherapy Massage",
-    slug: "aromatherapy-massage",
-    description: "Relaxing full-body massage using premium essential oils like lavender, lemongrass, or eucalyptus. This treatment, also known as pijat aromaterapi, uses light to medium pressure to promote deep relaxation, improved quality of sleep, and enhanced kesehatan.",
-    detailedDescription: "Experience the healing power of essential oils combined with therapeutic massage. Choose from our collection of premium oils: lavender for relaxation, eucalyptus for respiratory relief, lemongrass for energy, or our custom blend. The gentle massage (pijat) techniques enhance oil absorption while promoting both mental and physical well-being.",
+    description: "Relaxing full-body massage using premium essential oils like lavender, lemongrass, or eucalyptus. Light to medium pressure promotes deep relaxation and better sleep.",
+    detailedDescription: "Experience the healing power of essential oils combined with therapeutic massage. Choose from our collection of premium oils: lavender for relaxation, eucalyptus for respiratory relief, lemongrass for energy, or our custom blend. The gentle massage techniques enhance oil absorption while promoting mental and physical well-being.",
     image: aromatherapy,
     benefits: ["Mental Clarity", "Emotional Balance", "Better Sleep", "Skin Nourishment"],
     bestFor: ["Anxiety relief", "Sleep issues", "Sensitive skin", "Pregnancy (2nd/3rd trimester)"],
@@ -57,15 +53,14 @@ const services = [
     pressure: "Light to Medium",
     prices: [
       { duration: "60 Min", price: "IDR 350K", savings: "" },
-      { duration: "90 Min", price: "IDR 500K", savings: "Popular Choice" },
-      { duration: "120 Min", price: "IDR 650K", savings: "Ultimate Relaxation" }
+      { duration: "90 Min", price: "IDR 490K", savings: "Popular Choice" },
+      { duration: "120 Min", price: "IDR 640K", savings: "Ultimate Relaxation" }
     ]
   },
   {
     title: "Lymphatic Drainage Massage",
-    slug: "lymphatic-drainage-massage",
     description: "Gentle rhythmic massage that stimulates lymphatic drainage to reduce swelling and boost immunity. Perfect for post-flight recovery and detox support.",
-    detailedDescription: "This specialized therapeutic technique uses gentle, rhythmic movements to stimulate the lymphatic system. This detoxifying massage (pijat) helps reduce water retention, boost immune function, and eliminate toxins, contributing to overall kesehatan and recovery.",
+    detailedDescription: "Specialized therapeutic technique using gentle, rhythmic movements to stimulate the lymphatic system. This detoxifying massage helps reduce water retention, boost immune function, and eliminate toxins. Particularly beneficial after long flights, during illness recovery, or as part of a wellness detox program.",
     image: lymphatic,
     benefits: ["Reduced Swelling", "Detoxification", "Boosted Immunity", "Post-Surgery Recovery"],
     bestFor: ["Post-flight", "Water retention", "Immune support", "Recovery"],
@@ -73,56 +68,53 @@ const services = [
     pressure: "Very Light",
     prices: [
       { duration: "60 Min", price: "IDR 450K", savings: "" },
-      { duration: "90 Min", price: "IDR 650K", savings: "Optimal Duration" },
-      { duration: "120 Min", price: "IDR 850K", savings: "Intensive Detox" }
+      { duration: "90 Min", price: "IDR 630K", savings: "Optimal Duration" },
+      { duration: "120 Min", price: "IDR 820K", savings: "Intensive Detox" }
     ]
   },
   {
     title: "Thai Massage",
-    slug: "thai-massage",
-    description: "Energizing treatment combining yoga-like stretches with pressure along energy lines. Performed fully clothed, it improves flexibility and relieves stiffness. Great after hiking, surfing, or long sitting—plus this pijat is a fantastic way to renew your energy.",
-    detailedDescription: "Ancient healing art combining acupressure, Indian Ayurvedic principles, and assisted yoga postures. The therapist uses hands, knees, legs, and feet to move you into a series of yoga-like stretches while applying deep muscle compression, joint mobilization, and acupressure. Performed on a mat in comfortable clothing, this approach ensures both physical relief and mental relaksasi.",
+    description: "Energizing treatment combining yoga-like stretches with pressure along energy lines. Performed fully clothed, it improves flexibility and relieves stiffness. Great after hiking, surfing, or long sitting.",
+    detailedDescription: "Ancient healing art combining acupressure, Indian Ayurvedic principles, and assisted yoga postures. The therapist uses hands, knees, legs, and feet to move you into a series of yoga-like stretches while applying deep muscle compression, joint mobilization, and acupressure. Performed on a mat in comfortable clothing.",
     image: thaiMassage,
     benefits: ["Increased Flexibility", "Energy Boost", "Joint Mobility", "Mental Clarity"],
     bestFor: ["Active people", "Flexibility issues", "Energy boost", "Spiritual wellness"],
     popular: false,
     pressure: "Medium to Firm",
     prices: [
-      { duration: "60 Min", price: "IDR 450K", savings: "" },
-      { duration: "90 Min", price: "IDR 650K", savings: "Traditional Length" },
-      { duration: "120 Min", price: "IDR 850K", savings: "Full Experience" }
+      { duration: "60 Min", price: "IDR 390K", savings: "" },
+      { duration: "90 Min", price: "IDR 550K", savings: "Traditional Length" },
+      { duration: "120 Min", price: "IDR 720K", savings: "Full Experience" }
     ]
   },
   {
     title: "Four Hands Massage",
-    slug: "four-hands-massage",
-    description: "Luxury treatment with two synchronized therapists working together for complete body coverage. Creates deep relaxation and is perfect for special occasions or ultimate indulgence. This unique pijat experience, performed by experienced terapis, offers double the healing touch.",
-    detailedDescription: "The ultimate luxury experience with two skilled terapis working in perfect harmony. This synchronized massage provides complete body coverage and deeper relaxation than traditional single-therapist treatments. The choreographed movements create a unique sensory experience that's both deeply relaxing and therapeutically beneficial. Each session is carefully designed to balance pressure and rhythm, ensuring that every part of your body receives equal attention and care. The dual touch helps to quiet the mind, melt away stress, and promote a profound sense of tranquility. Four Hands Massage is ideal for those seeking a truly immersive escape, making it a memorable choice for celebrations, romantic getaways, or anyone in need of total rejuvenation.",
+    description: "Luxury treatment with two synchronized therapists working together for complete body coverage. Creates deep relaxation and is perfect for special occasions or ultimate indulgence.",
+    detailedDescription: "The ultimate luxury experience with two skilled therapists working in perfect harmony. This synchronized massage provides complete body coverage and deeper relaxation than traditional single-therapist treatments. The choreographed movements create a unique sensory experience that's both deeply relaxing and therapeutically beneficial.",
     image: fourHands,
     benefits: ["Ultimate Relaxation", "Complete Coverage", "Unique Experience", "Deep Restoration"],
     bestFor: ["Special occasions", "Ultimate luxury", "Deep relaxation", "Unique experience"],
     popular: true,
     pressure: "Customizable",
     prices: [
-      { duration: "60 Min", price: "IDR 600K", savings: "" },
-      { duration: "90 Min", price: "IDR 850K", savings: "Perfect Duration" },
+      { duration: "60 Min", price: "IDR 620K", savings: "" },
+      { duration: "90 Min", price: "IDR 860K", savings: "Perfect Duration" },
       { duration: "120 Min", price: "IDR 1,100K", savings: "VIP Experience" }
     ]
   },
   {
     title: "Hot Stone Massage",
-    slug: "hot-stone-massage",
-    description: "Therapeutic massage using smooth heated volcanic stones placed on key points of the body. The warmth penetrates deep into muscles, releasing tension, alleviating nyeri, and promoting profound relaxation. Perfect for muscle stiffness and stress relief.",
-    detailedDescription: "Combines traditional massage techniques with the healing power of heated volcanic basalt stones. The stones are placed on specific points along your spine, in your palms, and between your toes to improve energy flow. The heat helps muscles relax, allowing the therapist to work deeper while maintaining gentle pressure, ultimately enhancing relaksasi and overall kesehatan.",
+    description: "Therapeutic massage using smooth heated volcanic stones placed on key points of the body. The warmth penetrates deep into muscles, releasing tension and promoting profound relaxation. Perfect for muscle stiffness and stress relief.",
+    detailedDescription: "Combines traditional massage techniques with the healing power of heated volcanic basalt stones. The stones are placed on specific points along your spine, in your palms, and between your toes to improve energy flow. The heat helps muscles relax, allowing the therapist to work deeper while maintaining gentle pressure.",
     image: hotStone,
     benefits: ["Deep Muscle Relief", "Stress Reduction", "Better Circulation", "Pain Management"],
     bestFor: ["Muscle stiffness", "Chronic tension", "Cold weather", "Stress relief"],
     popular: false,
     pressure: "Medium",
     prices: [
-      { duration: "60 Min", price: "IDR 500K", savings: "" },
-      { duration: "90 Min", price: "IDR 700K", savings: "Recommended" },
-      { duration: "120 Min", price: "IDR 900K", savings: "Full Stone Ritual" }
+      { duration: "60 Min", price: "IDR 420K", savings: "" },
+      { duration: "90 Min", price: "IDR 590K", savings: "Recommended" },
+      { duration: "120 Min", price: "IDR 760K", savings: "Full Stone Ritual" }
     ]
   }
 ];
@@ -141,7 +133,8 @@ const Services = () => {
             Our Complete Massage Menu & Pricing
           </h2>
           <p className="text-lg md:text-xl text-professional-gray max-w-4xl mx-auto leading-relaxed">
-            All treatments are delivered directly to your villa, hotel, or private home in Kuta & surrounding areas. Our certified terapis bring everything needed for a professional body massage (pijat) and spa experience - massage table, oils, towels, and music.
+            All treatments are delivered directly to your villa, hotel, or private home in Kuta & surrounding areas. 
+            Our certified therapists bring everything needed for a professional spa experience - massage table, oils, towels, and music.
           </p>
           <div className="flex flex-wrap justify-center gap-4 mt-6 text-sm md:text-base">
             <div className="flex items-center gap-2 text-professional-navy">
@@ -168,7 +161,7 @@ const Services = () => {
                   <div className="aspect-[4/3] md:aspect-square relative overflow-hidden">
                     <img
                       src={service.image}
-                      alt={`${service.title} - Professional massage service in Kuta, Bali`}
+                      alt={service.title}
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                     />
                     {service.popular && (
@@ -187,9 +180,7 @@ const Services = () => {
                 <div className="md:w-3/5 lg:w-2/3 p-6 md:p-8">
                   <CardHeader className="p-0 mb-4">
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
-                      <Link to={`/services/${service.slug}`} className="hover:text-professional-gold transition-colors">
-                        <CardTitle className="text-xl md:text-2xl text-professional-navy hover:text-professional-gold">{service.title}</CardTitle>
-                      </Link>
+                      <CardTitle className="text-xl md:text-2xl text-professional-navy">{service.title}</CardTitle>
                     </div>
                     <CardDescription className="text-professional-gray text-base leading-relaxed mb-4">
                       {service.description}
@@ -256,11 +247,9 @@ const Services = () => {
                           Book {service.title}
                         </a>
                       </Button>
-                      <Button asChild variant="outline" className="sm:w-auto border-professional-gold/30 text-professional-navy hover:bg-professional-gold/10">
-                        <Link to={`/services/${service.slug}`}>
-                          <ArrowRight className="h-4 w-4 mr-2" />
-                          Learn More
-                        </Link>
+                      <Button variant="outline" className="sm:w-auto border-professional-gold/30 text-professional-navy hover:bg-professional-gold/10">
+                        <Clock className="h-4 w-4 mr-2" />
+                        Quick Info
                       </Button>
                     </div>
                   </CardContent>
@@ -275,7 +264,8 @@ const Services = () => {
           <Card className="bg-gradient-to-r from-professional-navy to-professional-gold text-white p-8 md:p-12">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">Can't Decide Which Massage to Choose?</h3>
             <p className="text-lg opacity-90 mb-6 max-w-2xl mx-auto">
-              Our experienced terapis can recommend the perfect treatment based on your needs, preferences, and any health conditions. Get personalized advice via WhatsApp before booking. We take the time to understand your goals—whether you seek relaxation, pain relief, or a specific therapeutic benefit—so you can feel confident in your choice. Let us guide you to the massage experience that will deliver the best results for your body and mind.
+              Our experienced therapists can recommend the perfect treatment based on your needs, preferences, and any health conditions. 
+              Get personalized advice via WhatsApp before booking.
             </p>
             <Button asChild size="lg" className="bg-white text-professional-navy hover:bg-professional-light font-semibold px-8 py-4">
               <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">

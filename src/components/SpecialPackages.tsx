@@ -15,7 +15,7 @@ const packages = [
       "Complimentary aromatherapy candles"
     ],
     duration: "90 minutes",
-    price: "IDR 1,200K for couple"
+    price: "IDR 900K for couple"
   },
   {
     title: "Surf Recovery Package",

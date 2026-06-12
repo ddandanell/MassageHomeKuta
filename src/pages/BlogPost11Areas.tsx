@@ -429,7 +429,7 @@ const BlogPost11Areas = () => {
               <div className="grid md:grid-cols-2 gap-6">
                 <Link to="/blog/massage-kuta-bali-price-guide" className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
                   <h3 className="text-xl font-bold text-spa-earth mb-2">Massage Kuta Price Guide 2026</h3>
-                  <p className="text-spa-stone">Complete massage pricing in Kuta, Bali. Verified rates from IDR 250K-1.55M. No hidden fees.</p>
+                  <p className="text-spa-stone">Complete massage pricing in Kuta, Bali. Verified rates from IDR 250K-1.1M. No hidden fees.</p>
                 </Link>
                 <Link to="/blog/how-to-book-massage-kuta-whatsapp" className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
                   <h3 className="text-xl font-bold text-spa-earth mb-2">How to Book Massage in Kuta via WhatsApp</h3>

@@ -12,9 +12,9 @@ const PricingDetails = () => {
       title: "Quick Relief",
       subtitle: "Perfect for busy schedules",
       duration: "60 Minutes",
-      price: "IDR 350K - 450K",
+      price: "IDR 320K - 450K",
       popular: false,
-      massageTypes: ["Balinese Massage", "Aromatherapy", "Deep Tissue"],
+      massageTypes: ["Traditional Balinese Massage", "Aromatherapy Massage", "Deep Tissue Massage"],
       features: [
         "Professional massage table setup",
         "Premium organic oils",
@@ -22,13 +22,13 @@ const PricingDetails = () => {
         "Relaxing background music",
         "Post-massage consultation"
       ],
-      bestFor: "First-time clients, lunch break relaxation (pijat) for immediate relaksasi and relief from everyday nyeri."
+      bestFor: "First-time clients, lunch break relaxation, quick stress relief"
     },
     {
       title: "Complete Wellness",
       subtitle: "Our most popular choice",
       duration: "90 Minutes",
-      price: "IDR 500K - 650K",
+      price: "IDR 450K - 630K",
       popular: true,
       massageTypes: ["All massage types available", "Combination treatments"],
       features: [
@@ -39,13 +39,13 @@ const PricingDetails = () => {
         "Scalp and face massage add-on",
         "Flexibility for custom requests"
       ],
-      bestFor: "Full relaxation, couples treatment with synchronized pijat, and chronic tension relief ensuring lasting manfaat kesehatan."
+      bestFor: "Full relaxation, couples treatment, chronic tension relief"
     },
     {
       title: "Ultimate Indulgence",
       subtitle: "The full spa experience",
       duration: "120+ Minutes",
-      price: "IDR 650K - 1,100K",
+      price: "IDR 590K - 1,100K",
       popular: false,
       massageTypes: ["Premium treatments", "Four-hands massage", "Specialized therapy"],
       features: [
@@ -56,7 +56,7 @@ const PricingDetails = () => {
         "Post-treatment refreshments",
         "Customized oil blends"
       ],
-      bestFor: "Special occasions, ultimate relaxation, and luxury experience with expertly administered pijat by certified terapis."
+      bestFor: "Special occasions, ultimate relaxation, luxury experience"
     }
   ];
 
@@ -80,7 +80,8 @@ const PricingDetails = () => {
             Choose Your Perfect Massage Package
           </h2>
           <p className="text-lg md:text-xl text-professional-gray max-w-4xl mx-auto leading-relaxed">
-            No hidden fees, no surprises. All prices include transportation, setup, and professional service. Same transparent pricing whether you're in a 5-star resort or a cozy villa. Our flexible packages are designed to fit your schedule and preferences, ensuring a seamless and stress-free experience from start to finish. Enjoy the convenience of premium home massage with clear, upfront pricing and exceptional service every time.
+            No hidden fees, no surprises. All prices include transportation, setup, and professional service. 
+            Same transparent pricing whether you're in a 5-star resort or a cozy villa.
           </p>
         </div>
 
@@ -182,7 +183,7 @@ const PricingDetails = () => {
                 Enhance Your Experience
               </CardTitle>
               <CardDescription>
-                Additional services to make your massage (pijat) even more special.
+                Additional services to make your massage even more special
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -253,7 +254,8 @@ const PricingDetails = () => {
           <Card className="bg-gradient-to-r from-professional-navy to-professional-gold text-white p-6 md:p-8 max-w-2xl mx-auto">
             <h3 className="text-xl md:text-2xl font-bold mb-4">Still Have Questions?</h3>
             <p className="mb-6 opacity-90">
-              Get personalized pricing and recommendations based on your specific needs. Our team is standing by to help you choose the perfect massage experience for optimal kesehatan and relaxation.
+              Get personalized pricing and recommendations based on your specific needs. 
+              Our team is standing by to help you choose the perfect massage experience.
             </p>
             <Button asChild variant="outline" className="bg-white text-professional-navy hover:bg-professional-light font-semibold px-8 py-3">
               <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">

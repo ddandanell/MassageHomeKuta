@@ -22,9 +22,9 @@ const services = [
     popular: true,
     pressure: "Light to Medium",
     prices: [
-      { duration: "60 Min", price: "IDR 280K", savings: "" },
-      { duration: "90 Min", price: "IDR 400K", savings: "Save 40K" },
-      { duration: "120 Min", price: "IDR 520K", savings: "Most Popular" }
+      { duration: "60 Min", price: "IDR 320K", savings: "" },
+      { duration: "90 Min", price: "IDR 450K", savings: "Recommended" },
+      { duration: "120 Min", price: "IDR 590K", savings: "Most Popular" }
     ]
   },
   {
@@ -37,9 +37,9 @@ const services = [
     popular: true,
     pressure: "Firm to Deep",
     prices: [
-      { duration: "60 Min", price: "IDR 320K", savings: "" },
-      { duration: "90 Min", price: "IDR 460K", savings: "Recommended" },
-      { duration: "120 Min", price: "IDR 600K", savings: "Best Value" }
+      { duration: "60 Min", price: "IDR 380K", savings: "" },
+      { duration: "90 Min", price: "IDR 540K", savings: "Recommended" },
+      { duration: "120 Min", price: "IDR 700K", savings: "Best Value" }
     ]
   },
   {
@@ -52,9 +52,9 @@ const services = [
     popular: false,
     pressure: "Light to Medium",
     prices: [
-      { duration: "60 Min", price: "IDR 304K", savings: "" },
-      { duration: "90 Min", price: "IDR 440K", savings: "Popular Choice" },
-      { duration: "120 Min", price: "IDR 560K", savings: "Ultimate Relaxation" }
+      { duration: "60 Min", price: "IDR 350K", savings: "" },
+      { duration: "90 Min", price: "IDR 490K", savings: "Popular Choice" },
+      { duration: "120 Min", price: "IDR 640K", savings: "Ultimate Relaxation" }
     ]
   },
   {
@@ -67,9 +67,9 @@ const services = [
     popular: false,
     pressure: "Very Light",
     prices: [
-      { duration: "60 Min", price: "IDR 384K", savings: "" },
-      { duration: "90 Min", price: "IDR 550K", savings: "Optimal Duration" },
-      { duration: "120 Min", price: "IDR 720K", savings: "Intensive Detox" }
+      { duration: "60 Min", price: "IDR 450K", savings: "" },
+      { duration: "90 Min", price: "IDR 630K", savings: "Optimal Duration" },
+      { duration: "120 Min", price: "IDR 820K", savings: "Intensive Detox" }
     ]
   },
   {
@@ -82,9 +82,9 @@ const services = [
     popular: false,
     pressure: "Medium to Firm",
     prices: [
-      { duration: "60 Min", price: "IDR 360K", savings: "" },
-      { duration: "90 Min", price: "IDR 520K", savings: "Traditional Length" },
-      { duration: "120 Min", price: "IDR 680K", savings: "Full Experience" }
+      { duration: "60 Min", price: "IDR 390K", savings: "" },
+      { duration: "90 Min", price: "IDR 550K", savings: "Traditional Length" },
+      { duration: "120 Min", price: "IDR 720K", savings: "Full Experience" }
     ]
   },
   {
@@ -97,9 +97,9 @@ const services = [
     popular: true,
     pressure: "Customizable",
     prices: [
-      { duration: "60 Min", price: "IDR 520K", savings: "" },
-      { duration: "90 Min", price: "IDR 740K", savings: "Perfect Duration" },
-      { duration: "120 Min", price: "IDR 960K", savings: "VIP Experience" }
+      { duration: "60 Min", price: "IDR 620K", savings: "" },
+      { duration: "90 Min", price: "IDR 860K", savings: "Perfect Duration" },
+      { duration: "120 Min", price: "IDR 1,100K", savings: "VIP Experience" }
     ]
   },
   {
@@ -112,9 +112,9 @@ const services = [
     popular: false,
     pressure: "Medium",
     prices: [
-      { duration: "60 Min", price: "IDR 360K", savings: "" },
-      { duration: "90 Min", price: "IDR 520K", savings: "Recommended" },
-      { duration: "120 Min", price: "IDR 680K", savings: "Full Stone Ritual" }
+      { duration: "60 Min", price: "IDR 420K", savings: "" },
+      { duration: "90 Min", price: "IDR 590K", savings: "Recommended" },
+      { duration: "120 Min", price: "IDR 760K", savings: "Full Stone Ritual" }
     ]
   }
 ];

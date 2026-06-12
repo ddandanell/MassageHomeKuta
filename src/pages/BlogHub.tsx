@@ -32,7 +32,7 @@ const BlogHub = () => {
   const featuredPosts = [
     {
       title: "How Much Does a Massage Cost in Kuta, Bali? (2026 Price Guide)",
-      excerpt: "Complete breakdown of massage pricing in Kuta with verified rates from IDR 250K to IDR 1,550K. Includes Balinese, deep tissue, hot stone, couples massage, and specialty services.",
+      excerpt: "Complete breakdown of massage pricing in Kuta with verified rates from IDR 250K to IDR 1,100K. Includes Balinese, deep tissue, hot stone, couples massage, and specialty services.",
       slug: "/blog/massage-kuta-bali-price-guide",
       icon: DollarSign,
       color: "text-professional-gold"

@@ -238,7 +238,7 @@ const BlogPost2Booking = () => {
               
               <ul>
                 <li><strong>✅ Availability Confirmation:</strong> "Yes, we have therapists available at 3 PM today" or "3 PM is fully booked, but we have 2:30 PM or 5 PM available."</li>
-                <li><strong>✅ Exact Total Price:</strong> "The total price is IDR 500,000 for one 90-minute Balinese massage. This includes therapist travel, all equipment, oils, and linens. No additional fees."</li>
+                <li><strong>✅ Exact Total Price:</strong> "The total price is IDR 450,000 for one 90-minute Balinese massage. This includes therapist travel, all equipment, oils, and linens. No additional fees."</li>
                 <li><strong>✅ Travel Time Estimate:</strong> "Our therapist can reach you in approximately 25-30 minutes from confirmation."</li>
                 <li><strong>✅ Follow-Up Questions:</strong> "Do you have any areas you'd like the therapist to focus on? Any injuries or health conditions we should know about?"</li>
               </ul>
@@ -256,7 +256,7 @@ const BlogPost2Booking = () => {
                   <p>- Today at 3 PM</p>
                   <p>- [Hotel Name], Room [number]</p>
                   <p>- 1 person</p>
-                  <p>- Total: IDR 500,000</p>
+                  <p>- Total: IDR 450,000</p>
                   <p className="mt-2">Confirmed! See you at 3 PM.</p>
                 </div>
               </div>
@@ -398,7 +398,7 @@ const BlogPost2Booking = () => {
               <div className="grid md:grid-cols-2 gap-6">
                 <Link to="/blog/massage-kuta-bali-price-guide" className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
                   <h3 className="text-xl font-bold text-spa-earth mb-2">Massage Kuta Price Guide 2026</h3>
-                  <p className="text-spa-stone">Complete massage pricing in Kuta, Bali. Verified rates from IDR 250K-1.55M. No hidden fees.</p>
+                  <p className="text-spa-stone">Complete massage pricing in Kuta, Bali. Verified rates from IDR 250K-1.1M. No hidden fees.</p>
                 </Link>
                 <Link to="/blog/best-areas-kuta-home-massage-coverage" className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
                   <h3 className="text-xl font-bold text-spa-earth mb-2">Best Kuta Areas for Home Massage Service</h3>

@@ -96,37 +96,37 @@ const MassageTherapistKutaBali = () => {
     {
       name: "Traditional Balinese Massage (Licensed Therapist)",
       description: "Authentic Balinese massage delivered by certified therapist – traditional full-body treatment combining palm pressure, acupressure, and gentle stretching with natural aromatic oils.",
-      prices: { "60": "$17 USD (IDR 260K)", "90": "$24 USD (IDR 380K)", "120": "$32 USD (IDR 500K)" }
+      prices: { "60": "$20 USD (IDR 320K)", "90": "$28 USD (IDR 450K)", "120": "$37 USD (IDR 590K)" }
     },
     {
       name: "Deep Tissue Massage (Certified Therapist)",
       description: "Professional deep tissue therapist – intensive therapeutic treatment targeting deep muscle layers, chronic tension, and stubborn knots.",
-      prices: { "60": "$19 USD (IDR 300K)", "90": "$28 USD (IDR 440K)", "120": "$37 USD (IDR 580K)" }
+      prices: { "60": "$24 USD (IDR 380K)", "90": "$34 USD (IDR 540K)", "120": "$44 USD (IDR 700K)" }
     },
     {
       name: "Aromatherapy Massage (Certified Aromatherapy Specialist)",
       description: "Licensed aromatherapy massage therapist – full-body massage using premium essential oils (lavender, lemongrass, eucalyptus, frangipani).",
-      prices: { "60": "$18 USD (IDR 290K)", "90": "$27 USD (IDR 420K)", "120": "$34 USD (IDR 540K)" }
+      prices: { "60": "$22 USD (IDR 350K)", "90": "$31 USD (IDR 490K)", "120": "$40 USD (IDR 640K)" }
     },
     {
       name: "Lymphatic Drainage Massage (Specialized Therapist)",
       description: "Certified lymphatic drainage specialist – gentle rhythmic massage designed to stimulate the lymphatic system, reduce swelling, improve circulation, and support detoxification.",
-      prices: { "60": "$23 USD (IDR 360K)", "90": "$33 USD (IDR 520K)", "120": "$43 USD (IDR 680K)" }
+      prices: { "60": "$28 USD (IDR 450K)", "90": "$39 USD (IDR 630K)", "120": "$51 USD (IDR 820K)" }
     },
     {
       name: "Thai Massage (Certified Thai Bodywork Therapist)",
       description: "Licensed Thai massage practitioner – traditional Thai bodywork combining assisted stretching and pressure along energy lines. Performed fully clothed without oil.",
-      prices: { "60": "$22 USD (IDR 340K)", "90": "$32 USD (IDR 500K)", "120": "$42 USD (IDR 660K)" }
+      prices: { "60": "$24 USD (IDR 390K)", "90": "$34 USD (IDR 550K)", "120": "$45 USD (IDR 720K)" }
     },
     {
       name: "Hot Stone Massage (Certified Hot Stone Therapist)",
       description: "Trained hot stone massage specialist – therapeutic massage using smooth heated volcanic stones placed on key pressure points. Heat penetrates deep into muscles, relieving tension and calming the nervous system.",
-      prices: { "60": "$22 USD (IDR 340K)", "90": "$32 USD (IDR 500K)", "120": "$42 USD (IDR 660K)" }
+      prices: { "60": "$26 USD (IDR 420K)", "90": "$37 USD (IDR 590K)", "120": "$48 USD (IDR 760K)" }
     },
     {
       name: "Four Hands Massage (Two Certified Therapists)",
       description: "Luxury four hands massage with two synchronized therapists – premium treatment performed by two professional therapists working together in perfect rhythm.",
-      prices: { "60": "$32 USD (IDR 500K)", "90": "$46 USD (IDR 720K)", "120": "$58 USD (IDR 920K)" }
+      prices: { "60": "$39 USD (IDR 620K)", "90": "$54 USD (IDR 860K)", "120": "$69 USD (IDR 1,100K)" }
     },
     {
       name: "Pregnancy Massage (Certified Prenatal Therapist)",
@@ -341,7 +341,7 @@ const MassageTherapistKutaBali = () => {
                   <CardTitle className="text-spa-earth">Premium Service, Transparent Pricing</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-spa-stone">No hidden fees, no pressure to tip excessively, no bait-and-switch pricing. Every massage therapist delivers the same quality service at consistent rates: traditional Balinese massage from $17 USD.</p>
+                  <p className="text-spa-stone">No hidden fees, no pressure to tip excessively, no bait-and-switch pricing. Every massage therapist delivers the same quality service at consistent rates: traditional Balinese massage from $20 USD.</p>
                 </CardContent>
               </Card>
 

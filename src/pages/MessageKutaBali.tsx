@@ -36,7 +36,7 @@ const MessageKutaBali = () => {
     serviceType: "In-Villa Massage and Spa Services",
     areaServed: "Kuta, Bali, Indonesia",
     offers: {
-      priceRange: "IDR 250,000 - IDR 1,550,000",
+      priceRange: "IDR 250,000 - IDR 1,100,000",
       priceCurrency: "IDR"
     }
   };
@@ -45,31 +45,31 @@ const MessageKutaBali = () => {
     {
       name: "Traditional Balinese Massage",
       description: "Ancient healing technique combining gentle stretches, acupressure, and aromatherapy oils to restore balance and harmony.",
-      prices: { "60": "IDR 350K", "90": "IDR 500K", "120": "IDR 650K" },
+      prices: { "60": "IDR 320K", "90": "IDR 450K", "120": "IDR 590K" },
       slug: "balinese-massage"
     },
     {
       name: "Deep Tissue Massage",
       description: "Intensive treatment targeting chronic muscle tension and deep knots using firm pressure.",
-      prices: { "60": "IDR 400K", "90": "IDR 550K", "120": "IDR 700K" },
+      prices: { "60": "IDR 380K", "90": "IDR 540K", "120": "IDR 700K" },
       slug: "deep-tissue-massage"
     },
     {
       name: "Aromatherapy Massage",
       description: "Relaxing massage using premium essential oils to promote emotional well-being.",
-      prices: { "60": "IDR 350K", "90": "IDR 500K", "120": "IDR 650K" },
+      prices: { "60": "IDR 350K", "90": "IDR 490K", "120": "IDR 640K" },
       slug: "aromatherapy-massage"
     },
     {
       name: "Hot Stone Massage",
       description: "Luxurious treatment using heated volcanic stones to melt away tension.",
-      prices: { "60": "IDR 450K", "90": "IDR 580K", "120": "IDR 730K" },
+      prices: { "60": "IDR 420K", "90": "IDR 590K", "120": "IDR 760K" },
       slug: "hot-stone-massage"
     },
     {
       name: "Four Hands Massage",
       description: "Ultimate luxury with two therapists working in perfect synchronization.",
-      prices: { "60": "IDR 850K", "90": "IDR 1,200K", "120": "IDR 1,550K" },
+      prices: { "60": "IDR 620K", "90": "IDR 860K", "120": "IDR 1,100K" },
       slug: "four-hands-massage"
     }
   ];
@@ -91,7 +91,7 @@ const MessageKutaBali = () => {
     },
     {
       question: "How much does massage cost in Kuta, Bali?",
-      answer: "Professional massage prices in Kuta range from IDR 250,000 to IDR 1,550,000 depending on treatment type and duration. Traditional Balinese massage costs IDR 350,000 (60 min), IDR 500,000 (90 min), or IDR 650,000 (120 min). All prices include therapist travel, professional equipment, premium oils, and setup with no hidden fees."
+      answer: "Professional massage prices in Kuta range from IDR 250,000 to IDR 1,100,000 depending on treatment type and duration. Traditional Balinese massage costs IDR 320,000 (60 min), IDR 450,000 (90 min), or IDR 590,000 (120 min). All prices include therapist travel, professional equipment, premium oils, and setup with no hidden fees."
     },
     {
       question: "Can I book same-day massage in Kuta?",

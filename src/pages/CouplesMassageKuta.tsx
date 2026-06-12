@@ -32,7 +32,7 @@ const CouplesMassageKuta = () => {
 
   const serviceSchemaData = {
     name: "Couples Massage Kuta - Romantic In-Villa Treatment",
-    description: "Romantic couples massage in Kuta delivered to your villa or hotel. Synchronized treatments, certified therapists, same-day booking. Book now from $17 per person.",
+    description: "Romantic couples massage in Kuta delivered to your villa or hotel. Synchronized treatments, certified therapists, same-day booking. Book now from $20 per person.",
     serviceType: "Couples Massage and Spa Services",
     areaServed: "Kuta, Bali",
     offers: {
@@ -46,31 +46,31 @@ const CouplesMassageKuta = () => {
       name: "Traditional Balinese Couples Massage",
       description: "Our most popular couples treatment combining palm pressure, acupressure, gentle stretching, and aromatic Balinese oils. This authentic technique provides medium-to-firm pressure perfect for couples seeking cultural immersion and overall relaxation.",
       idealFor: "First-time visitors, couples wanting authentic Balinese healing traditions, partners with moderate stress and muscle tension.",
-      prices: { "60": "$17 USD per person (IDR 260,000)", "90": "$24 USD per person (IDR 380,000)", "120": "$32 USD per person (IDR 500,000)" }
+      prices: { "60": "$20 USD per person (IDR 320,000)", "90": "$28 USD per person (IDR 450,000)", "120": "$37 USD per person (IDR 590,000)" }
     },
     {
       name: "Aromatherapy Couples Massage",
       description: "Luxurious aromatherapy treatment using premium essential oils selected together. Choose from lavender for relaxation, eucalyptus for respiratory clarity, lemongrass for energy, or frangipani for romance. Light-to-medium pressure focuses on stress relief and sensory indulgence.",
       idealFor: "Romantic occasions, jet lag recovery, couples prioritizing relaxation over deep muscle work, partners sensitive to firm pressure.",
-      prices: { "60": "$18 USD per person (IDR 290,000)", "90": "$27 USD per person (IDR 420,000)", "120": "$34 USD per person (IDR 540,000)" }
+      prices: { "60": "$22 USD per person (IDR 350,000)", "90": "$31 USD per person (IDR 490,000)", "120": "$40 USD per person (IDR 640,000)" }
     },
     {
       name: "Deep Tissue Couples Massage",
       description: "Intensive therapeutic treatment targeting chronic muscle tension, knots, and deep tissue adhesions. Both therapists use focused pressure techniques to release stubborn tension in back, shoulders, neck, and legs.",
       idealFor: "Active couples (surfers, athletes), partners with chronic pain or postural issues, guests requiring serious therapeutic work rather than light relaxation.",
-      prices: { "60": "$19 USD per person (IDR 300,000)", "90": "$28 USD per person (IDR 440,000)", "120": "$37 USD per person (IDR 580,000)" }
+      prices: { "60": "$24 USD per person (IDR 380,000)", "90": "$34 USD per person (IDR 540,000)", "120": "$44 USD per person (IDR 700,000)" }
     },
     {
       name: "Hot Stone Couples Massage",
       description: "Premium treatment combining heated volcanic stones with traditional massage techniques. Smooth stones are placed on key energy points while therapists use additional stones during the massage sequence. Heat penetrates deep into muscles, creating profound relaxation.",
       idealFor: "Special occasions, luxury wellness experiences, couples wanting something beyond standard massage, partners with deep-seated muscle tension.",
-      prices: { "60": "$22 USD per person (IDR 340,000)", "90": "$32 USD per person (IDR 500,000)", "120": "$42 USD per person (IDR 660,000)" }
+      prices: { "60": "$26 USD per person (IDR 420,000)", "90": "$37 USD per person (IDR 590,000)", "120": "$48 USD per person (IDR 760,000)" }
     },
     {
       name: "Four Hands Couples Experience",
       description: "Our ultimate luxury offering: each partner receives four hands massage simultaneously, meaning four therapists work together – two therapists per person. This creates an extraordinary sensory experience with double the therapeutic impact.",
       idealFor: "Honeymoons, milestone celebrations, couples wanting the most indulgent spa experience possible.",
-      prices: { "60": "$32 USD per person (IDR 500,000)", "90": "$46 USD per person (IDR 720,000)", "120": "$58 USD per person (IDR 920,000)" }
+      prices: { "60": "$39 USD per person (IDR 620,000)", "90": "$54 USD per person (IDR 860,000)", "120": "$69 USD per person (IDR 1,100,000)" }
     }
   ];
 
@@ -105,7 +105,7 @@ const CouplesMassageKuta = () => {
     },
     {
       question: "How much does couples massage cost in Kuta?",
-      answer: "Couples massage in Kuta ranges from $17-58 USD per person depending on massage type and duration. Traditional Balinese couples massage starts at $17 USD per person for 60 minutes ($34 total for both partners). Luxury four hands couples experience costs $32 USD per person for 60 minutes. All pricing includes two therapists, equipment, oils, and villa delivery."
+      answer: "Couples massage in Kuta ranges from $20-69 USD per person depending on massage type and duration. Traditional Balinese couples massage starts at $20 USD per person for 60 minutes ($40 total for both partners). Luxury four hands couples experience costs $39 USD per person for 60 minutes. All pricing includes two therapists, equipment, oils, and villa delivery."
     },
     {
       question: "Do we need a large space for couples massage?",
@@ -161,7 +161,7 @@ const CouplesMassageKuta = () => {
     <div className="min-h-screen">
       <SiteMeta 
         title="Couples Massage Kuta – Romantic In-Villa Treatment | Home Massage Kuta"
-        description="Romantic couples massage in Kuta delivered to your villa or hotel. Synchronized treatments, certified therapists, same-day booking. Book now from $17 per person."
+        description="Romantic couples massage in Kuta delivered to your villa or hotel. Synchronized treatments, certified therapists, same-day booking. Book now from $20 per person."
         keywords="couples massage kuta, romantic massage kuta, couples spa kuta, synchronized massage kuta, honeymoon massage kuta, anniversary massage kuta, couples therapy kuta, two therapist massage kuta"
         canonical="/couples-massage-kuta"
       />
@@ -298,7 +298,7 @@ const CouplesMassageKuta = () => {
                   <CardTitle className="text-spa-earth">Affordable Pricing</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-spa-stone">Starting from just $17 USD per person for 60-minute sessions</p>
+                  <p className="text-spa-stone">Starting from just $20 USD per person for 60-minute sessions</p>
                 </CardContent>
               </Card>
             </div>

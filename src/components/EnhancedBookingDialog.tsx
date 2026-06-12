@@ -16,14 +16,14 @@ interface EnhancedBookingDialogProps {
 }
 
 const massageTypes = [
-  { id: "balinese", name: "Traditional Balinese Massage", price: "350K-650K", popular: true },
-  { id: "deep-tissue", name: "Deep Tissue Massage", price: "400K-700K", popular: true },
-  { id: "aromatherapy", name: "Aromatherapy Massage", price: "350K-650K", popular: false },
-  { id: "lymphatic", name: "Lymphatic Drainage", price: "450K-850K", popular: false },
-  { id: "thai", name: "Thai Massage", price: "450K-850K", popular: false },
-  { id: "four-hands", name: "Four Hands Massage", price: "600K-1100K", popular: true },
-  { id: "hot-stone", name: "Hot Stone Massage", price: "500K-900K", popular: false },
-  { id: "couples", name: "Couples Massage", price: "700K-1300K", popular: true },
+  { id: "balinese", name: "Traditional Balinese Massage", price: "320K-590K", popular: true },
+  { id: "deep-tissue", name: "Deep Tissue Massage", price: "380K-700K", popular: true },
+  { id: "aromatherapy", name: "Aromatherapy Massage", price: "350K-640K", popular: false },
+  { id: "lymphatic", name: "Lymphatic Drainage", price: "450K-820K", popular: false },
+  { id: "thai", name: "Thai Massage", price: "390K-720K", popular: false },
+  { id: "four-hands", name: "Four Hands Massage", price: "620K-1100K", popular: true },
+  { id: "hot-stone", name: "Hot Stone Massage", price: "420K-760K", popular: false },
+  { id: "couples", name: "Couples Massage", price: "640K-1240K", popular: true },
   { id: "prenatal", name: "Prenatal Massage", price: "400K-600K", popular: false },
   { id: "foot-reflexology", name: "Foot Reflexology", price: "250K-350K", popular: false },
 ];

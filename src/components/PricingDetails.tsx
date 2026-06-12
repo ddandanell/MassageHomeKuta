@@ -12,7 +12,7 @@ const PricingDetails = () => {
       title: "Quick Relief",
       subtitle: "Perfect for busy schedules",
       duration: "60 Minutes",
-      price: "IDR 280K - 384K",
+      price: "IDR 320K - 450K",
       popular: false,
       massageTypes: ["Traditional Balinese Massage", "Aromatherapy Massage", "Deep Tissue Massage"],
       features: [
@@ -28,7 +28,7 @@ const PricingDetails = () => {
       title: "Complete Wellness",
       subtitle: "Our most popular choice",
       duration: "90 Minutes",
-      price: "IDR 400K - 550K",
+      price: "IDR 450K - 630K",
       popular: true,
       massageTypes: ["All massage types available", "Combination treatments"],
       features: [
@@ -45,7 +45,7 @@ const PricingDetails = () => {
       title: "Ultimate Indulgence",
       subtitle: "The full spa experience",
       duration: "120+ Minutes",
-      price: "IDR 520K - 960K",
+      price: "IDR 590K - 1,100K",
       popular: false,
       massageTypes: ["Premium treatments", "Four-hands massage", "Specialized therapy"],
       features: [

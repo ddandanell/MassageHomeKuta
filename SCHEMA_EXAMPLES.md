@@ -217,7 +217,7 @@ This file contains example JSON-LD outputs for each schema type implemented on t
     "@type": "Offer",
     "availability": "https://schema.org/InStock",
     "priceCurrency": "IDR",
-    "priceRange": "IDR 350,000 - IDR 650,000",
+    "priceRange": "IDR 320,000 - IDR 590,000",
     "url": "https://homemassagekuta.com"
   }
 }

@@ -151,7 +151,7 @@ This checklist helps verify that structured data is properly implemented and eli
   "offers": {
     "@type": "Offer",
     "priceCurrency": "IDR",
-    "priceRange": "IDR 350,000 - IDR 650,000"
+    "priceRange": "IDR 320,000 - IDR 590,000"
   }
 }
 ```

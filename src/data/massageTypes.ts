@@ -46,17 +46,17 @@ export const balineseData: MassageTypeData = {
   packages: [
     {
       duration: "60 Minutes",
-      price: "IDR 350,000",
+      price: "IDR 320,000",
       description: "Perfect introduction to Balinese massage. Full body treatment focusing on major muscle groups."
     },
     {
       duration: "90 Minutes",
-      price: "IDR 500,000",
+      price: "IDR 450,000",
       description: "Most popular. Extended full body massage with extra attention to problem areas."
     },
     {
       duration: "120 Minutes",
-      price: "IDR 650,000",
+      price: "IDR 590,000",
       description: "Ultimate relaxation. Comprehensive treatment including head, face, and foot massage."
     }
   ],
@@ -292,12 +292,12 @@ export const deepTissueData: MassageTypeData = {
   packages: [
     {
       duration: "60 Minutes",
-      price: "IDR 400,000",
+      price: "IDR 380,000",
       description: "Focused treatment on 1-2 problem areas. Perfect for specific pain relief."
     },
     {
       duration: "90 Minutes",
-      price: "IDR 550,000",
+      price: "IDR 540,000",
       description: "Most recommended. Full body treatment with concentrated work on tension areas."
     },
     {
@@ -401,17 +401,17 @@ export const aromatherapyData: MassageTypeData = {
   packages: [
     {
       duration: "60 Minutes",
-      price: "IDR 380,000",
+      price: "IDR 350,000",
       description: "Full body aromatherapy massage with your choice of essential oil blend."
     },
     {
       duration: "90 Minutes",
-      price: "IDR 530,000",
+      price: "IDR 490,000",
       description: "Extended session with head and face massage. Most popular choice."
     },
     {
       duration: "120 Minutes",
-      price: "IDR 680,000",
+      price: "IDR 640,000",
       description: "Ultimate aromatherapy experience including scalp, face, and foot reflexology."
     }
   ],
@@ -509,17 +509,17 @@ export const lymphaticData: MassageTypeData = {
   packages: [
     {
       duration: "60 Minutes",
-      price: "IDR 420,000",
+      price: "IDR 450,000",
       description: "Full body lymphatic drainage focusing on major lymph pathways."
     },
     {
       duration: "90 Minutes",
-      price: "IDR 580,000",
+      price: "IDR 630,000",
       description: "Comprehensive treatment including face, neck, and detailed body work."
     },
     {
       duration: "120 Minutes",
-      price: "IDR 730,000",
+      price: "IDR 820,000",
       description: "Ultimate detox session with extended time for all body areas."
     }
   ],
@@ -602,17 +602,17 @@ export const thaiData: MassageTypeData = {
   packages: [
     {
       duration: "60 Minutes",
-      price: "IDR 370,000",
+      price: "IDR 390,000",
       description: "Traditional Thai massage focusing on major muscle groups and stretches."
     },
     {
       duration: "90 Minutes",
-      price: "IDR 520,000",
+      price: "IDR 550,000",
       description: "Extended session with comprehensive stretching and energy work. Most popular."
     },
     {
       duration: "120 Minutes",
-      price: "IDR 670,000",
+      price: "IDR 720,000",
       description: "Complete Thai massage experience with detailed attention to all body areas."
     }
   ],
@@ -690,18 +690,18 @@ export const hotStoneData: MassageTypeData = {
   ],
   packages: [
     {
-      duration: "75 Minutes",
-      price: "IDR 450,000",
+      duration: "60 Minutes",
+      price: "IDR 420,000",
       description: "Classic hot stone massage with stone placement and massage techniques."
     },
     {
       duration: "90 Minutes",
-      price: "IDR 580,000",
+      price: "IDR 590,000",
       description: "Extended luxury session with comprehensive hot stone treatment."
     },
     {
       duration: "120 Minutes",
-      price: "IDR 730,000",
+      price: "IDR 760,000",
       description: "Ultimate indulgence with extended time for full body hot stone experience."
     }
   ],
@@ -780,17 +780,17 @@ export const fourHandsData: MassageTypeData = {
   packages: [
     {
       duration: "60 Minutes",
-      price: "IDR 850,000",
+      price: "IDR 620,000",
       description: "Two therapists working in sync for one hour of pure bliss."
     },
     {
       duration: "90 Minutes",
-      price: "IDR 1,200,000",
+      price: "IDR 860,000",
       description: "Extended four hands experience. Most popular choice for special occasions."
     },
     {
       duration: "120 Minutes",
-      price: "IDR 1,550,000",
+      price: "IDR 1,100,000",
       description: "Ultimate luxury. Two hours of synchronized four hands massage."
     }
   ],

@@ -21,22 +21,22 @@
 | **Services** | Pregnancy Massage | MessageKutaBali.tsx lines 403-404 | All trimesters safe |
 | **Services** | Foot Reflexology | MessageKutaBali.tsx lines 407-408 | Pressure point therapy |
 | **Services** | Lymphatic Drainage | MessageKutaBali.tsx lines 399-400 | Specialized drainage technique |
-| **Pricing - Balinese** | 60 min: IDR 350K | MessageKutaBali.tsx line 308 | Most popular service |
-| **Pricing - Balinese** | 90 min: IDR 500K | MessageKutaBali.tsx line 312 | Recommended duration |
-| **Pricing - Balinese** | 120 min: IDR 650K | MessageKutaBali.tsx line 316 | Extended session |
-| **Pricing - Deep Tissue** | 60 min: IDR 400K | MessageKutaBali.tsx line 336 | Therapeutic rate |
-| **Pricing - Deep Tissue** | 90 min: IDR 550K | MessageKutaBali.tsx line 340 | Recommended duration |
+| **Pricing - Balinese** | 60 min: IDR 320K | MessageKutaBali.tsx line 308 | Most popular service |
+| **Pricing - Balinese** | 90 min: IDR 450K | MessageKutaBali.tsx line 312 | Recommended duration |
+| **Pricing - Balinese** | 120 min: IDR 590K | MessageKutaBali.tsx line 316 | Extended session |
+| **Pricing - Deep Tissue** | 60 min: IDR 380K | MessageKutaBali.tsx line 336 | Therapeutic rate |
+| **Pricing - Deep Tissue** | 90 min: IDR 540K | MessageKutaBali.tsx line 340 | Recommended duration |
 | **Pricing - Deep Tissue** | 120 min: IDR 700K | MessageKutaBali.tsx line 344 | Extended deep work |
-| **Pricing - Four Hands** | 60 min: IDR 850K | MessageKutaBali.tsx line 364 | Premium service |
-| **Pricing - Four Hands** | 90 min: IDR 1,200K | MessageKutaBali.tsx line 368 | Popular duration |
-| **Pricing - Four Hands** | 120 min: IDR 1,550K | MessageKutaBali.tsx line 372 | Extended couples |
-| **Pricing - Aromatherapy** | 60/90/120: IDR 380K/530K/680K | MessageKutaBali.tsx line 388 | With essential oils |
-| **Pricing - Hot Stone** | 60/90/120: IDR 450K/580K/730K | MessageKutaBali.tsx line 392 | Premium equipment |
-| **Pricing - Thai** | 60/90/120: IDR 370K/520K/670K | MessageKutaBali.tsx line 396 | Floor mat session |
-| **Pricing - Lymphatic** | 60/90/120: IDR 420K/580K/730K | MessageKutaBali.tsx line 400 | Specialized technique |
-| **Pricing - Pregnancy** | 60/90/120: IDR 380K/530K/680K | MessageKutaBali.tsx line 404 | Safe prenatal |
+| **Pricing - Four Hands** | 60 min: IDR 620K | MessageKutaBali.tsx line 364 | Premium service |
+| **Pricing - Four Hands** | 90 min: IDR 860K | MessageKutaBali.tsx line 368 | Popular duration |
+| **Pricing - Four Hands** | 120 min: IDR 1,100K | MessageKutaBali.tsx line 372 | Extended couples |
+| **Pricing - Aromatherapy** | 60/90/120: IDR 350K/490K/640K | MessageKutaBali.tsx line 388 | With essential oils |
+| **Pricing - Hot Stone** | 60/90/120: IDR 420K/590K/760K | MessageKutaBali.tsx line 392 | Premium equipment |
+| **Pricing - Thai** | 60/90/120: IDR 390K/520K/670K | MessageKutaBali.tsx line 396 | Floor mat session |
+| **Pricing - Lymphatic** | 60/90/120: IDR 420K/630K/820K | MessageKutaBali.tsx line 400 | Specialized technique |
+| **Pricing - Pregnancy** | 60/90/120: IDR 350K/530K/680K | MessageKutaBali.tsx line 404 | Safe prenatal |
 | **Pricing - Reflexology** | 60/90: IDR 250K/330K | MessageKutaBali.tsx line 408 | Foot therapy |
-| **Pricing Range** | IDR 250,000 - IDR 1,550,000 | MessageKutaBali.tsx line 39 | Full service range |
+| **Pricing Range** | IDR 250,000 - IDR 1,100,000 | MessageKutaBali.tsx line 39 | Full service range |
 | **Contact - WhatsApp** | +62 811-2656-869 | site.ts line 9, MessageKutaBali.tsx line 16 | Primary booking method |
 | **Contact - Phone** | +62 811-2656-869 | site.ts line 8 | Voice calls accepted |
 | **Contact - Email** | info@homemassagekuta.com | site.ts line 10 | Support email |
@@ -271,7 +271,7 @@ Use this hub to make informed decisions about your massage experience in Bali. A
 **Subheading:** Essential Reading for First-Time Visitors
 
 **Post 1:** How Much Does a Massage Cost in Kuta, Bali? (2026 Price Guide)
-- *Excerpt:* Complete breakdown of massage pricing in Kuta with verified rates from IDR 250K to IDR 1,550K. Includes Balinese, deep tissue, hot stone, couples massage, and specialty services.
+- *Excerpt:* Complete breakdown of massage pricing in Kuta with verified rates from IDR 250K to IDR 1,100K. Includes Balinese, deep tissue, hot stone, couples massage, and specialty services.
 - *CTA:* [Read the Complete Price Guide →]
 
 **Post 2:** How to Book a Massage in Kuta: WhatsApp Booking Guide (2026)

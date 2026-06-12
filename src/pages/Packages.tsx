@@ -14,9 +14,9 @@ const packages = [
   {
     name: "Romantic Couples Retreat",
     duration: "2 hours",
-    price: "IDR 1,200k",
-    originalPrice: "IDR 1,400k",
-    savings: "Save IDR 200k",
+    price: "IDR 900k",
+    originalPrice: "IDR 1,000k",
+    savings: "Save IDR 100k",
     description: "Perfect romantic experience for couples featuring side-by-side massages with premium aromatherapy oils and romantic ambiance.",
     includes: [
       "2x 60-minute Balinese massages",
@@ -48,8 +48,8 @@ const packages = [
   {
     name: "Executive Stress Relief",
     duration: "90 minutes",
-    price: "IDR 650k",
-    originalPrice: "IDR 750k",
+    price: "IDR 640k",
+    originalPrice: "IDR 740k",
     savings: "Save IDR 100k",
     description: "Intensive stress relief package designed for busy professionals, combining deep tissue and relaxation techniques.",
     includes: [

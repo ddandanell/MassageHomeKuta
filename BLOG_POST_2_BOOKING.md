@@ -148,7 +148,7 @@ During operating hours (7 AM - 10 PM daily), you'll typically receive a response
 "Yes, we have therapists available at 3 PM today" or "3 PM is fully booked, but we have 2:30 PM or 5 PM available."
 
 **✅ Exact Total Price**  
-"The total price is IDR 500,000 for one 90-minute Balinese massage. This includes therapist travel, all equipment, oils, and linens. No additional fees."
+"The total price is IDR 450,000 for one 90-minute Balinese massage. This includes therapist travel, all equipment, oils, and linens. No additional fees."
 
 **✅ Travel Time Estimate**  
 "Our therapist can reach you in approximately 25-30 minutes from confirmation."
@@ -172,7 +172,7 @@ Perfect! Yes, please confirm:
 - Today at 3 PM
 - [Hotel Name], Room [number] (if hotel) or [Villa Name] (if villa)
 - 1 person
-- Total: IDR 500,000
+- Total: IDR 450,000
 
 Confirmed! See you at 3 PM.
 ```
@@ -351,7 +351,7 @@ Here's what a complete booking conversation looks like:
 "Hi! I'm staying at Kuta Beachfront Hotel and would like to book a massage for this afternoon. 1 person, 90-minute Balinese massage, around 3 PM if possible. What's the price? Thank you!"
 
 **Massage Service (10:18 AM):**
-"Hello! Yes, we have availability at 3 PM today. The price for 90-minute Traditional Balinese massage is IDR 500,000. This includes our therapist travel, professional table, fresh linens, and premium oils. No additional fees. May I confirm your booking?"
+"Hello! Yes, we have availability at 3 PM today. The price for 90-minute Traditional Balinese massage is IDR 450,000. This includes our therapist travel, professional table, fresh linens, and premium oils. No additional fees. May I confirm your booking?"
 
 **You (10:20 AM):**
 "Perfect! Yes, please book for 3 PM. I'm at Kuta Beachfront Hotel, Room 305. My name is [Your Name]. Can you confirm receipt?"
