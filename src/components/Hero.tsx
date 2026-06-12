@@ -23,9 +23,11 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 py-20 text-center text-white max-w-5xl">
         {/* Main Headline */}
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-8 leading-tight drop-shadow-lg">
-          Professional Massage Kuta
-          <span className="block text-professional-gold mt-2 italic">Premium Home Service in Bali</span>
+          Professional Home Massage Service in Kuta, Bali
         </h1>
+        <p className="text-2xl md:text-3xl text-professional-gold italic mb-8 drop-shadow-md">
+          Premium in-villa & hotel treatments by certified therapists
+        </p>
 
         {/* Description */}
         <p className="text-xl md:text-2xl mb-12 opacity-95 max-w-3xl mx-auto leading-relaxed font-light tracking-wide">

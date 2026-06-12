@@ -18,6 +18,7 @@ const Header = () => {
     { href: "/areas", labelKey: "nav.areas", label: "Service Areas", description: "Coverage locations" },
     { href: "/about", labelKey: "nav.about", label: "About", description: "Our story & credentials" },
     { href: "/reviews", labelKey: "nav.reviews", label: "Reviews", description: "What clients say" },
+    { href: "/blog", labelKey: "nav.blog", label: "Blog", description: "Massage guides & tips" },
     { href: "/faq", labelKey: "nav.faq", label: "FAQ", description: "Common questions" }
   ];
 

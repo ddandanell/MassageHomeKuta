@@ -4,7 +4,7 @@
     <loc>https://www.homemassagekuta.com/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.homemassagekuta.com/" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.homemassagekuta.com/id/" />
-    <lastmod>2026-01-18</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -244,7 +244,7 @@
     <loc>https://www.homemassagekuta.com/faq</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.homemassagekuta.com/faq" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.homemassagekuta.com/id/faq" />
-    <lastmod>2026-01-18</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -268,7 +268,7 @@
     <loc>https://www.homemassagekuta.com/packages</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.homemassagekuta.com/packages" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.homemassagekuta.com/id/packages" />
-    <lastmod>2026-01-18</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -292,7 +292,7 @@
     <loc>https://www.homemassagekuta.com/services</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.homemassagekuta.com/services" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.homemassagekuta.com/id/services" />
-    <lastmod>2026-01-18</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -669,6 +669,40 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.homemassagekuta.com/pregnancy-massage-bali" />
     <xhtml:link rel="alternate" hreflang="id" href="https://www.homemassagekuta.com/id/pregnancy-massage-bali" />
     <lastmod>2026-01-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Blog Pages -->
+  <url>
+    <loc>https://www.homemassagekuta.com/blog</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.homemassagekuta.com/blog" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.homemassagekuta.com/id/blog" />
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.homemassagekuta.com/blog/massage-kuta-bali-price-guide</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.homemassagekuta.com/blog/massage-kuta-bali-price-guide" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.homemassagekuta.com/id/blog/massage-kuta-bali-price-guide" />
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.homemassagekuta.com/blog/how-to-book-massage-kuta-whatsapp</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.homemassagekuta.com/blog/how-to-book-massage-kuta-whatsapp" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.homemassagekuta.com/id/blog/how-to-book-massage-kuta-whatsapp" />
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.homemassagekuta.com/blog/best-areas-kuta-home-massage-coverage</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.homemassagekuta.com/blog/best-areas-kuta-home-massage-coverage" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.homemassagekuta.com/id/blog/best-areas-kuta-home-massage-coverage" />
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

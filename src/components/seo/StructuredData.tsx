@@ -11,6 +11,7 @@ interface ServiceSchemaData {
   description: string;
   serviceType: string;
   areaServed?: string | string[];
+  url?: string;
   offers?: {
     price?: string;
     priceCurrency?: string;
@@ -142,9 +143,11 @@ const StructuredData = ({ type = "organization", data, includeReviews = false }:
          * Provider references LocalBusiness via @id for entity linking
          * Should be customized per page with relevant service details
          */
+        const serviceUrl = serviceData?.url || SITE_CONFIG.url;
         return {
           "@context": "https://schema.org",
           "@type": "Service",
+          "@id": `${serviceUrl}#service`,
           "name": serviceData?.name || "Professional In-Villa Massage Service",
           "description": serviceData?.description || "Premium massage therapy delivered to your villa or hotel in Kuta, Bali",
           "serviceType": serviceData?.serviceType || "Massage Therapy",
@@ -158,7 +161,7 @@ const StructuredData = ({ type = "organization", data, includeReviews = false }:
             "priceCurrency": serviceData?.offers?.priceCurrency || "IDR",
             ...(serviceData?.offers?.price && { "price": serviceData.offers.price }),
             ...(serviceData?.offers?.priceRange && { "priceRange": serviceData.offers.priceRange }),
-            "url": SITE_CONFIG.url
+            "url": serviceUrl
           }
         };
       }
@@ -180,13 +183,21 @@ const StructuredData = ({ type = "organization", data, includeReviews = false }:
          * WebSite Schema
          * Represents the website as a whole with search functionality
          * Should appear only on homepage
-         * Note: Search functionality is not currently implemented on the site
          */
         return {
           "@context": "https://schema.org",
           "@type": "WebSite",
+          "@id": `${SITE_CONFIG.url}/#website`,
           "name": SITE_CONFIG.name,
-          "url": SITE_CONFIG.url
+          "url": SITE_CONFIG.url,
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": `${SITE_CONFIG.url}/services?q={search_term_string}`
+            },
+            "query-input": "required name=search_term_string"
+          }
         };
 
       case "breadcrumb":

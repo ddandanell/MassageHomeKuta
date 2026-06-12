@@ -28,12 +28,15 @@ const MassageTypeLandingPage = ({ data }: MassageTypeLandingPageProps) => {
     { name: data.name, path: `/services/${data.slug}` }
   ]);
 
+  const servicePageUrl = `${SITE_CONFIG.url}/services/${data.slug}`;
+
   // Create service-specific schema data
   const serviceSchemaData = {
     name: `${data.name} in Kuta - In-Villa Mobile Massage Service`,
     description: data.introText ? data.introText.substring(0, 200) + "..." : `Professional ${data.name} delivered to your villa or hotel in Kuta, Bali.`,
     serviceType: data.name,
     areaServed: coverageAreas,
+    url: servicePageUrl,
     offers: {
       priceRange: data.packages && data.packages.length > 1
         ? `${data.packages[0].price} - ${data.packages[data.packages.length - 1].price}`

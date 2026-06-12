@@ -87,6 +87,18 @@ const faqs = [
   {
     question: "Should I drink water after a massage?",
     answer: "Drinking water after a massage (pijat) is highly recommended to support your body's natural detoxification processes. Massage stimulates circulation and helps release metabolic waste products from your muscles into the bloodstream. Staying hydrated assists your kidneys in flushing out these toxins more efficiently, reducing the risk of soreness or fatigue after your session. Additionally, proper hydration helps maintain muscle elasticity and overall health, enhancing the benefits of your massage. Make it a habit to drink plenty of water both before and after your massage to maximize recovery, promote healing, and keep your body functioning at its best."
+  },
+  {
+    question: "How much does a home massage cost in Kuta?",
+    answer: "Home massage in Kuta costs IDR 250,000-1,100,000 depending on the massage type and duration. A 90-minute Balinese massage is IDR 450,000, including therapist travel, equipment, oils, and linens with no hidden fees."
+  },
+  {
+    question: "What is the best massage for first-timers in Kuta?",
+    answer: "Balinese massage is ideal for first-timers in Kuta. It uses medium pressure, aromatherapy oils, and gentle stretching for full-body relaxation while introducing you to authentic Balinese healing traditions."
+  },
+  {
+    question: "Can I book a same-day massage in Kuta?",
+    answer: "Yes. Home Massage Kuta offers same-day booking via WhatsApp from 07:00-22:00, subject to therapist availability. We recommend booking a few hours in advance, especially during peak tourist season."
   }
 ];
 

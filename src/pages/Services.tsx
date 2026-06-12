@@ -122,7 +122,7 @@ const Services = () => {
           <div className="absolute inset-0">
             <img
               src="/images/hero/hero-1.jpg"
-              alt="Professional massage therapists providing various massage treatments including Balinese and deep tissue massage in Kuta"
+              alt="Certified massage therapists preparing Balinese and deep tissue massage treatments for villa and hotel guests in Kuta, Bali"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-br from-professional-navy/90 via-professional-green/80 to-professional-navy/90 backdrop-blur-[2px]"></div>
@@ -143,8 +143,11 @@ const Services = () => {
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-professional-navy mb-6">
                 Choose the Right Treatment for Your Stay
               </h2>
-              <p className="text-lg text-professional-gray leading-relaxed">
+              <p className="text-lg text-professional-gray leading-relaxed mb-4">
                 Guests usually book by need: deep recovery after flights or surfing, a calmer in-villa treatment for sleep and stress, or a premium experience for couples and special occasions. WhatsApp booking keeps it simple, and our team confirms the best fit for your location and schedule.
+              </p>
+              <p className="text-lg text-professional-gray leading-relaxed">
+                Not sure what to budget? See our <Link to="/blog/massage-kuta-bali-price-guide" className="text-professional-green hover:underline font-medium">complete Kuta massage price guide</Link> with verified 2026 rates.
               </p>
             </div>
           </div>
