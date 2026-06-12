@@ -87,7 +87,7 @@ export const balineseData: MassageTypeData = {
     },
     {
       question: "Do therapists bring all equipment to my villa?",
-      answer: "Yes! We bring a professional massage table, fresh linens, premium aromatherapy oils, and all necessary equipment. You just need to provide a quiet space."
+      answer: "Yes! We bring fresh linens, premium aromatherapy oils, and all necessary equipment. You just need to provide a quiet, comfortable space."
     },
     {
       question: "Can I request a male or female therapist?",
@@ -122,11 +122,11 @@ The Balinese concept of "sekala" (seen world) and "niskala" (unseen world) infor
 
     detailedProcess: `A professional Balinese massage session follows a purposeful progression that maximizes therapeutic benefit while honoring traditional protocols:
 
-Preparation and Consultation: Your therapist arrives with professional equipment including a portable massage table, fresh linens, premium aromatherapy oils, and everything needed for your session. Before beginning, they'll ask about any health concerns, injuries, areas needing special attention, and your pressure preferences. This consultation ensures your treatment is customized to your specific needs.
+Preparation and Consultation: Your therapist arrives with professional equipment including fresh linens, premium aromatherapy oils, and everything needed for your session. Before beginning, they'll ask about any health concerns, injuries, areas needing special attention, and your pressure preferences. This consultation ensures your treatment is customized to your specific needs.
 
 Setting the Atmosphere: Traditional Balinese massage engages all senses. Your therapist may use aromatherapy diffusers with essential oils chosen for their therapeutic properties, play gentle music that supports relaxation, and ensure the treatment space is comfortable and private. The goal is creating a sanctuary feeling wherever you are.
 
-Initial Relaxation: Sessions typically begin with you lying face-down, with a brief period of stillness allowing your body to settle onto the table and your mind to transition into relaxation mode. The therapist may place warm, scented towels on your back or use gentle hand placements to signal the beginning of treatment.
+Initial Relaxation: Sessions typically begin with you lying face-down, with a brief period of stillness allowing your body to settle and your mind to transition into relaxation mode. The therapist may place warm, scented towels on your back or use gentle hand placements to signal the beginning of treatment.
 
 Long Flowing Strokes: The signature element of Balinese massage is the effleurage – long, gliding strokes that travel the length of muscle groups following traditional energy pathways. These strokes use warm, aromatic oil and create the flowing, continuous sensation that distinguishes Balinese massage from more percussive styles.
 
@@ -154,7 +154,7 @@ Shower First: While not essential, showering before massage is appreciated by th
 
 Communication: Think about what you want from your session. Are you seeking relaxation? Pain relief in specific areas? Recovery from activity? Communicating your goals helps your therapist customize the treatment. Don't hesitate to mention injuries, sensitivities, or health conditions – this information helps ensure safe, effective treatment.
 
-Creating Space: Prepare your treatment area by ensuring adequate space for the massage table, comfortable room temperature, and relative privacy. Our therapists bring everything needed, but you provide the peaceful environment.
+Creating Space: Prepare your treatment area by ensuring a comfortable space with good room temperature and relative privacy. Our therapists bring everything needed, but you provide the peaceful environment.
 
 Mental Transition: Before your therapist arrives, take a few minutes to shift mentally from "doing" to "receiving." Put away your phone, complete any urgent tasks, and create the mental space for relaxation. The physical benefits of massage are enhanced when your mind also releases.
 
@@ -813,7 +813,7 @@ export const fourHandsData: MassageTypeData = {
     },
     {
       question: "How much space is needed for four hands massage?",
-      answer: "We need space for one massage table with room for two therapists to work comfortably on both sides (approximately 3x2 meters)."
+      answer: "We need a comfortable space with room for two therapists to work on both sides of you simultaneously. Most villa rooms or hotel rooms work perfectly."
     }
   ],
   testimonial: {

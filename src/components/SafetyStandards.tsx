@@ -84,7 +84,7 @@ const SafetyStandards = () => {
             <CardContent>
               <p className="text-professional-gray leading-relaxed">
                 Our team arrives with freshly laundered linens, sanitized equipment, and premium oils that meet strict 
-                health and wellness standards. Massage tables are cleaned before and after each use, and oils are chosen 
+                health and wellness standards. Linens are freshly laundered for every session, and oils are chosen
                 for both quality and safety.
               </p>
             </CardContent>

@@ -104,7 +104,7 @@ const GroupSpaDayBali = () => {
 
   const features = [
     { icon: Users, title: "Multiple Professional Therapists", description: "One therapist per person for simultaneous synchronized treatments" },
-    { icon: Sparkles, title: "Complete Equipment & Supplies", description: "All massage beds, tables, linens, oils, and equipment provided" },
+    { icon: Sparkles, title: "Complete Equipment & Supplies", description: "Fresh linens, premium oils, towels, and all supplies provided" },
     { icon: Sparkles, title: "Spa Ambiance Creation", description: "Relaxing music, aromatherapy diffusers, and perfect spa atmosphere" },
     { icon: CheckCircle2, title: "Flexible Treatment Options", description: "Each person chooses their preferred massage style and duration" },
     { icon: Clock, title: "Coordinated Timing", description: "We manage all logistics so everyone experiences treatments together" },
@@ -201,7 +201,7 @@ const GroupSpaDayBali = () => {
         {/* Hero Section */}
         <section className="relative py-32 md:py-40 text-white overflow-hidden">
           <div className="absolute inset-0">
-            <img src="/images/hero/hero-1.jpg" alt="Group receiving spa treatments at Bali villa" className="w-full h-full object-cover" />
+            <img src="/generated-images/group-spa-hero.jpg" alt="Group receiving spa treatments at Bali villa" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-br from-purple-900/85 via-pink-900/80 to-rose-900/85 backdrop-blur-[2px]"></div>
           </div>
           <div className="relative container mx-auto px-4 text-center z-10">

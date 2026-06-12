@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Phone, MapPin, Clock, Star, Shield, Award, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
+import { SITE_CONFIG } from "@/config/site";
 
 const popularAreas = [
   { name: "Legian", path: "/areas/legian", note: "Fast beachfront hotel coverage" },
@@ -10,9 +11,8 @@ const popularAreas = [
 ];
 
 const Footer = () => {
-  const whatsappNumber = "+62 811-2656-869";
   const whatsappMessage = "Hello Home Massage Kuta! I'm interested in booking a massage service. Could you please help me with availability and pricing?";
-  const whatsappUrl = `https://wa.me/${whatsappNumber.replace(/\D/g, "")}?text=${encodeURIComponent(whatsappMessage)}`;
+  const whatsappUrl = `https://wa.me/${SITE_CONFIG.whatsapp.replace(/\D/g, '')}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
     <footer className="bg-professional-navy text-white relative overflow-hidden pt-20 pb-10">
@@ -41,7 +41,7 @@ const Footer = () => {
               <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 hover:bg-professional-green hover:text-white flex items-center justify-center transition-all duration-300 border border-white/10">
                 <MessageCircle className="w-5 h-5" />
               </a>
-              <a href={`tel:${whatsappNumber}`} className="w-10 h-10 rounded-full bg-white/5 hover:bg-professional-gold hover:text-white flex items-center justify-center transition-all duration-300 border border-white/10">
+              <a href={`tel:${SITE_CONFIG.phone}`} className="w-10 h-10 rounded-full bg-white/5 hover:bg-professional-gold hover:text-white flex items-center justify-center transition-all duration-300 border border-white/10">
                 <Phone className="w-5 h-5" />
               </a>
               <a href="mailto:hello@homemassagekuta.com" className="w-10 h-10 rounded-full bg-white/5 hover:bg-blue-500 hover:text-white flex items-center justify-center transition-all duration-300 border border-white/10">
@@ -53,13 +53,13 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-serif font-semibold mb-6 text-white">Discover</h4>
             <ul className="space-y-3 text-professional-gray">
-              <li><a href="/services" className="hover:text-professional-gold transition-colors">Our Treatments</a></li>
-              <li><a href="/areas" className="hover:text-professional-gold transition-colors">Service Areas</a></li>
-              <li><a href="/therapists" className="hover:text-professional-gold transition-colors">Meet the Team</a></li>
-              <li><a href="/about" className="hover:text-professional-gold transition-colors">About Us</a></li>
-              <li><a href="/faq" className="hover:text-professional-gold transition-colors">FAQ</a></li>
-              <li><a href="/blog" className="hover:text-professional-gold transition-colors">Blog & Guides</a></li>
-              <li><a href="/recommended-services" className="hover:text-professional-gold transition-colors">Recommended Services</a></li>
+              <li><Link to="/services" className="hover:text-professional-gold transition-colors">Our Treatments</Link></li>
+              <li><Link to="/areas" className="hover:text-professional-gold transition-colors">Service Areas</Link></li>
+              <li><Link to="/therapists" className="hover:text-professional-gold transition-colors">Meet the Team</Link></li>
+              <li><Link to="/about" className="hover:text-professional-gold transition-colors">About Us</Link></li>
+              <li><Link to="/faq" className="hover:text-professional-gold transition-colors">FAQ</Link></li>
+              <li><Link to="/blog" className="hover:text-professional-gold transition-colors">Blog & Guides</Link></li>
+              <li><Link to="/recommended-services" className="hover:text-professional-gold transition-colors">Recommended Services</Link></li>
             </ul>
           </div>
 
@@ -97,7 +97,7 @@ const Footer = () => {
                 <MessageCircle className="w-5 h-5 text-professional-gold mt-0.5" />
                 <div>
                   <span className="block text-white text-sm font-medium">WhatsApp Booking</span>
-                  <a href={whatsappUrl} className="text-sm hover:text-white transition-colors">+62 811-2656-869</a>
+                  <a href={whatsappUrl} className="text-sm hover:text-white transition-colors">{SITE_CONFIG.phone}</a>
                 </div>
               </li>
               <li className="flex items-start gap-3">

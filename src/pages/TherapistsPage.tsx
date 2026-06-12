@@ -70,7 +70,7 @@ const TherapistsPage = () => {
         <section className="relative py-20 text-primary-foreground overflow-hidden">
           <div className="absolute inset-0">
             <img
-              src="/images/hero/hero-4.jpg"
+              src="/generated-images/therapists-hero.jpg"
               alt="Certified professional massage therapists team in Kuta Bali with international VTCT and CIBTAC certifications"
               className="w-full h-full object-cover"
             />

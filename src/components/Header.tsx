@@ -14,7 +14,7 @@ const Header = () => {
 
   const navigationItems = [
     { href: "/", labelKey: "nav.home", label: "Home", description: "Back to homepage" },
-    { href: "/services", labelKey: "nav.services", label: "Services", description: "View all massage types" },
+    { href: "/services", labelKey: "nav.treatments", label: "Treatments", description: "View all massage types" },
     { href: "/areas", labelKey: "nav.areas", label: "Service Areas", description: "Coverage locations" },
     { href: "/about", labelKey: "nav.about", label: "About", description: "Our story & credentials" },
     { href: "/reviews", labelKey: "nav.reviews", label: "Reviews", description: "What clients say" },
@@ -147,9 +147,9 @@ const Header = () => {
                   </a>
                 </Button>
                 <Button asChild variant="outline" className="w-full">
-                  <a href={`tel:${SITE_CONFIG.whatsapp}`}>
+                  <a href={`tel:${SITE_CONFIG.phone}`}>
                     <Phone className="w-4 h-4 mr-2" />
-                    Call {SITE_CONFIG.whatsapp}
+                    Call {SITE_CONFIG.phone}
                   </a>
                 </Button>
               </div>

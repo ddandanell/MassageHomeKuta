@@ -15,7 +15,7 @@ const features = [
   {
     icon: Package,
     title: "Complete Equipment & Setup Included",
-    description: "Your therapist arrives with a professional massage table, fresh linens, and everything needed for a spa experience."
+    description: "Your therapist arrives with fresh linens, premium oils, and everything needed for a complete spa experience."
   },
   {
     icon: Clock,

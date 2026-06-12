@@ -16,7 +16,7 @@ const PricingDetails = () => {
       popular: false,
       massageTypes: ["Traditional Balinese Massage", "Aromatherapy Massage", "Deep Tissue Massage"],
       features: [
-        "Professional massage table setup",
+        "Full professional setup included",
         "Premium organic oils",
         "Fresh towels and linens",
         "Relaxing background music",

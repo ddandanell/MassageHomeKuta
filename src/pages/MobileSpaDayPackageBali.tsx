@@ -165,7 +165,7 @@ const MobileSpaDayPackageBali = () => {
     },
     {
       question: "How much space do you need?",
-      answer: "We need adequate room for treatment tables and a comfortable relaxation area. Most villa living areas, poolside pavilions, or garden spaces work perfectly. Send photos via WhatsApp to confirm suitability."
+      answer: "We need adequate room for therapists to work and a comfortable relaxation area. Most villa living areas, poolside pavilions, or garden spaces work perfectly. Send photos via WhatsApp to confirm suitability."
     },
     {
       question: "Can I add additional treatments?",

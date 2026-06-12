@@ -162,7 +162,7 @@ const SpaNearMeKuta = () => {
     },
     {
       question: "Do I need to provide anything for the spa treatment?",
-      answer: "No. Our therapists arrive fully equipped with professional massage table, fresh linens, premium therapeutic oils, ambient music, and all supplies needed for your treatment. You simply need to provide a comfortable space in your villa or hotel room with adequate room for the table."
+      answer: "No. Our therapists arrive fully equipped with fresh linens, premium therapeutic oils, ambient music, and all supplies needed for your treatment. You simply need to provide a comfortable space in your villa or hotel room."
     },
     {
       question: "How long before my appointment should the therapist arrive?",

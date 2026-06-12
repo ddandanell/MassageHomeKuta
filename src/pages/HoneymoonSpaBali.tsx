@@ -139,7 +139,7 @@ const HoneymoonSpaBali = () => {
     },
     {
       question: "What's included in the romantic setup?",
-      answer: "Romantic setup includes fresh flower petal arrangements on massage tables and floor, scented candles (flameless for safety), relaxing music playlist, dimmed ambient lighting, aromatherapy diffusers, and complete spa atmosphere creation in your villa."
+      answer: "Romantic setup includes fresh flower petal arrangements, scented candles (flameless for safety), relaxing music playlist, dimmed ambient lighting, aromatherapy diffusers, and complete spa atmosphere creation in your villa."
     }
   ];
 
@@ -168,7 +168,7 @@ const HoneymoonSpaBali = () => {
         {/* Hero Section */}
         <section className="relative py-32 md:py-40 text-white overflow-hidden">
           <div className="absolute inset-0">
-            <img src="/images/hero/hero-1.jpg" alt="Honeymoon spa in Bali" className="w-full h-full object-cover" />
+            <img src="/generated-images/honeymoon-spa-hero.jpg" alt="Honeymoon spa in Bali" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-br from-pink-900/85 via-rose-900/80 to-red-900/85 backdrop-blur-[2px]"></div>
           </div>
           <div className="relative container mx-auto px-4 text-center z-10">

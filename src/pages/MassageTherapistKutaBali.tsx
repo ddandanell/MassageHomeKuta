@@ -175,7 +175,7 @@ const MassageTherapistKutaBali = () => {
     },
     {
       question: "What should I prepare before the massage therapist arrives?",
-      answer: "Simply clear a space approximately 6 feet by 3 feet (about the size of a yoga mat) in a quiet room, villa bedroom, or covered outdoor area. Our massage therapist brings everything else: professional massage table, fresh linens, oils, towels, and any specialty equipment. We recommend having water available for after your treatment, but it's not required."
+      answer: "Simply have a quiet room, villa bedroom, or covered outdoor area ready to use. Our massage therapist brings everything else: fresh linens, oils, towels, and any specialty equipment. We recommend having water available for after your treatment, but it's not required."
     },
     {
       question: "Do your massage therapists speak English?",
@@ -183,7 +183,7 @@ const MassageTherapistKutaBali = () => {
     },
     {
       question: "Can I book two massage therapists for a couples massage?",
-      answer: "Absolutely. For couples massage or four hands massage, we coordinate two certified therapists to arrive simultaneously with two massage tables. Both guests receive treatment at the same time in the same space—popular for partners, friends, or anyone wanting the luxury of synchronized dual-therapist massage. Add $3 USD for the second therapist setup."
+      answer: "Absolutely. For couples massage or four hands massage, we coordinate two certified therapists to arrive simultaneously. Both guests receive treatment at the same time in the same space—popular for partners, friends, or anyone wanting the luxury of synchronized dual-therapist massage. Add $3 USD for the second therapist."
     },
     {
       question: "What's the difference between a massage therapist and a spa technician?",
@@ -219,11 +219,11 @@ const MassageTherapistKutaBali = () => {
     },
     {
       question: "How do massage therapists maintain hygiene standards?",
-      answer: "Every therapist follows strict hygiene protocols: fresh sanitized linens for each client (never reused), hand washing before and after treatment, cleaned and disinfected massage table between appointments, and use of fresh oils from sealed bottles. Equipment is transported in sealed bags. We maintain the same hygiene standards you'd expect from Bali's top hotel spas, just delivered to your private accommodation."
+      answer: "Every therapist follows strict hygiene protocols: fresh sanitized linens for each client (never reused), hand washing before and after treatment, and use of fresh oils from sealed bottles. Equipment is transported in sealed bags. We maintain the same hygiene standards you'd expect from Bali's top hotel spas, just delivered to your private accommodation."
     },
     {
       question: "What's included when I book a massage therapist?",
-      answer: "Your booking includes: certified massage therapist with verified credentials, professional-grade portable massage table, fresh sanitized linens and towels, premium massage oils appropriate for your chosen treatment, all specialty equipment (hot stones, aromatherapy oils, Thai props, etc.), therapist travel to your location within our service areas, consultation and treatment customization, post-treatment guidance, and complete setup and cleanup. The only extras are optional add-ons (premium oil upgrades, late-night fees, etc.) which are clearly listed when booking."
+      answer: "Your booking includes: certified massage therapist with verified credentials, fresh sanitized linens and towels, premium massage oils appropriate for your chosen treatment, all specialty equipment (hot stones, aromatherapy oils, Thai props, etc.), therapist travel to your location within our service areas, consultation and treatment customization, post-treatment guidance, and complete setup and cleanup. The only extras are optional add-ons (premium oil upgrades, late-night fees, etc.) which are clearly listed when booking."
     }
   ];
 
@@ -282,7 +282,7 @@ const MassageTherapistKutaBali = () => {
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4 max-w-4xl">
             <p className="text-lg text-spa-stone leading-relaxed text-center">
-              Whether you need a <strong>licensed massage therapist for deep tissue work</strong>, a <strong>certified Balinese massage specialist</strong>, or a <strong>professional aromatherapy expert</strong>, our team of trained therapists arrives within 20-60 minutes with everything needed: massage table, premium oils, fresh linens, and years of hands-on experience treating travelers, athletes, and wellness-focused guests throughout Kuta, Seminyak, Canggu, and beyond.
+              Whether you need a <strong>licensed massage therapist for deep tissue work</strong>, a <strong>certified Balinese massage specialist</strong>, or a <strong>professional aromatherapy expert</strong>, our team of trained therapists arrives within 20-60 minutes with everything needed: premium oils, fresh linens, and years of hands-on experience treating travelers, athletes, and wellness-focused guests throughout Kuta, Seminyak, Canggu, and beyond.
             </p>
           </div>
         </section>
@@ -353,7 +353,7 @@ const MassageTherapistKutaBali = () => {
                   <CardTitle className="text-spa-earth">Complete Mobile Setup</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-spa-stone">Massage table, oils, linens, aromatherapy included. Your therapist brings everything needed for a professional treatment.</p>
+                  <p className="text-spa-stone">Oils, linens, and aromatherapy included. Your therapist brings everything needed for a professional treatment.</p>
                 </CardContent>
               </Card>
 

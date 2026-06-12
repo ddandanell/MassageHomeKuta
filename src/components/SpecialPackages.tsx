@@ -9,7 +9,7 @@ const packages = [
     icon: Heart,
     features: [
       "Two therapists working simultaneously",
-      "Side-by-side massage tables",
+      "Two therapists working simultaneously",
       "Romantic atmosphere setup",
       "Choice of synchronized treatments",
       "Complimentary aromatherapy candles"

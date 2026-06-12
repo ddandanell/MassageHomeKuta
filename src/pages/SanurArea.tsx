@@ -120,7 +120,7 @@ const SanurArea = () => {
     },
     {
       question: "Do therapists bring all necessary equipment?",
-      answer: "Yes, our therapists arrive fully equipped with professional massage tables, premium linens, therapeutic oils, and all supplies needed for your chosen treatment. You simply need to provide a comfortable space in your villa or hotel room."
+      answer: "Yes, our therapists arrive fully equipped with premium linens, therapeutic oils, and all supplies needed for your chosen treatment. You simply need to provide a comfortable space in your villa or hotel room."
     },
     {
       question: "Can I request male or female therapists?",
@@ -140,7 +140,7 @@ const SanurArea = () => {
     },
     {
       question: "What if I'm staying in a small hotel room?",
-      answer: "Our therapists are experienced in working within various space constraints. A standard hotel room typically provides sufficient space for one massage table. For couples treatments, we assess your space and may recommend alternative arrangements if needed."
+      answer: "Our therapists are experienced in working within various space constraints. A standard hotel room typically provides sufficient space. For couples treatments, we assess your space and may recommend alternative arrangements if needed."
     },
     {
       question: "Do you offer treatments for pregnant women?",

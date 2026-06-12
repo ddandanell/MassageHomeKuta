@@ -31,6 +31,7 @@ const translations: Record<Language, Record<string, string>> = {
     // Navigation
     'nav.home': 'Home',
     'nav.services': 'Services',
+    'nav.treatments': 'Treatments',
     'nav.areas': 'Service Areas',
     'nav.packages': 'Packages',
     'nav.therapists': 'Therapists',
@@ -89,6 +90,7 @@ const translations: Record<Language, Record<string, string>> = {
     // Navigation
     'nav.home': 'Beranda',
     'nav.services': 'Layanan',
+    'nav.treatments': 'Perawatan',
     'nav.areas': 'Area Layanan',
     'nav.packages': 'Paket',
     'nav.therapists': 'Terapis',

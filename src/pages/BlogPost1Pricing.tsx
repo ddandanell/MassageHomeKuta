@@ -123,7 +123,7 @@ const BlogPost1Pricing = () => {
               <p><strong>Important Note:</strong> All prices listed in this guide are all-inclusive. When you book home massage in Kuta, your quoted price includes:</p>
               <ul>
                 <li>Certified therapist travel to your location</li>
-                <li>Professional massage table and equipment</li>
+                <li>All supplies and equipment</li>
                 <li>Premium massage oils (coconut, essential oils, specialized blends)</li>
                 <li>Fresh linens and towels</li>
                 <li>Setup and cleanup time</li>

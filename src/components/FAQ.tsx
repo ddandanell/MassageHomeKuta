@@ -3,7 +3,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 const faqs = [
   {
     question: "Do I need to prepare anything?",
-    answer: "No preparation needed! Our therapists arrive with everything required: professional massage table, fresh linens, premium oils, and sanitized equipment. Just ensure you have a suitable space with enough room for the massage table setup."
+    answer: "No preparation needed! Our therapists arrive with everything required: fresh linens, premium oils, and sanitized equipment. Just ensure you have a comfortable, clean space to relax in."
   },
   {
     question: "Can I book the same day?",

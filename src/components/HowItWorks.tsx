@@ -11,7 +11,7 @@ const steps = [
   {
     number: "2", 
     title: "We Come to You",
-    description: "Our therapist arrives at your chosen time, fully equipped with a massage table, clean linens, and premium oils. You don't need to prepare anything.",
+    description: "Our therapist arrives at your chosen time, fully equipped with clean linens, premium oils, and all supplies needed. You don't need to prepare anything.",
     icon: MapPin,
     color: "text-spa-green"
   },

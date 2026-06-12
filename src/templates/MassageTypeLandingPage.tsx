@@ -188,7 +188,7 @@ const MassageTypeLandingPage = ({ data }: MassageTypeLandingPageProps) => {
             </h3>
             <p className={`${DESIGN_SYSTEM.typography.body} max-w-3xl mx-auto opacity-95`}>
               We provide {data.name} across {coverageAreas.slice(0, 6).join(", ")}, plus nearby serviced areas.
-              Book by WhatsApp and our team brings the massage table, linens, oils, and setup to your villa or hotel.
+              Book by WhatsApp and our team brings fresh linens, oils, and all supplies to your villa or hotel.
             </p>
           </div>
         </section>

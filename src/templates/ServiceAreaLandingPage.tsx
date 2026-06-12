@@ -207,7 +207,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
                 </div>
                 <h3 className="text-xl font-semibold text-spa-earth mb-4">Villa & Hotel Ready</h3>
                 <p className="text-spa-stone">
-                  We bring the massage table, linens, oils, and setup so your booking works smoothly at villas, hotels, and private stays.
+                  We bring fresh linens, oils, and all supplies so your booking works smoothly at villas, hotels, and private stays.
                 </p>
               </div>
 

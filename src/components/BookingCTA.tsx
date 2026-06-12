@@ -81,7 +81,7 @@ const BookingCTA = () => {
               🎯 <strong>What You Get:</strong>
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm md:text-base opacity-90">
-              <div>✅ Professional massage table & fresh linens</div>
+              <div>✅ Fresh linens & premium supplies</div>
               <div>✅ Premium organic oils & aromatherapy</div>
               <div>✅ Licensed, experienced therapists</div>
               <div>✅ Relaxing music & complete setup</div>

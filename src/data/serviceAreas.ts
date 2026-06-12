@@ -103,7 +103,7 @@ The concept of bringing professional massage to private accommodations aligns pe
 
     villaCulture: `Legian's accommodation scene ranges from simple guesthouses to extraordinary private villas, and our massage service adapts seamlessly to every setting. Villa culture in Legian tends toward a mix of styles – you'll find traditional Balinese-style villas with open-air living spaces, modern minimalist designs with infinity pools, and everything in between.
 
-Many Legian villas feature private pools, making poolside massage a popular choice. Our therapists bring professional portable massage tables that can be set up on pool decks, in garden pavilions, or inside air-conditioned bedrooms – wherever you prefer to receive your treatment. The villa environment allows for complete privacy and personalization that's simply not possible in spa settings.
+Many Legian villas feature private pools, making poolside massage a popular choice. Our therapists work on pool decks, in garden pavilions, or inside air-conditioned bedrooms – wherever you prefer to receive your treatment. The villa environment allows for complete privacy and personalization that's simply not possible in spa settings.
 
 For villa guests, we recommend taking full advantage of your private space. Book a couples massage by the pool at sunset, arrange sequential treatments for a group traveling together, or create your own spa day without leaving your accommodation. Villa hosts often appreciate our service because it adds value to their guests' experience without requiring any additional work from them – we bring everything needed and leave the space cleaner than we found it.
 
@@ -298,7 +298,7 @@ Seminyak's international community has created a unique fusion culture where Bal
 
     villaCulture: `Seminyak's villa culture represents the absolute peak of private accommodation in Bali. Properties here range from tasteful two-bedroom villas to extraordinary compounds with multiple pavilions, staff quarters, and amenities rivaling five-star resorts. Understanding this villa culture helps explain why mobile massage has become essential to the Seminyak experience.
 
-Typical Seminyak villas feature private swimming pools (often with infinity edges designed for sunset viewing), open-air living areas that blur the boundary between indoor and outdoor, and meticulously designed gardens that create private tropical paradises. Many include dedicated spa pavilions – covered platforms specifically designed for massage – though we can set up equally effectively by the pool, in air-conditioned bedrooms, or wherever guests prefer.
+Typical Seminyak villas feature private swimming pools (often with infinity edges designed for sunset viewing), open-air living areas that blur the boundary between indoor and outdoor, and meticulously designed gardens that create private tropical paradises. Many include dedicated spa pavilions – covered platforms specifically designed for massage – and we work just as beautifully by the pool, in air-conditioned bedrooms, or wherever guests prefer.
 
 Villa guests in Seminyak often employ villa managers and staff who can arrange services including massage. We work seamlessly with villa staff, coordinating arrival times and setup to ensure treatments integrate smoothly into guests' schedules. Villa managers appreciate our professionalism, punctuality, and the way our service enhances their guests' experience.
 
@@ -524,7 +524,7 @@ export const kutaBeachfrontData: ServiceAreaData = {
   faqs: [
     {
       question: "Can I have massage on my balcony overlooking the beach?",
-      answer: "Yes! If your balcony has space for a massage table and some privacy, it's a beautiful setting for massage with ocean views and breeze."
+      answer: "Yes! If your balcony has enough space and some privacy, it's a beautiful setting for massage with ocean views and breeze."
     },
     {
       question: "Do you serve all Kuta beachfront hotels?",
@@ -544,7 +544,7 @@ export const kutaBeachfrontData: ServiceAreaData = {
     },
     {
       question: "Do you bring everything needed to beach hotels?",
-      answer: "Yes! Professional massage table, fresh linens, oils, and all equipment. You just provide the space (room or balcony)."
+      answer: "Yes! Fresh linens, oils, and all equipment. You just provide the space (room or balcony)."
     },
     {
       question: "Can I book at sunset time?",

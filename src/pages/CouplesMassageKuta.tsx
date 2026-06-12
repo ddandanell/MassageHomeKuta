@@ -109,7 +109,7 @@ const CouplesMassageKuta = () => {
     },
     {
       question: "Do we need a large space for couples massage?",
-      answer: "Most standard hotel rooms and villas accommodate couples massage tables comfortably. We need approximately 3 meters width to position two professional massage tables side-by-side with adequate space for therapists to move around. If you're concerned about space, message us your accommodation details and we'll confirm suitability."
+      answer: "Most standard hotel rooms and villas accommodate couples massage sessions comfortably. We need enough room for two therapists to work side by side with adequate space to move around. If you're concerned about space, message us your accommodation details and we'll confirm suitability."
     },
     {
       question: "Can we request male or female therapists?",
@@ -177,7 +177,7 @@ const CouplesMassageKuta = () => {
         <section className="relative py-32 md:py-40 text-white overflow-hidden">
           <div className="absolute inset-0">
             <img
-              src="/images/hero/hero-1.jpg"
+              src="/generated-images/couples-massage-hero.jpg"
               alt="Romantic couples massage in Kuta, Bali"
               className="w-full h-full object-cover"
             />
@@ -286,7 +286,7 @@ const CouplesMassageKuta = () => {
                   <CardTitle className="text-spa-earth">Premium Equipment Provided</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-spa-stone">Two professional massage tables, fresh linens, therapeutic oils, and ambient music</p>
+                  <p className="text-spa-stone">Fresh linens, therapeutic oils, and ambient music — everything included</p>
                 </CardContent>
               </Card>
 

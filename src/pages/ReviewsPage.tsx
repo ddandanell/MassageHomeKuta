@@ -32,7 +32,7 @@ const ReviewsPage = () => {
         <section className="relative py-32 md:py-40 text-white overflow-hidden">
           <div className="absolute inset-0">
             <img
-              src="/images/hero/hero-2.jpg"
+              src="/generated-images/reviews-hero.jpg"
               alt="Happy customers enjoying professional massage treatments in Kuta, verified 5 star reviews"
               className="w-full h-full object-cover"
             />

@@ -274,8 +274,8 @@ const BlogPost2Booking = () => {
               <ol>
                 <li><strong>Therapist contacts you:</strong> Phone call or WhatsApp: "Hi, I'm [name], your massage therapist. I'm outside [hotel name]" or "I'm at your villa gate."</li>
                 <li><strong>Guide them to your location:</strong> If in a hotel, you may need to meet them in the lobby or guide them to your room. For villas, you may need to let them through the gate.</li>
-                <li><strong>Therapist brings equipment:</strong> Professional massage table, fresh linens, clean towels, massage oils, and any special equipment.</li>
-                <li><strong>Setup (5-10 minutes):</strong> The therapist will set up the table in your preferred location (bedroom, living area, terrace, poolside). They'll ask about pressure preference, areas to focus on, and confirm the treatment.</li>
+                <li><strong>Therapist brings equipment:</strong> Fresh linens, clean towels, massage oils, and any special equipment.</li>
+                <li><strong>Setup (5-10 minutes):</strong> The therapist will get ready in your preferred location (bedroom, living area, terrace, poolside). They'll ask about pressure preference, areas to focus on, and confirm the treatment.</li>
                 <li><strong>Your massage begins:</strong> Once setup is complete, your massage session starts. The full duration you booked is your massage time – setup time is separate.</li>
               </ol>
 

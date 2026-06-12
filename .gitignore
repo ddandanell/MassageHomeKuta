@@ -6,3 +6,5 @@ seo-tools/reports/*_2*.csv
 seo-tools/reports/*_2*.txt
 seo-tools/monitoring/alerts.log
 seo-tools/__pycache__/
+.env
+generate-batch.js

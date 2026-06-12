@@ -33,7 +33,7 @@ const AboutPage = () => {
         <section className="relative py-32 md:py-40 text-white overflow-hidden">
           <div className="absolute inset-0">
             <img
-              src="/images/hero/hero-4.jpg"
+              src="/generated-images/about-hero.jpg"
               alt="Professional certified massage therapists team providing premium treatments in Kuta Bali"
               className="w-full h-full object-cover"
             />

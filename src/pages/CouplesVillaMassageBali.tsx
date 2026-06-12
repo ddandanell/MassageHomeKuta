@@ -71,7 +71,7 @@ const CouplesVillaMassageBali = () => {
         "name": "Do you provide everything needed for the massage?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, we provide everything - massage beds, premium oils, towels, music, and ambiance setup. You don't need to prepare anything."
+          "text": "Yes, we provide everything - premium oils, fresh towels, music, and ambiance setup. You don't need to prepare anything."
         }
       },
       {
@@ -87,7 +87,7 @@ const CouplesVillaMassageBali = () => {
         "name": "How much space do we need in our villa?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We need approximately 4x4 meters of space for two massage beds side by side. Most villa bedrooms or living areas work perfectly."
+          "text": "We need a comfortable open space for two therapists to work side by side. Most villa bedrooms or living areas work perfectly."
         }
       }
     ]
@@ -105,7 +105,7 @@ const CouplesVillaMassageBali = () => {
     { icon: Sparkles, title: "Romantic Ambiance Setup", description: "Candles, relaxing music, and complete spa atmosphere creation" },
     { icon: CheckCircle2, title: "Complimentary Refreshments", description: "Fresh herbal teas and hydration provided after your treatment" },
     { icon: Clock, title: "Flexible Sessions", description: "Choose from 60, 90, or 120-minute treatments to fit your schedule" },
-    { icon: Shield, title: "All Equipment Provided", description: "Professional massage tables, fresh linens, and complete setup included" }
+    { icon: Shield, title: "All Supplies Provided", description: "Fresh linens, premium oils, towels, and complete setup included" }
   ];
 
   const benefits = [
@@ -137,7 +137,7 @@ const CouplesVillaMassageBali = () => {
   const faqs = [
     {
       question: "Do you provide everything needed for the massage?",
-      answer: "Yes, we provide everything - massage beds, premium oils, towels, music, and ambiance setup. You don't need to prepare anything. Our therapists arrive 15 minutes early to set up your private spa sanctuary."
+      answer: "Yes, we provide everything - premium oils, fresh towels, music, and ambiance setup. You don't need to prepare anything. Our therapists arrive 15 minutes early to set up your private spa sanctuary."
     },
     {
       question: "Can we choose different massage styles for each person?",
@@ -145,7 +145,7 @@ const CouplesVillaMassageBali = () => {
     },
     {
       question: "How much space do we need in our villa?",
-      answer: "We need approximately 4x4 meters of space for two massage beds side by side. Most villa bedrooms, living areas, or covered outdoor pavilions work perfectly. If you're unsure, send us photos via WhatsApp and we'll confirm suitability."
+      answer: "We need a comfortable open space for two therapists to work side by side. Most villa bedrooms, living areas, or covered outdoor pavilions work perfectly. If you're unsure, send us photos via WhatsApp and we'll confirm suitability."
     },
     {
       question: "Do you offer same-day booking for couples?",
@@ -161,7 +161,7 @@ const CouplesVillaMassageBali = () => {
     },
     {
       question: "How long does the setup take?",
-      answer: "Our therapists arrive 15 minutes before your scheduled treatment time to set up massage tables, arrange ambiance, and prepare oils. You can relax knowing everything will be ready when your session begins."
+      answer: "Our therapists arrive 15 minutes before your scheduled treatment time to arrange ambiance and prepare oils. You can relax knowing everything will be ready when your session begins."
     }
   ];
 
@@ -196,7 +196,7 @@ const CouplesVillaMassageBali = () => {
         {/* Hero Section */}
         <section className="relative py-32 md:py-40 text-white overflow-hidden">
           <div className="absolute inset-0">
-            <img src="/images/hero/hero-1.jpg" alt="Couples villa massage in Bali" className="w-full h-full object-cover" />
+            <img src="/generated-images/couples-massage-hero.jpg" alt="Couples villa massage in Bali" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-br from-teal-900/85 via-emerald-900/80 to-cyan-900/85 backdrop-blur-[2px]"></div>
           </div>
           <div className="relative container mx-auto px-4 text-center z-10">

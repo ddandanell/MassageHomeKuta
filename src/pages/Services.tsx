@@ -16,7 +16,7 @@ const services = [
     price: "Starting from IDR 320k",
     description: "Ancient healing technique combining gentle stretches, acupressure, and aromatherapy oils to restore balance and harmony.",
     benefits: ["Stress relief", "Improved circulation", "Deep relaxation", "Cultural experience"],
-    image: "/images/hero/hero-1.jpg"
+    image: "/assets/balinese-massage.jpg"
   },
   {
     name: "Deep Tissue Massage",
@@ -25,7 +25,7 @@ const services = [
     price: "Starting from IDR 380k",
     description: "Therapeutic massage targeting deep muscle layers to release chronic tension and alleviate muscle pain.",
     benefits: ["Muscle pain relief", "Improved mobility", "Tension release", "Athletic recovery"],
-    image: "/images/hero/hero-2.jpg"
+    image: "/assets/deep-tissue.jpg"
   },
   {
     name: "Aromatherapy Massage",
@@ -34,7 +34,7 @@ const services = [
     price: "Starting from IDR 350k",
     description: "Relaxing massage using premium essential oils to promote emotional well-being and stress relief.",
     benefits: ["Emotional balance", "Stress reduction", "Better sleep", "Mood enhancement"],
-    image: "/images/hero/hero-3.jpg"
+    image: "/assets/aromatherapy.jpg"
   },
   {
     name: "Hot Stone Massage",
@@ -43,7 +43,7 @@ const services = [
     price: "Starting from IDR 420k",
     description: "Luxurious treatment using heated volcanic stones to melt away tension and promote deep relaxation.",
     benefits: ["Deep muscle relaxation", "Improved circulation", "Luxury experience", "Pain relief"],
-    image: "/images/hero/hero-4.jpg"
+    image: "/assets/hot-stone.jpg"
   },
   {
     name: "Thai Massage",
@@ -52,7 +52,7 @@ const services = [
     price: "Starting from IDR 390k",
     description: "Dynamic massage combining stretching, pressure points, and yoga-like movements for flexibility and energy.",
     benefits: ["Increased flexibility", "Energy boost", "Posture improvement", "Stress relief"],
-    image: "/images/hero/hero-1.jpg"
+    image: "/assets/thai-massage.jpg"
   },
   {
     name: "Four Hands Massage",
@@ -61,7 +61,7 @@ const services = [
     price: "Starting from IDR 620k",
     description: "Luxurious experience with two therapists working in perfect synchronization for ultimate relaxation.",
     benefits: ["Ultimate relaxation", "Dual therapist coordination", "Luxury experience", "Enhanced results"],
-    image: "/images/hero/hero-2.jpg"
+    image: "/assets/four-hands.jpg"
   },
   {
     name: "Pregnancy Massage",
@@ -88,7 +88,7 @@ const services = [
     price: "Starting from IDR 450k",
     description: "Gentle massage technique that helps reduce swelling and supports the body's natural detoxification.",
     benefits: ["Reduces swelling", "Detoxification", "Boosts immunity", "Improves skin"],
-    image: "/images/hero/hero-1.jpg"
+    image: "/assets/lymphatic.jpg"
   },
   {
     name: "Jet Lag Recovery Massage",
@@ -121,7 +121,7 @@ const Services = () => {
         <section className="relative py-32 md:py-48 text-white overflow-hidden">
           <div className="absolute inset-0">
             <img
-              src="/images/hero/hero-1.jpg"
+              src="/generated-images/services-hero.jpg"
               alt="Certified massage therapists preparing Balinese and deep tissue massage treatments for villa and hotel guests in Kuta, Bali"
               className="w-full h-full object-cover"
             />
@@ -423,7 +423,7 @@ const Services = () => {
               <div>
                 <h3 className="text-xl font-semibold text-spa-earth mb-4">Professional Equipment</h3>
                 <p className="text-spa-stone">
-                  We bring everything needed: professional massage table, fresh linens, premium oils, and sanitized equipment.
+                  We bring everything needed: fresh linens, premium oils, and sanitized equipment.
                 </p>
               </div>
               <div>

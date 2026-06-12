@@ -100,7 +100,7 @@ const BlogPost11Areas = () => {
             <div className="max-w-4xl mx-auto prose prose-lg prose-headings:text-spa-earth prose-a:text-professional-green prose-strong:text-spa-earth">
               
               <h2>How Home Massage Coverage Works in Kuta</h2>
-              <p>Unlike walk-in spas with fixed locations, home massage services in Kuta operate as mobile services. Certified therapists travel from a central base (typically located in Kuta) to your accommodation with all equipment: professional massage table, fresh linens, premium oils, and specialized tools.</p>
+              <p>Unlike walk-in spas with fixed locations, home massage services in Kuta operate as mobile services. Certified therapists travel from a central base (typically located in Kuta) to your accommodation with all equipment: fresh linens, premium oils, and specialized tools.</p>
               
               <p><strong>Coverage depends on three factors:</strong></p>
               
