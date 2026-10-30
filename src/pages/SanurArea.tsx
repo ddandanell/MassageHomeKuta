@@ -163,7 +163,7 @@ const SanurArea = () => {
   return (
     <div className="min-h-screen">
       <SiteMeta 
-        title="Premium Massage Services in Sanur: Your Complete Guide to Relaxation and Wellness"
+        title="Home Massage in Sanur, Bali – In-Villa & Hotel Service"
         description="Sanur, Bali's tranquil beachside haven, offers unmatched environment for therapeutic massage and holistic wellness. Certified therapists bring professional spa-quality massage directly to your Sanur accommodation. Same-day booking available with 40-60 minute response times."
         keywords="massage services sanur, sanur massage, home massage sanur, villa massage sanur, mobile spa sanur, balinese massage sanur, deep tissue massage sanur, aromatherapy massage sanur, hot stone massage sanur, pregnancy massage sanur, foot reflexology sanur, jet lag recovery massage sanur, professional massage sanur bali, certified massage therapist sanur"
         canonical="/areas/sanur"

@@ -160,7 +160,7 @@ const CouplesMassageKuta = () => {
   return (
     <div className="min-h-screen">
       <SiteMeta 
-        title="Couples Massage Kuta – Romantic In-Villa Treatment | Home Massage Kuta"
+        title="Couples Massage Kuta – Romantic In-Villa Treatment"
         description="Romantic couples massage in Kuta delivered to your villa or hotel. Synchronized treatments, certified therapists, same-day booking. Book now from $20 per person."
         keywords="couples massage kuta, romantic massage kuta, couples spa kuta, synchronized massage kuta, honeymoon massage kuta, anniversary massage kuta, couples therapy kuta, two therapist massage kuta"
         canonical="/couples-massage-kuta"

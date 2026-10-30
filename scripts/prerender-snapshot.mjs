@@ -75,7 +75,7 @@ function parse(html, route) {
   const paragraphs = [...root.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/gi)]
     .map((m) => strip(m[1]))
     .filter((p) => p.length > 40)
-    .slice(0, 2);
+    .slice(0, 3);
   const h2s = [...new Set([...root.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/gi)].map((m) => strip(m[1])))].slice(0, 10);
   const links = [...root.matchAll(/<a\b[^>]*href="([^"]+)"/gi)]
     .map((m) => m[1])
