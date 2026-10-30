@@ -9,6 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import { BookOpen, ArrowRight, DollarSign, MessageCircle, MapPin, Heart, Info } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SITE_CONFIG } from "@/config/site";
+import { blogArticles } from "@/data/blog-articles";
 
 const BlogHub = () => {
   const whatsappUrl = `https://wa.me/${SITE_CONFIG.whatsapp.replace(/[^0-9]/g, '')}?text=${encodeURIComponent("Hi! I'm interested in booking a massage in Kuta. Can you help me?")}`;
@@ -140,6 +141,23 @@ const BlogHub = () => {
       <Header />
 
       <main>
+        {blogArticles.length > 0 && (
+          <section className="py-14 bg-white">
+            <div className="container mx-auto px-4">
+              <h2 className="text-3xl font-bold text-spa-earth mb-8 text-center">Latest Guides</h2>
+              <div className="grid md:grid-cols-3 gap-6">
+                {blogArticles.map((a) => (
+                  <Link key={a.slug} to={"/blog/" + a.slug} className="border border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <p className="text-xs uppercase tracking-wide text-professional-green mb-2">{a.category}</p>
+                    <h3 className="text-lg font-bold text-spa-earth mb-2">{a.title}</h3>
+                    <p className="text-sm text-spa-stone">{a.excerpt}</p>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* Hero Section */}
         <section className="relative py-32 md:py-40 bg-gradient-to-br from-professional-green via-emerald-600 to-teal-700 text-white overflow-hidden">
           <div className="absolute inset-0 bg-black/20"></div>
