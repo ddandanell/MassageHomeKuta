@@ -6,8 +6,8 @@ export const comfortMassageData: MassageTypeData = {
   slug: "comfort-massage",
   heroTitle: "Comfort Massage in Kuta – Gentle Care & Relaxation",
   heroSubtitle: "Nurturing massage focused on comfort and ease. Gentle, caring therapy for complete relaxation.",
-  metaTitle: "Comfort Massage in Kuta Bali | Gentle Mobile Service – END",
-  metaDescription: "Book Comfort Massage in Kuta. Gentle, nurturing therapy at your villa. Professional mobile service. WhatsApp to book. – END",
+  metaTitle: "Comfort Massage in Kuta Bali | Gentle Mobile Service",
+  metaDescription: "Book Comfort Massage in Kuta. Gentle, nurturing therapy at your villa. Professional mobile service. WhatsApp to book.",
   keywords: "comfort massage kuta, gentle massage bali, nurturing massage kuta, easy relaxation massage, caring massage therapy bali",
   introText: "Embrace gentle care with our comfort massage in Kuta. This nurturing treatment prioritizes your ease and relaxation above all else. Using soft, caring touch and comfortable techniques, our certified therapists create a safe, soothing experience focused entirely on your comfort. The comfort massage is perfect for those who find regular massage too intense, first-time recipients, anyone in need of gentle care, or simply those who want pure, uncomplicated relaxation. Our mobile service brings this gentle therapy directly to your villa or hotel, ensuring you feel safe, cared for, and completely at ease throughout Kuta and surrounding areas.",
   benefits: [
@@ -99,8 +99,8 @@ export const gentleTouchMassageData: MassageTypeData = {
   slug: "gentle-touch-massage",
   heroTitle: "Gentle Touch Massage in Kuta – Soft Healing Therapy",
   heroSubtitle: "Light-pressure massage with healing intention. Soft, therapeutic touch for sensitive bodies.",
-  metaTitle: "Gentle Touch Massage Kuta Bali | Light Therapy Service – END",
-  metaDescription: "Book Gentle Touch Massage in Kuta. Light-pressure healing therapy at your villa. Professional service. WhatsApp to book. – END",
+  metaTitle: "Gentle Touch Massage Kuta Bali | Light Therapy Service",
+  metaDescription: "Book Gentle Touch Massage in Kuta. Light-pressure healing therapy at your villa. Professional service. WhatsApp to book.",
   keywords: "gentle touch massage kuta, light pressure massage bali, soft massage therapy, sensitive body massage kuta, light touch massage bali",
   introText: "Experience the power of gentle touch massage in Kuta. This light-pressure treatment proves that therapeutic benefits don't require intense pressure. Using soft, intentional touch, our certified therapists provide meaningful healing for bodies that prefer or require gentle work. The gentle touch massage is ideal for those with sensitivity, recovering from illness, dealing with certain conditions, or simply appreciating lighter work. Our mobile service brings this soft, therapeutic approach directly to your villa or hotel, delivering professional gentle touch massage throughout Kuta and surrounding areas. Our English and Indonesian speaking therapists ensure clear communication about your specific needs.",
   benefits: [
@@ -192,8 +192,8 @@ export const premiumSpaTreatmentData: MassageTypeData = {
   slug: "premium-spa-treatment",
   heroTitle: "Premium Spa Treatment in Kuta – Ultimate Luxury",
   heroSubtitle: "Five-star spa experience delivered to your villa. Premium products, expert therapists, complete luxury.",
-  metaTitle: "Premium Spa Treatment Kuta Bali | Luxury Mobile Service – END",
-  metaDescription: "Book Premium Spa Treatment in Kuta. Five-star luxury spa experience at your villa. Elite therapists. WhatsApp to book. – END",
+  metaTitle: "Premium Spa Treatment Kuta Bali | Luxury Mobile Service",
+  metaDescription: "Book Premium Spa Treatment in Kuta. Five-star luxury spa experience at your villa. Elite therapists. WhatsApp to book.",
   keywords: "premium spa treatment kuta, luxury spa bali, five star spa service, elite massage kuta, premium wellness treatment bali",
   introText: "Indulge in the ultimate luxury with our premium spa treatment in Kuta. This five-star experience brings everything you'd expect from the finest resort spas directly to your villa or hotel. Our elite therapists use premium products, advanced techniques, and meticulous attention to detail to deliver an exceptional spa experience. The premium spa treatment includes comprehensive body care, massage therapy, and luxury touches that elevate the experience beyond ordinary treatments. Perfect for special celebrations, honeymoons, or anyone who appreciates and deserves the very best. Our mobile service delivers this exceptional experience throughout Kuta and surrounding areas.",
   benefits: [
@@ -285,8 +285,8 @@ export const revitalizingMassageData: MassageTypeData = {
   slug: "revitalizing-massage",
   heroTitle: "Revitalizing Massage in Kuta – Energize Your Body",
   heroSubtitle: "Energizing massage therapy to revitalize tired bodies. Wake up your energy and restore your spark.",
-  metaTitle: "Revitalizing Massage Kuta Bali | Energizing Therapy Service – END",
-  metaDescription: "Book Revitalizing Massage in Kuta. Energizing therapy to restore your vitality. Mobile service to your villa. WhatsApp to book. – END",
+  metaTitle: "Revitalizing Massage Kuta Bali | Energizing Therapy Service",
+  metaDescription: "Book Revitalizing Massage in Kuta. Energizing therapy to restore your vitality. Mobile service to your villa. WhatsApp to book.",
   keywords: "revitalizing massage kuta, energizing massage bali, vitality massage kuta, energy boost massage, awakening massage therapy bali",
   introText: "Reawaken your energy with our revitalizing massage in Kuta. This energizing treatment is designed to combat fatigue, restore vitality, and leave you feeling refreshed and alive. Unlike deeply relaxing massage that makes you sleepy, revitalizing massage uses stimulating techniques that boost energy, improve circulation, and awaken your body. Our certified therapists bring this invigorating treatment directly to your villa or hotel, perfect for morning sessions to start your day or afternoon pick-me-ups when energy is flagging. The revitalizing massage is ideal for jet lag recovery, afternoon slumps, pre-activity preparation, or anytime you need your energy restored. Our mobile service delivers this energizing treatment throughout Kuta and surrounding areas.",
   benefits: [

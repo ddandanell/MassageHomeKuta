@@ -192,6 +192,11 @@ const routeConfig = [
   { path: "/mobile-spa-day-package-bali/", element: <MobileSpaDayPackageBali /> },
   { path: "/post-hike-recovery-massage-bali/", element: <PostHikeRecoveryMassageBali /> },
   { path: "/pregnancy-massage-bali/", element: <PregnancyMassageBali /> },
+  // Kuta intent landing pages (were built but unrouted -> soft 404s)
+  { path: "/couples-massage-kuta", element: <CouplesMassageKuta /> },
+  { path: "/spa-near-me-kuta", element: <SpaNearMeKuta /> },
+  { path: "/message-kuta-bali", element: <MessageKutaBali /> },
+  { path: "/massage-therapist-kuta-bali", element: <MassageTherapistKutaBali /> },
   // Blog Hub & Posts
   { path: "/blog", element: <BlogHub /> },
   { path: "/blog/:slug", element: <BlogArticlePage /> },

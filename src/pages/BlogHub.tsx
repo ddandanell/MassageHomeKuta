@@ -54,6 +54,15 @@ const BlogHub = () => {
     }
   ];
 
+  // Only link guides that actually exist; unpublished plans stay unlinked.
+  const legacySlugs = [
+    "/blog/massage-kuta-bali-price-guide",
+    "/blog/how-to-book-massage-kuta-whatsapp",
+    "/blog/best-areas-kuta-home-massage-coverage",
+  ];
+  const published = (post: { slug: string }) =>
+    legacySlugs.includes(post.slug) || blogArticles.some((a) => "/blog/" + a.slug === post.slug);
+
   // Transactional support posts
   const transactionalPosts = [
     {
@@ -261,7 +270,7 @@ const BlogHub = () => {
               </div>
 
               <div className="grid md:grid-cols-2 gap-6">
-                {transactionalPosts.map((post, index) => (
+                {transactionalPosts.filter(published).map((post, index) => (
                   <Card key={index} className="hover:shadow-lg transition-all duration-300">
                     <CardHeader>
                       <CardTitle className="text-lg text-spa-earth">
@@ -303,7 +312,7 @@ const BlogHub = () => {
               </div>
 
               <div className="grid md:grid-cols-2 gap-6">
-                {informationalPosts.map((post, index) => (
+                {informationalPosts.filter(published).map((post, index) => (
                   <Card key={index} className="hover:shadow-lg transition-all duration-300">
                     <CardHeader>
                       <CardTitle className="text-lg text-spa-earth">
@@ -345,7 +354,7 @@ const BlogHub = () => {
               </div>
 
               <div className="grid md:grid-cols-2 gap-6">
-                {localPosts.map((post, index) => (
+                {localPosts.filter(published).map((post, index) => (
                   <Card key={index} className="hover:shadow-lg transition-all duration-300">
                     <CardHeader>
                       <CardTitle className="text-lg text-spa-earth">

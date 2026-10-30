@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import SiteMeta from "@/components/seo/SiteMeta";
 import StructuredData from "@/components/seo/StructuredData";
 import Header from "@/components/Header";

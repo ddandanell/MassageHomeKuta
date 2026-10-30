@@ -28,7 +28,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <SiteMeta 
-        title="Home Massage Kuta, Bali | In-Villa & Hotel Service"
+        title="In-Villa & Hotel Massage in Kuta, Bali"
         description="Book a certified home massage in Kuta, Bali. Balinese, deep tissue and couples treatments delivered to your villa or hotel. WhatsApp for same-day booking."
         keywords="home massage kuta, in-villa massage kuta, hotel massage bali, couples massage kuta, balinese massage kuta, deep tissue massage kuta, mobile spa bali"
         canonical="/"
