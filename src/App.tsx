@@ -97,6 +97,7 @@ import NotFound from "./pages/NotFound";
 import RecommendedServices from "./pages/RecommendedServices";
 // Blog pages
 import BlogHub from "./pages/BlogHub";
+import BlogArticlePage from "./pages/BlogArticlePage";
 import BlogPost1Pricing from "./pages/BlogPost1Pricing";
 import BlogPost2Booking from "./pages/BlogPost2Booking";
 import BlogPost11Areas from "./pages/BlogPost11Areas";
@@ -193,6 +194,7 @@ const routeConfig = [
   { path: "/pregnancy-massage-bali/", element: <PregnancyMassageBali /> },
   // Blog Hub & Posts
   { path: "/blog", element: <BlogHub /> },
+  { path: "/blog/:slug", element: <BlogArticlePage /> },
   { path: "/blog/massage-kuta-bali-price-guide", element: <BlogPost1Pricing /> },
   { path: "/blog/how-to-book-massage-kuta-whatsapp", element: <BlogPost2Booking /> },
   { path: "/blog/best-areas-kuta-home-massage-coverage", element: <BlogPost11Areas /> },
