@@ -24,6 +24,73 @@ export type BlogArticle = {
  * Publishing = append one object + add the URL to the sitemap. No route edits.
  */
 export const blogArticles: BlogArticle[] = [
+{
+  slug: "balinese-massage-complete-guide",
+  title: "Balinese Massage: What It Is and What to Expect in Bali",
+  metaTitle: "Balinese Massage in Bali: Complete Guide",
+  description: "What Balinese massage actually involves, how it differs from deep tissue and Thai massage, what to expect in a villa session, and how to choose the right pressure.",
+  excerpt: "A practical guide to Balinese massage: the technique, the pressure, the oils, and what a session at your villa or hotel actually feels like.",
+  keyword: "balinese massage bali",
+  category: "Treatments",
+  datePublished: "2026-10-31T09:00:00+08:00",
+  dateModified: "2026-10-31T09:00:00+08:00",
+  readMinutes: 7,
+  image: "/images/hero/hero-1.jpg",
+  imageAlt: "Balinese massage being performed on a massage table at a villa in south Bali",
+  intro: "Balinese massage is the default massage in Bali and the one most visitors book without knowing what it involves. It is not a light spa rub and it is not deep tissue either. It sits in the middle: long, firm strokes along the muscles, acupressure on specific points, and stretching at the end. This guide explains what happens in a session, how it compares with the other treatments on the menu, and how to get the pressure you actually want.",
+  sections: [
+    {
+      "h2": "What Balinese massage actually is",
+      html: "<p>It is a traditional Indonesian technique that combines gentle-to-firm pressure along the muscle fibres, acupressure with thumbs and palms on points along the back, neck, shoulders and legs, and slow passive stretching. Sessions usually run from feet to head, front and back, with the back and shoulders taking the most time.</p><p>The trademark is the long stroke: the therapist works from the lower back up to the shoulder in one continuous movement, then repeats with slightly more pressure. It should feel rhythmic rather than sharp. If it feels like someone is digging a thumb into a knot for a minute, that is deep tissue, not Balinese.</p>"
+    },
+    {
+      "h2": "How it compares with deep tissue and Thai massage",
+      html: "<p><strong>Deep tissue</strong> is slower and more targeted. The therapist works specific areas with sustained pressure, often on the knots that sit beside the shoulder blade or in the glutes. It is the better choice if you have one stubborn problem area.</p><p><strong>Thai massage</strong> is done on a mat, fully clothed, and is dominated by stretching and compression rather than oil. Balinese massage is done on a table, with oil, and is dominated by strokes and acupressure.</p><p><strong>Aromatherapy</strong> is the lightest option: same strokes, less pressure, more attention to scent and relaxation. If you want to fall asleep, pick aromatherapy. If you want to feel worked on, pick Balinese.</p>"
+    },
+    {
+      "h2": "What a villa session looks like",
+      html: "<p>The therapist arrives with a folding table, fresh sheets, towels and oil, and needs about ten to fifteen minutes to set up. A living room with the coffee table pushed aside, or a large bedroom, works well. Air conditioning on, phone on silent, and a power point within reach is all the preparation needed.</p><p>You stay covered by a sheet throughout; only the area being worked on is uncovered. Oil is used on the back, legs, arms and shoulders. If you have sunburn, say so at the start so the therapist can work around it or use less oil on the burned area.</p>"
+    },
+    {
+      "h2": "How to get the right pressure",
+      html: "<p>Balinese massage is normally medium-firm. Most therapists start lighter and build up over the first ten minutes, which is why first-time visitors often think the massage is too gentle and then change their mind halfway through.</p><p>Useful phrases: <em>more pressure</em>, <em>less pressure</em>, <em>lighter on the neck</em>, <em>please avoid my lower back</em>. Say it early. Therapists adjust immediately and it is far easier than enduring an hour and being sore the next day.</p>"
+    },
+    {
+      "h2": "Where it is worth booking it",
+      html: "<p>Balinese massage is the best all-round choice after a travel day, after a long week of surfing or hiking, or when you simply want a proper massage rather than a spa ritual. For a specific injury or a chronic problem, ask for deep tissue and tell the therapist where it hurts. For pregnancy, book a dedicated pregnancy massage, because positioning and pressure differ.</p><p>If you are staying in <a href=\"/areas/legian\">Legian</a> or <a href=\"/areas/seminyak\">Seminyak</a>, a villa session avoids the drive and the walk home afterwards, which is the part most people underestimate after a firm massage.</p>"
+    },
+    {
+      "h2": "Aftercare that makes a difference",
+      html: "<ul><li>Drink water for the rest of the day, especially if the pressure was firm.</li><li>Skip heavy exercise for a few hours; a gentle walk is fine.</li><li>Expect mild next-day soreness after a firm session. Sharp pain is not normal and is worth mentioning.</li><li>Shower before bed if you do not want oil on the sheets.</li></ul><p>Booking a 90-minute session rather than 60 makes a real difference with Balinese massage, because the technique is designed to cover the whole body at an even pace.</p>"
+    }
+  ],
+  faqs: [
+    {
+      q: "Is Balinese massage painful?",
+      a: "It should feel firm but not painful. The pressure builds gradually. If a stroke is sharp, tell the therapist to ease off; they will adjust without any awkwardness."
+    },
+    {
+      q: "Do I need to be naked for a Balinese massage?",
+      a: "No. You undress to the level you are comfortable with and stay under a sheet. Underwear can stay on."
+    },
+    {
+      q: "How long should a Balinese massage be?",
+      a: "Sixty minutes covers the body at a brisk pace. Ninety minutes is better because the technique includes work on feet, legs, back, shoulders, arms and head."
+    },
+    {
+      q: "Is oil always used?",
+      a: "Yes, Balinese massage uses oil. If you prefer less oil or no oil on your hair and face, say so at the start."
+    },
+    {
+      q: "Can I book it at my hotel?",
+      a: "Yes, in most Kuta, Legian and Seminyak hotels. Tell reception a therapist is arriving so security lets them through."
+    }
+  ],
+  related: [
+    "first-home-massage-kuta-what-to-expect",
+    "massage-etiquette-bali-guide"
+  ]
+},
   {
     slug: "first-home-massage-kuta-what-to-expect",
     title: "Your First Home Massage in Kuta: What Actually Happens",
@@ -158,6 +225,6 @@ export const blogArticles: BlogArticle[] = [
         a: "Tipping is optional. Around ten percent of the treatment price is a common gesture for good service.",
       },
     ],
-    related: ["first-home-massage-kuta-what-to-expect", "prepare-villa-hotel-room-home-massage"],
+    related: ["first-home-massage-kuta-what-to-expect", "balinese-massage-complete-guide"],
   },
 ];
