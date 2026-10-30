@@ -20,7 +20,12 @@ const SiteMeta = ({
   ogType = "website",
   noindex = false
 }: SiteMetaProps) => {
-  const fullTitle = title ? `${title} | ${SITE_CONFIG.name}` : SITE_CONFIG.title;
+  // Keep titles inside the SERP display limit: append the brand only when the
+  // result still fits, and never repeat the brand if the page title has it.
+  const baseTitle = title || SITE_CONFIG.title;
+  const branded = `${baseTitle} | ${SITE_CONFIG.name}`;
+  const fullTitle =
+    baseTitle.includes(SITE_CONFIG.name) || branded.length > 62 ? baseTitle : branded;
   const canonicalUrl = canonical ? `${SITE_CONFIG.url}${canonical}` : SITE_CONFIG.url;
   const canonicalPath = canonical || "/";
 

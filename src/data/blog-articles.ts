@@ -25,6 +25,77 @@ export type BlogArticle = {
  */
 export const blogArticles: BlogArticle[] = [
 {
+  slug: "deep-tissue-vs-balinese-massage-kuta",
+  title: "Deep Tissue vs Balinese Massage: Which One Should You Book in Kuta?",
+  metaTitle: "Deep Tissue vs Balinese Massage in Kuta",
+  description: "A practical comparison of deep tissue and Balinese massage: what each one does, which suits a stiff back, sunburn, jet lag or post-surf soreness, and how to choose.",
+  excerpt: "Two massages that look similar on a menu and feel completely different on the table. Here is how to pick the right one for your body today.",
+  keyword: "deep tissue vs balinese massage",
+  category: "Treatments",
+  datePublished: "2026-10-31T10:30:00+08:00",
+  dateModified: "2026-10-31T10:30:00+08:00",
+  readMinutes: 7,
+  image: "/images/hero/hero-2.jpg",
+  imageAlt: "Therapist applying firm forearm pressure during a deep tissue massage at a villa in Kuta",
+  intro: "Most people in Kuta book whichever massage name they recognise and then spend the session quietly hoping the pressure is right. Deep tissue and Balinese are the two treatments visitors mix up most, and the difference matters: one is built to chase a specific problem, the other is built to reset the whole body. This guide explains what each one actually does, who each suits, and how to choose in under a minute.",
+  sections: [
+    {
+      "h2": "The short answer",
+      html: "<p>Choose <strong>deep tissue</strong> if you have one specific area that hurts — a locked shoulder blade, a lower back that stiffened on the flight, a hamstring that has been tight since you started surfing. Choose <strong>Balinese</strong> if you feel generally wrecked rather than specifically injured: tired legs, a tight neck from scrolling, a body that has not been touched in months.</p><p>If you cannot decide, book Balinese and ask the therapist to spend the last twenty minutes on whatever hurts. That hybrid is what most experienced therapists would choose themselves.</p>"
+    },
+    {
+      "h2": "How the two techniques differ on the table",
+      html: "<p><strong>Balinese massage</strong> is a full-body sequence. Long, continuous strokes run up the back and legs, thumbs and palms press along acupressure points, and the session finishes with gentle stretching. The rhythm is steady and the pressure is medium to firm, applied broadly rather than surgically.</p><p><strong>Deep tissue</strong> is slower and narrower. The therapist uses forearms, elbows and knuckles to sink into a specific band of muscle, holds the pressure while the tissue releases, then moves on. There is far less flowing movement and far more time in one place. It can feel intense, and it is supposed to.</p><p>The tell is simple: if the therapist never stops moving, it is Balinese. If they park on a knot and wait, it is deep tissue.</p>"
+    },
+    {
+      "h2": "Deep tissue: what it is genuinely good for",
+      html: "<p>Deep tissue earns its reputation in a few specific situations:</p><ul><li><strong>Long-haul flight stiffness.</strong> Hours in a seat shorten the hip flexors and lock the upper back. Sustained pressure on the glutes and mid-back unwinds that faster than a general massage.</li><li><strong>Desk posture.</strong> If you work on a laptop, the upper traps and the muscles beside the shoulder blade carry the load. That is exactly where deep tissue works.</li><li><strong>Training load.</strong> Surfers, runners and gym-goers with tight calves, quads or lats get more from targeted work than from a full-body sequence.</li><li><strong>One-sided pain.</strong> If the left side hurts and the right side does not, you want a therapist who will spend twenty minutes on the left.</li></ul><p>What it is not good for: total relaxation, a first massage, or a hangover. Deep tissue asks you to breathe through discomfort, which is the opposite of what most people want on holiday.</p>"
+    },
+    {
+      "h2": "Balinese: what it is genuinely good for",
+      html: "<p>Balinese massage is the better default for most visitors, and here is why. It covers feet, legs, back, shoulders, arms, neck and head in one session, so nothing gets missed. The stretching at the end addresses the hips and spine, which is where travel and bad hotel mattresses show up first. And because the pressure is broad rather than localised, you leave loose rather than tender.</p><p>Book it if you are jet-lagged, if you have been walking all day in the heat, if you want to fall asleep during the treatment, or if you simply want the thing that Bali is known for. For a deeper look at the technique itself, read the <a href=\"/blog/balinese-massage-complete-guide\">complete guide to Balinese massage</a>.</p>"
+    },
+    {
+      "h2": "Pressure, soreness and the day after",
+      html: "<p>Both treatments can leave you slightly sore, but the pattern is different. After a firm Balinese massage, soreness is diffuse and fades within a day. After deep tissue, the worked area can feel bruised for twenty-four to forty-eight hours, and that is normal — but sharp pain is not, and neither is numbness.</p><p>Practical rules: drink more water than usual, skip the gym for the rest of the day, and do not book deep tissue the afternoon before a long flight home. A tight, freshly worked back and a middle seat are a bad combination.</p><p>If you are unsure how much pressure you can take, start with a 60-minute Balinese and upgrade on the second visit. Most people who book 90 minutes of deep tissue on their first day in Bali regret it by dinner.</p>"
+    },
+    {
+      "h2": "Combining both in one session",
+      html: "<p>The most useful booking for a one-week holiday is a 90-minute session that starts as Balinese and finishes as deep tissue. The first hour warms the whole body and finds the problem areas; the last half hour goes after them properly. Therapists do this routinely — you only have to ask.</p><p>Say it in the booking message: <em>90 minutes, Balinese to start, then focus on my shoulders and lower back</em>. That single sentence gets you a better session than any menu description.</p><p>Both treatments are available as a <a href=\"/services/deep-tissue-massage\">deep tissue massage</a> or a <a href=\"/services/balinese-massage\">Balinese massage</a> at your villa or hotel anywhere in Kuta, Legian, Seminyak, Tuban and the surrounding south Bali areas. Prices depend on the treatment length and are confirmed on WhatsApp before you book.</p>"
+    }
+  ],
+  faqs: [
+    {
+      q: "Is deep tissue better than Balinese massage?",
+      a: "Neither is better. Deep tissue is better for one specific problem area; Balinese is better for general tension and full-body relaxation. Most visitors get more from Balinese unless they have a particular injury or chronic tight spot."
+    },
+    {
+      q: "Which massage is better for a bad back?",
+      a: "Deep tissue, worked around the area rather than directly on a painful joint. Tell the therapist exactly where it hurts and whether the pain is sharp or dull, and ask them to avoid the spine itself."
+    },
+    {
+      q: "Does deep tissue massage hurt?",
+      a: "It should feel like strong, sustained pressure that you can breathe through — a 6 or 7 out of 10. If you are holding your breath or tensing up, the pressure is too much and the muscle will not release anyway."
+    },
+    {
+      q: "Which one should I book after a long flight?",
+      a: "Balinese if you are tired and stiff all over; deep tissue if the flight has locked one area, usually the lower back or between the shoulder blades. Both help with jet lag, but Balinese is easier to sleep through."
+    },
+    {
+      q: "Can I have deep tissue on sunburnt skin?",
+      a: "No. Oil and friction on burnt skin is painful and unhelpful. Tell the therapist where you are burnt when they arrive and they will work around it or switch to a lighter treatment."
+    },
+    {
+      q: "How long should each session be?",
+      a: "Sixty minutes is enough for a focused deep tissue session on one or two areas. Balinese needs ninety minutes to cover the whole body at a sensible pace, especially with stretching at the end."
+    }
+  ],
+  related: [
+    "balinese-massage-complete-guide",
+    "first-home-massage-kuta-what-to-expect"
+  ]
+},
+{
   slug: "balinese-massage-complete-guide",
   title: "Balinese Massage: What It Is and What to Expect in Bali",
   metaTitle: "Balinese Massage in Bali: Complete Guide",
