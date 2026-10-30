@@ -23,7 +23,6 @@ const SiteMeta = ({
   const fullTitle = title ? `${title} | ${SITE_CONFIG.name}` : SITE_CONFIG.title;
   const canonicalUrl = canonical ? `${SITE_CONFIG.url}${canonical}` : SITE_CONFIG.url;
   const canonicalPath = canonical || "/";
-  const indonesianUrl = `${SITE_CONFIG.url}/id${canonicalPath === "/" ? "" : canonicalPath}`;
 
   return (
     <Helmet>
@@ -38,7 +37,6 @@ const SiteMeta = ({
       
       {/* Hreflang for English / Indonesian variants */}
       <link rel="alternate" hrefLang="en" href={canonicalUrl} />
-      <link rel="alternate" hrefLang="id" href={indonesianUrl} />
       <link rel="alternate" hrefLang="x-default" href={canonicalUrl} />
       
       {/* Open Graph */}
