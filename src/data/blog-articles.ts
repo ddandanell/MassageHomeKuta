@@ -25,6 +25,85 @@ export type BlogArticle = {
  */
 export const blogArticles: BlogArticle[] = [
 {
+  slug: "couples-massage-kuta-guide",
+  title: "Couples Massage in Kuta: How to Set It Up in a Villa or Hotel Room",
+  metaTitle: "Couples Massage in Kuta: Villa & Hotel Guide",
+  description: "How a couples massage in Kuta works with two therapists in one room: space, timing, treatment pairing, hotel rules and what to have ready before they arrive.",
+  excerpt: "Two therapists, one room, and a lot of small logistics nobody warns you about. Here is how to make a couples massage in Kuta feel effortless instead of improvised.",
+  keyword: "couples massage kuta",
+  category: "Treatments",
+  datePublished: "2026-10-31T06:45:00+08:00",
+  dateModified: "2026-10-31T06:45:00+08:00",
+  readMinutes: 8,
+  image: "/images/hero/hero-4.jpg",
+  imageAlt: "Two massage tables set up side by side in a villa room in Kuta with towels and oil ready",
+  intro: "A couples massage is easy to book and surprisingly easy to get slightly wrong: two tables in a room that only fits one, both people wanting different pressure, a dinner reservation fifteen minutes after the session ends. Most of the friction is logistics, not massage. This guide covers the room, the timing, the treatment pairing and the hotel rules, so the hour itself is the relaxing part.",
+  sections: [
+    {
+      "h2": "What a couples massage in Kuta actually involves",
+      html: "<p>A couples massage means two therapists working at the same time in the same room, usually on two portable massage tables set up side by side with about a metre between them. Each person has their own therapist, their own oil, their own towel stack and their own choice of treatment.</p><p>It is not a fixed package. In practice, one person can book a firm <a href=\"/services/balinese-massage\">Balinese massage</a> while the other takes a gentler relaxation treatment, and both finish at the same time. Ask for that when you book rather than assuming it is allowed — some places only sell a matched pair, and you want to know before the therapists are standing in your room.</p><p>If you are in a villa with a large bedroom, two tables fit comfortably. In a standard hotel room, they often do not, and the session moves to the balcony, the living area or the pool deck. That is normal in Bali and usually works better than squeezing around the bed.</p>"
+    },
+    {
+      "h2": "The room: what two tables need",
+      html: "<p>Each table needs roughly two metres by one metre of flat floor, plus walking space on the outer side for the therapist. A firm queen bed can host one person comfortably, but not two side by side unless the bed is unusually wide — do not plan on two people on one mattress.</p><ul><li>Clear the floor before the therapists arrive, not while they wait at the door.</li><li>Turn the air conditioning on twenty minutes early and set it to around 22–24°C. Bodies under a sheet cool down fast once the massage starts.</li><li>Move breakables off side tables. Oil and loose elbows do not mix with ceramics.</li><li>Have a bathroom within a few steps and a towel per person beyond the ones the therapists bring.</li><li>If the room is tiled and hard, a rug under the tables makes the setup quieter and warmer.</li></ul><p>Give the therapists ten to fifteen minutes of setup time before the session starts. That time is not billable massage, and skipping it means your hour is shorter.</p>"
+    },
+    {
+      "h2": "Choosing treatments that work side by side",
+      html: "<p>The most common mistake is both people booking the deepest option because one person wants it. A couples session is not a competition, and a therapist working at cross-purpose pressure in a small room is distracting for everyone.</p><p>Three pairings that work well:</p><ul><li><strong>Balinese plus relaxation</strong> — the standard mix, one person gets broad firm pressure and stretching, the other gets slow long strokes.</li><li><strong>Deep tissue plus foot reflexology</strong> — good after a travel day or a lot of walking; the firmer session is balanced by a quieter one.</li><li><strong>Same treatment, different pressure</strong> — the easiest to organise and the most common request. Book one treatment and state two pressures.</li></ul><p>If one of you is unsure between two styles, <a href=\"/blog/deep-tissue-vs-balinese-massage-kuta\">this comparison</a> settles it in under a minute.</p>"
+    },
+    {
+      "h2": "Timing around traffic, sunset and dinner",
+      html: "<p>Kuta traffic is the single biggest scheduling factor. From Kuta town, therapists typically reach Legian in 8–10 minutes, Seminyak in 15–25 minutes, Canggu in 35–50 minutes and Uluwatu in 45–60 minutes, with the Bukit climb adding unpredictable time after 16:00.</p><p>Sunset in south Bali falls between roughly 18:00 and 18:45 all year, which means the 17:30–19:00 window is the busiest for both bookings and roads. If you want a sunset-adjacent session, book earlier than you think and expect the therapist to arrive a few minutes late in Seminyak or Canggu.</p><p>Leave a 60–90 minute gap after a heavy meal. Lying face down on a full stomach is unpleasant, and no therapist enjoys working around it. Also leave thirty minutes after the session before you need to be anywhere — the point is the slow finish, not jumping up to find a shirt.</p>"
+    },
+    {
+      "h2": "Hotels versus private villas",
+      html: "<p>Private villas are straightforward: the therapists come to your gate, you point at the room, and nobody needs to approve anything. Tell your villa manager the day before if the property has staff who handle gate access, and send the exact villa name and Google Maps pin, because many Kuta villas sit at the end of unmarked gang lanes.</p><p>Hotels are more variable. Some allow in-room massage, some only allow it in a designated room, and some ask therapists to sign in at reception. Message the hotel first and confirm one thing: whether two outside therapists may bring tables to the room. If the answer is no, ask about the pool deck or a garden area.</p><p>For hotels, send the booking name and room number in writing and tell reception to expect the therapists. A therapist waiting in a lobby for fifteen minutes because reception cannot find the guest is the most common way a couples session starts badly.</p>"
+    },
+    {
+      "h2": "Pressure, privacy and talking it out",
+      html: "<p>Agree the pressure with your own therapist, quietly, in the first five minutes. Do not negotiate across the room — it turns a relaxing hour into a group discussion. If you want silence, say so at the start; if you want to chat, that is fine too, and most therapists will match your mood.</p><p>Privacy works the same way. Underwear can stay on, you stay under the sheet, and only the area being worked on is uncovered. If you would rather the room be dimmer, ask. If you want your partner to go first while you shower, say that when booking a <a href=\"/couples-massage-kuta\">couples massage</a> and the timing can usually be arranged.</p><p>The etiquette is broadly the same as a solo session and is covered in detail in <a href=\"/blog/massage-etiquette-bali-guide\">this etiquette guide</a>, including tipping, phones and what to say if something is uncomfortable.</p>"
+    },
+    {
+      "h2": "Aftercare: the part people skip",
+      html: "<p>Drink water, then wait twenty minutes before a cold plunge or a swim — jumping straight into a pool after deep work on the legs is a shock most people regret. A warm shower is fine, and if you have oil on your hair, shampoo twice.</p><p>If either of you feels light-headed, sit down and eat something small. This happens most often with a session booked on a hot afternoon after a long walk, not because anything went wrong.</p><p>Expect some next-day tenderness after firm work, particularly calves and shoulders. Gentle movement the next morning helps more than staying still. Keep the evening simple: a slow dinner nearby beats a scooter ride across town an hour after a deep session.</p>"
+    },
+    {
+      "h2": "A five-line booking checklist",
+      html: "<ol><li>Send your area, villa or hotel name, room number and a Maps pin. Addresses in Kuta are often approximate.</li><li>State two treatments and two pressures, and whether you want a female therapist for either of you.</li><li>Confirm the start time and the setup time separately.</li><li>Say whether tables are needed and whether the room fits two, or offer the living area or deck.</li><li>Ask for the price and payment method on WhatsApp — prices are confirmed at booking rather than listed here, and card payment is uncommon for mobile therapists.</li></ol><p>For the wider picture — what to wear, what happens on arrival, how payment works — read <a href=\"/blog/first-home-massage-kuta-what-to-expect\">what to expect from a first home massage in Kuta</a>. If you would rather send one message and let the team assemble the rest, <a href=\"/blog/how-to-book-massage-kuta-whatsapp\">the WhatsApp booking guide</a> has the exact wording to copy.</p>"
+    }
+  ],
+  faqs: [
+    {
+      q: "Can two people have a couples massage in one hotel room in Kuta?",
+      a: "Usually yes, but it depends on the room. Two massage tables need about four square metres of clear floor plus walking space. If a standard room is too tight, the session is normally set up on a balcony, in a living area or by the pool. Confirm with the hotel that two outside therapists may bring tables in."
+    },
+    {
+      q: "Do we both have to book the same treatment?",
+      a: "No. Two therapists work independently, so one person can have a firm Balinese massage while the other has a gentler relaxation treatment, finishing at the same time. Ask when booking so both therapists are briefed."
+    },
+    {
+      q: "How long does a couples massage take?",
+      a: "Sessions are typically 60 or 90 minutes of hands-on time, with ten to fifteen minutes of table setup beforehand and a few minutes to pack down afterwards. Allow about two hours from arrival to departure."
+    },
+    {
+      q: "How much does a couples massage in Kuta cost?",
+      a: "Prices vary by treatment, session length and whether two therapists travel to you. They are confirmed on WhatsApp when you book, before the session, so there are no surprises at the end."
+    },
+    {
+      q: "Do we need to provide towels or a mattress?",
+      a: "No. Therapists bring tables, linen, towels and oil. You only need floor space and access to a bathroom. A firm queen bed can be used for one person if you prefer it, but not for two people at once."
+    },
+    {
+      q: "Can we book a couples massage for the same day?",
+      a: "Often possible in Kuta and the nearby beach areas, but afternoon and sunset slots go first. Message in the morning with your area and preferred time and the team will confirm what is open."
+    }
+  ],
+  related: [
+    "deep-tissue-vs-balinese-massage-kuta",
+    "first-home-massage-kuta-what-to-expect"
+  ]
+},
+{
   slug: "deep-tissue-vs-balinese-massage-kuta",
   title: "Deep Tissue vs Balinese Massage: Which One Should You Book in Kuta?",
   metaTitle: "Deep Tissue vs Balinese Massage in Kuta",
