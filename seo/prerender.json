@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-31T04:51:29.964Z",
+ "generatedAt": "2026-10-31T12:52:44.756Z",
  "site": "https://www.homemassagekuta.com",
  "pages": [
   {
@@ -103,7 +103,9 @@
     "/therapists",
     "/areas/seminyak",
     "/packages",
-    "/reviews"
+    "/recommended-services",
+    "/reviews",
+    "/sitemap"
    ],
    "jsonLd": [
     "{\"@context\":\"https://schema.org\",\"@type\":\"LocalBusiness\",\"@id\":\"https://www.homemassagekuta.com/#localbusiness\",\"name\":\"Home Massage Kuta\",\"description\":\"Book home massage in Kuta with certified therapists for villas and hotels. Balinese, deep tissue, couples, pregnancy, and recovery treatments are available across Kuta, Legian, Seminyak, Uluwatu, and nearby Bali areas.\",\"url\":\"https://www.homemassagekuta.com\",\"image\":\"https://www.homemassagekuta.com/logo.svg\",\"telephone\":\"+62 811 2656 869\",\"email\":\"info@homemassagekuta.com\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"Kuta Beach Area\",\"addressLocality\":\"Kuta\",\"addressRegion\":\"Bali\",\"postalCode\":\"80361\",\"addressCountry\":\"ID\"},\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":\"-8.7203\",\"longitude\":\"115.1672\"},\"areaServed\":[{\"@type\":\"Place\",\"name\":\"Kuta\"},{\"@type\":\"Place\",\"name\":\"Legian\"},{\"@type\":\"Place\",\"name\":\"Seminyak\"},{\"@type\":\"Place\",\"name\":\"Tuban\"},{\"@type\":\"Place\",\"name\":\"Canggu\"},{\"@type\":\"Place\",\"name\":\"Pererenan\"},{\"@type\":\"Place\",\"name\":\"Kerobokan\"},{\"@type\":\"Place\",\"name\":\"Petitenget\"},{\"@type\":\"Place\",\"name\":\"Jimbaran\"},{\"@type\":\"Place\",\"name\":\"Nusa Dua\"},{\"@type\":\"Place\",\"name\":\"Sanur\"},{\"@type\":\"Place\",\"name\":\"Uluwatu\"},{\"@type\":\"Place\",\"name\":\"Pecatu\"},{\"@type\":\"Place\",\"name\":\"Ungasan\"}],\"openingHoursSpecification\":{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"07:00\",\"closes\":\"22:00\"},\"priceRange\":\"$$\",\"paymentAccepted\":[\"Cash\",\"Credit Card\",\"Bank Transfer\"],\"currenciesAccepted\":\"IDR\",\"sameAs\":[\"https://instagram.com/homemassagekuta\",\"https://facebook.com/homemassagekuta\",\"https://wa.me/628112656869\"]}",
@@ -126,7 +128,7 @@
    "h1": "Massage Service Areas Across Bali",
    "paragraphs": [
     "Professional massage service delivered throughout Bali covering 26 areas including Kuta, Legian, Pererenan, Uluwatu, and more. Book certified therapists for premium massage treatments at your villa or hotel.",
-    "Response times: 15-90 minutes 26 areas covered Primary Service Areas Our fastest response times and most frequent service locations. Perfect coverage for tourists and residents.",
+    "Response times: 15-90 minutes 26 areas covered Primary Service Areas Our primary dispatch zones and most frequent service locations. Direct coverage for villas, hotels, and residences.",
     "Central Kuta area including Kuta Beach, main tourist attractions, and beachfront hotels."
    ],
    "h2s": [
@@ -184,7 +186,7 @@
    "paragraphs": [
     "Complete directory of all pages on Home Massage Kuta. Find massage services, service areas, and helpful information quickly.",
     "Main Pages Home Welcome to Home Massage Kuta Services View all massage services Service Areas Coverage locations in Bali Packages Special package deals Therapists Meet our certified therapists Reviews Client testimonials FAQ Frequently asked questions About Our story and credentials Massage Services Balinese Massage → Deep Tissue Massage → Aromatherapy Massage → Hot Stone Massage → Thai Massage → Four Hands Massage → Pregnancy Massage → Foot Reflexology → Lymphatic Drainage Massage → Jet Lag Recovery Massage → Specialty Massage Services 24 specialized treatments for specific needs",
-    "Primary Service Areas Fastest response times (15-35 minutes)"
+    "Primary Service Areas Primary dispatch window (15-35 minutes)"
    ],
    "h2s": [
     "Main Pages",
@@ -4423,9 +4425,9 @@
    "twitterImage": "https://www.homemassagekuta.com/og-image.jpg",
    "h1": "Your Complete Guide to Massage in Kuta, Bali",
    "paragraphs": [
+    "Stepping off a long haul into Ngurah Rai Airport leaves your ankles swollen, your lower back stiff, and your body clock scrambled. Here is how to time an in-room massage in Kuta so you sleep through the first night instead of staring at the ceiling at 3 a.m.",
     "Ten minutes of preparation makes an in-room massage in Kuta feel like a spa instead of an improvised one. Here is exactly what to move, cool, dim, silence and say.",
-    "Two therapists, one room, and a lot of small logistics nobody warns you about. Here is how to make a couples massage in Kuta feel effortless instead of improvised.",
-    "Two massages that look similar on a menu and feel completely different on the table. Here is how to pick the right one for your body today."
+    "Two therapists, one room, and a lot of small logistics nobody warns you about. Here is how to make a couples massage in Kuta feel effortless instead of improvised."
    ],
    "h2s": [
     "Latest Guides",
@@ -4436,6 +4438,7 @@
     "Ready to Experience Professional Massage in Kuta?"
    ],
    "links": [
+    "/blog/best-massage-jet-lag-recovery-kuta",
     "/blog/prepare-villa-hotel-room-home-massage",
     "/blog/couples-massage-kuta-guide",
     "/blog/deep-tissue-vs-balinese-massage-kuta",
@@ -4460,7 +4463,7 @@
    "canonical": "https://www.homemassagekuta.com/blog/massage-kuta-bali-price-guide",
    "ogTitle": "Massage Kuta Price Guide 2026 | Verified Rates & Booking Tips",
    "ogDescription": "Complete massage pricing in Kuta, Bali. Verified rates from IDR 250K-1.1M for Balinese, deep tissue, couples massage. No hidden fees. Book today.",
-   "ogType": "website",
+   "ogType": "article",
    "ogImage": "https://www.homemassagekuta.com/images/blog/massage-kuta-bali-price-guide/hero.jpg",
    "ogSiteName": "Home Massage Kuta",
    "twitterCard": "summary_large_image",
@@ -4505,7 +4508,7 @@
    "canonical": "https://www.homemassagekuta.com/blog/how-to-book-massage-kuta-whatsapp",
    "ogTitle": "How to Book Massage in Kuta via WhatsApp (2026 Guide)",
    "ogDescription": "Step-by-step guide to booking massage in Kuta via WhatsApp. Message templates, booking tips, same-day availability. Response in 5-10 minutes. Book now.",
-   "ogType": "website",
+   "ogType": "article",
    "ogImage": "https://www.homemassagekuta.com/images/blog/how-to-book-massage-kuta-whatsapp/hero.jpg",
    "ogSiteName": "Home Massage Kuta",
    "twitterCard": "summary_large_image",
@@ -4513,7 +4516,7 @@
    "h1": "How to Book a Massage in Kuta: Complete WhatsApp Booking Guide (2026)",
    "paragraphs": [
     "Back to Blog How to Book a Massage in Kuta: Complete WhatsApp Booking Guide (2026) Booking a professional massage in Kuta, Bali is easier than you might think. Unlike many countries where you need to call, navigate websites, or book days in advance, Kuta's home massage services use WhatsApp – making same-day bookings possible with just a few text messages.",
-    "This guide walks you through the exact process of booking massage via WhatsApp in Kuta, from your first message to therapist arrival. Whether you've never used WhatsApp for bookings or simply want to know what to expect, you'll learn the fastest way to secure same-day massage service at your villa, hotel, or accommodation.",
+    "This guide walks you through the exact process of booking massage via WhatsApp in Kuta, from your first message to therapist arrival. Whether you've never used WhatsApp for bookings or simply want to know what to expect, you'll learn the direct step-by-step process to book same-day massage service at your villa, hotel, or accommodation.",
     "Before diving into the how-to, let's address why WhatsApp is the primary booking method in Bali:"
    ],
    "h2s": [
@@ -4548,7 +4551,7 @@
    "canonical": "https://www.homemassagekuta.com/blog/best-areas-kuta-home-massage-coverage",
    "ogTitle": "Best Kuta Areas for Home Massage Service & Response Times",
    "ogDescription": "Complete Kuta area coverage for home massage service. Response times from 15-70 min for Legian, Seminyak, Canggu, Jimbaran, Nusa Dua. Check your area.",
-   "ogType": "website",
+   "ogType": "article",
    "ogImage": "https://www.homemassagekuta.com/images/blog/best-areas-kuta-home-massage-coverage/hero.jpg",
    "ogSiteName": "Home Massage Kuta",
    "twitterCard": "summary_large_image",
@@ -4556,12 +4559,12 @@
    "h1": "Best Areas in Kuta for Home Massage Service (Complete Coverage Map & Response Times)",
    "paragraphs": [
     "Back to Blog Best Areas in Kuta for Home Massage Service (Complete Coverage Map & Response Times) Planning to book a home massage in Kuta but wondering if your hotel, villa, or guesthouse is within service range? Understanding which areas are covered and typical response times helps you plan your massage booking with realistic expectations.",
-    "This comprehensive guide breaks down home massage service coverage throughout Kuta and surrounding regions. You'll learn exactly which neighborhoods have the fastest response times, which areas require advance booking, and how to determine if your specific location qualifies for same-day massage service.",
+    "This comprehensive guide breaks down home massage service coverage throughout Kuta and surrounding regions. You'll learn which neighborhoods have the shortest travel windows, which areas require advance booking, and how to determine if your specific location qualifies for same-day massage service.",
     "Unlike walk-in spas with fixed locations, home massage services in Kuta operate as mobile services. Certified therapists travel from a central base (typically located in Kuta) to your accommodation with all equipment: fresh linens, premium oils, and specialized tools."
    ],
    "h2s": [
     "How Home Massage Coverage Works in Kuta",
-    "Primary Coverage Areas (Fastest Response Times)",
+    "Primary Coverage Areas (15-35 Minute Dispatch Windows)",
     "Extended Coverage Areas (Moderate Response Times)",
     "Areas NOT Currently Covered (Too Distant)",
     "Factors That Affect Your Response Time",
@@ -4581,6 +4584,51 @@
     "{\"@context\":\"https://schema.org\",\"@type\":\"LocalBusiness\",\"@id\":\"https://www.homemassagekuta.com/#localbusiness\",\"name\":\"Home Massage Kuta\",\"description\":\"Book home massage in Kuta with certified therapists for villas and hotels. Balinese, deep tissue, couples, pregnancy, and recovery treatments are available across Kuta, Legian, Seminyak, Uluwatu, and nearby Bali areas.\",\"url\":\"https://www.homemassagekuta.com\",\"image\":\"https://www.homemassagekuta.com/logo.svg\",\"telephone\":\"+62 811 2656 869\",\"email\":\"info@homemassagekuta.com\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"Kuta Beach Area\",\"addressLocality\":\"Kuta\",\"addressRegion\":\"Bali\",\"postalCode\":\"80361\",\"addressCountry\":\"ID\"},\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":\"-8.7203\",\"longitude\":\"115.1672\"},\"areaServed\":[{\"@type\":\"Place\",\"name\":\"Kuta\"},{\"@type\":\"Place\",\"name\":\"Legian\"},{\"@type\":\"Place\",\"name\":\"Seminyak\"},{\"@type\":\"Place\",\"name\":\"Tuban\"},{\"@type\":\"Place\",\"name\":\"Canggu\"},{\"@type\":\"Place\",\"name\":\"Pererenan\"},{\"@type\":\"Place\",\"name\":\"Kerobokan\"},{\"@type\":\"Place\",\"name\":\"Petitenget\"},{\"@type\":\"Place\",\"name\":\"Jimbaran\"},{\"@type\":\"Place\",\"name\":\"Nusa Dua\"},{\"@type\":\"Place\",\"name\":\"Sanur\"},{\"@type\":\"Place\",\"name\":\"Uluwatu\"},{\"@type\":\"Place\",\"name\":\"Pecatu\"},{\"@type\":\"Place\",\"name\":\"Ungasan\"}],\"openingHoursSpecification\":{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"07:00\",\"closes\":\"22:00\"},\"priceRange\":\"$$\",\"paymentAccepted\":[\"Cash\",\"Credit Card\",\"Bank Transfer\"],\"currenciesAccepted\":\"IDR\",\"sameAs\":[\"https://instagram.com/homemassagekuta\",\"https://facebook.com/homemassagekuta\",\"https://wa.me/628112656869\"]}",
     "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.homemassagekuta.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://www.homemassagekuta.com/blog\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Best Kuta Areas for Home Massage Service\",\"item\":\"https://www.homemassagekuta.com/blog/best-areas-kuta-home-massage-coverage\"}]}",
     "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Best Areas in Kuta for Home Massage Service (Complete Coverage Map & Response Times)\",\"description\":\"Complete Kuta area coverage for home massage service. Response times from 15-70 min for Legian, Seminyak, Canggu, Jimbaran, Nusa Dua. Check your area.\",\"image\":\"https://www.homemassagekuta.com/images/blog/best-areas-kuta-home-massage-coverage/hero.jpg\",\"datePublished\":\"2026-01-15T08:00:00+08:00\",\"dateModified\":\"2026-01-15T08:00:00+08:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"Massage Home Kuta\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Massage Home Kuta\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://www.homemassagekuta.com/logo.svg\"}}}"
+   ]
+  },
+  {
+   "path": "/blog/best-massage-jet-lag-recovery-kuta",
+   "title": "Jet Lag Recovery Massage in Kuta, Bali | Home Massage Kuta",
+   "description": "How to time, choose, and set up an in-villa or hotel massage in Kuta after a long flight to Bali: circulation, sleep timing, pressure, and room prep.",
+   "keywords": "massage for jet lag bali, home massage kuta, massage kuta bali",
+   "canonical": "https://www.homemassagekuta.com/blog/best-massage-jet-lag-recovery-kuta",
+   "ogTitle": "Jet Lag Recovery Massage in Kuta, Bali | Home Massage Kuta",
+   "ogDescription": "How to time, choose, and set up an in-villa or hotel massage in Kuta after a long flight to Bali: circulation, sleep timing, pressure, and room prep.",
+   "ogType": "article",
+   "ogImage": "https://www.homemassagekuta.com/images/blog/best-massage-jet-lag-recovery-kuta/hero.jpg",
+   "ogSiteName": "Home Massage Kuta",
+   "twitterCard": "summary_large_image",
+   "twitterImage": "https://www.homemassagekuta.com/images/blog/best-massage-jet-lag-recovery-kuta/hero.jpg",
+   "h1": "Best Massage for Jet Lag Recovery After Landing in Kuta, Bali",
+   "paragraphs": [
+    "Stepping off a long haul into Ngurah Rai Airport leaves your ankles swollen, your lower back stiff, and your body clock scrambled. Here is how to time an in-room massage in Kuta so you sleep through the first night instead of staring at the ceiling at 3 a.m.",
+    "7 min read Updated 31 October 2026 The most effective massage for jet lag recovery in Kuta is a 60- to 90-minute medium-pressure Balinese or relaxation session booked two to three hours before your target Bali bedtime, right in your villa or hotel room. Instead of getting back into Kuta traffic after ten or more hours in a pressurized cabin, an in-room session flushes pooled fluid from your calves, releases cramped hip flexors and neck muscles, and lets you move straight from the massage table into bed.",
+    "Even a smooth flight into Denpasar (Ngurah Rai International Airport) combines three physical stressors before you ever reach your hotel in Kuta, Tuban, or Legian: hours of seated hip and knee flexion, dry cabin air at altitude, and a sudden timezone shift against your circadian rhythm. By the time you clear immigration, collect your bags, and ride fifteen to thirty minutes to your villa, your lower legs feel heavy, your upper traps are locked from carrying hand luggage, and your nervous system is wired from airport transit."
+   ],
+   "h2s": [
+    "Why long flights hit your body so hard on arrival in Bali",
+    "Timing your post-flight massage around Bali time (WITA)",
+    "Which massage style works best after a long flight",
+    "Five areas to ask your therapist to focus on after flying",
+    "How to set up your Kuta villa or hotel room in five minutes",
+    "How to book your post-flight session in Kuta and South Bali",
+    "Frequently asked questions",
+    "Book a massage at your villa or hotel",
+    "More massage guides"
+   ],
+   "links": [
+    "/blog",
+    "/areas/kuta",
+    "/blog/balinese-massage-complete-guide",
+    "/services/balinese-massage",
+    "/blog/deep-tissue-vs-balinese-massage-kuta",
+    "/blog/prepare-villa-hotel-room-home-massage"
+   ],
+   "jsonLd": [
+    "{\"@context\":\"https://schema.org\",\"@type\":\"LocalBusiness\",\"@id\":\"https://www.homemassagekuta.com/#localbusiness\",\"name\":\"Home Massage Kuta\",\"description\":\"Book home massage in Kuta with certified therapists for villas and hotels. Balinese, deep tissue, couples, pregnancy, and recovery treatments are available across Kuta, Legian, Seminyak, Uluwatu, and nearby Bali areas.\",\"url\":\"https://www.homemassagekuta.com\",\"image\":\"https://www.homemassagekuta.com/logo.svg\",\"telephone\":\"+62 811 2656 869\",\"email\":\"info@homemassagekuta.com\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"Kuta Beach Area\",\"addressLocality\":\"Kuta\",\"addressRegion\":\"Bali\",\"postalCode\":\"80361\",\"addressCountry\":\"ID\"},\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":\"-8.7203\",\"longitude\":\"115.1672\"},\"areaServed\":[{\"@type\":\"Place\",\"name\":\"Kuta\"},{\"@type\":\"Place\",\"name\":\"Legian\"},{\"@type\":\"Place\",\"name\":\"Seminyak\"},{\"@type\":\"Place\",\"name\":\"Tuban\"},{\"@type\":\"Place\",\"name\":\"Canggu\"},{\"@type\":\"Place\",\"name\":\"Pererenan\"},{\"@type\":\"Place\",\"name\":\"Kerobokan\"},{\"@type\":\"Place\",\"name\":\"Petitenget\"},{\"@type\":\"Place\",\"name\":\"Jimbaran\"},{\"@type\":\"Place\",\"name\":\"Nusa Dua\"},{\"@type\":\"Place\",\"name\":\"Sanur\"},{\"@type\":\"Place\",\"name\":\"Uluwatu\"},{\"@type\":\"Place\",\"name\":\"Pecatu\"},{\"@type\":\"Place\",\"name\":\"Ungasan\"}],\"openingHoursSpecification\":{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"07:00\",\"closes\":\"22:00\"},\"priceRange\":\"$$\",\"paymentAccepted\":[\"Cash\",\"Credit Card\",\"Bank Transfer\"],\"currenciesAccepted\":\"IDR\",\"sameAs\":[\"https://instagram.com/homemassagekuta\",\"https://facebook.com/homemassagekuta\",\"https://wa.me/628112656869\"]}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.homemassagekuta.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://www.homemassagekuta.com/blog\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Best Massage for Jet Lag Recovery After Landing in Kuta, Bali\",\"item\":\"https://www.homemassagekuta.com/blog/best-massage-jet-lag-recovery-kuta\"}]}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Should I get a massage immediately after landing in Bali or wait a few hours?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"If you land in the late afternoon or evening, booking 60 to 90 minutes after checking into your Kuta villa or hotel is ideal because the session flows straight into bedtime. If you land in the morning, spend the daytime awake in natural light and schedule your massage for the evening so it anchors your first full night of sleep on Bali time.\"}},{\"@type\":\"Question\",\"name\":\"Is deep tissue or Balinese massage better for jet lag?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"For your first day off a long haul, medium-pressure Balinese massage or aromatherapy relaxation massage is usually better than very firm deep tissue work. Flight dehydration and fatigue make muscles more sensitive, whereas rhythmic Balinese strokes encourage circulation and sleep without post-treatment soreness.\"}},{\"@type\":\"Question\",\"name\":\"How long should a jet lag recovery massage be?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ninety minutes is the sweet spot after a long flight. Sixty minutes covers the back, legs, and shoulders well, while 90 minutes leaves unhurried time for swollen ankles, feet, neck, and scalp work so your nervous system fully settles before bed.\"}},{\"@type\":\"Question\",\"name\":\"Should I shower before or after an in-room jet lag massage?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Shower with warm water before your therapist arrives. Warming your muscles ahead of time makes the bodywork more comfortable, and skipping a post-massage shower lets you move straight from the table into bed while you are drowsy.\"}},{\"@type\":\"Question\",\"name\":\"How do I check prices and book a mobile massage to my Kuta hotel?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Send us a message on WhatsApp with your hotel or villa name in Kuta, preferred treatment, and session length (60, 90, or 120 minutes). Current prices and therapist arrival times are confirmed directly on WhatsApp before booking.\"}}]}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Best Massage for Jet Lag Recovery After Landing in Kuta, Bali\",\"description\":\"How to time, choose, and set up an in-villa or hotel massage in Kuta after a long flight to Bali: circulation, sleep timing, pressure, and room prep.\",\"image\":\"https://www.homemassagekuta.com/images/blog/best-massage-jet-lag-recovery-kuta/hero.jpg\",\"datePublished\":\"2026-10-31T15:30:00+08:00\",\"dateModified\":\"2026-10-31T15:30:00+08:00\",\"author\":{\"@type\":\"Organization\",\"name\":\"Home Massage Kuta\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Home Massage Kuta\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://www.homemassagekuta.com/logo.svg\"}},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://www.homemassagekuta.com/blog/best-massage-jet-lag-recovery-kuta\"}}"
    ]
   },
   {
