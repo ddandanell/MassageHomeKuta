@@ -10,6 +10,7 @@
 import { execFile, spawn } from "node:child_process";
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { dirname, resolve } from "node:path";
+import { dedupeJsonLd } from "./lib/jsonld-dedupe.mjs";
 
 const ROOT = resolve(process.cwd());
 const OUT = resolve(process.argv[2] || "seo/prerender.json");
@@ -153,6 +154,7 @@ try {
     }
     const rec = parse(html, route);
     if (!rec.canonical) rec.canonical = SITE + (route === "/" ? "/" : route);
+    rec.jsonLd = dedupeJsonLd(rec.jsonLd);
     out.push(rec);
     console.error(`ok ${route} — ${rec.title?.slice(0, 60)}`);
   }
