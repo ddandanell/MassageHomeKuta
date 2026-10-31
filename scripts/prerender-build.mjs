@@ -27,8 +27,10 @@ const esc = (s) =>
 
 const DATA_BODIES = resolve(process.env.BLOG_BODIES || "seo/blog-bodies.json");
 const LEGACY_BODIES = resolve(process.env.BLOG_BODIES_LEGACY || "seo/blog-bodies-legacy.json");
+const PAGE_BODIES = resolve(process.env.PAGE_BODIES || "seo/page-bodies.json");
 const bodies = {};
 for (const [file, label] of [
+  [PAGE_BODIES, "page"],
   [LEGACY_BODIES, "legacy"],
   [DATA_BODIES, "data"],
 ]) {
@@ -111,7 +113,9 @@ for (const p of pages) {
   let html = template;
   for (const re of DROP) html = html.replace(re, "");
   html = html.replace("</head>", `  ${head(p)}\n  ${ga4}\n  </head>`);
-  const body = bodies[p.path];
+  let body = bodies[p.path];
+  // a captured body shorter than a paragraph is worse than the generated skeleton
+  if (body && body.replace(/<[^>]*>/g, " ").split(/\s+/).filter(Boolean).length < 120) body = undefined;
   if (body) fullBodies++;
   else if (p.path.startsWith("/blog/")) console.error("prerender: WARN no full body for " + p.path + " — skeleton only");
   html = html.replace(/<div id="root"><\/div>/, `<div id="root">${body || skeleton(p)}</div>`);
