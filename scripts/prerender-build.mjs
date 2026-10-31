@@ -78,12 +78,18 @@ function skeleton(p) {
   return parts.join("");
 }
 
+const GA4_ID = process.env.GA4_ID || "";
+const ga4 = GA4_ID
+  ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${GA4_ID}"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA4_ID}');</script>`
+  : "";
+
 let written = 0;
 for (const p of pages) {
   if (!p.path) continue;
   let html = template;
   for (const re of DROP) html = html.replace(re, "");
-  html = html.replace("</head>", `  ${head(p)}\n  </head>`);
+  html = html.replace("</head>", `  ${head(p)}\n  ${ga4}\n  </head>`);
   html = html.replace(/<div id="root"><\/div>/, `<div id="root">${skeleton(p)}</div>`);
   const file = p.path === "/" ? join(DIST, "index.html") : join(DIST, p.path, "index.html");
   mkdirSync(dirname(file), { recursive: true });
