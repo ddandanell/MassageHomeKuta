@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-30T22:08:02.174Z",
+ "generatedAt": "2026-10-31T01:35:51.195Z",
  "site": "https://www.homemassagekuta.com",
  "pages": [
   {
@@ -4390,9 +4390,9 @@
    "twitterImage": "https://www.homemassagekuta.com/og-image.jpg",
    "h1": "Your Complete Guide to Massage in Kuta, Bali",
    "paragraphs": [
+    "Two therapists, one room, and a lot of small logistics nobody warns you about. Here is how to make a couples massage in Kuta feel effortless instead of improvised.",
     "Two massages that look similar on a menu and feel completely different on the table. Here is how to pick the right one for your body today.",
-    "A practical guide to Balinese massage: the technique, the pressure, the oils, and what a session at your villa or hotel actually feels like.",
-    "What a first in-villa massage in Kuta looks like from the WhatsApp message to the therapist leaving, including setup, privacy and payment."
+    "A practical guide to Balinese massage: the technique, the pressure, the oils, and what a session at your villa or hotel actually feels like."
    ],
    "h2s": [
     "Latest Guides",
@@ -4403,6 +4403,7 @@
     "Ready to Experience Professional Massage in Kuta?"
    ],
    "links": [
+    "/blog/couples-massage-kuta-guide",
     "/blog/deep-tissue-vs-balinese-massage-kuta",
     "/blog/balinese-massage-complete-guide",
     "/blog/first-home-massage-kuta-what-to-expect",
@@ -4543,6 +4544,51 @@
    "jsonLd": [
     "{\"@context\":\"https://schema.org\",\"@type\":\"LocalBusiness\",\"@id\":\"https://www.homemassagekuta.com/#localbusiness\",\"name\":\"Home Massage Kuta\",\"description\":\"Book home massage in Kuta with certified therapists for villas and hotels. Balinese, deep tissue, couples, pregnancy, and recovery treatments are available across Kuta, Legian, Seminyak, Uluwatu, and nearby Bali areas.\",\"url\":\"https://www.homemassagekuta.com\",\"image\":\"https://www.homemassagekuta.com/logo.svg\",\"telephone\":\"+62 811 2656 869\",\"email\":\"info@homemassagekuta.com\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"Kuta Beach Area\",\"addressLocality\":\"Kuta\",\"addressRegion\":\"Bali\",\"postalCode\":\"80361\",\"addressCountry\":\"ID\"},\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":\"-8.7203\",\"longitude\":\"115.1672\"},\"areaServed\":[{\"@type\":\"Place\",\"name\":\"Kuta\"},{\"@type\":\"Place\",\"name\":\"Legian\"},{\"@type\":\"Place\",\"name\":\"Seminyak\"},{\"@type\":\"Place\",\"name\":\"Tuban\"},{\"@type\":\"Place\",\"name\":\"Canggu\"},{\"@type\":\"Place\",\"name\":\"Pererenan\"},{\"@type\":\"Place\",\"name\":\"Kerobokan\"},{\"@type\":\"Place\",\"name\":\"Petitenget\"},{\"@type\":\"Place\",\"name\":\"Jimbaran\"},{\"@type\":\"Place\",\"name\":\"Nusa Dua\"},{\"@type\":\"Place\",\"name\":\"Sanur\"},{\"@type\":\"Place\",\"name\":\"Uluwatu\"},{\"@type\":\"Place\",\"name\":\"Pecatu\"},{\"@type\":\"Place\",\"name\":\"Ungasan\"}],\"openingHoursSpecification\":{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"07:00\",\"closes\":\"22:00\"},\"priceRange\":\"$$\",\"paymentAccepted\":[\"Cash\",\"Credit Card\",\"Bank Transfer\"],\"currenciesAccepted\":\"IDR\",\"sameAs\":[\"https://instagram.com/homemassagekuta\",\"https://facebook.com/homemassagekuta\",\"https://wa.me/628112656869\"]}",
     "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.homemassagekuta.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://www.homemassagekuta.com/blog\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Best Kuta Areas for Home Massage Service\",\"item\":\"https://www.homemassagekuta.com/blog/best-areas-kuta-home-massage-coverage\"}]}"
+   ]
+  },
+  {
+   "path": "/blog/couples-massage-kuta-guide",
+   "title": "Couples Massage in Kuta: Villa & Hotel Guide",
+   "description": "How a couples massage in Kuta works with two therapists in one room: space, timing, treatment pairing, hotel rules and what to have ready before they arrive.",
+   "keywords": "couples massage kuta, home massage kuta, massage kuta bali",
+   "canonical": "https://www.homemassagekuta.com/blog/couples-massage-kuta-guide",
+   "ogTitle": "Couples Massage in Kuta: Villa & Hotel Guide",
+   "ogDescription": "How a couples massage in Kuta works with two therapists in one room: space, timing, treatment pairing, hotel rules and what to have ready before they arrive.",
+   "ogType": "article",
+   "ogImage": "https://www.homemassagekuta.com/images/hero/hero-4.jpg",
+   "ogSiteName": "Home Massage Kuta",
+   "twitterCard": "summary_large_image",
+   "twitterImage": "https://www.homemassagekuta.com/images/hero/hero-4.jpg",
+   "h1": "Couples Massage in Kuta: How to Set It Up in a Villa or Hotel Room",
+   "paragraphs": [
+    "Two therapists, one room, and a lot of small logistics nobody warns you about. Here is how to make a couples massage in Kuta feel effortless instead of improvised.",
+    "8 min read Updated 30 October 2026 A couples massage is easy to book and surprisingly easy to get slightly wrong: two tables in a room that only fits one, both people wanting different pressure, a dinner reservation fifteen minutes after the session ends. Most of the friction is logistics, not massage. This guide covers the room, the timing, the treatment pairing and the hotel rules, so the hour itself is the relaxing part.",
+    "A couples massage means two therapists working at the same time in the same room, usually on two portable massage tables set up side by side with about a metre between them. Each person has their own therapist, their own oil, their own towel stack and their own choice of treatment."
+   ],
+   "h2s": [
+    "What a couples massage in Kuta actually involves",
+    "The room: what two tables need",
+    "Choosing treatments that work side by side",
+    "Timing around traffic, sunset and dinner",
+    "Hotels versus private villas",
+    "Pressure, privacy and talking it out",
+    "Aftercare: the part people skip",
+    "A five-line booking checklist",
+    "Frequently asked questions",
+    "Book a massage at your villa or hotel"
+   ],
+   "links": [
+    "/blog",
+    "/services/balinese-massage",
+    "/blog/deep-tissue-vs-balinese-massage-kuta",
+    "/couples-massage-kuta",
+    "/blog/massage-etiquette-bali-guide",
+    "/blog/first-home-massage-kuta-what-to-expect",
+    "/blog/how-to-book-massage-kuta-whatsapp"
+   ],
+   "jsonLd": [
+    "{\"@context\":\"https://schema.org\",\"@type\":\"LocalBusiness\",\"@id\":\"https://www.homemassagekuta.com/#localbusiness\",\"name\":\"Home Massage Kuta\",\"description\":\"Book home massage in Kuta with certified therapists for villas and hotels. Balinese, deep tissue, couples, pregnancy, and recovery treatments are available across Kuta, Legian, Seminyak, Uluwatu, and nearby Bali areas.\",\"url\":\"https://www.homemassagekuta.com\",\"image\":\"https://www.homemassagekuta.com/logo.svg\",\"telephone\":\"+62 811 2656 869\",\"email\":\"info@homemassagekuta.com\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"Kuta Beach Area\",\"addressLocality\":\"Kuta\",\"addressRegion\":\"Bali\",\"postalCode\":\"80361\",\"addressCountry\":\"ID\"},\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":\"-8.7203\",\"longitude\":\"115.1672\"},\"areaServed\":[{\"@type\":\"Place\",\"name\":\"Kuta\"},{\"@type\":\"Place\",\"name\":\"Legian\"},{\"@type\":\"Place\",\"name\":\"Seminyak\"},{\"@type\":\"Place\",\"name\":\"Tuban\"},{\"@type\":\"Place\",\"name\":\"Canggu\"},{\"@type\":\"Place\",\"name\":\"Pererenan\"},{\"@type\":\"Place\",\"name\":\"Kerobokan\"},{\"@type\":\"Place\",\"name\":\"Petitenget\"},{\"@type\":\"Place\",\"name\":\"Jimbaran\"},{\"@type\":\"Place\",\"name\":\"Nusa Dua\"},{\"@type\":\"Place\",\"name\":\"Sanur\"},{\"@type\":\"Place\",\"name\":\"Uluwatu\"},{\"@type\":\"Place\",\"name\":\"Pecatu\"},{\"@type\":\"Place\",\"name\":\"Ungasan\"}],\"openingHoursSpecification\":{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"],\"opens\":\"07:00\",\"closes\":\"22:00\"},\"priceRange\":\"$$\",\"paymentAccepted\":[\"Cash\",\"Credit Card\",\"Bank Transfer\"],\"currenciesAccepted\":\"IDR\",\"sameAs\":[\"https://instagram.com/homemassagekuta\",\"https://facebook.com/homemassagekuta\",\"https://wa.me/628112656869\"]}",
+    "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.homemassagekuta.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://www.homemassagekuta.com/blog\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Couples Massage in Kuta: How to Set It Up in a Villa or Hotel Room\",\"item\":\"https://www.homemassagekuta.com/blog/couples-massage-kuta-guide\"}]}"
    ]
   },
   {
