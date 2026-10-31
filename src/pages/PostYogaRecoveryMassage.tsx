@@ -1,4 +1,5 @@
 import SiteMeta from "@/components/seo/SiteMeta";
+import StructuredData from "@/components/seo/StructuredData";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
@@ -78,6 +79,7 @@ const PostYogaRecoveryMassage = () => {
         canonical="/post-yoga-recovery-massage/"
       />
       
+      <StructuredData type="organization" />
       <Header />
       
       <main>

@@ -62,7 +62,11 @@ function parse(html, route) {
   };
   const canonAll = [...head.matchAll(/<link[^>]*rel="canonical"[^>]*>/gi)].map((m) => m[0]);
   const canonical = canonAll[canonAll.length - 1] || "";
-  const jsonLd = [...head.matchAll(/<script[^>]*application\/ld\+json[^>]*>([\s\S]*?)<\/script>/gi)]
+  // Whole document, not just <head>: 10 pages (the boulevard landing pages plus
+  // /sitemap) emit their LocalBusiness, FAQPage and BreadcrumbList blocks as raw
+  // <script> tags inside the component tree, so a head-only read captured nothing
+  // for them. Duplicates are collapsed by dedupeJsonLd below.
+  const jsonLd = [...html.matchAll(/<script[^>]*application\/ld\+json[^>]*>([\s\S]*?)<\/script>/gi)]
     .map((m) => m[1].trim())
     .filter((s) => s.startsWith("{"));
 
