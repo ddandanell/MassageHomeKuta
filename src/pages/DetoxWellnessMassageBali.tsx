@@ -55,12 +55,7 @@ const DetoxWellnessMassageBali = () => {
         "priceCurrency": "IDR",
         "description": "3 sessions with guidance"
       }
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "reviewCount": "95"
-    }
+    ]
   };
 
   const faqSchema = {

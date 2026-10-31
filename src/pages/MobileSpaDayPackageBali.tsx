@@ -54,12 +54,7 @@ const MobileSpaDayPackageBali = () => {
         "price": "3200000",
         "priceCurrency": "IDR"
       }
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "110"
-    }
+    ]
   };
 
   const faqSchema = {

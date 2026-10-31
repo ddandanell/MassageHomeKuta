@@ -122,10 +122,6 @@ const Footer = () => {
                   <Award className="w-4 h-4 text-emerald-400" />
                   <span>Certified Therapists</span>
                 </div>
-                <div className="flex items-center gap-3 text-sm text-professional-gray">
-                  <Star className="w-4 h-4 text-emerald-400" />
-                  <span>4.9/5 Average Rating</span>
-                </div>
               </div>
               <Button asChild className="w-full mt-6 bg-professional-gold hover:bg-amber-600 text-white border-0">
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">

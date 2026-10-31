@@ -48,12 +48,7 @@ const HoneymoonSpaBali = () => {
         "priceCurrency": "IDR",
         "description": "180-minute complete wellness journey with premium add-ons"
       }
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "75"
-    }
+    ]
   };
 
   const packages = [

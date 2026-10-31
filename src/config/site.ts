@@ -101,11 +101,7 @@ export const SITE_CONFIG = {
     whatsapp: "https://wa.me/628112656869" // WhatsApp link format
   },
   
-  // Aggregate Rating (Based on customer reviews)
-  // UPDATE THIS when adding/removing reviews in /src/data/reviews.ts
-  aggregateRating: {
-    ratingValue: "4.9", // Average rating (1-5 scale)
-    reviewCount: "500", // Total number of reviews
-    bestRating: "5"     // Maximum possible rating
-  }
+  // No aggregateRating here on purpose. The previous values (4.9 / 500 reviews) had no
+  // approved, verifiable source and are gone as of 2026-10-31 (QA review of 54f1967, item 7).
+  // Add it back only with a written approved-facts record from David.
 };

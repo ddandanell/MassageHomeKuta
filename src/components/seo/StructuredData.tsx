@@ -115,15 +115,10 @@ const StructuredData = ({ type = "organization", data, includeReviews = false }:
             SITE_CONFIG.socialMedia.facebook,
             SITE_CONFIG.socialMedia.whatsapp
           ],
-          // Only include reviews and aggregate rating if requested
+          // Only include reviews if requested. aggregateRating deliberately omitted:
+          // no approved, verifiable review source exists for this site (QA review of 54f1967, item 7).
           ...(includeReviews && reviews.length > 0 && {
-            "review": reviews,
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": SITE_CONFIG.aggregateRating.ratingValue,
-              "reviewCount": SITE_CONFIG.aggregateRating.reviewCount,
-              "bestRating": SITE_CONFIG.aggregateRating.bestRating
-            }
+            "review": reviews
           })
         };
       }

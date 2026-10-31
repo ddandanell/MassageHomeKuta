@@ -54,12 +54,7 @@ const LuxuryVillaWellnessBali = () => {
         "price": "2450000",
         "priceCurrency": "IDR"
       }
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "65"
-    }
+    ]
   };
 
   const faqSchema = {

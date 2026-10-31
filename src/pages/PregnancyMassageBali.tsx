@@ -48,12 +48,7 @@ const PregnancyMassageBali = () => {
         "price": "700000",
         "priceCurrency": "IDR"
       }
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "78"
-    }
+    ]
   };
 
   const faqSchema = {

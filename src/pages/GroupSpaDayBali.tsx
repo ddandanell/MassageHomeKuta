@@ -57,12 +57,7 @@ const GroupSpaDayBali = () => {
         "priceCurrency": "IDR",
         "description": "Custom pricing available"
       }
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "120"
-    }
+    ]
   };
 
   const faqSchema = {

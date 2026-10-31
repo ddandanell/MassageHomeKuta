@@ -54,12 +54,7 @@ const CouplesVillaMassageBali = () => {
         "price": "1250000",
         "priceCurrency": "IDR"
       }
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "150"
-    }
+    ]
   };
 
   const faqSchema = {
