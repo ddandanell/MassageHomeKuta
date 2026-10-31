@@ -95,7 +95,7 @@ const MessageKutaBali = () => {
     },
     {
       question: "Can I book same-day massage in Kuta?",
-      answer: "Yes, same-day massage booking is available in Kuta. We operate daily from 07:00 to 22:00 and can typically accommodate bookings with 1-2 hours notice, subject to therapist availability. Contact us via WhatsApp at +62 811-2656-869 for fastest response."
+      answer: "Yes, same-day massage booking is available in Kuta. We operate daily from 07:00 to 22:00 and can typically accommodate bookings with 1-2 hours notice, subject to therapist availability. Contact us via WhatsApp at +62 811-2656-869 for direct booking confirmation."
     },
     {
       question: "Which areas in Kuta do you cover for massage service?",
@@ -252,7 +252,7 @@ const MessageKutaBali = () => {
                     </div>
                     <Button asChild variant="outline" className="w-full" size="sm">
                       <Link to={`/services/${service.slug}`}>
-                        Learn More <ArrowRight className="w-4 h-4 ml-2" />
+                        Explore {service.name} <ArrowRight className="w-4 h-4 ml-2" />
                       </Link>
                     </Button>
                   </CardContent>

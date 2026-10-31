@@ -148,7 +148,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
                   <CardContent>
                     <Button asChild className="w-full" variant="default">
                       <a href={`/services/${massage.slug}`}>
-                        Learn More
+                        Explore {massage.name}
                       </a>
                     </Button>
                   </CardContent>
@@ -495,7 +495,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
                 <CardContent>
                   <p className="text-spa-stone text-sm mb-4">Gentle stretches, acupressure, and aromatherapy oils for deep relaxation.</p>
                   <Button asChild variant="outline" size="sm" className="w-full">
-                    <Link to="/services/balinese-massage">Learn More <ArrowRight className="w-3 h-3 ml-2" /></Link>
+                    <Link to="/services/balinese-massage">Explore Balinese Massage <ArrowRight className="w-3 h-3 ml-2" /></Link>
                   </Button>
                 </CardContent>
               </Card>
@@ -508,7 +508,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
                 <CardContent>
                   <p className="text-spa-stone text-sm mb-4">Targets deep muscle layers to release chronic tension and pain.</p>
                   <Button asChild variant="outline" size="sm" className="w-full">
-                    <Link to="/services/deep-tissue-massage">Learn More <ArrowRight className="w-3 h-3 ml-2" /></Link>
+                    <Link to="/services/deep-tissue-massage">Explore Deep Tissue Massage <ArrowRight className="w-3 h-3 ml-2" /></Link>
                   </Button>
                 </CardContent>
               </Card>
@@ -521,7 +521,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
                 <CardContent>
                   <p className="text-spa-stone text-sm mb-4">Premium essential oils for emotional balance and stress relief.</p>
                   <Button asChild variant="outline" size="sm" className="w-full">
-                    <Link to="/services/aromatherapy-massage">Learn More <ArrowRight className="w-3 h-3 ml-2" /></Link>
+                    <Link to="/services/aromatherapy-massage">Explore Aromatherapy Massage <ArrowRight className="w-3 h-3 ml-2" /></Link>
                   </Button>
                 </CardContent>
               </Card>
@@ -534,7 +534,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
                 <CardContent>
                   <p className="text-spa-stone text-sm mb-4">Volcanic stones melt away tension for ultimate relaxation.</p>
                   <Button asChild variant="outline" size="sm" className="w-full">
-                    <Link to="/services/hot-stone-massage">Learn More <ArrowRight className="w-3 h-3 ml-2" /></Link>
+                    <Link to="/services/hot-stone-massage">Explore Hot Stone Massage <ArrowRight className="w-3 h-3 ml-2" /></Link>
                   </Button>
                 </CardContent>
               </Card>
@@ -547,7 +547,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
                 <CardContent>
                   <p className="text-spa-stone text-sm mb-4">Combines stretching and pressure points for flexibility and energy.</p>
                   <Button asChild variant="outline" size="sm" className="w-full">
-                    <Link to="/services/thai-massage">Learn More <ArrowRight className="w-3 h-3 ml-2" /></Link>
+                    <Link to="/services/thai-massage">Explore Thai Massage <ArrowRight className="w-3 h-3 ml-2" /></Link>
                   </Button>
                 </CardContent>
               </Card>

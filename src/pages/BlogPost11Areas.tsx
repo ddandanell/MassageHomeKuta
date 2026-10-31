@@ -88,7 +88,7 @@ const BlogPost11Areas = () => {
                 Planning to book a home massage in Kuta but wondering if your hotel, villa, or guesthouse is within service range? Understanding which areas are covered and typical response times helps you plan your massage booking with realistic expectations.
               </p>
               <p className="text-lg text-spa-stone">
-                This comprehensive guide breaks down home massage service coverage throughout Kuta and surrounding regions. You'll learn exactly which neighborhoods have the fastest response times, which areas require advance booking, and how to determine if your specific location qualifies for same-day massage service.
+                This comprehensive guide breaks down home massage service coverage throughout Kuta and surrounding regions. You'll learn which neighborhoods have the shortest travel windows, which areas require advance booking, and how to determine if your specific location qualifies for same-day massage service.
               </p>
             </div>
           </div>
@@ -113,8 +113,8 @@ const BlogPost11Areas = () => {
               <h3>3. Peak Tourist Season</h3>
               <p>During high season (July-August, December-January), roads are more congested and therapist schedules are fuller. Booking 3-4 hours ahead or the evening before ensures availability.</p>
 
-              <h2>Primary Coverage Areas (Fastest Response Times)</h2>
-              <p>These areas have the fastest therapist response times and highest same-day booking availability.</p>
+              <h2>Primary Coverage Areas (15-35 Minute Dispatch Windows)</h2>
+              <p>These central neighborhoods have the shortest therapist travel windows and same-day booking availability.</p>
 
               <div className="not-prose space-y-6 my-8">
                 
@@ -125,7 +125,7 @@ const BlogPost11Areas = () => {
                   </div>
                   <p className="text-lg font-semibold text-professional-green mb-3">Response Time: 20-30 Minutes</p>
                   <p className="text-spa-stone mb-3"><strong>What's Included:</strong> Central Kuta, Kuta Beach hotels, Jalan Legian area, Poppies Lane I & II, Jalan Pantai Kuta, Bemo Corner surroundings</p>
-                  <p className="text-spa-stone mb-3"><strong>Why It's Fast:</strong> This is ground zero for Kuta massage services. Most providers base their operations in or very near central Kuta, making these locations the fastest to reach.</p>
+                  <p className="text-spa-stone mb-3"><strong>Why It's Fast:</strong> This is ground zero for Kuta massage services. Because our dispatch hub is in central Kuta, these nearby neighborhoods have the shortest travel distance.</p>
                   <p className="text-spa-stone mb-3"><strong>Best For:</strong> Same-day bookings, last-minute massage requests, first-time home massage users wanting fast service</p>
                   <div className="bg-white rounded p-4 mt-3">
                     <p className="text-sm font-semibold text-spa-earth mb-2">Hotels/Areas Commonly Served:</p>
@@ -284,7 +284,7 @@ const BlogPost11Areas = () => {
 
               <h3>Time of Day</h3>
               <ul>
-                <li><strong>7-10 AM:</strong> Minimal traffic, fastest travel times</li>
+                <li><strong>7-10 AM:</strong> Lighter morning traffic and shorter road travel times</li>
                 <li><strong>10 AM-3 PM:</strong> Moderate traffic, typical response times</li>
                 <li><strong>3-7 PM:</strong> Peak traffic, add 10-20 minutes to estimates</li>
                 <li><strong>7-10 PM:</strong> Reduced traffic, near-normal response times</li>
@@ -301,7 +301,7 @@ const BlogPost11Areas = () => {
               <ul>
                 <li><strong>High Season (Jul-Aug, Dec-Jan):</strong> Heavier traffic, fuller schedules</li>
                 <li><strong>Shoulder Season (Apr-Jun, Sep-Nov):</strong> Moderate conditions</li>
-                <li><strong>Low Season (Feb-Mar):</strong> Fastest response, best availability</li>
+                <li><strong>Low Season (Feb-Mar):</strong> Shorter notice windows and flexible same-day availability</li>
               </ul>
 
               <h3>Weather</h3>

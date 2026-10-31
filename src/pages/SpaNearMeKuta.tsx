@@ -138,7 +138,7 @@ const SpaNearMeKuta = () => {
     },
     {
       question: "Can I book same-day spa appointments in Kuta?",
-      answer: "Yes. We accommodate same-day spa bookings throughout Kuta with typical response times of 20-30 minutes. Contact us via WhatsApp for fastest availability confirmation. For guaranteed time slots during peak season, we recommend booking 3-4 hours in advance or the evening before."
+      answer: "Yes. We accommodate same-day spa bookings throughout Kuta with typical response times of 20-30 minutes. Contact us via WhatsApp for direct availability confirmation. To reserve preferred time slots during peak season, we recommend booking 3-4 hours in advance or the evening before."
     },
     {
       question: "Do you provide spa service to all hotels in Kuta?",
@@ -364,7 +364,7 @@ const SpaNearMeKuta = () => {
                     </div>
                     <Button asChild variant="outline" className="w-full">
                       <Link to={`/services/${service.slug}`}>
-                        Learn More <ArrowRight className="w-4 h-4 ml-2" />
+                        Explore {service.name} <ArrowRight className="w-4 h-4 ml-2" />
                       </Link>
                     </Button>
                   </CardContent>

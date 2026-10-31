@@ -213,7 +213,7 @@ const Sitemap = () => {
                 </div>
                 <h2 className="text-2xl font-bold text-spa-earth">Primary Service Areas</h2>
               </div>
-              <p className="text-sm text-spa-stone mb-4">Fastest response times (15-35 minutes)</p>
+              <p className="text-sm text-spa-stone mb-4">Primary dispatch window (15-35 minutes)</p>
               <ul className="space-y-2">
                 {primaryAreas.map((area, index) => (
                   <li key={index}>

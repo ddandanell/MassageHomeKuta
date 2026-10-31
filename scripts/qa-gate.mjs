@@ -4,7 +4,7 @@
 // built dist/: items 4 (one title, one description), 5 (canonical matches route,
 // no trailing slash), 6 (one H1, no placeholders), 7 partial (valid JSON-LD, no
 // duplicate @type blocks in the static HTML) and 8 partial (every sitemap loc,
-// hreflang alternate and internal link resolves to a built page).
+// hreflang alternate, /assets/* reference and internal link resolves to a built file).
 //
 // NOT checked here, and not to be inferred from a PASS:
 //   - item 12 authorization/rollback (there is no auth, branch or rollback check)
@@ -17,10 +17,11 @@
 // Cannot judge facts, intent or design. Fail-closed: any FAIL exits 1 and the
 // caller must not push.
 //
-// usage: node src/qa-gate.mjs <repoPath> [--json]
+// usage: node scripts/qa-gate.mjs <repoPath> [--json]
 
 import { readFileSync, readdirSync, statSync, existsSync, writeFileSync, mkdirSync } from 'node:fs';
 import { join, relative } from 'node:path';
+import { dedupeJsonLd } from './lib/jsonld-dedupe.mjs';
 
 const repoPath = process.argv[2];
 const asJson = process.argv.includes('--json');
@@ -50,8 +51,12 @@ const routeOf = (file) => {
   return r === '' ? '/' : r;
 };
 
-const htmlFiles = walk(DIST).filter((f) => f.endsWith('.html'));
+const allDistFiles = walk(DIST);
+const htmlFiles = allDistFiles.filter((f) => f.endsWith('.html'));
 const routeExists = new Set(htmlFiles.map(routeOf));
+const assetPaths = new Set(
+  allDistFiles.map((f) => '/' + relative(DIST, f).replace(/\\/g, '/'))
+);
 
 const fails = [];
 const warns = [];
@@ -65,10 +70,20 @@ const strip = (h) => h.replace(/<script[\s\S]*?<\/script>/gi, ' ').replace(/<sty
 // apostrophe ("Sanur, Bali's tranquil ..." -> "Sanur, Bali"), which produced
 // three phantom description-length warnings on 31 Oct.
 const attrOf = (tag, name) => {
-  const m = tag.match(new RegExp('\\b' + name + '\\s*=\\s*"([^"]*)"|\\b' + name + '\\s*=\\s*\'([^\']*)\'', 'i'));
+  const m = tag.match(new RegExp('\\b' + name + '\\s*=\\s*"([^"]*)"|\\b' + name + "\\s*=\\s*'([^']*)'", 'i'));
   return m ? (m[1] !== undefined ? m[1] : m[2]) : null;
 };
 const decode = (s) => s.replace(/&amp;/g, '&').replace(/&#39;|&apos;/g, "'").replace(/&quot;/g, '"').replace(/&nbsp;/g, ' ').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+
+// ---------- 0. jsonld-dedupe unit assertion (QA safeguard) ----------
+{
+  const a = JSON.stringify({ '@type': 'Service', name: 'Balinese Massage', url: 'https://www.homemassagekuta.com/services/balinese-massage' });
+  const b = JSON.stringify({ '@type': 'Service', name: 'Deep Tissue Massage', url: 'https://www.homemassagekuta.com/services/deep-tissue-massage' });
+  const out = dedupeJsonLd([a, b]);
+  if (out.length !== 2) {
+    fail('jsonld-dedupe-unit', 'dedupeJsonLd dropped a distinct same-@type block without @id (kept ' + out.length + ' of 2)');
+  }
+}
 
 // ---------- 1. sitemap ----------
 const smPath = join(repoPath, 'public', 'sitemap.xml');
@@ -106,6 +121,15 @@ for (const file of htmlFiles) {
   const html = readFileSync(file, 'utf8');
   stats.pages++;
 
+  // Verify every /assets/* script/stylesheet reference exists in dist/assets/
+  // (prevents Vercel SPA rewrite from serving HTTP 200 text/html for a dead asset hash)
+  for (const am of html.matchAll(/\b(?:src|href)=["'](\/assets\/[^"'?#]+)["']/gi)) {
+    const assetRef = am[1];
+    if (!assetPaths.has(assetRef)) {
+      fail('missing-asset', route + ' references ' + assetRef + ' which does not exist in dist/assets/');
+    }
+  }
+
   const t = [...html.matchAll(/<title[^>]*>([\s\S]*?)<\/title>/gi)].map((m) => decode(m[1].trim()));
   if (t.length !== 1) fail('title', route + ': ' + t.length + ' <title> tags');
   else {
@@ -140,6 +164,10 @@ for (const file of htmlFiles) {
   const h1 = [...html.matchAll(/<h1[^>]*>([\s\S]*?)<\/h1>/gi)];
   if (h1.length !== 1) fail('h1', route + ': ' + h1.length + ' h1 tags');
   else if (!decode(strip(h1[0][1])).trim()) fail('h1', route + ': empty h1');
+
+  for (const hm of html.matchAll(/<(h[1-6])\b[^>]*>([\s\S]*?)<\/\1>/gi)) {
+    if (!decode(strip(hm[2])).trim()) fail('empty-heading', route + ': empty <' + hm[1] + '> tag');
+  }
 
   if (/name=["']robots["'][^>]*content=["'][^"']*noindex/i.test(html) && sitemapUrls.some((u) => u.replace(ORIGIN, '') === (route === '/' ? '/' : route)))
     fail('noindex-in-sitemap', route + ' is noindex but listed in sitemap');
@@ -182,6 +210,19 @@ for (const file of htmlFiles) {
 
   for (const bad of ['undefined', '[object Object]', 'NaN', 'TODO', 'lorem ipsum']) {
     if (new RegExp('\\b' + bad.replace('[', '\\[').replace(']', '\\]') + '\\b', 'i').test(text)) fail('placeholder', route + ': contains "' + bad + '"');
+  }
+
+  // Sweep raw HTML for String.replace $-escape corruption ($&, $', $`, $1..$9) and double-escaped entities
+  const dollarMatch = html.match(/\$(?:&|'|\`|[1-9](?![0-9]))/);
+  if (dollarMatch) fail('dollar-escape-artefact', route + ': raw HTML contains String.replace artefact "' + dollarMatch[0] + '"');
+  if (/&amp;amp;/i.test(html)) fail('double-escaped-amp', route + ': raw HTML contains double-escaped &amp;amp;');
+
+  // Fail-closed on non-descriptive internal anchor text (LINK-003)
+  for (const am of html.matchAll(/<a\b[^>]*href=["'](\/[^"'#?]*)["'][^>]*>([\s\S]*?)<\/a>/gi)) {
+    const anchorText = decode(strip(am[2])).replace(/\s+/g, ' ').trim();
+    if (/^(read more|click here|learn more|more info|here|this page|see more)\b/i.test(anchorText)) {
+      fail('link-003-anchor', route + ' -> ' + am[1] + ': non-descriptive anchor "' + anchorText + '"');
+    }
   }
 
   for (const m of html.matchAll(/<a[^>]+href=["'](\/[^"'#?]*)/gi)) {

@@ -445,7 +445,7 @@ const Services = () => {
                 Ready to experience professional massage treatments in Kuta? Our comprehensive range of services brings spa-quality relaxation directly to your location. Whether you're staying in Kuta, <Link to="/areas/seminyak" className="text-spa-gold hover:underline">Seminyak</Link>, <Link to="/areas/uluwatu" className="text-spa-gold hover:underline">Uluwatu</Link>, or <Link to="/areas/pererenan" className="text-spa-gold hover:underline">Pererenan</Link>, our experienced therapists arrive prepared with everything needed for a premium experience.
               </p>
               <p className="text-lg text-spa-stone leading-relaxed">
-                Check out our <Link to="/packages" className="text-spa-gold hover:underline">special packages</Link> for the best value, or browse <Link to="/reviews" className="text-spa-gold hover:underline">customer testimonials</Link> to see why travelers trust our service. Book your treatment today and discover ultimate relaxation in Bali.
+                Check out our <Link to="/packages" className="text-spa-gold hover:underline">special packages</Link>, explore our <Link to="/recommended-services" className="text-spa-gold hover:underline">recommended massage services</Link>, browse <Link to="/reviews" className="text-spa-gold hover:underline">customer feedback</Link>, or view the <Link to="/sitemap" className="text-spa-gold hover:underline">complete site directory</Link>. Book your treatment today for in-villa relaxation in Bali.
               </p>
             </div>
           </div>

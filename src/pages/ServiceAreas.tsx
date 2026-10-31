@@ -293,7 +293,7 @@ const ServiceAreas = () => {
                 Primary Service Areas
               </h2>
               <p className="text-xl text-spa-stone max-w-3xl mx-auto">
-                Our fastest response times and most frequent service locations. Perfect coverage for tourists and residents.
+                Our primary dispatch zones and most frequent service locations. Direct coverage for villas, hotels, and residences.
               </p>
             </div>
 
@@ -369,7 +369,7 @@ const ServiceAreas = () => {
                     </p>
                     <Button asChild variant="outline" className="w-full" size="sm">
                       <Link to={`/areas/${area.slug}`}>
-                        Learn More <ArrowRight className="w-3 h-3 ml-2" />
+                        Explore {area.name} Massage <ArrowRight className="w-3 h-3 ml-2" />
                       </Link>
                     </Button>
                   </CardContent>

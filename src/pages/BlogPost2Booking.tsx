@@ -88,7 +88,7 @@ const BlogPost2Booking = () => {
                 Booking a professional massage in Kuta, Bali is easier than you might think. Unlike many countries where you need to call, navigate websites, or book days in advance, Kuta's home massage services use WhatsApp – making same-day bookings possible with just a few text messages.
               </p>
               <p className="text-lg text-spa-stone">
-                This guide walks you through the exact process of booking massage via WhatsApp in Kuta, from your first message to therapist arrival. Whether you've never used WhatsApp for bookings or simply want to know what to expect, you'll learn the fastest way to secure same-day massage service at your villa, hotel, or accommodation.
+                This guide walks you through the exact process of booking massage via WhatsApp in Kuta, from your first message to therapist arrival. Whether you've never used WhatsApp for bookings or simply want to know what to expect, you'll learn the direct step-by-step process to book same-day massage service at your villa, hotel, or accommodation.
               </p>
             </div>
           </div>
@@ -315,7 +315,7 @@ const BlogPost2Booking = () => {
                 <li>Day 2, 9:30 AM: Receive reminder and "therapist departing" message</li>
                 <li>Day 2, 10:00 AM: Therapist arrives</li>
               </ul>
-              <p><strong>Pros:</strong> Guaranteed your preferred time slot, better for scheduling around activities/tours, lower stress.</p>
+              <p><strong>Pros:</strong> Reserves your preferred time slot in advance, easier for scheduling around activities/tours, lower stress.</p>
               <p><strong>Cons:</strong> Less spontaneous, need to plan ahead, commit to timing even if plans change.</p>
 
               <p><strong>Recommendation:</strong> During peak tourist season (July-August, December-January), book 3-4 hours ahead or the evening before for morning appointments. During low season, same-day booking is reliable even with just 1-2 hours' notice.</p>

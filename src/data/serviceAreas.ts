@@ -318,7 +318,7 @@ Digital nomads and long-term visitors often establish themselves in Seminyak, wo
 
     neighborhoodDetails: `Seminyak's neighborhoods each offer distinct character and different response times from our service:
 
-Southern Seminyak (Near Double Six): The transition zone between Legian and Seminyak proper. More accessible price points, younger vibe, excellent beach access. This is our fastest Seminyak response area: 20-25 minutes typically.
+Southern Seminyak (Near Double Six): The transition zone between Legian and Seminyak proper. More accessible price points, younger vibe, excellent beach access. This is our closest Seminyak dispatch zone: 20-25 minutes typically.
 
 Dhyana Pura Area: Central Seminyak's residential heart. Mix of villas, small hotels, and local businesses. Good value accommodation relative to beachfront. Response time: 22-28 minutes.
 
@@ -1411,8 +1411,8 @@ export const bukitData: ServiceAreaData = {
       answer: "Perfect! We can serve you at multiple locations. Just book separately for each address as you move around the peninsula."
     },
     {
-      question: "Which Bukit area gets the fastest response?",
-      answer: "Jimbaran and northern Nusa Dua typically have fastest response (40-45 minutes) due to accessibility. All areas are well-served though."
+      question: "Which Bukit area has the shortest travel time?",
+      answer: "Jimbaran and northern Nusa Dua typically have a 40-45 minute travel window due to main road access. All areas across the Bukit are covered."
     }
   ],
   nearbyAreas: ["Uluwatu", "Jimbaran", "Nusa Dua", "Pecatu", "Ungasan"]
@@ -1821,7 +1821,7 @@ export const batuBolongData: ServiceAreaData = {
     },
     {
       question: "Is same-day booking available in central Canggu?",
-      answer: "Yes! Batu Bolong is our fastest response area in Canggu. Same-day booking typically works well, though peak times benefit from advance booking."
+      answer: "Yes! Batu Bolong is a primary dispatch zone in Canggu. Same-day booking typically works well, though peak times benefit from advance booking."
     },
     {
       question: "Can digital nomads schedule recurring massage?",
