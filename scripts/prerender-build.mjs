@@ -55,9 +55,20 @@ const DROP = [
   /<title>[\s\S]*?<\/title>\s*/i,
 ];
 
+// The snapshot captured whatever canonical the page declared, including the ten
+// specialty pages that appended a trailing slash. Normalise here so the served
+// canonical always equals the served URL (root keeps its single slash).
+const normUrl = (u) => {
+  if (!u) return u;
+  const m = String(u).match(/^(https?:\/\/[^/]+)(\/.*)?$/);
+  if (!m) return u;
+  const path = (m[2] || "/").replace(/\/{2,}/g, "/").replace(/\/+$/, "");
+  return m[1] + (path || "/");
+};
+
 function head(p) {
   const title = p.title || "Home Massage Kuta, Bali";
-  const url = p.canonical;
+  const url = normUrl(p.canonical);
   const img = p.ogImage || "https://www.homemassagekuta.com/og-image.jpg";
   const tags = [
     `<title>${esc(title)}</title>`,

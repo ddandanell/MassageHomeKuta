@@ -26,8 +26,14 @@ const SiteMeta = ({
   const branded = `${baseTitle} | ${SITE_CONFIG.name}`;
   const fullTitle =
     baseTitle.includes(SITE_CONFIG.name) || branded.length > 62 ? baseTitle : branded;
-  const canonicalUrl = canonical ? `${SITE_CONFIG.url}${canonical}` : SITE_CONFIG.url;
-  const canonicalPath = canonical || "/";
+  // One canonical spelling per route: no trailing slash except the root, and no
+  // duplicated slashes. Ten specialty pages passed "/slug/" and shipped a
+  // canonical that differed from the served URL (found by the 31 Oct gate).
+  const canonicalPath = canonical
+    ? "/" + canonical.replace(/^\/+/, "").replace(/\/+$/, "")
+    : "/";
+  const canonicalUrl =
+    canonicalPath === "/" ? SITE_CONFIG.url + "/" : SITE_CONFIG.url + canonicalPath;
 
   return (
     <Helmet>
