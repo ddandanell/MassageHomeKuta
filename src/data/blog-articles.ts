@@ -25,6 +25,81 @@ export type BlogArticle = {
  */
 export const blogArticles: BlogArticle[] = [
 {
+  slug: "prepare-villa-hotel-room-home-massage",
+  title: "How to Prepare a Villa or Hotel Room for a Home Massage in Kuta",
+  metaTitle: "Prep a Villa Room for a Home Massage in Kuta",
+  description: "How to prep a Kuta villa or hotel room for a home massage: floor space, aircon, light, noise, gate access, therapist briefing and aftercare.",
+  excerpt: "Ten minutes of preparation makes an in-room massage in Kuta feel like a spa instead of an improvised one. Here is exactly what to move, cool, dim, silence and say.",
+  keyword: "prepare villa for massage",
+  category: "Booking & Basics",
+  datePublished: "2026-10-31T11:45:00+08:00",
+  dateModified: "2026-10-31T11:45:00+08:00",
+  readMinutes: 7,
+  image: "/images/hero/hero-3.jpg",
+  imageAlt: "Villa bedroom in Kuta with space cleared beside the bed for a massage table and towels folded on top",
+  intro: "The difference between a good in-room massage and a slightly awkward one is almost never the therapist. It is the room. A bed that is too soft, an aircon vent blasting cold air across the table, a phone that rings twice, a security post that will not let anyone in — these are the things that eat into your hour. This is the checklist to run through in the ten minutes before your therapist arrives, written for villas, hotel rooms and everything in between around Kuta.",
+  sections: [
+    {
+      "h2": "The ten-minute checklist",
+      html: "<p>If you only do one thing, do this: walk into the room as if you were the therapist carrying a table and a bag of oil. Everything below follows from that.</p><ul><li><strong>Clear a floor space about 2 metres by 1 metre</strong> — the footprint of a table plus room to walk around one side.</li><li><strong>Cool the room before, not during.</strong> Aircon on for fifteen minutes, then set it so the air does not blow across the table.</li><li><strong>Get two towels and a sheet out.</strong> Housekeeping usually hands over spares if you ask at the desk.</li><li><strong>Silence your phone</strong> and put it face down, out of reach.</li><li><strong>Send a WhatsApp location pin</strong> with the villa name, unit number and any gate code — before the therapist is on the way.</li><li><strong>Shower first</strong> if you have been at the beach. Sand and salt on a table are unpleasant for both of you.</li><li><strong>Decide what you want worked on</strong> so you can say it in one sentence at the door.</li></ul>"
+    },
+    {
+      "h2": "Space: what actually fits in a Kuta hotel room",
+      html: "<p>Standard rooms in Kuta and Tuban are built around a bed, a wardrobe and a bathroom door that swings into the only free floor. A table needs roughly 190cm by 70cm, and the therapist needs about 60cm of clear space along one long side to work and step.</p><p>The reliable solution is usually to shift the bed — pushed against the wall or slid towards the window, it often frees the full length of the room. Two other options work well:</p><ul><li><strong>Twin rooms.</strong> Push the two single beds together and the gap between them disappears.</li><li><strong>Villa living areas.</strong> A tiled or wooden living room floor is often your best space: more airflow, more room, less risk of oil on hotel linen. Move the coffee table, not the sofa.</li></ul><p>Sliding glass doors help: open to a private garden or balcony, the usable area doubles and the therapist has somewhere to put their bag. If the bedroom is genuinely too tight, a shaded terrace works better — provided it is not in view of the street.</p>"
+    },
+    {
+      "h2": "Temperature, light and sound",
+      html: "<p>Bali rooms are two climates in one: blazing outside, arctic inside. Massage is better in the middle.</p><h3>Aircon</h3><p>Cool the room to a comfortable 23–25°C before the session, then point the vent away from the table. Direct cold air on oiled skin is uncomfortable within minutes and it makes muscles tense up — the opposite of what you booked. Many hotel rooms cut power when the key card leaves the slot, so keep a second card in the slot while you are at the door letting the therapist in.</p><h3>Light</h3><p>Enough for the therapist to see, not so much that you cannot relax. Turn off overhead downlights, use bedside lamps, or leave the bathroom light on with the door ajar.</p><h3>Sound</h3><p>Kuta is loud: scooters, dogs, roosters at odd hours, construction. You cannot fix the street, but quiet music at low volume masks it. Also warn the therapist about anything inside the property — a sleeping baby, a dog that barks at the gate, a housekeeper who will knock. They will adjust their voice and the pressure of the door.</p>"
+    },
+    {
+      "h2": "Access: gates, security posts and the pin drop",
+      html: "<p>This is where most delays happen, and it has nothing to do with the massage. Kuta and Seminyak villas sit behind gates with a security post; hotels have a lobby, a lift and sometimes a rule about visitors.</p><ul><li><strong>Send a location pin</strong> rather than an address. Villa names repeat across Bali, and maps drop people at the wrong gate.</li><li><strong>Give the exact unit.</strong> \"Villa Melati, unit 4, second gate on the left after the warung\" beats \"Villa Melati\" every time.</li><li><strong>Tell security</strong> — a message to your villa manager or a word at the front desk means the therapist is expected rather than questioned.</li><li><strong>Check the hotel's visitor rule.</strong> Some ask guests to meet therapists in the lobby. Ask when you book so nobody has to negotiate at reception in a towel.</li><li><strong>Mention stairs and lifts.</strong> A table and a bag up three flights is a slow start.</li></ul><p>If the property is hard to find, meet them at the street: two minutes at the gate saves fifteen on the phone. For the booking side, read <a href=\"/blog/first-home-massage-kuta-what-to-expect\">what actually happens on your first home massage in Kuta</a>.</p>"
+    },
+    {
+      "h2": "What to say to the therapist in the first two minutes",
+      html: "<p>Most people leave a session underwhelmed because they said nothing. Two minutes of briefing is worth more than an extra half hour on the table. Cover five things:</p><ol><li><strong>Where it hurts and how.</strong> Sharp, dull, stiff, or a spot you can point to. \"Left shoulder blade, worse when I turn my head\" is a useful sentence.</li><li><strong>What to avoid.</strong> Recent injuries, sunburnt shoulders, a knee you had operated on, an area you do not want touched.</li><li><strong>Pregnancy or recent surgery.</strong> Say it plainly at the start. A well-briefed therapist will adjust positions and pressure, and may suggest a different treatment.</li><li><strong>Pressure preference.</strong> Medium, firm, or \"I will tell you if it is too much\" — then tell them mid-session. Adjusting pressure is normal, not rude.</li><li><strong>Anything practical.</strong> Ticklish feet, a bad neck pillow, a preference for silence, or the fact that you would like to fall asleep.</li></ol><p>Booking for two people with different needs? Say so in the message so the therapists arrive prepared. There is a full guide to <a href=\"/blog/couples-massage-kuta-guide\">setting up a couples massage in a Kuta villa or hotel room</a>.</p>"
+    },
+    {
+      "h2": "Choosing the treatment before you set up the room",
+      html: "<p>Room prep shifts slightly with the treatment. Deep tissue is mostly on the back, so clear the side of the table the therapist will work from. Balinese massage moves through the whole body including feet and head, so you want room at both ends of the table. If you have not decided, a <a href=\"/services/balinese-massage\">Balinese massage</a> is the safe default for a first session, and a <a href=\"/services/deep-tissue-massage\">deep tissue massage</a> is better for one specific problem area.</p><p>Timing matters as much as space. Avoid booking straight after a heavy meal, and avoid the hottest part of the afternoon if the room has weak aircon. Late afternoon — after the beach, before dinner — is the slot most people relax into easiest.</p><p>Sessions are available in rooms and villas across <a href=\"/areas/kuta\">Kuta</a>, Legian, Seminyak, Tuban and the surrounding south Bali areas. Prices depend on treatment and length; confirmed on WhatsApp before you book.</p>"
+    },
+    {
+      "h2": "Afterwards: aftercare and putting the room back",
+      html: "<p>The last ten minutes are logistics too. A little planning means you stay horizontal instead of tidying up.</p><ul><li><strong>Drink water.</strong> Have a bottle in the room already; most people feel light-headed walking straight into the heat after a session.</li><li><strong>Wait before you shower.</strong> Give the oil twenty to thirty minutes to absorb, or skip it if you are going to sleep.</li><li><strong>Protect the linen.</strong> Oil marks hotel sheets. On a bed rather than a table, use the spare towels. It keeps in-room massage welcome in hotels that allow it.</li><li><strong>Ventilate.</strong> Open the doors for a few minutes after the therapist leaves.</li><li><strong>Expect mild soreness.</strong> A firm session can leave you tender for a day. Sharp pain, numbness, or a headache that will not shift is not normal aftercare and is worth raising with a health professional rather than booking another session.</li></ul><p>Tipping is not compulsory and there is no expected percentage; if you want to tip, hand it over directly. A short, specific thank-you about what worked (\"the shoulder was exactly right\") is also useful feedback.</p>"
+    }
+  ],
+  faqs: [
+    {
+      q: "Do I need to provide a massage table?",
+      a: "No. Therapists bring their own table, towels and oil. Your job is to clear the floor space and, where possible, have two spare towels or a sheet ready for the table and for you."
+    },
+    {
+      q: "How much space does a massage table need in a hotel room?",
+      a: "Roughly two metres by one metre, including about 60cm of clear space along one long side so the therapist can work and step. Pushing the bed against the wall or towards the window usually frees enough room."
+    },
+    {
+      q: "Is it better to have the massage on the bed or on a table?",
+      a: "A proper table is better for your back and neck, and it is what therapists prefer. A firm mattress on the floor is the next best option. Very soft hotel beds make it hard for the therapist to apply steady pressure."
+    },
+    {
+      q: "Should I shower before or after the massage?",
+      a: "Shower before, especially after the beach — sand and salt on the table are uncomfortable for both of you. Afterwards, wait twenty to thirty minutes before showering so the oil can absorb, or skip it if you are going to sleep."
+    },
+    {
+      q: "Will my hotel allow a massage therapist into my room?",
+      a: "Most hotels in Kuta and Tuban are used to it, but the rule varies and some ask guests to meet visitors in the lobby. Ask when you book the session, and tell reception the therapist is expected so nobody has to negotiate at the door."
+    },
+    {
+      q: "What should I wear during the massage?",
+      a: "Comfortable underwear or swimwear is normal. You will be covered with a towel or sheet throughout, and the therapist will only uncover the area being worked on. There is no need to bring anything special."
+    }
+  ],
+  related: [
+    "first-home-massage-kuta-what-to-expect",
+    "couples-massage-kuta-guide"
+  ]
+},
+{
   slug: "couples-massage-kuta-guide",
   title: "Couples Massage in Kuta: How to Set It Up in a Villa or Hotel Room",
   metaTitle: "Couples Massage in Kuta: Villa & Hotel Guide",
