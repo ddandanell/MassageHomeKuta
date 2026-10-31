@@ -6,6 +6,11 @@
  * Result: every URL ships its own title, description, canonical, OG tags,
  * JSON-LD, H1, intro copy and internal links in the first byte of HTML,
  * while React still takes over and renders the full page.
+ *
+ * Blog guides additionally ship their entire body (every H2, list, table, FAQ):
+ *  - seo/blog-bodies.json         from src/data/blog-articles.ts (blog-bodies.mjs)
+ *  - seo/blog-bodies-legacy.json  captured from the 3 hand-built JSX posts
+ * The DOM snapshot can only supply a clamped skeleton, hence the two sources.
  */
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
@@ -19,6 +24,21 @@ const esc = (s) =>
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;");
+
+const DATA_BODIES = resolve(process.env.BLOG_BODIES || "seo/blog-bodies.json");
+const LEGACY_BODIES = resolve(process.env.BLOG_BODIES_LEGACY || "seo/blog-bodies-legacy.json");
+const bodies = {};
+for (const [file, label] of [
+  [LEGACY_BODIES, "legacy"],
+  [DATA_BODIES, "data"],
+]) {
+  try {
+    Object.assign(bodies, JSON.parse(readFileSync(file, "utf8")).bodies || {});
+  } catch {
+    console.error("prerender: no " + label + " bodies at " + file);
+  }
+}
+console.error("prerender: loaded " + Object.keys(bodies).length + " full article bodies");
 
 const template = readFileSync(join(DIST, "index.html"), "utf8");
 if (!template.includes('<div id="root"></div>')) {
@@ -85,15 +105,19 @@ const ga4 = GA4_ID
   : "";
 
 let written = 0;
+let fullBodies = 0;
 for (const p of pages) {
   if (!p.path) continue;
   let html = template;
   for (const re of DROP) html = html.replace(re, "");
   html = html.replace("</head>", `  ${head(p)}\n  ${ga4}\n  </head>`);
-  html = html.replace(/<div id="root"><\/div>/, `<div id="root">${skeleton(p)}</div>`);
+  const body = bodies[p.path];
+  if (body) fullBodies++;
+  else if (p.path.startsWith("/blog/")) console.error("prerender: WARN no full body for " + p.path + " — skeleton only");
+  html = html.replace(/<div id="root"><\/div>/, `<div id="root">${body || skeleton(p)}</div>`);
   const file = p.path === "/" ? join(DIST, "index.html") : join(DIST, p.path, "index.html");
   mkdirSync(dirname(file), { recursive: true });
   writeFileSync(file, html);
   written++;
 }
-console.log(`prerender: wrote ${written} html files`);
+console.log(`prerender: wrote ${written} html files, ${fullBodies} with full article bodies`);

@@ -5,13 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/prerender-build.mjs",
+    "build": "vite build && node scripts/blog-bodies.mjs && node scripts/prerender-build.mjs",
     "snapshot": "node scripts/prerender-snapshot.mjs",
-    "build:full": "vite build && node scripts/prerender-snapshot.mjs && node scripts/prerender-build.mjs",
+    "build:full": "vite build && node scripts/prerender-snapshot.mjs && node scripts/blog-bodies.mjs && node scripts/prerender-build.mjs",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
-    "generate:image": "node ../tools/generate-image.js"
+    "generate:image": "node ../tools/generate-image.js",
+    "bodies": "node scripts/blog-bodies.mjs"
   },
   "dependencies": {
     "@fal-ai/client": "^1.10.1",
