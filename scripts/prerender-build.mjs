@@ -123,13 +123,16 @@ for (const p of pages) {
   if (!p.path) continue;
   let html = template;
   for (const re of DROP) html = html.replace(re, "");
-  html = html.replace("</head>", `  ${head(p)}\n  ${ga4}\n  </head>`);
+  // Function replacer: a plain replacement string would treat $$ and $& in the
+  // page's own copy as escape sequences (SITE_CONFIG.priceRange "$$" became "$").
+  html = html.replace("</head>", () => `  ${head(p)}\n  ${ga4}\n  </head>`);
   let body = bodies[p.path];
   // a captured body shorter than a paragraph is worse than the generated skeleton
   if (body && body.replace(/<[^>]*>/g, " ").split(/\s+/).filter(Boolean).length < 120) body = undefined;
   if (body) fullBodies++;
   else if (p.path.startsWith("/blog/")) console.error("prerender: WARN no full body for " + p.path + " — skeleton only");
-  html = html.replace(/<div id="root"><\/div>/, `<div id="root">${body || skeleton(p)}</div>`);
+  const rootHtml = `<div id="root">${body || skeleton(p)}</div>`;
+  html = html.replace(/<div id="root"><\/div>/, () => rootHtml);
   const file = p.path === "/" ? join(DIST, "index.html") : join(DIST, p.path, "index.html");
   mkdirSync(dirname(file), { recursive: true });
   writeFileSync(file, html);
