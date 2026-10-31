@@ -4,7 +4,7 @@ import professionalSetup from "@/assets/professional-setup.jpg";
 const features = [
   {
     icon: Shield,
-    title: "Licensed Professional Therapists",
+    title: "Experienced Professional Therapists",
     description: "Every therapist is certified, experienced, and dedicated to the highest standards of professional care."
   },
   {

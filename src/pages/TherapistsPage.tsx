@@ -13,41 +13,33 @@ const therapists = [
     name: "Kadek Sari",
     specialties: ["Traditional Balinese", "Aromatherapy", "Reflexology"],
     experience: "8+ years",
-    certifications: ["VTCT Level 3", "CIBTAC", "BISA Certified"],
     languages: ["Bahasa Indonesia", "English", "Basic Japanese"],
     description: "Master of traditional Balinese healing techniques with extensive training in aromatherapy and pressure point therapy.",
-    rating: 4.9,
-    clients: 150
+    availability: "Kuta, Legian, Seminyak"
   },
   {
     name: "Wayan Putra",
     specialties: ["Deep Tissue", "Sports Massage", "Thai Massage"],
     experience: "10+ years",
-    certifications: ["VTCT Level 3", "Sports Massage Certified", "Thai Massage Traditional"],
     languages: ["Bahasa Indonesia", "English", "Basic Dutch"],
     description: "Specialized in therapeutic and sports massage with a focus on injury prevention and muscle recovery.",
-    rating: 4.9,
-    clients: 200
+    availability: "Kuta, Canggu, Uluwatu"
   },
   {
     name: "Made Dewi",
     specialties: ["Hot Stone", "Prenatal", "Lymphatic Drainage"],
     experience: "7+ years",
-    certifications: ["VTCT Level 3", "Prenatal Specialist", "Lymphatic Drainage Certified"],
     languages: ["Bahasa Indonesia", "English", "Basic German"],
     description: "Expert in specialized treatments including prenatal massage and lymphatic drainage with gentle healing approach.",
-    rating: 4.8,
-    clients: 120
+    availability: "Sanur, Jimbaran, Nusa Dua"
   },
   {
     name: "Ketut Agus",
     specialties: ["Traditional Balinese", "Couples Massage", "Acupressure"],
     experience: "12+ years",
-    certifications: ["VTCT Level 3", "CIBTAC", "Traditional Healer Certificate"],
     languages: ["Bahasa Indonesia", "English", "Basic Mandarin"],
     description: "Senior therapist with deep knowledge of traditional Balinese healing and expertise in couples treatments.",
-    rating: 4.9,
-    clients: 300
+    availability: "All south Bali areas"
   }
 ];
 
@@ -55,9 +47,9 @@ const TherapistsPage = () => {
   return (
     <div className="min-h-screen">
       <SiteMeta
-        title="Certified Massage Therapists Kuta Bali"
-        description="Meet our certified professional massage therapists in Kuta. Experienced, licensed practitioners with international certifications delivering expert massage treatments to your villa or hotel."
-        keywords="certified massage therapists Kuta, professional massage therapist Bali, licensed massage practitioners, experienced therapists Kuta, VTCT certified"
+        title="Massage Therapists Kuta Bali - Meet the In-Villa Team"
+        description="Meet the massage therapists who travel to villas and hotels in Kuta and south Bali. Specialties, languages and the areas each therapist usually covers."
+        keywords="massage therapists Kuta, professional massage therapist Bali, in-villa massage therapists, experienced therapists Kuta"
         canonical="/therapists"
       />
 
@@ -71,34 +63,34 @@ const TherapistsPage = () => {
           <div className="absolute inset-0">
             <img
               src="/generated-images/therapists-hero.jpg"
-              alt="Certified professional massage therapists team in Kuta Bali with international VTCT and CIBTAC certifications"
+              alt="Massage therapist arriving for an in-villa treatment in Kuta, Bali"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/80 to-primary/90 backdrop-blur-[2px]"></div>
           </div>
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Certified Massage Therapists Kuta
+              Massage Therapists in Kuta, Bali
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-90">
-              Our team of internationally certified therapists brings years of experience and expertise to provide you with the highest quality treatments in Kuta. Each practitioner holds VTCT and CIBTAC certifications and specializes in multiple massage techniques.
+              The therapists who travel to your villa or hotel, what each of them specialises in, and the areas they usually cover. We confirm the therapist assigned to your session, their training background and their arrival window on WhatsApp before you book.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-lg">
               <div className="flex items-center gap-2">
                 <Award className="w-5 h-5" />
-                <span>Internationally Certified</span>
+                <span>In-Villa Across South Bali</span>
               </div>
               <div className="flex items-center gap-2">
                 <Star className="w-5 h-5" />
-                <span>4.9+ Average Rating</span>
+                <span>Same-Day Availability</span>
               </div>
               <div className="flex items-center gap-2">
                 <Users className="w-5 h-5" />
-                <span>770+ Happy Clients</span>
+                <span>Couples &amp; Group Sessions</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="w-5 h-5" />
-                <span>37+ Years Combined Experience</span>
+                <span>Daily 07:00 – 22:00</span>
               </div>
             </div>
           </div>
@@ -121,12 +113,8 @@ const TherapistsPage = () => {
               {therapists.map((therapist, index) => (
                 <Card key={index} className="bg-gradient-card border-0 shadow-soft hover:shadow-floating transition-all duration-300">
                   <CardHeader>
-                    <CardTitle className="text-spa-earth text-2xl flex items-center justify-between">
+                    <CardTitle className="text-spa-earth text-2xl">
                       {therapist.name}
-                      <div className="flex items-center gap-1">
-                        <Star className="w-5 h-5 text-spa-gold fill-current" />
-                        <span className="text-lg font-semibold text-spa-gold">{therapist.rating}</span>
-                      </div>
                     </CardTitle>
                     <CardDescription className="text-spa-stone text-lg">
                       {therapist.description}
@@ -151,21 +139,18 @@ const TherapistsPage = () => {
                         <p className="text-spa-stone">{therapist.experience}</p>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-spa-earth mb-2">Happy Clients:</h4>
-                        <p className="text-spa-stone">{therapist.clients}+</p>
+                        <h4 className="font-semibold text-spa-earth mb-2">Usually Books:</h4>
+                        <p className="text-spa-stone">{therapist.availability}</p>
                       </div>
                     </div>
 
                     <div>
-                      <h4 className="font-semibold text-spa-earth mb-2">Certifications:</h4>
-                      <ul className="text-sm text-spa-stone space-y-1">
-                        {therapist.certifications.map((cert, idx) => (
-                          <li key={idx} className="flex items-center gap-2">
-                            <Award className="w-3 h-3 text-spa-gold" />
-                            {cert}
-                          </li>
-                        ))}
-                      </ul>
+                      <h4 className="font-semibold text-spa-earth mb-2">Training:</h4>
+                      <p className="text-sm text-spa-stone">
+                        Trained in the modalities listed above. We confirm the assigned therapist's
+                        training background on WhatsApp before you book, rather than publishing
+                        certificate names we cannot show you.
+                      </p>
                     </div>
 
                     <div>
@@ -204,10 +189,10 @@ const TherapistsPage = () => {
                 <div className="w-16 h-16 bg-spa-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Award className="w-8 h-8 text-spa-gold" />
                 </div>
-                <h3 className="text-xl font-semibold text-spa-earth mb-4">International Certifications</h3>
+                <h3 className="text-xl font-semibold text-spa-earth mb-4">Training, Confirmed Before You Book</h3>
                 <p className="text-spa-stone">
-                  All therapists hold VTCT Level 3 Diploma and CIBTAC certifications, recognized worldwide
-                  for massage therapy excellence.
+                  We do not publish certificate names we cannot show you. Ask on WhatsApp and we will tell
+                  you the training background of the therapist assigned to your session.
                 </p>
               </div>
 
@@ -215,10 +200,10 @@ const TherapistsPage = () => {
                 <div className="w-16 h-16 bg-spa-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="w-8 h-8 text-spa-gold" />
                 </div>
-                <h3 className="text-xl font-semibold text-spa-earth mb-4">Bali Spa Academy Training</h3>
+                <h3 className="text-xl font-semibold text-spa-earth mb-4">Balinese Technique, Lived Not Learned</h3>
                 <p className="text-spa-stone">
-                  Specialized training from Bali International Spa Academy (BISA) ensures authentic
-                  traditional techniques combined with modern standards.
+                  Every therapist on the team works with traditional Balinese pressure and stretching
+                  technique, adapted to the treatment you book and the pressure you ask for.
                 </p>
               </div>
 

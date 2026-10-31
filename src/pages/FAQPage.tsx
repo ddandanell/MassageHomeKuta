@@ -3,7 +3,6 @@ import StructuredData from "@/components/seo/StructuredData";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Phone, Clock, MapPin } from "lucide-react";
 
@@ -22,11 +21,11 @@ const faqs = [
   },
   {
     question: "Is the massage strictly professional?",
-    answer: "Absolutely. We provide only therapeutic massage (pijat) services performed by certified professionals. All our terapis maintain the highest ethical standards and professional boundaries at all times. Any inappropriate requests will result in immediate termination of service."
+    answer: "Absolutely. We provide only therapeutic massage (pijat) services performed by trained professionals. All our terapis maintain the highest ethical standards and professional boundaries at all times. Any inappropriate requests will result in immediate termination of service."
   },
   {
     question: "Are your therapists certified and licensed?",
-    answer: "Yes, all our terapis hold internationally recognized certifications including VTCT Level 3 Diploma, CIBTAC certification, and specialized training from Bali International Spa Academy (BISA). They are experienced professionals committed to your wellness, kesehatan, and safety."
+    answer: "Every therapist on our team is trained in Balinese and therapeutic massage, and we brief each session before the therapist leaves for your address. We do not publish certificate names we cannot show you. Ask us on WhatsApp before booking and we will confirm the training background of the therapist assigned to your session, along with their name and arrival window."
   },
   {
     question: "What areas do you serve in Kuta?",
@@ -70,7 +69,7 @@ const faqs = [
   },
   {
     question: "How can massage help reduce stress?",
-    answer: "Massage therapy (pijat) is a powerful tool for managing stress, both physically and mentally. During a massage, gentle pressure and rhythmic movements help release muscle tension and improve blood circulation, which can ease physical discomfort caused by stress. Additionally, massage has been shown to lower the body's levels of cortisol, the primary stress hormone, while increasing the production of endorphins and serotonin—chemicals that promote relaxation and a positive mood. Regular massage sessions can help you better cope with daily pressures, improve sleep quality, and support overall kesehatan (health), making it an effective addition to any stress management routine."
+    answer: "Massage therapy (pijat) is a powerful tool for managing stress, both physically and mentally. During a massage, gentle pressure and rhythmic movements help release muscle tension and improve blood circulation, which can ease physical discomfort caused by stress. Additionally, massage has been shown to lower the body's levels of cortisol, the primary stress hormone, while increasing the production of endorphins and serotonin—chemicals that promote relaxation and a positive mood. Regular massage sessions can help you better cope with daily pressures, improve sleep quality, and support overall health, making it an effective addition to any stress management routine."
   },
   {
     question: "What are the most common massage techniques?",
@@ -117,7 +116,7 @@ const FAQPage = () => {
     <div className="min-h-screen">
       <SiteMeta
         title="Massage FAQ Kuta - Common Questions Answered"
-        description="Find answers to frequently asked questions about professional massage in Kuta. Learn about booking, pricing, therapist certifications, safety standards, and massage treatments available."
+        description="Answers to the questions guests ask before booking an in-villa massage in Kuta: what to prepare, same-day availability, payment methods, session length and service areas."
         keywords="massage FAQ Kuta, home massage questions, villa massage booking, massage service questions, spa FAQ Bali, massage therapy questions"
         canonical="/faq"
       />
@@ -131,7 +130,7 @@ const FAQPage = () => {
           <div className="absolute inset-0">
             <img
               src="/images/hero/hero-1.jpg"
-              alt="Professional massage therapy environment in Kuta with certified therapists answering common questions"
+              alt="In-villa massage setup in Kuta, Bali"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-br from-purple-900/80 via-pink-900/70 to-purple-900/80 backdrop-blur-[2px]"></div>
@@ -141,7 +140,7 @@ const FAQPage = () => {
               Massage FAQ Kuta - Common Questions
             </h1>
             <p className="text-lg md:text-xl max-w-3xl mx-auto">
-              Get answers to frequently asked questions about professional massage in Kuta. Learn about our certified therapists, booking process, pricing, safety standards, and available treatments delivered to your villa or hotel.
+              Get answers to frequently asked questions about professional massage in Kuta. Learn about our therapists, booking process, pricing, safety standards, and available treatments delivered to your villa or hotel.
             </p>
           </div>
         </section>
@@ -155,27 +154,28 @@ const FAQPage = () => {
               </h2>
               <p className="text-xl text-spa-stone max-w-3xl mx-auto">
                 We've compiled answers to the most frequently asked questions about massage therapy (pijat) and our service.
-                This should help you book with confidence and understand how massage can benefit your kesehatan and overall well-being.
+                This should help you book with confidence and understand how massage can benefit your health and overall well-being.
               </p>
             </div>
 
             <div className="max-w-4xl mx-auto">
-              <Accordion type="single" collapsible className="space-y-4">
+              {/* Native details/summary rather than a Radix accordion: Radix keeps a closed
+                  panel out of the DOM, so the answers never reached the HTML a crawler reads
+                  while the FAQPage schema still claimed them (QA T-0006, 2026-10-31). */}
+              <div className="space-y-4">
                 {faqs.map((faq, index) => (
-                  <AccordionItem
+                  <details
                     key={index}
-                    value={`item-${index}`}
-                    className="bg-gradient-card border-0 shadow-soft rounded-xl px-6"
+                    className="bg-gradient-card border-0 shadow-soft rounded-xl px-6 py-4 group"
+                    open={index === 0}
                   >
-                    <AccordionTrigger className="text-left text-lg font-semibold text-spa-earth hover:text-spa-gold transition-colors">
-                      {faq.question}
-                    </AccordionTrigger>
-                    <AccordionContent className="text-spa-stone leading-relaxed pt-2">
-                      {faq.answer}
-                    </AccordionContent>
-                  </AccordionItem>
+                    <summary className="cursor-pointer list-none text-left text-lg font-semibold text-spa-earth hover:text-spa-gold transition-colors">
+                      <h3 className="inline text-lg font-semibold">{faq.question}</h3>
+                    </summary>
+                    <p className="text-spa-stone leading-relaxed pt-3">{faq.answer}</p>
+                  </details>
                 ))}
-              </Accordion>
+              </div>
             </div>
           </div>
         </section>
@@ -230,7 +230,7 @@ const FAQPage = () => {
               <Button asChild variant="outline" className="h-auto p-4 flex-col">
                 <a href="/therapists">
                   <span className="font-semibold">Our Therapists</span>
-                  <span className="text-sm opacity-75">Meet our certified team</span>
+                  <span className="text-sm opacity-75">Meet our therapists</span>
                 </a>
               </Button>
               <Button asChild variant="outline" className="h-auto p-4 flex-col">

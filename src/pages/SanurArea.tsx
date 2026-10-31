@@ -679,7 +679,7 @@ const SanurArea = () => {
                 Customer Reviews: Sanur Massage Experiences
               </h2>
               <p className="text-xl text-spa-stone max-w-3xl mx-auto">
-                Our Sanur massage services maintain a 4.9★ average rating based on hundreds of verified customer reviews. Guests consistently praise our therapists' professionalism, punctuality, and therapeutic expertise.
+                We do not publish a star rating until we can show you where it comes from. What we can tell you is how a Sanur booking runs: you message us with your villa or hotel, we confirm the therapist, the arrival window and the upfront IDR price, and the therapist arrives with a table, fresh linens and oils. Feedback from Sanur guests is collected after each session and published only when it can be matched to that booking.
               </p>
             </div>
 

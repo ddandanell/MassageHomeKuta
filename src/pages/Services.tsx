@@ -147,7 +147,7 @@ const Services = () => {
                 Guests usually book by need: deep recovery after flights or surfing, a calmer in-villa treatment for sleep and stress, or a premium experience for couples and special occasions. WhatsApp booking keeps it simple, and our team confirms the best fit for your location and schedule.
               </p>
               <p className="text-lg text-professional-gray leading-relaxed">
-                Not sure what to budget? See our <Link to="/blog/massage-kuta-bali-price-guide" className="text-professional-green hover:underline font-medium">complete Kuta massage price guide</Link> with verified 2026 rates.
+                Not sure what to budget? See our <Link to="/blog/massage-kuta-bali-price-guide" className="text-professional-green hover:underline font-medium">complete Kuta massage price guide</Link> with the 2026 rate card we publish.
               </p>
             </div>
           </div>

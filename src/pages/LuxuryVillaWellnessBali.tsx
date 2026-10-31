@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import IncludedInTreatment from "@/components/IncludedInTreatment";
 import { MessageCircle, Clock, Award, Sparkles, Shield, Star, CheckCircle2, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SITE_CONFIG } from "@/config/site";
@@ -157,11 +158,6 @@ const LuxuryVillaWellnessBali = () => {
     }
   ];
 
-  const testimonials = [
-    { name: "Distinguished Guest", location: "International", text: "Five-star resort quality at my villa. The master therapist was exceptional and the entire experience was seamlessly coordinated. Booking again next visit.", rating: 5 },
-    { name: "Executive Client", location: "Asia", text: "Professional, discreet, and exactly what we needed after a busy schedule. Premium quality throughout. Highly recommend for discerning travelers.", rating: 5 },
-    { name: "Luxury Villa Guest", location: "Europe", text: "Outstanding service and attention to detail. The therapist's expertise was evident, and the concierge coordination made everything effortless. Perfect luxury experience.", rating: 5 }
-  ];
 
   return (
     <div className="min-h-screen">
@@ -413,41 +409,11 @@ const LuxuryVillaWellnessBali = () => {
           </div>
         </section>
 
-        {/* Testimonials Section */}
-        <section className="py-16 bg-spa-cream/30">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-bold text-spa-earth mb-6">
-                What VIP Clients Are Saying
-              </h2>
-              <div className="flex items-center justify-center gap-2 text-spa-gold">
-                <Star className="w-5 h-5 fill-current" />
-                <Star className="w-5 h-5 fill-current" />
-                <Star className="w-5 h-5 fill-current" />
-                <Star className="w-5 h-5 fill-current" />
-                <Star className="w-5 h-5 fill-current" />
-                <span className="text-spa-stone ml-2">5.0/5 from 65+ VIP clients</span>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-              {testimonials.map((testimonial, index) => (
-                <Card key={index} className="bg-white border-0 shadow-soft">
-                  <CardContent className="pt-6">
-                    <div className="flex gap-1 mb-3">
-                      {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-current text-spa-gold" />
-                      ))}
-                    </div>
-                    <p className="text-spa-stone mb-4 italic">"{testimonial.text}"</p>
-                    <p className="text-sm text-spa-earth font-semibold">{testimonial.name}</p>
-                    <p className="text-xs text-spa-stone">{testimonial.location}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
+        <IncludedInTreatment
+          treatment="luxury villa wellness session"
+          area="your private villa"
+        />
+      
 
         {/* Related Services Section */}
         <section className="py-16 bg-background">

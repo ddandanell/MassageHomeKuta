@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import IncludedInTreatment from "@/components/IncludedInTreatment";
 import { MessageCircle, Clock, Sparkles, Zap, Shield, Star, CheckCircle2, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SITE_CONFIG } from "@/config/site";
@@ -176,11 +177,6 @@ const MobileSpaDayPackageBali = () => {
     }
   ];
 
-  const testimonials = [
-    { name: "Sarah", location: "UK", text: "Best spa day ever, in my own villa! The coordination was seamless and I felt completely pampered and relaxed. Already planning my next one.", rating: 5 },
-    { name: "Marcus & Lisa", location: "USA", text: "Anniversary spa day was absolutely magical. Both of us had amazing treatments and the entire experience was wonderfully organized.", rating: 5 },
-    { name: "Elena", location: "Australia", text: "Perfect self-care experience. From start to finish, everything was luxurious and relaxing. Highly recommend this for anyone staying in Bali.", rating: 5 }
-  ];
 
   return (
     <div className="min-h-screen">
@@ -434,41 +430,11 @@ const MobileSpaDayPackageBali = () => {
           </div>
         </section>
 
-        {/* Testimonials Section */}
-        <section className="py-16 bg-spa-cream/30">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-bold text-spa-earth mb-6">
-                What Spa Day Guests Are Saying
-              </h2>
-              <div className="flex items-center justify-center gap-2 text-spa-gold">
-                <Star className="w-5 h-5 fill-current" />
-                <Star className="w-5 h-5 fill-current" />
-                <Star className="w-5 h-5 fill-current" />
-                <Star className="w-5 h-5 fill-current" />
-                <Star className="w-5 h-5 fill-current" />
-                <span className="text-spa-stone ml-2">4.9/5 from 110+ guests</span>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-              {testimonials.map((testimonial, index) => (
-                <Card key={index} className="bg-white border-0 shadow-soft">
-                  <CardContent className="pt-6">
-                    <div className="flex gap-1 mb-3">
-                      {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-current text-spa-gold" />
-                      ))}
-                    </div>
-                    <p className="text-spa-stone mb-4 italic">"{testimonial.text}"</p>
-                    <p className="text-sm text-spa-earth font-semibold">{testimonial.name}</p>
-                    <p className="text-xs text-spa-stone">{testimonial.location}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
+        <IncludedInTreatment
+          treatment="mobile spa day package"
+          area="your villa"
+        />
+      
 
         {/* Related Services Section */}
         <section className="py-16 bg-background">

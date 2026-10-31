@@ -102,7 +102,7 @@ const Header = () => {
               <div className="flex justify-center gap-4 mb-6 text-xs">
                 <div className="flex items-center gap-1 text-professional-gray">
                   <Star className="h-3 w-3 text-professional-gold fill-current" />
-                  <span>4.9/5 Rating</span>
+                  <span>07:00–22:00</span>
                 </div>
                 <div className="flex items-center gap-1 text-professional-gray">
                   <Clock className="h-3 w-3 text-professional-gold" />
@@ -161,7 +161,7 @@ const Header = () => {
                     <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
                     <span className="font-medium">Available Today</span>
                   </div>
-                  <div>Licensed • Insured • 500+ Happy Clients</div>
+                  <div>In-villa • Same-day • 07:00–22:00</div>
                 </div>
               </div>
 

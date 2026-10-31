@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     question: "Are your therapists certified?",
-    answer: "Yes, all our therapists hold internationally recognized certifications including VTCT Level 3 Diploma, CIBTAC certification, and specialized training from Bali International Spa Academy (BISA). They are experienced professionals committed to your wellness and safety."
+    answer: "Every therapist on our team is trained in Balinese and therapeutic massage, and we brief each session before the therapist leaves for your address. We do not publish certificate names we cannot show you. Ask on WhatsApp before booking and we will confirm the training background of the therapist assigned to your session."
   }
 ];
 

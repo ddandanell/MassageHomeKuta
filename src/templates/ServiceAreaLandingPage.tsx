@@ -464,7 +464,7 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
             <div className="flex flex-wrap justify-center gap-8 text-sm text-spa-stone">
               <div className="flex items-center gap-2">
                 <Shield className="w-5 h-5 text-spa-gold" />
-                <span>100% Safe & Insured</span>
+                <span>In-Villa Setup</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="w-5 h-5 text-spa-gold" />

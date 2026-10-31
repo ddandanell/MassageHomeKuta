@@ -110,13 +110,13 @@ const Packages = () => {
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-lg">
               <Badge variant="outline" className="text-primary-foreground border-primary-foreground px-4 py-2">
-                Up to 30% Savings
+                Package Rates in IDR
               </Badge>
               <Badge variant="outline" className="text-primary-foreground border-primary-foreground px-4 py-2">
                 All Equipment Included
               </Badge>
               <Badge variant="outline" className="text-primary-foreground border-primary-foreground px-4 py-2">
-                Licensed Therapists
+                Experienced Therapists
               </Badge>
             </div>
           </div>

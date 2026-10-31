@@ -73,11 +73,11 @@ const translations: Record<Language, Record<string, string>> = {
     'label.pressure_levels': 'Pressure Levels',
 
     // Trust Signals
-    'trust.monthly_sessions': '500+ Monthly Sessions',
-    'trust.happy_clients': '2,500+ Happy Clients',
-    'trust.safe_insured': '100% Safe & Insured',
+    'trust.monthly_sessions': 'Daily 07:00 – 22:00',
+    'trust.happy_clients': 'In-Villa Across South Bali',
+    'trust.safe_insured': 'Table, Linens & Oils Included',
     'trust.same_day': 'Same-Day Booking',
-    'trust.countries': '45+ Countries Served',
+    'trust.countries': '8 Villa Areas Covered',
 
     // Footer
     'footer.contact': 'Contact Us',
@@ -132,11 +132,11 @@ const translations: Record<Language, Record<string, string>> = {
     'label.pressure_levels': 'Tingkat Tekanan',
 
     // Trust Signals
-    'trust.monthly_sessions': '500+ Sesi Bulanan',
-    'trust.happy_clients': '2.500+ Klien Puas',
+    'trust.monthly_sessions': 'Setiap Hari 07:00 – 22:00',
+    'trust.happy_clients': 'Ke Villa di Bali Selatan',
     'trust.safe_insured': '100% Aman & Berasuransi',
     'trust.same_day': 'Pemesanan Hari Sama',
-    'trust.countries': '45+ Negara Dilayani',
+    'trust.countries': '8 Area Villa',
 
     // Footer
     'footer.contact': 'Hubungi Kami',

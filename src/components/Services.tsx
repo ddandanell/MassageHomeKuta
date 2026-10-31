@@ -134,12 +134,12 @@ const Services = () => {
           </h2>
           <p className="text-lg md:text-xl text-professional-gray max-w-4xl mx-auto leading-relaxed">
             All treatments are delivered directly to your villa, hotel, or private home in Kuta & surrounding areas. 
-            Our certified therapists bring everything needed for a professional spa experience - premium oils, towels, and music.
+            Our therapists bring everything needed for a professional spa experience - premium oils, towels, and music.
           </p>
           <div className="flex flex-wrap justify-center gap-4 mt-6 text-sm md:text-base">
             <div className="flex items-center gap-2 text-professional-navy">
               <Shield className="h-4 w-4 text-professional-gold" />
-              Licensed & Insured
+              In-Villa Setup
             </div>
             <div className="flex items-center gap-2 text-professional-navy">
               <Clock className="h-4 w-4 text-professional-gold" />
@@ -147,7 +147,7 @@ const Services = () => {
             </div>
             <div className="flex items-center gap-2 text-professional-navy">
               <Users className="h-4 w-4 text-professional-gold" />
-              500+ Happy Clients
+              Daily 07:00–22:00
             </div>
           </div>
         </div>

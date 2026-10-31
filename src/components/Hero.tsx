@@ -32,7 +32,7 @@ const Hero = () => {
         {/* Description */}
         <p className="text-xl md:text-2xl mb-12 opacity-95 max-w-3xl mx-auto leading-relaxed font-light tracking-wide">
           Experience professional massage in Kuta with certified therapists delivering premium spa treatments directly to your villa or hotel.
-          Same-day booking available for Balinese, deep tissue, and aromatherapy massage. Licensed therapists, premium oils, and complete relaxation.
+          Same-day booking available for Balinese, deep tissue, and aromatherapy massage. Experienced therapists, premium oils, and complete relaxation.
         </p>
 
         {/* Key Benefits */}
@@ -43,11 +43,11 @@ const Hero = () => {
           </div>
           <div className="flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-6 py-3 hover:bg-white/20 transition-colors">
             <Clock className="h-5 w-5 text-professional-gold" />
-            <span className="font-medium">Arrives in 30-60 Mins</span>
+            <span className="font-medium">In-Villa Setup</span>
           </div>
           <div className="flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-6 py-3 hover:bg-white/20 transition-colors">
             <Shield className="h-5 w-5 text-blue-300" />
-            <span className="font-medium">Certified Therapists</span>
+            <span className="font-medium">Experienced Therapists</span>
           </div>
         </div>
 
@@ -80,7 +80,7 @@ const Hero = () => {
         {/* Trust Indicator */}
         <div className="mt-12 text-center">
           <p className="text-lg opacity-80 font-light tracking-wider">
-            Trusted by <strong>500+ clients</strong> • Available Daily 07:00 - 22:00
+            In-villa across Kuta, Seminyak, Legian, Canggu, Sanur, Jimbaran, Nusa Dua &amp; Uluwatu • Daily 07:00 - 22:00
           </p>
         </div>
       </div>

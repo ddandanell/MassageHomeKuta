@@ -51,7 +51,7 @@ const MassageTherapistKutaBali = () => {
     {
       name: "Deep Tissue Massage Specialists",
       slug: "deep-tissue-massage",
-      description: "Licensed deep tissue therapists with advanced training in myofascial release, trigger point therapy, and chronic pain management. These experts work systematically through muscle layers to address knots, adhesions, and long-standing tension patterns.",
+      description: "Experienced deep tissue therapists with advanced training in myofascial release, trigger point therapy, and chronic pain management. These experts work systematically through muscle layers to address knots, adhesions, and long-standing tension patterns.",
       idealFor: "Athletes, desk workers, and guests with back, neck, or shoulder issues."
     },
     {
@@ -87,14 +87,14 @@ const MassageTherapistKutaBali = () => {
     {
       name: "Sports & Recovery Massage Experts",
       slug: "muscle-recovery-therapy",
-      description: "Licensed sports massage therapists experienced in pre-event preparation, post-workout recovery, and injury rehabilitation. These specialists combine deep tissue work, stretching, and muscle stripping techniques.",
+      description: "Experienced sports massage therapists experienced in pre-event preparation, post-workout recovery, and injury rehabilitation. These specialists combine deep tissue work, stretching, and muscle stripping techniques.",
       idealFor: "Surfers, yogis, and active travelers in Bali."
     }
   ];
 
   const pricingOptions = [
     {
-      name: "Traditional Balinese Massage (Licensed Therapist)",
+      name: "Traditional Balinese Massage",
       description: "Authentic Balinese massage delivered by certified therapist – traditional full-body treatment combining palm pressure, acupressure, and gentle stretching with natural aromatic oils.",
       prices: { "60": "$20 USD (IDR 320K)", "90": "$28 USD (IDR 450K)", "120": "$37 USD (IDR 590K)" }
     },
@@ -105,7 +105,7 @@ const MassageTherapistKutaBali = () => {
     },
     {
       name: "Aromatherapy Massage (Certified Aromatherapy Specialist)",
-      description: "Licensed aromatherapy massage therapist – full-body massage using premium essential oils (lavender, lemongrass, eucalyptus, frangipani).",
+      description: "Experienced aromatherapy massage therapist – full-body massage using premium essential oils (lavender, lemongrass, eucalyptus, frangipani).",
       prices: { "60": "$22 USD (IDR 350K)", "90": "$31 USD (IDR 490K)", "120": "$40 USD (IDR 640K)" }
     },
     {
@@ -115,7 +115,7 @@ const MassageTherapistKutaBali = () => {
     },
     {
       name: "Thai Massage (Certified Thai Bodywork Therapist)",
-      description: "Licensed Thai massage practitioner – traditional Thai bodywork combining assisted stretching and pressure along energy lines. Performed fully clothed without oil.",
+      description: "Experienced Thai massage practitioner – traditional Thai bodywork combining assisted stretching and pressure along energy lines. Performed fully clothed without oil.",
       prices: { "60": "$24 USD (IDR 390K)", "90": "$34 USD (IDR 550K)", "120": "$45 USD (IDR 720K)" }
     },
     {
@@ -130,7 +130,7 @@ const MassageTherapistKutaBali = () => {
     },
     {
       name: "Pregnancy Massage (Certified Prenatal Therapist)",
-      description: "Licensed prenatal massage specialist – safe, gentle massage specifically designed for expectant mothers using proper positioning and pregnancy-approved techniques.",
+      description: "Experienced prenatal massage specialist – safe, gentle massage specifically designed for expectant mothers using proper positioning and pregnancy-approved techniques.",
       prices: { "60": "$21 USD (IDR 330K)", "90": "$31 USD (IDR 480K)", "120": "$40 USD (IDR 630K)" }
     }
   ];

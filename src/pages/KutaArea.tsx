@@ -176,7 +176,7 @@ const KutaArea = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-spa-earth mb-6">
-                Why We're Kuta's #1 Home Massage Service
+                Why Guests Book Our Kuta Home Massage Service
               </h2>
             </div>
 
@@ -207,10 +207,10 @@ const KutaArea = () => {
                 <div className="w-16 h-16 bg-spa-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Star className="w-8 h-8 text-spa-gold" />
                 </div>
-                <h3 className="text-xl font-semibold text-spa-earth mb-4">Proven Track Record</h3>
+                <h3 className="text-xl font-semibold text-spa-earth mb-4">Booking You Can Check</h3>
                 <p className="text-spa-stone">
-                  Hundreds of satisfied clients throughout Kuta trust us for their wellness needs.
-                  Join our growing community.
+                  You get the therapist's name, the arrival window and the upfront IDR price in
+                  writing on WhatsApp before anyone leaves for your address.
                 </p>
               </div>
             </div>

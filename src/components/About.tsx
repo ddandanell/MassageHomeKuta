@@ -5,17 +5,17 @@ import { Users, Award, Shield, Clock, Star, Heart, MapPin, CheckCircle } from "l
 
 const About = () => {
   const stats = [
-    { icon: Users, number: "500+", label: "Happy Clients", description: "From 25+ countries" },
-    { icon: Star, number: "4.9", label: "Average Rating", description: "Google & Facebook reviews" },
-    { icon: Clock, number: "2+", label: "Years Serving", description: "Kuta & surrounding areas" },
-    { icon: Award, number: "100%", label: "Licensed", description: "Certified therapists only" }
+    { icon: MapPin, number: "8", label: "Villa Areas", description: "Kuta to Uluwatu" },
+    { icon: Clock, number: "15", label: "Hours A Day", description: "07:00 – 22:00, daily" },
+    { icon: Users, number: "1:1", label: "Therapist Per Guest", description: "Couples on request" },
+    { icon: Award, number: "0", label: "Hidden Fees", description: "Travel included in the price" }
   ];
 
   const features = [
     { 
       icon: Shield, 
-      title: "100% Professional & Safe", 
-      description: "All therapists are licensed, insured, and background-checked. We maintain the highest safety and ethical standards." 
+      title: "Professional & Safe", 
+      description: "We confirm the therapist assigned to your session, arrive with a professional table, use fresh linens per guest, and follow a written hygiene routine." 
     },
     { 
       icon: Clock, 
@@ -56,9 +56,10 @@ const About = () => {
                 to bring the sacred healing traditions of Balinese massage directly to your private space.
               </p>
               <p>
-                Since 2022, we've served over <strong>500 clients from 25+ countries</strong>, transforming 
-                their villas, hotels, and private spaces into serene sanctuaries. Our mission is simple: 
-                provide world-class spa treatments with the convenience and privacy you deserve.
+                We are a small in-villa team working across <strong>Kuta, Legian, Seminyak, Canggu, Sanur,
+                Jimbaran, Nusa Dua and Uluwatu</strong>, turning villas, hotel rooms and guesthouses into
+                treatment rooms for the length of your session. Our mission is simple: professional spa
+                treatments with the convenience and privacy you came to Bali for.
               </p>
               <p>
                 Every session begins with a consultation to understand your needs. Whether you're recovering 

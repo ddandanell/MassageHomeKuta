@@ -116,11 +116,11 @@ const Footer = () => {
               <div className="space-y-3">
                 <div className="flex items-center gap-3 text-sm text-professional-gray">
                   <Shield className="w-4 h-4 text-emerald-400" />
-                  <span>Fully Licensed & Insured</span>
+                  <span>In-Villa, Travel Included</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm text-professional-gray">
                   <Award className="w-4 h-4 text-emerald-400" />
-                  <span>Certified Therapists</span>
+                  <span>Experienced Therapists</span>
                 </div>
               </div>
               <Button asChild className="w-full mt-6 bg-professional-gold hover:bg-amber-600 text-white border-0">

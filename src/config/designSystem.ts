@@ -124,13 +124,13 @@ export const DESIGN_SYSTEM = {
   availabilityText: "Available 07:00 – 22:00 Daily",
   availabilityBadge: "Available Now",
 
-  // Social Proof Elements
+  // Operational Facts (replaced unverified social proof 2026-10-31, ruling C-0005)
   socialProof: {
-    rating: "4.9/5 Rating",
-    clients: "500+ Happy Clients",
-    countries: "25+ Countries Served",
-    responseTime: "15 Min Response",
+    hours: "Daily 07:00 – 22:00",
+    coverage: "In-villa across south Bali",
+    responseTime: "WhatsApp booking",
     sameDayService: "Same Day Service",
+    equipment: "Table, linens & oils included",
   },
 } as const;
 

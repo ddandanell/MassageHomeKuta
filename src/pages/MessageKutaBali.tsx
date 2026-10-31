@@ -103,7 +103,7 @@ const MessageKutaBali = () => {
     },
     {
       question: "Are your massage therapists certified?",
-      answer: "Yes, all massage therapists are professionally certified with specialized training in Balinese massage, Swedish massage, deep tissue, aromatherapy, and other therapeutic modalities. We maintain a 4.9/5 rating from 500+ verified client reviews."
+      answer: "Yes. Every therapist on our team is trained in Balinese massage, Swedish massage, deep tissue and aromatherapy, and each session is briefed before the therapist leaves for your address. Ask us on WhatsApp before you book and we will confirm the training background of the therapist assigned to your session."
     }
   ];
 
@@ -136,7 +136,7 @@ const MessageKutaBali = () => {
           <div className="relative container mx-auto px-4 text-center z-10">
             <Badge className="mb-4 px-4 py-2 bg-professional-gold text-white border-0">
               <Star className="w-4 h-4 mr-2 inline" />
-              4.9/5 from 500+ Clients
+              In-Villa Across South Bali
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Message Kuta Bali – Professional Home Massage Service
@@ -178,11 +178,11 @@ const MessageKutaBali = () => {
             <div className="flex flex-wrap justify-center items-center gap-6 text-sm">
               <div className="flex items-center gap-2">
                 <Star className="w-5 h-5 text-spa-gold fill-spa-gold" />
-                <span className="font-semibold">4.9/5 Rating</span>
+                <span className="font-semibold">Daily 07:00–22:00</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-5 h-5 text-spa-gold" />
-                <span className="font-semibold">500+ Reviews</span>
+                <span className="font-semibold">Travel Included</span>
               </div>
               <div className="flex items-center gap-2">
                 <Shield className="w-5 h-5 text-spa-gold" />

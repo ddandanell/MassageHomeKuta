@@ -14,7 +14,8 @@
  * Requires: a completed `vite build` and google-chrome on PATH.
  */
 import { execFile, spawn } from "node:child_process";
-import { writeFileSync, readFileSync } from "node:fs";
+import { writeFileSync, readFileSync, readdirSync, statSync } from "node:fs";
+import { createHash } from "node:crypto";
 import { join, resolve } from "node:path";
 
 const ROOT = resolve(process.cwd());
@@ -32,14 +33,35 @@ const list = routes.length ? routes : defaultRoutes;
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
+/** Fingerprint of everything that can change a captured body. */
+function sourceHash() {
+  const files = [];
+  const walk = (dir) => {
+    for (const name of readdirSync(dir).sort()) {
+      const full = join(dir, name);
+      if (statSync(full).isDirectory()) walk(full);
+      else if (/\.(tsx?|jsx?|css|json)$/.test(name)) files.push(full);
+    }
+  };
+  walk(join(process.cwd(), "src"));
+  const h = createHash("sha1");
+  for (const f of files) h.update(f.replace(process.cwd(), "")).update(readFileSync(f));
+  return h.digest("hex").slice(0, 16);
+}
+
+
 const KEEP = new Set([
   "h1", "h2", "h3", "h4", "p", "ul", "ol", "li", "dl", "dt", "dd", "a", "strong",
   "em", "b", "i", "u", "small", "blockquote", "table", "thead", "tbody", "tr",
   "th", "td", "br", "hr", "figure", "figcaption", "section", "article", "div",
   "span", "nav",
 ]);
+// NOTE: <button> is deliberately NOT in this list. Accordion triggers on this site are
+// h3 > button, so dropping the element deleted the question text with it: /faq shipped
+// 23 empty h3 tags and 128 words with zero questions in the first byte (QA, 2026-10-31).
+// Unknown tags are unwrapped by the keep-list pass below, which preserves their text.
 const DROP_BLOCKS =
-  /<(script|style|svg|button|img|picture|iframe|video|audio|source|form|input|select|textarea|noscript)\b[\s\S]*?<\/\1>|<(img|input|br|hr|source)\b[^>]*>/gi;
+  /<(script|style|svg|img|picture|iframe|video|audio|source|form|input|select|textarea|noscript)\b[\s\S]*?<\/\1>|<(img|input|br|hr|source)\b[^>]*>/gi;
 
 function sanitize(mainHtml) {
   let html = mainHtml.replace(DROP_BLOCKS, " ");
@@ -58,6 +80,8 @@ function sanitize(mainHtml) {
     .replace(/\s+/g, " ")
     .replace(/>\s+</g, "><")
     .replace(/<p>\s*<\/p>/gi, "")
+    // an empty heading is worse than no heading: it advertises structure with no text
+    .replace(/<h([1-6])>\s*<\/h\1>/gi, "")
     .replace(/<li>\s*<\/li>/gi, "")
     .replace(/<a><\/a>/gi, "")
     .trim();
@@ -128,7 +152,7 @@ try {
   let prior = {};
   try { prior = JSON.parse(readFileSync(OUT, "utf8")).bodies || {}; } catch {}
   const merged = Object.assign(prior, bodies);
-  writeFileSync(OUT, JSON.stringify({ generatedAt: new Date().toISOString(), bodies: merged }, null, 1));
+  writeFileSync(OUT, JSON.stringify({ generatedAt: new Date().toISOString(), sourceHash: sourceHash(), bodies: merged }, null, 1));
   console.error(`wrote ${Object.keys(bodies).length}/${list.length} -> ${OUT}`);
 } finally {
   server.kill("SIGTERM");

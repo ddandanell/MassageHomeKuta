@@ -29,18 +29,19 @@ const BookingCTA = () => {
           </h2>
           
           <p className="text-lg md:text-xl lg:text-2xl mb-8 opacity-90 max-w-4xl mx-auto leading-relaxed">
-            Don't let stress or sore muscles stand in the way of your Bali experience. Join <strong>500+ satisfied clients</strong> 
-            who trust us for the ultimate home massage experience. Professional, licensed, and ready to serve you today.
+            Don't let stress or sore muscles stand in the way of your Bali experience. Tell us your area and the
+            treatment you want on WhatsApp, and we will confirm the therapist, the arrival window and the
+            upfront IDR price before you commit.
           </p>
 
           {/* Urgent messaging */}
           <div className="bg-professional-gold/20 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-professional-gold/30 mb-8 max-w-2xl mx-auto">
             <div className="flex items-center justify-center gap-2 mb-2">
               <Clock className="h-5 w-5 text-professional-gold" />
-              <span className="font-bold text-lg md:text-xl">Available Right Now!</span>
+              <span className="font-bold text-lg md:text-xl">Same-Day Availability</span>
             </div>
             <p className="text-sm md:text-base opacity-90">
-              Book in the next 10 minutes and we can be at your location within the hour
+              Message us and we will confirm the earliest arrival window for your area today. Same-day slots depend on therapist availability.
             </p>
           </div>
           
@@ -64,11 +65,11 @@ const BookingCTA = () => {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8 max-w-2xl mx-auto">
             <div className="flex items-center justify-center gap-2 text-sm md:text-base">
               <Star className="h-4 w-4 text-professional-gold fill-current" />
-              <span className="font-semibold">4.9/5 Rating</span>
+              <span className="font-semibold">Daily 07:00–22:00</span>
             </div>
             <div className="flex items-center justify-center gap-2 text-sm md:text-base">
               <MessageCircle className="h-4 w-4 text-professional-gold" />
-              <span className="font-semibold">15 Min Response</span>
+              <span className="font-semibold">WhatsApp Booking</span>
             </div>
             <div className="flex items-center justify-center gap-2 text-sm md:text-base">
               <Clock className="h-4 w-4 text-professional-gold" />
@@ -83,7 +84,7 @@ const BookingCTA = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm md:text-base opacity-90">
               <div>✅ Fresh linens & premium supplies</div>
               <div>✅ Premium organic oils & aromatherapy</div>
-              <div>✅ Licensed, experienced therapists</div>
+              <div>✅ Experienced, briefed therapists</div>
               <div>✅ Relaxing music & complete setup</div>
             </div>
           </div>

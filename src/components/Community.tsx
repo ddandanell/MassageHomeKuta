@@ -38,13 +38,13 @@ const Community = () => {
             <div className="grid grid-cols-2 gap-6 mt-8">
               <Card className="bg-gradient-subtle border-0 shadow-professional text-center p-6">
                 <Users className="w-8 h-8 text-professional-teal mx-auto mb-3" />
-                <div className="text-2xl font-bold text-professional-navy">2,500+</div>
-                <div className="text-professional-gray">Regular Clients</div>
+                <div className="text-2xl font-bold text-professional-navy">8</div>
+                <div className="text-professional-gray">Villa Areas Covered</div>
               </Card>
               <Card className="bg-gradient-subtle border-0 shadow-professional text-center p-6">
                 <Globe className="w-8 h-8 text-professional-teal mx-auto mb-3" />
-                <div className="text-2xl font-bold text-professional-navy">45+</div>
-                <div className="text-professional-gray">Countries Served</div>
+                <div className="text-2xl font-bold text-professional-navy">07:00–22:00</div>
+                <div className="text-professional-gray">Daily Booking Hours</div>
               </Card>
             </div>
           </div>
@@ -75,7 +75,7 @@ const Community = () => {
           <div className="text-center">
             <Shield className="w-12 h-12 text-professional-teal mx-auto mb-4" />
             <h4 className="font-bold text-professional-navy mb-2">Safety First</h4>
-            <p className="text-professional-gray text-sm">Licensed professionals with verified backgrounds</p>
+            <p className="text-professional-gray text-sm">Same therapist on request for repeat bookings</p>
           </div>
           <div className="text-center">
             <Clock className="w-12 h-12 text-professional-teal mx-auto mb-4" />

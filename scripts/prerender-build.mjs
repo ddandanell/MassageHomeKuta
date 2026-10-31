@@ -12,7 +12,8 @@
  *  - seo/blog-bodies-legacy.json  captured from the 3 hand-built JSX posts
  * The DOM snapshot can only supply a clamped skeleton, hence the two sources.
  */
-import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, readdirSync, statSync } from "node:fs";
+import { createHash } from "node:crypto";
 import { dirname, join, resolve } from "node:path";
 
 const DIST = resolve(process.argv[2] || "dist");
@@ -28,6 +29,39 @@ const esc = (s) =>
 const DATA_BODIES = resolve(process.env.BLOG_BODIES || "seo/blog-bodies.json");
 const LEGACY_BODIES = resolve(process.env.BLOG_BODIES_LEGACY || "seo/blog-bodies-legacy.json");
 const PAGE_BODIES = resolve(process.env.PAGE_BODIES || "seo/page-bodies.json");
+const STRICT_BODIES = process.env.SEO_STRICT_BODIES === "1";
+
+/** Fingerprint of everything that can change a captured body. */
+function sourceHash() {
+  const files = [];
+  const walk = (dir) => {
+    for (const name of readdirSync(dir).sort()) {
+      const full = join(dir, name);
+      if (statSync(full).isDirectory()) walk(full);
+      else if (/\.(tsx?|jsx?|css|json)$/.test(name)) files.push(full);
+    }
+  };
+  walk(join(process.cwd(), "src"));
+  const h = createHash("sha1");
+  for (const f of files) h.update(f.replace(process.cwd(), "")).update(readFileSync(f));
+  return h.digest("hex").slice(0, 16);
+}
+
+// A frozen body snapshot plus copy that has moved on is how the site shipped one
+// release's testimonial text under another release's markup. Fail when asked to
+// (SEO_STRICT_BODIES=1), warn otherwise: Vercel checks out every file at once, so
+// mtimes cannot tell us anything, but the content hash can.
+{
+  const snapHash = (() => {
+    try { return JSON.parse(readFileSync(PAGE_BODIES, "utf8")).sourceHash; } catch { return undefined; }
+  })();
+  if (snapHash && snapHash !== sourceHash()) {
+    const msg = `prerender: page-bodies.json is stale (captured at ${snapHash}, src is ${sourceHash()}) — run: npx vite build && node scripts/page-bodies.mjs`;
+    if (STRICT_BODIES) { console.error(msg); process.exit(1); }
+    console.warn(msg);
+  }
+}
+
 const bodies = {};
 for (const [file, label] of [
   [PAGE_BODIES, "page"],

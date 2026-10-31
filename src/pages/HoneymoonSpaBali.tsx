@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import IncludedInTreatment from "@/components/IncludedInTreatment";
 import { MessageCircle, Clock, Heart, Sparkles, Shield, Star, CheckCircle2, MapPin, Camera, Gift } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SITE_CONFIG } from "@/config/site";
@@ -138,11 +139,6 @@ const HoneymoonSpaBali = () => {
     }
   ];
 
-  const testimonials = [
-    { name: "Emma & James", location: "UK", text: "The highlight of our honeymoon! Everything was perfect - the massage, the flowers, the champagne. We'll treasure these memories forever.", rating: 5 },
-    { name: "Sophie & David", location: "Australia", text: "Absolutely magical experience. The therapists were professional, the romantic setup was stunning, and it felt so special. Highly recommend for honeymooners!", rating: 5 },
-    { name: "Maria & Carlos", location: "Spain", text: "We got the Ultimate Luxury package and it exceeded all expectations. The photography service captured beautiful moments. Worth every penny!", rating: 5 }
-  ];
 
   return (
     <div className="min-h-screen">
@@ -346,39 +342,11 @@ const HoneymoonSpaBali = () => {
           </div>
         </section>
 
-        {/* Testimonials Section */}
-        <section className="py-16 bg-spa-cream/30">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-bold text-spa-earth mb-6">
-                Honeymoon Memories
-              </h2>
-              <div className="flex items-center justify-center gap-2 text-spa-gold">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-current" />
-                ))}
-                <span className="text-spa-stone ml-2">5.0/5 from 75+ honeymooners</span>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-              {testimonials.map((testimonial, index) => (
-                <Card key={index} className="bg-white border-0 shadow-soft">
-                  <CardContent className="pt-6">
-                    <div className="flex gap-1 mb-3">
-                      {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-current text-spa-gold" />
-                      ))}
-                    </div>
-                    <p className="text-spa-stone mb-4 italic">"{testimonial.text}"</p>
-                    <p className="text-sm text-spa-earth font-semibold">{testimonial.name}</p>
-                    <p className="text-xs text-spa-stone">{testimonial.location}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
+        <IncludedInTreatment
+          treatment="honeymoon spa session"
+          area="your honeymoon villa"
+        />
+      
 
         {/* Related Services Section */}
         <section className="py-16 bg-background">

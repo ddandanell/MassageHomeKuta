@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import IncludedInTreatment from "@/components/IncludedInTreatment";
 import { MessageCircle, Clock, Users, Sparkles, Shield, Star, CheckCircle2, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SITE_CONFIG } from "@/config/site";
@@ -165,11 +166,6 @@ const GroupSpaDayBali = () => {
     }
   ];
 
-  const testimonials = [
-    { name: "Jessica & friends", location: "USA", text: "Best girls' trip activity ever! All of us got different massages and the coordination was seamless. Everyone loved it.", rating: 5 },
-    { name: "The Chen Family", location: "Singapore", text: "Perfectly coordinated family spa day. Our kids had gentle massage, adults got deeper work. Amazing experience together.", rating: 5 },
-    { name: "Wedding Party", location: "Australia", text: "Organized group massage for bridesmaids before wedding. Professional, fun, and helped everyone relax before the big day!", rating: 5 }
-  ];
 
   return (
     <div className="min-h-screen">
@@ -421,41 +417,11 @@ const GroupSpaDayBali = () => {
           </div>
         </section>
 
-        {/* Testimonials Section */}
-        <section className="py-16 bg-spa-cream/30">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-bold text-spa-earth mb-6">
-                What Groups Are Saying
-              </h2>
-              <div className="flex items-center justify-center gap-2 text-spa-gold">
-                <Star className="w-5 h-5 fill-current" />
-                <Star className="w-5 h-5 fill-current" />
-                <Star className="w-5 h-5 fill-current" />
-                <Star className="w-5 h-5 fill-current" />
-                <Star className="w-5 h-5 fill-current" />
-                <span className="text-spa-stone ml-2">4.9/5 from 120+ groups</span>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-              {testimonials.map((testimonial, index) => (
-                <Card key={index} className="bg-white border-0 shadow-soft">
-                  <CardContent className="pt-6">
-                    <div className="flex gap-1 mb-3">
-                      {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-current text-spa-gold" />
-                      ))}
-                    </div>
-                    <p className="text-spa-stone mb-4 italic">"{testimonial.text}"</p>
-                    <p className="text-sm text-spa-earth font-semibold">{testimonial.name}</p>
-                    <p className="text-xs text-spa-stone">{testimonial.location}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
+        <IncludedInTreatment
+          treatment="group spa day"
+          area="your villa or hotel"
+        />
+      
 
         {/* Related Services Section */}
         <section className="py-16 bg-background">
