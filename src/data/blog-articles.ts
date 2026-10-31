@@ -35,8 +35,8 @@ export const blogArticles: BlogArticle[] = [
   datePublished: "2026-10-31T11:45:00+08:00",
   dateModified: "2026-10-31T11:45:00+08:00",
   readMinutes: 7,
-  image: "/images/hero/hero-3.jpg",
-  imageAlt: "Villa bedroom in Kuta with space cleared beside the bed for a massage table and towels folded on top",
+  image: "/images/blog/prepare-villa-hotel-room-home-massage/hero.jpg",
+  imageAlt: "Private Bali villa bedroom prepared with a portable massage table, fresh white towels, and tropical garden light in Kuta",
   intro: "The difference between a good in-room massage and a slightly awkward one is almost never the therapist. It is the room. A bed that is too soft, an aircon vent blasting cold air across the table, a phone that rings twice, a security post that will not let anyone in — these are the things that eat into your hour. This is the checklist to run through in the ten minutes before your therapist arrives, written for villas, hotel rooms and everything in between around Kuta.",
   sections: [
     {
@@ -45,7 +45,7 @@ export const blogArticles: BlogArticle[] = [
     },
     {
       "h2": "Space: what actually fits in a Kuta hotel room",
-      html: "<p>Standard rooms in Kuta and Tuban are built around a bed, a wardrobe and a bathroom door that swings into the only free floor. A table needs roughly 190cm by 70cm, and the therapist needs about 60cm of clear space along one long side to work and step.</p><p>The reliable solution is usually to shift the bed — pushed against the wall or slid towards the window, it often frees the full length of the room. Two other options work well:</p><ul><li><strong>Twin rooms.</strong> Push the two single beds together and the gap between them disappears.</li><li><strong>Villa living areas.</strong> A tiled or wooden living room floor is often your best space: more airflow, more room, less risk of oil on hotel linen. Move the coffee table, not the sofa.</li></ul><p>Sliding glass doors help: open to a private garden or balcony, the usable area doubles and the therapist has somewhere to put their bag. If the bedroom is genuinely too tight, a shaded terrace works better — provided it is not in view of the street.</p>"
+      html: "<figure class=\"my-6\"><img src=\"/images/blog/prepare-villa-hotel-room-home-massage/section-1.jpg\" alt=\"Cleared floor space beside a hotel bed in Kuta with folded spa towels and essential oils ready for an in-room massage\" width=\"1200\" height=\"675\" loading=\"lazy\" class=\"w-full rounded-xl shadow-md object-cover\" /></figure><p>Standard rooms in Kuta and Tuban are built around a bed, a wardrobe and a bathroom door that swings into the only free floor. A table needs roughly 190cm by 70cm, and the therapist needs about 60cm of clear space along one long side to work and step.</p><p>The reliable solution is usually to shift the bed — pushed against the wall or slid towards the window, it often frees the full length of the room. Two other options work well:</p><ul><li><strong>Twin rooms.</strong> Push the two single beds together and the gap between them disappears.</li><li><strong>Villa living areas.</strong> A tiled or wooden living room floor is often your best space: more airflow, more room, less risk of oil on hotel linen. Move the coffee table, not the sofa.</li></ul><p>Sliding glass doors help: open to a private garden or balcony, the usable area doubles and the therapist has somewhere to put their bag. If the bedroom is genuinely too tight, a shaded terrace works better — provided it is not in view of the street.</p>"
     },
     {
       "h2": "Temperature, light and sound",
@@ -57,7 +57,7 @@ export const blogArticles: BlogArticle[] = [
     },
     {
       "h2": "What to say to the therapist in the first two minutes",
-      html: "<p>Most people leave a session underwhelmed because they said nothing. Two minutes of briefing is worth more than an extra half hour on the table. Cover five things:</p><ol><li><strong>Where it hurts and how.</strong> Sharp, dull, stiff, or a spot you can point to. \"Left shoulder blade, worse when I turn my head\" is a useful sentence.</li><li><strong>What to avoid.</strong> Recent injuries, sunburnt shoulders, a knee you had operated on, an area you do not want touched.</li><li><strong>Pregnancy or recent surgery.</strong> Say it plainly at the start. A well-briefed therapist will adjust positions and pressure, and may suggest a different treatment.</li><li><strong>Pressure preference.</strong> Medium, firm, or \"I will tell you if it is too much\" — then tell them mid-session. Adjusting pressure is normal, not rude.</li><li><strong>Anything practical.</strong> Ticklish feet, a bad neck pillow, a preference for silence, or the fact that you would like to fall asleep.</li></ol><p>Booking for two people with different needs? Say so in the message so the therapists arrive prepared. There is a full guide to <a href=\"/blog/couples-massage-kuta-guide\">setting up a couples massage in a Kuta villa or hotel room</a>.</p>"
+      html: "<figure class=\"my-6\"><img src=\"/images/blog/prepare-villa-hotel-room-home-massage/section-2.jpg\" alt=\"Warm lighting, massage oils, and fresh linen arranged for a relaxing home massage session in Bali\" width=\"1200\" height=\"675\" loading=\"lazy\" class=\"w-full rounded-xl shadow-md object-cover\" /></figure><p>Most people leave a session underwhelmed because they said nothing. Two minutes of briefing is worth more than an extra half hour on the table. Cover five things:</p><ol><li><strong>Where it hurts and how.</strong> Sharp, dull, stiff, or a spot you can point to. \"Left shoulder blade, worse when I turn my head\" is a useful sentence.</li><li><strong>What to avoid.</strong> Recent injuries, sunburnt shoulders, a knee you had operated on, an area you do not want touched.</li><li><strong>Pregnancy or recent surgery.</strong> Say it plainly at the start. A well-briefed therapist will adjust positions and pressure, and may suggest a different treatment.</li><li><strong>Pressure preference.</strong> Medium, firm, or \"I will tell you if it is too much\" — then tell them mid-session. Adjusting pressure is normal, not rude.</li><li><strong>Anything practical.</strong> Ticklish feet, a bad neck pillow, a preference for silence, or the fact that you would like to fall asleep.</li></ol><p>Booking for two people with different needs? Say so in the message so the therapists arrive prepared. There is a full guide to <a href=\"/blog/couples-massage-kuta-guide\">setting up a couples massage in a Kuta villa or hotel room</a>.</p>"
     },
     {
       "h2": "Choosing the treatment before you set up the room",
@@ -110,8 +110,8 @@ export const blogArticles: BlogArticle[] = [
   datePublished: "2026-10-31T06:45:00+08:00",
   dateModified: "2026-10-31T06:45:00+08:00",
   readMinutes: 8,
-  image: "/images/hero/hero-4.jpg",
-  imageAlt: "Two massage tables set up side by side in a villa room in Kuta with towels and oil ready",
+  image: "/images/blog/couples-massage-kuta-guide/hero.jpg",
+  imageAlt: "Two massage tables set side by side in a private Bali villa for a couples massage session in Kuta",
   intro: "A couples massage is easy to book and surprisingly easy to get slightly wrong: two tables in a room that only fits one, both people wanting different pressure, a dinner reservation fifteen minutes after the session ends. Most of the friction is logistics, not massage. This guide covers the room, the timing, the treatment pairing and the hotel rules, so the hour itself is the relaxing part.",
   sections: [
     {
@@ -120,7 +120,7 @@ export const blogArticles: BlogArticle[] = [
     },
     {
       "h2": "The room: what two tables need",
-      html: "<p>Each table needs roughly two metres by one metre of flat floor, plus walking space on the outer side for the therapist. A firm queen bed can host one person comfortably, but not two side by side unless the bed is unusually wide — do not plan on two people on one mattress.</p><ul><li>Clear the floor before the therapists arrive, not while they wait at the door.</li><li>Turn the air conditioning on twenty minutes early and set it to around 22–24°C. Bodies under a sheet cool down fast once the massage starts.</li><li>Move breakables off side tables. Oil and loose elbows do not mix with ceramics.</li><li>Have a bathroom within a few steps and a towel per person beyond the ones the therapists bring.</li><li>If the room is tiled and hard, a rug under the tables makes the setup quieter and warmer.</li></ul><p>Give the therapists ten to fifteen minutes of setup time before the session starts. That time is not billable massage, and skipping it means your hour is shorter.</p>"
+      html: "<figure class=\"my-6\"><img src=\"/images/blog/couples-massage-kuta-guide/section-1.jpg\" alt=\"Side-by-side couples massage setup in a spacious Kuta villa living room with fresh linen and spa oils\" width=\"1200\" height=\"675\" loading=\"lazy\" class=\"w-full rounded-xl shadow-md object-cover\" /></figure><p>Each table needs roughly two metres by one metre of flat floor, plus walking space on the outer side for the therapist. A firm queen bed can host one person comfortably, but not two side by side unless the bed is unusually wide — do not plan on two people on one mattress.</p><ul><li>Clear the floor before the therapists arrive, not while they wait at the door.</li><li>Turn the air conditioning on twenty minutes early and set it to around 22–24°C. Bodies under a sheet cool down fast once the massage starts.</li><li>Move breakables off side tables. Oil and loose elbows do not mix with ceramics.</li><li>Have a bathroom within a few steps and a towel per person beyond the ones the therapists bring.</li><li>If the room is tiled and hard, a rug under the tables makes the setup quieter and warmer.</li></ul><p>Give the therapists ten to fifteen minutes of setup time before the session starts. That time is not billable massage, and skipping it means your hour is shorter.</p>"
     },
     {
       "h2": "Choosing treatments that work side by side",
@@ -136,7 +136,7 @@ export const blogArticles: BlogArticle[] = [
     },
     {
       "h2": "Pressure, privacy and talking it out",
-      html: "<p>Agree the pressure with your own therapist, quietly, in the first five minutes. Do not negotiate across the room — it turns a relaxing hour into a group discussion. If you want silence, say so at the start; if you want to chat, that is fine too, and most therapists will match your mood.</p><p>Privacy works the same way. Underwear can stay on, you stay under the sheet, and only the area being worked on is uncovered. If you would rather the room be dimmer, ask. If you want your partner to go first while you shower, say that when booking a <a href=\"/couples-massage-kuta\">couples massage</a> and the timing can usually be arranged.</p><p>The etiquette is broadly the same as a solo session and is covered in detail in <a href=\"/blog/massage-etiquette-bali-guide\">this etiquette guide</a>, including tipping, phones and what to say if something is uncomfortable.</p>"
+      html: "<figure class=\"my-6\"><img src=\"/images/blog/couples-massage-kuta-guide/section-2.jpg\" alt=\"Calm post-massage relaxation setting in a Bali villa with tropical greenery and soft ambient lighting\" width=\"1200\" height=\"675\" loading=\"lazy\" class=\"w-full rounded-xl shadow-md object-cover\" /></figure><p>Agree the pressure with your own therapist, quietly, in the first five minutes. Do not negotiate across the room — it turns a relaxing hour into a group discussion. If you want silence, say so at the start; if you want to chat, that is fine too, and most therapists will match your mood.</p><p>Privacy works the same way. Underwear can stay on, you stay under the sheet, and only the area being worked on is uncovered. If you would rather the room be dimmer, ask. If you want your partner to go first while you shower, say that when booking a <a href=\"/couples-massage-kuta\">couples massage</a> and the timing can usually be arranged.</p><p>The etiquette is broadly the same as a solo session and is covered in detail in <a href=\"/blog/massage-etiquette-bali-guide\">this etiquette guide</a>, including tipping, phones and what to say if something is uncomfortable.</p>"
     },
     {
       "h2": "Aftercare: the part people skip",
@@ -189,8 +189,8 @@ export const blogArticles: BlogArticle[] = [
   datePublished: "2026-10-31T10:30:00+08:00",
   dateModified: "2026-10-31T10:30:00+08:00",
   readMinutes: 7,
-  image: "/images/hero/hero-2.jpg",
-  imageAlt: "Therapist applying firm forearm pressure during a deep tissue massage at a villa in Kuta",
+  image: "/images/blog/deep-tissue-vs-balinese-massage-kuta/hero.jpg",
+  imageAlt: "Massage therapist applying firm forearm pressure to a client back during a deep tissue massage in Kuta",
   intro: "Most people in Kuta book whichever massage name they recognise and then spend the session quietly hoping the pressure is right. Deep tissue and Balinese are the two treatments visitors mix up most, and the difference matters: one is built to chase a specific problem, the other is built to reset the whole body. This guide explains what each one actually does, who each suits, and how to choose in under a minute.",
   sections: [
     {
@@ -203,11 +203,11 @@ export const blogArticles: BlogArticle[] = [
     },
     {
       "h2": "Deep tissue: what it is genuinely good for",
-      html: "<p>Deep tissue earns its reputation in a few specific situations:</p><ul><li><strong>Long-haul flight stiffness.</strong> Hours in a seat shorten the hip flexors and lock the upper back. Sustained pressure on the glutes and mid-back unwinds that faster than a general massage.</li><li><strong>Desk posture.</strong> If you work on a laptop, the upper traps and the muscles beside the shoulder blade carry the load. That is exactly where deep tissue works.</li><li><strong>Training load.</strong> Surfers, runners and gym-goers with tight calves, quads or lats get more from targeted work than from a full-body sequence.</li><li><strong>One-sided pain.</strong> If the left side hurts and the right side does not, you want a therapist who will spend twenty minutes on the left.</li></ul><p>What it is not good for: total relaxation, a first massage, or a hangover. Deep tissue asks you to breathe through discomfort, which is the opposite of what most people want on holiday.</p>"
+      html: "<figure class=\"my-6\"><img src=\"/images/blog/deep-tissue-vs-balinese-massage-kuta/section-1.jpg\" alt=\"Targeted deep tissue massage working out upper back and shoulder tension after surfing and travel in Bali\" width=\"1200\" height=\"675\" loading=\"lazy\" class=\"w-full rounded-xl shadow-md object-cover\" /></figure><p>Deep tissue earns its reputation in a few specific situations:</p><ul><li><strong>Long-haul flight stiffness.</strong> Hours in a seat shorten the hip flexors and lock the upper back. Sustained pressure on the glutes and mid-back unwinds that faster than a general massage.</li><li><strong>Desk posture.</strong> If you work on a laptop, the upper traps and the muscles beside the shoulder blade carry the load. That is exactly where deep tissue works.</li><li><strong>Training load.</strong> Surfers, runners and gym-goers with tight calves, quads or lats get more from targeted work than from a full-body sequence.</li><li><strong>One-sided pain.</strong> If the left side hurts and the right side does not, you want a therapist who will spend twenty minutes on the left.</li></ul><p>What it is not good for: total relaxation, a first massage, or a hangover. Deep tissue asks you to breathe through discomfort, which is the opposite of what most people want on holiday.</p>"
     },
     {
       "h2": "Balinese: what it is genuinely good for",
-      html: "<p>Balinese massage is the better default for most visitors, and here is why. It covers feet, legs, back, shoulders, arms, neck and head in one session, so nothing gets missed. The stretching at the end addresses the hips and spine, which is where travel and bad hotel mattresses show up first. And because the pressure is broad rather than localised, you leave loose rather than tender.</p><p>Book it if you are jet-lagged, if you have been walking all day in the heat, if you want to fall asleep during the treatment, or if you simply want the thing that Bali is known for. For a deeper look at the technique itself, read the <a href=\"/blog/balinese-massage-complete-guide\">complete guide to Balinese massage</a>.</p>"
+      html: "<figure class=\"my-6\"><img src=\"/images/blog/deep-tissue-vs-balinese-massage-kuta/section-2.jpg\" alt=\"Flowing palm strokes and warm aromatic oil used during a traditional Balinese full-body massage\" width=\"1200\" height=\"675\" loading=\"lazy\" class=\"w-full rounded-xl shadow-md object-cover\" /></figure><p>Balinese massage is the better default for most visitors, and here is why. It covers feet, legs, back, shoulders, arms, neck and head in one session, so nothing gets missed. The stretching at the end addresses the hips and spine, which is where travel and bad hotel mattresses show up first. And because the pressure is broad rather than localised, you leave loose rather than tender.</p><p>Book it if you are jet-lagged, if you have been walking all day in the heat, if you want to fall asleep during the treatment, or if you simply want the thing that Bali is known for. For a deeper look at the technique itself, read the <a href=\"/blog/balinese-massage-complete-guide\">complete guide to Balinese massage</a>.</p>"
     },
     {
       "h2": "Pressure, soreness and the day after",
@@ -260,8 +260,8 @@ export const blogArticles: BlogArticle[] = [
   datePublished: "2026-10-31T09:00:00+08:00",
   dateModified: "2026-10-31T09:00:00+08:00",
   readMinutes: 7,
-  image: "/images/hero/hero-1.jpg",
-  imageAlt: "Balinese massage being performed on a massage table at a villa in south Bali",
+  image: "/images/blog/balinese-massage-complete-guide/hero.jpg",
+  imageAlt: "Traditional Balinese massage treatment in Bali using warm essential oils, acupressure, and flowing palm strokes",
   intro: "Balinese massage is the default massage in Bali and the one most visitors book without knowing what it involves. It is not a light spa rub and it is not deep tissue either. It sits in the middle: long, firm strokes along the muscles, acupressure on specific points, and stretching at the end. This guide explains what happens in a session, how it compares with the other treatments on the menu, and how to get the pressure you actually want.",
   sections: [
     {
@@ -270,11 +270,11 @@ export const blogArticles: BlogArticle[] = [
     },
     {
       "h2": "How it compares with deep tissue and Thai massage",
-      html: "<p><strong>Deep tissue</strong> is slower and more targeted. The therapist works specific areas with sustained pressure, often on the knots that sit beside the shoulder blade or in the glutes. It is the better choice if you have one stubborn problem area.</p><p><strong>Thai massage</strong> is done on a mat, fully clothed, and is dominated by stretching and compression rather than oil. Balinese massage is done on a table, with oil, and is dominated by strokes and acupressure.</p><p><strong>Aromatherapy</strong> is the lightest option: same strokes, less pressure, more attention to scent and relaxation. If you want to fall asleep, pick aromatherapy. If you want to feel worked on, pick Balinese.</p>"
+      html: "<figure class=\"my-6\"><img src=\"/images/blog/balinese-massage-complete-guide/section-1.jpg\" alt=\"Balinese massage therapist combining gentle stretching and thumb pressure along the back muscles\" width=\"1200\" height=\"675\" loading=\"lazy\" class=\"w-full rounded-xl shadow-md object-cover\" /></figure><p><strong>Deep tissue</strong> is slower and more targeted. The therapist works specific areas with sustained pressure, often on the knots that sit beside the shoulder blade or in the glutes. It is the better choice if you have one stubborn problem area.</p><p><strong>Thai massage</strong> is done on a mat, fully clothed, and is dominated by stretching and compression rather than oil. Balinese massage is done on a table, with oil, and is dominated by strokes and acupressure.</p><p><strong>Aromatherapy</strong> is the lightest option: same strokes, less pressure, more attention to scent and relaxation. If you want to fall asleep, pick aromatherapy. If you want to feel worked on, pick Balinese.</p>"
     },
     {
       "h2": "What a villa session looks like",
-      html: "<p>The therapist arrives with a folding table, fresh sheets, towels and oil, and needs about ten to fifteen minutes to set up. A living room with the coffee table pushed aside, or a large bedroom, works well. Air conditioning on, phone on silent, and a power point within reach is all the preparation needed.</p><p>You stay covered by a sheet throughout; only the area being worked on is uncovered. Oil is used on the back, legs, arms and shoulders. If you have sunburn, say so at the start so the therapist can work around it or use less oil on the burned area.</p>"
+      html: "<figure class=\"my-6\"><img src=\"/images/blog/balinese-massage-complete-guide/section-2.jpg\" alt=\"In-villa Balinese massage table set up near a quiet garden terrace in south Bali\" width=\"1200\" height=\"675\" loading=\"lazy\" class=\"w-full rounded-xl shadow-md object-cover\" /></figure><p>The therapist arrives with a folding table, fresh sheets, towels and oil, and needs about ten to fifteen minutes to set up. A living room with the coffee table pushed aside, or a large bedroom, works well. Air conditioning on, phone on silent, and a power point within reach is all the preparation needed.</p><p>You stay covered by a sheet throughout; only the area being worked on is uncovered. Oil is used on the back, legs, arms and shoulders. If you have sunburn, say so at the start so the therapist can work around it or use less oil on the burned area.</p>"
     },
     {
       "h2": "How to get the right pressure",
@@ -316,140 +316,128 @@ export const blogArticles: BlogArticle[] = [
     "massage-etiquette-bali-guide"
   ]
 },
-  {
-    slug: "first-home-massage-kuta-what-to-expect",
-    title: "Your First Home Massage in Kuta: What Actually Happens",
-    metaTitle: "First Home Massage in Kuta: What to Expect",
-    description:
-      "A step-by-step look at your first in-villa massage in Kuta: booking, setup, what the therapist brings, pressure, tipping and privacy.",
-    excerpt:
-      "What a first in-villa massage in Kuta looks like from the WhatsApp message to the therapist leaving, including setup, privacy and payment.",
-    keyword: "first home massage kuta",
-    category: "Booking & Basics",
-    datePublished: "2026-10-31T08:00:00+08:00",
-    readMinutes: 7,
-    image: "/images/hero/hero-4.jpg",
-    imageAlt: "Therapist setting up a massage table in a villa in Kuta, Bali",
-    intro:
-      "A home massage is a normal hotel-room or villa service in Bali, but the first time you book one it is fair to wonder what you are actually letting into the room. This is the plain version: what happens, what the therapist brings, how long it takes to set up, and what you are expected to pay and tip.",
-    sections: [
-      {
-        h2: "Booking takes one WhatsApp message",
-        html:
-          "<p>You send your name, the area (Kuta, Legian, Seminyak, Canggu and so on), the treatment, the number of people, and the time you want. The therapist confirms availability and the price for your area before anyone moves. If you are booking for the same evening, say so early in the message because travel time between Kuta and Uluwatu, for example, is not trivial.</p><p>Give the villa or hotel name and the room number, not just a pin. Drivers and therapists work faster when the address is exact.</p>",
-      },
-      {
-        h2: "What the therapist brings and what they need from you",
-        html:
-          "<p>Standard kit: a folding massage table, fresh sheets, towels, oil, and a small speaker for music. You do not need to own anything.</p><p>You need a space roughly 2 metres by 1 metre, a power point within reach, and air conditioning or a fan. A living room with the sofa pushed back is fine. Outdoors under a fan is fine in the evening. A bed works for some treatments but a table gives better pressure and a better session.</p>",
-      },
-      {
-        h2: "The setup window is real",
-        html:
-          "<p>Expect 10 to 15 minutes of setup before the massage starts. If you book a 60-minute treatment at 7pm, the hands-on time begins around 7:10 and finishes at 8:10. Build that into dinner plans and driver pickups.</p><p>If you are in a hotel, tell reception a therapist is coming. Some hotels ask guests to meet their therapist in the lobby, some allow direct access to the corridor. A quick call to the front desk prevents a 20-minute delay at security.</p>",
-      },
-      {
-        h2: "Pressure, privacy and what you keep on",
-        html:
-          "<p>You stay covered by a sheet the whole session; only the area being worked on is uncovered. Balinese massage is medium pressure with long strokes, deep tissue is slower and firmer on specific muscles, and a relaxation massage is lighter throughout. Speak up in the first five minutes if the pressure is wrong: therapists adjust immediately, and it is easier than pretending for an hour.</p><p>You can keep underwear on. You can ask for a female or male therapist when booking. You can ask them to skip a body area entirely. None of that is an unusual request.</p>",
-      },
-      {
-        h2: "Payment and tipping",
-        html:
-          "<p>Most bookings are paid in cash in Indonesian rupiah at the end of the session, and some therapists accept transfer. Confirm the amount and the method when you book so nobody is counting notes in the dark.</p><p>Tipping is optional. In Bali a tip of around 10 percent is a normal gesture for good service and is genuinely appreciated, but it is not obligatory and it is not a hidden charge.</p>",
-      },
-      {
-        h2: "After the massage",
-        html:
-          "<p>Drink water, avoid going straight into a heavy meal, and give yourself ten minutes before driving a scooter. If you booked deep tissue for a specific problem, expect mild soreness the next day, similar to after a gym session. That is normal; sharp pain is not, and it is worth telling the therapist.</p>",
-      },
-    ],
-    faqs: [
-      {
-        q: "Do I need to provide a massage table?",
-        a: "No. The therapist brings a professional folding table, fresh linen, towels and oil. You only need floor space and a power point.",
-      },
-      {
-        q: "How much space is needed for a home massage?",
-        a: "Roughly two metres by one metre of clear floor, plus a little room to walk around the table. A living room or a large bedroom usually works.",
-      },
-      {
-        q: "Can two people be massaged at the same time?",
-        a: "Yes, couples bookings are standard. Two therapists arrive together with two tables, which needs more floor space than a single session.",
-      },
-      {
-        q: "Is it normal to tip the therapist?",
-        a: "Tipping is optional. Around ten percent is a common gesture in Bali for good service, but the quoted price is the full price.",
-      },
-    ],
-    related: ["massage-etiquette-bali-guide", "balinese-massage-complete-guide"],
-  },
-  {
-    slug: "massage-etiquette-bali-guide",
-    title: "Massage Etiquette in Bali: The Unwritten Rules Visitors Ask About",
-    metaTitle: "Massage Etiquette in Bali: What to Know",
-    description:
-      "Practical massage etiquette in Bali: what to wear, tipping, talking during a session, late arrivals, cancellations and how to ask for a different pressure.",
-    excerpt:
-      "The practical etiquette questions visitors actually ask about massage in Bali, answered without the myths.",
-    keyword: "massage etiquette bali",
-    category: "Booking & Basics",
-    datePublished: "2026-10-31T08:30:00+08:00",
-    readMinutes: 6,
-    image: "/images/hero/hero-2.jpg",
-    imageAlt: "Folded towels and massage oil prepared for an in-villa massage in Bali",
-    intro:
-      "Most etiquette questions about massage in Bali have simple answers, and the simple answers are almost always 'ask, and it is fine'. Here is what to do so the session is comfortable for you and straightforward for the therapist.",
-    sections: [
-      {
-        h2: "Before the therapist arrives",
-        html:
-          "<ul><li>Confirm the address and room number in writing.</li><li>Clear floor space and turn the air conditioning on early so the room is cool.</li><li>Shower first if you have been at the beach; sand and salt shorten the useful part of a massage.</li><li>Tell reception if you are in a hotel.</li></ul>",
-      },
-      {
-        h2: "What to wear and what to remove",
-        html:
-          "<p>Undress to the level you are comfortable with and get under the sheet. Underwear can stay on. The therapist works around the sheet and only uncovers the area being treated. Nobody expects you to be naked and nobody comments on it either way.</p>",
-      },
-      {
-        h2: "Talking during the massage",
-        html:
-          "<p>Silence is normal and so is conversation. If you want quiet, say 'quiet please' at the start and the therapist will let you rest. If you want to chat about Bali, that is equally normal. What therapists do want is feedback on pressure, temperature and any painful spot.</p>",
-      },
-      {
-        h2: "Late arrivals and cancellations",
-        html:
-          "<p>If you are running late, message immediately. Most therapists will shorten the session to protect the next booking rather than extend the end time. Cancellations with a few hours' notice are usually free; a no-show wastes a therapist's evening, and repeated no-shows get deposits requested.</p>",
-      },
-      {
-        h2: "Payment and tipping without awkwardness",
-        html:
-          "<p>Have the cash ready at the end, in the amount you agreed. If you want to tip, hand it over separately and say thank you; a folded note is normal, a speech is not required. Card payment is uncommon for mobile therapists in Bali, so ask before the session if you are relying on it.</p>",
-      },
-      {
-        h2: "Requests that are always acceptable",
-        html:
-          "<p>A female therapist, a male therapist, no oil on the hair, no work on the feet, extra attention on the shoulders, a firmer or lighter touch, no talking, an extra towel. These are routine requests, not inconveniences. Making them at the start is better than enduring an hour you did not enjoy.</p>",
-      },
-    ],
-    faqs: [
-      {
-        q: "Should I shower before a massage?",
-        a: "Yes if you have been at the beach or sweating. A quick rinse makes the massage more comfortable and protects the therapist's table linen.",
-      },
-      {
-        q: "Is it rude to fall asleep during a massage?",
-        a: "No. Falling asleep is common and therapists take it as a sign the pressure is right.",
-      },
-      {
-        q: "Can I ask for a female therapist?",
-        a: "Yes. Say so when booking and the request is normally accommodated.",
-      },
-      {
-        q: "How much should I tip in Bali?",
-        a: "Tipping is optional. Around ten percent of the treatment price is a common gesture for good service.",
-      },
-    ],
-    related: ["first-home-massage-kuta-what-to-expect", "balinese-massage-complete-guide"],
-  },
+{
+  slug: "first-home-massage-kuta-what-to-expect",
+  title: "Your First Home Massage in Kuta: What Actually Happens",
+  metaTitle: "First Home Massage in Kuta: What to Expect",
+  description: "A step-by-step look at your first in-villa massage in Kuta: booking, setup, what the therapist brings, pressure, tipping and privacy.",
+  excerpt: "What a first in-villa massage in Kuta looks like from the WhatsApp message to the therapist leaving, including setup, privacy and payment.",
+  keyword: "first home massage kuta",
+  category: "Booking & Basics",
+  datePublished: "2026-10-31T08:00:00+08:00",
+  readMinutes: 7,
+  image: "/images/blog/first-home-massage-kuta-what-to-expect/hero.jpg",
+  imageAlt: "Home massage therapist preparing a portable massage table with clean sheets and oils inside a Kuta villa",
+  intro: "A home massage is a normal hotel-room or villa service in Bali, but the first time you book one it is fair to wonder what you are actually letting into the room. This is the plain version: what happens, what the therapist brings, how long it takes to set up, and what you are expected to pay and tip.",
+  sections: [
+    {
+      "h2": "Booking takes one WhatsApp message",
+      html: "<p>You send your name, the area (Kuta, Legian, Seminyak, Canggu and so on), the treatment, the number of people, and the time you want. The therapist confirms availability and the price for your area before anyone moves. If you are booking for the same evening, say so early in the message because travel time between Kuta and Uluwatu, for example, is not trivial.</p><p>Give the villa or hotel name and the room number, not just a pin. Drivers and therapists work faster when the address is exact.</p>"
+    },
+    {
+      "h2": "What the therapist brings and what they need from you",
+      html: "<figure class=\"my-6\"><img src=\"/images/blog/first-home-massage-kuta-what-to-expect/section-1.jpg\" alt=\"Fresh towels, unscented and essential massage oils, and clean linens brought by a mobile therapist in Kuta\" width=\"1200\" height=\"675\" loading=\"lazy\" class=\"w-full rounded-xl shadow-md object-cover\" /></figure><p>Standard kit: a folding massage table, fresh sheets, towels, oil, and a small speaker for music. You do not need to own anything.</p><p>You need a space roughly 2 metres by 1 metre, a power point within reach, and air conditioning or a fan. A living room with the sofa pushed back is fine. Outdoors under a fan is fine in the evening. A bed works for some treatments but a table gives better pressure and a better session.</p>"
+    },
+    {
+      "h2": "The setup window is real",
+      html: "<p>Expect 10 to 15 minutes of setup before the massage starts. If you book a 60-minute treatment at 7pm, the hands-on time begins around 7:10 and finishes at 8:10. Build that into dinner plans and driver pickups.</p><p>If you are in a hotel, tell reception a therapist is coming. Some hotels ask guests to meet their therapist in the lobby, some allow direct access to the corridor. A quick call to the front desk prevents a 20-minute delay at security.</p>"
+    },
+    {
+      "h2": "Pressure, privacy and what you keep on",
+      html: "<figure class=\"my-6\"><img src=\"/images/blog/first-home-massage-kuta-what-to-expect/section-2.jpg\" alt=\"Guest relaxing comfortably during a first in-room home massage session at a hotel in Kuta, Bali\" width=\"1200\" height=\"675\" loading=\"lazy\" class=\"w-full rounded-xl shadow-md object-cover\" /></figure><p>You stay covered by a sheet the whole session; only the area being worked on is uncovered. Balinese massage is medium pressure with long strokes, deep tissue is slower and firmer on specific muscles, and a relaxation massage is lighter throughout. Speak up in the first five minutes if the pressure is wrong: therapists adjust immediately, and it is easier than pretending for an hour.</p><p>You can keep underwear on. You can ask for a female or male therapist when booking. You can ask them to skip a body area entirely. None of that is an unusual request.</p>"
+    },
+    {
+      "h2": "Payment and tipping",
+      html: "<p>Most bookings are paid in cash in Indonesian rupiah at the end of the session, and some therapists accept transfer. Confirm the amount and the method when you book so nobody is counting notes in the dark.</p><p>Tipping is optional. In Bali a tip of around 10 percent is a normal gesture for good service and is genuinely appreciated, but it is not obligatory and it is not a hidden charge.</p>"
+    },
+    {
+      "h2": "After the massage",
+      html: "<p>Drink water, avoid going straight into a heavy meal, and give yourself ten minutes before driving a scooter. If you booked deep tissue for a specific problem, expect mild soreness the next day, similar to after a gym session. That is normal; sharp pain is not, and it is worth telling the therapist.</p>"
+    }
+  ],
+  faqs: [
+    {
+      q: "Do I need to provide a massage table?",
+      a: "No. The therapist brings a professional folding table, fresh linen, towels and oil. You only need floor space and a power point."
+    },
+    {
+      q: "How much space is needed for a home massage?",
+      a: "Roughly two metres by one metre of clear floor, plus a little room to walk around the table. A living room or a large bedroom usually works."
+    },
+    {
+      q: "Can two people be massaged at the same time?",
+      a: "Yes, couples bookings are standard. Two therapists arrive together with two tables, which needs more floor space than a single session."
+    },
+    {
+      q: "Is it normal to tip the therapist?",
+      a: "Tipping is optional. Around ten percent is a common gesture in Bali for good service, but the quoted price is the full price."
+    }
+  ],
+  related: [
+    "massage-etiquette-bali-guide",
+    "balinese-massage-complete-guide"
+  ]
+},
+{
+  slug: "massage-etiquette-bali-guide",
+  title: "Massage Etiquette in Bali: The Unwritten Rules Visitors Ask About",
+  metaTitle: "Massage Etiquette in Bali: What to Know",
+  description: "Practical massage etiquette in Bali: what to wear, tipping, talking during a session, late arrivals, cancellations and how to ask for a different pressure.",
+  excerpt: "The practical etiquette questions visitors actually ask about massage in Bali, answered without the myths.",
+  keyword: "massage etiquette bali",
+  category: "Booking & Basics",
+  datePublished: "2026-10-31T08:30:00+08:00",
+  readMinutes: 6,
+  image: "/images/blog/massage-etiquette-bali-guide/hero.jpg",
+  imageAlt: "Neatly folded spa towels with frangipani flowers and massage oil prepared for an in-villa massage in Bali",
+  intro: "Most etiquette questions about massage in Bali have simple answers, and the simple answers are almost always 'ask, and it is fine'. Here is what to do so the session is comfortable for you and straightforward for the therapist.",
+  sections: [
+    {
+      "h2": "Before the therapist arrives",
+      html: "<ul><li>Confirm the address and room number in writing.</li><li>Clear floor space and turn the air conditioning on early so the room is cool.</li><li>Shower first if you have been at the beach; sand and salt shorten the useful part of a massage.</li><li>Tell reception if you are in a hotel.</li></ul>"
+    },
+    {
+      "h2": "What to wear and what to remove",
+      html: "<figure class=\"my-6\"><img src=\"/images/blog/massage-etiquette-bali-guide/section-1.jpg\" alt=\"Professional towel draping during a Balinese massage ensuring guest privacy and comfort at all times\" width=\"1200\" height=\"675\" loading=\"lazy\" class=\"w-full rounded-xl shadow-md object-cover\" /></figure><p>Undress to the level you are comfortable with and get under the sheet. Underwear can stay on. The therapist works around the sheet and only uncovers the area being treated. Nobody expects you to be naked and nobody comments on it either way.</p>"
+    },
+    {
+      "h2": "Talking during the massage",
+      html: "<p>Silence is normal and so is conversation. If you want quiet, say 'quiet please' at the start and the therapist will let you rest. If you want to chat about Bali, that is equally normal. What therapists do want is feedback on pressure, temperature and any painful spot.</p>"
+    },
+    {
+      "h2": "Late arrivals and cancellations",
+      html: "<p>If you are running late, message immediately. Most therapists will shorten the session to protect the next booking rather than extend the end time. Cancellations with a few hours' notice are usually free; a no-show wastes a therapist's evening, and repeated no-shows get deposits requested.</p>"
+    },
+    {
+      "h2": "Payment and tipping without awkwardness",
+      html: "<figure class=\"my-6\"><img src=\"/images/blog/massage-etiquette-bali-guide/section-2.jpg\" alt=\"Hydrating water and quiet recovery after an in-villa massage treatment in Bali\" width=\"1200\" height=\"675\" loading=\"lazy\" class=\"w-full rounded-xl shadow-md object-cover\" /></figure><p>Have the cash ready at the end, in the amount you agreed. If you want to tip, hand it over separately and say thank you; a folded note is normal, a speech is not required. Card payment is uncommon for mobile therapists in Bali, so ask before the session if you are relying on it.</p>"
+    },
+    {
+      "h2": "Requests that are always acceptable",
+      html: "<p>A female therapist, a male therapist, no oil on the hair, no work on the feet, extra attention on the shoulders, a firmer or lighter touch, no talking, an extra towel. These are routine requests, not inconveniences. Making them at the start is better than enduring an hour you did not enjoy.</p>"
+    }
+  ],
+  faqs: [
+    {
+      q: "Should I shower before a massage?",
+      a: "Yes if you have been at the beach or sweating. A quick rinse makes the massage more comfortable and protects the therapist's table linen."
+    },
+    {
+      q: "Is it rude to fall asleep during a massage?",
+      a: "No. Falling asleep is common and therapists take it as a sign the pressure is right."
+    },
+    {
+      q: "Can I ask for a female therapist?",
+      a: "Yes. Say so when booking and the request is normally accommodated."
+    },
+    {
+      q: "How much should I tip in Bali?",
+      a: "Tipping is optional. Around ten percent of the treatment price is a common gesture for good service."
+    }
+  ],
+  related: [
+    "first-home-massage-kuta-what-to-expect",
+    "balinese-massage-complete-guide"
+  ]
+}
 ];

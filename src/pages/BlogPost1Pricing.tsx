@@ -38,7 +38,7 @@ const BlogPost1Pricing = () => {
     "@type": "BlogPosting",
     "headline": "How Much Does a Massage Cost in Kuta, Bali? Complete 2026 Price Guide",
     "description": "Complete massage pricing in Kuta, Bali. Verified rates from IDR 250K-1.1M for Balinese, deep tissue, couples massage. No hidden fees. Book today.",
-    "image": `${SITE_CONFIG.url}/images/hero/hero-4.jpg`,
+    "image": `${SITE_CONFIG.url}/images/blog/massage-kuta-bali-price-guide/hero.jpg`,
     "datePublished": "2026-01-15T08:00:00+08:00",
     "dateModified": "2026-01-15T08:00:00+08:00",
     "author": {
@@ -62,6 +62,8 @@ const BlogPost1Pricing = () => {
         description="Complete massage pricing in Kuta, Bali. Verified rates from IDR 250K-1.1M for Balinese, deep tissue, couples massage. No hidden fees. Book today."
         keywords="massage kuta price, massage cost bali, massage pricing kuta, balinese massage cost, deep tissue price bali, massage rates kuta"
         canonical="/blog/massage-kuta-bali-price-guide"
+        ogType="article"
+        ogImage={`${SITE_CONFIG.url}/images/blog/massage-kuta-bali-price-guide/hero.jpg`}
       />
 
       <StructuredData type="organization" />
@@ -99,6 +101,7 @@ const BlogPost1Pricing = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto prose prose-lg prose-headings:text-spa-earth prose-a:text-professional-green prose-strong:text-spa-earth">
               
+              <figure className="not-prose mb-10"><img src="/images/blog/massage-kuta-bali-price-guide/hero.jpg" alt="Professional Balinese massage treatment in Kuta with all equipment, fresh linens, and aromatic oils included" width={1200} height={675} loading="eager" className="w-full rounded-2xl shadow-lg object-cover aspect-video" /></figure>
               <h2>Quick Price Overview – What to Expect in Kuta</h2>
               <p>Before we dive into specific massage types, here's what professional home massage typically costs in Kuta, Bali:</p>
               
@@ -203,6 +206,7 @@ const BlogPost1Pricing = () => {
 
               <p><strong>Why Choose Aromatherapy:</strong> Perfect for travelers dealing with anxiety, insomnia, emotional stress, or respiratory issues from plane travel. The combination of massage and essential oil inhalation provides dual therapeutic benefits.</p>
 
+              <figure className="not-prose my-8"><img src="/images/blog/massage-kuta-bali-price-guide/section-1.jpg" alt="Warm basalt stones and essential oils used in specialty hot stone and aromatherapy massage treatments in Kuta" width={1200} height={675} loading="lazy" className="w-full rounded-xl shadow-md object-cover aspect-video" /></figure>
               <h2>Hot Stone Massage Prices – Premium Relaxation</h2>
               <p>Hot stone massage uses heated volcanic stones placed on key body points while the therapist incorporates warm stones into massage strokes. The deep heat penetrates muscles more effectively than hands alone.</p>
               
@@ -282,6 +286,7 @@ const BlogPost1Pricing = () => {
                 <li>Two 90-minute Deep Tissue massages: IDR 1,080,000 (IDR 540K × 2)</li>
               </ul>
 
+              <figure className="not-prose my-8"><img src="/images/blog/massage-kuta-bali-price-guide/section-2.jpg" alt="Therapeutic foot reflexology and lower-leg massage after walking Kuta Beach and Legian" width={1200} height={675} loading="lazy" className="w-full rounded-xl shadow-md object-cover aspect-video" /></figure>
               <h2>Specialized Therapy Pricing</h2>
               
               <div className="not-prose bg-gradient-to-br from-spa-earth/5 to-professional-green/5 rounded-lg p-6 my-8">

@@ -38,7 +38,7 @@ const BlogPost11Areas = () => {
     "@type": "BlogPosting",
     "headline": "Best Areas in Kuta for Home Massage Service (Complete Coverage Map & Response Times)",
     "description": "Complete Kuta area coverage for home massage service. Response times from 15-70 min for Legian, Seminyak, Canggu, Jimbaran, Nusa Dua. Check your area.",
-    "image": `${SITE_CONFIG.url}/images/hero/hero-4.jpg`,
+    "image": `${SITE_CONFIG.url}/images/blog/best-areas-kuta-home-massage-coverage/hero.jpg`,
     "datePublished": "2026-01-15T08:00:00+08:00",
     "dateModified": "2026-01-15T08:00:00+08:00",
     "author": {
@@ -62,6 +62,8 @@ const BlogPost11Areas = () => {
         description="Complete Kuta area coverage for home massage service. Response times from 15-70 min for Legian, Seminyak, Canggu, Jimbaran, Nusa Dua. Check your area."
         keywords="massage service kuta areas, home massage kuta location, massage coverage bali, kuta massage areas, legian massage service"
         canonical="/blog/best-areas-kuta-home-massage-coverage"
+        ogType="article"
+        ogImage={`${SITE_CONFIG.url}/images/blog/best-areas-kuta-home-massage-coverage/hero.jpg`}
       />
 
       <StructuredData type="organization" />
@@ -99,6 +101,7 @@ const BlogPost11Areas = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto prose prose-lg prose-headings:text-spa-earth prose-a:text-professional-green prose-strong:text-spa-earth">
               
+              <figure className="not-prose mb-10"><img src="/images/blog/best-areas-kuta-home-massage-coverage/hero.jpg" alt="Kuta and Legian coastline in south Bali showing beach resorts and villa neighborhoods served by mobile massage therapists" width={1200} height={675} loading="eager" className="w-full rounded-2xl shadow-lg object-cover aspect-video" /></figure>
               <h2>How Home Massage Coverage Works in Kuta</h2>
               <p>Unlike walk-in spas with fixed locations, home massage services in Kuta operate as mobile services. Certified therapists travel from a central base (typically located in Kuta) to your accommodation with all equipment: fresh linens, premium oils, and specialized tools.</p>
               
@@ -113,6 +116,7 @@ const BlogPost11Areas = () => {
               <h3>3. Peak Tourist Season</h3>
               <p>During high season (July-August, December-January), roads are more congested and therapist schedules are fuller. Booking 3-4 hours ahead or the evening before ensures availability.</p>
 
+              <figure className="not-prose my-8"><img src="/images/blog/best-areas-kuta-home-massage-coverage/section-1.jpg" alt="Private pool villa in Seminyak and Canggu within home massage service coverage from central Kuta" width={1200} height={675} loading="lazy" className="w-full rounded-xl shadow-md object-cover aspect-video" /></figure>
               <h2>Primary Coverage Areas (15-35 Minute Dispatch Windows)</h2>
               <p>These central neighborhoods have the shortest therapist travel windows and same-day booking availability.</p>
 
@@ -207,6 +211,7 @@ const BlogPost11Areas = () => {
 
               </div>
 
+              <figure className="not-prose my-8"><img src="/images/blog/best-areas-kuta-home-massage-coverage/section-2.jpg" alt="Tranquil resort villa in Jimbaran and Nusa Dua served by extended mobile massage dispatch in south Bali" width={1200} height={675} loading="lazy" className="w-full rounded-xl shadow-md object-cover aspect-video" /></figure>
               <h2>Extended Coverage Areas (Moderate Response Times)</h2>
               <p>These areas are serviced but require longer travel times. Advance booking (3-4 hours or evening before) is recommended.</p>
 

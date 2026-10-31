@@ -106,12 +106,24 @@ const BlogArticlePage = () => {
 
         <article className="py-16 bg-white">
           <div className="container mx-auto px-4 max-w-3xl">
+            {article.image && (
+              <figure className="mb-10">
+                <img
+                  src={article.image}
+                  alt={article.imageAlt || article.title}
+                  width={1200}
+                  height={675}
+                  loading="eager"
+                  className="w-full rounded-2xl shadow-lg object-cover aspect-video"
+                />
+              </figure>
+            )}
             <p className="text-lg text-spa-stone leading-relaxed mb-8">{article.intro}</p>
             {article.sections.map((section, i) => (
               <section key={i} className="mb-10">
                 <h2 className="text-2xl md:text-3xl font-bold text-spa-earth mb-4">{section.h2}</h2>
                 <div
-                  className="prose prose-lg max-w-none text-spa-stone prose-headings:text-spa-earth prose-a:text-professional-green"
+                  className="prose prose-lg max-w-none text-spa-stone prose-headings:text-spa-earth prose-a:text-professional-green prose-img:rounded-xl prose-img:shadow-md"
                   dangerouslySetInnerHTML={{ __html: section.html }}
                 />
               </section>
@@ -156,10 +168,22 @@ const BlogArticlePage = () => {
                     <Link
                       key={r.slug}
                       to={`/blog/${r.slug}`}
-                      className="bg-white border border-gray-100 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow"
+                      className="bg-white border border-gray-100 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"
                     >
-                      <h3 className="text-lg font-bold text-spa-earth mb-2">{r.title}</h3>
-                      <p className="text-sm text-spa-stone">{r.excerpt}</p>
+                      {r.image && (
+                        <img
+                          src={r.image}
+                          alt={r.imageAlt || r.title}
+                          width={1200}
+                          height={675}
+                          loading="lazy"
+                          className="w-full h-40 object-cover"
+                        />
+                      )}
+                      <div className="p-6">
+                        <h3 className="text-lg font-bold text-spa-earth mb-2">{r.title}</h3>
+                        <p className="text-sm text-spa-stone">{r.excerpt}</p>
+                      </div>
                     </Link>
                   ))}
                 </div>
