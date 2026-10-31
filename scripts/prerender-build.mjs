@@ -14,6 +14,7 @@
  */
 import { readFileSync, writeFileSync, mkdirSync, readdirSync, statSync } from "node:fs";
 import { createHash } from "node:crypto";
+import { resolveGa4Id } from "./ga4-config.mjs";
 import { dirname, join, resolve } from "node:path";
 
 const DIST = resolve(process.argv[2] || "dist");
@@ -145,7 +146,7 @@ function skeleton(p) {
   return parts.join("");
 }
 
-const GA4_ID = process.env.GA4_ID || "G-B8P4D8WGLK";
+const GA4_ID = resolveGa4Id();
 const ga4 = GA4_ID
   ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${GA4_ID}"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA4_ID}');</script>`

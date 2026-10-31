@@ -1,3 +1,5 @@
+import { useLayoutEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { SITE_CONFIG } from "@/config/site";
 
@@ -20,6 +22,7 @@ const SiteMeta = ({
   ogType = "website",
   noindex = false
 }: SiteMetaProps) => {
+  const location = useLocation();
   // Keep titles inside the SERP display limit: append the brand only when the
   // result still fits, and never repeat the brand if the page title has it.
   const baseTitle = title || SITE_CONFIG.title;
@@ -34,6 +37,17 @@ const SiteMeta = ({
     : "/";
   const canonicalUrl =
     canonicalPath === "/" ? SITE_CONFIG.url + "/" : SITE_CONFIG.url + canonicalPath;
+
+  // Expose the destination title from the same calculation as Helmet, before
+  // its deferred document.title write. The tracker waits for this exact path.
+  useLayoutEffect(() => {
+    document.documentElement.dataset.gaPath = location.pathname + location.search;
+    document.documentElement.dataset.gaTitle = fullTitle;
+    return () => {
+      delete document.documentElement.dataset.gaPath;
+      delete document.documentElement.dataset.gaTitle;
+    };
+  }, [location.pathname, location.search, fullTitle]);
 
   return (
     <Helmet>
