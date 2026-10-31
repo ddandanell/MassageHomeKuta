@@ -203,7 +203,24 @@ for (const file of htmlFiles) {
   // The prerender build ships a content skeleton (head, h1, intro, h2 list, links) rather than
   // the full body, so 180-300 words before JS is the known architecture ceiling (task T-0006),
   // not a regression. Only a true collapse is a failure.
-  if (route.startsWith('/blog/') && words < 120) fail('thin-blog', route + ': only ' + words + ' words before JS (skeleton missing)');
+  // Every /blog/:slug page must render at least 2 local blog images (/images/blog/<slug>/...) with descriptive alt text
+  if (route.startsWith('/blog/') && route !== '/blog') {
+    const imgs = [...html.matchAll(/<img\b[^>]*>/gi)].map((m) => m[0]);
+    if (imgs.length < 2) {
+      fail('blog-images', route + ': only ' + imgs.length + ' <img> tags in prerendered HTML (require >= 2)');
+    }
+    for (const imgTag of imgs) {
+      const src = attrOf(imgTag, 'src') || '';
+      const alt = (attrOf(imgTag, 'alt') || '').trim();
+      if (src.startsWith('/') && !assetPaths.has(src)) {
+        fail('missing-blog-image', route + ': image ' + src + ' missing from dist/');
+      }
+      if (alt.length < 10) {
+        fail('blog-image-alt', route + ': image ' + src + ' has missing or too-short alt text');
+      }
+    }
+  }
+    if (route.startsWith('/blog/') && words < 120) fail('thin-blog', route + ': only ' + words + ' words before JS (skeleton missing)');
   else if (route.startsWith('/blog/') && words < 600) warn('skeleton-only', route + ': ' + words + ' words before JS (T-0006 body limit)');
   if (route.startsWith('/services/') && words < 200) warn('thin-service', route + ': ' + words + ' words before JS');
   if (words < stats.minWords) { stats.minWords = words; stats.minWordsRoute = route; }

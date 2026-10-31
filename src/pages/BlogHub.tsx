@@ -156,10 +156,22 @@ const BlogHub = () => {
               <h2 className="text-3xl font-bold text-spa-earth mb-8 text-center">Latest Guides</h2>
               <div className="grid md:grid-cols-3 gap-6">
                 {blogArticles.map((a) => (
-                  <Link key={a.slug} to={"/blog/" + a.slug} className="border border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
-                    <p className="text-xs uppercase tracking-wide text-professional-green mb-2">{a.category}</p>
-                    <h3 className="text-lg font-bold text-spa-earth mb-2">{a.title}</h3>
-                    <p className="text-sm text-spa-stone">{a.excerpt}</p>
+                  <Link key={a.slug} to={"/blog/" + a.slug} className="border border-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow bg-white">
+                    {a.image && (
+                      <img
+                        src={a.image}
+                        alt={a.imageAlt || a.title}
+                        width={1200}
+                        height={675}
+                        loading="lazy"
+                        className="w-full h-44 object-cover"
+                      />
+                    )}
+                    <div className="p-6">
+                      <p className="text-xs uppercase tracking-wide text-professional-green mb-2">{a.category}</p>
+                      <h3 className="text-lg font-bold text-spa-earth mb-2">{a.title}</h3>
+                      <p className="text-sm text-spa-stone">{a.excerpt}</p>
+                    </div>
                   </Link>
                 ))}
               </div>

@@ -54,6 +54,11 @@ for (const a of articles) {
   parts.push(`<p>${esc(a.category)}</p>`);
   parts.push(`<h1>${esc(a.title)}</h1>`);
   if (a.excerpt) parts.push(`<p>${esc(a.excerpt)}</p>`);
+  if (a.image) {
+    parts.push(
+      `<figure><img src="${esc(a.image)}" alt="${esc(a.imageAlt || a.title)}" width="1200" height="675" loading="eager" /></figure>`,
+    );
+  }
   if (a.intro) parts.push(`<p>${esc(a.intro)}</p>`);
   for (const s of a.sections || []) {
     parts.push(`<section><h2>${esc(s.h2)}</h2>${s.html || ""}</section>`);

@@ -38,7 +38,7 @@ const BlogPost2Booking = () => {
     "@type": "BlogPosting",
     "headline": "How to Book a Massage in Kuta: Complete WhatsApp Booking Guide (2026)",
     "description": "Step-by-step guide to booking massage in Kuta via WhatsApp. Message templates, booking tips, same-day availability. Response in 5-10 minutes. Book now.",
-    "image": `${SITE_CONFIG.url}/images/hero/hero-4.jpg`,
+    "image": `${SITE_CONFIG.url}/images/blog/how-to-book-massage-kuta-whatsapp/hero.jpg`,
     "datePublished": "2026-01-15T08:00:00+08:00",
     "dateModified": "2026-01-15T08:00:00+08:00",
     "author": {
@@ -62,6 +62,8 @@ const BlogPost2Booking = () => {
         description="Step-by-step guide to booking massage in Kuta via WhatsApp. Message templates, booking tips, same-day availability. Response in 5-10 minutes. Book now."
         keywords="book massage kuta, massage booking kuta, whatsapp massage kuta, how to book massage bali, massage reservation kuta"
         canonical="/blog/how-to-book-massage-kuta-whatsapp"
+        ogType="article"
+        ogImage={`${SITE_CONFIG.url}/images/blog/how-to-book-massage-kuta-whatsapp/hero.jpg`}
       />
 
       <StructuredData type="organization" />
@@ -99,6 +101,7 @@ const BlogPost2Booking = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto prose prose-lg prose-headings:text-spa-earth prose-a:text-professional-green prose-strong:text-spa-earth">
               
+              <figure className="not-prose mb-10"><img src="/images/blog/how-to-book-massage-kuta-whatsapp/hero.jpg" alt="Traveler in a Kuta villa booking a same-day home massage session via WhatsApp" width={1200} height={675} loading="eager" className="w-full rounded-2xl shadow-lg object-cover aspect-video" /></figure>
               <h2>Why WhatsApp for Massage Booking in Kuta?</h2>
               <p>Before diving into the how-to, let's address why WhatsApp is the primary booking method in Bali:</p>
               
@@ -168,6 +171,7 @@ const BlogPost2Booking = () => {
                 </ul>
               </div>
 
+              <figure className="not-prose my-8"><img src="/images/blog/how-to-book-massage-kuta-whatsapp/section-1.jpg" alt="Private villa entrance and garden pathway in Kuta ready for mobile massage therapist arrival" width={1200} height={675} loading="lazy" className="w-full rounded-xl shadow-md object-cover aspect-video" /></figure>
               <h2>Step-by-Step WhatsApp Booking Process</h2>
 
               <h3>Step 1: Save the WhatsApp Contact</h3>
@@ -294,6 +298,7 @@ const BlogPost2Booking = () => {
                 <p className="text-spa-stone mt-2"><strong>Tipping:</strong> Appreciated but not required. If you received excellent service, IDR 50,000-100,000 is a standard tip amount. Never feel pressured to tip.</p>
               </div>
 
+              <figure className="not-prose my-8"><img src="/images/blog/how-to-book-massage-kuta-whatsapp/section-2.jpg" alt="Portable massage table set up inside a Kuta hotel room within minutes of therapist arrival" width={1200} height={675} loading="lazy" className="w-full rounded-xl shadow-md object-cover aspect-video" /></figure>
               <h2>Same-Day Booking vs. Advance Booking</h2>
 
               <h3>Same-Day Booking (Most Common)</h3>
