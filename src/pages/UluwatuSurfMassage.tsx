@@ -118,9 +118,9 @@ const UluwatuSurfMassage = () => {
 
   const serviceAreas = [
     { name: "Uluwatu", slug: "uluwatu" },
-    { name: "Padang Padang", slug: "padang-padang-area" },
+    { name: "Padang Padang", slug: "padang-padang" },
     { name: "Bingin", slug: "bingin" },
-    { name: "Dreamland", slug: "dreamland-area" },
+    { name: "Dreamland", slug: "dreamland" },
     { name: "Canggu", slug: "canggu" }
   ];
 

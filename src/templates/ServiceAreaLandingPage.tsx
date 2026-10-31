@@ -442,13 +442,13 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
               We Also Serve Nearby Areas
             </h3>
             <div className="flex flex-wrap justify-center gap-4">
-              {data.nearbyAreas.map((area, index) => (
+              {nearbyAreaLinks.map((area) => (
                 <a
-                  key={index}
-                  href={`/areas/${area.toLowerCase().replace(/\s+/g, '-')}`}
+                  key={area.slug}
+                  href={`/areas/${area.slug}`}
                   className="text-spa-gold hover:text-spa-earth transition-colors font-medium"
                 >
-                  {area}
+                  {area.name}
                 </a>
               ))}
             </div>
@@ -590,13 +590,13 @@ const ServiceAreaLandingPage = ({ data }: ServiceAreaLandingPageProps) => {
               </div>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-8">
-                {data.nearbyAreas.map((area, index) => (
+                {nearbyAreaLinks.map((area) => (
                   <Link
-                    key={index}
-                    to={`/areas/${area.toLowerCase().replace(/\s+/g, '-')}`}
+                    key={area.slug}
+                    to={`/areas/${area.slug}`}
                     className="flex items-center justify-between p-4 bg-white rounded-lg hover:bg-spa-gold/10 transition-all duration-300"
                   >
-                    <span className="text-spa-earth font-medium text-sm">{area}</span>
+                    <span className="text-spa-earth font-medium text-sm">{area.name}</span>
                     <MapPin className="w-4 h-4 text-spa-gold" />
                   </Link>
                 ))}

@@ -86,7 +86,7 @@ const MassageTherapistKutaBali = () => {
     },
     {
       name: "Sports & Recovery Massage Experts",
-      slug: "sports-massage",
+      slug: "muscle-recovery-therapy",
       description: "Licensed sports massage therapists experienced in pre-event preparation, post-workout recovery, and injury rehabilitation. These specialists combine deep tissue work, stretching, and muscle stripping techniques.",
       idealFor: "Surfers, yogis, and active travelers in Bali."
     }
