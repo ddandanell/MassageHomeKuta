@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { LanguageProvider } from "./i18n";
+import GaTracker from "./lib/ga-tracker";
 import Index from "./pages/Index";
 import ServicesPage from "./pages/Services";
 import ServiceAreas from "./pages/ServiceAreas";
@@ -212,6 +213,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <GaTracker />
           <LanguageProvider>
           <Routes>
             {/* English routes (default, no prefix) */}
