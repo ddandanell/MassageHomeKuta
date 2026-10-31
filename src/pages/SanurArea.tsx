@@ -112,7 +112,7 @@ const SanurArea = () => {
   const faqs = [
     {
       question: "How quickly can I book a massage in Sanur?",
-      answer: "Most Sanur bookings are confirmed within 40-60 minutes. For same-day requests, contact us via WhatsApp for fastest response. Advanced bookings guarantee your preferred time slot."
+      answer: "Most Sanur bookings are confirmed within 40-60 minutes. For same-day requests, contact us via WhatsApp for direct dispatch confirmation. Advance bookings reserve your preferred time slot."
     },
     {
       question: "What areas of Sanur do you serve?",
@@ -336,7 +336,7 @@ const SanurArea = () => {
                     </p>
                     <Button asChild variant="outline" className="w-full">
                       <Link to={`/services/${service.slug}`}>
-                        Learn More <ArrowRight className="w-4 h-4 ml-2" />
+                        Explore {service.name} <ArrowRight className="w-4 h-4 ml-2" />
                       </Link>
                     </Button>
                   </CardContent>

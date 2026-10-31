@@ -30,7 +30,8 @@ export const keyOf = (block) => {
   if (!block || typeof block !== "object") return null;
   const type = Array.isArray(block["@type"]) ? block["@type"].join("+") : String(block["@type"] || "");
   if (!type) return null;
-  return type + "|" + String(block["@id"] || block["name"] || block["url"] || block["headline"] || "");
+  const ident = block["@id"] || block["name"] || block["url"] || block["headline"] || "";
+  return type + "|" + String(ident);
 };
 
 const matchesConfig = (raw) => {
@@ -60,7 +61,7 @@ const alignConfig = (raw) => {
   return raw;
 };
 
-export function dedupeJsonLd(blocks) {
+export function dedupeJsonLd(blocks, { logDrops = false, context = "" } = {}) {
   const kept = new Map();
   const order = [];
   for (const raw of blocks || []) {
@@ -80,7 +81,12 @@ export function dedupeJsonLd(blocks) {
       order.push(key);
       kept.set(key, raw);
     } else if (matchesConfig(raw) && !matchesConfig(kept.get(key))) {
+      if (logDrops) {
+        console.log(`jsonld-dedupe${context ? " (" + context + ")" : ""}: replaced duplicate [${key}] with config-matching block`);
+      }
       kept.set(key, raw);
+    } else if (logDrops) {
+      console.log(`jsonld-dedupe${context ? " (" + context + ")" : ""}: dropped duplicate [${key}]`);
     }
   }
   return order.map((entry) => alignConfig(kept.has(entry) ? kept.get(entry) : entry));

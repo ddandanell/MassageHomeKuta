@@ -397,7 +397,7 @@ const MassageTherapistKutaBali = () => {
                     </p>
                     <Button asChild variant="outline" className="w-full">
                       <Link to={`/services/${specialization.slug}`}>
-                        Learn More <ArrowRight className="w-4 h-4 ml-2" />
+                        Explore {specialization.name} <ArrowRight className="w-4 h-4 ml-2" />
                       </Link>
                     </Button>
                   </CardContent>

@@ -153,7 +153,7 @@ const BlogPost1Pricing = () => {
 
               <p><strong>Why Choose Balinese Massage:</strong> Ideal for jet lag recovery, general relaxation, stress relief, improved circulation, and experiencing authentic Balinese healing traditions. The medium pressure is comfortable for most people, including first-time massage recipients.</p>
               <p><strong>Recommended Duration:</strong> 90 minutes provides optimal therapeutic benefits without feeling rushed. This duration allows the therapist to address your full body with proper attention to problem areas like shoulders, lower back, and neck.</p>
-              <p><Link to="/services/balinese-massage">Learn more about Traditional Balinese massage techniques and benefits</Link></p>
+              <p><Link to="/services/balinese-massage">Explore Traditional Balinese massage techniques and benefits</Link></p>
 
               <h2>Deep Tissue Massage Prices – Therapeutic Focus</h2>
               <p>Deep tissue massage targets chronic muscle tension, knots, adhesions, and pain using firm pressure and slow strokes. Popular with athletes, surf enthusiasts, and anyone dealing with back pain, shoulder tension, or sports injuries.</p>
