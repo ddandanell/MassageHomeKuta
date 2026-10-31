@@ -145,7 +145,7 @@ function skeleton(p) {
   return parts.join("");
 }
 
-const GA4_ID = process.env.GA4_ID || "";
+const GA4_ID = process.env.GA4_ID || "G-B8P4D8WGLK";
 const ga4 = GA4_ID
   ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${GA4_ID}"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA4_ID}');</script>`
