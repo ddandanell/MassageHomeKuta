@@ -111,7 +111,7 @@ const MessageKutaBali = () => {
     <div className="min-h-screen">
       <SiteMeta
         title="Message Kuta Bali - Professional Home Massage & Spa Service"
-        description="Professional massage service in Kuta, Bali. In-villa & hotel spa treatments by certified therapists. Same-day booking available. Transparent pricing from IDR 250K. WhatsApp to book."
+        description="Looking for massage at your Kuta villa or hotel? Browse treatment choices and published prices, then use WhatsApp to ask about booking."
         keywords="message kuta bali, massage kuta bali, home massage kuta, in-villa massage, hotel massage bali, outcall massage kuta, mobile spa kuta, spa service bali, massage near me kuta"
         canonical="/message-kuta-bali"
       />

@@ -106,7 +106,7 @@ const Services = () => {
     <div className="min-h-screen bg-background">
       <SiteMeta
         title="Massage Services in Kuta, Bali | Villa, Hotel & Same-Day Booking"
-        description="Compare home massage services in Kuta, Legian, Seminyak, Uluwatu, and nearby Bali areas. Book Balinese, deep tissue, hot stone, lymphatic, pregnancy, and four hands treatments by WhatsApp."
+        description="Explore massage services available for a villa or hotel stay near Kuta. Compare Balinese, deep tissue, hot stone, and other treatments before booking."
         keywords="massage services kuta, home massage services bali, villa massage kuta, hotel massage bali, lymphatic drainage massage kuta, hot stone massage bali, four hands massage kuta"
         canonical="/services"
       />

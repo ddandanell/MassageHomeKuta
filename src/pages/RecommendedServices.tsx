@@ -64,13 +64,13 @@ const RecommendedServices = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Recommended Services for Your Bali Villa Lifestyle - Home Massage Kuta</title>
-        <meta name="description" content="Discover trusted complementary services for villa owners and expat families in Bali: massage, tutoring, private chefs, tech education, pool maintenance, and water purification." />
+        <meta name="description" content="Explore complementary Bali villa services, from massage and tutoring to private chefs and pool care. Browse the categories and check each provider." />
         <meta name="keywords" content="bali villa services, expat services bali, villa lifestyle bali, home services bali, wellness bali, private services bali" />
       </Helmet>
 
       <SiteMeta
         title="Recommended Services for Your Bali Villa Lifestyle"
-        description="Discover trusted complementary services for villa owners and expat families in Bali: massage, tutoring, private chefs, tech education, pool maintenance, and water purification."
+        description="Explore complementary Bali villa services, from massage and tutoring to private chefs and pool care. Browse the categories and check each provider."
         canonical="/recommended-services"
       />
 

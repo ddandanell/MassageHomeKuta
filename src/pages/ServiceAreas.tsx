@@ -242,7 +242,7 @@ const ServiceAreas = () => {
     <div className="min-h-screen">
       <SiteMeta
         title="Massage Service Areas in Bali - Kuta, Legian, Uluwatu & More"
-        description="See where our mobile massage service covers Bali, including Kuta, Legian, Seminyak, Pererenan, Uluwatu, Nusa Dua, and nearby villa or hotel areas. Check response times before you book."
+        description="Explore home massage service areas around Kuta and South Bali, including Legian, Seminyak, Sanur, and Nusa Dua. Check your location before booking."
         keywords="massage service areas bali, home massage kuta, villa massage legian, hotel massage seminyak, mobile spa uluwatu, massage nusa dua, pererenan massage service"
         canonical="/areas"
       />

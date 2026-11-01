@@ -72,7 +72,7 @@ const KutaArea = () => {
     <div className="min-h-screen">
       <SiteMeta
         title="Massage Kuta Area - Professional Service"
-        description="Professional massage in Kuta area covering Kuta Beach, Legian, Tuban, and Seminyak border. Certified therapists deliver premium treatments to your villa or hotel with fast response times."
+        description="Planning a massage at your Kuta villa or hotel? Explore local service coverage near Kuta Beach, Tuban, and Legian, then ask about availability."
         keywords="massage Kuta area, massage Kuta Beach, massage Legian, massage Tuban, villa massage Kuta, mobile spa Kuta, in-villa massage service"
         canonical="/areas/kuta"
       />

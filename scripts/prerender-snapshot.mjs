@@ -8,7 +8,7 @@
  * scripts/prerender-build.mjs at Vercel build time (no chrome needed there).
  */
 import { execFile, spawn } from "node:child_process";
-import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, renameSync, rmSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { dedupeJsonLd } from "./lib/jsonld-dedupe.mjs";
 
@@ -109,23 +109,41 @@ function parse(html, route) {
   };
 }
 
-function render(url) {
+// Every render gets its own throwaway profile directory. A shared --user-data-dir
+// makes a second chrome hand off to the singleton already owning that profile and
+// exit with empty stdout, which silently skipped 30-65 of 96 routes and produced
+// false gate failures. The directory is removed after the render, success or not.
+function render(url, id) {
+  const profile = `/tmp/chrome-prerender-${process.pid}-${id}`;
+  const cleanup = () => {
+    try {
+      rmSync(profile, { recursive: true, force: true });
+    } catch {}
+  };
   return new Promise((resolveP) => {
-    execFile(
+    let settled = false;
+    const done = (html) => {
+      if (settled) return;
+      settled = true;
+      cleanup();
+      resolveP(html);
+    };
+    const child = execFile(
       CHROME,
       [
         "--headless=new",
         "--disable-gpu",
         "--no-sandbox",
         "--hide-scrollbars",
-        "--user-data-dir=/tmp/chrome-prerender",
+        `--user-data-dir=${profile}`,
         "--virtual-time-budget=9000",
         "--dump-dom",
         url,
       ],
       { maxBuffer: 40 * 1024 * 1024, timeout: 90000 },
-      (err, stdout) => resolveP(err && !stdout ? "" : stdout),
+      (err, stdout) => done(err && !stdout ? "" : stdout),
     );
+    child.on("error", () => done(""));
   });
 }
 
@@ -150,10 +168,14 @@ try {
   if (!(await waitForServer())) throw new Error("preview server did not start");
   const list = routes();
   const out = [];
+  const failed = [];
+  let i = 0;
   for (const route of list) {
-    const html = await render(BASE + route);
+    i += 1;
+    const html = await render(BASE + route, i);
     if (!html) {
       console.error("FAILED", route);
+      failed.push(route);
       continue;
     }
     const rec = parse(html, route);
@@ -162,8 +184,19 @@ try {
     out.push(rec);
     console.error(`ok ${route} — ${rec.title?.slice(0, 60)}`);
   }
+  // Fail closed: a partial snapshot would delete real pages from the build and,
+  // being a tracked generated artifact, leave the tree dirty. Abort with nothing
+  // written rather than commit a truncated snapshot.
+  if (failed.length || out.length !== list.length) {
+    console.error(`\nABORT: rendered ${out.length}/${list.length} routes, ${failed.length} failed`);
+    throw new Error(
+      "partial snapshot: rendered " + out.length + "/" + list.length + " routes; " + OUT + " left untouched",
+    );
+  }
   mkdirSync(dirname(OUT), { recursive: true });
-  writeFileSync(OUT, JSON.stringify({ generatedAt: new Date().toISOString(), site: SITE, pages: out }, null, 1));
+  const tmp = `${OUT}.tmp-${process.pid}`;
+  writeFileSync(tmp, JSON.stringify({ generatedAt: new Date().toISOString(), site: SITE, pages: out }, null, 1));
+  renameSync(tmp, OUT);
   console.error(`\nwrote ${out.length}/${list.length} pages -> ${OUT}`);
 } finally {
   server.kill("SIGTERM");

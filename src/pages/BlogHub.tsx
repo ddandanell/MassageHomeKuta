@@ -139,7 +139,7 @@ const BlogHub = () => {
     <div className="min-h-screen">
       <SiteMeta
         title="Kuta Massage Guides & Expert Tips | Complete Knowledge Hub"
-        description="Complete resource for massage in Kuta, Bali. Pricing guides, booking tips, service comparisons, cultural etiquette, health benefits, and local logistics. Make informed decisions about your massage experience."
+        description="Read Kuta massage guides about service choices, booking questions, and local logistics. Browse articles to plan a villa or hotel massage session."
         keywords="massage kuta guide, massage booking tips, massage prices kuta, home massage information, villa massage guide, massage etiquette bali, massage types comparison, kuta massage blog"
         canonical="/blog"
       />
