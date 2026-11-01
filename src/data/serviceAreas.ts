@@ -6,7 +6,7 @@ export const legianData: ServiceAreaData = {
   heroTitle: "Home Massage in Legian – Premium In-Villa Mobile Spa Service",
   heroSubtitle: "Experience authentic Balinese healing delivered to your Legian villa, hotel, or beachfront accommodation. Certified professional therapists available daily 7 AM–10 PM with fast 15-25 minute response times.",
   metaTitle: "Home Massage Legian, Bali",
-  metaDescription: "Book professional home massage in Legian. Certified Balinese therapists come to your villa or hotel. Serving Legian Beach, Double Six, Poppies Lane. Same-day booking available.",
+  metaDescription: "Arrange a massage at your Legian villa or hotel. Explore services near Legian Beach, Double Six, and Jalan Legian, then check booking options.",
   keywords: "home massage legian, legian massage service, mobile spa legian bali, villa massage legian beach, hotel massage legian, double six massage, poppies lane spa service, in-room massage legian",
   introText: "Welcome to Legian's premier home massage service, where traditional Balinese healing wisdom meets modern professional convenience. Whether you're unwinding in a beachfront villa overlooking the famous Legian Beach sunsets, relaxing in a boutique hotel along vibrant Jalan Legian, or staying in a cozy guesthouse tucked away on Poppies Lane, our certified therapists bring five-star spa treatments directly to your doorstep. Legian occupies the perfect sweet spot between bustling Kuta and upscale Seminyak, offering the ideal balance of accessibility, beach culture, and relaxation that makes it one of Bali's most beloved destinations for travelers seeking genuine rest and rejuvenation.",
   responseTime: "15-25 minutes",

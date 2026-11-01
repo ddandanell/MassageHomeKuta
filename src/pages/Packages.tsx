@@ -89,7 +89,7 @@ const Packages = () => {
     <div className="min-h-screen">
       <SiteMeta 
         title="Massage Packages in Kuta - Couples, Wellness & Villa Deals"
-        description="Compare massage packages in Kuta for couples, villa stays, birthdays, and longer wellness sessions. Professional therapists deliver the full setup to your villa or hotel. Book by WhatsApp."
+        description="Compare massage packages for couples, villa stays, and longer sessions in Kuta. Review what each option includes before asking about availability."
         keywords="massage packages kuta, couples massage kuta, villa spa package bali, birthday massage bali, wellness massage package kuta, hotel massage deals bali"
         canonical="/packages"
       />

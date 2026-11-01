@@ -651,7 +651,7 @@ export const hotStoneData: MassageTypeData = {
   heroTitle: "Hot Stone Massage in Kuta – Luxury Heated Stone Therapy",
   heroSubtitle: "Indulgent hot stone massage using heated volcanic stones to melt tension and deliver a slower, deeper villa or hotel spa experience.",
   metaTitle: "Hot Stone Massage in Kuta | Luxury Villa & Hotel Spa Treatment",
-  metaDescription: "Book hot stone massage in Kuta for deep relaxation, muscle relief, and a premium in-villa spa session. Heated volcanic stones delivered to your villa or hotel by WhatsApp booking.",
+  metaDescription: "Explore hot stone massage for your Kuta villa or hotel stay. See how heated stones are used, review session details, and ask about booking.",
   keywords: "hot stone massage kuta, heated stone massage bali, luxury villa massage bali, volcanic stone massage, hotel spa treatment kuta",
   introText: "Indulge in the ultimate luxury with hot stone massage in Kuta. Smooth, heated volcanic stones are placed on key points of your body and used by therapists to deliver deeply relaxing massage in the privacy of your villa or hotel. The heat penetrates tired muscles, helping the body unwind more quickly than hands alone. This treatment is especially popular for slower evening bookings, clifftop or poolside villa sessions, and travelers who want a premium spa feeling without leaving their accommodation.",
   benefits: [
