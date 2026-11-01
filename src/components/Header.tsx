@@ -87,6 +87,9 @@ const Header = () => {
               variant="ghost"
               size="sm"
               className="lg:hidden ml-1 p-2 text-professional-navy"
+              aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+              aria-expanded={isMenuOpen}
+              aria-controls="mobile-navigation"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -96,7 +99,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="lg:hidden bg-white/98 backdrop-blur-md border-t border-professional-gold/20 shadow-lg">
+          <div id="mobile-navigation" className="lg:hidden bg-white/98 backdrop-blur-md border-t border-professional-gold/20 shadow-lg">
             <div className="container mx-auto px-4 py-6">
               {/* Quick Stats */}
               <div className="flex justify-center gap-4 mb-6 text-xs">

@@ -146,8 +146,8 @@ const BlogArticlePage = () => {
             <div className="mt-12 rounded-2xl bg-gradient-to-br from-teal-50 to-cyan-50 p-8 text-center">
               <h2 className="text-2xl font-bold text-spa-earth mb-3">Book a massage at your villa or hotel</h2>
               <p className="text-spa-stone mb-6">
-                Therapists travel to Kuta, Legian, Seminyak, Canggu and nearby areas with a massage table,
-                fresh linen and oils. Message us on WhatsApp for same-day availability.
+                Planning a massage at your villa or hotel? Message us on WhatsApp to confirm
+                availability, location, equipment and current booking details.
               </p>
               <a
                 href={waUrl(`Hi! I read your guide "${article.title}" and I'd like to book a massage in Kuta.`)}

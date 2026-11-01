@@ -17,7 +17,7 @@ export const SITE_CONFIG = {
   name: "Home Massage Kuta",
   url: "https://www.homemassagekuta.com",
   title: "Home Massage Kuta | In-Villa & Hotel Massage in Bali",
-  description: "Book home massage in Kuta with certified therapists for villas and hotels. Balinese, deep tissue, couples, pregnancy, and recovery treatments are available across Kuta, Legian, Seminyak, Uluwatu, and nearby Bali areas.",
+  description: "Explore home massage services for villas and hotels in Kuta and nearby Bali areas. Check available treatments, prices and booking details before reserving.",
   keywords: "home massage kuta, in-villa massage kuta, hotel massage bali, villa massage kuta, couples massage kuta, balinese massage kuta, deep tissue massage bali, mobile spa kuta",
   author: "Home Massage Kuta",
   
